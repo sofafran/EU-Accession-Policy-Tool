@@ -1,0 +1,427 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence file: one source and its evidence items",
+  "description": "Version 1.0, 23 October 2026. One JSON file per source, stored at evidence/<country>/<source_id>.json. Pass 1 fields are written by extraction; the pass2 block is written by classification.",
+  "type": "object",
+  "required": [
+    "source_id",
+    "extraction",
+    "classification",
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2,3}-(EU|GOV|IO|RES|CSO)-[0-9]{4}-[0-9]{3}$"
+    },
+    "extraction": {
+      "type": "object",
+      "required": [
+        "run_id",
+        "rules_version",
+        "extracted_at",
+        "status",
+        "codebook_version"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "pattern": "^RUN-[0-9]{4}-[0-9]{2}$"
+        },
+        "rules_version": {
+          "type": "string"
+        },
+        "extracted_at": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "complete",
+            "partial",
+            "sample"
+          ]
+        },
+        "pages_processed": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "codebook_version": {
+          "type": "string"
+        }
+      }
+    },
+    "classification": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "not_started",
+            "complete",
+            "partial"
+          ]
+        },
+        "run_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rules_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "taxonomy_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "classified_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mechanisms_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "actor_ref": {
+      "type": "object",
+      "required": [
+        "name_as_stated"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name_as_stated": {
+          "type": "string"
+        },
+        "actor_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "item_id",
+        "information_type",
+        "stated_text",
+        "quote_language",
+        "machine_translated",
+        "summary",
+        "location",
+        "quote_verified",
+        "country",
+        "role",
+        "cluster",
+        "chapter",
+        "dates",
+        "speaker",
+        "subjects",
+        "flags",
+        "pass2"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "item_id": {
+          "type": "string",
+          "pattern": "^[A-Z]{2,3}-(EU|GOV|IO|RES|CSO)-[0-9]{4}-[0-9]{3}-[0-9]{4}$"
+        },
+        "information_type": {
+          "enum": [
+            "finding",
+            "recommendation",
+            "intervention",
+            "barrier",
+            "outcome",
+            "lesson",
+            "metric"
+          ]
+        },
+        "stated_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quote_language": {
+          "type": "string"
+        },
+        "translation_en": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "machine_translated": {
+          "type": "boolean"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "location": {
+          "type": "object",
+          "required": [
+            "page"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "page": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "page_end": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "section": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "paragraph": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "snapshot_file": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "quote_verified": {
+          "type": "boolean"
+        },
+        "country": {
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "target",
+            "comparator"
+          ]
+        },
+        "cluster": {
+          "type": "string"
+        },
+        "chapter": {
+          "type": "string"
+        },
+        "dates": {
+          "type": "object",
+          "required": [
+            "publication_date"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "publication_date": {
+              "type": "string"
+            },
+            "period_covered": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "event_date": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "event_date_precision": {
+              "enum": [
+                "day",
+                "month",
+                "year",
+                null
+              ]
+            }
+          }
+        },
+        "speaker": {
+          "$ref": "#/$defs/actor_ref"
+        },
+        "subjects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/actor_ref"
+          }
+        },
+        "intervention_as_stated": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "stated_status": {
+          "enum": [
+            "proposed",
+            "adopted",
+            "implemented",
+            "in_practice",
+            "reversed",
+            "unclear",
+            null
+          ]
+        },
+        "eu_scale": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "preparation_level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "progress_level": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "metric": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "indicator": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "value": {
+              "type": [
+                "number",
+                "string",
+                "null"
+              ]
+            },
+            "unit": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reference_period": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "ambiguous_type",
+              "reported_view",
+              "hedged",
+              "table",
+              "ocr",
+              "possible_misread",
+              "out_of_window"
+            ]
+          }
+        },
+        "extraction_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pass2": {
+          "type": "object",
+          "required": [
+            "classification_status"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "chain_link": {
+              "enum": [
+                "eu_requirement",
+                "country_response",
+                "implementation",
+                "outcome",
+                "unresolved_gap",
+                "comparator_evidence",
+                "lesson",
+                null
+              ]
+            },
+            "reform_issue_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "mechanism_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "intervention_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "classification_status": {
+              "enum": [
+                "not_classified",
+                "auto",
+                "queued_ambiguous",
+                "queued_unmatched",
+                "analyst_resolved"
+              ]
+            },
+            "classification_note": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
