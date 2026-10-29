@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (ITEM_ID_RE, SOURCE_ID_RE, dictionary_tables, evidence_files,  # noqa: E402
                     project_root, read_csv, read_json, split_list)
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 ID_COLUMNS = {
     "registers/source_requirements.csv": "requirement_id",
@@ -143,6 +143,9 @@ def check_evidence(root, schema_path, rep):
             if iid in items:
                 rep.error(f"{path.name}: duplicate item ID {iid}")
             items[iid] = it
+            sentences = len(re.findall(r"[.!?](?=\s+[A-ZА-ЯЃЌЉЊЏЅЈ])", it.get("stated_text", ""))) + 1
+            if sentences > 3:
+                rep.warn(f"{iid}: quote has about {sentences} sentences; check that it is cut to the claim (extraction rules 0.3)")
             if it.get("quote_verified") is False:
                 rep.warn(f"{iid}: quote_verified is false; must be fixed before the item reaches a review sheet as final")
     return items, files

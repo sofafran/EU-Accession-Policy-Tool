@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2025-003",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
+    "rules_version": "0.3",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "1-108 (pages 25-30, Chapter 2, read in full and extracted in full; all other pages read for theme material)",
     "codebook_version": "1.2",
-    "themes_version": "1.1",
-    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184."
+    "themes_version": "1.2",
+    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184. Second revision on 29 October 2026 under extraction rules 0.3: items -0120, -0121, -0135, -0151, -0171 and -0173 restored as online services used directly by citizens or businesses (R12); no other change was needed."
   },
   "classification": {
     "status": "not_started"
@@ -6694,6 +6694,142 @@
       }
     },
     {
+      "item_id": "MKD-EU-2025-003-0120",
+      "information_type": "finding",
+      "stated_text": "Furthermore, a transparent list of all regulated professions and an electronic register are yet to be put in place.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A transparent list of regulated professions and an electronic register have not yet been put in place.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > I. MUTUAL RECOGNITION OF PROFESSIONAL QUALIFICATIONS > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "03",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Restored under rules 0.3 (R12). theme_doubtful: the electronic register of regulated professions is read as a public-facing online register used by professionals, but the text does not say who uses it.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0121",
+      "information_type": "intervention",
+      "stated_text": "The Central Register operates as the Point of Single Contact, interacting with the tax administration, the employment agency to allow for simultaneous registration in a single step.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Central Register acts as the Point of Single Contact, linking with the tax administration and employment agency for one-step registration.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > II. FREEDOM TO PROVIDE SERVICES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "03",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Central Register",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Central Register as Point of Single Contact",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Restored under rules 0.3 (R12): the Point of Single Contact is a one-stop service used directly by businesses; its portal is described in the next item (-0122).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
       "item_id": "MKD-EU-2025-003-0122",
       "information_type": "outcome",
       "stated_text": "The new portal of the Central Register has simplified procedures for businesses.",
@@ -7224,6 +7360,74 @@
         "reported_view"
       ],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0135",
+      "information_type": "intervention",
+      "stated_text": "Basic information is accessible to the public online, free of charge, while an ‘at cost’ principle is applied for certified copies (paper or electronic).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Basic company information is available online free of charge; certified copies, paper or electronic, are charged at cost.",
+      "location": {
+        "page": 41,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Central Registry",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "online access to Central Registry company information",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Restored under rules 0.3 (R12): an online public service (company information) used directly by citizens and businesses.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8044,6 +8248,74 @@
       }
     },
     {
+      "item_id": "MKD-EU-2025-003-0151",
+      "information_type": "intervention",
+      "stated_text": "Medium and large companies must submit their annual accounts electronically.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Medium and large companies must submit their annual accounts electronically.",
+      "location": {
+        "page": 48,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > II. COMPANY REPORTING > II.A. CORPORATE ACCOUNTING > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "electronic submission of annual accounts",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Restored under rules 0.3 (R12): electronic filing used directly by companies.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
       "item_id": "MKD-EU-2025-003-0163",
       "information_type": "finding",
       "stated_text": "In its initial risk assessment, the State Commission noted the insufficient digitalisation of processes (notably the lack of a functioning electronic registration of trade marks and patents), the la ck of control of own incomes, the outdated technical resources, and the lack of human resources.",
@@ -8306,6 +8578,143 @@
         "theme_doubtful"
       ],
       "extraction_note": "theme_doubtful: the claim concerns consumer contract law for digital content and digital services, where the digital service is the subject of the rule but not of a digitalisation measure.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0171",
+      "information_type": "finding",
+      "stated_text": "North Macedonia has not yet aligned its legislation to Directive 2013/11/ EU on alternative dispute resolution for consumer disputes, or to Regulation 524/2013(EU) on online dispute resolution for consumer disputes, full alignment to both is foreseen by the end of 2025.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia has not aligned with the alternative and online dispute resolution acts; full alignment is foreseen by end 2025.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.C. NON-SAFETY RELATED ISSUES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Restored under rules 0.3 (R12). theme_doubtful: online dispute resolution is an online service used directly by consumers, but the claim concerns legal alignment with the regulation rather than the service itself. The planned alignment date in the same sentence is not split into a separate item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0173",
+      "information_type": "finding",
+      "stated_text": "North Macedonia has not yet aligned its legislation to the EU acquis on package travel and linked travel arrangements, on alternative dispute resolution for consumer disputes , or on online dispute resolution for consumer disputes.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia has not aligned with acts on package travel and on alternative and online dispute resolution.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.C. NON-SAFETY RELATED ISSUES > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Restored under rules 0.3 (R12). theme_doubtful: online dispute resolution is one item in a list of acts not yet aligned; the claim concerns legal alignment.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

@@ -11,13 +11,17 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record  # noqa: E402
 
-__version__ = "1.3.0"
+__version__ = "1.4.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
 
-def write_workbook(path, sheets):
-    """sheets: list of (title, header, rows). Header bold, top row frozen, filters on, text wrapped."""
+PROTECTED = ("G3_handcoding.xlsx", "G3_review_sample.xlsx")  # workbooks the analyst fills in: never overwritten without --force
+
+
+def write_workbook(path, sheets, dropdowns=None):
+    """sheets: list of (title, header, rows). Header bold, top row frozen, filters on, text wrapped.
+    dropdowns: {sheet title: {column header: [allowed values]}} adds a drop-down list to that column."""
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Font, PatternFill
     from openpyxl.utils import get_column_letter
@@ -40,6 +44,12 @@ def write_workbook(path, sheets):
         ws.freeze_panes = "A2"
         if rows:
             ws.auto_filter.ref = ws.dimensions
+        for col_name, values in ((dropdowns or {}).get(title) or {}).items():
+            from openpyxl.worksheet.datavalidation import DataValidation
+            col = get_column_letter(header.index(col_name) + 1)
+            dv = DataValidation(type="list", formula1='"' + ",".join(values) + '"', allow_blank=True)
+            ws.add_data_validation(dv)
+            dv.add(f"{col}2:{col}{max(2, len(rows) + 1)}")
     path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(path)
 
@@ -185,27 +195,23 @@ def g3_handcoding(root, run):
     if not passages:
         raise SystemExit(f"error: review/{run}/G3_passages.csv is missing or empty")
     instructions = [
-        ["1", "Confirm or change the proposed sample (sheet 'Proposed sample')."],
-        ["2", "Read each passage (sheet 'Passages') and record every evidence item you find in sheet 'Hand-coded items', one row per item, before looking at any agent output."],
-        ["3", "An item is one claim, of one information type, with its exact quote. If a sentence holds two claims of different types, use two rows."],
-        ["4", "information_type: finding, recommendation, intervention, barrier, outcome, lesson or metric (rules/extraction_rules.md section 2)."],
-        ["5", "scope_basis: chapter, theme or both; themes: TECH codes from taxonomy/themes.csv, only where the passage materially concerns the area. Leave out incidental references."],
-        ["6", "Copy EU standard wording exactly into preparation_level or progress_level where it is used."],
-        ["7", "Leave a cell empty rather than guess. Add rows if needed."],
+        ["1", "Read a passage in sheet 'Passages'."],
+        ["2", "In sheet 'Hand-coded items', add one row for each claim you find in it: pick its type, paste the sentence, and pick its scope."],
+        ["3", "Types: finding (judges the situation), recommendation (says what should happen), intervention (a law, strategy, system or programme), barrier (what blocks progress), outcome (result of a named action), lesson, metric (a number)."],
+        ["4", "Scope: chapter (Chapter 2, workers), technology (the technology or digital issue itself is the subject), both, or out (not in scope)."],
+        ["5", "If one sentence makes two claims of different types, use two rows with the same sentence. Leave the other columns empty."],
+        ["6", "Do this before looking at any agent output for these passages."],
     ]
-    item_header = ["passage_id", "item_no", "information_type", "stated_text", "speaker", "subjects", "stated_status",
-                   "preparation_level", "progress_level", "event_date", "metric (indicator, value, unit)", "scope_basis", "themes", "flags", "note"]
-    items = [[p["passage_id"], str(n)] + [""] * (len(item_header) - 2) for p in passages for n in range(1, 13)]
+    item_header = ["passage_id", "item_no", "information_type", "stated_text", "scope", "note"]
+    items = [[p["passage_id"], str(n), "", "", "", ""] for p in passages for n in range(1, 13)]
     return "G3_handcoding.xlsx", [
         ("Instructions", ["step", "what to do"], instructions),
-        ("Proposed sample", ["source_id", "family", "title", "language", "pages", "reason", "reviewer_decision", "reviewer_comment"],
-         [[s["source_id"], reg.get(s["source_id"], {}).get("source_family", ""), reg.get(s["source_id"], {}).get("title", ""),
-           reg.get(s["source_id"], {}).get("language", ""), s.get("pages", ""), s["reason"], "", ""] for s in sample]),
         ("Passages", ["passage_id", "source_id", "title", "page", "why chosen", "text"],
          [[p["passage_id"], p["source_id"], reg.get(p["source_id"], {}).get("title", ""), p["page"], p["why"],
            passage_text(root, p["source_id"], p["page"], p["start_text"], p["end_text"])] for p in passages]),
         ("Hand-coded items", item_header, items),
-    ]
+    ], {"Hand-coded items": {"information_type": ["finding", "recommendation", "intervention", "barrier", "outcome", "lesson", "metric"],
+                             "scope": ["chapter", "technology", "both", "out"]}}
 
 
 def norm(text):
@@ -238,6 +244,89 @@ def handcoded(root, run):
         if r.get("passage_id") and (r.get("stated_text") or "").strip():
             out.setdefault(r["passage_id"], []).append(r)
     return out
+
+
+def review_sample(root, run, n_kept=50, n_removed=20, seed="RUN-2026-01-G3"):
+    """Stratified sample for a light manual check: kept items spread across sources, with flagged and translated
+    items over-represented, plus items removed by the rule revisions. Items inside a passage not yet hand-coded are left out."""
+    import random
+    from common import evidence_files, read_json
+    rng = random.Random(seed)
+    _, passages = read_csv(root / "review" / run / "G3_passages.csv")
+    hand = handcoded(root, run)
+    open_p = [(p, norm(passage_text(root, p["source_id"], p["page"], p["start_text"], p["end_text"]))) for p in passages if p["passage_id"] not in hand]
+    kept = {}
+    for f in evidence_files(root):
+        d = read_json(f)
+        for it in d["items"]:
+            if any(p["source_id"] == d["source_id"] and it["location"].get("page") == int(p["page"]) and norm(it["stated_text"]) in t for p, t in open_p):
+                continue
+            kept[it["item_id"]] = {**it, "_source": d["source_id"]}
+    removed = {}
+    for old in sorted((root / "review" / run).glob("sample_*/*.json")):
+        for it in read_json(old)["items"]:
+            if it["item_id"] not in kept:
+                removed[it["item_id"]] = {**it, "_source": old.stem, "_rules": old.parent.name.replace("sample_", "")}
+
+    def pick(pool, n, risky):
+        by_src = {}
+        for it in pool.values():
+            by_src.setdefault(it["_source"], []).append(it)
+        sources = sorted(by_src)
+        if not sources:
+            return []
+        alloc = {s: min(len(by_src[s]), max(2, round(n * len(by_src[s]) / max(1, len(pool))))) for s in sources}
+        while sum(alloc.values()) > n:
+            s = max(alloc, key=lambda k: alloc[k])
+            alloc[s] -= 1
+        chosen = []
+        for s in sources:
+            items = sorted(by_src[s], key=lambda i: i["item_id"])
+            hot = [i for i in items if risky(i)]
+            take = rng.sample(hot, min(len(hot), (alloc[s] + 1) // 2))
+            rest = [i for i in items if i not in take]
+            take += rng.sample(rest, min(len(rest), alloc[s] - len(take)))
+            chosen += take
+        return sorted(chosen, key=lambda i: i["item_id"])
+
+    risky = lambda i: bool(set(i["flags"]) & {"theme_doubtful", "ambiguous_type", "out_of_window", "possible_misread"}) or i.get("machine_translated")
+    return pick(kept, n_kept, risky), pick(removed, n_removed, lambda i: "theme" in i["scope_basis"])
+
+
+def g3_review_sample(root, run):
+    reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
+    kept, removed = review_sample(root, run)
+
+    def src(i):
+        r = reg.get(i["_source"], {})
+        return f"{r.get('institution', '')}, {(r.get('publication_date') or '')[:4]}"
+
+    def scope(i):
+        s = " and ".join("technology" if b == "theme" else b for b in i["scope_basis"])
+        return s + (f" ({', '.join(i['themes'])})" if i["themes"] else "")
+    start = [
+        ["What this is", f"A light check of the extraction method: {len(kept)} items the agent kept and {len(removed)} items the rule changes removed, chosen at random across all sources, with doubtful and translated items over-represented."],
+        ["Sheet 'Kept items'", "For each row, answer two questions in the yellow columns: Is the type right? Should it be in scope? If not, say what it should be in 'comment'."],
+        ["Sheet 'Removed items'", "For each row, answer one question: Should it have been kept? Say why in 'comment' if yes."],
+        ["Sheet 'Missed items'", "Only if you notice something important the agent missed: paste the sentence and its source."],
+        ["Time", "About 45 minutes. Short answers are enough: Yes or No from the drop-downs."],
+        ["What happens next", "The agent turns your answers into accuracy figures for G3: type accuracy (target about 9 in 10), scope errors, and important items wrongly removed or missed."],
+    ]
+    kept_rows = [[str(n), i["item_id"], src(i), str(i["location"].get("page") or i["location"].get("section") or ""), i["information_type"],
+                  i["stated_text"], i.get("translation_en") or "", scope(i), "", "", ""] for n, i in enumerate(kept, 1)]
+    removed_rows = [[str(n), i["item_id"], src(i), i["information_type"], i["stated_text"], i.get("translation_en") or "", scope(i),
+                     f"rules {i['_rules']}", "", ""] for n, i in enumerate(removed, 1)]
+    kept_header = ["row", "item_id", "source", "page", "type given", "quote", "English (machine translation)", "scope given",
+                   "Is the type right?", "Should it be in scope?", "comment"]
+    removed_header = ["row", "item_id", "source", "type", "quote", "English (machine translation)", "scope it had", "last kept under",
+                      "Should it have been kept?", "comment"]
+    return "G3_review_sample.xlsx", [
+        ("Start here", ["", ""], start),
+        ("Kept items", kept_header, kept_rows),
+        ("Removed items", removed_header, removed_rows),
+        ("Missed items", ["source_id", "page", "sentence", "comment"], []),
+    ], {"Kept items": {"Is the type right?": ["Yes", "No"], "Should it be in scope?": ["Yes", "No"]},
+        "Removed items": {"Should it have been kept?": ["Yes", "No"]}}
 
 
 def g3(root, run):
@@ -330,7 +419,7 @@ def g3(root, run):
     ]
 
 
-BUILDERS = {"G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3}
+BUILDERS = {"G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
 
 
 def main(argv=None):
@@ -341,12 +430,16 @@ def main(argv=None):
     p.add_argument("gate", choices=sorted(BUILDERS), help="gate to build the package for")
     p.add_argument("--run", default="RUN-2026-01", help="run ID (default RUN-2026-01)")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
+    p.add_argument("--force", action="store_true", help="overwrite a workbook the analyst fills in (hand-coding, review sample)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = project_root(a.root)
-    name, sheets = BUILDERS[a.gate](root, a.run)
+    built = BUILDERS[a.gate](root, a.run)
+    name, sheets, dropdowns = built if len(built) == 3 else (*built, None)
     out = root / "review" / a.run / name
-    write_workbook(out, sheets)
+    if name in PROTECTED and out.exists() and not a.force:
+        raise SystemExit(f"error: {out} exists and may hold the analyst's answers; use --force to overwrite")
+    write_workbook(out, sheets, dropdowns)
     print(f"wrote {out} ({len(sheets)} sheets)")
     return 0
 

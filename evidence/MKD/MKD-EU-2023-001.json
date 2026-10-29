@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2023-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
+    "rules_version": "0.3",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "2-128 (full report read via the table of contents and keyword search; Chapter 2 material on pages 77, 79-80; Chapter 10 on pages 90-92)",
     "codebook_version": "1.2",
-    "themes_version": "1.1",
-    "notes": "Whole report screened: Chapter 2 (cluster 2 summary page 77 and chapter section pages 79-80) extracted in full; every other section searched for passages that materially concern the technology theme, using the table of contents and keyword searches, with surrounding text read in context. Period covered taken from footnote 1 of the report (June 2022 to June 2023); the register leaves it blank. Claims repeated between the report summary and the chapter sections are extracted at each place (R10). Chapter 2 contains no technology element (no reference to EESSI or other electronic systems). Figures for online public services differ within the report (238 on page 81, 392 on page 91, 230 on page 122) and household internet access differs between page 66 (83.6%) and the annex (83.7). Revised on 2026-10-29 under extraction rules 0.2 (R1 to R11): items failing the narrower materiality test, digital skills items, a Chapter 2 item outside the run-record boundary and list lead-ins were removed, repeated claims were added at each place, page-break quotes were restored, and three 0.1b quotes that had started too early were corrected."
+    "themes_version": "1.2",
+    "notes": "Whole report screened: Chapter 2 (cluster 2 summary page 77 and chapter section pages 79-80) extracted in full; every other section searched for passages that materially concern the technology theme, using the table of contents and keyword searches, with surrounding text read in context. Period covered taken from footnote 1 of the report (June 2022 to June 2023); the register leaves it blank. Claims repeated between the report summary and the chapter sections are extracted at each place (R10). Chapter 2 contains no technology element (no reference to EESSI or other electronic systems). Figures for online public services differ within the report (238 on page 81, 392 on page 91, 230 on page 122) and household internet access differs between page 66 (83.6%) and the annex (83.7). Revised on 2026-10-29 under extraction rules 0.2 (R1 to R11): items failing the narrower materiality test, digital skills items, a Chapter 2 item outside the run-record boundary and list lead-ins were removed, repeated claims were added at each place, page-break quotes were restored, and three 0.1b quotes that had started too early were corrected. Second revision on 2026-10-29 under extraction rules 0.3 (R12 to R20): e-procurement, tax e-services and the agricultural e-application were treated as digital government and restored, the Chapter 2 integrity recommendation and two lead-ins with their own claim were restored, and no other item needed change."
   },
   "classification": {
     "status": "not_started"
@@ -2753,8 +2753,7 @@
         "theme"
       ],
       "themes": [
-        "TECH-DGOV",
-        "TECH-DIGI"
+        "TECH-DGOV"
       ],
       "dates": {
         "publication_date": "2023-11-08",
@@ -2785,10 +2784,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: e-procurement is a sector system, but the claim is about the electronic system itself as a digital public procedure; analyst to confirm under the narrower test. Retyped from finding to intervention under 0.2 (R11): names the electronic system for public procurement.",
+      "flags": [],
+      "extraction_note": "Retyped from finding to intervention under 0.2 (R11): names the electronic system for public procurement. Under 0.3 (R12): the e-procurement system is an online public service used by bidders (digital government).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2822,8 +2819,7 @@
         "theme"
       ],
       "themes": [
-        "TECH-DGOV",
-        "TECH-DIGI"
+        "TECH-DGOV"
       ],
       "dates": {
         "publication_date": "2023-11-08",
@@ -2854,10 +2850,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: see 0073.",
+      "flags": [],
+      "extraction_note": "Under 0.3 (R12): the e-procurement system is an online public service used by bidders (digital government).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2891,7 +2885,7 @@
         "theme"
       ],
       "themes": [
-        "TECH-DIGI"
+        "TECH-DGOV"
       ],
       "dates": {
         "publication_date": "2023-11-08",
@@ -2922,10 +2916,74 @@
         "unit": "procurements",
         "reference_period": "2022"
       },
-      "flags": [
-        "theme_doubtful"
+      "flags": [],
+      "extraction_note": "Under 0.3 (R12): the e-procurement system is an online public service used by bidders (digital government).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0076",
+      "information_type": "intervention",
+      "stated_text": "The electronic archive module ensures the integrity of electronic procedures by keeping the documentation in original electronic form, while the e - complaints module provides for an electronic exchange of data with the appeals procedures.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The e-procurement archive module keeps documentation in original electronic form, and the e-complaints module exchanges data electronically with appeal procedures.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "Institutional set-up and legal alignment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
       ],
-      "extraction_note": "theme_doubtful: see 0073.",
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "electronic archive module and e-complaints module of the electronic public procurement system",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under 0.3 (R12): modules of the e-procurement system used by bidders, including electronic complaints.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3246,6 +3304,70 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0088",
+      "information_type": "finding",
+      "stated_text": "Last year’s recommendations therefore remain valid",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The previous year's Chapter 2 recommendations remain valid.",
+      "location": {
+        "page": 80,
+        "page_end": null,
+        "section": "Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under 0.3 (R15): the lead-in states its own claim (the previous recommendations remain valid), not repeated in the recommendations below it.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4024,6 +4146,70 @@
       }
     },
     {
+      "item_id": "MKD-EU-2023-001-0101",
+      "information_type": "recommendation",
+      "stated_text": "The Employment Service Agency needs to adopt an integrity policy document strengthening the efforts to fight corruption.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Employment Service Agency needs to adopt an integrity policy document to strengthen anti-corruption efforts.",
+      "location": {
+        "page": 80,
+        "page_end": null,
+        "section": "Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The Employment Service Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under 0.3 (R14): an anti-corruption measure the Commission ties specifically to Chapter 2.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
       "item_id": "MKD-EU-2023-001-0102",
       "information_type": "recommendation",
       "stated_text": "adopt and start implementing the 2024 -2025 action plan to ensure that sectoral laws comply with the EU Services Directive, and increase the amount of information and ensure online access to services under a Point of Single Contact;",
@@ -4678,6 +4864,72 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0118",
+      "information_type": "finding",
+      "stated_text": "Last year’s recommendations remain valid.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The previous year's Chapter 10 recommendations remain valid.",
+      "location": {
+        "page": 90,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under 0.3 (R15): the lead-in states its own claim, found nowhere else in Chapter 10.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7339,6 +7591,74 @@
       }
     },
     {
+      "item_id": "MKD-EU-2023-001-0163",
+      "information_type": "recommendation",
+      "stated_text": "Regarding operational capacity and computerisation , the P RO still has to improve its business processes, implement a new integrated IT tax system replacing the current fragmented IT system, develop compliance risk management and continue to expand e - services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Public Revenue Office still has to improve processes, replace its fragmented IT system with an integrated one, and expand e-services.",
+      "location": {
+        "page": 92,
+        "page_end": null,
+        "section": "Chapter 16: Taxation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "16",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "P RO",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Restored under 0.3 (R12) for the tax e-services element ('continue to expand e-services'); the integrated IT tax system is a back-office system and is not the basis for the theme tag. Worded as what the PRO 'still has to' do; recorded as a recommendation (ambiguous_type: could be read as a finding).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
       "item_id": "MKD-EU-2023-001-0167",
       "information_type": "finding",
       "stated_text": "North Macedonia has taken steps toward the digital transformation of its educ ation and training system and digital skills are addressed throughout primary and secondary either cross-subject or through the subject of informatics",
@@ -7864,6 +8184,74 @@
       },
       "flags": [],
       "extraction_note": "Only the first element (linking to CECIS) concerns the theme. Standard progress wording copied as printed, applying to this sub-area only. Kept under 0.2 (R1): concerns connection to an EU electronic system (CECIS). eu_scale applies to the sub-area: civil protection: linking the national emergency communication system to CECIS.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0183",
+      "information_type": "intervention",
+      "stated_text": "A new e-application system for direct support has simplified the application process and control system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A new e-application system for direct support simplified the application process and control system.",
+      "location": {
+        "page": 111,
+        "page_end": null,
+        "section": "Chapter 11: Agriculture and rural development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "5",
+      "chapter": "11",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "e-application system for direct support",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Restored under 0.3 (R12): an online application service used by farmers. The 0.1b quote wrongly began three sentences earlier and is corrected. ambiguous_type: also reports an outcome (simplification).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

@@ -2,13 +2,13 @@
   "source_id": "MKD-RES-2023-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.1b",
+    "rules_version": "0.3",
     "extracted_at": "2026-10-29",
     "status": "sample",
-    "pages_processed": "1-66 (all read; items from 7, 27, 37, 49, 54-55, 58, 61-62)",
+    "pages_processed": "1-66 (all read; items from 7, 27, 55, 58, 61-63)",
     "codebook_version": "1.2",
-    "themes_version": "1.0",
-    "notes": "Whole study read. Under the Chapter 2 boundary in the run record (rules 0.2, R8), items are kept only where the text concerns access to the labour market and the movement of foreign workers: the Open Balkan labour market memorandum and its effects (eased or facilitated mobility, simplified employment rules, opening the labour market upon EU accession) and the inflow of Serbian workers into North Macedonia. Left out: emigration statistics and patterns of Macedonian workers, wage differentials and outflow claims not linked in the text to labour market access or foreign workers, general labour-market statistics and occupational gaps, and the policy recommendations on active labour market, education and regional investment policy (general labour-market policy). Recommendation headings that introduce lists are not extracted (R9). ICT occupations are mentioned often; judged incidental to the technology theme because technology is not the subject of the claims. Speaker is Finance Think unless the text attributes the claim to another body. Revised under rules 0.2 and themes 1.1 on 29 October 2026: 36 items removed (R8, R9), one missed claim added as -0056, and eu_scale.applies_to added (null throughout)."
+    "themes_version": "1.2",
+    "notes": "Whole study read. Under the Chapter 2 boundary in the run record (rules 0.2, R8), items are kept only where the text concerns access to the labour market and the movement of foreign workers: the Open Balkan labour market memorandum and its effects (eased or facilitated mobility, simplified employment rules, opening the labour market upon EU accession) and the inflow of Serbian workers into North Macedonia. Left out: emigration statistics and patterns of Macedonian workers, wage differentials and outflow claims not linked in the text to labour market access or foreign workers, general labour-market statistics and occupational gaps, and the policy recommendations on active labour market, education and regional investment policy (general labour-market policy). Recommendation headings that introduce lists are not extracted (R9). ICT occupations are mentioned often; judged incidental to the technology theme because technology is not the subject of the claims. Speaker is Finance Think unless the text attributes the claim to another body. Revised under rules 0.2 and themes 1.1 on 29 October 2026: 36 items removed (R8, R9), one missed claim added as -0056, and eu_scale.applies_to added (null throughout). Revised under rules 0.3 and themes 1.2 on 29 October 2026: Open Balkan items about North Macedonian workers moving out removed (R13: -0019, -0022 to -0025), recommendation heading -0049 restored (R15) and TECH-DGOV restored on -0001 (R12)."
   },
   "classification": {
     "status": "not_started"
@@ -35,9 +35,12 @@
       "cluster": "2",
       "chapter": "02",
       "scope_basis": [
-        "chapter"
+        "chapter",
+        "theme"
       ],
-      "themes": [],
+      "themes": [
+        "TECH-DGOV"
+      ],
       "dates": {
         "publication_date": "2023-09",
         "period_covered": "to 2022",
@@ -76,7 +79,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Status from 'have been signed so far'. Theme tag TECH-DGOV removed under the 0.2 materiality test (R1): the electronic application for an identification number is an online channel within a labour mobility measure, not framed as digital transformation of government. Subjects taken from the preceding sentence naming the three Open Balkan countries. No signature date is stated.",
+      "extraction_note": "Status from 'have been signed so far'. TECH-DGOV restored under R12: the electronic application for obtaining an identification number is an online procedure used directly by residents. Subjects taken from the preceding sentence naming the three Open Balkan countries. No signature date is stated.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -231,70 +234,6 @@
       }
     },
     {
-      "item_id": "MKD-RES-2023-001-0056",
-      "information_type": "finding",
-      "stated_text": "Free movement of the labor force is of particular importance for the region, especially in conditions of labor and skill scarcities.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Free movement of labour is particularly important for the region, especially given labour and skill shortages.",
-      "location": {
-        "page": 7,
-        "page_end": null,
-        "section": "1. Introduction",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2023-09",
-        "period_covered": "to 2022",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "Finance Think",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "the region",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Added in the 0.2 revision: a claim on page 7 missed in the 0.1b sample (not a page-break or duplicate case).",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
       "item_id": "MKD-RES-2023-001-0005",
       "information_type": "finding",
       "stated_text": "Whether simplified employment rules in these countries under the OBI umbrella will make them more attractive than EU countries depends on the wage levels in the destination country as the most significant factor affecting labor mobility..",
@@ -429,348 +368,6 @@
       },
       "flags": [],
       "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-RES-2023-001-0019",
-      "information_type": "finding",
-      "stated_text": "In the context of OBI, the eased labor mobility between the neighboring countries may worsen the medium-skill occupational gap, given that more than half of the labor migrants from North Macedonia possess medium skills (OECD, 2022).",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Eased Open Balkan labour mobility may worsen the medium-skill occupational gap, as most labour migrants from North Macedonia have medium skills.",
-      "location": {
-        "page": 37,
-        "page_end": null,
-        "section": "5.1 Occupational gaps at the national level",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2023-09",
-        "period_covered": "to 2022",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "Finance Think",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "hedged"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-RES-2023-001-0022",
-      "information_type": "finding",
-      "stated_text": "The deficit among the tertiary educated is the largest among information and communication technology professionals due to the large need for developers (442) and software testers (53), and a very limited supply of only 13 graduated information professionals (Table 5.5). The last may be further deepened as a result of the eased labor mobility within OBI, considering the fast growing ICT industry in neighbouring Serbia.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Skopje's largest tertiary-level deficit is ICT professionals, which eased Open Balkan mobility may deepen given Serbia's growing ICT industry.",
-      "location": {
-        "page": 49,
-        "page_end": null,
-        "section": "5.2.4 Skopje region",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2023-09",
-        "period_covered": "to 2022",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "Finance Think",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Serbia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "hedged"
-      ],
-      "extraction_note": "Two sentences quoted together because the second ('The last') refers back to the first.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-RES-2023-001-0023",
-      "information_type": "finding",
-      "stated_text": "Due to the proximity of the Skopje and North-East regions to neighboring Serbia, the facilitated labor mobility may cause a distortion of the regional labor markets for ICT occupations. The galloping development of this industry in Serbia, offering better employment opportunities, may increase the already existing deficit for ICT workers in both regions.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Facilitated mobility may distort Skopje and North-East ICT labour markets, as Serbia's growing ICT industry may deepen their deficits.",
-      "location": {
-        "page": 54,
-        "page_end": null,
-        "section": "5.2.5 National and regional comparison",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2023-09",
-        "period_covered": "to 2022",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "Finance Think",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Serbia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "hedged"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-RES-2023-001-0024",
-      "information_type": "finding",
-      "stated_text": "Due to the limited labour demand in the Polog region, the eased labor mobility may steer the large pool of unemployed to emigrate in search of employment in Albania, considering that two-thirds of the citizens of Polog are ethnic Albanians who will not face any language barriers.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Eased mobility may lead many unemployed in Polog to seek work in Albania, as most are ethnic Albanians without language barriers.",
-      "location": {
-        "page": 54,
-        "page_end": null,
-        "section": "5.2.5 National and regional comparison",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2023-09",
-        "period_covered": "to 2022",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "Finance Think",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Albania",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "hedged"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-RES-2023-001-0025",
-      "information_type": "barrier",
-      "stated_text": "Yet, the latter may be a disadvantage for the labor mobility of the citizens of the South-West region, where almost half are ethnic Macedonians.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Language may be a disadvantage for labour mobility of South-West region residents, almost half of whom are ethnic Macedonians.",
-      "location": {
-        "page": 54,
-        "page_end": null,
-        "section": "5.2.5 National and regional comparison",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2023-09",
-        "period_covered": "to 2022",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "Finance Think",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "hedged"
-      ],
-      "extraction_note": "'The latter' refers to language barriers in the previous sentence (previous item).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1375,6 +972,134 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-RES-2023-001-0049",
+      "information_type": "recommendation",
+      "stated_text": "Creating tailor-made educational policies to steer creation of workers in the deficit occupations, reducing the need for import of foreign workers and preventing that their prospective import plagues domestic unemployed into a very long-term unemployment:",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Educational policies should produce workers for deficit occupations, reducing need to import foreign workers and preventing long-term unemployment of domestic unemployed.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "6. Conclusions and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2023-09",
+        "period_covered": "to 2022",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Finance Think",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under R15: the heading carries its own claim (reducing the need to import foreign workers), which the bullet points below it do not repeat.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-RES-2023-001-0056",
+      "information_type": "finding",
+      "stated_text": "Free movement of the labor force is of particular importance for the region, especially in conditions of labor and skill scarcities.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Free movement of labour is particularly important for the region, especially given labour and skill shortages.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "1. Introduction",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2023-09",
+        "period_covered": "to 2022",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Finance Think",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the region",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added in the 0.2 revision: a claim on page 7 missed in the 0.1b sample (not a page-break or duplicate case).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2026-005",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
+    "rules_version": "0.3",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "1 (whole webpage, single section)",
     "codebook_version": "1.2",
-    "themes_version": "1.1",
-    "notes": "Whole readout read. The meeting agenda lists freedom of movement for workers, but the readout reports no discussion of, or claim about, Chapter 2; no chapter-basis items. Theme items come from the digital transformation and media paragraph. Left out as not material or out of scope: education, Erasmus+, youth, culture, audiovisual media agency funding, social policy and employment, gender-disaggregated data (incidental: statistics without data systems), research and innovation data for the European Innovation Scoreboard (incidental), Smart Specialisation Strategy and INOVA (no digital content stated), and the Commission's statement of support. cluster and chapter left empty for theme items: the readout gives no chapter numbers and the material is not Chapter 2. Speaker recorded as 'the Commission' as printed; the meeting year is not stated in the text, so event_date is left empty. Revised under rules 0.2 and themes 1.1 on 29 October 2026: two items retyped as interventions (R11), one theme_doubtful flag resolved, eu_scale.applies_to added (null throughout); no items removed or added."
+    "themes_version": "1.2",
+    "notes": "Whole readout read. The meeting agenda lists freedom of movement for workers, but the readout reports no discussion of, or claim about, Chapter 2; no chapter-basis items. Theme items come from the digital transformation and media paragraph. Left out as not material or out of scope: education, Erasmus+, youth, culture, audiovisual media agency funding, social policy and employment, gender-disaggregated data (incidental: statistics without data systems), research and innovation data for the European Innovation Scoreboard (incidental), Smart Specialisation Strategy and INOVA (no digital content stated), and the Commission's statement of support. cluster and chapter left empty for theme items: the readout gives no chapter numbers and the material is not Chapter 2. Speaker recorded as 'the Commission' as printed; the meeting year is not stated in the text, so event_date is left empty. Revised under rules 0.2 and themes 1.1 on 29 October 2026: two items retyped as interventions (R11), one theme_doubtful flag resolved, eu_scale.applies_to added (null throughout); no items removed or added. Revised under rules 0.3 and themes 1.2 on 29 October 2026: the two 112 emergency number items (-0004, -0005) removed under R20."
   },
   "classification": {
     "status": "not_started"
@@ -203,143 +203,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Kept under the 0.2 materiality test: integration into the Digital Single Market is itself a digital policy subject; theme_doubtful removed. Same sentence as the next two items.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2026-005-0004",
-      "information_type": "intervention",
-      "stated_text": "The Commission also welcomed the commitment of North Macedonia to continue advancing integration into the Digital Single Market, and the implementation of the 112 European emergency number, while noting the need to provide a clear timeline for the second phase of implementation.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The Commission welcomed the implementation of the 112 European emergency number in North Macedonia.",
-      "location": {
-        "page": 1,
-        "page_end": null,
-        "section": "EU-North Macedonia 21st Subcommittee on Innovation, Information Society and Social Policy",
-        "paragraph": null,
-        "snapshot_file": "sources/MKD/EU/originals/MKD-EU-2026-005_EEAS-SA-Subcommittee-21-2026.html"
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": null,
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INFRA"
-      ],
-      "dates": {
-        "publication_date": "2026-04-30",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "the Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "112 European emergency number",
-      "stated_status": "in_progress",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Retyped from finding to intervention under rule R11 (named system). Status in_progress: the text refers to its implementation with a second phase still to be timetabled. Theme still doubtful: 112 is an emergency communications service; unclear whether it is itself a digital infrastructure subject (TECH-INFRA) or an emergency-services measure using electronic communications.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2026-005-0005",
-      "information_type": "recommendation",
-      "stated_text": "The Commission also welcomed the commitment of North Macedonia to continue advancing integration into the Digital Single Market, and the implementation of the 112 European emergency number, while noting the need to provide a clear timeline for the second phase of implementation.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The Commission noted the need for North Macedonia to provide a clear timeline for the second phase of implementing the 112 emergency number.",
-      "location": {
-        "page": 1,
-        "page_end": null,
-        "section": "EU-North Macedonia 21st Subcommittee on Innovation, Information Society and Social Policy",
-        "paragraph": null,
-        "snapshot_file": "sources/MKD/EU/originals/MKD-EU-2026-005_EEAS-SA-Subcommittee-21-2026.html"
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": null,
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INFRA"
-      ],
-      "dates": {
-        "publication_date": "2026-04-30",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "the Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Recommendation part of the same sentence (noting the need for a timeline). Theme still doubtful for the same reason as item MKD-EU-2026-005-0004.",
+      "extraction_note": "Kept under the materiality test: integration into the Digital Single Market is itself a digital policy subject. The rest of the same sentence, on the 112 emergency number, is not extracted (rule R20).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

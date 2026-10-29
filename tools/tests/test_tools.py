@@ -263,6 +263,11 @@ def main():
         check("validate_data.py", "unknown theme code detected", "unknown theme code TECH-NOPE" in r.stdout)
         check("validate_data.py", "unknown reform issue detected", "unknown reform issue RI-FMW-999" in r.stdout)
         check("validate_data.py", "duplicate item ID detected", "duplicate item ID" in r.stdout)
+        long_q = json.loads(ev.read_text(encoding="utf-8"))
+        long_q["items"][0]["stated_text"] = "One claim. Two claims. Three claims. Four claims."
+        ev.write_text(json.dumps(long_q, ensure_ascii=False), encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "quote longer than three sentences gives a warning", "quote has about 4 sentences" in r.stdout, r.stdout[-300:])
         ev.write_text(json.dumps(good, ensure_ascii=False), encoding="utf-8")
         rr = proj / "taxonomy" / "reform_issues.csv"
         orig_hdr = rr.read_text(encoding="utf-8")
@@ -308,7 +313,8 @@ def main():
         if ok:
             wb = load_workbook(rv / "G3_handcoding.xlsx")
             psg = wb["Passages"].cell(2, 6).value or ""
-            ok = wb.sheetnames == ["Instructions", "Proposed sample", "Passages", "Hand-coded items"] and psg.startswith("The country has some level")
+            ok = wb.sheetnames == ["Instructions", "Passages", "Hand-coded items"] and psg.startswith("The country has some level") \
+                and [c.value for c in wb["Hand-coded items"][1]] == ["passage_id", "item_no", "information_type", "stated_text", "scope", "note"]
         check("export_review.py", "G3 hand-coding workbook: passage text taken from the cited page", ok, r.stderr[-300:])
         (rv / "sample_0.1").mkdir(parents=True, exist_ok=True)
         earlier = json.loads(ev.read_text(encoding="utf-8"))
@@ -326,6 +332,15 @@ def main():
             comp = [row for row in wb["Hand-coding comparison"].iter_rows(min_row=2, values_only=True)]
             ok = f"{sid}-0001" not in shown and comp and comp[0][1] == "awaiting hand-coding"
         check("export_review.py", "G3: agent items in a passage are withheld until it is hand-coded", ok, r.stderr[-300:])
+        r = run(proj, "export_review.py", "G3-handcoding")
+        check("export_review.py", "hand-coding workbook is not overwritten without --force", r.returncode != 0 and "--force" in r.stdout + r.stderr)
+        r = run(proj, "export_review.py", "G3-review-sample")
+        ok = r.returncode == 0 and (rv / "G3_review_sample.xlsx").exists()
+        if ok:
+            ws = load_workbook(rv / "G3_review_sample.xlsx")
+            kept_ids = [c.value for c in ws["Kept items"]["B"][1:]]
+            ok = ws.sheetnames == ["Start here", "Kept items", "Removed items", "Missed items"] and f"{sid}-0001" not in kept_ids and len(kept_ids) > 0
+        check("export_review.py", "review sample builds, leaves out passage items not yet hand-coded", ok, r.stderr[-300:])
         hw = load_workbook(rv / "G3_handcoding.xlsx")
         ws = hw["Hand-coded items"]
         ws.cell(2, 3).value = "finding"

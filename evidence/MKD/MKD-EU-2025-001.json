@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2025-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
+    "rules_version": "0.3",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "2-105",
     "codebook_version": "1.2",
-    "themes_version": "1.1",
-    "notes": "Pass 1 sample extraction from the converted text file. Read the table of contents (pages 2-3), the whole of section 1.2 Main findings (pages 4-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading pages fully where the table of contents or a keyword search showed technology content (public administration reform pp. 24-27, Chapter 23 pp. 29-41, Chapter 24 pp. 45-54, economic criteria pp. 55-61, Chapters 5 and 18 pp. 62-64, Cluster 2 pp. 67-73, Chapter 10 pp. 73-75, Clusters 3 to 6 pp. 75-97, Annexes I and II pp. 97-105). Chapter 2 appears twice: a summary under 1.2 (page 11) and the full section (page 68); both are extracted as separate items. All Chapter 2 claims extracted; elsewhere only passages meeting the materiality test, with doubtful cases flagged theme_doubtful. Period covered taken from footnote 1 of the report (1 September 2024 to 1 September 2025) because the register field is empty. Text-file page numbers are printed page numbers plus one. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, online media register) was treated as outside the technology theme, except net neutrality. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: the narrower materiality test removed sector IT tools and digital skills items, eu_scale.applies_to was added, statuses and types were corrected, and two claims crossing page breaks were restored as new items -0203 and -0204; item IDs of kept items are unchanged."
+    "themes_version": "1.2",
+    "notes": "Pass 1 sample extraction from the converted text file. Read the table of contents (pages 2-3), the whole of section 1.2 Main findings (pages 4-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading pages fully where the table of contents or a keyword search showed technology content (public administration reform pp. 24-27, Chapter 23 pp. 29-41, Chapter 24 pp. 45-54, economic criteria pp. 55-61, Chapters 5 and 18 pp. 62-64, Cluster 2 pp. 67-73, Chapter 10 pp. 73-75, Clusters 3 to 6 pp. 75-97, Annexes I and II pp. 97-105). Chapter 2 appears twice: a summary under 1.2 (page 11) and the full section (page 68); both are extracted as separate items. All Chapter 2 claims extracted; elsewhere only passages meeting the materiality test, with doubtful cases flagged theme_doubtful. Period covered taken from footnote 1 of the report (1 September 2024 to 1 September 2025) because the register field is empty. Text-file page numbers are printed page numbers plus one. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, online media register) was treated as outside the technology theme, except net neutrality. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: the narrower materiality test removed sector IT tools and digital skills items, eu_scale.applies_to was added, statuses and types were corrected, and two claims crossing page breaks were restored as new items -0203 and -0204; item IDs of kept items are unchanged. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: online services used by citizens or businesses (e-procurement, eHealth, industrial property and customs e-services) were restored with their 0.1b IDs, the Chapter 2 Employment Agency anti-corruption item was restored, and the seasonal-worker agreements item was removed as concerning nationals' access to EU labour markets."
   },
   "classification": {
     "status": "not_started"
@@ -482,6 +482,73 @@
       }
     },
     {
+      "item_id": "MKD-EU-2025-001-0009",
+      "information_type": "finding",
+      "stated_text": "Limited progress was made since the last reporting period with the updated version of the electronic public procurement system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Commission found limited progress on public procurement, achieved with the updated electronic public procurement system.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "1.2. MAIN FINDINGS OF THE REPORT > Chapter 5: Public procurement",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": "Limited progress",
+        "applies_to": "chapter"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: the electronic public procurement system is an online service used by bidders. eu_scale applies to the whole of Chapter 5.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
       "item_id": "MKD-EU-2025-001-0010",
       "information_type": "finding",
       "stated_text": "North Macedonia is at an early stage of preparation  on the freedom of movement for workers, and no progress was made in this area.",
@@ -869,6 +936,78 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0018",
+      "information_type": "recommendation",
+      "stated_text": "make eHealth data interoperable with Health Insurance Fund data, and increase funding, awareness and human resources in the area of health, particularly for cancer detection.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The country should make eHealth data interoperable with Health Insurance Fund data and increase health funding, awareness and staff, especially for cancer detection.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. MAIN FINDINGS OF THE REPORT > Chapter 28: Consumer and health protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Health Insurance Fund",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: concerns the citizen-facing eHealth system; the interoperability asked for is with Health Insurance Fund data.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3753,6 +3892,207 @@
       }
     },
     {
+      "item_id": "MKD-EU-2025-001-0091",
+      "information_type": "metric",
+      "stated_text": "In 2024, the electronic procurement system facilitated 350 small -value procurement transactions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In 2024 the electronic procurement system handled 350 small-value procurement transactions.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "2.4. Public procurement, statistics, financial control > Chapter 5: Public procurement > Implementation and enforcement capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Small-value procurement transactions through the electronic procurement system",
+        "value": 350,
+        "unit": "transactions",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: e-procurement used by bidders.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0092",
+      "information_type": "finding",
+      "stated_text": "The electronic procurement system continues to function efficiently.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The electronic procurement system continues to work efficiently.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "2.4. Public procurement, statistics, financial control > Chapter 5: Public procurement > Implementation and enforcement capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: e-procurement used by bidders.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0093",
+      "information_type": "intervention",
+      "stated_text": "On 1  Apr 2025, the Public Procurement Bureau launched an updated version of the electronic public procurement system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "On 1 April 2025 the Public Procurement Bureau launched an updated electronic public procurement system.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "2.4. Public procurement, statistics, financial control > Chapter 5: Public procurement > Implementation and enforcement capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": "2025-04-01",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Public Procurement Bureau",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Updated electronic public procurement system",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: e-procurement used by bidders.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
       "item_id": "MKD-EU-2025-001-0094",
       "information_type": "intervention",
       "stated_text": "The two countries also signed memoranda of understanding to cooperate on judicial reform and the digitalisation of public services.",
@@ -4399,78 +4739,6 @@
       }
     },
     {
-      "item_id": "MKD-EU-2025-001-0105",
-      "information_type": "intervention",
-      "stated_text": "The country has signed bilateral agreements with Germany and Slovenia for seasonal workers.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia has signed bilateral seasonal worker agreements with Germany and Slovenia.",
-      "location": {
-        "page": 68,
-        "page_end": null,
-        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 2: Freedom of movement for workers",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-11-04",
-        "period_covered": "2024-09-01/2025-09-01",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "The country",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Germany",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Slovenia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "Bilateral agreements on seasonal workers with Germany and Slovenia",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Kept under rule 0.2 R8 as labour mobility agreements with EU Member States; the text does not state the direction of the seasonal work.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
       "item_id": "MKD-EU-2025-001-0106",
       "information_type": "finding",
       "stated_text": "On the European Employment Services ( EURES), there were no developments over the reporting period.",
@@ -4721,6 +4989,70 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0110",
+      "information_type": "finding",
+      "stated_text": "The Employment Agency applies the Code of Civil Servants but has not yet adopted an integrity policy to strengthen the efforts to fight corruption.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Employment Agency applies the civil servants' code but has no integrity policy to strengthen anti-corruption efforts.",
+      "location": {
+        "page": 68,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Employment Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R14: an anti-corruption measure the Commission places under Chapter 2 for the Employment Agency.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5052,6 +5384,211 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0117",
+      "information_type": "intervention",
+      "stated_text": "On enforcement, SOIP has made efforts to speed up the digitalisation of its database and online public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The State Office for Industrial Property worked to speed up digitalising its database and online public services.",
+      "location": {
+        "page": 71,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 7: Intellectual property law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "07",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "SOIP",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Digitalisation of the SOIP database and online services",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: online public services of the State Office for Industrial Property. Status set to in_progress (rule 0.2 R5): 'made efforts to speed up'.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0123",
+      "information_type": "intervention",
+      "stated_text": "While the national eHealth system and its mobile application were upgraded with a number of new modules and functions, the appointment system needs to be improved,  and it is not yet interoperable with the Health Insurance Fund data",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The national eHealth system and its mobile application were upgraded with new modules and functions.",
+      "location": {
+        "page": 73,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 28: Consumer and health protection > Public health",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "national eHealth system",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Upgrade of the national eHealth system and mobile application",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: the national eHealth system and its mobile application are used by citizens. Same sentence as item -0124. The text file has no full stop at the end of this sentence.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0124",
+      "information_type": "finding",
+      "stated_text": "While the national eHealth system and its mobile application were upgraded with a number of new modules and functions, the appointment system needs to be improved,  and it is not yet interoperable with the Health Insurance Fund data",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The eHealth appointment system needs improvement and the system is not yet interoperable with Health Insurance Fund data.",
+      "location": {
+        "page": 73,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 28: Consumer and health protection > Public health",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "national eHealth system",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Health Insurance Fund",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restored under rule 0.3 R12: the eHealth appointment system is used by citizens.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7180,6 +7717,75 @@
         "theme_doubtful"
       ],
       "extraction_note": "Theme doubtful: a national interoperability platform used by customs; it is government interoperability but not stated to connect to EU systems.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0167",
+      "information_type": "recommendation",
+      "stated_text": "To be t o be able to address the current workload and the planned reform agenda for the expansion of customs eservices , staff recruitment is necessary, in particular in IT.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Customs needs to recruit staff, particularly in IT, to handle its workload and planned expansion of customs e-services.",
+      "location": {
+        "page": 83,
+        "page_end": null,
+        "section": "Cluster 3: Competitiveness and inclusive growth > Chapter 29: Customs union",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "29",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "Restored under rule 0.3 R12: customs e-services are used by traders. The text repeats 'To be t o be able'; quoted as in the text file.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

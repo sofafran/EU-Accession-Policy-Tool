@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2020-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
+    "rules_version": "0.3",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "2-103",
     "codebook_version": "1.2",
-    "themes_version": "1.1",
-    "notes": "Pass 1 sample extraction. Read the table of contents (pages 2-3), the report summary (pages 5-8), the Chapter 2 section (page 62) and every other section for passages materially concerning the technology and AI theme, using the table of contents and keyword searches with surrounding context (democracy, public administration reform, Chapters 23 and 24, economic criteria, Chapters 1 to 33). The 2020 report has no cluster structure; cluster '2' is set only for Chapter 2 items as instructed, and left empty elsewhere. The statistical annex (pages 104-109) was not extracted: its broadband and internet figures are a table covering 2007 to 2018, before the run window. period_covered is empty in the source register and the report does not state its reporting period, so it is left null. Several items record 2019 events reported in this in-window source; they carry the out_of_window flag for the analyst to decide, as no logged exception covers them. Page numbers are the text file's PAGE markers, which run one higher than the printed page numbers. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: sector IT tools, online publishing, sector statistics data, digital skills and pre-window claims not needed were removed, eu_scale.applies_to was set, in_progress statuses and retyping applied, and the page number was removed from the one cross-page quote; kept items keep their 0.1b IDs."
+    "themes_version": "1.2",
+    "notes": "Pass 1 sample extraction. Read the table of contents (pages 2-3), the report summary (pages 5-8), the Chapter 2 section (page 62) and every other section for passages materially concerning the technology and AI theme, using the table of contents and keyword searches with surrounding context (democracy, public administration reform, Chapters 23 and 24, economic criteria, Chapters 1 to 33). The 2020 report has no cluster structure; cluster '2' is set only for Chapter 2 items as instructed, and left empty elsewhere. The statistical annex (pages 104-109) was not extracted: its broadband and internet figures are a table covering 2007 to 2018, before the run window. period_covered is empty in the source register and the report does not state its reporting period, so it is left null. Several items record 2019 events reported in this in-window source; they carry the out_of_window flag for the analyst to decide, as no logged exception covers them. Page numbers are the text file's PAGE markers, which run one higher than the printed page numbers. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: sector IT tools, online publishing, sector statistics data, digital skills and pre-window claims not needed were removed, eu_scale.applies_to was set, in_progress statuses and retyping applied, and the page number was removed from the one cross-page quote; kept items keep their 0.1b IDs. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: 112 emergency number items removed (R20), tax e-services and e-procurement items confirmed as digital government without doubt flags (R12), and two quotes cut to the claim (R18); no removed item met the restore criteria."
   },
   "classification": {
     "status": "not_started"
@@ -2273,7 +2273,7 @@
     {
       "item_id": "MKD-EU-2020-001-0055",
       "information_type": "intervention",
-      "stated_text": "The 2016 -2020 police development strategy and the action plan, as well as the 2017 -2020 national small arms and light weapons control strategy and action plan and a 2018 -2022 national cybersecurity strategy and action plan are all being implemented.",
+      "stated_text": "a 2018 -2022 national cybersecurity strategy and action plan are all being implemented.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -2321,7 +2321,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "The sentence lists three other strategies that are not technology related; only the cybersecurity strategy is in scope. Status: 'being implemented'. Status set to in_progress under rules 0.2: implementation is described as ongoing.",
+      "extraction_note": "Quote cut to the claim under rules 0.3 (R18): it is the last part of a sentence that lists three other strategies which are not technology related, hence 'are all'. Status in_progress: implementation is described as ongoing.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3868,7 +3868,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "The sentence also covers capacity of procurement bodies, which is not technology related. Kept under rules 0.2: the e-procurement portal is an online procedure for businesses (digital public service), not a back-office sector system.",
+      "extraction_note": "The sentence also covers capacity of procurement bodies, which is not technology related. Kept under rules 0.3 (R12): the e-procurement portal is an online public service used directly by bidders.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3934,7 +3934,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Quote stops before the second part of the bullet (alignment with the EU Directives on concessions), which is not technology related. Kept under rules 0.2: the e-procurement portal is an online procedure for businesses (digital public service), not a back-office sector system.",
+      "extraction_note": "Quote stops before the second part of the bullet (alignment with the EU Directives on concessions), which is not technology related. Kept under rules 0.3 (R12): the e-procurement portal is an online public service used directly by bidders.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3995,7 +3995,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Kept under rules 0.2: the e-procurement portal is an online procedure for businesses (digital public service), not a back-office sector system.",
+      "extraction_note": "Kept under rules 0.3 (R12): the e-procurement portal is an online public service used directly by bidders.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4056,7 +4056,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Status 'being developed': in_progress under rules 0.2. Status 'being developed': under way but not complete; recorded as unclear. Kept under rules 0.2: the e-procurement portal is an online procedure for businesses (digital public service), not a back-office sector system.",
+      "extraction_note": "Status 'being developed': in_progress under rules 0.2. Status 'being developed': under way but not complete; recorded as unclear. Kept under rules 0.3 (R12): the e-procurement portal is an online public service used directly by bidders.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4330,72 +4330,6 @@
       }
     },
     {
-      "item_id": "MKD-EU-2020-001-0106",
-      "information_type": "recommendation",
-      "stated_text": "continue to implement the action plan for int roducing the 112 emergency number and allocate the necessary financial resources.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The country should continue implementing the 112 emergency number action plan and allocate the necessary funds.",
-      "location": {
-        "page": 71,
-        "page_end": null,
-        "section": "5.10 Chapter 10: Information society and media",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": "10",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INFRA"
-      ],
-      "dates": {
-        "publication_date": "2020-10-06",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "the country",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Kept without the doubtful flag under rules 0.2: the 112 number is an electronic communications service regulated in Chapter 10.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
       "item_id": "MKD-EU-2020-001-0107",
       "information_type": "intervention",
       "stated_text": "As part of the Digital Agenda for Europe, the country continued to implement the priorities set in the 2019 -2023 national broadband strategy and the 2018 -2022 national cyber security strategy.",
@@ -4514,67 +4448,6 @@
       },
       "flags": [],
       "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2020-001-0109",
-      "information_type": "intervention",
-      "stated_text": "Preparations are under way to introduce the 112 European emergency number.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Preparations are under way to introduce the 112 European emergency number.",
-      "location": {
-        "page": 71,
-        "page_end": null,
-        "section": "5.10 Chapter 10: Information society and media",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": "10",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INFRA"
-      ],
-      "dates": {
-        "publication_date": "2020-10-06",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [],
-      "intervention_as_stated": "112 European emergency number",
-      "stated_status": "in_progress",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Kept without the doubtful flag under rules 0.2: the 112 number is an electronic communications service regulated in Chapter 10. Status set to in_progress under rules 0.2: the work is described as under way.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5485,7 +5358,6 @@
         "theme"
       ],
       "themes": [
-        "TECH-DIGI",
         "TECH-DGOV"
       ],
       "dates": {
@@ -5517,10 +5389,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Doubtful under the narrower test: tax e-services are digital public services, but the IT tax model and automated risk management are sector tools within tax administration reform.",
+      "flags": [],
+      "extraction_note": "Kept under rules 0.3 (R12): extending e-services for taxpayers is a digital public service. The IT tax model and automated risk management in the same quote are back-office sector tools and carry no theme tag of their own.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5554,7 +5424,6 @@
         "theme"
       ],
       "themes": [
-        "TECH-DIGI",
         "TECH-DGOV"
       ],
       "dates": {
@@ -5586,10 +5455,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Doubtful under the narrower test: tax e-services are digital public services, but the IT tax model and automated risk management are sector tools within tax administration reform.",
+      "flags": [],
+      "extraction_note": "Kept under rules 0.3 (R12): extending e-services for taxpayers is a digital public service. The IT tax model and automated risk management in the same quote are back-office sector tools and carry no theme tag of their own.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5654,10 +5521,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Doubtful under the narrower test: tax e-services are digital public services, but the IT tax model and automated risk management are sector tools within tax administration reform.",
+      "flags": [],
+      "extraction_note": "Kept under rules 0.3 (R12): pre-filled tax returns on an electronic platform are an online public service used directly by taxpayers.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5985,11 +5850,11 @@
     {
       "item_id": "MKD-EU-2020-001-0160",
       "information_type": "intervention",
-      "stated_text": "It is also providing the JRC data collection system with data on COVID-19 and nominated a correspondent to the European Centre for Disease Control and Prevention.",
+      "stated_text": "It is also providing the JRC data collection system with data on COVID-19",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The country provides COVID-19 data to the JRC data collection system and nominated an ECDC correspondent.",
+      "summary": "The country provides COVID-19 data to the JRC data collection system.",
       "location": {
         "page": 96,
         "page_end": null,
@@ -6036,7 +5901,7 @@
       "flags": [
         "theme_doubtful"
       ],
-      "extraction_note": "The second half of the sentence (nomination of a correspondent) is not technology related. Doubtful: data are provided to an EU data collection system, but the text does not say the exchange is electronic.",
+      "extraction_note": "Quote cut to the claim under rules 0.3 (R18); the rest of the sentence (nomination of an ECDC correspondent) is left out. Doubtful: data are provided to an EU data collection system, but the text does not say the exchange is electronic.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

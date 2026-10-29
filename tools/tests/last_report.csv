@@ -1,7 +1,7 @@
 tool,test,result,detail
-hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmpgx3irkw0/samples/a.txt
+hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmpliwei4v9/samples/a.txt
 "
-next_id.py,next limit after the highest recorded,pass,"LIM-0023
+next_id.py,next limit after the highest recorded,pass,"LIM-0024
 "
 next_id.py,next lesson after the highest recorded,pass,"ALN-0015
 "
@@ -13,10 +13,10 @@ next_id.py,next item after the highest in the file,pass,"MKD-EU-2025-004-0008
 "
 next_id.py,"refuses a source ID without country, family and year",pass,
 convert_to_text.py,text PDF: page markers and text,pass,
-convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmpgx3irkw0/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
+convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmpliwei4v9/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
 "
 convert_to_text.py,original file unchanged,pass,
-convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmpgx3irkw0/samples/scan.txt: 1 page(s)
+convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmpliwei4v9/samples/scan.txt: 1 page(s)
 ocr: text recognition used on page(s) 1 (mkd+eng); note 'ocr' in the register
 "
 convert_to_text.py,scanned PDF: Macedonian Cyrillic recognised,pass,"=== PAGE 1 ===
@@ -44,7 +44,7 @@ verify_quotes.py,page break with numbered running header and footnotes between t
 verify_quotes.py,exit status 1 when any quote fails,pass,
 verify_quotes.py,report written,pass,
 verify_quotes.py,"webpage: quote in cited section passes, other section fails",pass,"[True, False]"
-validate_data.py,clean sample project passes,pass,"validate_data 1.0.0: 1 evidence file(s), 4 item(s), 346 CSV row(s)
+validate_data.py,clean sample project passes,pass,"validate_data 1.1.0: 1 evidence file(s), 4 item(s), 347 CSV row(s)
 warning: judgements/judgements.csv: no committed version to compare with; protection check skipped
 warning: judgements/source_quality.csv: no committed version to compare with; protection check skipped
 0 error(s), 2 warning(s)
@@ -52,8 +52,14 @@ warning: judgements/source_quality.csv: no committed version to compare with; pr
 validate_data.py,unknown theme code detected,pass,
 validate_data.py,unknown reform issue detected,pass,
 validate_data.py,duplicate item ID detected,pass,
+validate_data.py,quote longer than three sentences gives a warning,pass,"ents/source_quality.csv: no committed version to compare with; protection check skipped
+error: MKD-EU-2025-001.json: duplicate item ID MKD-EU-2025-001-0002
+error: MKD-EU-2025-001-0001: unknown theme code TECH-NOPE
+error: MKD-EU-2025-001-0001: unknown reform issue RI-FMW-999
+3 error(s), 3 warning(s)
+"
 validate_data.py,CSV header mismatch with data dictionary detected,pass,
-validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.0.0: 1 evidence file(s), 4 item(s), 347 CSV row(s)
+validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.1.0: 1 evidence file(s), 4 item(s), 348 CSV row(s)
 warning: judgements/judgements.csv: JDG-000001 is validated but its value has changed; restore it and propose a new row instead
 0 error(s), 1 warning(s)
 "
@@ -64,6 +70,8 @@ export_review.py,"G0: decisions needed come first, freeze date at the top",pass,
 export_review.py,G3 hand-coding workbook: passage text taken from the cited page,pass,
 export_review.py,G3: comparison with the earlier sample lists removed items,pass,['MKD-EU-2025-001-0099']
 export_review.py,G3: agent items in a passage are withheld until it is hand-coded,pass,
+export_review.py,hand-coding workbook is not overwritten without --force,pass,
+export_review.py,"review sample builds, leaves out passage items not yet hand-coded",pass,
 export_review.py,"G3: comparison finds matched, missed and extra items once hand-coded",pass,"['matched', 'missed by the agent', 'extra in the agent output']"
 build_review_page.py,page builds,pass,
 build_review_page.py,G0 shown as pending review while its package awaits decision,pass,
