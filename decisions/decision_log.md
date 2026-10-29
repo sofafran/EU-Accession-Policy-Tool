@@ -85,3 +85,4 @@ Confirmed by Sofia after the pilot reconfiguration. These are to be included in 
 - 2026-10-29: Pre-G0 resolutions recorded (schema and `out_of_scope` status confirmed; no Macedonian- or Albanian-speaking reviewer; area codes left to G4; accession status facts to be verified at stage 1; no Word copies for this pilot at this stage; missing process flow diagram recorded as a non-blocking gap).
 - 2026-10-29: E6 to E9 approved (alpha product, review page, alpha learning log, George as alpha reviewer); E4 amended; LIM-0007 superseded by LIM-0013. Folded into the current pre-G0 versions.
 - 2026-10-29: E10 approved: repository and review page public for the alpha, agreed with George.
+- 2026-10-29: G0 passed with conditions (GATE-0001). The pre-G0 decisions (A5 to A9, D6, E5 to E10, F2) and versions confirmed; freeze date set to 2026-10-29.
