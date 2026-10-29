@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.5.0"
+__version__ = "1.5.1"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -464,6 +464,8 @@ def g4(root, run):
         ("Items under each issue", ["issue_id", "label", "item_id", "type", "quote", "English (machine translation)", "source"], sample_rows),
         ("Items fitting no issue", ["item_id", "type", "quote", "note"], unmatched),
         ("Mechanisms", me_h + ["reviewer_decision", "reviewer_comment"], [[m[h] for h in me_h] + ["", ""] for m in mechs]),
+        *[("Mechanism proposals", h + ["reviewer_decision", "reviewer_comment"], [[x[k] for k in h] + ["", ""] for x in r])
+          for h, r in [read_csv(root / "review" / run / "G4_mechanism_proposals.csv")] if r],
         ("Theme doubtful items", ["item_id", "type", "quote", "themes", "note"], doubtful),
         ("Second-pass check", ["source_id", "items added", "items split"], sp),
         lessons_sheet(root, run),
