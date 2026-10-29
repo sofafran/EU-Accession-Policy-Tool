@@ -102,10 +102,18 @@ def main():
         check("hash_file.py", "known SHA-256 of 'abc'", r.stdout.split()[0] == hashlib.sha256(b"abc").hexdigest(), r.stdout)
 
         # next_id
+        # Expected values come from the copied data, so the tests keep working as the real registers grow.
+        def highest(rel, col, prefix):
+            with (proj / rel).open(encoding="utf-8") as fh:
+                return max([int(r[col][len(prefix):]) for r in csv.DictReader(fh) if r[col].startswith(prefix)], default=0)
         r = run(proj, "next_id.py", "limit")
-        check("next_id.py", "next limit after LIM-0013", r.stdout.strip() == "LIM-0014", r.stdout)
+        want = f"LIM-{highest('registers/limits_log.csv', 'limit_id', 'LIM-') + 1:04d}"
+        check("next_id.py", "next limit after the highest recorded", r.stdout.strip() == want, r.stdout)
         r = run(proj, "next_id.py", "lesson")
-        check("next_id.py", "next lesson after ALN-0002", r.stdout.strip() == "ALN-0003", r.stdout)
+        want = f"ALN-{highest('runs/RUN-2026-01/alpha_learning_log.csv', 'lesson_id', 'ALN-') + 1:04d}"
+        check("next_id.py", "next lesson after the highest recorded", r.stdout.strip() == want, r.stdout)
+        reg_path = proj / "registers" / "source_register.csv"
+        reg_path.write_text(reg_path.read_text(encoding="utf-8").splitlines()[0] + "\n", encoding="utf-8")
         r = run(proj, "next_id.py", "source", "--country", "MKD", "--family", "EU", "--year", "2025")
         check("next_id.py", "first source ID", r.stdout.strip() == "MKD-EU-2025-001", r.stdout)
         with (proj / "registers" / "source_register.csv").open("a", encoding="utf-8") as fh:
@@ -161,6 +169,15 @@ def main():
         r = run(proj, "convert_to_text.py", str(samples / "doc.docx"), str(samples / "doc.txt"))
         t = (samples / "doc.txt").read_text(encoding="utf-8") if r.returncode == 0 else ""
         check("convert_to_text.py", "DOCX: headings as section markers", "=== SECTION: Implementation report ===" in t and "EURES" in t, r.stderr[-300:])
+        doc_url = "https://av.gov.mk/content/Dokumenti/Izvestaj%202023%20so%20prevod.doc"
+        legacy = samples / "legacy.doc"
+        got = subprocess.run(["curl", "-sL", "--max-time", "60", "-o", str(legacy), doc_url], capture_output=True)
+        if got.returncode == 0 and legacy.exists() and legacy.read_bytes()[:4] == bytes.fromhex("d0cf11e0"):
+            r = run(proj, "convert_to_text.py", str(legacy), str(samples / "legacy.txt"))
+            t = (samples / "legacy.txt").read_text(encoding="utf-8") if r.returncode == 0 else ""
+            check("convert_to_text.py", "DOC (legacy Word, Macedonian): Cyrillic text extracted", "=== PAGE 1 ===" in t and any("\u0400" <= ch <= "\u04ff" for ch in t), r.stderr[-300:])
+        else:
+            check("convert_to_text.py", "DOC (legacy Word): sample could not be downloaded", False, "network")
         from openpyxl import Workbook
         wb = Workbook()
         wb.active.title = "Permits"

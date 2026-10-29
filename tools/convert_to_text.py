@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import nfc  # noqa: E402
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 MIN_CHARS = 25  # a PDF page with fewer non-space characters than this is treated as scanned
 
 
@@ -76,6 +76,15 @@ def convert_docx(path):
     return "\n".join(lines) + "\n", [], 1
 
 
+def convert_doc(path):
+    """Legacy Word (.doc) through catdoc. No page or heading information survives, so the text is one page."""
+    if not shutil.which("catdoc"):
+        raise SystemExit("error: .doc files need catdoc")
+    out = subprocess.run(["catdoc", "-d", "utf-8", "-w", str(path)], check=True, capture_output=True, text=True)
+    lines = [l.strip() for l in out.stdout.splitlines()]
+    return "=== PAGE 1 ===\n" + "\n".join(l for l in lines if l) + "\n", [], 1
+
+
 def convert_xlsx(path):
     from openpyxl import load_workbook
     wb = load_workbook(str(path), read_only=True, data_only=True)
@@ -88,8 +97,8 @@ def convert_xlsx(path):
 
 def main(argv=None):
     p = argparse.ArgumentParser(
-        description="Convert a PDF, HTML, DOCX or XLSX original to UTF-8 text (NFC). Writes '=== PAGE n ===' before each page; "
-                    "webpages and Word files have no pages, so they get one page marker and '=== SECTION: heading ===' lines for headings. "
+        description="Convert a PDF, HTML, DOCX, DOC or XLSX original to UTF-8 text (NFC). Writes '=== PAGE n ===' before each page; "
+                    "webpages and Word files (DOCX and legacy DOC) have no pages, so they get one page marker and '=== SECTION: heading ===' lines for headings. "
                     "PDF pages with no usable text are run through text recognition, and the tool reports which pages.")
     p.add_argument("original", help="original file (never modified)")
     p.add_argument("output", help="text file to write")
@@ -106,6 +115,8 @@ def main(argv=None):
         text, ocr_pages, pages = convert_html(src)
     elif ext == ".docx":
         text, ocr_pages, pages = convert_docx(src)
+    elif ext == ".doc":
+        text, ocr_pages, pages = convert_doc(src)
     elif ext == ".xlsx":
         text, ocr_pages, pages = convert_xlsx(src)
     else:
