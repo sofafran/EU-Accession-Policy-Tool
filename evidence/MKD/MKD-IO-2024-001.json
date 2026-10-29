@@ -2,144 +2,18 @@
   "source_id": "MKD-IO-2024-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.1b",
+    "rules_version": "0.2",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "53-56, 83-86",
     "codebook_version": "1.2",
-    "themes_version": "1.0",
-    "notes": "Read chapter 6 Jobs and Migration (pages 53-56) and chapter 11 Digital Development (pages 83-86) in full, plus the chapter divider pages 51-52 and 81-82 (no content). Chapter 6: only material on emigration, migration of workers, foreign workers, diaspora and returnees is extracted under Chapter 2 (scope_basis chapter, cluster 2, chapter 02); general labour market content (ALMPs, youth guarantee, women's employment, unemployment insurance, skills, tax wedge) is out of scope. Chapter 11 items are theme items with cluster and chapter left empty because the chapter is not about Chapter 2, except item MKD-IO-2024-001-0053 (brain drain), which is both. The summary table of policy measures (pages 12-14) and executive overview repeat the chapter recommendations and were not extracted. No recognition artefacts were found on the quoted pages; the pages that needed text recognition appear to be divider or blank pages, so no item carries the ocr flag. Two sentences cross a page break with footnotes in between (pages 83-84 and 84-85); only the contiguous part was quoted."
+    "themes_version": "1.1",
+    "notes": "Read chapter 6 Jobs and Migration (pages 53-56) and chapter 11 Digital Development (pages 83-86) in full, plus the divider pages 51-52 and 81-82 (no content), and, for repeated claims (R10), the Executive Summary digital paragraph (page 11), the Selected Policy Reforms table (pages 12-14) and Table 2 (page 17). Under the 0.2 Chapter 2 boundary only the two chapter 6 items on access of foreign workers to the labour market remain in Chapter 2 (0003, 0010); emigration, diaspora, remittances and returnee items were removed. Chapter 11 items are theme items with cluster and chapter empty. No recognition artefacts were found on the quoted pages; the recognised pages appear to be divider or blank pages, so no item carries the ocr flag. Two sentences cross a page break with footnotes in between (0027, 0050); the full sentences fail the quote check, so the contiguous first parts are kept. Outside the assigned chapters, the Selected Policy Reforms table (page 12, Private Sector Development) recommends simplifying work permits and visa applications for foreign workers; not extracted (outside this assignment). Revised on 29 October 2026 under extraction rules 0.2 (R1 to R11): items outside the narrower Chapter 2 boundary or materiality test removed, statuses and notes updated, repeated claims added at each place; item IDs of kept items unchanged."
   },
   "classification": {
     "status": "not_started"
   },
   "items": [
-    {
-      "item_id": "MKD-IO-2024-001-0001",
-      "information_type": "finding",
-      "stated_text": "North Macedonia struggles to create better and higher-paying jobs for its citizens and to maximize the benefits of migration.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia struggles to create better, higher-paying jobs and to maximise the benefits of migration.",
-      "location": {
-        "page": 53,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 1. Overarching Messages",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "In scope for Chapter 2 only for the migration part of the claim; the jobs part is general labour market content.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0002",
-      "information_type": "finding",
-      "stated_text": "While formal employment has increased from 43.5 percent to 56.7 percent since 2010, and informal work dropped from 26.2 percent to 12.2 percent, there is still a shortage of good-quality jobs in the country, fueling emigration.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Despite rising formal employment and falling informal work since 2010, a shortage of good-quality jobs is fuelling emigration.",
-      "location": {
-        "page": 53,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
     {
       "item_id": "MKD-IO-2024-001-0003",
       "information_type": "finding",
@@ -184,7 +58,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -193,385 +68,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0004",
-      "information_type": "finding",
-      "stated_text": "Emigration impacts labor market dynamics, with limited positive spillovers.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Emigration affects labour market dynamics but brings limited positive spillovers.",
-      "location": {
-        "page": 53,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0005",
-      "information_type": "metric",
-      "stated_text": "Over the years, 700,000 people born in North Macedonia—about 35 percent of the current population—have moved overseas.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "About 700,000 people born in North Macedonia, about 35 percent of the current population, have moved abroad.",
-      "location": {
-        "page": 53,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "people born in North Macedonia who have moved overseas",
-        "value": "700,000 (about 35 percent of the current population)",
-        "unit": "persons",
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0006",
-      "information_type": "barrier",
-      "stated_text": "However, North Macedonia has not capitalized on this heavy outmigration to bolster economic growth through knowledge transfer, network expansion, remittances 20, or increased investments, due to inadequate programs for diaspora engagement and investment, as well as widespread corruption.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The country has not used outmigration to boost growth because diaspora engagement and investment programmes are inadequate and corruption is widespread.",
-      "location": {
-        "page": 53,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "The quote contains the footnote marker 20 as printed in the text file.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0007",
-      "information_type": "metric",
-      "stated_text": "Official remittances represent currently 3.4 percent/GDP, or less than half of the average in the Western Balkans.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Official remittances are 3.4 percent of GDP, less than half the Western Balkans average.",
-      "location": {
-        "page": 53,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 2. Key Challenges, footnote 20",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "official remittances as a share of GDP",
-        "value": 3.4,
-        "unit": "percent of GDP",
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0008",
-      "information_type": "recommendation",
-      "stated_text": "Engage the diaspora. Members of the diaspora can be mobilized to support economic development through mapping and outreach efforts, cultural exchange events, and financial incentives for investment.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The diaspora should be engaged through mapping, outreach, cultural exchange events and financial incentives for investment.",
-      "location": {
-        "page": 55,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 3. Policy Responses for Consideration",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Short-term measure. Included under the Chapter 2 boundary as it concerns emigrants (diaspora); the analyst may judge diaspora engagement outside Chapter 2.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0009",
-      "information_type": "recommendation",
-      "stated_text": "Manage migration and establish global skills partnerships. Global skills partnerships can help balance the retention and migration of skilled workers, ensuring that training aligns with both domestic and international skill needs.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Migration should be managed through global skills partnerships that balance retention and migration of skilled workers.",
-      "location": {
-        "page": 55,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 3. Policy Responses for Consideration",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Medium-term measure.",
+      "extraction_note": "Kept under the 0.2 Chapter 2 boundary (R8): concerns access of foreign workers to the labour market.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -637,7 +134,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -646,202 +144,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Medium-term measure. Concerns employment of foreign workers.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0011",
-      "information_type": "intervention",
-      "stated_text": "Europe 2020 TF: Supporting Effective Reintegration of Returnees",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "World Bank ongoing support includes a Europe 2020 trust fund activity supporting effective reintegration of returnees.",
-      "location": {
-        "page": 56,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 4. World Bank Group Engagement",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "World Bank Group",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "Europe 2020 TF: Supporting Effective Reintegration of Returnees",
-      "stated_status": "implemented",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "table"
-      ],
-      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Ongoing Support.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0012",
-      "information_type": "intervention",
-      "stated_text": "TA on Leveraging Migration for Development",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Technical assistance on leveraging migration for development is in the World Bank pipeline.",
-      "location": {
-        "page": 56,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 4. World Bank Group Engagement",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "World Bank Group",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "TA on Leveraging Migration for Development",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "table"
-      ],
-      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Pipeline.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0013",
-      "information_type": "intervention",
-      "stated_text": "Support may be provided for the development of global skills partnerships and strengthening of diaspora engagement.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The World Bank may support development of global skills partnerships and stronger diaspora engagement.",
-      "location": {
-        "page": 56,
-        "page_end": null,
-        "section": "6 Jobs and Migration, 4. World Bank Group Engagement",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "World Bank Group",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "Support for global skills partnerships and diaspora engagement",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "table"
-      ],
-      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Potential Engagements.",
+      "extraction_note": "Medium-term measure. Kept under the 0.2 Chapter 2 boundary (R8): concerns labour market access and integration of foreign workers.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -897,7 +200,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -906,7 +210,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Same claim as MKD-IO-2024-001-0066 (Executive Summary, page 11).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -962,7 +266,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1028,7 +333,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1099,7 +405,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1164,7 +471,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "share of population using the internet",
@@ -1229,7 +537,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "internet usage rate, rank among ECA countries",
@@ -1294,7 +603,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "internet access by sex",
@@ -1359,7 +669,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1424,7 +735,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "fixed broadband speed",
@@ -1489,7 +801,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1556,7 +869,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1621,7 +935,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1686,7 +1001,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "fixed-broadband basket (5GB) price",
@@ -1708,14 +1024,14 @@
     {
       "item_id": "MKD-IO-2024-001-0027",
       "information_type": "finding",
-      "stated_text": "North Macedonia’s data hosting capacity does not compare well with peers",
+      "stated_text": "North Macedonia’s data hosting capacity does not compare well with peers, and demand for data and cloud services remains marginal, hampered by low demand from the private sector.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "North Macedonia's data hosting capacity compares poorly with peers.",
+      "summary": "Data hosting capacity compares poorly with peers, and demand for data and cloud services is marginal because private sector demand is low.",
       "location": {
         "page": 83,
-        "page_end": null,
+        "page_end": 84,
         "section": "11 Digital Development, 2. Key Challenges",
         "paragraph": null,
         "snapshot_file": null
@@ -1751,7 +1067,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1760,7 +1077,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "The sentence continues on page 84 after the page 83 footnotes; only the contiguous part on page 83 is quoted to avoid merging non-adjacent text.",
+      "extraction_note": "Quote runs over the page break from page 83 to 84 (R4); the footnotes, page number and running header between the pages are not part of the quote.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1817,7 +1134,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1882,7 +1200,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "number of data centres",
@@ -1959,7 +1278,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2024,7 +1344,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2089,7 +1410,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2154,7 +1476,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2221,7 +1544,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "rank on the United Nations E-Government Development Index",
@@ -2286,7 +1610,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2353,7 +1678,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2418,7 +1744,8 @@
       "stated_status": "implemented",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2491,7 +1818,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "rank on the United Nations E-Participation Index",
@@ -2556,7 +1884,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2621,7 +1950,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "Public Service Delivery Index (PSDI) score",
@@ -2687,7 +2017,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2752,7 +2083,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2817,7 +2149,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2882,7 +2215,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2949,7 +2283,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3014,7 +2349,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3079,7 +2415,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "rank on the Global Cybersecurity Index",
@@ -3144,7 +2481,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3209,7 +2547,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3233,14 +2572,14 @@
     {
       "item_id": "MKD-IO-2024-001-0050",
       "information_type": "recommendation",
-      "stated_text": "Special attention should be paid to the protection of critical information infrastructure",
+      "stated_text": "Special attention should be paid to the protection of critical information infrastructure and to general awareness about cybersecurity, data protection, and personal information among the population.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Special attention should be paid to protecting critical information infrastructure.",
+      "summary": "Special attention should go to protecting critical information infrastructure and to public awareness of cybersecurity, data protection and personal information.",
       "location": {
         "page": 84,
-        "page_end": null,
+        "page_end": 85,
         "section": "11 Digital Development, 2. Key Challenges",
         "paragraph": null,
         "snapshot_file": null
@@ -3254,7 +2593,8 @@
         "theme"
       ],
       "themes": [
-        "TECH-CYBER"
+        "TECH-CYBER",
+        "TECH-DATA"
       ],
       "dates": {
         "publication_date": "2024-09",
@@ -3276,7 +2616,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3285,142 +2626,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "The sentence continues on page 85 after the page 84 footnotes (awareness of cybersecurity, data protection and personal information); only the contiguous part on page 84 is quoted.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0051",
-      "information_type": "barrier",
-      "stated_text": "North Macedonia’s lack of digital skills and critical gender divide is hampering ICT sector growth due to intense competition for technical talent.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Lack of digital skills and a gender divide are hampering ICT sector growth amid intense competition for technical talent.",
-      "location": {
-        "page": 85,
-        "page_end": null,
-        "section": "11 Digital Development, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": null,
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Digital skills and the ICT talent pool are not named in themes.csv; TECH-DIGI is the closest code but the materiality test may not be met.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0052",
-      "information_type": "metric",
-      "stated_text": "For example, the country had only 619 IT graduates in 2023,51 a number that is unlikely to be sufficient to meet the demand from potential employers and could thus limit the chances of organic growth of entrepreneurship in the digital sector.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The country had only 619 IT graduates in 2023, unlikely to meet employer demand.",
-      "location": {
-        "page": 85,
-        "page_end": null,
-        "section": "11 Digital Development, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": null,
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "IT graduates",
-        "value": 619,
-        "unit": "graduates",
-        "reference_period": "2023"
-      },
-      "flags": [
-        "theme_doubtful",
-        "hedged"
-      ],
-      "extraction_note": "Digital skills and the ICT talent pool are not named in themes.csv; TECH-DIGI is the closest code but the materiality test may not be met. 'unlikely' and 'could' hedge the consequence. Contains footnote marker 51.",
+      "extraction_note": "Quote runs over the page break from page 84 to 85 (R4); the footnotes, page number and running header between the pages are not part of the quote.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3448,10 +2654,9 @@
       "quote_verified": true,
       "country": "MKD",
       "role": "target",
-      "cluster": "2",
-      "chapter": "02",
+      "cluster": null,
+      "chapter": null,
       "scope_basis": [
-        "chapter",
         "theme"
       ],
       "themes": [
@@ -3477,7 +2682,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3485,76 +2691,10 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [],
-      "extraction_note": "In scope for Chapter 2 because it concerns emigration of workers (brain drain), and for the theme because it concerns staffing of digital public services. Footnote 52 cites the International Organization for Migration.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0054",
-      "information_type": "metric",
-      "stated_text": "Women represent only 27 percent of the total Gender disparities IT workforce, with the divide growing in senior and management positions, where the gender ratio is 80 percent men and 20 percent women.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Women are 27 percent of the IT workforce; in senior and management positions the ratio is 80 percent men to 20 percent women.",
-      "location": {
-        "page": 85,
-        "page_end": null,
-        "section": "11 Digital Development, 2. Key Challenges",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": null,
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "women's share of the IT workforce",
-        "value": 27,
-        "unit": "percent",
-        "reference_period": null
-      },
       "flags": [
-        "theme_doubtful",
-        "possible_misread"
+        "theme_doubtful"
       ],
-      "extraction_note": "Digital skills and the ICT talent pool are not named in themes.csv; TECH-DIGI is the closest code but the materiality test may not be met. The text file has a sidebar label ('Gender disparities') inserted mid-sentence; quoted as it appears.",
+      "extraction_note": "Chapter 2 basis removed under the 0.2 boundary (R8): the source does not link brain drain to the rights or access of EU or foreign workers. Kept as a theme item because the claim concerns staffing of digital public services, but the subject is salaries and brain drain rather than the technology itself, so the 0.2 materiality test (R1) may not be met. Footnote 52 cites the International Organization for Migration.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3610,7 +2750,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3619,7 +2760,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Short-term measure.",
+      "extraction_note": "Short-term measure. Same claim as MKD-IO-2024-001-0068 (Executive Summary) and MKD-IO-2024-001-0069 (summary table).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3676,7 +2817,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3685,7 +2827,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Short-term measure.",
+      "extraction_note": "Short-term measure. Same claim as MKD-IO-2024-001-0070 (summary table).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3741,7 +2883,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3750,7 +2893,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Short-term measure.",
+      "extraction_note": "Short-term measure. Same claim as MKD-IO-2024-001-0071 (summary table).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3806,7 +2949,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3871,7 +3015,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3880,74 +3025,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Medium-term measure.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-IO-2024-001-0060",
-      "information_type": "recommendation",
-      "stated_text": "Invest in digital skills and bridge the gender gap. Key actions will include developing large-scale and inclusive initiatives to increase the level of digital skills among the population and businesses and closing gender gaps, especially by increasing the number of women graduating in STEM fields.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Invest in large-scale, inclusive digital skills initiatives for the population and businesses and close gender gaps, including in STEM.",
-      "location": {
-        "page": 86,
-        "page_end": null,
-        "section": "11 Digital Development, 3. Policy Responses for Consideration",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": null,
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2024-09",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "World Bank Group",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Medium-term measure. Digital skills and the ICT talent pool are not named in themes.csv; TECH-DIGI is the closest code but the materiality test may not be met.",
+      "extraction_note": "Medium-term measure. Same claim as MKD-IO-2024-001-0072 (summary table); related to MKD-IO-2024-001-0067 (Executive Summary).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4007,7 +3085,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4016,7 +3095,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Medium-term measure.",
+      "extraction_note": "Medium-term measure. Same claim as MKD-IO-2024-001-0073 (summary table, page 13).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4082,10 +3161,11 @@
         }
       ],
       "intervention_as_stated": "Analytical support for the Western Balkans",
-      "stated_status": "implemented",
+      "stated_status": "in_progress",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4096,7 +3176,7 @@
       "flags": [
         "table"
       ],
-      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Ongoing Support.",
+      "extraction_note": "The World Bank Group Engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Ongoing Support; status in_progress under R5 ('aims to produce').",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4157,10 +3237,11 @@
         }
       ],
       "intervention_as_stated": "Western Balkans Digital Highway",
-      "stated_status": "implemented",
+      "stated_status": "in_progress",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4171,7 +3252,7 @@
       "flags": [
         "table"
       ],
-      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Ongoing Support. A second phase is under consideration for 2024 (not quoted).",
+      "extraction_note": "The World Bank Group Engagement section is laid out as a two-column table. Listed under Ongoing Support; the first phase concluded in December 2023 and a second phase is under consideration for 2024 (not quoted), so status in_progress under R5.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4228,7 +3309,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4295,7 +3377,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4306,7 +3389,687 @@
       "flags": [
         "table"
       ],
-      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Potential Engagement.",
+      "extraction_note": "The World Bank Group engagement section is laid out as a two-column table (Ongoing Support, Pipeline, Potential Engagements). Listed under Potential Engagement. Same project as MKD-IO-2024-001-0074 (Table 2, page 17), listed there as in preparation.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0066",
+      "information_type": "finding",
+      "stated_text": "Investments in digital development, aligned with the EU Digital Agenda 2030, present a strategic opportunity for achieving sustainable growth and resilience.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Investing in digital development aligned with the EU Digital Agenda 2030 is a strategic opportunity for growth and resilience.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "Executive Summary, 3. Advance the Green and Digital Transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0014 (chapter 11, page 83).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0067",
+      "information_type": "finding",
+      "stated_text": "Central to this endeavor is the enhancement of digital public infrastructure, laying the groundwork for comprehensive digital transformation and fostering public–private partnerships (PPPs).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enhancing digital public infrastructure is central, laying the groundwork for digital transformation and public-private partnerships.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "Executive Summary, 3. Advance the Green and Digital Transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added under R10: summary of the recommendation in MKD-IO-2024-001-0059 (chapter 11, page 85).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0068",
+      "information_type": "finding",
+      "stated_text": "Strengthening the digital development governance framework holds the key to defining and implementing a cohesive digital development strategy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Strengthening the digital development governance framework is key to defining and implementing a cohesive digital development strategy.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "Executive Summary, 3. Advance the Green and Digital Transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0055 (chapter 11, page 85). Worded as a finding but close to a recommendation.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0069",
+      "information_type": "recommendation",
+      "stated_text": "Strengthen the digital development governance framework",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Strengthen the digital development governance framework (short term).",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Selected Policy Reforms, Digital Development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0055. Summary table 'Selected Policy Reforms' with short-term and medium-term columns; the column mark 'x' is not quoted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0070",
+      "information_type": "recommendation",
+      "stated_text": "Accelerate digital transformation across economic and social sectors",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Accelerate digital transformation across economic and social sectors (short term).",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Selected Policy Reforms, Digital Development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0056. Summary table 'Selected Policy Reforms' with short-term and medium-term columns; the column mark 'x' is not quoted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0071",
+      "information_type": "recommendation",
+      "stated_text": "Review and improve the cybersecurity framework",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Review and improve the cybersecurity framework (short term).",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Selected Policy Reforms, Digital Development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0057. Summary table 'Selected Policy Reforms' with short-term and medium-term columns; the column mark 'x' is not quoted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0072",
+      "information_type": "recommendation",
+      "stated_text": "Invest in digital public infrastructure",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Invest in digital public infrastructure (medium term).",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Selected Policy Reforms, Digital Development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0059. Summary table 'Selected Policy Reforms' with short-term and medium-term columns; the column mark 'x' is not quoted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0073",
+      "information_type": "recommendation",
+      "stated_text": "Converge progressively toward a policy and regulatory alignment with the EU acquis communautaire (acquis)",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Progressively align digital policy and regulation with the EU acquis (medium term).",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "Selected Policy Reforms, Digital Development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DATA",
+        "TECH-CYBER",
+        "TECH-EID",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added under R10: same claim as MKD-IO-2024-001-0061. The bullet sits at the top of page 13, continuing the Digital Development rows from page 12; theme codes follow 0061, which lists the rules concerned. Summary table 'Selected Policy Reforms' with short-term and medium-term columns; the column mark 'x' is not quoted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0074",
+      "information_type": "intervention",
+      "stated_text": "Digital Development Agenda 50 (To be determined) In preparation",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A US$50 million Digital Development Agenda project is in preparation in the World Bank Group pipeline.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Table 2: WBG Existing and Pipeline Portfolio in North Macedonia",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "World Bank Group",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Digital Development Agenda",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added under R10: same project as MKD-IO-2024-001-0065. Table columns are project name, amount (US$m), focus and closing date; status in_progress under R5 ('In preparation').",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0075",
+      "information_type": "recommendation",
+      "stated_text": "simplify the work permits and visa applications for foreign workers",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Simplify work permits and visa applications for foreign workers.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Selected Policy Reforms, Private Sector Development",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Sits under Private Sector Development in the Selected Policy Reforms summary table, outside chapters 6 and 11. The same bullet also recommends more flexible working arrangements for domestic workers (general labour market, not quoted). The column mark 'x' is not quoted.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

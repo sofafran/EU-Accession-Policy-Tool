@@ -20,7 +20,8 @@ You are working on an AI-enabled analytical tool that turns EU accession assessm
 ## Current scope (RUN-2026-01)
 
 - North Macedonia (MKD) only.
-- All of Chapter 2 (Freedom of movement for workers), plus recommendations materially relating to technology and AI wherever they occur, as defined in `taxonomy/themes.csv`. Incidental references to technology are out of scope.
+- All of Chapter 2 (Freedom of movement for workers) in its EU meaning: rights and access of EU and foreign workers, labour-market access, EURES, social security coordination and EHIC (emigration only where directly linked). See the run record.
+- Recommendations materially relating to technology and AI wherever they occur, as defined in `taxonomy/themes.csv`: the technology or digital issue itself must be the subject. Incidental references, and IT tools mentioned within another sector's reform, are out of scope; digital skills only where directly linked to an in-scope recommendation.
 - Follow the full analytical chain for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Other material is out of scope unless it is needed to follow the chain of an issue already in scope.
 - Evidence from 1 January 2020 to the evidence freeze date in the run record; earlier material only by logged exception.
 - Comparator evidence only in run 1b, only for the issues chosen at G6.

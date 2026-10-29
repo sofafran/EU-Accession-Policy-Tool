@@ -206,6 +206,31 @@ def main():
         check("verify_quotes.py", "quote on the wrong page fails", res.get("0004") is False)
         check("verify_quotes.py", "Cyrillic look-alike letter is not accepted", res.get("0005") is False)
         check("verify_quotes.py", "quote spanning a line break passes", res.get("0006") is True)
+        # Quote over a page break with a printed page number and running header in between (rules 0.2, R4).
+        pb_sid = "MKD-EU-2024-001"
+        pb_lines = "\n".join(f"=== PAGE {n} ===\nReport header\n{n}\nFiller text on page {n}." for n in range(1, 4))
+        pb_lines = pb_lines.replace("Filler text on page 1.", "Filler text on page 1. The law on digital services was adopted by").replace("=== PAGE 2 ===\nReport header\n2\n", "=== PAGE 2 ===\nReport header\n2\nthe Assembly in March.\n")
+        (text_dir / f"{pb_sid}.txt").write_text(pb_lines, encoding="utf-8")
+        pb = proj / "evidence" / "MKD" / f"{pb_sid}.json"
+        good_item = item(f"{pb_sid}-0001", "The law on digital services was adopted by the Assembly in March.", page=1)
+        good_item["location"]["page_end"] = 2
+        bad_item = item(f"{pb_sid}-0002", "The law on digital services was adopted by 2 the Assembly in March.", page=1)
+        bad_item["location"]["page_end"] = 2
+        pb.write_text(json.dumps(evidence(pb_sid, [good_item, bad_item])), encoding="utf-8")
+        run(proj, "verify_quotes.py", str(pb))
+        pbres = [i["quote_verified"] for i in json.loads(pb.read_text(encoding="utf-8"))["items"]]
+        check("verify_quotes.py", "quote across a page break passes; printed page number inside the quote fails", pbres == [True, False], str(pbres))
+        # Header carrying the page number, and footnotes at the foot of the first page.
+        pb2 = "\n".join(f"=== PAGE {n} ===\nAudit team: auditor {n}\nBody line one on page {n}.\nBody line two on page {n}.\nBody line three on page {n}." for n in range(1, 5))
+        pb2 = pb2.replace("Body line three on page 1.", "The register of AI systems was not\n12 Footnote text about the register.\n13 Another footnote.").replace("=== PAGE 2 ===\nAudit team: auditor 2\n", "=== PAGE 2 ===\nAudit team: auditor 2\nestablished by the ministry.\n")
+        (text_dir / f"{pb_sid}.txt").write_text(pb2, encoding="utf-8")
+        it3 = item(f"{pb_sid}-0003", "The register of AI systems was not established by the ministry.", page=1)
+        it3["location"]["page_end"] = 2
+        pb.write_text(json.dumps(evidence(pb_sid, [it3])), encoding="utf-8")
+        run(proj, "verify_quotes.py", str(pb))
+        ok3 = json.loads(pb.read_text(encoding="utf-8"))["items"][0]["quote_verified"]
+        check("verify_quotes.py", "page break with numbered running header and footnotes between the pages passes", ok3 is True)
+        pb.unlink()
         check("verify_quotes.py", "exit status 1 when any quote fails", r.returncode == 1)
         check("verify_quotes.py", "report written", (proj / "review" / "RUN-2026-01" / "quote_checks" / f"{sid}.csv").exists())
         web_sid = "MKD-GOV-2025-001"
@@ -285,8 +310,16 @@ def main():
             psg = wb["Passages"].cell(2, 6).value or ""
             ok = wb.sheetnames == ["Instructions", "Proposed sample", "Passages", "Hand-coded items"] and psg.startswith("The country has some level")
         check("export_review.py", "G3 hand-coding workbook: passage text taken from the cited page", ok, r.stderr[-300:])
+        (rv / "sample_0.1").mkdir(parents=True, exist_ok=True)
+        earlier = json.loads(ev.read_text(encoding="utf-8"))
+        earlier["items"].append(item(f"{sid}-0099", "A removed claim.", page=1))
+        (rv / "sample_0.1" / f"{sid}.json").write_text(json.dumps(earlier), encoding="utf-8")
         r = run(proj, "export_review.py", "G3")
         ok = r.returncode == 0 and (rv / "G3_sample_review.xlsx").exists()
+        if ok:
+            wbc = load_workbook(rv / "G3_sample_review.xlsx")
+            removed_ids = [c.value for c in wbc["Removed items"]["A"][1:]]
+            check("export_review.py", "G3: comparison with the earlier sample lists removed items", removed_ids == [f"{sid}-0099"], str(removed_ids))
         if ok:
             wb = load_workbook(rv / "G3_sample_review.xlsx")
             shown = [c.value for c in wb["Sample items"]["A"][1:]]

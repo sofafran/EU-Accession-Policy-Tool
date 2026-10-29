@@ -2,13 +2,13 @@
   "source_id": "MKD-GOV-2021-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.1b",
+    "rules_version": "0.2",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "1-3 (whole document)",
     "codebook_version": "1.2",
-    "themes_version": "1.0",
-    "notes": "Whole amending law read (Official Gazette 163/21, three pages). All provisions are Chapter 2 material and recorded as interventions with stated_status adopted (published law; no implementation assumed). One item per amended provision or paragraph of new Article 16. The 2015 base law (MKD-GOV-2015-001) was consulted only to explain what deleted or amended points referred to; context is given in extraction_note, not in summaries. Two paragraphs of new Article 16 (electronic reporting with a digital certificate; electronic M1/M2 form) carry technology theme tags; paragraph 16 mentions data exchange between bodies without a system and is not tagged. Header, gazette numbering and signature blocks not extracted. Note that Article 16(12) and 16(14) set different deadlines (30 days and three days) for ending a foreigner's registration; recorded as stated."
+    "themes_version": "1.1",
+    "notes": "Whole amending law read (Official Gazette 163/21, three pages). All provisions are Chapter 2 material and recorded as interventions with stated_status adopted (published law; no implementation assumed). One item per amended provision or paragraph of new Article 16. The 2015 base law (MKD-GOV-2015-001) was consulted only to explain what deleted or amended points referred to; context is given in extraction_note, not in summaries. One paragraph of new Article 16 (electronic reporting with a digital certificate, item 0014) carries technology theme tags, flagged theme_doubtful; paragraph 16 mentions data exchange between bodies without a system and is not tagged. Header, gazette numbering and signature blocks not extracted. Note that Article 16(12) and 16(14) set different deadlines (30 days and three days) for ending a foreigner's registration; recorded as stated. Revised under extraction rules 0.2: item 0029 (Article 8, renaming of the country in the base law) removed as outside the Chapter 2 boundary, the theme tag on item 0015 removed under the narrower materiality test, and eu_scale.applies_to added (null throughout)."
   },
   "classification": {
     "status": "not_started"
@@ -58,7 +58,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -121,7 +122,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -184,7 +186,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -247,7 +250,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -314,7 +318,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -377,7 +382,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -440,7 +446,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -503,7 +510,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -566,7 +574,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -633,7 +642,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -691,7 +701,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -749,7 +760,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -812,7 +824,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -879,7 +892,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -887,8 +901,10 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [],
-      "extraction_note": "Material: the provision creates an online procedure conditional on a digital certificate (electronic identification).",
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful under rules 0.2: the electronic procedure and digital certificate are the subject of the paragraph, but it is an online channel within a labour-migration procedure, which the narrower test may treat as a sector tool; not framed in the text as digital transformation of government.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -919,12 +935,9 @@
       "cluster": "2",
       "chapter": "02",
       "scope_basis": [
-        "chapter",
-        "theme"
+        "chapter"
       ],
-      "themes": [
-        "TECH-DGOV"
-      ],
+      "themes": [],
       "dates": {
         "publication_date": "2021-07-16",
         "period_covered": null,
@@ -945,7 +958,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -953,10 +967,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the form is electronic and comes from the Agency's system, but the provision describes a printed form rather than an online service.",
+      "flags": [],
+      "extraction_note": "Theme tag removed under rules 0.2 (R1): an electronic form from the Agency's system within the work registration procedure, not framed as digital transformation.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1005,7 +1017,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1072,7 +1085,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1135,7 +1149,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1193,7 +1208,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1251,7 +1267,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1314,7 +1331,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1377,7 +1395,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1435,7 +1454,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1493,7 +1513,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1556,7 +1577,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1619,7 +1641,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1677,7 +1700,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1735,7 +1759,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1745,64 +1770,6 @@
       },
       "flags": [],
       "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-GOV-2021-001-0029",
-      "information_type": "intervention",
-      "stated_text": "Подзаконските акти предвидени со овој закон ќе се донесат во рок од 30 дена од денот на влегувањето во сила на овој закон.",
-      "quote_language": "mk",
-      "translation_en": "The secondary legislation provided for in this law will be adopted within 30 days of the date of entry into force of this law.",
-      "machine_translated": true,
-      "summary": "Secondary legislation under the amending law is to be adopted within 30 days of its entry into force.",
-      "location": {
-        "page": 3,
-        "page_end": null,
-        "section": "Член 7",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2021-07-16",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
-      },
-      "subjects": [],
-      "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "stated_status refers to the law provision; the text does not state that the secondary legislation itself was adopted.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1851,7 +1818,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1909,7 +1877,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,

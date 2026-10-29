@@ -2,555 +2,18 @@
   "source_id": "MKD-EU-2025-003",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.1b",
+    "rules_version": "0.2",
     "extracted_at": "2026-10-29",
     "status": "sample",
     "pages_processed": "1-108 (pages 25-30, Chapter 2, read in full and extracted in full; all other pages read for theme material)",
     "codebook_version": "1.2",
-    "themes_version": "1.0",
-    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Two cluster-wide statements by North Macedonia in the introduction (page 5) are kept on chapter basis. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments, and repeated SCPC statements on interoperability between inspection services (pages 24 and 107). Standard Commission wording ('good level of preparation', 'early stage') appears for some Chapter 2 sub-areas and is recorded in eu_scale with a note; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break include the printed page number as it appears in the text file."
+    "themes_version": "1.1",
+    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184."
   },
   "classification": {
     "status": "not_started"
   },
   "items": [
-    {
-      "item_id": "MKD-EU-2025-003-0001",
-      "information_type": "finding",
-      "stated_text": "North Macedonia stated that it accepts the acquis in the Internal Market cluster and that it does not expect particular difficulties to implement the acquis and European standards of this cluster by accession.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia stated it accepts the Internal Market cluster acquis and expects no particular difficulties implementing it by accession.",
-      "location": {
-        "page": 5,
-        "page_end": null,
-        "section": "A) INTRODUCTION",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": null,
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "Cluster-wide statement by North Macedonia as reported by the Commission; Cluster 2 includes Chapter 2, so it is kept on chapter basis. chapter left empty because the statement is not specific to one chapter.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0002",
-      "information_type": "finding",
-      "stated_text": "It indicated that it reserved the right to ask for transitional arrangements for certain areas in this Cluster.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia indicated it reserved the right to ask for transitional arrangements for certain areas in the cluster.",
-      "location": {
-        "page": 5,
-        "page_end": null,
-        "section": "A) INTRODUCTION",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": null,
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "Cluster-wide statement; see previous item. Typed as finding because no specific request is made.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0003",
-      "information_type": "intervention",
-      "stated_text": "NIA intends to introduce accreditation on data protection on IT security, and anti -bribery and anticorruption standards during 2023/4,",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The accreditation institute intends to introduce accreditation on data protection, IT security and anti-bribery standards during 2023/4.",
-      "location": {
-        "page": 9,
-        "page_end": null,
-        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > II.C. ACCREDITATION > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "01",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA",
-        "TECH-CYBER"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "NIA",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "accreditation on data protection on IT security",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "Quote ends mid-sentence before the separate claim on administrative resources. theme_doubtful: the object is accreditation of conformity assessment against data protection and IT security standards, not data protection or cybersecurity policy itself. Printed as 'NIA' although the body is elsewhere called NAI.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0004",
-      "information_type": "intervention",
-      "stated_text": "A RAPEX -like IT system is being developed and is foreseen to be in use in 2023.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "A RAPEX-like IT system for market surveillance is being developed and is expected to be in use in 2023.",
-      "location": {
-        "page": 10,
-        "page_end": null,
-        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > II.E. MARKET SURVEILLANCE > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "01",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": "2023",
-        "event_date_precision": "year"
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "RAPEX-like IT system",
-      "stated_status": "unclear",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "stated_status unclear: 'being developed'. event_date is the stated planned year of use.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0005",
-      "information_type": "intervention",
-      "stated_text": "An electronic system is in place to track the purchase, transfer, import, transit, and export of explosive for civil use.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "An electronic system tracks the purchase, transfer, import, transit and export of explosives for civil use.",
-      "location": {
-        "page": 17,
-        "page_end": null,
-        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > III.Q. EXPLOSIVES FOR CIVIL USE > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "01",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "electronic system to track explosives for civil use",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0006",
-      "information_type": "intervention",
-      "stated_text": "Import or export has to be pre-approved, and is tracked by a national IT system.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Import or export of drug precursors must be pre-approved and is tracked by a national IT system.",
-      "location": {
-        "page": 20,
-        "page_end": null,
-        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > IV.E. DRUG PRECURSORS > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "01",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "national IT system tracking drug precursor trade",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0007",
-      "information_type": "finding",
-      "stated_text": "North Macedonia acknowledges the need to build up implementing and administrative capacity in this area, and to adopt a new IT system.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia acknowledges it needs to build implementing and administrative capacity for defence product transfers and to adopt a new IT system.",
-      "location": {
-        "page": 23,
-        "page_end": null,
-        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > V.F. DEFENCE PRODUCTS (TRANSFER OF DEFENCE RELATED PRODUCTS)",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "01",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "ambiguous_type",
-        "theme_doubtful"
-      ],
-      "extraction_note": "The country's own acknowledgement of a need; could also be read as a recommendation. theme_doubtful: the IT system is one of two needs and its function is not described.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0008",
-      "information_type": "intervention",
-      "stated_text": "A national inventory of dispersed cultural heritage will also be prepared during 2023, as will an IT system to track such items.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "A national inventory of dispersed cultural heritage and an IT system to track such items are to be prepared during 2023.",
-      "location": {
-        "page": 23,
-        "page_end": null,
-        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > V.G. CULTURAL GOODS UNLAWFULLY REMOVED FROM THE TERRITORY OF AN EU MEMBER STATE > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "01",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA",
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": "2023",
-        "event_date_precision": "year"
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "IT system to track dispersed cultural heritage items",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
     {
       "item_id": "MKD-EU-2025-003-0009",
       "information_type": "finding",
@@ -597,7 +60,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -608,7 +72,75 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "SCPC finding reported in North Macedonia's presentation. The Commission assessment on the same page and the Chapter 28 assessment (page 107) repeat it as 'interoperability issues between inspection services' without naming information systems; not extracted again.",
+      "extraction_note": "SCPC finding reported in North Macedonia's presentation. The same claim is repeated in the Commission assessments on page 24 (item -0181) and page 107 (item -0184).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0181",
+      "information_type": "finding",
+      "stated_text": "SCPC has flagged interoperability issues between inspection services, a lack of qualified inspectors, it also found several risks of corruption in inspection services and recommended remedial measures (findings that are relevant to market surveillance).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The anti-corruption commission flagged interoperability issues between inspection services, among other problems relevant to market surveillance.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "B) CHAPTER 1 - FREE MOVEMENT OF GOODS > VII. ANTI-CORRUPTION MEASURES WITH REGARD TO THE FREE MOVEMENT OF GOODS > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "01",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SCPC",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "inspection services",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Added under rules 0.2 (R10): same claim as item -0009, reported by the Commission. Interoperability is the first of several findings in the sentence.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -662,7 +194,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -727,7 +260,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -792,7 +326,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "share of single work and residency permits allocated to EU citizens",
@@ -857,7 +392,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "share of single work and residency permits allocated to EU citizens",
@@ -880,7 +416,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0014",
-      "information_type": "intervention",
+      "information_type": "finding",
       "stated_text": "A foreigner needs to apply to the Ministry of Interior, which requests the authorisation of a work permit to the Ministry of Labour.",
       "quote_language": "en",
       "translation_en": null,
@@ -926,11 +462,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "work permit procedure",
-      "stated_status": "in_practice",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -941,7 +478,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Describes the current permit procedure; typed as intervention (an administrative procedure in operation).",
+      "extraction_note": "Retyped from intervention under rules 0.2 (R11): describes the legal or administrative situation without naming a measure.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -953,7 +490,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0015",
-      "information_type": "intervention",
+      "information_type": "finding",
       "stated_text": "For seasonal employment, workers are allowed to work for 6 months, with an exception in the construction sector, where the allowed stay is nine months within a calendar year;",
       "quote_language": "en",
       "translation_en": null,
@@ -991,11 +528,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "rules on seasonal employment of foreigners",
-      "stated_status": "in_practice",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1006,7 +544,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Retyped from intervention under rules 0.2 (R11): describes the legal or administrative situation without naming a measure.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1018,7 +556,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0016",
-      "information_type": "intervention",
+      "information_type": "finding",
       "stated_text": "The duration of the engagement for posted workers cannot exceed 24 months, with exceptions regulated by the Bilateral Social Security Agreements.",
       "quote_language": "en",
       "translation_en": null,
@@ -1056,11 +594,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "rules on duration of engagement of posted workers",
-      "stated_status": "in_practice",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1071,7 +610,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Retyped from intervention under rules 0.2 (R11): describes the legal or administrative situation without naming a measure.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1083,7 +622,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0017",
-      "information_type": "intervention",
+      "information_type": "finding",
       "stated_text": "The authorisation is submitted to the approval of both the Ministry of Interior and the Employment Agency, and depends on the need for resources and the fulfilment of quotas.",
       "quote_language": "en",
       "translation_en": null,
@@ -1129,11 +668,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "work permit authorisation",
-      "stated_status": "in_practice",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1144,7 +684,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Retyped from intervention under rules 0.2 (R11): describes the legal or administrative situation without naming a measure.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1157,7 +697,7 @@
     {
       "item_id": "MKD-EU-2025-003-0018",
       "information_type": "intervention",
-      "stated_text": "The Law on Labour Relations, which is the general law on labour, prohibits direct and indirect discrimination of persons seeking employment or of employees in respect o f race, skin colour, gender, 26 age, health condition (including disability), religious, political, or other convictions, trade union membership, national or social background, family status, property status, sexual orientation, or other personal circumstances.",
+      "stated_text": "The Law on Labour Relations, which is the general law on labour, prohibits direct and indirect discrimination of persons seeking employment or of employees in respect o f race, skin colour, gender, age, health condition (including disability), religious, political, or other convictions, trade union membership, national or social background, family status, property status, sexual orientation, or other personal circumstances.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -1198,7 +738,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1209,7 +750,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Quote crosses the page break; it includes the printed page number '26' as it appears in the text file.",
+      "extraction_note": "Quote runs over a page break; page_end set and the printed page number left out (rules 0.2, R4).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1263,7 +804,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1328,7 +870,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1393,7 +936,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1466,7 +1010,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1531,7 +1076,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1596,7 +1142,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1661,7 +1208,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1724,7 +1272,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1787,7 +1336,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1850,7 +1400,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1913,7 +1464,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -1976,7 +1528,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2039,7 +1592,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2102,7 +1656,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2165,7 +1720,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2228,7 +1784,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2291,7 +1848,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2300,71 +1858,6 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0036",
-      "information_type": "intervention",
-      "stated_text": "The Law on Pension and Disability Insurance and Law on Mandatory Fully Funded Pension Insurance set the legal framework of the mandatory, pay -as-you-go pension system for the statutory scheme.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Two pension laws set the legal framework for the mandatory pay-as-you-go statutory pension system.",
-      "location": {
-        "page": 26,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > II. SUPPLEMENTARY PENSIONS > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "Law on Pension and Disability Insurance; Law on Mandatory Fully Funded Pension Insurance",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
       "extraction_note": null,
       "pass2": {
         "chain_link": null,
@@ -2419,7 +1912,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2442,7 +1936,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0038",
-      "information_type": "intervention",
+      "information_type": "finding",
       "stated_text": "Voluntary supplementary pension funds are also in place for people between 15 and 70 years old.",
       "quote_language": "en",
       "translation_en": null,
@@ -2480,11 +1974,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "voluntary supplementary pension funds",
-      "stated_status": "in_practice",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2495,7 +1990,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Retyped from intervention under rules 0.2 (R11): no named fund, law or programme.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2549,7 +2044,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2573,7 +2069,7 @@
     {
       "item_id": "MKD-EU-2025-003-0040",
       "information_type": "finding",
-      "stated_text": "Assets cannot be withdrawn from 27 voluntary pension funds before the age for retirement, which is 10 years prior to the age for retirement from statutory pension scheme (52 compared to 62 for women and 54 compared to 64 for men).",
+      "stated_text": "Assets cannot be withdrawn from voluntary pension funds before the age for retirement, which is 10 years prior to the age for retirement from statutory pension scheme (52 compared to 62 for women and 54 compared to 64 for men).",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -2614,7 +2110,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2625,7 +2122,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Quote crosses the page break; it includes the printed page number '27' as it appears in the text file.",
+      "extraction_note": "Quote runs over a page break; page_end set and the printed page number left out (rules 0.2, R4).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2679,7 +2176,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "employers that have created occupational pension schemes",
@@ -2702,7 +2200,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0042",
-      "information_type": "finding",
+      "information_type": "intervention",
       "stated_text": "The Ministry of Labour and social policy’s Department for Pension and Disability Insurance is responsible for pensions, with the Unit for Currently Funded Pension and Disability Insurance in charge of the first pillar and the Unit for mand atory and voluntary fully funded pension insurance for the second and third pillar.",
       "quote_language": "en",
       "translation_en": null,
@@ -2740,11 +2238,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": null,
-      "stated_status": null,
+      "intervention_as_stated": "Department for Pension and Disability Insurance of the Ministry of Labour and social policy",
+      "stated_status": "in_practice",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2755,7 +2254,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Retyped from finding under rules 0.2 (R11): names the institutional set-up responsible for pensions.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2809,7 +2308,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2874,7 +2374,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -2937,7 +2438,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3000,7 +2502,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3063,7 +2566,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3072,71 +2576,6 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0048",
-      "information_type": "finding",
-      "stated_text": "The Employment Service Agency provides support, assistance, and services to labour market participants. It is organised through a central office and 30 regional employment centres.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The Employment Service Agency serves labour market participants through a central office and 30 regional employment centres.",
-      "location": {
-        "page": 27,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > III. EURES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "Employment Service Agency",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
       "extraction_note": null,
       "pass2": {
         "chain_link": null,
@@ -3191,7 +2630,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3256,7 +2696,8 @@
       "stated_status": "implemented",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3268,7 +2709,7 @@
         "reported_view",
         "out_of_window"
       ],
-      "extraction_note": "Event 2014-2015 lies before the run window; kept because the text ties it to a current need for updated training (next item). event_date records the start year; the text gives 2014 to 2015.",
+      "extraction_note": "Kept as a controlled out_of_window exception: the claim is mainly about training given in 2014-2015, and the text ties it to the current need to update EURES training (items -0051 and -0065). event_date records the start year; the text gives 2014 to 2015.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3322,7 +2763,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3391,7 +2833,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3433,12 +2876,9 @@
       "cluster": "2",
       "chapter": "02",
       "scope_basis": [
-        "chapter",
-        "theme"
+        "chapter"
       ],
-      "themes": [
-        "TECH-DGOV"
-      ],
+      "themes": [],
       "dates": {
         "publication_date": "2025-02-04",
         "period_covered": null,
@@ -3459,7 +2899,8 @@
       "stated_status": "implemented",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3470,7 +2911,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Theme tag removed under rules 0.2 (R1): a national job portal not framed as digital transformation or as interoperability with EURES.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3528,7 +2969,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3597,7 +3039,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3606,10 +3049,9 @@
         "reference_period": null
       },
       "flags": [
-        "reported_view",
-        "theme_doubtful"
+        "reported_view"
       ],
-      "extraction_note": "Speaker is North Macedonia's presentation as reported; the wording reads as an expert suggestion. theme_doubtful: ESCO mapping is a data classification step for the electronic exchange with EURES, not stated as a system change.",
+      "extraction_note": "Speaker is North Macedonia's presentation as reported. ESCO is the EU classification used for exchange with EURES, so the item is kept as interoperability with an EU electronic system.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3627,74 +3069,6 @@
       "translation_en": null,
       "machine_translated": false,
       "summary": "A memorandum of cooperation with several agencies regulates access to and exchange of information and authorised access to the system.",
-      "location": {
-        "page": 27,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > III. EURES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter",
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "memorandum of cooperation on access and exchange of information",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0057",
-      "information_type": "finding",
-      "stated_text": "North Macedonia has agreements in place for cooperation with other countries and is also part of the World Association for Public Employment Services (WAPES) and the Centre of Public Employment Services of Southeast European Countries (CPESSEC).",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia has cooperation agreements with other countries and belongs to WAPES and CPESSEC.",
       "location": {
         "page": 27,
         "page_end": null,
@@ -3727,11 +3101,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": null,
-      "stated_status": null,
+      "intervention_as_stated": "memorandum of cooperation on access and exchange of information",
+      "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3742,7 +3117,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Theme tag removed under rules 0.2 (R1): national information exchange arrangement not framed as interoperability with an EU system.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3796,72 +3171,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0059",
-      "information_type": "intervention",
-      "stated_text": "North Macedonia plans to start the preparation of a new law on employment and insurance in case of unemployment.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia plans to start preparing a new law on employment and unemployment insurance.",
-      "location": {
-        "page": 27,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > III. EURES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "new law on employment and insurance in case of unemployment",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3926,7 +3237,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -3995,7 +3307,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4060,7 +3373,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": "good level of preparation",
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": "sub_area"
       },
       "metric": {
         "indicator": null,
@@ -4069,7 +3383,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Standard Commission preparation wording is used literally, but for the EURES sub-area of a screening report, not for the chapter as a whole.",
+      "extraction_note": "Standard preparation wording used literally; applies_to sub_area: EURES, a sub-area of Chapter 2 in the screening report.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4126,7 +3440,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4189,7 +3504,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4252,7 +3568,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4315,7 +3632,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4385,7 +3703,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4448,7 +3767,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4514,7 +3834,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4584,7 +3905,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -4595,332 +3917,7 @@
       "flags": [
         "theme_doubtful"
       ],
-      "extraction_note": "theme_doubtful: 'connection' is read as connection to the EURES IT system in light of the assessment, but the sentence does not name a system.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0071",
-      "information_type": "finding",
-      "stated_text": "The State Labour In spectorate of North Macedonia is an entity within the Ministry of Labour and Social Policy carrying inspection supervision over the application of labour relations, employment, and protection at work legislation.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The State Labour Inspectorate, within the labour ministry, supervises application of labour relations, employment and safety at work law.",
-      "location": {
-        "page": 28,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > IV. EUROPEAN LABOUR AUTHORITY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Labour Inspectorate",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0072",
-      "information_type": "metric",
-      "stated_text": "It comprises of 71 inspectors in the department of labour relations, and 44 inspectors in the department of safety and health at work.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The State Labour Inspectorate has 71 inspectors in its labour relations department.",
-      "location": {
-        "page": 28,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > IV. EUROPEAN LABOUR AUTHORITY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Labour Inspectorate",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "inspectors in the labour relations department of the State Labour Inspectorate",
-        "value": 71,
-        "unit": "inspectors",
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "The sentence gives two values; one metric item per department, sharing the quote.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0073",
-      "information_type": "metric",
-      "stated_text": "It comprises of 71 inspectors in the department of labour relations, and 44 inspectors in the department of safety and health at work.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The State Labour Inspectorate has 44 inspectors in its safety and health at work department.",
-      "location": {
-        "page": 28,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > IV. EUROPEAN LABOUR AUTHORITY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Labour Inspectorate",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "inspectors in the safety and health at work department of the State Labour Inspectorate",
-        "value": 44,
-        "unit": "inspectors",
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "The sentence gives two values; one metric item per department, sharing the quote.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0074",
-      "information_type": "intervention",
-      "stated_text": "The State Labour Inspectorate has adopted a methodology for risk assessment in the planning of inspections, in order to direct resources where the risk of serious irregularities is the greatest.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The State Labour Inspectorate adopted a risk assessment methodology to target inspections where serious irregularities are most likely.",
-      "location": {
-        "page": 28,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > IV. EUROPEAN LABOUR AUTHORITY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Labour Inspectorate",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "methodology for risk assessment in the planning of inspections",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0075",
-      "information_type": "finding",
-      "stated_text": "Inspectors may take both preventive and repressive measures for which an appeal can be filed.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Labour inspectors may take preventive and repressive measures, which can be appealed.",
-      "location": {
-        "page": 28,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > IV. EUROPEAN LABOUR AUTHORITY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Labour Inspectorate",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
+      "extraction_note": "theme_doubtful kept: 'connection' is read as connection to the EURES IT system in light of the assessment (-0067), but the sentence does not name a system.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4974,7 +3971,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5037,7 +4035,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5104,7 +4103,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5167,7 +4167,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5230,7 +4231,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5293,7 +4295,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5358,7 +4361,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5382,7 +4386,7 @@
     {
       "item_id": "MKD-EU-2025-003-0083",
       "information_type": "intervention",
-      "stated_text": "The Law on Health Insurance provides for health care services in case of illness, injury 29 outside of the workplace, injury at work, occupational disease and cash benefits in case of temporary absence from work, sick leave, benefits in case of pregnancy, childbirth, and maternity, as well as benefits in case of injury at work and occupational disease. It applies to insured persons and their families.",
+      "stated_text": "The Law on Health Insurance provides for health care services in case of illness, injury outside of the workplace, injury at work, occupational disease and cash benefits in case of temporary absence from work, sick leave, benefits in case of pregnancy, childbirth, and maternity, as well as benefits in case of injury at work and occupational disease. It applies to insured persons and their families.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -5423,7 +4427,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5434,7 +4439,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Quote crosses the page break; it includes the printed page number '29' as it appears in the text file.",
+      "extraction_note": "Quote runs over a page break; page_end set and the printed page number left out (rules 0.2, R4).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5488,7 +4493,8 @@
       "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5553,7 +4559,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": "bilateral social security agreements signed",
@@ -5618,7 +4625,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5683,7 +4691,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5748,7 +4757,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5813,7 +4823,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -5878,7 +4889,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": "good level of preparation",
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": "sub_area"
       },
       "metric": {
         "indicator": null,
@@ -5887,7 +4899,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Standard preparation wording used literally, for the social security coordination sub-area of a screening report.",
+      "extraction_note": "Standard preparation wording used literally; applies_to sub_area: coordination of social security systems (main regulations), a sub-area of Chapter 2 in the screening report.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5941,7 +4953,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6008,7 +5021,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6071,7 +5085,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6134,7 +5149,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6197,7 +5213,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6241,8 +5258,7 @@
         "theme"
       ],
       "themes": [
-        "TECH-DATA",
-        "TECH-DGOV"
+        "TECH-DATA"
       ],
       "dates": {
         "publication_date": "2025-02-04",
@@ -6264,7 +5280,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6273,9 +5290,10 @@
         "reference_period": null
       },
       "flags": [
-        "reported_view"
+        "reported_view",
+        "theme_doubtful"
       ],
-      "extraction_note": "The year '(2025)' is printed after the World Bank loan; it is unclear whether it dates the loan or the registry, so event_date is left empty.",
+      "extraction_note": "theme_doubtful: a sector register of insured persons, but placed by the text under the EESSI heading as preparation for electronic exchange. The year '(2025)' is printed after the World Bank loan; it is unclear whether it dates the loan or the registry, so event_date is left empty.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -6332,7 +5350,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6400,7 +5419,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": "early stage",
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": "sub_area"
       },
       "metric": {
         "indicator": null,
@@ -6409,7 +5429,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Standard wording 'early stage' used literally, for the EESSI sub-area. The sentence also contains a recommendation, recorded in the next item.",
+      "extraction_note": "Standard preparation wording used literally; applies_to sub_area: electronic exchange of social security information (EESSI), a sub-area of Chapter 2 in the screening report. The sentence also contains a recommendation, recorded in the next item.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -6466,7 +5486,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6487,7 +5508,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0100",
-      "information_type": "finding",
+      "information_type": "intervention",
       "stated_text": "The European Health Insurance card (EHIC) is used on unilateral basis with 9 EU Member states (Slovenia, Czechia, Germany, Bulgaria, The Netherlands, Belgium, Austria, Slovakia, and Luxembourg , and agreements could soon be reached with Hungary, Romania and Croatia).",
       "quote_language": "en",
       "translation_en": null,
@@ -6525,11 +5546,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": null,
-      "stated_status": null,
+      "intervention_as_stated": "European Health Insurance card (EHIC)",
+      "stated_status": "in_practice",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6540,7 +5562,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Retyped from finding under rules 0.2 (R11): describes use of a named system (EHIC).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -6602,7 +5624,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6667,7 +5690,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6734,7 +5758,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6797,7 +5822,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6860,7 +5886,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6923,7 +5950,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -6986,7 +6014,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7053,7 +6082,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7062,137 +6092,6 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0109",
-      "information_type": "intervention",
-      "stated_text": "In 2019 North Macedonia adopted a national transversal law on prevention of corruption and conflict of Interest.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia adopted a cross-cutting law on prevention of corruption and conflict of interest in 2019.",
-      "location": {
-        "page": 30,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > VI. ANTI-CORRUPTION MEASURES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": "2019",
-        "event_date_precision": "year"
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "law on prevention of corruption and conflict of interest",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "out_of_window"
-      ],
-      "extraction_note": "Adopted before the run window; kept because the text presents it as the current framework on which the Chapter 2 anti-corruption findings rest.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0110",
-      "information_type": "intervention",
-      "stated_text": "It has also put in place a national strategy for prevention of corruption and conflict of interest for the period 2021 -2025 with an action plan.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia has a national strategy for prevention of corruption and conflict of interest 2021-2025 with an action plan.",
-      "location": {
-        "page": 30,
-        "page_end": null,
-        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > VI. ANTI-CORRUPTION MEASURES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "02",
-      "scope_basis": [
-        "chapter"
-      ],
-      "themes": [],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "national strategy for prevention of corruption and conflict of interest 2021-2025",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
       "extraction_note": null,
       "pass2": {
         "chain_link": null,
@@ -7247,7 +6146,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7312,7 +6212,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7377,7 +6278,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7442,7 +6344,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7505,7 +6408,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7572,7 +6476,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7635,7 +6540,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": "early stage",
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": "sub_area"
       },
       "metric": {
         "indicator": null,
@@ -7644,7 +6550,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Standard wording 'early stage' used literally, for the anti-corruption sub-area of Chapter 2 in a screening report.",
+      "extraction_note": "Standard preparation wording used literally; applies_to sub_area: anti-corruption measures with regard to free movement of workers, a sub-area of Chapter 2 in the screening report.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7698,7 +6604,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7764,7 +6671,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -7776,141 +6684,6 @@
         "reported_view"
       ],
       "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0120",
-      "information_type": "finding",
-      "stated_text": "Furthermore, a transparent list of all regulated professions and an electronic register are yet to be put in place.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "A transparent list of regulated professions and an electronic register have not yet been put in place.",
-      "location": {
-        "page": 33,
-        "page_end": null,
-        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > I. MUTUAL RECOGNITION OF PROFESSIONAL QUALIFICATIONS > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "03",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA",
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0121",
-      "information_type": "intervention",
-      "stated_text": "The Central Register operates as the Point of Single Contact, interacting with the tax administration, the employment agency to allow for simultaneous registration in a single step.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The Central Register acts as the Point of Single Contact, linking with the tax administration and employment agency for one-step registration.",
-      "location": {
-        "page": 33,
-        "page_end": null,
-        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > II. FREEDOM TO PROVIDE SERVICES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "03",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP",
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "Central Register",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "Central Register as Point of Single Contact",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the sentence describes institutional interaction for one-step registration without naming an electronic system; the Point of Single Contact is an electronic procedure under the Services Directive.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7966,7 +6739,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8033,7 +6807,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8098,7 +6873,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8106,10 +6882,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the sentence does not say which requirements are unmet; the point of single contact is an online portal (page 33).",
+      "flags": [],
+      "extraction_note": "Kept under rules 0.2: the point of single contact is the online portal www.uslugi.gov.mk (item -0123); doubt resolved.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8165,7 +6939,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8173,10 +6948,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: as for the previous item.",
+      "flags": [],
+      "extraction_note": "Kept under rules 0.2: repeats in the summary of findings the recommendation in item -0123 (R10); the point of single contact is an online portal.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8232,7 +7005,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8300,7 +7074,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8312,349 +7087,6 @@
         "ambiguous_type"
       ],
       "extraction_note": "States the conditions for integration into IMI; typed as recommendation (an EU expectation), though it also records a positive view.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0128",
-      "information_type": "intervention",
-      "stated_text": "Until 2024, North Macedonia will develop a special software, a register of elected and appointed persons, with electronic submission of assets declarations; it will create electronic portals to connect with 20 other institutions.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "By 2024 North Macedonia will build software for a register of officials with electronic asset declarations and portals linking 20 institutions.",
-      "location": {
-        "page": 35,
-        "page_end": null,
-        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > IV. ANTI-CORRUPTION > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "03",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI",
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": "2024",
-        "event_date_precision": "year"
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "register of elected and appointed persons with electronic submission of assets declarations",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "event_date is the stated deadline ('Until 2024').",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0129",
-      "information_type": "intervention",
-      "stated_text": "The Law on Prevention of Corruption and Conflict of Interest will be amended to include new mechanisms for improving the Commission’s proceedings and to establish new software for transparent publication of data related to spending from elected and appointed persons.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The anti-corruption law will be amended, including to establish software publishing data on spending by elected and appointed persons.",
-      "location": {
-        "page": 35,
-        "page_end": null,
-        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > IV. ANTI-CORRUPTION > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "03",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA",
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "amendments to the Law on Prevention of Corruption and Conflict of Interest",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0130",
-      "information_type": "intervention",
-      "stated_text": "The amendments to the AML/CFT legislation also included Virtual Asset Service Providers (VASPs) into the AML/CFT framework, based on which VASPs are subject to regular AML/CFT preventive measures and supervision from April 2023.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Amended anti-money laundering law brought virtual asset service providers under preventive measures and supervision from April 2023.",
-      "location": {
-        "page": 39,
-        "page_end": null,
-        "section": "E) CHAPTER 4 - FREE MOVEMENT OF CAPITAL > III. ANTI-MONEY LAUNDERING > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "04",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": "2023-04",
-        "event_date_precision": "month"
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Virtual Asset Service Providers (VASPs)",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "amendments to the AML/CFT legislation (VASPs)",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: regulation of virtual asset service providers concerns digital economic activity but is not one of the listed theme examples.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0131",
-      "information_type": "finding",
-      "stated_text": "Among the shortcomings identified are a modest number of ML convictions, concerns about the proportionality, dissuasiveness and effectiveness of pecuniary sanctions, the data quality of the beneficial ownership register, lack of s anctions for failures related to basic or beneficial ownership information, technical deficiencies on confiscation, lack of systematic approach to conducting a financial investigation, and a low number of suspicious transaction reports compared to the to the risk, context, and size of the country.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "MONEYVAL's shortcomings include the data quality of the beneficial ownership register, among other enforcement weaknesses.",
-      "location": {
-        "page": 39,
-        "page_end": null,
-        "section": "E) CHAPTER 4 - FREE MOVEMENT OF CAPITAL > III. ANTI-MONEY LAUNDERING > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "04",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "MONEYVAL",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "MONEYVAL findings reported by the Commission. Only the data quality of the beneficial ownership register is theme material; the other shortcomings in the sentence are not. theme_doubtful because data quality is one item in a list.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0132",
-      "information_type": "intervention",
-      "stated_text": "The State Commission for the Prevention of Corruption plays a key role and has drafted guidelines for institutional corruption risk assessment, for the implementation of integrity policy and has developed a special software to monitor integrity policies implementation at central and local level institutions.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The anti-corruption commission has drafted risk and integrity guidelines and developed software to monitor integrity policy implementation in institutions.",
-      "location": {
-        "page": 40,
-        "page_end": null,
-        "section": "E) CHAPTER 4 - FREE MOVEMENT OF CAPITAL > IV. FIGHT AGAINST CORRUPTION – FREE MOVEMENT OF CAPITAL > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "04",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Commission for the Prevention of Corruption",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "special software to monitor integrity policies implementation",
-      "stated_status": "implemented",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8710,7 +7142,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -8778,209 +7211,8 @@
       "stated_status": "in_practice",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0135",
-      "information_type": "intervention",
-      "stated_text": "Basic information is accessible to the public online, free of charge, while an ‘at cost’ principle is applied for certified copies (paper or electronic).",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Basic company information is available online free of charge; certified copies, paper or electronic, are charged at cost.",
-      "location": {
-        "page": 41,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "Central Registry",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "online access to Central Registry company information",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0136",
-      "information_type": "metric",
-      "stated_text": "Documents and information are published in real time, taking a maximum of four hours to process once companies provide all the information needed.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Company documents are published in real time, within at most four hours of complete information being provided.",
-      "location": {
-        "page": 41,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "Central Registry",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": "maximum processing time for publication of company documents and information",
-        "value": 4,
-        "unit": "hours",
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0137",
-      "information_type": "intervention",
-      "stated_text": "Financial statements submitted in paper form are converted to machine -readable digital form (xml files).",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Paper financial statements are converted into machine-readable digital form as XML files.",
-      "location": {
-        "page": 41,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA",
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "Central Registry",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "conversion of paper financial statements to machine-readable form",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9047,7 +7279,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9115,7 +7348,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9127,74 +7361,6 @@
         "reported_view"
       ],
       "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0140",
-      "information_type": "intervention",
-      "stated_text": "North Macedonia informed that it plans to implement the EU ID in 2024.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia plans to implement the EU ID in 2024.",
-      "location": {
-        "page": 42,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": "2024",
-        "event_date_precision": "year"
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "EU ID",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the text does not define 'EU ID'; in context (BRIS) it appears to be the company identifier used for register interconnection, not personal electronic identification. Tagged TECH-INTEROP, not TECH-EID.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9250,7 +7416,8 @@
       "stated_status": "proposed",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9318,7 +7485,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9327,7 +7495,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "The same claim is repeated in the summary of findings on page 47 (item -0182).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9384,7 +7552,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9452,7 +7621,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9517,7 +7687,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9582,7 +7753,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9648,7 +7820,8 @@
       "stated_status": "in_practice",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9660,78 +7833,6 @@
         "reported_view"
       ],
       "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0148",
-      "information_type": "intervention",
-      "stated_text": "However, ‘registration agents’ (i.e. lawyers or chartered accountants authorised by the central registry), with direct access to the Central Registry, can act as intermediaries in certain cases (e.g. for those without a digital certificate or with insufficient computer literacy).",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Authorised registration agents can act as intermediaries, for example for people without a digital certificate or computer skills.",
-      "location": {
-        "page": 42,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > I.B. FORMATION AND CAPITAL REQUIREMENTS > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "registration agents",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "Central Registry",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "registration agents with direct access to the Central Registry",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the measure is an intermediary arrangement; the digital element is the access gap it addresses.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9787,7 +7888,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9797,6 +7899,72 @@
       },
       "flags": [],
       "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0182",
+      "information_type": "finding",
+      "stated_text": "It has a high level of alignment with the acquis on takeover bids and with EU disclosure requirements for companies and branches and the use of digital tools and processes, which are alr eady applicable on a national basis.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia is highly aligned with takeover bid rules and with company disclosure requirements and digital tools and processes.",
+      "location": {
+        "page": 47,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.H. SUMMARY OF FINDINGS – COMPANY LAW AND CORPORATE GOVERNANCE",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added under rules 0.2 (R10): same claim as item -0142, in the summary of findings.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9853,7 +8021,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -9865,816 +8034,6 @@
         "ambiguous_type"
       ],
       "extraction_note": "Forward-looking requirement within a summary of findings; recommendation would also fit.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0151",
-      "information_type": "intervention",
-      "stated_text": "Medium and large companies must submit their annual accounts electronically.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Medium and large companies must submit their annual accounts electronically.",
-      "location": {
-        "page": 48,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > II. COMPANY REPORTING > II.A. CORPORATE ACCOUNTING > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "electronic submission of annual accounts",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0152",
-      "information_type": "intervention",
-      "stated_text": "North Macedonia stated that the electronic information system for listed companies (SEI -NET) is the officially appointed mechanism that gathers, archives and publishes information in an impartial manner. Issuers are obliged to publish data and information through SEI-NET, which is received simultaneously by SEC. This information is accessible through the MSE website, free of charge.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The SEI-NET electronic system is the official mechanism for listed companies' disclosures, received by the SEC and freely accessible.",
-      "location": {
-        "page": 49,
-        "page_end": null,
-        "section": "F) CHAPTER 6 - COMPANY LAW > II.C. REPORTING ON CAPITAL MARKETS > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "06",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI",
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "SEI -NET",
-          "actor_id": null
-        },
-        {
-          "name_as_stated": "SEC",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "SEI-NET electronic information system for listed companies",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0153",
-      "information_type": "finding",
-      "stated_text": "North Macedonia is not aligned with Directive (EU) 2019/790 on Copyright and Related Rights in the Digital Single Market. . North Macedonia declared that the Government has set up a working group to analyse the provisions of the Directive.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is not aligned with the Digital Single Market copyright directive; the government set up a working group to analyse it.",
-      "location": {
-        "page": 55,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > II.B. COPYRIGHT IN THE INFORMATION SOCIETY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: copyright rules for the digital single market concern online content services, but the claim is about copyright alignment rather than digitalisation as such. The working group is mentioned in the same quote.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0154",
-      "information_type": "finding",
-      "stated_text": "North Macedonia is not aligned with Directive (EU) 2019/790 on the Digital Single Market.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is not aligned with the Digital Single Market copyright directive.",
-      "location": {
-        "page": 55,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > II.B. COPYRIGHT IN THE INFORMATION SOCIETY > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: as for the previous item.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0155",
-      "information_type": "finding",
-      "stated_text": "North Macedonia has reached a high level of alignment with Directive 96/9/EC.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is highly aligned with the directive on legal protection of databases.",
-      "location": {
-        "page": 56,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > II.E. DATABASES > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: legal protection of databases is intellectual property in data collections, at the edge of data governance.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0156",
-      "information_type": "recommendation",
-      "stated_text": "North Macedonia is not aligned with Regulation (EU) 2017/1128. It needs to start laying out the necessary conditions to align with the Regulation as soon as possible.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is not aligned with the online content portability regulation and needs to start preparing alignment soon.",
-      "location": {
-        "page": 58,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > II.K. PORTABILITY > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Two sentences quoted together: the finding of non-alignment and the requirement to start. theme_doubtful: cross-border portability of online content services is a digital service rule within copyright.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0157",
-      "information_type": "recommendation",
-      "stated_text": "North Macedonia is advised to include a provision regarding the principle of exhaustion of distribution rights of a copy of the computer program, with the exception of the right to control further rental of the program, as provided by Article 4.2 of the Directive.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is advised to add a provision on exhaustion of distribution rights for copies of computer programs.",
-      "location": {
-        "page": 58,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > II.L. COMPUTER PROGRAMMES > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: legal protection of software is an intellectual property rule rather than digitalisation of activity.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0158",
-      "information_type": "finding",
-      "stated_text": "North Macedonia acknowledged the limited number of inspectors in the field of IPR and the lack of a functioning electronic database for the exchange of information among IPR-related bodies.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia acknowledged too few IPR inspectors and no functioning electronic database for information exchange among IPR bodies.",
-      "location": {
-        "page": 62,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > IV. ENFORCEMENT > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP",
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0159",
-      "information_type": "finding",
-      "stated_text": "It also acknowledged the need of a functioning e-network for the exchange of IPR data between the relevant institutions.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia acknowledged the need for a functioning e-network to exchange IPR data between institutions.",
-      "location": {
-        "page": 63,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > IV. ENFORCEMENT > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "ambiguous_type"
-      ],
-      "extraction_note": "An acknowledged need; could also be typed as a recommendation.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0160",
-      "information_type": "recommendation",
-      "stated_text": "North Macedonia is also expected to make operational its online information platform for law enforcement institutions to exchange data on IPR, in order to enhance efficiency and implementation in practice, and to provide full insight into the institutional handling of IPR infringements.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is expected to make operational its online platform for law enforcement bodies to exchange IPR data.",
-      "location": {
-        "page": 63,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > IV. ENFORCEMENT > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP",
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0161",
-      "information_type": "recommendation",
-      "stated_text": "North Macedonia is also expected to make operational its online information platform for law enforcement institutions to exchange data on IPR and to provide full insight into the institutional handling of IPR infringements.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is expected to make operational its online platform for law enforcement bodies to exchange IPR data.",
-      "location": {
-        "page": 64,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > C. SUMMARY OF FINDINGS – ENFORCEMENT",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP",
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Repeats the assessment recommendation in the summary of findings.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0162",
-      "information_type": "intervention",
-      "stated_text": "The State Commission has prepared an integrity policy, guide lines for implementing it, a handbook for integrity officers, and a software to monitor the execution of such measures.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The anti-corruption commission prepared an integrity policy, guidelines, a handbook and software to monitor their execution.",
-      "location": {
-        "page": 64,
-        "page_end": null,
-        "section": "G) CHAPTER 7 - INTELLECTUAL PROPERTY LAW > V. FIGHT AGAINST CORRUPTION - INTELLECTUAL PROPERTY LAW > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "07",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "State Commission",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "software to monitor the execution of integrity measures",
-      "stated_status": "implemented",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -10731,7 +8090,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -10742,7 +8102,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Finding of the State Commission reported in North Macedonia's presentation; the subject is inferred from the preceding sentences, which concern the SOIP.",
+      "extraction_note": "Finding of the State Commission reported in North Macedonia's presentation; the subject is taken from the preceding sentences, which concern the SOIP. Kept under rules 0.2: digitalisation of the registration process is the subject.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -10799,7 +8159,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -10865,7 +8226,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -10875,275 +8237,6 @@
       },
       "flags": [],
       "extraction_note": "Repeats the assessment recommendation in the summary of findings.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0166",
-      "information_type": "recommendation",
-      "stated_text": "Its administrative capacities should be further strengthened in particular through hiring addition al staff and continuous training, including in the use of forensic software for carrying out inspections.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "The competition authority's capacity should be strengthened through more staff and training, including in forensic software for inspections.",
-      "location": {
-        "page": 73,
-        "page_end": null,
-        "section": "H) CHAPTER 8 - COMPETITION POLICY > II. INSTITUTIONAL FRAMEWORK AND IMPLEMENTING CAPACITY > II.A. ANTITRUST AND MERGERS > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "08",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "CPC",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the technology element (forensic software) is one part of a staffing and training recommendation.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0167",
-      "information_type": "intervention",
-      "stated_text": "Additionally, North Macedonia will implement a special software solution to streamlin e the enforcement against corruption.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia will implement a special software solution to streamline anti-corruption enforcement.",
-      "location": {
-        "page": 92,
-        "page_end": null,
-        "section": "I) CHAPTER 9 - FINANCIAL SERVICES > VI. FIGHT AGAINST CORRUPTION – FINANCIAL SERVICES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "09",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "special software solution for enforcement against corruption",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0168",
-      "information_type": "intervention",
-      "stated_text": "With regard to the EU rapid alert system for dangerous non -food products (Safety Gate) full alignment with the relevant legal requirements is foreseen by the time of accession.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Full alignment with the legal requirements of the EU rapid alert system Safety Gate is foreseen by accession.",
-      "location": {
-        "page": 95,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.B. PRODUCT SAFETY RELATED ISSUES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "alignment with Safety Gate requirements",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: Safety Gate is an EU electronic alert system, but the claim concerns legal alignment, not connection to the system.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0169",
-      "information_type": "finding",
-      "stated_text": "It is partly aligned with the the EU rapid alert system for dangerous non-food products (Safety Gate).",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia is partly aligned with the EU rapid alert system for dangerous non-food products.",
-      "location": {
-        "page": 95,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.B. PRODUCT SAFETY RELATED ISSUES > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: as for the previous item.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -11199,74 +8292,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0171",
-      "information_type": "finding",
-      "stated_text": "North Macedonia has not yet aligned its legislation to Directive 2013/11/ EU on alternative dispute resolution for consumer disputes, or to Regulation 524/2013(EU) on online dispute resolution for consumer disputes, full alignment to both is foreseen by the end of 2025.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia has not aligned with the alternative and online dispute resolution acts; full alignment is foreseen by end 2025.",
-      "location": {
-        "page": 97,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.C. NON-SAFETY RELATED ISSUES > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -11278,141 +8305,7 @@
         "reported_view",
         "theme_doubtful"
       ],
-      "extraction_note": "theme_doubtful: online dispute resolution concerns an EU online platform, but the claim is about legal alignment. The planned alignment date in the same sentence is not split into a separate intervention item.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0172",
-      "information_type": "finding",
-      "stated_text": "In the area of non -safety related issues the legislation of North Macedonia is aligned with the EU acquis on distance marketing of consumer financial services , on unfair business -to-consumer commercial practices, on the sale of goods, on contracts for the supply of digital content and digital services, on contracts for the sale of goods, and on credit agreements.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia's legislation is aligned with several consumer acts, including on contracts for digital content and digital services.",
-      "location": {
-        "page": 97,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.C. NON-SAFETY RELATED ISSUES > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: digital content and digital services contracts are one item in a list of consumer acts.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0173",
-      "information_type": "finding",
-      "stated_text": "North Macedonia has not yet aligned its legislation to the EU acquis on package travel and linked travel arrangements, on alternative dispute resolution for consumer disputes , or on online dispute resolution for consumer disputes.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia has not aligned with acts on package travel and on alternative and online dispute resolution.",
-      "location": {
-        "page": 97,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.C. NON-SAFETY RELATED ISSUES > b. Commission assessment",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: online dispute resolution is one item in a list.",
+      "extraction_note": "theme_doubtful: the claim concerns consumer contract law for digital content and digital services, where the digital service is the subject of the rule but not of a digitalisation measure.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -11469,7 +8362,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -11480,7 +8374,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "The same claim is made by the Commission on page 99 (item -0176) and in the summary of findings on page 106 (item -0183).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -11537,7 +8431,8 @@
       "stated_status": "in_practice",
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -11605,7 +8500,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -11616,7 +8512,7 @@
       "flags": [
         "ambiguous_type"
       ],
-      "extraction_note": "One sentence with a finding of non-alignment and a statement that a system is in place; recorded once as a finding because the system statement qualifies the finding.",
+      "extraction_note": "One sentence with a finding of non-alignment and a statement that a system is in place; recorded once as a finding because the system statement qualifies the finding. Repeated in the summary of findings on page 106 (item -0183).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -11627,17 +8523,17 @@
       }
     },
     {
-      "item_id": "MKD-EU-2025-003-0177",
-      "information_type": "intervention",
-      "stated_text": "The agency ensures marketing authorisation, approval for placing on the market, clinical trial approval, approval of variations, and reporting of adverse effects via and integrated IT system.",
+      "item_id": "MKD-EU-2025-003-0183",
+      "information_type": "finding",
+      "stated_text": "North Macedonia is not aligned with the EU acquis on eHealth , on medical devices or on in vitro diagnostic medical devices,",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The medicines agency handles authorisations, clinical trial approvals, variations and adverse effect reporting through an integrated IT system.",
+      "summary": "North Macedonia is not aligned with the EU acquis on eHealth, medical devices or in vitro diagnostic medical devices.",
       "location": {
-        "page": 99,
+        "page": 106,
         "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.C. MEDICAL PRODUCTS FOR HUMAN AND VETERINARY USE > a. Country presentation",
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II.Q. SUMMARY OF FINDINGS – PUBLIC HEALTH",
         "paragraph": null,
         "snapshot_file": null
       },
@@ -11650,75 +8546,7 @@
         "theme"
       ],
       "themes": [
-        "TECH-DIGI",
-        "TECH-DGOV"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "national agency of medicines and medical devices",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "integrated IT system of the medicines agency",
-      "stated_status": "in_practice",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": null,
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0178",
-      "information_type": "intervention",
-      "stated_text": "North Macedonia ensures reporting on 64 communicable diseases and is in the process of making an electronic surveillance system on communicable diseases operational.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia reports on 64 communicable diseases and is making an electronic communicable disease surveillance system operational.",
-      "location": {
-        "page": 102,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.H. COMMUNICABLE DISEASES AND HEALTH SECURITY > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI",
+        "TECH-DGOV",
         "TECH-DATA"
       ],
       "dates": {
@@ -11728,7 +8556,7 @@
         "event_date_precision": null
       },
       "speaker": {
-        "name_as_stated": "North Macedonia",
+        "name_as_stated": "European Commission",
         "actor_id": null
       },
       "subjects": [
@@ -11737,11 +8565,12 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "electronic surveillance system on communicable diseases",
-      "stated_status": "unclear",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -11749,79 +8578,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "reported_view"
-      ],
-      "extraction_note": "stated_status unclear: 'in the process of making ... operational'.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2025-003-0179",
-      "information_type": "intervention",
-      "stated_text": "North Macedonia plans to officialise a new system for real-time threat reporting and fully implement a national operational centre for crisis in the next 5-7 years.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia plans a new real-time threat reporting system and a national crisis operational centre within five to seven years.",
-      "location": {
-        "page": 103,
-        "page_end": null,
-        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.J. HEALTH INFORMATION > a. Country presentation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "2",
-      "chapter": "28",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI",
-        "TECH-DATA"
-      ],
-      "dates": {
-        "publication_date": "2025-02-04",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "North Macedonia",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "new system for real-time threat reporting",
-      "stated_status": "proposed",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "reported_view",
-        "theme_doubtful"
-      ],
-      "extraction_note": "theme_doubtful: the text does not say whether the reporting system is electronic.",
+      "flags": [],
+      "extraction_note": "Added under rules 0.2 (R10): same claim as items -0174 and -0176, in the summary of findings. Quote stops before the separate claim on the ECDC.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -11877,7 +8635,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null
+        "progress_level": null,
+        "applies_to": null
       },
       "metric": {
         "indicator": null,
@@ -11889,7 +8648,75 @@
         "reported_view",
         "theme_doubtful"
       ],
-      "extraction_note": "Recommendation of the anti-corruption commission reported in North Macedonia's presentation. theme_doubtful: digitalisation of public procurement is one of four recommended actions.",
+      "extraction_note": "Recommendation of the anti-corruption commission reported in North Macedonia's presentation. theme_doubtful kept: digitalisation of public procurement is the subject of one of four recommended actions.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0184",
+      "information_type": "finding",
+      "stated_text": "SCPC has flagged interoperability issues between inspection services, a lack of qualified inspectors, it also found several risks of corruption in inspection services and recommended remedial measures (findings that are relevant to market surveillance).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The anti-corruption commission flagged interoperability issues between inspection services, among other problems relevant to market surveillance.",
+      "location": {
+        "page": 107,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > IV. FIGHT AGAINST CORRUPTION - CONSUMER AND HEALTH PROTECTION > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SCPC",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "inspection services",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Added under rules 0.2 (R10): same claim as items -0009 and -0181, repeated in the Chapter 28 assessment.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

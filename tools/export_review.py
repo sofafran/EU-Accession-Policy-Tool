@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record  # noqa: E402
 
-__version__ = "1.2.1"
+__version__ = "1.3.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -305,12 +305,25 @@ def g3(root, run):
                         ", ".join(f"{k} {v}" for k, v in sorted(Counter(t for i in mine for t in i["themes"]).items())),
                         sum("theme_doubtful" in i["flags"] for i in mine), sum(not i["quote_verified"] for i in mine),
                         sum(1 for i in mine if i in withheld)])
+    changes, removed = [], []
+    for old in sorted((root / "review" / run).glob("sample_*/*.json")):
+        prev = {i["item_id"]: i for i in read_json(old)["items"]}
+        now_items = {i["item_id"]: i for i in items if i["_source"] == old.stem}
+        kept = set(prev) & set(now_items)
+        changes.append([old.parent.name.replace("sample_", ""), old.stem, len(prev), len(now_items), len(kept),
+                        len(set(prev) - kept), len(set(now_items) - kept),
+                        sum(1 for k in kept if prev[k]["information_type"] != now_items[k]["information_type"])])
+        for k in sorted(set(prev) - kept):
+            i = prev[k]
+            removed.append([k, i["information_type"], i["stated_text"], "; ".join(i["scope_basis"]), "; ".join(i["themes"]), "; ".join(i["flags"])])
     return "G3_sample_review.xlsx", [
         ("Sample items", item_header, rows),
         ("Missed items", ["source_id", "page", "stated_text", "information_type", "comment"], []),
         ("Hand-coding comparison", ["passage", "result", "quote", "agent item_id", "type (analyst / agent)", "note"], comparison),
         ("Quote verification", ["source_id", "item_id", "result", "detail"], quote_rows),
         ("Summary", ["source_id", "items", "by type", "by scope basis", "themes", "theme_doubtful", "quote failures", "withheld until hand-coding"], summary),
+        ("Changes since first sample", ["earlier rules", "source_id", "items before", "items now", "kept", "removed", "added", "retyped"], changes),
+        ("Removed items", ["item_id", "information_type", "stated_text", "scope_basis", "themes", "flags"], removed),
         ("Rule issues", *(lambda h, r: (h + ["reviewer_decision", "reviewer_comment"] if h else ["issue_id"], [[x[k] for k in h] + ["", ""] for x in r]))(*read_csv(root / "review" / run / "G3_rule_issues.csv"))),
         lessons_sheet(root, run),
         ("Validation", ["validate_data output"], validation_lines(root)),
@@ -323,7 +336,7 @@ BUILDERS = {"G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": 
 def main(argv=None):
     p = argparse.ArgumentParser(
         description="Build the review spreadsheet for a gate in review/<run_id>/, with the items needing a decision first, "
-                    "so the analyst never reads raw JSON. Version 1.2.0 builds G0, G1, G2, G3 and the stage 5 hand-coding workbook "
+                    "so the analyst never reads raw JSON. Version 1.3.0 builds G0, G1, G2, G3 (with a comparison against any earlier sample kept in review/<run_id>/sample_<rules version>/) and the stage 5 hand-coding workbook "
                     "(from review/<run_id>/G3_passages.csv and G3_sample.csv); sheets for later gates are added and tested before those gates are reached.")
     p.add_argument("gate", choices=sorted(BUILDERS), help="gate to build the package for")
     p.add_argument("--run", default="RUN-2026-01", help="run ID (default RUN-2026-01)")

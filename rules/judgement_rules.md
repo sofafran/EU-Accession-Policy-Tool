@@ -1,6 +1,6 @@
 # Judgement rules
 
-Version 0.1b, 29 October 2026. Status: draft, to be refined at gate G6. Changes create a new version and are listed in the change log at the end of this file.
+Version 0.2, 29 October 2026. Status: draft, to be refined at gate G6. Changes create a new version and are listed in the change log at the end of this file.
 
 These rules tell the agent how to make first-cut judgements. The questions, scales and criteria are defined in Codebook 6, which takes precedence if the two ever differ. This file adds the operational detail.
 
@@ -37,7 +37,7 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 
 - **Source quality:** fill in the six factor columns first (yes, partly, no or not applicable; primary or secondary), then the overall value. A source can have different ratings for different chapters or themes.
 - **Evidence confidence:** apply the Codebook 6 criteria. Cap at Medium if `machine_translated` is true. Lower by one level if the item is flagged `hedged` or `ocr`, unless the claim is corroborated.
-- **Direction of travel:** base it on the sequence of EU standard-scale wording across years (`preparation_level`, `progress_level`) first, then on independent evidence. Cite the items for each year used. If the Commission wording is unchanged for three or more reports, the default is `persistent`. The standard scale rates a whole chapter. For an issue that comes from a cross-cutting theme, or that is only part of a chapter, use the chapter's scale as context only: base the judgement on the issue's own items (repeated or changed recommendations and findings) and say in the reason that the scale was not decisive.
+- **Direction of travel:** base it on the sequence of EU standard-scale wording across years (`preparation_level`, `progress_level`) first, then on independent evidence. Cite the items for each year used. If the Commission wording is unchanged for three or more reports, the default is `persistent`. Use only wording with `eu_scale.applies_to` `chapter` for a chapter-wide issue; use `sub_area` wording only for an issue that matches that sub-area, and say so in the reason. The standard scale rates a whole chapter. For an issue that comes from a cross-cutting theme, or that is only part of a chapter, use the chapter's scale as context only: base the judgement on the issue's own items (repeated or changed recommendations and findings) and say in the reason that the scale was not decisive.
 - **Unresolved gap:** compare the latest EU requirement items for the issue with the implementation status of the interventions that respond to them. At stage 10 these statuses are still proposals, so say so in the reason; the reviewers check both together at G6. Describe in one sentence what remains.
 - **Success and attribution:** only judge an outcome that has a `leads_to` link. Never judge success from government reporting alone (Codebook 2).
 - **Priority:** consider whether the issue appears in EU benchmarks or repeated key recommendations, and how central it is to the chapter or theme. **Tractability:** consider the mechanisms involved, the actors needed and evidence of past progress.
@@ -50,5 +50,6 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 
 ## Change log
 
+- 0.2 (29 Oct 2026): direction of travel distinguishes chapter-level from sub-area progress wording (rule issue R3, approved by the analyst).
 - 0.1b (29 Oct 2026): pre-G0 reconfiguration of the pilot (decisions A5 to A9 and D6). Country-neutral wording; source quality per chapter or theme; direction of travel and priority for issues from cross-cutting themes.
 - 0.1 (23 Oct 2026): first draft from the approved architecture.

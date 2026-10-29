@@ -1,6 +1,6 @@
 # Classification rules (pass 2)
 
-Version 0.1b, 29 October 2026. Status: draft, to be refined at gates G4 and G5. Changes create a new version and are listed in the change log at the end of this file.
+Version 0.2, 29 October 2026. Status: draft, to be refined at gates G4 and G5. Changes create a new version and are listed in the change log at the end of this file.
 
 Pass 2 adds the interpretive layer to evidence items that have passed pass 1. It implements Codebook 5. It never changes the pass 1 fields (quote, type, location, dates, stated status). If a pass 1 error is found, it is recorded in the review queue for correction under the extraction rules rather than silently fixed.
 
@@ -66,7 +66,7 @@ Create links in `links/links.csv` only where the connection is clear from the ev
 | `explains` | barrier item | reform issue | The barrier is given as a reason for the issue persisting |
 | `lesson_from` | lesson item | intervention or comparator case | The lesson is drawn from that experience |
 | `replaces`, `amends` | intervention | intervention | Legal succession |
-| `same_as_earlier` | item | item | The same EU wording repeats from an earlier report |
+| `same_as_earlier` | item | item | The same EU wording repeats from an earlier report, or the same claim appears in two places in one document (extraction rules 0.2) |
 
 Two items from the same source never corroborate each other. A government source and a government statistic do not count as independent of each other.
 
@@ -82,5 +82,6 @@ Every item starts with `classification_status` `not_classified` (set in pass 1) 
 
 ## Change log
 
+- 0.2 (29 Oct 2026): `same_as_earlier` also links a claim repeated in two places of one document (extraction rules 0.2, rule issue R10).
 - 0.1b (29 Oct 2026): pre-G0 reconfiguration of the pilot (decisions A5 to A9 and D6). Country-neutral wording; scope check (section 5) and `out_of_scope` status for cross-cutting themes and chain items; former names of the country recorded on actors.
 - 0.1 (23 Oct 2026): first draft from the approved architecture.

@@ -1,6 +1,6 @@
 # Data dictionary
 
-Version 1.1, 29 October 2026 (pre-G0 reconfiguration of the pilot: theme fields, scope basis and country-neutral examples; see decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
@@ -319,4 +319,4 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 
 ## evidence/<country>/<source_id>.json
 
-One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules, including `scope_basis` (`chapter`, `theme`, `chain` or `exception`) and `themes` (theme codes), and a `pass2` block filled in by classification. The file header records the theme list version used in `extraction.themes_version`.
+One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules, including `scope_basis` (`chapter`, `theme`, `chain` or `exception`), `themes` (theme codes), `stated_status` (`proposed`, `adopted`, `implemented`, `in_practice`, `in_progress`, `reversed`, `unclear`) and `eu_scale.applies_to` (`chapter` or `sub_area`), and a `pass2` block filled in by classification. The file header records the theme list version used in `extraction.themes_version`.
