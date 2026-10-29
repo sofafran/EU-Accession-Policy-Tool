@@ -225,9 +225,8 @@ def main():
         good["items"] = [i for i in good["items"] if i["quote_verified"]]
         ev.write_text(json.dumps(good, ensure_ascii=False), encoding="utf-8")
         wev.unlink()
-        reg = proj / "registers" / "source_register.csv"
-        lines = reg.read_text(encoding="utf-8").splitlines()
-        reg.write_text("\n".join(lines[:1]) + "\n", encoding="utf-8")
+        # Reset the copied registers that refer to real sources, so the sample project is self-contained.
+        shutil.copy2(ROOT / "registers" / "source_register.csv", proj / "registers" / "source_register.csv")
         r = run(proj, "validate_data.py")
         check("validate_data.py", "clean sample project passes", r.returncode == 0, r.stdout[-800:])
         bad = json.loads(ev.read_text(encoding="utf-8"))
@@ -274,12 +273,48 @@ def main():
         check("export_review.py", "G0: decisions needed come first, freeze date at the top",
               wb.sheetnames[0] == "Decisions needed" and first.cell(2, 1).value == "Evidence freeze date")
 
+        rv = proj / "review" / "RUN-2026-01"
+        (rv / "G3_passages.csv").write_text("passage_id,source_id,page,start_text,end_text,why\nP1,MKD-EU-2025-001,1,The country has,,test\n", encoding="utf-8")
+        (rv / "G3_sample.csv").write_text("source_id,pages,reason\nMKD-EU-2025-001,whole,test\n", encoding="utf-8")
+        reg_lines = (proj / "registers" / "source_register.csv").read_text(encoding="utf-8").splitlines()
+        (proj / "registers" / "source_register.csv").write_text(reg_lines[0] + "\nMKD-EU-2025-001,EU,European Commission,,Test report" + "," * 20 + "\n", encoding="utf-8")
+        r = run(proj, "export_review.py", "G3-handcoding")
+        ok = r.returncode == 0 and (rv / "G3_handcoding.xlsx").exists()
+        if ok:
+            wb = load_workbook(rv / "G3_handcoding.xlsx")
+            psg = wb["Passages"].cell(2, 6).value or ""
+            ok = wb.sheetnames == ["Instructions", "Proposed sample", "Passages", "Hand-coded items"] and psg.startswith("The country has some level")
+        check("export_review.py", "G3 hand-coding workbook: passage text taken from the cited page", ok, r.stderr[-300:])
+        r = run(proj, "export_review.py", "G3")
+        ok = r.returncode == 0 and (rv / "G3_sample_review.xlsx").exists()
+        if ok:
+            wb = load_workbook(rv / "G3_sample_review.xlsx")
+            shown = [c.value for c in wb["Sample items"]["A"][1:]]
+            comp = [row for row in wb["Hand-coding comparison"].iter_rows(min_row=2, values_only=True)]
+            ok = f"{sid}-0001" not in shown and comp and comp[0][1] == "awaiting hand-coding"
+        check("export_review.py", "G3: agent items in a passage are withheld until it is hand-coded", ok, r.stderr[-300:])
+        hw = load_workbook(rv / "G3_handcoding.xlsx")
+        ws = hw["Hand-coded items"]
+        ws.cell(2, 3).value = "finding"
+        ws.cell(2, 4).value = "The country has some level of preparation in this area."
+        ws.cell(3, 3).value = "recommendation"
+        ws.cell(3, 4).value = "The country should adopt a law on something not in the agent output."
+        hw.save(rv / "G3_handcoding.xlsx")
+        r = run(proj, "export_review.py", "G3")
+        wb = load_workbook(rv / "G3_sample_review.xlsx")
+        res = [row[1] for row in wb["Hand-coding comparison"].iter_rows(min_row=2, values_only=True)]
+        shown = [c.value for c in wb["Sample items"]["A"][1:]]
+        check("export_review.py", "G3: comparison finds matched, missed and extra items once hand-coded",
+              "matched" in res and "missed by the agent" in res and "extra in the agent output" in res and f"{sid}-0001" in shown, str(res))
+        (rv / "G3_sample_review.xlsx").unlink()
+
         # build_review_page
         out_html = Path(tmp) / "index.html"
         r = run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-10-29")
         page = out_html.read_text(encoding="utf-8") if r.returncode == 0 else ""
         check("build_review_page.py", "page builds", bool(page), r.stderr[-300:])
         check("build_review_page.py", "G0 shown as pending review while its package awaits decision", ">G0</td>" in page and "Pending review" in page)
+        check("build_review_page.py", "hand-coding workbook is not treated as a G3 package", "<dt>Gate package awaiting decision</dt><dd>G3" not in page and ">G3</td><td>Extraction rules after the sample</td><td>Sofia</td><td><span class=\"label notstarted\">" in page)
         check("build_review_page.py", "no external scripts, fonts or stylesheets", "<script" not in page and "http" not in page.split("<body>")[1].split("<footer>")[0] and "<link" not in page)
         check("build_review_page.py", "extraction section shows the sample", "Evidence items" in page)
         with (proj / "registers" / "gate_log.csv").open("a", encoding="utf-8") as fh:

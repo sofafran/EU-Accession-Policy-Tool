@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -147,7 +147,8 @@ class Page:
     def pending(self, gate):
         if gate in self.decisions:
             return False
-        return any(self.review_dir.glob(f"{gate}_*.xlsx")) if self.review_dir.exists() else False
+        # Hand-coding workbooks are inputs prepared before a gate, not gate packages.
+        return any(f for f in self.review_dir.glob(f"{gate}_*.xlsx") if "handcoding" not in f.name) if self.review_dir.exists() else False
 
     def status(self, gate, has_data):
         if gate_passed(self.decisions, gate):
