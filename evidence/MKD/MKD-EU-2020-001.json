@@ -8,7 +8,7 @@
     "pages_processed": "2-103",
     "codebook_version": "1.2",
     "themes_version": "1.2",
-    "notes": "Pass 1 sample extraction. Read the table of contents (pages 2-3), the report summary (pages 5-8), the Chapter 2 section (page 62) and every other section for passages materially concerning the technology and AI theme, using the table of contents and keyword searches with surrounding context (democracy, public administration reform, Chapters 23 and 24, economic criteria, Chapters 1 to 33). The 2020 report has no cluster structure; cluster '2' is set only for Chapter 2 items as instructed, and left empty elsewhere. The statistical annex (pages 104-109) was not extracted: its broadband and internet figures are a table covering 2007 to 2018, before the run window. period_covered is empty in the source register and the report does not state its reporting period, so it is left null. Several items record 2019 events reported in this in-window source; they carry the out_of_window flag for the analyst to decide, as no logged exception covers them. Page numbers are the text file's PAGE markers, which run one higher than the printed page numbers. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: sector IT tools, online publishing, sector statistics data, digital skills and pre-window claims not needed were removed, eu_scale.applies_to was set, in_progress statuses and retyping applied, and the page number was removed from the one cross-page quote; kept items keep their 0.1b IDs. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: 112 emergency number items removed (R20), tax e-services and e-procurement items confirmed as digital government without doubt flags (R12), and two quotes cut to the claim (R18); no removed item met the restore criteria."
+    "notes": "Pass 1 sample extraction. Read the table of contents (pages 2-3), the report summary (pages 5-8), the Chapter 2 section (page 62) and every other section for passages materially concerning the technology and AI theme, using the table of contents and keyword searches with surrounding context (democracy, public administration reform, Chapters 23 and 24, economic criteria, Chapters 1 to 33). The 2020 report has no cluster structure; cluster '2' is set only for Chapter 2 items as instructed, and left empty elsewhere. The statistical annex (pages 104-109) was not extracted: its broadband and internet figures are a table covering 2007 to 2018, before the run window. period_covered is empty in the source register and the report does not state its reporting period, so it is left null. Several items record 2019 events reported in this in-window source; they carry the out_of_window flag for the analyst to decide, as no logged exception covers them. Page numbers are the text file's PAGE markers, which run one higher than the printed page numbers. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: sector IT tools, online publishing, sector statistics data, digital skills and pre-window claims not needed were removed, eu_scale.applies_to was set, in_progress statuses and retyping applied, and the page number was removed from the one cross-page quote; kept items keep their 0.1b IDs. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: 112 emergency number items removed (R20), tax e-services and e-procurement items confirmed as digital government without doubt flags (R12), and two quotes cut to the claim (R18); no removed item met the restore criteria. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
   },
   "classification": {
     "status": "not_started"
@@ -274,7 +274,7 @@
     {
       "item_id": "MKD-EU-2020-001-0009",
       "information_type": "intervention",
-      "stated_text": "portal also went live, providing the general public with detailed information on all budget users’ transactions (at central level).",
+      "stated_text": "The ‘open finance’ portal also went live, providing the general public with detailed information on all budget users’ transactions (at central level).",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -322,7 +322,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Quote start corrected to the claim's first word in the G3 independent review.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4056,7 +4056,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Status 'being developed': in_progress under rules 0.2. Status 'being developed': under way but not complete; recorded as unclear. Kept under rules 0.3 (R12): the e-procurement portal is an online public service used directly by bidders.",
+      "extraction_note": "Status 'being developed': in_progress under rules 0.2. Kept under rules 0.3 (R12): the e-procurement portal is an online public service used directly by bidders.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4172,6 +4172,10 @@
         "actor_id": null
       },
       "subjects": [
+        {
+          "name_as_stated": "the country",
+          "actor_id": null
+        },
         {
           "name_as_stated": "national Broadband Competence Office (BCO)",
           "actor_id": null
@@ -4505,12 +4509,12 @@
         "indicator": "fixed broadband penetration",
         "value": "slightly increased",
         "unit": null,
-        "reference_period": "reporting period"
+        "reference_period": null
       },
       "flags": [
         "ambiguous_type"
       ],
-      "extraction_note": "Indicator with a direction but no number; could also be read as a finding.",
+      "extraction_note": "Indicator with a direction but no number; could also be read as a finding. Reference period not stated in the sentence.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4568,10 +4572,10 @@
         "indicator": "mobile broadband penetration (2G/3G/4G)",
         "value": 62.7,
         "unit": "%",
-        "reference_period": "reporting period"
+        "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Reference period not stated in the sentence.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5321,10 +5325,10 @@
         "indicator": "e-commerce growth",
         "value": "more than 20",
         "unit": "% year on year",
-        "reference_period": "reporting period"
+        "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Reference period not stated in the sentence.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5902,6 +5906,194 @@
         "theme_doubtful"
       ],
       "extraction_note": "Quote cut to the claim under rules 0.3 (R18); the rest of the sentence (nomination of an ECDC correspondent) is left out. Doubtful: data are provided to an EU data collection system, but the text does not say the exchange is electronic.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2020-001-0169",
+      "information_type": "barrier",
+      "stated_text": "both of which are a decrease compared with 2018 due to the absence of a director.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Both figures fell compared with 2018 due to the absence of a director.",
+      "location": {
+        "page": 28,
+        "page_end": null,
+        "section": "2.2.1 Chapter 23: Judiciary and fundamental rights / Fundamental rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-10-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Directorate",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added in the G3 independent review. Same sentence as items -0041 and -0042, which record the figures; this item records the stated cause of the decrease.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2020-001-0170",
+      "information_type": "intervention",
+      "stated_text": "A secure communication link for information exchange (SIENA) was established.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A secure communication link for information exchange (SIENA) was established.",
+      "location": {
+        "page": 40,
+        "page_end": null,
+        "section": "2.2.2 Chapter 24: Justice, freedom and security / Fight against organised crime / Implementation and enforcement capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": "24",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-10-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "secure communication link for information exchange (SIENA)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added in the G3 independent review. The paragraph concerns cooperation with Europol; kept for the same reason as -0060 (connection to an EU electronic exchange system). No date stated.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2020-001-0171",
+      "information_type": "recommendation",
+      "stated_text": "The data validation of the professional qualifications electronic register still needs to be finalised and the accredited professional qualifications included .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Data validation of the professional qualifications electronic register still needs finalising, and accredited qualifications need including.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "5.3 Chapter 3: Right of establishment and freedom to provide services",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": "03",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-10-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added in the G3 independent review. Material under themes.csv TECH-DATA ('setting up a register with reliable data'): the claim concerns the data quality of an electronic register. Chapter 3, not Chapter 2.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

@@ -8,7 +8,7 @@
     "pages_processed": "2-128 (full report read via the table of contents and keyword search; Chapter 2 material on pages 77, 79-80; Chapter 10 on pages 90-92)",
     "codebook_version": "1.2",
     "themes_version": "1.2",
-    "notes": "Whole report screened: Chapter 2 (cluster 2 summary page 77 and chapter section pages 79-80) extracted in full; every other section searched for passages that materially concern the technology theme, using the table of contents and keyword searches, with surrounding text read in context. Period covered taken from footnote 1 of the report (June 2022 to June 2023); the register leaves it blank. Claims repeated between the report summary and the chapter sections are extracted at each place (R10). Chapter 2 contains no technology element (no reference to EESSI or other electronic systems). Figures for online public services differ within the report (238 on page 81, 392 on page 91, 230 on page 122) and household internet access differs between page 66 (83.6%) and the annex (83.7). Revised on 2026-10-29 under extraction rules 0.2 (R1 to R11): items failing the narrower materiality test, digital skills items, a Chapter 2 item outside the run-record boundary and list lead-ins were removed, repeated claims were added at each place, page-break quotes were restored, and three 0.1b quotes that had started too early were corrected. Second revision on 2026-10-29 under extraction rules 0.3 (R12 to R20): e-procurement, tax e-services and the agricultural e-application were treated as digital government and restored, the Chapter 2 integrity recommendation and two lead-ins with their own claim were restored, and no other item needed change."
+    "notes": "Whole report screened: Chapter 2 (cluster 2 summary page 77 and chapter section pages 79-80) extracted in full; every other section searched for passages that materially concern the technology theme, using the table of contents and keyword searches, with surrounding text read in context. Period covered taken from footnote 1 of the report (June 2022 to June 2023); the register leaves it blank. Claims repeated between the report summary and the chapter sections are extracted at each place (R10). Chapter 2 contains no technology element (no reference to EESSI or other electronic systems). Figures for online public services differ within the report (238 on page 81, 392 on page 91, 230 on page 122) and household internet access differs between page 66 (83.6%) and the annex (83.7). Revised on 2026-10-29 under extraction rules 0.2 (R1 to R11): items failing the narrower materiality test, digital skills items, a Chapter 2 item outside the run-record boundary and list lead-ins were removed, repeated claims were added at each place, page-break quotes were restored, and three 0.1b quotes that had started too early were corrected. Second revision on 2026-10-29 under extraction rules 0.3 (R12 to R20): e-procurement, tax e-services and the agricultural e-application were treated as digital government and restored, the Chapter 2 integrity recommendation and two lead-ins with their own claim were restored, and no other item needed change. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
   },
   "classification": {
     "status": "not_started"
@@ -217,14 +217,14 @@
     {
       "item_id": "MKD-EU-2023-001-0005",
       "information_type": "intervention",
-      "stated_text": "The national electronic consultation system is an inclusive one, enabling all stakeholders to participate in public consultations . However, it is not used to its full potential, in particular by citizens and businesses.",
+      "stated_text": "The national electronic consultation system is an inclusive one, enabling all stakeholders to participate in public consultations .",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The national electronic consultation system is inclusive but not used to its full potential, especially by citizens and businesses.",
+      "summary": "The national electronic consultation system is inclusive and enables all stakeholders to take part in public consultations.",
       "location": {
         "page": 15,
-        "page_end": 16,
+        "page_end": null,
         "section": "Policy development and coordination",
         "paragraph": null,
         "snapshot_file": null
@@ -270,7 +270,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Revised under 0.2 (R4): the sentence is restored across the page break. Retyped from finding to intervention under 0.2 (R11): names the national electronic consultation system.",
+      "extraction_note": "Revised under 0.2 (R4): the sentence is restored across the page break. Retyped from finding to intervention under 0.2 (R11): names the national electronic consultation system. G3 independent review: recut to the intervention sentence; the second sentence (under-use) is a separate finding, 0203.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5380,7 +5380,7 @@
         }
       ],
       "intervention_as_stated": "2018-2022 national cybersecurity strategy",
-      "stated_status": "implemented",
+      "stated_status": "in_progress",
       "eu_scale": {
         "preparation_level": null,
         "progress_level": null,
@@ -5393,7 +5393,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "G3 independent review: status changed from implemented to in_progress (R5): \"continued to carry out activities\" describes work under way.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5410,7 +5410,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Better coordination and inter-institutional cooperation is needed (on cybersecurity strategy activities).",
+      "summary": "Better coordination and inter-institutional cooperation is needed.",
       "location": {
         "page": 90,
         "page_end": null,
@@ -9119,6 +9119,472 @@
       },
       "flags": [],
       "extraction_note": "Added under 0.2 (R10): the same claim appears earlier in the chapter as 0171. Kept under R1: interoperability with EU electronic customs systems.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0203",
+      "information_type": "finding",
+      "stated_text": "However, it is not used to its full potential, in particular by citizens and businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The national electronic consultation system is not used to its full potential, particularly by citizens and businesses.",
+      "location": {
+        "page": 15,
+        "page_end": 16,
+        "section": "Policy development and coordination",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "citizens and businesses",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review. Split from 0005 (rule 1): the under-use of the national electronic consultation system is a separate finding. Quote runs over the page break.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0204",
+      "information_type": "metric",
+      "stated_text": "The Agency issued 15 opinions on draft laws and implementing legislation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The data protection agency issued 15 opinions on draft laws and implementing legislation.",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "Fundamental rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "opinions on draft laws and implementing legislation issued by the Agency",
+        "value": 15,
+        "unit": "opinions",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0205",
+      "information_type": "metric",
+      "stated_text": "The Agency delivered 13 training sessions and held 19 coordination meetings with personal data protection officers, in line with  good practice.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The data protection agency delivered 13 training sessions and held 19 coordination meetings with data protection officers, in line with good practice.",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "Fundamental rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "training sessions delivered; coordination meetings held with personal data protection officers",
+        "value": "13; 19",
+        "unit": "sessions; meetings",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review. Two related indicators in one sentence, kept as one item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0206",
+      "information_type": "outcome",
+      "stated_text": "Recent changes in the Law on financial companies led to an increase in the number of complaints.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Recent changes to the Law on financial companies led to more complaints (to the data protection agency).",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "Fundamental rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review. Sits in the personal data protection paragraph; the complaints are those received by the Agency.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0207",
+      "information_type": "finding",
+      "stated_text": "Both the Ministry of  Defence and the Ministry of the Interior have responsibilities for cybercrime and cybersecurity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Both the Ministry of Defence and the Ministry of the Interior have responsibilities for cybercrime and cybersecurity.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "Institutional set-up and legal alignment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "24",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of  Defence",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Ministry of the Interior",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0208",
+      "information_type": "intervention",
+      "stated_text": "During the reporting period, the e -health application was updated with new functionalities and new modules, and a mobile application called “MyHealth” was launched. This allow s patients access to their health record , including what medical examinations they have had, referrals to specialists, prescriptions, vaccines received, and relevant certificates.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The e-health application gained new functions and modules, and the MyHealth mobile app was launched, giving patients access to their health records.",
+      "location": {
+        "page": 88,
+        "page_end": 89,
+        "section": "Public health",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "e-health application; MyHealth mobile application",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review. eHealth services used directly by patients are digital government (R12). Quote runs over the page break.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0209",
+      "information_type": "intervention",
+      "stated_text": "The Broadband Competence Office publishes biannual reports on the broadband development in the country and the implementation of the National Operational Broadband Plan.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Broadband Competence Office publishes twice-yearly reports on broadband development and on implementing the National Operational Broadband Plan.",
+      "location": {
+        "page": 90,
+        "page_end": 91,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The Broadband Competence Office",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Broadband Competence Office; National Operational Broadband Plan",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 independent review. Quote runs over the page break.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

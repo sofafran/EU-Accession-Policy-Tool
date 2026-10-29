@@ -8,7 +8,7 @@
     "pages_processed": "1-108 (pages 25-30, Chapter 2, read in full and extracted in full; all other pages read for theme material)",
     "codebook_version": "1.2",
     "themes_version": "1.2",
-    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184. Second revision on 29 October 2026 under extraction rules 0.3: items -0120, -0121, -0135, -0151, -0171 and -0173 restored as online services used directly by citizens or businesses (R12); no other change was needed."
+    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184. Second revision on 29 October 2026 under extraction rules 0.3: items -0120, -0121, -0135, -0151, -0171 and -0173 restored as online services used directly by citizens or businesses (R12); no other change was needed. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/): -0053 theme restored (R12), -0146 recut with -0185 split off, -0150 and -0151 retyped, missed items -0186 to -0194 added."
   },
   "classification": {
     "status": "not_started"
@@ -2876,9 +2876,12 @@
       "cluster": "2",
       "chapter": "02",
       "scope_basis": [
-        "chapter"
+        "chapter",
+        "theme"
       ],
-      "themes": [],
+      "themes": [
+        "TECH-DGOV"
+      ],
       "dates": {
         "publication_date": "2025-02-04",
         "period_covered": null,
@@ -2911,7 +2914,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Theme tag removed under rules 0.2 (R1): a national job portal not framed as digital transformation or as interoperability with EURES.",
+      "extraction_note": "G3 review: theme restored under rules 0.3 (R12): a web portal used directly by employers and job seekers is an online public service (TECH-DGOV).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7914,11 +7917,11 @@
     {
       "item_id": "MKD-EU-2025-003-0146",
       "information_type": "barrier",
-      "stated_text": "It would also require companies from North Macedonia, and their branches in the EU, to be treated by EU business registers as EU companies and branches, not as third country companies and branches. Furthermore, the development of BRIS requires the connected countries to be part of expert groups that are currently only open to EU Member States and EEA Countries.",
+      "stated_text": "It would also require companies from North Macedonia, and their branches in the EU, to be treated by EU business registers as EU companies and branches, not as third country companies and branches.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "BRIS connection would also require EU registers to treat North Macedonian companies as EU companies and participation in EU-only expert groups.",
+      "summary": "BRIS connection would also require EU registers to treat North Macedonian companies and their EU branches as EU companies.",
       "location": {
         "page": 42,
         "page_end": null,
@@ -7967,7 +7970,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "G3 review: quote cut to one claim; the second requirement (expert groups) is item -0185.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8180,7 +8183,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0150",
-      "information_type": "finding",
+      "information_type": "recommendation",
       "stated_text": "It will, however, need to align with acquis provisions on structured/machine-readable data to be able to interconnect with the EU Business Registers Interconnection System (BRIS) in the future.",
       "quote_language": "en",
       "translation_en": null,
@@ -8234,10 +8237,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "ambiguous_type"
-      ],
-      "extraction_note": "Forward-looking requirement within a summary of findings; recommendation would also fit.",
+      "flags": [],
+      "extraction_note": "G3 review: retyped from finding to recommendation; 'will need to align' states an EU expectation, as in -0107 and -0108.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8249,7 +8250,7 @@
     },
     {
       "item_id": "MKD-EU-2025-003-0151",
-      "information_type": "intervention",
+      "information_type": "finding",
       "stated_text": "Medium and large companies must submit their annual accounts electronically.",
       "quote_language": "en",
       "translation_en": null,
@@ -8289,8 +8290,8 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": "electronic submission of annual accounts",
-      "stated_status": "in_practice",
+      "intervention_as_stated": null,
+      "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
         "progress_level": null,
@@ -8305,7 +8306,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": "Restored under rules 0.3 (R12): electronic filing used directly by companies.",
+      "extraction_note": "Restored under rules 0.3 (R12): electronic filing used directly by companies. G3 review: retyped from intervention to finding under R11 (a legal obligation with no named measure).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9126,6 +9127,685 @@
         "reported_view"
       ],
       "extraction_note": "Added under rules 0.2 (R10): same claim as items -0009 and -0181, repeated in the Chapter 28 assessment.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0185",
+      "information_type": "barrier",
+      "stated_text": "Furthermore, the development of BRIS requires the connected countries to be part of expert groups that are currently only open to EU Member States and EEA Countries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Developing BRIS requires connected countries to sit in expert groups currently open only to EU Member States and EEA countries.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "G3 independent review: split from item -0146, which quoted two separate requirements.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0186",
+      "information_type": "intervention",
+      "stated_text": "As regards the Point of Single Contact, Law no. 311/2020 on Central Registry and Law no. 215/2021One Stop Shop.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Point of Single Contact rests on the 2020 Law on Central Registry and the 2021 One Stop Shop law.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "D) CHAPTER 3 - RIGHT OF ESTABLISHMENT AND FREEDOM TO PROVIDE SERVICES > II. FREEDOM TO PROVIDE SERVICES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "03",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law no. 311/2020 on Central Registry; Law no. 215/2021 One Stop Shop",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). The printed sentence has no verb; it lists the legal basis of the Point of Single Contact, treated in this file as an online service used by businesses (-0121, -0123).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0187",
+      "information_type": "intervention",
+      "stated_text": "Disclosure requirements in respect of companies and branches and the use of digital tools and processes is regulated by the Law on Trade Companies and the Law on Central Registry.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Company disclosure and the use of digital tools and processes are regulated by the Law on Trade Companies and the Law on Central Registry.",
+      "location": {
+        "page": 41,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law on Trade Companies; Law on Central Registry",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). ",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0188",
+      "information_type": "finding",
+      "stated_text": "Financial statements submitted in paper form are converted to machine -readable digital form (xml files).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Financial statements submitted on paper are converted into machine-readable digital form (XML files).",
+      "location": {
+        "page": 41,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). No measure is named, so typed as a finding (R11).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0189",
+      "information_type": "intervention",
+      "stated_text": "North Macedonia informed that it plans to implement the EU ID in 2024.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia plans to implement the EU ID in 2024.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": "2024",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "EU ID",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). Sits in the paragraph on the Business Registers Interconnection System (BRIS). event_date is the stated planned year.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0190",
+      "information_type": "barrier",
+      "stated_text": "Regarding accelerated integration, BRIS is a single-market tool, and currently interconnects only the business registers of EU Member States and EEA countries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "On early integration, BRIS is a single-market tool that currently connects only EU Member State and EEA business registers.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "F) CHAPTER 6 - COMPANY LAW > I.A DISCLOSURE REQUIREMENTS IN RESPECT OF COMPANIES AND BRANCHES AND THE USE OF DIGITAL TOOLS AND PROCESSES > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). First of the Commission's reasons on the accelerated integration request; the others are -0145, -0146 and -0185.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0191",
+      "information_type": "finding",
+      "stated_text": "The national legislation remains to be aligned with the EU acquis (including sectoral guidelines) in the area of financing of the public broadcasters and granting aid for the deployment of broadband networks.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "National legislation still has to align with EU rules on financing public broadcasters and on aid for broadband network deployment.",
+      "location": {
+        "page": 70,
+        "page_end": 71,
+        "section": "H) CHAPTER 8 - COMPETITION POLICY > I.C. STATE AID > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "08",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). theme_doubtful: broadband deployment is within TECH-INFRA, but the claim concerns State aid rules. Quote runs over a page break; page_end set and the printed page number left out.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0192",
+      "information_type": "recommendation",
+      "stated_text": "Further alignment with the EU acquis is need in the areas of financing of the public broadcasters and granting aid for the deployment of broadband networks.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further alignment is needed on financing public broadcasters and on State aid for broadband network deployment.",
+      "location": {
+        "page": 72,
+        "page_end": null,
+        "section": "H) CHAPTER 8 - COMPETITION POLICY > I.C. STATE AID > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "08",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). theme_doubtful: broadband deployment is within TECH-INFRA, but the claim concerns State aid rules. 'is need' as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0193",
+      "information_type": "intervention",
+      "stated_text": "eHealth in North Macedonia is defined by its laws on health care, on healthcare records, and on data protection.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "eHealth in North Macedonia is governed by its laws on health care, healthcare records and data protection.",
+      "location": {
+        "page": 98,
+        "page_end": 99,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.B. EHEALTH > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "laws on health care, on healthcare records, and on data protection",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). Quote runs over a page break; page_end set and the printed page number left out.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0194",
+      "information_type": "intervention",
+      "stated_text": "The responsible body in this area is the Ministry of Health.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Ministry of Health is the body responsible for eHealth.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.B. EHEALTH > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Health",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Ministry of Health as responsible body for eHealth",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). 'This area' is eHealth (heading II.B).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

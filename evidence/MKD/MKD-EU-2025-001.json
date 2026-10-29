@@ -8,7 +8,7 @@
     "pages_processed": "2-105",
     "codebook_version": "1.2",
     "themes_version": "1.2",
-    "notes": "Pass 1 sample extraction from the converted text file. Read the table of contents (pages 2-3), the whole of section 1.2 Main findings (pages 4-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading pages fully where the table of contents or a keyword search showed technology content (public administration reform pp. 24-27, Chapter 23 pp. 29-41, Chapter 24 pp. 45-54, economic criteria pp. 55-61, Chapters 5 and 18 pp. 62-64, Cluster 2 pp. 67-73, Chapter 10 pp. 73-75, Clusters 3 to 6 pp. 75-97, Annexes I and II pp. 97-105). Chapter 2 appears twice: a summary under 1.2 (page 11) and the full section (page 68); both are extracted as separate items. All Chapter 2 claims extracted; elsewhere only passages meeting the materiality test, with doubtful cases flagged theme_doubtful. Period covered taken from footnote 1 of the report (1 September 2024 to 1 September 2025) because the register field is empty. Text-file page numbers are printed page numbers plus one. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, online media register) was treated as outside the technology theme, except net neutrality. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: the narrower materiality test removed sector IT tools and digital skills items, eu_scale.applies_to was added, statuses and types were corrected, and two claims crossing page breaks were restored as new items -0203 and -0204; item IDs of kept items are unchanged. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: online services used by citizens or businesses (e-procurement, eHealth, industrial property and customs e-services) were restored with their 0.1b IDs, the Chapter 2 Employment Agency anti-corruption item was restored, and the seasonal-worker agreements item was removed as concerning nationals' access to EU labour markets."
+    "notes": "Pass 1 sample extraction from the converted text file. Read the table of contents (pages 2-3), the whole of section 1.2 Main findings (pages 4-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading pages fully where the table of contents or a keyword search showed technology content (public administration reform pp. 24-27, Chapter 23 pp. 29-41, Chapter 24 pp. 45-54, economic criteria pp. 55-61, Chapters 5 and 18 pp. 62-64, Cluster 2 pp. 67-73, Chapter 10 pp. 73-75, Clusters 3 to 6 pp. 75-97, Annexes I and II pp. 97-105). Chapter 2 appears twice: a summary under 1.2 (page 11) and the full section (page 68); both are extracted as separate items. All Chapter 2 claims extracted; elsewhere only passages meeting the materiality test, with doubtful cases flagged theme_doubtful. Period covered taken from footnote 1 of the report (1 September 2024 to 1 September 2025) because the register field is empty. Text-file page numbers are printed page numbers plus one. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, online media register) was treated as outside the technology theme, except net neutrality. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: the narrower materiality test removed sector IT tools and digital skills items, eu_scale.applies_to was added, statuses and types were corrected, and two claims crossing page breaks were restored as new items -0203 and -0204; item IDs of kept items are unchanged. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: online services used by citizens or businesses (e-procurement, eHealth, industrial property and customs e-services) were restored with their 0.1b IDs, the Chapter 2 Employment Agency anti-corruption item was restored, and the seasonal-worker agreements item was removed as concerning nationals' access to EU labour markets. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
   },
   "classification": {
     "status": "not_started"
@@ -352,11 +352,11 @@
     {
       "item_id": "MKD-EU-2025-001-0007",
       "information_type": "finding",
-      "stated_text": "The digitalisation of the economy is advancing, and new school curricula provide for better teaching of IT skills.",
+      "stated_text": "The digitalisation of the economy is advancing",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The digitalisation of the economy is advancing, and new school curricula improve the teaching of IT skills.",
+      "summary": "The digitalisation of the economy is advancing.",
       "location": {
         "page": 9,
         "page_end": null,
@@ -405,7 +405,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "G3 review: quote cut to the digitalisation claim; the clause on IT skills in school curricula is digital skills not linked to a technology recommendation (R2).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2935,8 +2935,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
+        "progress_level": "No progress",
+        "applies_to": "sub_area"
       },
       "metric": {
         "indicator": null,
@@ -2945,7 +2945,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Sub-area: coordination, communication and responsiveness to PDPA recommendations (G3 review: standard progress wording recorded).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3422,7 +3422,7 @@
     {
       "item_id": "MKD-EU-2025-001-0084",
       "information_type": "metric",
-      "stated_text": "There was some progress in ICT infrastructure development –  ﬁxed broadband was available to 79.6% of households (2019: 70.9%) at the end of 2023, below the EU average  (EU 2024: 93.1%) .",
+      "stated_text": "ﬁxed broadband was available to 79.6% of households (2019: 70.9%) at the end of 2023, below the EU average  (EU 2024: 93.1%) .",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -3475,7 +3475,7 @@
         "reference_period": "end of 2023"
       },
       "flags": [],
-      "extraction_note": "The text file has the ligature character in 'ﬁxed'; quoted as in the text file.",
+      "extraction_note": "The text file has the ligature character in 'ﬁxed'; quoted as in the text file. G3 review: quote recut to start at the metric; the opening clause on progress in ICT infrastructure is item -0205.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7431,7 +7431,7 @@
         }
       ],
       "intervention_as_stated": "Digital transformation of the education system, including EMIS",
-      "stated_status": "implemented",
+      "stated_status": "in_progress",
       "eu_scale": {
         "preparation_level": null,
         "progress_level": null,
@@ -7446,7 +7446,7 @@
       "flags": [
         "theme_doubtful"
       ],
-      "extraction_note": "Theme doubtful: the text frames this as digital transformation of the education system, which qualifies under rule 0.2 only if education counts as government; it includes the sector system EMIS. EMIS is described as piloted and expected to be fully functional from September 2025; status refers to the steps taken.",
+      "extraction_note": "Theme doubtful: the text frames this as digital transformation of the education system, which qualifies under rule 0.2 only if education counts as government; it includes the sector system EMIS. EMIS is described as piloted and expected to be fully functional from September 2025; status refers to the steps taken. G3 review: status changed from implemented to in_progress (R5): 'has taken steps towards'.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7975,8 +7975,8 @@
       "stated_status": null,
       "eu_scale": {
         "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
+        "progress_level": "Good progress",
+        "applies_to": "sub_area"
       },
       "metric": {
         "indicator": null,
@@ -7985,7 +7985,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "'Good progress' here is not the chapter-level standard assessment; eu_scale left empty. Kept under rules 0.2 R1: names NCTS, an EU electronic system.",
+      "extraction_note": "Sub-area: consolidation and upgrading of IT systems (G3 review: standard progress wording recorded under R3). Kept under rules 0.2 R1: names NCTS, an EU electronic system.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8456,6 +8456,206 @@
       },
       "flags": [],
       "extraction_note": "Restored under rule 0.2 R4: the quote crosses the page break between pages 37 and 38 (dropped in 0.1b for that reason).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0205",
+      "information_type": "finding",
+      "stated_text": "There was some progress in ICT infrastructure development",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There was some progress in developing ICT infrastructure.",
+      "location": {
+        "page": 60,
+        "page_end": null,
+        "section": "2.3. Economic criteria > 2.3.2. The capacity to cope with competitive pressure and market forces within the Union",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": "some progress",
+        "applies_to": "sub_area"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 review. Sub-area: ICT infrastructure development, within the economic criteria. Same sentence as metric -0084.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0206",
+      "information_type": "recommendation",
+      "stated_text": "North Macedonia needs to intensify efforts to fully align with the Directive on the recognition of professional qualifications especially with the minimum training requirements for professions benefiting from automatic recognition and to set up a transparent electronic register of all regulated professions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia should align with the professional qualifications directive and set up a transparent electronic register of all regulated professions.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 3: Right of establishment and freedom to provide services",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "03",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at G3 review. The theme concerns the electronic register of regulated professions (a register with reliable data, TECH-DATA material example); the alignment part of the sentence is not a theme matter.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0207",
+      "information_type": "metric",
+      "stated_text": "Percentage of households who have internet access at home (%)  58.3 79.4 83.7 : : 90.8",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Households with internet access at home: 58.3% in 2012, 79.4% in 2020, 83.7% in 2021 and 90.8% in 2024.",
+      "location": {
+        "page": 104,
+        "page_end": null,
+        "section": "Annex II – Statistical data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Percentage of households who have internet access at home",
+        "value": 90.8,
+        "unit": "%",
+        "reference_period": "2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added at G3 review. Columns are 2012, 2020, 2021, 2022, 2023, 2024. The 2024 value restates -0083 (page 60); kept because the row adds earlier years.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

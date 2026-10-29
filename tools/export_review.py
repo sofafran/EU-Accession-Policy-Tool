@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record  # noqa: E402
 
-__version__ = "1.4.0"
+__version__ = "1.4.1"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -411,6 +411,9 @@ def g3(root, run):
         ("Hand-coding comparison", ["passage", "result", "quote", "agent item_id", "type (analyst / agent)", "note"], comparison),
         ("Quote verification", ["source_id", "item_id", "result", "detail"], quote_rows),
         ("Summary", ["source_id", "items", "by type", "by scope basis", "themes", "theme_doubtful", "quote failures", "withheld until hand-coding"], summary),
+        *[(title, *(lambda h, r: (h, [[x[k] for k in h] for x in r]))(*read_csv(root / "review" / run / "g3_qa" / fname)))
+          for title, fname in (("Independent QA metrics", "g3_metrics.csv"), ("Blind coding comparison", "handcoding_comparison.csv"))
+          if (root / "review" / run / "g3_qa" / fname).exists()],
         ("Changes since first sample", ["earlier rules", "source_id", "items before", "items now", "kept", "removed", "added", "retyped"], changes),
         ("Removed items", ["item_id", "information_type", "stated_text", "scope_basis", "themes", "flags"], removed),
         ("Rule issues", *(lambda h, r: (h + ["reviewer_decision", "reviewer_comment"] if h else ["issue_id"], [[x[k] for k in h] + ["", ""] for x in r]))(*read_csv(root / "review" / run / "G3_rule_issues.csv"))),
