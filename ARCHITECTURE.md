@@ -1,21 +1,23 @@
 # EU Accession Reform Intelligence Tool: Agreed Architecture
 
-Version 1.0, 23 October 2026. Agreed by Sofia after the architecture review of Codebooks 1 to 6. The full record of options and reasons is in `decisions/decision_log.md`.
+Version 1.1, 29 October 2026. Version 1.0 was agreed by Sofia on 23 October 2026 after the architecture review of Codebooks 1 to 6. Version 1.1 records the pre-G0 reconfiguration of the pilot (decisions A5 to A9, D6, E5 and F2) and the alpha set-up (decisions E6 to E9). The full record of options and reasons is in `decisions/decision_log.md`.
 
 ## 1. What the tool does
 
 The tool turns EU accession assessments into clear reform priorities and practical policy options. It extracts evidence from five families of sources, organises it around common reform issues, follows each issue along a ten-link analytical chain, and supports the analyst in judging what has happened, what remains and what could work. AI extracts, organises and proposes. The analyst makes the important judgements at fixed control gates.
 
-The first run covers **Serbia, Chapter 5 (Public procurement)**, from 2014 to a fixed evidence freeze date. It has two parts: a Serbia diagnostic (run 1a) and a comparator pilot on two or three issues chosen by the analyst (run 1b).
+The first run covers **North Macedonia: all of Chapter 2 (Freedom of movement for workers), plus recommendations materially relating to technology and AI wherever they occur**, from 1 January 2020 to a fixed evidence freeze date. The full analytical chain is followed for every issue that originates from this material. The run has two parts: a North Macedonia diagnostic (run 1a) and a comparator pilot on two or three issues chosen by the analyst (run 1b). Run-specific settings are kept in the run record; the codebooks, procedures and rules are country-neutral. Until 29 October 2026, before gate G0, the first run was configured for Serbia, Chapter 5 (Public procurement).
+
+RUN-2026-01 is an **alpha product and methodology test**. Besides the analysis, it tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, the outputs, and the usefulness of a single review page (`index.html`). Material lessons are kept in an alpha learning log and inform scaling to further chapters, clusters and countries.
 
 ## 2. Decisions at a glance
 
 | ID | Decision | Agreed outcome |
 |---|---|---|
-| A1 | Comparators in run 1 | Run 1a Serbia diagnostic; run 1b comparator pilot on 2 to 3 analyst-selected issues, logged as a deliberate expansion |
-| A2 | Thematic scope | Chapter 5 Public procurement only; Chapter 15 and a Chapter 23 sub-area deferred |
-| A3 | Time window | 2014 to a fixed evidence freeze date; older material by logged exception |
-| A4 | Language | English primary; Serbian only for core documents without English; machine translation flagged and capped at Medium confidence (no Serbian-speaking reviewer) |
+| A1, A5 | Pilot country and comparators in run 1 | Run 1a North Macedonia diagnostic; run 1b comparator pilot on 2 to 3 analyst-selected issues, logged as a deliberate expansion |
+| A6, A9 | Thematic scope | All of Chapter 2 plus the technology and AI theme (recommendations materially relating to it, wherever they occur); full chain for issues originating there; other material only where needed to follow that chain; no deferred-chapter list |
+| A7 | Time window | 1 January 2020 to a fixed evidence freeze date; older material by logged exception |
+| A8 | Language | English primary; Macedonian or Albanian only for core sources without a suitable English version; machine translation flagged and capped at Medium confidence |
 | B1 | Chain and vocabulary | Ten-link chain; "finding/stated" for what a source says, "judgement/assessed" for what we conclude |
 | B2 | Unit and record types | Evidence item = one claim, one type, exact quote and location; layers of sources, items, entities, links and judgements |
 | B3 | Where judgements sit | Each judgement attaches to the object it describes; relevance and unresolved gap added |
@@ -28,11 +30,16 @@ The first run covers **Serbia, Chapter 5 (Public procurement)**, from 2014 to a 
 | D2 | Identifiers | Permanent, semi-readable IDs, never reused; reform issue IDs have no country code |
 | D3 | Two passes | Extraction (close to the text) then classification (interpretive) |
 | D4 | Taxonomy | Reform issues drafted from EU requirements and approved by the analyst; short fixed list of problem mechanisms |
-| D5 | Matching fields | Controlled fields only; no free-text keywords |
+| D5, D6 | Matching fields | Controlled fields only; no free-text keywords; cross-cutting themes as a controlled list of theme codes, with a scope basis on every item |
 | E1 | Sample | 10 to 12 documents across all families; three hand-coded passages; automatic quote check; at most two refinement loops |
 | E2 | Gates | G0 to G8, all blocking; three tiers of AI authority |
 | E3 | Future runs | Incremental, versioned runs; validated judgements never overwritten |
-| E4 | Run 1 outputs | Internal analyst products; draft options only for run 1b issues; no dashboard yet; new Codebook 7 |
+| E4, E7 | Run 1 outputs | Internal analyst products; draft options only for run 1b issues; no interactive dashboard yet; new Codebook 7; a single static review page with status labels |
+| E5 | Pilot reconfiguration | RUN-2026-01 kept; scope changed before G0; earlier limits marked superseded |
+| E6 | Alpha | Run 1 is an alpha product and methodology test |
+| E8 | Alpha learning log | Curated lessons in `runs/RUN-2026-01/alpha_learning_log.csv`; `run_notes.md` stays the raw diary |
+| E9 | George's role | Alpha reviewer of the product and review page throughout; formal gate roles unchanged |
+| F2 | Country neutrality | Codebooks, procedures and rules are country-neutral; run-specific settings sit in the run record, CLAUDE.md and the limits log |
 
 ## 3. The analytical chain
 
@@ -52,6 +59,10 @@ The first run covers **Serbia, Chapter 5 (Public procurement)**, from 2014 to a 
 ![Process flow](process_flow.png)
 
 Amber diamonds are human control gates. The diagram source is `process_flow.dot`.
+
+Around every gate, the agent proposes alpha learning log rows in the gate package and rebuilds the review page; after the decision it updates the log statuses, rebuilds the page and offers a commit (procedure P1, "Around every gate").
+
+Known gap (29 Oct 2026): `process_flow.png` and `process_flow.dot` are not in the repository. This is recorded as a non-blocking documentation gap; the stage table below is the authoritative description of the process.
 
 | Stage | What happens | AI does | Analyst does | Gate | Procedure |
 |---|---|---|---|---|---|
@@ -82,7 +93,9 @@ Every gate is blocking and is recorded in `registers/gate_log.csv` with the date
 | 2. AI decides; analyst reviews in bulk or by exception | Goes ahead, surfaces at the next gate | Clear-cut exclusions, extraction once rules are approved, source quality, evidence confidence, relevance, uncontested implementation status |
 | 3. AI proposes only; analyst decides | Nothing proceeds without a decision | Requirements list, judgement-based exclusions, taxonomy changes, ambiguous classification, comparator selection and relevance, direction of travel, unresolved gap, success, attribution, transferability, priority and tractability, policy options, codebook and scope changes |
 
-Reviewers for run 1: Sofia at every gate; Sofia and George together at G6, G6b and G7.
+Reviewers for run 1: Sofia at every gate; Sofia and George together at G6, G6b and G7. George is also an alpha reviewer of the developing product and the review page throughout the run; this is not a formal gate role.
+
+**Review page.** `index.html` in the repository root is the human-facing review interface. It shows validated material and work in progress, labelled `Validated`, `Pending review`, `Proposed`, `Draft` or `Not started`. It is generated from the project files by `tools/build_review_page.py` and is never the place where a gate decision is made.
 
 ## 6. Sources: acquisition, folders and register
 
@@ -101,14 +114,14 @@ Reviewers for run 1: Sofia at every gate; Sofia and George together at G6, G6b a
 **Folders:**
 
 ```
-sources/SRB/<EU|GOV|IO|RES|CSO>/originals/   untouched originals
-sources/SRB/<EU|GOV|IO|RES|CSO>/text/        converted text with page markers
-sources/_inbox/                               files added by hand
+sources/<country>/<EU|GOV|IO|RES|CSO>/originals/   untouched originals
+sources/<country>/<EU|GOV|IO|RES|CSO>/text/        converted text with page markers
+sources/_inbox/                                     files added by hand
 ```
 
-**File names:** source ID plus a short label, for example `SRB-EU-2025-001_EC_Serbia-Report-2025.pdf`.
+**File names:** source ID plus a short label, for example `MKD-EU-2025-001_EC_North-Macedonia-Report-2025.pdf` in run 1.
 
-**Register:** one row per document ever considered, including inaccessible, excluded, duplicate and superseded ones. Fields: source ID, family, institution, author, title, document type, country, role, chapters, requirement ID, publication date, period covered, language, translation used, URL, retrieval date, local file, file format, file fingerprint, status, status reason, earlier version, run added, notes. Full definitions are in `schemas/data_dictionary.md`.
+**Register:** one row per document ever considered, including inaccessible, excluded, duplicate and superseded ones. Fields: source ID, family, institution, author, title, document type, country, role, chapters, themes, requirement ID, publication date, period covered, language, translation used, URL, retrieval date, local file, file format, file fingerprint, status, status reason, earlier version, run added, notes. Full definitions are in `schemas/data_dictionary.md`.
 
 ## 7. Data structure
 
@@ -116,16 +129,16 @@ sources/_inbox/                               files added by hand
 |---|---|---|
 | Sources | One row per document | `registers/source_register.csv` |
 | Evidence items | One claim each, with quote and location | One JSON file per source in `evidence/<country>/` |
-| Entities | Reform issues, mechanisms, interventions, actors, comparator cases; unmatched and ambiguous queues | CSV in `taxonomy/` and `entities/` |
+| Entities | Reform issues, mechanisms, cross-cutting themes, interventions, actors, comparator cases; unmatched and ambiguous queues | CSV in `taxonomy/` and `entities/` |
 | Links | Corroborates, contradicts, responds to, leads to, explains, lesson from, replaces, amends, same as earlier | `links/links.csv` |
 | Judgements | Source quality, and every other judgement | CSV in `judgements/` |
 | Logs | Requirements, limits, gate decisions | CSV in `registers/` |
 
-**Identifiers:** `RUN-2026-01`, `REQ-012`, `SRB-EU-2025-001`, `SRB-EU-2025-001-0042`, `RI-PP-007`, `MEC-04`, `INT-SRB-0012`, `ACT-SRB-0003`, `CMP-0001`, `LNK-000123`, `JDG-000123`. IDs are permanent and never reused.
+**Identifiers:** `RUN-2026-01`, `REQ-012`, `MKD-EU-2025-001`, `MKD-EU-2025-001-0042`, `RI-FMW-007`, `MEC-04`, `TECH-AI`, `INT-MKD-0012`, `ACT-MKD-0003`, `CMP-0001`, `LNK-000123`, `JDG-000123`. IDs are permanent and never reused.
 
 **Two passes:**
-- Extraction records what the text says.
-- Classification adds reform issues, mechanisms, entities and links.
+- Extraction records what the text says, and why each item is in scope (chapter, theme or chain).
+- Classification adds reform issues, mechanisms, entities and links, and confirms that theme and chain items belong to an in-scope issue.
 
 A taxonomy change re-runs classification only.
 
@@ -145,7 +158,7 @@ Every evidence item carries:
 - country and role;
 - source;
 - the three dates;
-- cluster and chapter;
+- cluster, chapter and theme;
 - information type and chain link;
 - reform issues and mechanisms;
 - interventions;
@@ -155,8 +168,8 @@ All values come from controlled lists or IDs.
 
 | Lookup | How it works |
 |---|---|
-| Country view (Serbia) | Filter on country `SRB` and role `target`, grouped by reform issue and chain link |
-| Thematic view (for example public procurement) | Filter on chapter or cluster across all countries |
+| Country view (for example North Macedonia) | Filter on the country code (`MKD`) and role `target`, grouped by reform issue and chain link |
+| Thematic view (for example Chapter 2, or technology and AI) | Filter on chapter, cluster or theme code across all countries |
 | Reform issue across countries | Filter on the country-neutral reform issue ID, and on mechanisms for near matches |
 | Over time | Sort an issue's items by period covered and event date; follow `same_as_earlier` links between yearly reports |
 | Along the chain | Follow `responds_to`, `leads_to`, `explains` and `lesson_from` links |
@@ -166,7 +179,7 @@ All values come from controlled lists or IDs.
 
 | Judgement | Attached to | Scale | Tier |
 |---|---|---|---|
-| Source quality | Source, per topic | High, Medium, Low | 2 |
+| Source quality | Source, per chapter or theme | High, Medium, Low | 2 |
 | Evidence confidence | Evidence item | High, Medium, Low | 2 |
 | Relevance | Item, for a reform issue | High, Medium, Low | 2 |
 | Implementation status | Intervention at a date | proposed, adopted, implemented, in practice, reversed, unclear | 2 or 3 |
@@ -174,8 +187,8 @@ All values come from controlled lists or IDs.
 | Unresolved gap | Issue in a country | open, partly addressed, largely closed | 3 |
 | Success | Intervention to outcome link | worked, failed, mixed, too early | 3 |
 | Attribution | Intervention to outcome link | High, Medium, Low | 3 |
-| Comparator relevance | Serbia issue and comparator case | High, Medium, Low | 3 |
-| Transferability | Lesson, for Serbia | likely, conditional, unlikely | 3 |
+| Comparator relevance | Target-country issue and comparator case | High, Medium, Low | 3 |
+| Transferability | Lesson, for the target country | likely, conditional, unlikely | 3 |
 | Priority, tractability | Issue in a country | High, Medium, Low each | 3 |
 
 Every scale also allows "insufficient evidence". Every judgement records:
@@ -190,11 +203,13 @@ Validated or overridden judgements are never overwritten.
 ## 11. Limits and future runs
 
 Active limits are recorded in `registers/limits_log.csv`. They cover:
-- Serbia only, plus the run 1b comparators;
-- Chapter 5 only;
-- the 2014 start;
+- North Macedonia only, plus the run 1b comparators;
+- Chapter 2 plus the technology and AI theme, with other material only where needed to follow the chain of an in-scope issue;
+- the 1 January 2020 start;
 - the language rule;
-- no dashboard in run 1.
+- no interactive dashboard in run 1; a single static review page only.
+
+LIM-0001 to LIM-0006 recorded the earlier Serbia configuration, and LIM-0007 the earlier no-dashboard rule; all are marked superseded.
 
 Each run has a run record with its scope, freeze date, reviewers and versions. In a later run, the agent handles material as follows:
 - documents with an unchanged fingerprint are reused;
@@ -206,6 +221,8 @@ Each run has a run record with its scope, freeze date, reviewers and versions. I
 The run review at G8 turns lessons into approved changes and new codebook versions. The system never starts a new run or widens its scope on its own.
 
 ## 12. Changes to the codebooks
+
+Version 1.2 of Codebooks 1 to 6 and version 1.1 of Codebook 7 (29 October 2026) made them country-neutral and added cross-cutting themes; see `codebooks/CHANGELOG.md`. The table below records the version 1.1 changes agreed after the architecture review.
 
 | Codebook | Main changes in version 1.1 |
 |---|---|
@@ -221,6 +238,7 @@ The run review at G8 turns lessons into approved changes and new codebook versio
 
 ```
 eu-accession-tool/
+  index.html                 single review page (generated; hostable on GitHub Pages)
   CLAUDE.md                  instructions every agent session reads first
   ARCHITECTURE.md            this document
   codebooks/                 Codebooks 1 to 7 (Markdown) and CHANGELOG.md
@@ -228,15 +246,15 @@ eu-accession-tool/
   rules/                     extraction, classification and judgement rules (versioned)
   schemas/                   data dictionary, evidence JSON schema, example file
   registers/                 requirements, source register, limits log, gate log
-  sources/                   _inbox/ and SRB/<family>/originals and text
-  evidence/SRB/              one JSON file per source
-  taxonomy/                  reform issues, mechanisms, unmatched queue
+  sources/                   _inbox/ and <country>/<family>/originals and text (MKD in run 1)
+  evidence/<country>/        one JSON file per source (MKD in run 1)
+  taxonomy/                  reform issues, mechanisms, themes, unmatched and ambiguous queues
   entities/                  interventions, actors, comparator cases
   links/                     links between records
   judgements/                source quality and all other judgements
   review/RUN-2026-01/        spreadsheets prepared for each gate
   outputs/RUN-2026-01/       run outputs
-  runs/RUN-2026-01/          run record and, at the end, run review
+  runs/RUN-2026-01/          run record, run notes, alpha learning log and, at the end, run review
   decisions/                 architecture decision log
   tools/                     helper scripts (specified, built at stage 0)
 ```
@@ -247,3 +265,4 @@ eu-accession-tool/
 - **Helper tools:** specified in `tools/README.md` and built and tested at stage 0.
 - **Version history:** the project folder should be a git repository, with a commit after every gate decision, so that every version of the rules, taxonomy and judgements can be recovered.
 - **Mechanism list:** the ten mechanisms in `taxonomy/mechanisms.csv` are a draft for approval at G4.
+- **Theme list:** the technology and AI theme areas in `taxonomy/themes.csv` were approved by Sofia on 29 October 2026 and are confirmed at G0.

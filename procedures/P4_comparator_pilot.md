@@ -1,6 +1,6 @@
 # Procedure P4: Comparator pilot, run 1b
 
-Read this file before starting the comparator pilot. It applies only to the two or three reform issues chosen at G6. It reuses stages 1 to 11 on a small scale, with gates marked with the suffix `b` (G1b, G2b, G5b, G6b) in the gate log.
+Read this file before starting the comparator pilot. It applies only to the two or three reform issues chosen at G6. It reuses stages 1 to 11 on a small scale, with gates marked with the suffix `b` (G1b, G2b, G5b, G6b) in the gate log. Follow "Around every gate" in procedure P1 for the learning log and the review page; comparator material appears in its own section of the page.
 
 ## Step 1: Record the expansion
 
@@ -23,15 +23,15 @@ Follow stages 2 to 4 of procedure P1, filing documents under `sources/<country c
 ## Step 4: Extract and classify (gate G5b)
 
 - Extract with the approved extraction rules. There is no new sample loop, but the first two comparator sources are spot-checked in full at G5b.
-- Classify against the same taxonomy. Comparator items that fit no approved issue go to the unmatched queue; do not stretch a Serbia issue to fit them.
+- Classify against the same taxonomy. Comparator items that fit no approved issue go to the unmatched queue; do not stretch a target-country issue to fit them.
 - Create comparator case records in `entities/comparator_cases.csv`, one per country and issue.
 
 ## Step 5: Judge (gate G6b)
 
 Propose, with reasons and evidence:
 
-- comparator relevance for each case (how closely it matches the Serbia issue and its mechanisms, and how the context differs);
+- comparator relevance for each case (how closely it matches the target-country issue and its mechanisms, and how the context differs);
 - implementation status, success and attribution for the comparator interventions;
-- lessons stated by sources, and transferability of each lesson to Serbia, with conditions.
+- lessons stated by sources, and transferability of each lesson to the target country, with conditions.
 
 **G6b decision (both reviewers):** validate or override. Only validated cases and lessons may be used for draft policy options.

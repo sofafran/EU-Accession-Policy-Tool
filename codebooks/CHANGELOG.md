@@ -1,5 +1,17 @@
 # Codebook change log
 
+## Version 1.2 (Codebooks 1 to 6) and 1.1 (Codebook 7), 29 October 2026
+
+Pre-G0 reconfiguration of the pilot from Serbia, Chapter 5 (Public procurement) to North Macedonia, Chapter 2 plus a technology and AI theme. Run-specific settings moved to the run record, CLAUDE.md and the limits log; the codebooks were made country-neutral. Decision IDs refer to `decisions/decision_log.md`.
+
+- **Codebook 1:** first-run scope described as one pilot country with one chapter and one cross-cutting theme, set in the run record (A5, A6); first run defined as an alpha product and methodology test (E6); country-neutral examples (F2).
+- **Codebook 2:** country-neutral wording (F2); language rule covers the target country's official languages, each non-English source recorded in the register, and the machine translation cap applies unless a reviewer who reads the language is named (A8); themes added to the register fields (D6).
+- **Codebook 3:** country-neutral scope (A5, F2); cross-cutting themes, materiality, full chain and the out-of-scope rule; no deferred-chapter list (A6, A9, D6); time window start set in the run record (A7); language limit generalised (A8); new exclusion category "outside current thematic scope"; learning recorded throughout the run in a working diary and a curated learning log, feeding a run review with readiness for scaling (E8).
+- **Codebook 4:** country-neutral ID examples (F2); scope basis and theme tags recorded in the first pass (D6); sample requires a non-English document only where such documents are approved.
+- **Codebook 5:** cross-cutting themes brought forward through a controlled theme list, and theme added to the matching fields (D6); country-neutral examples (F2).
+- **Codebook 6:** country-neutral wording (F2); source quality per chapter or theme.
+- **Codebook 7:** scope overview replaces the Serbia Chapter 5 overview and covers chapters and themes; country-neutral wording for policy options (A6, F2); single static review page with five status labels, not a gate-decision mechanism (E7); run review adds readiness for scaling (E8).
+
 ## Version 1.1 (Codebooks 1 to 6) and 1.0 (Codebook 7), 23 October 2026
 
 Revised after the architecture review. Decision IDs refer to `decisions/decision_log.md`.

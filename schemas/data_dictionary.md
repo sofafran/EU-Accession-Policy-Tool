@@ -1,13 +1,15 @@
 # Data dictionary
 
-Version 1.0a, 23 October 2026 (consistency fixes before first use). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.1, 29 October 2026 (pre-G0 reconfiguration of the pilot: theme fields, scope basis and country-neutral examples; see decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
-- CSV files are UTF-8, comma-separated, with a header row. Lists inside a cell are separated by a semicolon and no space, for example `ACT-SRB-0001;ACT-SRB-0004`.
+- CSV files are UTF-8, comma-separated, with a header row. Lists inside a cell are separated by a semicolon and no space, for example `ACT-MKD-0001;ACT-MKD-0004`.
 - Dates use `YYYY-MM-DD`, or `YYYY-MM` or `YYYY` when only that precision is known. A period is written as `start/end`, for example `2024-06/2025-06`.
-- Chapters are written as two-digit codes in quotes in JSON and as plain two-digit codes in CSV, for example `05`, `15`, `23`. Lists of chapters are semicolon-separated.
-- Country codes use three letters (`SRB`, `MNE`, `MKD`, `ALB`, `BIH`, `XKX` and so on). EU institutions use `EU`.
+- Chapters are written as two-digit codes in quotes in JSON and as plain two-digit codes in CSV, for example `02`, `10`, `23`. Lists of chapters are semicolon-separated. Where a source or item has no chapter, the field is left empty.
+- Country codes use three letters (`ALB`, `BIH`, `MKD`, `MNE`, `SRB`, `XKX` and so on). EU institutions use `EU`. The ID examples below use `MKD` only as an illustration.
+- Theme codes come from `taxonomy/themes.csv`, for example `TECH-AI`. Lists of themes are semicolon-separated.
+- Language codes use ISO 639-1, for example `en`, `mk`, `sq`.
 - IDs are permanent. They are never changed, reused or deleted, even if the record is later excluded or retired.
 
 ## Identifier formats
@@ -16,20 +18,21 @@ General rules:
 |---|---|---|
 | Run | `RUN-YYYY-NN` | `RUN-2026-01` |
 | Source requirement | `REQ-NNN` | `REQ-012` |
-| Source | `CCC-FAM-YYYY-NNN` (country, family, publication year, sequence) | `SRB-EU-2025-001` |
-| Evidence item | source ID plus `-NNNN` | `SRB-EU-2025-001-0042` |
-| Reform issue | `RI-AREA-NNN` (area code, no country) | `RI-PP-007` |
+| Source | `CCC-FAM-YYYY-NNN` (country, family, publication year, sequence) | `MKD-EU-2025-001` |
+| Evidence item | source ID plus `-NNNN` | `MKD-EU-2025-001-0042` |
+| Reform issue | `RI-AREA-NNN` (area code, no country) | `RI-FMW-007` |
 | Problem mechanism | `MEC-NN` | `MEC-04` |
-| Intervention | `INT-CCC-NNNN` | `INT-SRB-0012` |
-| Actor | `ACT-CCC-NNNN` or `ACT-EU-NNNN` or `ACT-INT-NNNN` | `ACT-SRB-0003` |
+| Intervention | `INT-CCC-NNNN` | `INT-MKD-0012` |
+| Actor | `ACT-CCC-NNNN` or `ACT-EU-NNNN` or `ACT-INT-NNNN` | `ACT-MKD-0003` |
 | Comparator case | `CMP-NNNN` | `CMP-0001` |
 | Link | `LNK-NNNNNN` | `LNK-000123` |
 | Judgement | `JDG-NNNNNN` | `JDG-000123` |
 | Source quality rating | `SQ-NNNNN` | `SQ-00045` |
 | Limit | `LIM-NNNN` | `LIM-0003` |
 | Gate decision | `GATE-NNNN` | `GATE-0001` |
+| Alpha lesson | `ALN-NNNN` | `ALN-0001` |
 
-Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are set when the taxonomy is drafted; public procurement uses `PP`.
+Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are proposed in the run record and approved at G4 when the taxonomy is drafted. Theme codes are listed in `taxonomy/themes.csv`.
 
 ## registers/source_requirements.csv
 
@@ -43,10 +46,11 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | country | Country code |
 | role | `target` or `comparator` |
 | chapters | Chapter numbers, semicolon-separated |
+| themes | Theme codes, semicolon-separated (blank if none) |
 | years_from | First year wanted |
 | years_to | Last year wanted |
 | core_or_supporting | `core` or `supporting` |
-| search_hints | Official website, likely titles, Serbian title if relevant |
+| search_hints | Official website, likely titles, original-language title if relevant |
 | status | `open`, `found`, `partly_found`, `not_found`, `not_public` |
 | matched_source_ids | Sources that satisfy this requirement |
 | approved_at | Gate decision ID that approved the line |
@@ -65,10 +69,11 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | country | Country code of the country the document is about |
 | role | `target` or `comparator` |
 | chapters_covered | Chapters, semicolon-separated |
+| themes_covered | Theme codes the source covers, semicolon-separated (blank if none) |
 | requirement_id | Requirement it satisfies (blank if found outside the list) |
 | publication_date | Date of publication |
 | period_covered | Period the document reports on |
-| language | `en`, `sr` or other |
+| language | ISO 639-1 code, for example `en`, `mk`, `sq` |
 | translation_used | `yes` or `no` |
 | url | Where it was retrieved |
 | retrieval_date | Date retrieved |
@@ -89,14 +94,14 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | run_id | Run in which it was recorded |
 | limit_type | `country`, `thematic`, `time`, `evidence`, `accessibility`, `language`, `analytical`, `methodological` |
 | description | What is limited or excluded |
-| applies_to | `all`, or a typed reference: `chapter:15`, `requirement:REQ-012`, `source:SRB-EU-2025-001`, `country:MNE` |
+| applies_to | `all`, or a typed reference: `chapter:15`, `requirement:REQ-012`, `source:MKD-EU-2025-001`, `country:ALB`, `theme:TECH-AI` |
 | reason | Why |
 | temporary_or_permanent | `temporary` or `permanent` |
 | decided_by | Name, or `agent` for tier 1 or 2 decisions |
 | decided_on | Date |
 | gate_id | Gate decision that confirmed it |
 | revisit_in | Run or condition for revisiting |
-| status | `active`, `lifted` |
+| status | `active`, `lifted`, `superseded` (replaced by a later limit, which names it in `reason`) |
 
 ## registers/gate_log.csv
 
@@ -113,6 +118,30 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | linked_changes | Rules, taxonomy or codebook versions created as a result |
 | notes | Free text |
 
+## runs/<run_id>/alpha_learning_log.csv
+
+Curated, material lessons from an alpha run, especially those that matter for scaling. Raw notes stay in `run_notes.md`; limits, decisions and gate outcomes stay in their own logs and are cited here, not repeated.
+
+| Field | Meaning |
+|---|---|
+| lesson_id | `ALN-NNNN` |
+| run_id | Run |
+| date_raised | Date the lesson was proposed |
+| stage | Stage at which it arose, or `pre-G0` |
+| gate | Gate package in which it was first presented (blank until then) |
+| area | `workflow`, `sources`, `extraction`, `classification`, `taxonomy_matching`, `review_gates`, `assessment`, `outputs`, `review_page`, `tooling` |
+| lesson_type | `worked`, `did_not_work`, `methodological_issue`, `technical_issue`, `change_made`, `limitation_found`, `recommendation` |
+| description | One or two sentences |
+| examples | Source, item, judgement, file or gate IDs that show it, semicolon-separated |
+| impact | `High`, `Medium`, `Low` |
+| scaling_dimension | `chapters`, `clusters`, `countries`, `volume`, `languages`, `none`, semicolon-separated |
+| scaling_implication | What the lesson means for scaling |
+| recommendation | What to change before scaling, if anything |
+| cross_refs | Decision, limit, gate or run-note references (for example `D6;LIM-0010;run_notes 2026-10-29`) |
+| status | `open`, `accepted`, `implemented`, `deferred`, `rejected` |
+| decided_at | Gate decision that set the status |
+| raised_by | `agent` or a name (for example a reviewer's feedback passed on by the analyst) |
+
 ## taxonomy/reform_issues.csv
 
 | Field | Meaning |
@@ -122,6 +151,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | definition | One or two sentences |
 | cluster | Cluster number |
 | chapters | Chapters, semicolon-separated |
+| themes | Theme codes, semicolon-separated (blank if none) |
 | mechanism_ids | Usual mechanisms, semicolon-separated |
 | example_item_ids | Two or three evidence items that illustrate it |
 | exclusion_notes | What does not belong here |
@@ -130,6 +160,21 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | taxonomy_version | Version in which the row last changed |
 | created_in_run | Run ID |
 | notes | Free text |
+
+## taxonomy/themes.csv
+
+Controlled list of cross-cutting themes. Rows are approved by the analyst; the agent may only propose changes at a gate.
+
+| Field | Meaning |
+|---|---|
+| theme_code | `GROUP-AREA`, for example `TECH-AI` |
+| theme_group | Group code, for example `TECH` |
+| label | Short name |
+| definition | One sentence |
+| material_examples | Examples that meet the materiality test |
+| incidental_examples | Examples that only mention the area in passing and are out of scope |
+| status | `draft`, `approved`, `retired` |
+| version | Version in which the row last changed |
 
 ## taxonomy/mechanisms.csv
 
@@ -203,7 +248,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 |---|---|
 | case_id | `CMP-NNNN` |
 | country | Comparator country code |
-| reform_issue_id | Serbia reform issue it is compared with |
+| reform_issue_id | Target-country reform issue it is compared with |
 | intervention_ids | Comparator interventions involved |
 | description | One or two sentences |
 | selected_at | Gate decision that selected it |
@@ -229,7 +274,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 |---|---|
 | sq_id | `SQ-NNNNN` |
 | source_id | Source |
-| topic | Chapter or topic the rating applies to |
+| topic | Chapter or theme code the rating applies to |
 | traceability | `yes`, `partly`, `no` |
 | topic_expertise | `yes`, `partly`, `no` |
 | method_transparency | `yes`, `partly`, `no`, `na` |
@@ -255,7 +300,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | judgement_id | `JDG-NNNNNN` |
 | judgement_type | `evidence_confidence`, `relevance`, `implementation_status`, `direction_of_travel`, `unresolved_gap`, `success`, `attribution`, `comparator_relevance`, `transferability`, `priority`, `tractability` |
 | object_type | `item`, `intervention`, `issue_country`, `link`, `issue_comparator` |
-| object_id | ID of the object: an item, intervention or link ID; for `issue_country`, the issue and country written as `RI-PP-007@SRB`; for `issue_comparator`, the comparator case ID (`CMP-NNNN`), which already names the Serbia issue |
+| object_id | ID of the object: an item, intervention or link ID; for `issue_country`, the issue and country written as `RI-FMW-007@MKD`; for `issue_comparator`, the comparator case ID (`CMP-NNNN`), which already names the target-country issue |
 | context_id | Extra context, for example the reform issue for a relevance judgement, or the date for implementation status |
 | value | Value from the allowed scale in the judgement rules, or `insufficient_evidence` |
 | reason | One to three sentences |
@@ -274,4 +319,4 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 
 ## evidence/<country>/<source_id>.json
 
-One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules and a `pass2` block filled in by classification.
+One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules, including `scope_basis` (`chapter`, `theme`, `chain` or `exception`) and `themes` (theme codes), and a `pass2` block filled in by classification. The file header records the theme list version used in `extraction.themes_version`.

@@ -1,14 +1,14 @@
 # EU Accession Reform Intelligence Tool | Matching considerations
 
-Version 1.1, 23 October 2026. Revised after the architecture review (decisions B1, B2, D4 and D5).
+Version 1.2, 29 October 2026. Made country-neutral, with cross-cutting themes brought forward from a later stage, when the pilot was reconfigured before gate G0 (decisions D6 and F2). Version 1.1 followed the architecture review (decisions B1, B2, D4 and D5).
 
 This codebook defines how the information in the tool should **connect** so that users can explore the same evidence base from different starting points.
 
 The tool should not treat assessments, reforms, outcomes, lessons and other information as isolated records. Each piece of information should carry consistent identifiers that allow it to be connected to related evidence and retrieved in different ways.
 
-A user should be able to start with a **country**. Selecting Serbia, for example, should bring together the relevant EU assessments, government responses, implementation evidence, outcomes, lessons and **comparator cases** connected to Serbia.
+A user should be able to start with a **country**. Selecting a country should bring together the relevant EU assessments, government responses, implementation evidence, outcomes, lessons and **comparator cases** connected to it.
 
-A user should also be able to start with a **theme, cluster, chapter or policy area**. Selecting energy, for example, should eventually allow the tool to look horizontally across all countries covered by the system and retrieve the relevant **assessments, reforms, outcomes and lessons** associated with energy. In practice, a theme lookup uses the cluster and chapter structure of the accession negotiations: energy, for example, corresponds mainly to Chapter 15 in Cluster 4. Themes that cut across chapters can be added later as a controlled list of tags.
+A user should also be able to start with a **theme, cluster, chapter or policy area**. Selecting energy, for example, should eventually allow the tool to look horizontally across all countries covered by the system and retrieve the relevant **assessments, reforms, outcomes and lessons** associated with energy. In practice, a theme lookup uses the cluster and chapter structure of the accession negotiations: energy, for example, corresponds mainly to Chapter 15 in Cluster 4. Themes that cut across chapters, such as technology and AI, are handled through a controlled list of theme codes in `taxonomy/themes.csv`, each with a definition and a materiality test. Every evidence item carries the theme codes it materially concerns, so a theme lookup works across chapters and countries. Only the analyst can add, change or retire a theme.
 
 The same principle should apply to a specific **reform issue**. Different countries may describe the same underlying problem using different language, so the tool should connect information that relates to the same reform issue while preserving the original wording and country context.
 
@@ -28,6 +28,7 @@ To make these lookups possible, every evidence item carries the following matchi
 - **Source**
 - **Cluster**
 - **Chapter**
+- **Theme**
 - **Information type and chain link**
 - **Reform issue**
 - **Problem mechanism**

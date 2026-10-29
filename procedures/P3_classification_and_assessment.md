@@ -1,10 +1,10 @@
 # Procedure P3: Classification and assessment (stages 9 to 11)
 
-Read this file, `rules/classification_rules.md` and `rules/judgement_rules.md` before starting any of stages 9 to 11. Gates G5 and G6 sit in this procedure.
+Read this file, `rules/classification_rules.md` and `rules/judgement_rules.md` before starting any of stages 9 to 11. Gates G5 and G6 sit in this procedure. Follow "Around every gate" in procedure P1 for the learning log and the review page.
 
 ## Stage 9: Classify and link (gate G5)
 
-1. Run pass 2 on every evidence item against the approved taxonomy and mechanism list versions: chain link, reform issues, mechanisms, interventions and actors.
+1. Run pass 2 on every evidence item against the approved taxonomy and mechanism list versions: chain link, reform issues, mechanisms, interventions and actors, and the scope check in the classification rules.
 2. Build or update `entities/interventions.csv` and `entities/actors.csv`.
 3. Create links in `links/links.csv` following the classification rules.
 4. Export `review/RUN-2026-01/G5_classification.xlsx` with:
@@ -13,7 +13,8 @@ Read this file, `rules/classification_rules.md` and `rules/judgement_rules.md` b
    - a random 10 per cent of automatically classified items;
    - the spot-check sheet from stage 8;
    - the intervention and actor lists, sorted so possible duplicates sit together;
-   - all `contradicts` links.
+   - all `contradicts` links;
+   - all items marked `out_of_scope`, and any items still flagged `theme_doubtful`.
 
 **G5 decision (analyst):** resolve the queues, approve or reject proposed issues, and confirm entity merges. If the taxonomy changes, create a new taxonomy version and re-run pass 2 on the affected items only.
 
@@ -24,7 +25,7 @@ Make judgements in this order, citing evidence items for each:
 1. evidence confidence for every item (tier 2);
 2. relevance of each item to each reform issue it is tagged with (tier 2);
 3. implementation status for each intervention, at the freeze date and at earlier dates where the evidence allows;
-4. for each reform issue in Serbia: direction of travel, unresolved gap, priority and tractability (tier 3, proposals only);
+4. for each reform issue in the target country: direction of travel, unresolved gap, priority and tractability (tier 3, proposals only);
 5. success and attribution for each `leads_to` link (tier 3, proposals only).
 
 ## Stage 11: Analytical validation (gate G6)

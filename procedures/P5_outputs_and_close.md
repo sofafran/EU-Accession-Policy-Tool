@@ -1,17 +1,18 @@
 # Procedure P5: Outputs, closing a run, and starting the next one (stages 12 to 14)
 
-Read this file and Codebook 7 before starting any of stages 12 to 14. Gates G7 and G8 sit in this procedure.
+Read this file and Codebook 7 before starting any of stages 12 to 14. Gates G7 and G8 sit in this procedure. Follow "Around every gate" in procedure P1 for the learning log and the review page.
 
 ## Stage 12: Outputs (gate G7)
 
 1. Write the outputs listed in Codebook 7 to `outputs/RUN-2026-01/`:
-   - `serbia_ch05_overview.md`;
+   - `scope_overview.md`;
    - one `issue_brief_<issue_id>.md` per reform issue;
    - `coverage_and_limits_report.md`;
    - for run 1b only: one `comparator_brief_<issue_id>.md` per selected issue, each ending with draft policy options.
 2. Use only validated judgements. Label anything else as a proposal.
-3. Follow the Codebook 7 principles and the policy option rules. Cite evidence item IDs in an annex at the end of each file, not in the running text.
-4. Write in plain British English, in full sentences, without em dashes.
+3. Surface each output on the review page with its status (`Draft` until G7, then `Validated`; policy options keep the internal-draft label).
+4. Follow the Codebook 7 principles and the policy option rules. Cite evidence item IDs in an annex at the end of each file, not in the running text.
+5. Write in plain British English, in full sentences, without em dashes.
 
 **G7 decision (both reviewers):** sign off each output. Policy options remain labelled as internal drafts even after sign-off, until a separate decision is taken to adapt them for an external audience.
 
@@ -22,10 +23,12 @@ Read this file and Codebook 7 before starting any of stages 12 to 14. Gates G7 a
    - error patterns found in extraction, classification and judgement, and how often they occurred;
    - gaps in the evidence and their effect on the analysis;
    - proposed changes to the codebooks, rules, taxonomy and data dictionary, each with its reason;
-   - proposed scope for the next run.
+   - proposed scope for the next run;
+   - a scaling-readiness section drawn from the alpha learning log: what must change before the tool covers more chapters, clusters or countries, citing lesson IDs.
 2. Update the limits log: mark limits as lifted or still active, and add methodological limitations found during the run.
+3. Bring the alpha learning log up to date: every row has a proposed status for G8.
 
-**G8 decision (analyst):** approve, edit or reject each proposed change. Approved changes are applied as new versions (codebooks 1.2, rules 1.0 and so on), listed in `codebooks/CHANGELOG.md`, and the run record is closed.
+**G8 decision (analyst):** approve, edit or reject each proposed change, and set the final status of each alpha learning log row. Approved changes are applied as new versions (codebooks 1.2, rules 1.0 and so on), listed in `codebooks/CHANGELOG.md`, and the run record is closed.
 
 ## Stage 14: Starting a new run
 

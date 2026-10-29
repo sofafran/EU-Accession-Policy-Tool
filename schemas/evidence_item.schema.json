@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Evidence file: one source and its evidence items",
-  "description": "Version 1.0, 23 October 2026. One JSON file per source, stored at evidence/<country>/<source_id>.json. Pass 1 fields are written by extraction; the pass2 block is written by classification.",
+  "description": "Version 1.1, 29 October 2026. One JSON file per source, stored at evidence/<country>/<source_id>.json. Pass 1 fields are written by extraction; the pass2 block is written by classification.",
   "type": "object",
   "required": [
     "source_id",
@@ -22,7 +22,8 @@
         "rules_version",
         "extracted_at",
         "status",
-        "codebook_version"
+        "codebook_version",
+        "themes_version"
       ],
       "additionalProperties": false,
       "properties": {
@@ -50,6 +51,9 @@
           "type": "string"
         },
         "codebook_version": {
+          "type": "string"
+        },
+        "themes_version": {
           "type": "string"
         }
       }
@@ -141,6 +145,8 @@
         "role",
         "cluster",
         "chapter",
+        "scope_basis",
+        "themes",
         "dates",
         "speaker",
         "subjects",
@@ -235,10 +241,37 @@
           ]
         },
         "cluster": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "chapter": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "scope_basis": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "chapter",
+              "theme",
+              "chain",
+              "exception"
+            ]
+          }
+        },
+        "themes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Z]+-[A-Z]+$"
+          }
         },
         "dates": {
           "type": "object",
@@ -357,7 +390,8 @@
               "table",
               "ocr",
               "possible_misread",
-              "out_of_window"
+              "out_of_window",
+              "theme_doubtful"
             ]
           }
         },
@@ -410,7 +444,8 @@
                 "auto",
                 "queued_ambiguous",
                 "queued_unmatched",
-                "analyst_resolved"
+                "analyst_resolved",
+                "out_of_scope"
               ]
             },
             "classification_note": {

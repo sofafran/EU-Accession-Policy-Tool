@@ -1,43 +1,48 @@
 {
-  "source_id": "SRB-EU-2025-001",
+  "source_id": "MKD-EU-2025-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.1",
+    "rules_version": "0.1b",
     "extracted_at": "2026-11-20",
     "status": "complete",
     "pages_processed": "40-46",
     "notes": "ILLUSTRATIVE EXAMPLE ONLY. The quotes below are invented to show the structure and are not real evidence.",
-    "codebook_version": "1.1"
+    "codebook_version": "1.2",
+    "themes_version": "1.0"
   },
   "classification": {
     "status": "complete",
     "run_id": "RUN-2026-01",
-    "rules_version": "0.1",
+    "rules_version": "0.1b",
     "taxonomy_version": "1.0",
     "classified_at": "2026-12-05",
     "mechanisms_version": "1.0"
   },
   "items": [
     {
-      "item_id": "SRB-EU-2025-001-0002",
+      "item_id": "MKD-EU-2025-001-0002",
       "information_type": "finding",
       "stated_text": "Limited progress was made during the reporting period.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The Commission found limited progress during the reporting period.",
+      "summary": "The Commission found limited progress on freedom of movement for workers during the reporting period.",
       "location": {
         "page": 42,
         "page_end": null,
-        "section": "Chapter 5: Public procurement",
+        "section": "Chapter 2: Freedom of movement for workers",
         "paragraph": null,
         "snapshot_file": null
       },
       "quote_verified": true,
-      "country": "SRB",
+      "country": "MKD",
       "role": "target",
-      "cluster": "1",
-      "chapter": "05",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
       "dates": {
         "publication_date": "2025-11",
         "period_covered": "2024-06/2025-06",
@@ -50,8 +55,8 @@
       },
       "subjects": [
         {
-          "name_as_stated": "Serbia",
-          "actor_id": "ACT-SRB-0001"
+          "name_as_stated": "North Macedonia",
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -71,7 +76,7 @@
       "pass2": {
         "chain_link": "eu_requirement",
         "reform_issue_ids": [
-          "RI-PP-001"
+          "RI-FMW-001"
         ],
         "mechanism_ids": [],
         "intervention_ids": [],
@@ -80,25 +85,32 @@
       }
     },
     {
-      "item_id": "SRB-EU-2025-001-0003",
+      "item_id": "MKD-EU-2025-001-0003",
       "information_type": "recommendation",
-      "stated_text": "In the coming year, Serbia should in particular ensure that intergovernmental agreements do not exempt large infrastructure projects from the public procurement rules.",
+      "stated_text": "In the coming year, the country should in particular complete the technical preparations for connecting to the Electronic Exchange of Social Security Information system.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The Commission asks Serbia to stop large infrastructure projects being exempted from procurement rules through intergovernmental agreements.",
+      "summary": "The Commission asks the country to complete technical preparations to connect to the EU electronic system for exchanging social security information.",
       "location": {
         "page": 42,
         "page_end": null,
-        "section": "Chapter 5: Public procurement",
+        "section": "Chapter 2: Freedom of movement for workers",
         "paragraph": null,
         "snapshot_file": null
       },
       "quote_verified": true,
-      "country": "SRB",
+      "country": "MKD",
       "role": "target",
-      "cluster": "1",
-      "chapter": "05",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter",
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
       "dates": {
         "publication_date": "2025-11",
         "period_covered": "2024-06/2025-06",
@@ -111,8 +123,8 @@
       },
       "subjects": [
         {
-          "name_as_stated": "Serbia",
-          "actor_id": "ACT-SRB-0001"
+          "name_as_stated": "the country",
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -132,10 +144,10 @@
       "pass2": {
         "chain_link": "eu_requirement",
         "reform_issue_ids": [
-          "RI-PP-003"
+          "RI-FMW-003"
         ],
         "mechanism_ids": [
-          "MEC-06"
+          "MEC-03"
         ],
         "intervention_ids": [],
         "classification_status": "auto",

@@ -1,6 +1,6 @@
 # Classification rules (pass 2)
 
-Version 0.1, 23 October 2026. Status: draft, to be refined at gates G4 and G5. Changes create a new version and are listed in the change log at the end of this file.
+Version 0.1b, 29 October 2026. Status: draft, to be refined at gates G4 and G5. Changes create a new version and are listed in the change log at the end of this file.
 
 Pass 2 adds the interpretive layer to evidence items that have passed pass 1. It implements Codebook 5. It never changes the pass 1 fields (quote, type, location, dates, stated status). If a pass 1 error is found, it is recorded in the review queue for correction under the extraction rules rather than silently fixed.
 
@@ -39,11 +39,21 @@ Assign one `chain_link` per item, using this table as the default and departing 
 ## 4. Interventions and actors
 
 - Link each intervention named in an item to a record in `entities/interventions.csv`. Create a new record if none exists, using the next free ID.
-- Treat different names for the same measure as one intervention (for example an English title and a Serbian title for the same law). Record the alternative names in the intervention record.
+- Treat different names for the same measure as one intervention (for example an English title and an original-language title for the same law). Record the alternative names in the intervention record.
 - Treat amended or replaced laws as separate interventions, linked with a `replaces` or `amends` link.
-- Link speakers and subjects to `entities/actors.csv` in the same way. Record ministries under their current name and list former names, so that renamed institutions are not duplicated.
+- Link speakers and subjects to `entities/actors.csv` in the same way. Record ministries, and the country itself, under their current name and list former names, so that renamed institutions and countries are not duplicated.
 
-## 5. Links between items
+## 5. Scope check
+
+Pass 2 confirms that every item belongs to the run scope set in the run record.
+
+- Items with `scope_basis` `chapter` are in scope.
+- Items with `scope_basis` `theme` from outside the in-scope chapters are in scope only if they can be assigned to a reform issue that originates from an in-scope item: for a theme, that means an issue supported by at least one in-scope recommendation that meets the materiality test. Theme findings, interventions and other items that match no such issue are not used to create new issues on their own.
+- Items with `scope_basis` `chain` are in scope only if pass 2 can assign them to a reform issue already in scope.
+- An item that fails this check is not deleted. Set `classification_status` to `out_of_scope`, explain why in `classification_note`, and list it at G5 for the analyst to confirm. The analyst may instead treat it as a logged exception or propose a new issue.
+- Theme tags from pass 1 are not changed in pass 2. If a tag looks wrong, record it in the review queue for correction under the extraction rules.
+
+## 6. Links between items
 
 Create links in `links/links.csv` only where the connection is clear from the evidence.
 
@@ -60,15 +70,17 @@ Create links in `links/links.csv` only where the connection is clear from the ev
 
 Two items from the same source never corroborate each other. A government source and a government statistic do not count as independent of each other.
 
-## 6. Queues for the analyst
+## 7. Queues for the analyst
 
 Every item starts with `classification_status` `not_classified` (set in pass 1) and ends pass 2 with one of:
 
 - `auto`: classified with no doubts.
 - `queued_ambiguous`: waiting for the analyst at G5.
 - `queued_unmatched`: no approved issue fits; waiting for a taxonomy decision.
+- `out_of_scope`: fails the scope check in section 5; waiting for the analyst at G5.
 - `analyst_resolved`: decided by the analyst, who is recorded in the gate log.
 
 ## Change log
 
+- 0.1b (29 Oct 2026): pre-G0 reconfiguration of the pilot (decisions A5 to A9 and D6). Country-neutral wording; scope check (section 5) and `out_of_scope` status for cross-cutting themes and chain items; former names of the country recorded on actors.
 - 0.1 (23 Oct 2026): first draft from the approved architecture.
