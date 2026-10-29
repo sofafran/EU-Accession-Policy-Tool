@@ -1,11 +1,11 @@
 # Run record: RUN-2026-01
 
-Status: **G0 passed with conditions (GATE-0001, 29 Oct 2026); stage 1 not started**
+Status: **in progress: stage 2 (G1 passed, GATE-0002)**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-01 |
-| Current stage | 0 Run setup (complete; G0 passed with conditions on 2026-10-29; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
+| Current stage | 2 Acquisition (started 2026-10-29; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
 | Purpose | Alpha product and methodology test. Run 1 produces a North Macedonia diagnostic (run 1a) and a comparator pilot (run 1b), and tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, outputs, and the usefulness of the review page. Lessons are recorded in the alpha learning log to inform scaling to further chapters, clusters and countries |
 | Target country | North Macedonia (MKD) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -41,7 +41,7 @@ These settings apply the country-neutral procedures to this run.
 
 - **Folders and IDs:** sources are filed under `sources/MKD/<family>/` and evidence under `evidence/MKD/`. Source IDs take the form `MKD-<family>-<year>-<sequence>`, for example `MKD-EU-2025-001_EC_North-Macedonia-Report-2025.pdf`.
 - **Country names as printed:** documents published before February 2019 call the country "the former Yugoslav Republic of Macedonia". Quotes keep the name as printed; actor records list the earlier name under `former_names`. The same applies to ministries that have been renamed.
-- **Accession stage (unverified):** the status of North Macedonia's negotiations, clusters and benchmarks is not treated as established. At stage 1, verify it against authoritative EU sources (Council and Commission documents) before it is used in the requirements list or in any analysis. Until then, list benchmark requirement lines with status `open` rather than assuming they exist or do not.
+- **Accession stage (verified at stage 1, 29 Oct 2026, for planning the requirements list only; to be confirmed from registered sources before analytical use):** the Commission's North Macedonia country page states that the intergovernmental conference was held in July 2022 and that screening was completed in December 2023. The Presidency conclusions on enlargement of 16 December 2025 (ST 16933/25, paragraphs 66 and 67) state that North Macedonia has not yet completed the constitutional changes it committed to, that the Council will convene another intergovernmental conference once it has, and that it will then open the first cluster; no cluster had been opened. The public Cluster 2 screening report (4 February 2025) contains no opening benchmarks. The latest annual report on the country page is the 2025 report (4 November 2025); no 2026 report was listed there on 29 October 2026.
 - **Source requirement hints for stage 1** (hints, not facts; confirm by searching):
   - EU: Commission annual reports on North Macedonia (Chapter 2 sections, and all sections for technology and AI recommendations); the screening report for Cluster 2 if public, and for clusters containing technology and AI material if public; Council conclusions; the Reform Agenda and Growth Plan documents and their assessments where they cover Chapter 2 or the theme.
   - GOV: laws on employment of foreigners, labour relations and social security coordination; bilateral social security agreements; reports of the public employment service; the National Programme for the Adoption of the Acquis; national strategies and laws on digital transformation, electronic government, electronic identification and trust services, personal data protection, cybersecurity and artificial intelligence, and reports of the bodies responsible for them.
