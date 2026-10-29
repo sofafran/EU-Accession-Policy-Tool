@@ -238,7 +238,8 @@ Version 1.2 of Codebooks 1 to 6 and version 1.1 of Codebook 7 (29 October 2026) 
 
 ```
 eu-accession-tool/
-  index.html                 single review page (generated; hostable on GitHub Pages)
+  index.html                 review page (generated; hosted on GitHub Pages)
+  analysis.html              analysis mock-up linked from the review page (generated; decision E11)
   CLAUDE.md                  instructions every agent session reads first
   ARCHITECTURE.md            this document
   codebooks/                 Codebooks 1 to 7 (Markdown) and CHANGELOG.md

@@ -372,6 +372,19 @@ def main():
         hp = P()
         hp.feed(page)
         check("build_review_page.py", "HTML tags balanced", hp.ok and not hp.stack)
+        check("build_review_page.py", "review page links to the analysis page", 'href="analysis.html"' in page)
+        apage = (Path(tmp) / "analysis.html").read_text(encoding="utf-8") if (Path(tmp) / "analysis.html").exists() else ""
+        hp2 = P()
+        hp2.feed(apage)
+        check("build_review_page.py", "analysis page builds, balanced, self-contained", bool(apage) and hp2.ok and not hp2.stack and "<script" not in apage and "<link" not in apage)
+        check("build_review_page.py", "analysis page shows quotes with item IDs and placeholders for later sections",
+              f"{sid}-0001" in apage and "Reform issues" in apage and "layout only" in apage)
+        with (rv / "G3_passages.csv").open("a", encoding="utf-8") as fh:
+            fh.write("P2,MKD-EU-2025-001,2,In the coming year,,test\n")
+        run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-11-10")
+        apage = (Path(tmp) / "analysis.html").read_text(encoding="utf-8")
+        check("build_review_page.py", "analysis page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",
+              f"{sid}-0006" not in apage and f"{sid}-0001" in apage and "left out until the analyst has hand-coded them" in apage)
 
     passed = sum(r[2] == "pass" for r in results)
     print(f"\n{passed}/{len(results)} tests passed")

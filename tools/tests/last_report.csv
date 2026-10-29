@@ -1,9 +1,9 @@
 tool,test,result,detail
-hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmpwnguibze/samples/a.txt
+hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmpgx3irkw0/samples/a.txt
 "
 next_id.py,next limit after the highest recorded,pass,"LIM-0023
 "
-next_id.py,next lesson after the highest recorded,pass,"ALN-0013
+next_id.py,next lesson after the highest recorded,pass,"ALN-0015
 "
 next_id.py,first source ID,pass,"MKD-EU-2025-001
 "
@@ -13,10 +13,10 @@ next_id.py,next item after the highest in the file,pass,"MKD-EU-2025-004-0008
 "
 next_id.py,"refuses a source ID without country, family and year",pass,
 convert_to_text.py,text PDF: page markers and text,pass,
-convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmpwnguibze/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
+convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmpgx3irkw0/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
 "
 convert_to_text.py,original file unchanged,pass,
-convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmpwnguibze/samples/scan.txt: 1 page(s)
+convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmpgx3irkw0/samples/scan.txt: 1 page(s)
 ocr: text recognition used on page(s) 1 (mkd+eng); note 'ocr' in the register
 "
 convert_to_text.py,scanned PDF: Macedonian Cyrillic recognised,pass,"=== PAGE 1 ===
@@ -44,7 +44,7 @@ verify_quotes.py,page break with numbered running header and footnotes between t
 verify_quotes.py,exit status 1 when any quote fails,pass,
 verify_quotes.py,report written,pass,
 verify_quotes.py,"webpage: quote in cited section passes, other section fails",pass,"[True, False]"
-validate_data.py,clean sample project passes,pass,"validate_data 1.0.0: 1 evidence file(s), 4 item(s), 344 CSV row(s)
+validate_data.py,clean sample project passes,pass,"validate_data 1.0.0: 1 evidence file(s), 4 item(s), 346 CSV row(s)
 warning: judgements/judgements.csv: no committed version to compare with; protection check skipped
 warning: judgements/source_quality.csv: no committed version to compare with; protection check skipped
 0 error(s), 2 warning(s)
@@ -53,7 +53,7 @@ validate_data.py,unknown theme code detected,pass,
 validate_data.py,unknown reform issue detected,pass,
 validate_data.py,duplicate item ID detected,pass,
 validate_data.py,CSV header mismatch with data dictionary detected,pass,
-validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.0.0: 1 evidence file(s), 4 item(s), 345 CSV row(s)
+validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.0.0: 1 evidence file(s), 4 item(s), 347 CSV row(s)
 warning: judgements/judgements.csv: JDG-000001 is validated but its value has changed; restore it and propose a new row instead
 0 error(s), 1 warning(s)
 "
@@ -72,3 +72,7 @@ build_review_page.py,"no external scripts, fonts or stylesheets",pass,
 build_review_page.py,extraction section shows the sample,pass,
 build_review_page.py,"after a pass, G0 shown as validated",pass,
 build_review_page.py,HTML tags balanced,pass,
+build_review_page.py,review page links to the analysis page,pass,
+build_review_page.py,"analysis page builds, balanced, self-contained",pass,
+build_review_page.py,analysis page shows quotes with item IDs and placeholders for later sections,pass,
+build_review_page.py,"analysis page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",pass,

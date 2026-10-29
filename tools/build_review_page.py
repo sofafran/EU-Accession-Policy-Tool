@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -110,6 +110,16 @@ ul { margin: 0 0 10px; padding-left: 20px; }
 code { font-size: .88em; background: var(--bg); padding: 1px 4px; border-radius: 4px; }
 footer { color: var(--muted); font-size: .85rem; margin-top: 24px; }
 @media (max-width: 600px) { dl.facts, .legend { grid-template-columns: 1fr; } dl.facts dt { margin-top: 6px; } }
+.button { display: inline-block; background: var(--accent); color: var(--bg); padding: 10px 18px; border-radius: 6px; font-weight: 600; text-decoration: none; }
+.button:hover { opacity: .9; }
+nav.sticky { position: sticky; top: 0; background: var(--bg); padding: 8px 0; z-index: 2; border-bottom: 1px solid var(--border); }
+.quote { border-left: 3px solid var(--border); margin: 10px 0; padding: 4px 0 4px 12px; }
+.quote p { margin: 0 0 4px; }
+.quote .ref { color: var(--muted); font-size: .82rem; }
+.quote .tr { color: var(--muted); font-style: italic; }
+.card { border: 1px dashed var(--border); border-radius: 8px; padding: 12px 14px; margin: 10px 0; }
+.card dl.facts dd { color: var(--muted); }
+.bar { background: var(--accent); height: 10px; border-radius: 3px; display: inline-block; vertical-align: middle; opacity: .75; }
 """
 
 
@@ -425,7 +435,229 @@ class Page:
 <div class="legend">{legend}</div>
 </section>
 {body}
+<section class="notice" aria-label="Analysis mock-up"><h2>Analysis mock-up</h2><p>A single scrolling page that shows how the evidence and, later, the analysis are being built, section by section along the analytical chain. It is a draft review aid, not a product.</p><p><a class="button" href="analysis.html">Open the analysis page</a></p></section>
 <footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Rebuilt when each gate package is prepared and after each gate decision.</p></footer>
+</div>
+</body>
+</html>
+"""
+
+
+class AnalysisPage(Page):
+    """analysis.html: one scrolling page along the analytical chain. Shows only what exists in the project files;
+    everything else is a labelled placeholder that names the gate which fills it."""
+
+    MAX_QUOTES = 6
+
+    def __init__(self, root, run, today):
+        super().__init__(root, run, today)
+        self.reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
+        self.items, self.withheld = self.load_items()
+
+    def load_items(self):
+        """All evidence items, minus those inside a hand-coding passage that the analyst has not yet coded."""
+        from export_review import handcoded, norm, passage_text
+        _, passages = read_csv(self.review_dir / "G3_passages.csv")
+        hand = handcoded(self.root, self.run)
+        open_passages = []
+        for p in passages:
+            if p["passage_id"] not in hand:
+                try:
+                    open_passages.append((p, norm(passage_text(self.root, p["source_id"], p["page"], p["start_text"], p["end_text"]))))
+                except SystemExit:
+                    pass
+        items, withheld = [], 0
+        for path in evidence_files(self.root):
+            data = read_json(path)
+            for it in data.get("items", []):
+                if any(p["source_id"] == data["source_id"] and it["location"].get("page") == int(p["page"])
+                       and norm(it["stated_text"]) in t for p, t in open_passages):
+                    withheld += 1
+                    continue
+                it["_source"] = data["source_id"]
+                it["_status"] = data["extraction"]["status"]
+                items.append(it)
+        return items, withheld
+
+    def evidence_label(self):
+        return label(self.status("G3", bool(self.items)) if any(i["_status"] == "sample" for i in self.items) else self.status("G5", bool(self.items)))
+
+    def year(self, it):
+        return (it["dates"].get("publication_date") or "")[:4]
+
+    def quote(self, it):
+        src = self.reg.get(it["_source"], {})
+        loc = it["location"]
+        where = f"page {loc['page']}" + (f"-{loc['page_end']}" if loc.get("page_end") else "") if loc.get("page") else (loc.get("section") or "")
+        extra = []
+        if it.get("stated_status"):
+            extra.append(f"stated status: {it['stated_status'].replace('_', ' ')}")
+        if it["themes"]:
+            extra.append(", ".join(it["themes"]))
+        flags = [f.replace("_", " ") for f in it["flags"]]
+        tr = f'<p class="tr">Machine translation: {escape(it["translation_en"])}</p>' if it.get("translation_en") else ""
+        ref = (f'{escape(it["item_id"])} · {escape(src.get("institution", ""))}, {escape(src.get("title", it["_source"]))[:120]}, '
+               f'{escape(self.year(it))}, {escape(where)} · {escape(it["information_type"])}'
+               + (f' · {escape("; ".join(extra))}' if extra else "") + (f' · flags: {escape(", ".join(flags))}' if flags else ""))
+        return f'<div class="quote"><p>&ldquo;{escape(it["stated_text"])}&rdquo;</p>{tr}<p class="ref">{ref}</p></div>'
+
+    def quotes(self, items):
+        items = sorted(items, key=lambda i: (self.year(i), i["item_id"]), reverse=True)
+        shown = "".join(self.quote(i) for i in items[:self.MAX_QUOTES])
+        more = f'<p class="sub">{len(items) - self.MAX_QUOTES} more items not shown; see the G3 review sheet.</p>' if len(items) > self.MAX_QUOTES else ""
+        return shown + more if items else placeholder("No items yet.")
+
+    def bars(self, counter):
+        top = max(counter.values(), default=1)
+        return table(["", "Items", ""], [[escape(k), str(v), f'<span class="bar" style="width:{int(160 * v / top)}px"></span>']
+                                         for k, v in sorted(counter.items(), key=lambda kv: -kv[1])])
+
+    # Sections -----------------------------------------------------------------
+
+    def s_read(self):
+        legend = "".join(f'{label(k)}<span>{escape(v[1])}</span>' for k, v in LABELS.items())
+        note = (f'<p>{self.withheld} items from the three hand-coding passages are left out until the analyst has hand-coded them.</p>' if self.withheld else "")
+        n_src = len({i["_source"] for i in self.items})
+        return "How to read this page", (
+            f'<p>This is a draft mock-up to support review. It is generated from the project files and rebuilt at each gate. '
+            f'<strong>Stated</strong> evidence (what a source says, quoted word for word with its item ID) is kept apart from '
+            f'<strong>assessed</strong> judgements (what the analysis concludes), which appear only from gate G6.</p>'
+            f'<p>Evidence shown today comes from the extraction sample: {len(self.items)} items from {n_src} of the registered sources. '
+            f'Full extraction follows gates G3 and G4, so counts and examples will change.</p>{note}<div class="legend">{legend}</div>')
+
+    def s_base(self):
+        reg = list(self.reg.values())
+        avail = [r for r in reg if r["status"] == "available"]
+        fam = Counter(r["source_family"] for r in avail)
+        lang = Counter(r["language"] for r in avail)
+        years = Counter(r["publication_date"][:4] for r in avail)
+        _, limits = read_csv(self.root / "registers" / "limits_log.csv")
+        gaps = [r for r in limits if r["run_id"] == self.run and r["status"] == "active" and r["limit_type"] in ("evidence", "accessibility", "language")]
+        body = facts([("Sources registered", f"{len(reg)} ({len(avail)} available, {sum(r['status'] == 'inaccessible' for r in reg)} inaccessible)"),
+                      ("By family", escape(", ".join(f"{k} {v}" for k, v in sorted(fam.items())))),
+                      ("By language", escape(", ".join(f"{k} {v}" for k, v in sorted(lang.items())))),
+                      ("By publication year", escape(", ".join(f"{k} {v}" for k, v in sorted(years.items()))))])
+        if gaps:
+            body += "<h3>Known evidence gaps</h3><ul>" + "".join(f"<li>{escape(r['limit_id'])}: {escape(r['description'])}</li>" for r in gaps) + "</ul>"
+        return "Scope and evidence base " + label(self.status("G2", bool(reg))), facts([
+            ("Target country", md(self.rec.get("Target country", ""))), ("Time window", md(self.rec.get("Time window", "")))]) + body
+
+    def s_ch2_eu(self):
+        eu = [i for i in self.items if self.reg.get(i["_source"], {}).get("source_family") == "EU" and "chapter" in i["scope_basis"]]
+        scale = [i for i in eu if (i.get("eu_scale") or {}).get("preparation_level") or (i.get("eu_scale") or {}).get("progress_level")]
+        rows = [[escape(self.year(i)), escape((i["eu_scale"].get("applies_to") or "").replace("_", " ")),
+                 escape(i["eu_scale"].get("preparation_level") or ""), escape(i["eu_scale"].get("progress_level") or ""),
+                 escape(i["item_id"])] for i in sorted(scale, key=lambda i: (self.year(i), i["item_id"]))]
+        body = "<h3>The Commission's standard wording over time (stated)</h3>" + (
+            table(["Report year", "Applies to", "Preparation", "Progress", "Item"], rows) if rows else placeholder("No standard wording extracted yet."))
+        recs = [i for i in eu if i["information_type"] == "recommendation"]
+        body += f"<h3>What the EU recommends ({len(recs)} items)</h3>" + self.quotes(recs)
+        finds = [i for i in eu if i["information_type"] in ("finding", "barrier", "metric")]
+        body += f"<h3>What the EU finds ({len(finds)} items)</h3>" + self.quotes(finds)
+        return "Chapter 2: what the EU asks " + self.evidence_label(), body
+
+    def s_tech_eu(self):
+        eu = [i for i in self.items if self.reg.get(i["_source"], {}).get("source_family") == "EU" and "theme" in i["scope_basis"]]
+        _, themes = read_csv(self.root / "taxonomy" / "themes.csv")
+        names = {t["theme_code"]: t["label"] for t in themes}
+        recs = [i for i in eu if i["information_type"] == "recommendation"]
+        body = f"<p>{len(eu)} EU items concern the technology and AI theme, {len(recs)} of them recommendations.</p>"
+        body += "<h3>Recommendations by theme area</h3>" + self.bars(Counter(names.get(t, t) for i in recs for t in i["themes"]))
+        years = sorted({self.year(i) for i in recs})
+        body += "<h3>Recommendations by report year</h3>" + self.bars(Counter(self.year(i) for i in recs)) if years else ""
+        for code, name in names.items():
+            mine = [i for i in recs if code in i["themes"]]
+            if mine:
+                body += f"<h3>{escape(name)} ({len(mine)})</h3>" + "".join(self.quote(i) for i in sorted(mine, key=lambda i: self.year(i), reverse=True)[:2])
+        return "Technology and AI: what the EU asks " + self.evidence_label(), body
+
+    def s_response(self):
+        ints = [i for i in self.items if i["information_type"] == "intervention"]
+        ch2 = [i for i in ints if "chapter" in i["scope_basis"]]
+        tech = [i for i in ints if "theme" in i["scope_basis"]]
+        body = ("<p>Laws, strategies, systems and programmes as the sources describe them. The stated status is the source's own wording; "
+                "the assessed implementation status is a judgement made at G6.</p>")
+        body += "<h3>Stated status of interventions</h3>" + self.bars(Counter((i.get("stated_status") or "none").replace("_", " ") for i in ints))
+        body += f"<h3>Chapter 2 ({len(ch2)} items)</h3>" + self.quotes(ch2)
+        body += f"<h3>Technology and AI ({len(tech)} items)</h3>" + self.quotes(tech)
+        return "Country response (stated) " + self.evidence_label(), body
+
+    def s_implementation(self):
+        non_eu = [i for i in self.items if self.reg.get(i["_source"], {}).get("source_family") in ("GOV", "IO", "RES", "CSO")
+                  and i["information_type"] in ("finding", "outcome", "barrier", "metric", "lesson")]
+        body = "<p>What national institutions, international organisations, researchers and civil society report about how reforms work in practice.</p>"
+        body += self.bars(Counter(f"{self.reg[i['_source']]['source_family']}: {self.reg[i['_source']]['institution']}" for i in non_eu))
+        for sid in sorted({i["_source"] for i in non_eu}):
+            mine = [i for i in non_eu if i["_source"] == sid]
+            body += f"<h3>{escape(self.reg[sid]['title'][:110])} ({len(mine)})</h3>" + "".join(self.quote(i) for i in mine[:3])
+        return "Implementation and outcomes (stated) " + self.evidence_label(), body
+
+    def s_issues(self):
+        _, issues = read_csv(self.root / "taxonomy" / "reform_issues.csv")
+        if issues:
+            title, body = self.taxonomy()
+            return "Reform issues " + label(self.status("G4", True)), body
+        card = ('<div class="card"><h3>Issue card (layout only)</h3>' + facts([
+            ("Issue", "Short name and permanent ID (area codes are decided at G4)"), ("EU requirement", "The EU findings and recommendations behind it, by year"),
+            ("Chapter or theme", "Chapter 2 or a technology and AI area"), ("Problem mechanisms", "Why progress stalls, from the mechanism list"),
+            ("Evidence", "Items from every source family, with source quality, confidence and relevance side by side")]) + "</div>")
+        return "Reform issues " + label("Not started"), placeholder(
+            "Reform issues are drafted from the EU requirement items and approved by the analyst at gate G4. This section will then list each issue with its evidence.") + card
+
+    def s_assessment(self):
+        _, js = read_csv(self.root / "judgements" / "judgements.csv")
+        if any(j["object_type"] == "issue_country" for j in js):
+            title, body = self.assessment()
+            return title, body
+        card = ('<div class="card"><h3>Assessment card (layout only)</h3>' + facts([
+            ("Direction of travel", "new, worsening, persistent, improving or largely resolved"), ("Unresolved gap", "open, partly addressed or largely closed, with what remains"),
+            ("Priority and tractability", "High, Medium or Low each"), ("Implementation status", "for each intervention, at the freeze date"),
+            ("Reasons and evidence", "one to three sentences, with the item IDs relied on"), ("Review", "proposed, validated or overridden by the reviewers")]) + "</div>")
+        return "Assessment " + label("Not started"), placeholder(
+            "First-cut judgements are proposed at stage 10 and validated or overridden by both reviewers at gate G6. None exists yet.") + card
+
+    def s_comparators(self):
+        title, body = self.comparators()
+        return title, body
+
+    def s_options(self):
+        title, body = self.outputs()
+        return "Draft policy options and outputs " + title.split("Outputs ", 1)[-1], body + placeholder(
+            "Draft policy options are written only for the two or three issues chosen for the comparator pilot, after G6b, and stay internal drafts after sign-off at G7.")
+
+    def s_limits(self):
+        _, limits = read_csv(self.root / "registers" / "limits_log.csv")
+        act = [r for r in limits if r["run_id"] == self.run and r["status"] == "active"]
+        body = "<h3>Active limits</h3>" + table(["ID", "Type", "Limit"], [[escape(r["limit_id"]), escape(r["limit_type"]), escape(r["description"])] for r in act])
+        _, lessons = read_csv(self.root / "runs" / self.run / "alpha_learning_log.csv")
+        body += "<h3>Alpha lessons</h3>" + table(["ID", "Lesson", "Status"], [[escape(r["lesson_id"]), escape(r["description"]), escape(r["status"])] for r in lessons])
+        return "Limits and alpha lessons", body
+
+    def render(self):
+        sections = [("read", self.s_read()), ("base", self.s_base()), ("ch2", self.s_ch2_eu()), ("tech", self.s_tech_eu()),
+                    ("response", self.s_response()), ("implementation", self.s_implementation()), ("issues", self.s_issues()),
+                    ("assessment", self.s_assessment()), ("comparators", self.s_comparators()), ("options", self.s_options()),
+                    ("limits", self.s_limits())]
+        nav = "".join(f'<a href="#{sid}">{escape(re.sub(r"<span.*?</span>|<[^>]+>", "", t).strip())}</a>' for sid, (t, _) in sections)
+        body = "".join(f'<section id="{sid}"><h2>{t}</h2>{c}</section>' for sid, (t, c) in sections)
+        return f"""<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accession Alpha Analysis</title>
+<!-- Generated by tools/build_review_page.py {__version__} on {self.today}. Do not edit by hand: rebuild instead. Draft review aid, not a product. -->
+<style>{CSS}</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Analysis mock-up: {escape(self.rec.get("Target country", ""))}</h1>
+<p class="sub">{escape(self.run)} · Draft review aid · Page updated {escape(self.today)} · <a href="index.html">Back to the review page</a></p>
+</header>
+<nav class="sticky" aria-label="Sections">{nav}</nav>
+{body}
+<footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Quotes are shown word for word with their item IDs; translations from Macedonian are machine translations. <a href="index.html">Back to the review page</a>.</p></footer>
 </div>
 </body>
 </html>
@@ -434,12 +666,13 @@ class Page:
 
 def main(argv=None):
     p = argparse.ArgumentParser(
-        description="Regenerate index.html from the run record, gate log, limits log, registers, taxonomy, evidence, judgements, outputs "
-                    "and alpha learning log. Writes one self-contained file (inline styles, no external scripts or fonts). Status labels "
+        description="Regenerate index.html, and the analysis mock-up analysis.html linked from it, from the run record, gate log, limits log, registers, taxonomy, evidence, judgements, outputs "
+                    "and alpha learning log. Each page is one self-contained file (inline styles, no external scripts or fonts). Status labels "
                     "come from the gate log, review packages and review statuses, never from the tool's own judgement.")
     p.add_argument("--run", default="RUN-2026-01", help="run ID (default RUN-2026-01)")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--output", help="file to write (default index.html in the project root)")
+    p.add_argument("--analysis-output", help="analysis page to write (default analysis.html next to the review page)")
     p.add_argument("--date", help="date shown on the page (default today, YYYY-MM-DD)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
@@ -448,6 +681,9 @@ def main(argv=None):
     out = Path(a.output) if a.output else root / "index.html"
     out.write_text(page.render(), encoding="utf-8")
     print(f"wrote {out}")
+    analysis = Path(a.analysis_output) if a.analysis_output else out.parent / "analysis.html"
+    analysis.write_text(AnalysisPage(root, a.run, page.today).render(), encoding="utf-8")
+    print(f"wrote {analysis}")
     return 0
 
 

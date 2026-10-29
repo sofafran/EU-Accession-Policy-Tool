@@ -8,7 +8,7 @@ Read this file before starting any of stages 0 to 4. Gates G0, G1 and G2 sit in 
 
 1. Run `tools/validate_data.py`.
 2. Review `runs/<run_id>/run_notes.md` since the last gate and propose rows for `runs/<run_id>/alpha_learning_log.csv` for any material lesson, with status `open`. Add the proposed rows to the gate package.
-3. Rebuild the review page with `tools/build_review_page.py`. The material in the package appears on the page as `Pending review`; agent proposals as `Proposed`; unfinished work as `Draft`.
+3. Rebuild the review page and the analysis page with `tools/build_review_page.py`. The material in the package appears on the page as `Pending review`; agent proposals as `Proposed`; unfinished work as `Draft`.
 
 **After the gate decision is recorded in the gate log:**
 
