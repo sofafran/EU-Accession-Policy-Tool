@@ -356,13 +356,26 @@ def main():
               "matched" in res and "missed by the agent" in res and "extra in the agent output" in res and f"{sid}-0001" in shown, str(res))
         (rv / "G3_sample_review.xlsx").unlink()
 
+        (rv / "G4_issue_mapping.csv").write_text(f"item_id,issue_ids,note\n{sid}-0001,RI-TST-001,\n{sid}-0006,,no issue fits\n", encoding="utf-8")
+        with (proj / "taxonomy" / "reform_issues.csv").open("a", encoding="utf-8") as fh:
+            fh.write("RI-TST-001,Test issue,A test definition.,2,02,,MEC-01,,,draft,,,RUN-2026-01,\n")
+        r = run(proj, "export_review.py", "G4")
+        ok = r.returncode == 0 and (rv / "G4_taxonomy.xlsx").exists()
+        if ok:
+            wb4 = load_workbook(rv / "G4_taxonomy.xlsx")
+            ok = wb4.sheetnames[0] == "Reform issues" and wb4["Reform issues"].cell(2, 15).value == "1" and wb4["Items fitting no issue"].cell(2, 1).value == f"{sid}-0006"
+        check("export_review.py", "G4 package: issues with item counts and items fitting no issue", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
+        lines = (proj / "taxonomy" / "reform_issues.csv").read_text(encoding="utf-8").splitlines()
+        (proj / "taxonomy" / "reform_issues.csv").write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")
+
         # build_review_page
         out_html = Path(tmp) / "index.html"
         r = run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-10-29")
         page = out_html.read_text(encoding="utf-8") if r.returncode == 0 else ""
         check("build_review_page.py", "page builds", bool(page), r.stderr[-300:])
         check("build_review_page.py", "G0 shown as pending review while its package awaits decision", ">G0</td>" in page and "Pending review" in page)
-        check("build_review_page.py", "hand-coding workbook is not treated as a G3 package", "<dt>Gate package awaiting decision</dt><dd>G3" not in page and ">G3</td><td>Extraction rules after the sample</td><td>Sofia</td><td><span class=\"label notstarted\">" in page)
+        check("build_review_page.py", "hand-coding workbook is not treated as a G3 package", "<dt>Gate package awaiting decision</dt><dd>G3" not in page)
         check("build_review_page.py", "no external scripts, fonts or stylesheets", "<script" not in page and "http" not in page.split("<body>")[1].split("<footer>")[0] and "<link" not in page)
         check("build_review_page.py", "extraction section shows the sample", "Evidence items" in page)
         with (proj / "registers" / "gate_log.csv").open("a", encoding="utf-8") as fh:

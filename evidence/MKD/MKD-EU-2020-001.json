@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2020-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
+    "rules_version": "0.4",
     "extracted_at": "2026-10-29",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "2-103",
     "codebook_version": "1.2",
-    "themes_version": "1.2",
-    "notes": "Pass 1 sample extraction. Read the table of contents (pages 2-3), the report summary (pages 5-8), the Chapter 2 section (page 62) and every other section for passages materially concerning the technology and AI theme, using the table of contents and keyword searches with surrounding context (democracy, public administration reform, Chapters 23 and 24, economic criteria, Chapters 1 to 33). The 2020 report has no cluster structure; cluster '2' is set only for Chapter 2 items as instructed, and left empty elsewhere. The statistical annex (pages 104-109) was not extracted: its broadband and internet figures are a table covering 2007 to 2018, before the run window. period_covered is empty in the source register and the report does not state its reporting period, so it is left null. Several items record 2019 events reported in this in-window source; they carry the out_of_window flag for the analyst to decide, as no logged exception covers them. Page numbers are the text file's PAGE markers, which run one higher than the printed page numbers. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: sector IT tools, online publishing, sector statistics data, digital skills and pre-window claims not needed were removed, eu_scale.applies_to was set, in_progress statuses and retyping applied, and the page number was removed from the one cross-page quote; kept items keep their 0.1b IDs. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: 112 emergency number items removed (R20), tax e-services and e-procurement items confirmed as digital government without doubt flags (R12), and two quotes cut to the claim (R18); no removed item met the restore criteria. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
+    "themes_version": "1.3",
+    "notes": "Pass 1 sample extraction. Read the table of contents (pages 2-3), the report summary (pages 5-8), the Chapter 2 section (page 62) and every other section for passages materially concerning the technology and AI theme, using the table of contents and keyword searches with surrounding context (democracy, public administration reform, Chapters 23 and 24, economic criteria, Chapters 1 to 33). The 2020 report has no cluster structure; cluster '2' is set only for Chapter 2 items as instructed, and left empty elsewhere. The statistical annex (pages 104-109) was not extracted: its broadband and internet figures are a table covering 2007 to 2018, before the run window. period_covered is empty in the source register and the report does not state its reporting period, so it is left null. Several items record 2019 events reported in this in-window source; they carry the out_of_window flag for the analyst to decide, as no logged exception covers them. Page numbers are the text file's PAGE markers, which run one higher than the printed page numbers. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: sector IT tools, online publishing, sector statistics data, digital skills and pre-window claims not needed were removed, eu_scale.applies_to was set, in_progress statuses and retyping applied, and the page number was removed from the one cross-page quote; kept items keep their 0.1b IDs. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: 112 emergency number items removed (R20), tax e-services and e-procurement items confirmed as digital government without doubt flags (R12), and two quotes cut to the claim (R18); no removed item met the restore criteria. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Finalised on 29 October 2026 under extraction rules 0.4 and themes 1.3: the two cybercrime law enforcement items (-0058, -0059) were removed under R21, the shared-sentence quotes flagged at G3 were kept as R23 allows, and no items were added. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
     "status": "not_started"
@@ -449,7 +449,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "The claim is about the current improvement in access to public information; the November 2019 adoption of the strategy is only referred back to, so not flagged out_of_window.",
+      "extraction_note": "The claim is about the current improvement in access to public information; the November 2019 adoption of the strategy is only referred back to, so not flagged out_of_window. Second pass (R23): the same sentence also states an intervention (the strategy's open government data portal), recorded as 0172.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1992,7 +1992,7 @@
         "reference_period": "reporting period"
       },
       "flags": [],
-      "extraction_note": "The sentence also gives eight fines and the Commission's judgement that this remains low.",
+      "extraction_note": "The sentence also gives eight fines and the Commission's judgement that this remains low. Second pass (R23): the Commission's judgement that the fines remain low is recorded as finding 0173.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2322,137 +2322,6 @@
       },
       "flags": [],
       "extraction_note": "Quote cut to the claim under rules 0.3 (R18): it is the last part of a sentence that lists three other strategies which are not technology related, hence 'are all'. Status in_progress: implementation is described as ongoing.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2020-001-0058",
-      "information_type": "intervention",
-      "stated_text": "Steps were taken to support the implementation of the strategy on cyber crime, including monitoring the darkweb.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Steps were taken to support the cyber crime strategy, including monitoring the darkweb.",
-      "location": {
-        "page": 40,
-        "page_end": null,
-        "section": "2.2.2 Chapter 24: Justice, freedom and security / Fight against organised crime / Implementation and enforcement capacity",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": "24",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-CYBER"
-      ],
-      "dates": {
-        "publication_date": "2020-10-06",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [],
-      "intervention_as_stated": "strategy on cyber crime (support measures, including monitoring the darkweb)",
-      "stated_status": "implemented",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Doubtful: cyber crime law enforcement is adjacent to, but not the same as, the security of networks and information systems in the TECH-CYBER definition.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
-      "item_id": "MKD-EU-2020-001-0059",
-      "information_type": "recommendation",
-      "stated_text": "North Macedonia should continue to strengthen its law enforcement focusing on detection, traceability and the prosecution of cyber criminals.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "North Macedonia should strengthen law enforcement on detecting, tracing and prosecuting cyber criminals.",
-      "location": {
-        "page": 40,
-        "page_end": null,
-        "section": "2.2.2 Chapter 24: Justice, freedom and security / Fight against organised crime / Implementation and enforcement capacity",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": null,
-      "chapter": "24",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-CYBER"
-      ],
-      "dates": {
-        "publication_date": "2020-10-06",
-        "period_covered": null,
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "Doubtful: cyber crime law enforcement is adjacent to, but not the same as, the security of networks and information systems in the TECH-CYBER definition.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -6094,6 +5963,207 @@
       },
       "flags": [],
       "extraction_note": "Added in the G3 independent review. Material under themes.csv TECH-DATA ('setting up a register with reliable data'): the claim concerns the data quality of an electronic register. Chapter 3, not Chapter 2.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2020-001-0172",
+      "information_type": "intervention",
+      "stated_text": "Citizens’ right to access public information further improved thanks to the 2019 -2021 transparency strategy adopted in November 2019, which includes setting up an open government data portal and publishing data on government finances.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The 2019-2021 transparency strategy, adopted in November 2019, includes setting up an open government data portal and publishing government finance data.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform / Accountability of the administration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-10-06",
+        "period_covered": null,
+        "event_date": "2019-11",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "2019-2021 transparency strategy (open government data portal)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Second pass: split from MKD-EU-2020-001-0012 under rule 1 and R23 (same sentence, different type). Kept as a controlled exception: the adoption is dated November 2019, before the window; needed to explain the open data portal items (-0004, -0009). No logged exception; analyst to confirm.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2020-001-0173",
+      "information_type": "finding",
+      "stated_text": "Thirteen misdemeanour cases for breach of data protection laws were acted upon in the reporting period, eight of which dated from 2018, which resulted in eight misdemeanour fines, which remains low.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The number of misdemeanour fines for breaches of data protection laws remains low.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "2.2.1 Chapter 23: Judiciary and fundamental rights / Fundamental rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-10-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass: split from MKD-EU-2020-001-0047 under rule 1 and R23 (rules 0.4 allow both items to quote the whole sentence), which settles the G3 judgement call that there was no clean standalone quote.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2020-001-0174",
+      "information_type": "intervention",
+      "stated_text": "In terms of accountability, after a long delay, the heads of the Directorate for Personal Data Protection, the Agency for Free Access to Public Information and the State Audit Office were f inally appointed at the end of 2019 and in January 2020.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "After a long delay, the heads of the Directorate for Personal Data Protection and two other oversight bodies were appointed in late 2019 and January 2020.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-10-06",
+        "period_covered": null,
+        "event_date": "2020-01",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Directorate for Personal Data Protection",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Agency for Free Access to Public Information",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "State Audit Office",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "appointment of the heads of the Directorate for Personal Data Protection",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful",
+        "out_of_window"
+      ],
+      "extraction_note": "Second pass: added missed claim. Report-summary twin of -0040 (Chapter 23, page 28), which carries the same out_of_window exception for the end-2019 appointment. Doubtful: the sentence is about accountability bodies generally; only the data protection authority element concerns TECH-DATA. 'f inally' as in the text file.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

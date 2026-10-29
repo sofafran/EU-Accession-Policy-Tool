@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2023-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
+    "rules_version": "0.4",
     "extracted_at": "2026-10-29",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "2-128 (full report read via the table of contents and keyword search; Chapter 2 material on pages 77, 79-80; Chapter 10 on pages 90-92)",
     "codebook_version": "1.2",
-    "themes_version": "1.2",
-    "notes": "Whole report screened: Chapter 2 (cluster 2 summary page 77 and chapter section pages 79-80) extracted in full; every other section searched for passages that materially concern the technology theme, using the table of contents and keyword searches, with surrounding text read in context. Period covered taken from footnote 1 of the report (June 2022 to June 2023); the register leaves it blank. Claims repeated between the report summary and the chapter sections are extracted at each place (R10). Chapter 2 contains no technology element (no reference to EESSI or other electronic systems). Figures for online public services differ within the report (238 on page 81, 392 on page 91, 230 on page 122) and household internet access differs between page 66 (83.6%) and the annex (83.7). Revised on 2026-10-29 under extraction rules 0.2 (R1 to R11): items failing the narrower materiality test, digital skills items, a Chapter 2 item outside the run-record boundary and list lead-ins were removed, repeated claims were added at each place, page-break quotes were restored, and three 0.1b quotes that had started too early were corrected. Second revision on 2026-10-29 under extraction rules 0.3 (R12 to R20): e-procurement, tax e-services and the agricultural e-application were treated as digital government and restored, the Chapter 2 integrity recommendation and two lead-ins with their own claim were restored, and no other item needed change. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
+    "themes_version": "1.3",
+    "notes": "Whole report screened: Chapter 2 (cluster 2 summary page 77 and chapter section pages 79-80) extracted in full; every other section searched for passages that materially concern the technology theme, using the table of contents and keyword searches, with surrounding text read in context. Period covered taken from footnote 1 of the report (June 2022 to June 2023); the register leaves it blank. Claims repeated between the report summary and the chapter sections are extracted at each place (R10). Chapter 2 contains no technology element (no reference to EESSI or other electronic systems). Figures for online public services differ within the report (238 on page 81, 392 on page 91, 230 on page 122) and household internet access differs between page 66 (83.6%) and the annex (83.7). Revised on 2026-10-29 under extraction rules 0.2 (R1 to R11): items failing the narrower materiality test, digital skills items, a Chapter 2 item outside the run-record boundary and list lead-ins were removed, repeated claims were added at each place, page-break quotes were restored, and three 0.1b quotes that had started too early were corrected. Second revision on 2026-10-29 under extraction rules 0.3 (R12 to R20): e-procurement, tax e-services and the agricultural e-application were treated as digital government and restored, the Chapter 2 integrity recommendation and two lead-ins with their own claim were restored, and no other item needed change. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Finalised on 29 October 2026 under extraction rules 0.4 and themes 1.3: the customs IT systems progress finding (-0170) was removed under R22, the metric -0070 and the intervention -0093 were split under R23 into new findings -0210 and -0211, -0043 was flagged theme_doubtful under R21, and the cybercrime, customs, freight information and agricultural IT misses from the G3 review were not added (R21, R22). Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
     "status": "not_started"
@@ -1788,8 +1788,10 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [],
-      "extraction_note": "The claim reports a public perception; the Commission is the speaker and no other party is named.",
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The claim reports a public perception; the Commission is the speaker and no other party is named. Rules 0.4: theme_doubtful added because R21 puts cybercrime law enforcement (cybercrime statistics, prosecution) out of scope, while the claim sits in the personal data protection paragraph and concerns personal data violations; kept for the analyst to decide.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2585,7 +2587,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Rules 0.4 (R23): the closing clause on smaller companies is a separate finding sharing this sentence (item -0210).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3636,11 +3638,11 @@
     {
       "item_id": "MKD-EU-2023-001-0093",
       "information_type": "intervention",
-      "stated_text": "Foreign workers entering the country require a work permit. The Agency for Employment issues several types of work permits for foreign workers in line with the annual quotas set out in the Law on employment of foreigners.",
+      "stated_text": "The Agency for Employment issues several types of work permits for foreign workers in line with the annual quotas set out in the Law on employment of foreigners.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Foreign workers need a work permit; the Employment Agency issues several types in line with annual quotas under the Law on employment of foreigners.",
+      "summary": "The Employment Agency issues several types of work permits for foreign workers in line with annual quotas under the Law on employment of foreigners.",
       "location": {
         "page": 80,
         "page_end": null,
@@ -3687,7 +3689,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Retyped from finding to intervention under 0.2 (R11): names the Law on employment of foreigners.",
+      "extraction_note": "Retyped from finding to intervention under 0.2 (R11): names the Law on employment of foreigners. Rules 0.4 (R23): the preceding sentence on the work permit requirement is a separate finding and is now item -0211; this quote was cut to its own sentence.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7795,74 +7797,6 @@
       }
     },
     {
-      "item_id": "MKD-EU-2023-001-0170",
-      "information_type": "finding",
-      "stated_text": "Limited progress was made on consolidation, application and upgrade of IT systems",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "Limited progress was made on consolidating, applying and upgrading customs IT systems.",
-      "location": {
-        "page": 101,
-        "page_end": null,
-        "section": "Chapter 29: Customs union",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "3",
-      "chapter": "29",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-INTEROP"
-      ],
-      "dates": {
-        "publication_date": "2023-11-08",
-        "period_covered": "2022-06/2023-06",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "North Macedonia",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": null,
-      "stated_status": null,
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": "Limited progress",
-        "applies_to": "sub_area"
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [
-        "theme_doubtful"
-      ],
-      "extraction_note": "The standard progress wording here applies to customs IT systems specifically; the sentence continues on the AEO concept, which is not extracted. theme_doubtful: customs IT systems are a sector tool; kept because the chapter frames them as access to the EU's common computerised customs systems. eu_scale applies to the sub-area: customs IT systems (consolidation, application and upgrade).",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
       "item_id": "MKD-EU-2023-001-0171",
       "information_type": "finding",
       "stated_text": "The implementation of the New Computerised Transit System Phase (NCTS) Phase 5 is facing delays .",
@@ -8937,7 +8871,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "More efforts are needed in areas with limited progress, including digital transformation and media, customs union, and education and culture.",
+      "summary": "Limited progress was made in digital transformation and media, customs union, and education and culture.",
       "location": {
         "page": 8,
         "page_end": null,
@@ -8986,7 +8920,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Added under 0.2 (R10): the Chapter 10 section states limited progress (0115) and the Cluster 3 section repeats this sentence (0201). The sentence also covers customs union and education and culture.",
+      "extraction_note": "Added under 0.2 (R10): the Chapter 10 section states limited progress (0115) and the Cluster 3 section repeats this sentence (0201). The sentence also covers customs union and education and culture. Second pass (R23): the call for more efforts in the same sentence is recorded as recommendation 0212; summary reworded to the finding.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9003,7 +8937,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "More efforts are needed in areas with limited progress, including digital transformation and media, customs union, and education and culture.",
+      "summary": "Limited progress was made in digital transformation and media, customs union, and education and culture.",
       "location": {
         "page": 90,
         "page_end": null,
@@ -9052,7 +8986,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Added under 0.2 (R10): same claim as 0200 (report summary) and 0115 (Chapter 10). The sentence also covers customs union and education and culture.",
+      "extraction_note": "Added under 0.2 (R10): same claim as 0200 (report summary) and 0115 (Chapter 10). The sentence also covers customs union and education and culture. Second pass (R23): the call for more efforts in the same sentence is recorded as recommendation 0213; summary reworded to the finding.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9585,6 +9519,470 @@
       },
       "flags": [],
       "extraction_note": "Added at G3 independent review. Quote runs over the page break.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0210",
+      "information_type": "finding",
+      "stated_text": "A fixed broadband connection to the internet is used by 88% of household users, and by 92% of businesses with 10 or more employees, but smalle r companies still face obstacles.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Smaller companies still face obstacles regarding fixed broadband connections.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "Physical capital and quality of infrastructure",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added under rules 0.4 (R23) from the G3 judgement-call row on -0070: the clause 'but smaller companies still face obstacles' is a finding of a different type in the same sentence as metric -0070, so both items quote the whole sentence.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0211",
+      "information_type": "finding",
+      "stated_text": "Foreign workers entering the country require a work permit.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Foreign workers entering the country need a work permit.",
+      "location": {
+        "page": 80,
+        "page_end": null,
+        "section": "Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Foreign workers",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added under rules 0.4 (R23): split from -0093, as a description of the legal situation naming no measure (finding) in the sentence before the intervention.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0212",
+      "information_type": "recommendation",
+      "stated_text": "More efforts are needed, however, particularly in areas where limited progress was made, such as digital transformation and media, customs union, and education and culture.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "More efforts are needed, particularly in digital transformation and media, customs union, and education and culture.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "1.2. SUMMARY OF THE REPORT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass: split from MKD-EU-2023-001-0200 under rule 1 and R23 (same sentence holds a finding with the progress wording and a recommendation). The sentence also covers customs union and education and culture.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0213",
+      "information_type": "recommendation",
+      "stated_text": "More efforts are needed, however, particularly in areas where limited progress was made, such as digital transformation and media, customs union, and education and culture.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "More efforts are needed, particularly in digital transformation and media, customs union, and education and culture.",
+      "location": {
+        "page": 90,
+        "page_end": null,
+        "section": "CLUSTER 3: COMPETITIVENESS AND INCLUSIVE GROWTH",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass: split from MKD-EU-2023-001-0201 under rule 1 and R23 (same sentence holds a finding with the progress wording and a recommendation). The sentence also covers customs union and education and culture.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0214",
+      "information_type": "finding",
+      "stated_text": "The number of institutions using the human resources management information system has increased.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The number of institutions using the human resources management information system has increased.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Public service and human resources management",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Second pass: added missed claim for consistency with MKD-EU-2020-001-0010 (same system, kept there under rules 0.2 as a government-wide electronic administration system). Doubtful: it may be a back-office system inside public administration reform, which rules 0.4 put out.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0215",
+      "information_type": "intervention",
+      "stated_text": "The Council for Digitalisation in the Judiciary continued to implement the IT strategy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Council for Digitalisation in the Judiciary continued to implement the judiciary's IT strategy.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "Quality of justice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Council for Digitalisation in the Judiciary",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "IT strategy of the judiciary (Council for Digitalisation in the Judiciary)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Second pass: added missed claim. Doubtful: digital transformation of the judiciary as a whole rather than a named back-office system (case management systems are out under rules 0.4); consistent with the doubtful judicial digitalisation items in the Rule of Law chapters. Status in_progress: 'continued to implement'.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-001-0216",
+      "information_type": "metric",
+      "stated_text": "A total of 387 messages were exchanged with partner services from other countries, through SIENA, Europol’s counterterrorism platform.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A total of 387 messages were exchanged with partner services in other countries through SIENA, Europol's counterterrorism platform.",
+      "location": {
+        "page": 48,
+        "page_end": null,
+        "section": "Fight against terrorism",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "24",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-11-08",
+        "period_covered": "2022-06/2023-06",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Interior",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Messages exchanged through SIENA (Europol counterterrorism platform)",
+        "value": 387,
+        "unit": "messages",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "Second pass: added missed claim. Use of an EU (Europol) electronic exchange system, in scope as a connection to an EU electronic system (R22); consistent with MKD-EU-2020-001-0060 and -0170. Reference period taken from the preceding sentence ('In 2022'); the subject is the Ministry of Interior's counter-terrorism sector named there.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

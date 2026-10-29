@@ -26,7 +26,7 @@ Status: **in progress: stage 7 (G3 passed with conditions, GATE-0004)**
 | Mechanism list version | 0.1a draft (approved at G4) |
 | Data dictionary version | 1.2 (29 Oct 2026) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.4.1 (simplified hand-coding workbook, review sample, overwrite protection, independent QA sheets); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.1 (analysis mock-up page, decision E11); `validate_data.py` 1.1.0 (long-quote warning); 1.0.0 for `hash_file.py`, `next_id.py`; 55 of 55 tests passed on 29 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.5.0 (adds the G4 taxonomy package); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.1 (analysis mock-up page, decision E11); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`, `next_id.py`; 56 of 56 tests passed on 29 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | |
 

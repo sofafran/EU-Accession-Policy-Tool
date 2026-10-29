@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (ITEM_ID_RE, SOURCE_ID_RE, dictionary_tables, evidence_files,  # noqa: E402
                     project_root, read_csv, read_json, split_list)
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"
 
 ID_COLUMNS = {
     "registers/source_requirements.csv": "requirement_id",
@@ -239,6 +239,8 @@ def check_references(tables, ids, items, files, rep):
         for actor in [it.get("speaker") or {}] + list(it.get("subjects", [])):
             if actor.get("actor_id") and actor["actor_id"] not in actors:
                 rep.error(f"{iid}: unknown actor {actor['actor_id']}")
+        if "theme" in it.get("scope_basis", []) and not it.get("themes"):
+            rep.error(f"{iid}: scope_basis 'theme' needs at least one theme code")
         if "exception" in it.get("scope_basis", []) and not re.search(r"LIM-\d{4}", it.get("extraction_note") or ""):
             rep.error(f"{iid}: scope_basis 'exception' needs the limit ID in extraction_note")
         cited = set(re.findall(r"LIM-\d{4}", it.get("extraction_note") or ""))

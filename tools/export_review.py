@@ -9,9 +9,9 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import parse_markdown_table, project_root, read_csv, run_record  # noqa: E402
+from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.4.1"
+__version__ = "1.5.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -422,7 +422,56 @@ def g3(root, run):
     ]
 
 
-BUILDERS = {"G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
+def g4(root, run):
+    """G4 taxonomy package (P2, stage 7): draft issues with definitions and item counts, items that fit no issue,
+    the mechanism list, a sample of items under each issue, and items flagged theme_doubtful."""
+    from common import evidence_files, read_json
+    is_h, issues = read_csv(root / "taxonomy" / "reform_issues.csv")
+    me_h, mechs = read_csv(root / "taxonomy" / "mechanisms.csv")
+    _, mapping = read_csv(root / "review" / run / "G4_issue_mapping.csv")
+    reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
+    items = {}
+    for f in evidence_files(root):
+        d = read_json(f)
+        for it in d["items"]:
+            items[it["item_id"]] = {**it, "_source": d["source_id"]}
+    by_issue = {}
+    for m in mapping:
+        for iid in split_list(m.get("issue_ids")):
+            by_issue.setdefault(iid, []).append(m["item_id"])
+    issue_rows = []
+    for r in sorted(issues, key=lambda r: (r["status"] != "draft", r["issue_id"])):
+        ids = by_issue.get(r["issue_id"], [])
+        issue_rows.append([r[h] for h in is_h] + [str(len(ids)), "", ""])
+    sample_rows = []
+    for r in issues:
+        for iid in by_issue.get(r["issue_id"], [])[:5]:
+            it = items.get(iid)
+            if it:
+                sample_rows.append([r["issue_id"], r["label"], iid, it["information_type"], it["stated_text"], it.get("translation_en") or "",
+                                    f"{reg.get(it['_source'], {}).get('institution', '')}, {(it['dates'].get('publication_date') or '')[:4]}"])
+    unmatched = [[m["item_id"], items.get(m["item_id"], {}).get("information_type", ""), items.get(m["item_id"], {}).get("stated_text", ""), m.get("note", "")]
+                 for m in mapping if not split_list(m.get("issue_ids"))]
+    doubtful = [[i["item_id"], i["information_type"], i["stated_text"], "; ".join(i["themes"]), i.get("extraction_note") or ""]
+                for i in items.values() if "theme_doubtful" in i["flags"]]
+    sp = []
+    spdir = root / "review" / run / "second_pass"
+    for f in sorted(spdir.glob("*.csv")) if spdir.exists() else []:
+        c = Counter(r["action"] for r in read_csv(f)[1])
+        sp.append([f.stem, c.get("added_missed", 0), c.get("split", 0)])
+    return "G4_taxonomy.xlsx", [
+        ("Reform issues", is_h + ["EU requirement items", "reviewer_decision", "reviewer_comment"], issue_rows),
+        ("Items under each issue", ["issue_id", "label", "item_id", "type", "quote", "English (machine translation)", "source"], sample_rows),
+        ("Items fitting no issue", ["item_id", "type", "quote", "note"], unmatched),
+        ("Mechanisms", me_h + ["reviewer_decision", "reviewer_comment"], [[m[h] for h in me_h] + ["", ""] for m in mechs]),
+        ("Theme doubtful items", ["item_id", "type", "quote", "themes", "note"], doubtful),
+        ("Second-pass check", ["source_id", "items added", "items split"], sp),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS = {"G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
 
 
 def main(argv=None):

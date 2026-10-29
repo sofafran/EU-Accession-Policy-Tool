@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2025-003",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
+    "rules_version": "0.4",
     "extracted_at": "2026-10-29",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "1-108 (pages 25-30, Chapter 2, read in full and extracted in full; all other pages read for theme material)",
     "codebook_version": "1.2",
-    "themes_version": "1.2",
-    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184. Second revision on 29 October 2026 under extraction rules 0.3: items -0120, -0121, -0135, -0151, -0171 and -0173 restored as online services used directly by citizens or businesses (R12); no other change was needed. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/): -0053 theme restored (R12), -0146 recut with -0185 split off, -0150 and -0151 retyped, missed items -0186 to -0194 added."
+    "themes_version": "1.3",
+    "notes": "Whole document read (108 pages). Chapter 2 (pages 25-30) extracted in full: country presentation parts as North Macedonia's reported view, Commission assessment and summary-of-findings parts as the Commission. Other chapters (1, 3, 4, 6, 7, 8, 9, 28) were screened for technology material; only material passages were extracted, doubtful ones flagged theme_doubtful. Not extracted as incidental or not material: radio equipment and electromagnetic compatibility product rules, the electronic communications agency's radiation measurements, payment services and SEPA, national medicine registers published on a website, the SEI-NET website link for management reports, shareholder rights 'technical adaptations', semiconductor topographies, the Central Registry electronic archive date, the rare diseases register plan, the registry of direct investments. Standard Commission wording ('good level of preparation', 'early stage') appears only for Chapter 2 sub-areas and is recorded in eu_scale with applies_to sub_area; no standard progress wording is used. period_covered is empty in the source register and the report does not state one. Quotes crossing a page break set page_end and leave out the printed page number. Revised on 29 October 2026 under extraction rules 0.2: sector IT tools, copyright, consumer and anti-corruption software items removed under the narrower materiality test, general labour-market and general anti-corruption material removed under the Chapter 2 boundary, the cluster-wide introduction items removed, items retyped under R11, eu_scale applies_to set, page-break quotes rebuilt, and repeated claims added as items -0181 to -0184. Second revision on 29 October 2026 under extraction rules 0.3: items -0120, -0121, -0135, -0151, -0171 and -0173 restored as online services used directly by citizens or businesses (R12); no other change was needed. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/): -0053 theme restored (R12), -0146 recut with -0185 split off, -0150 and -0151 retyped, missed items -0186 to -0194 added. Finalised on 29 October 2026 under extraction rules 0.4 and themes 1.3: no item met the R21 or R22 exclusions or needed an R23 split, so the items are unchanged; the G3 judgement-call rows (Chapter 2 boundary, unnamed online services, Safety Gate and others) are not settled by R21 to R23 and remain for the analyst. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
     "status": "not_started"
@@ -6244,7 +6244,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The Employment Agency has not signed the Integrity Policy and has not nominated a person to implement it.",
+      "summary": "The Employment Agency has not signed the Integrity Policy, although it planned to do so.",
       "location": {
         "page": 30,
         "page_end": null,
@@ -6293,7 +6293,7 @@
       "flags": [
         "reported_view"
       ],
-      "extraction_note": null,
+      "extraction_note": "Second pass (G3 condition 2): the same sentence also gives -0195 (recommendation).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8595,7 +8595,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "North Macedonia has not aligned with the alternative and online dispute resolution acts; full alignment is foreseen by end 2025.",
+      "summary": "North Macedonia has not yet aligned with the EU acts on alternative and online dispute resolution for consumer disputes.",
       "location": {
         "page": 97,
         "page_end": null,
@@ -8647,7 +8647,7 @@
         "reported_view",
         "theme_doubtful"
       ],
-      "extraction_note": "Restored under rules 0.3 (R12). theme_doubtful: online dispute resolution is an online service used directly by consumers, but the claim concerns legal alignment with the regulation rather than the service itself. The planned alignment date in the same sentence is not split into a separate item.",
+      "extraction_note": "Restored under rules 0.3 (R12). theme_doubtful: online dispute resolution is an online service used directly by consumers, but the claim concerns legal alignment with the regulation rather than the service itself. Second pass (G3 condition 2): the planned alignment in the same sentence is now -0196 (intervention).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8870,7 +8870,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Legislation is not aligned with the eHealth acquis, but North Macedonia has a centralised eHealth tool storing real-time health data.",
+      "summary": "National legislation is not aligned with the EU acquis on eHealth.",
       "location": {
         "page": 99,
         "page_end": null,
@@ -8919,10 +8919,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "ambiguous_type"
-      ],
-      "extraction_note": "One sentence with a finding of non-alignment and a statement that a system is in place; recorded once as a finding because the system statement qualifies the finding. Repeated in the summary of findings on page 106 (item -0183).",
+      "flags": [],
+      "extraction_note": "One sentence with a finding of non-alignment and a statement that a system is in place; recorded once as a finding because the system statement qualifies the finding. Repeated in the summary of findings on page 106 (item -0183). Second pass (G3 condition 2): ambiguous_type removed: the system statement in the same sentence is now -0197 (intervention).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -9806,6 +9804,274 @@
         "reported_view"
       ],
       "extraction_note": "G3 independent review: added as a missed in-scope claim (review/RUN-2026-01/g3_qa/MKD-EU-2025-003_missed.csv). 'This area' is eHealth (heading II.B).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0195",
+      "information_type": "recommendation",
+      "stated_text": "The Employment Agency has not signed the Integrity Policy, though it planned to do so, and it still needs to nominate a person to implement the Integrity Policy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Employment Agency still needs to nominate a person to implement the Integrity Policy.",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "C) CHAPTER 2 - FREE MOVEMENT OF WORKERS > VI. ANTI-CORRUPTION MEASURES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Employment Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Second pass (G3 condition 2): split from -0113, which quotes the same sentence; this item records what still needs to be done.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0196",
+      "information_type": "intervention",
+      "stated_text": "North Macedonia has not yet aligned its legislation to Directive 2013/11/ EU on alternative dispute resolution for consumer disputes, or to Regulation 524/2013(EU) on online dispute resolution for consumer disputes, full alignment to both is foreseen by the end of 2025.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia foresees full alignment with the alternative and online dispute resolution acts by the end of 2025.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > I. CONSUMER PROTECTION > I.C. NON-SAFETY RELATED ISSUES > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": "2025",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Alignment with Directive 2013/11/EU and Regulation 524/2013 (EU)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Second pass (G3 condition 2): split from -0171 under rules 0.4 (R23, two claims of different types in one sentence); this item records the planned alignment. Same theme doubt as -0171.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0197",
+      "information_type": "intervention",
+      "stated_text": "Although national legislation is not aligned with the EU acquis on eHealth, North Macedonia has a centralised eHealth tool that creates and stores health data and health information, including real-time data on patients, doctors, health services, health records, referrals, prescriptions, screening results, risk factor s, allergies and intolerances, adverse effects, telemedicine, dental records, and certificates.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia has a centralised eHealth tool that creates and stores health data, including real-time patient, prescription and health record data.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.B. EHEALTH > b. Commission assessment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Centralised eHealth tool",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0176 under rules 0.4 (R23); this item records the named system (centralised eHealth tool), twin of -0175.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-003-0198",
+      "information_type": "intervention",
+      "stated_text": "North Macedonia has social security agreements in place that include the use of the European Health Insurance card (EHIC) with Slovenia, Czechia, Germany, Bulgaria, Luxembourg the Netherlands, Belgium, Austria, and Slovakia. It has social care agreements that do not include EHIC use with France, Hungary, Italy, Croatia, Romania, and Poland, similar agreements with Sweden and Denmark do not cover health care.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Social security agreements with nine Member States include EHIC use; agreements with six others, and with Sweden and Denmark, do not cover it.",
+      "location": {
+        "page": 103,
+        "page_end": null,
+        "section": "J) CHAPTER 28 - CONSUMER AND HEALTH PROTECTION > II. PUBLIC HEALTH > II.I. PATIENTS’ RIGHTS IN CROSS-BORDER HEALTHCARE > a. Country presentation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-02-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "North Macedonia",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Social security agreements including use of the European Health Insurance Card (EHIC)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Second pass (G3 condition 2): missed Chapter 2 claim (EHIC is inside the run record boundary) in the Chapter 28 cross-border healthcare section; scope_basis chapter by subject, chapter tag 28 from the heading. Repeats the Chapter 2 claim -0100 (page 29) in running text, so extracted at this place; pass 2 links them.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

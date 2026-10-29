@@ -2,13 +2,13 @@
   "source_id": "MKD-EU-2025-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
+    "rules_version": "0.4",
     "extracted_at": "2026-10-29",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "2-105",
     "codebook_version": "1.2",
-    "themes_version": "1.2",
-    "notes": "Pass 1 sample extraction from the converted text file. Read the table of contents (pages 2-3), the whole of section 1.2 Main findings (pages 4-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading pages fully where the table of contents or a keyword search showed technology content (public administration reform pp. 24-27, Chapter 23 pp. 29-41, Chapter 24 pp. 45-54, economic criteria pp. 55-61, Chapters 5 and 18 pp. 62-64, Cluster 2 pp. 67-73, Chapter 10 pp. 73-75, Clusters 3 to 6 pp. 75-97, Annexes I and II pp. 97-105). Chapter 2 appears twice: a summary under 1.2 (page 11) and the full section (page 68); both are extracted as separate items. All Chapter 2 claims extracted; elsewhere only passages meeting the materiality test, with doubtful cases flagged theme_doubtful. Period covered taken from footnote 1 of the report (1 September 2024 to 1 September 2025) because the register field is empty. Text-file page numbers are printed page numbers plus one. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, online media register) was treated as outside the technology theme, except net neutrality. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: the narrower materiality test removed sector IT tools and digital skills items, eu_scale.applies_to was added, statuses and types were corrected, and two claims crossing page breaks were restored as new items -0203 and -0204; item IDs of kept items are unchanged. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: online services used by citizens or businesses (e-procurement, eHealth, industrial property and customs e-services) were restored with their 0.1b IDs, the Chapter 2 Employment Agency anti-corruption item was restored, and the seasonal-worker agreements item was removed as concerning nationals' access to EU labour markets. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
+    "themes_version": "1.3",
+    "notes": "Pass 1 sample extraction from the converted text file. Read the table of contents (pages 2-3), the whole of section 1.2 Main findings (pages 4-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading pages fully where the table of contents or a keyword search showed technology content (public administration reform pp. 24-27, Chapter 23 pp. 29-41, Chapter 24 pp. 45-54, economic criteria pp. 55-61, Chapters 5 and 18 pp. 62-64, Cluster 2 pp. 67-73, Chapter 10 pp. 73-75, Clusters 3 to 6 pp. 75-97, Annexes I and II pp. 97-105). Chapter 2 appears twice: a summary under 1.2 (page 11) and the full section (page 68); both are extracted as separate items. All Chapter 2 claims extracted; elsewhere only passages meeting the materiality test, with doubtful cases flagged theme_doubtful. Period covered taken from footnote 1 of the report (1 September 2024 to 1 September 2025) because the register field is empty. Text-file page numbers are printed page numbers plus one. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, online media register) was treated as outside the technology theme, except net neutrality. Revised on 29 October 2026 under extraction rules 0.2 and themes 1.1: the narrower materiality test removed sector IT tools and digital skills items, eu_scale.applies_to was added, statuses and types were corrected, and two claims crossing page breaks were restored as new items -0203 and -0204; item IDs of kept items are unchanged. Second revision on 29 October 2026 under extraction rules 0.3 and themes 1.2: online services used by citizens or businesses (e-procurement, eHealth, industrial property and customs e-services) were restored with their 0.1b IDs, the Chapter 2 Employment Agency anti-corruption item was restored, and the seasonal-worker agreements item was removed as concerning nationals' access to EU labour markets. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Finalised on 29 October 2026 under extraction rules 0.4 and themes 1.3: the Public Revenue Office digital transition programme item (-0152) was removed under R22 as a tax IT upgrade, -0097 and -0130 were set to 'adopted' under R23, and the cybercrime, intelligent transport, digital finance, customs IT and tax IT misses from the G3 review were not added (R21, R22). Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
     "status": "not_started"
@@ -422,7 +422,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Projects to digitalise public services, and road and rail projects, progressed somewhat but need strengthening to help domestic companies compete.",
+      "summary": "Projects to improve road and rail infrastructure and to digitalise public services have progressed somewhat.",
       "location": {
         "page": 9,
         "page_end": null,
@@ -471,7 +471,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Second pass (G3 condition 2): the same sentence also gives -0208 (recommendation).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -538,7 +538,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Restored under rule 0.3 R12: the electronic public procurement system is an online service used by bidders. eu_scale applies to the whole of Chapter 5.",
+      "extraction_note": "Restored under rule 0.3 R12: the electronic public procurement system is an online service used by bidders. eu_scale applies to the whole of Chapter 5. Second pass (G3 condition 2): the same sentence also gives -0209 (intervention).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -1140,7 +1140,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Second pass (G3 condition 2): the same sentence also gives -0210 (intervention).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -2352,7 +2352,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The personal data protection legal framework is insufficient and the data protection agency's capacities need improving.",
+      "summary": "The legal framework for the protection of personal data is insufficient.",
       "location": {
         "page": 37,
         "page_end": null,
@@ -2405,7 +2405,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Second pass (G3 condition 2): the same sentence also gives -0211 (recommendation).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -4267,7 +4267,7 @@
         }
       ],
       "intervention_as_stated": "Law on employment of foreigners",
-      "stated_status": "in_practice",
+      "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
         "progress_level": null,
@@ -4280,7 +4280,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Retyped from finding to intervention under rule 0.2 R11: the claim describes a named law in force.",
+      "extraction_note": "Retyped from finding to intervention under rule 0.2 R11: the claim describes a named law in force. Rules 0.4 (R23): a law described only as in force is 'adopted'; status changed from in_practice.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5201,7 +5201,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The point of single contact portal accepts electronic applications but should offer more e-services and information, especially on licences and business procedures.",
+      "summary": "The point of single contact portal should offer more e-services and information, especially on licences and procedures for businesses.",
       "location": {
         "page": 68,
         "page_end": null,
@@ -5250,7 +5250,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Second pass (G3 condition 2): the same sentence also gives -0212 (finding).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5534,7 +5534,7 @@
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "The eHealth appointment system needs improvement and the system is not yet interoperable with Health Insurance Fund data.",
+      "summary": "The eHealth appointment system is not yet interoperable with Health Insurance Fund data.",
       "location": {
         "page": 73,
         "page_end": null,
@@ -5588,7 +5588,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Restored under rule 0.3 R12: the eHealth appointment system is used by citizens.",
+      "extraction_note": "Restored under rule 0.3 R12: the eHealth appointment system is used by citizens. Second pass (G3 condition 2): the same sentence also gives -0213 (recommendation).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -5908,7 +5908,7 @@
         }
       ],
       "intervention_as_stated": "National broadband operational plan 2019-2029",
-      "stated_status": "in_practice",
+      "stated_status": "adopted",
       "eu_scale": {
         "preparation_level": null,
         "progress_level": null,
@@ -5921,7 +5921,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": null,
+      "extraction_note": "Rules 0.4 (R23): status changed from in_practice to adopted, as the plan is described only as remaining valid (in force).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -7190,72 +7190,6 @@
       }
     },
     {
-      "item_id": "MKD-EU-2025-001-0152",
-      "information_type": "intervention",
-      "stated_text": "A new strategic plan 2025-2027 was adopted, as well as a new reform programme for digital transition, as a roadmap for modernising the PRO.",
-      "quote_language": "en",
-      "translation_en": null,
-      "machine_translated": false,
-      "summary": "A 2025-2027 strategic plan and a digital transition reform programme were adopted to modernise the Public Revenue Office.",
-      "location": {
-        "page": 75,
-        "page_end": null,
-        "section": "Cluster 3: Competitiveness and inclusive growth > Chapter 16: Taxation",
-        "paragraph": null,
-        "snapshot_file": null
-      },
-      "quote_verified": true,
-      "country": "MKD",
-      "role": "target",
-      "cluster": "3",
-      "chapter": "16",
-      "scope_basis": [
-        "theme"
-      ],
-      "themes": [
-        "TECH-DIGI"
-      ],
-      "dates": {
-        "publication_date": "2025-11-04",
-        "period_covered": "2024-09-01/2025-09-01",
-        "event_date": null,
-        "event_date_precision": null
-      },
-      "speaker": {
-        "name_as_stated": "European Commission",
-        "actor_id": null
-      },
-      "subjects": [
-        {
-          "name_as_stated": "PRO",
-          "actor_id": null
-        }
-      ],
-      "intervention_as_stated": "PRO strategic plan 2025-2027 and reform programme for digital transition",
-      "stated_status": "adopted",
-      "eu_scale": {
-        "preparation_level": null,
-        "progress_level": null,
-        "applies_to": null
-      },
-      "metric": {
-        "indicator": null,
-        "value": null,
-        "unit": null,
-        "reference_period": null
-      },
-      "flags": [],
-      "extraction_note": "Kept under rules 0.2 R1: framed as a reform programme for digital transition of a government body.",
-      "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
-      }
-    },
-    {
       "item_id": "MKD-EU-2025-001-0156",
       "information_type": "finding",
       "stated_text": "The potential of simplification and digitalisation of public procedures is underexploited as a way to reduce the administrative burden of companies and informality, notably for business registration and work permits.",
@@ -7985,7 +7919,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Sub-area: consolidation and upgrading of IT systems (G3 review: standard progress wording recorded under R3). Kept under rules 0.2 R1: names NCTS, an EU electronic system.",
+      "extraction_note": "Sub-area: consolidation and upgrading of IT systems (G3 review: standard progress wording recorded under R3). Kept under rules 0.2 R1: names NCTS, an EU electronic system. Second pass (G3 condition 2): the same sentence also gives -0214 (intervention).",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -8656,6 +8590,477 @@
         "table"
       ],
       "extraction_note": "Added at G3 review. Columns are 2012, 2020, 2021, 2022, 2023, 2024. The 2024 value restates -0083 (page 60); kept because the row adds earlier years.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0208",
+      "information_type": "recommendation",
+      "stated_text": "Projects to improve road and rail infrastructure and to digitalise public services have progressed somewhat but need to be strengthened to have a positive impact on the competitiveness of domestic companies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Road, rail and public-service digitalisation projects need to be strengthened to improve domestic companies' competitiveness.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "1.2. MAIN FINDINGS OF THE REPORT > Economic criteria > The capacity to cope with competitive pressure and market forces within the Union",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0008, which quotes the same sentence; this item records the recommendation that the projects need to be strengthened.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0209",
+      "information_type": "intervention",
+      "stated_text": "Limited progress was made since the last reporting period with the updated version of the electronic public procurement system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "An updated version of the electronic public procurement system was introduced.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "1.2. MAIN FINDINGS OF THE REPORT > Chapter 5: Public procurement",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Updated version of the electronic public procurement system",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0009, which quotes the same sentence; this item records the named measure (updated electronic public procurement system); its launch on 1 April 2025 is -0093.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0210",
+      "information_type": "intervention",
+      "stated_text": "Some  progress was made  to harmonise  the legal framework with the EU acquis  as part of the Reform Agenda commitments , by adopting a cybersecurity strategy and with a slight increase in electronic services available to citizens and businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A cybersecurity strategy was adopted as part of the Reform Agenda commitments.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. MAIN FINDINGS OF THE REPORT > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cybersecurity strategy",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0020, which quotes the same sentence; this item records the adoption of the cybersecurity strategy (also -0140).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0211",
+      "information_type": "recommendation",
+      "stated_text": "The legal framework for the protection of personal data is insufficient and the capacities of the data protection agency need to be improved.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The capacities of the personal data protection agency need to be improved.",
+      "location": {
+        "page": 37,
+        "page_end": null,
+        "section": "2.2.1 Chapter 23: Judiciary and fundamental rights > Fundamental rights > Protection of personal data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "data protection agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0062, which quotes the same sentence; this item records the recommendation on the data protection agency's capacities.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0212",
+      "information_type": "finding",
+      "stated_text": "While applications may be submitted electronically, the portal needs to be improved to increase the number of e -services and the information available, in particular in relation to licensees and procedures needed for businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Applications to the point of single contact portal may already be submitted electronically.",
+      "location": {
+        "page": 68,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 3: Right of establishment and freedom to provide services",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "03",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the portal",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0113, which quotes the same sentence; this item records the finding that applications may be submitted electronically.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0213",
+      "information_type": "recommendation",
+      "stated_text": "While the national eHealth system and its mobile application were upgraded with a number of new modules and functions, the appointment system needs to be improved,  and it is not yet interoperable with the Health Insurance Fund data",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The eHealth appointment system needs to be improved.",
+      "location": {
+        "page": 73,
+        "page_end": null,
+        "section": "4. Ability to assume the obligations of membership > Cluster 2: Internal market > Chapter 28: Consumer and health protection > Public health",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "national eHealth system",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Health Insurance Fund",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0124, which quotes the same sentence; this item records the recommendation that the appointment system needs to be improved (the upgrade is -0123).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-001-0214",
+      "information_type": "intervention",
+      "stated_text": "Good progress was noted in the consolidation and upgrading of IT systems, including the successful completion and launch of the New Computerised Transit System (NCTS) Phase 5 in January 2025.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The New Computerised Transit System Phase 5 was completed and launched in January 2025.",
+      "location": {
+        "page": 94,
+        "page_end": null,
+        "section": "Cluster 5: Resources, agriculture and cohesion > Chapter 33: Financial and budgetary provisions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "5",
+      "chapter": "33",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": "2025-01",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "New Computerised Transit System (NCTS) Phase 5",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (G3 condition 2): split from -0191, which quotes the same sentence; this item records the named measure (NCTS Phase 5, completed and launched); twin of -0031 and -0163.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
