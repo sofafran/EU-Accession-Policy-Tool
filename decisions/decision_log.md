@@ -92,3 +92,4 @@ Confirmed by Sofia after the pilot reconfiguration. These are to be included in 
 - 2026-10-29: E11 approved by Sofia: analysis mock-up page `analysis.html`, generated with the review page; E7 amended.
 - 2026-10-29: Sofia approved rule issues R12 to R20 as recommended, confirmed the seven pre-2020 controlled exceptions, and chose a lighter manual check for G3 (simplified hand-coding of the three passages; a 70-row review sample of 50 kept and 20 removed items, focused on missed and misclassified items). Extraction rules 0.3, theme list 1.2, LIM-0023 replaces LIM-0020.
 - 2026-10-29: E12 approved by Sofia: G3 extraction check by independent agents instead of analyst hand-coding and row review.
+- 2026-10-29: G3 passed with conditions (GATE-0004): extraction rules 0.4 (R21 cybercrime out, R22 sector systems confirmed, R23 clarifications), theme list 1.3, second-pass check by a different agent on every source in full extraction.
