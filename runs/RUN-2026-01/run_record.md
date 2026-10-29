@@ -26,7 +26,7 @@ Status: **in progress: stage 6, awaiting hand-coding and gate G3 (G2 passed, GAT
 | Mechanism list version | 0.1a draft (approved at G4) |
 | Data dictionary version | 1.1 (29 Oct 2026) |
 | Evidence schema version | 1.1 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.2.1 (hand-coding workbook and G3 review, stage 5); `build_review_page.py` 1.0.1 (hand-coding workbook not treated as a gate package); 1.0.0 for `hash_file.py`, `next_id.py`, `verify_quotes.py`, `validate_data.py`; 47 of 47 tests passed on 29 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.2.1 (hand-coding workbook and G3 review, stage 5); `build_review_page.py` 1.0.1 (hand-coding workbook not treated as a gate package); 1.0.0 for `hash_file.py`, `next_id.py`, `verify_quotes.py`, `validate_data.py`; 45 of 45 tests passed on 29 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | |
 
