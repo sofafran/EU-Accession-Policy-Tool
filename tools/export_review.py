@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.7.0"
+__version__ = "1.8.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -549,7 +549,83 @@ def g5(root, run):
     ]
 
 
-BUILDERS = {"G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
+def g6(root, run):
+    """G6 package (P3, stage 11): decisions first, one dossier per reform issue with the chain, proposed judgements and conflicts,
+    all tier 3 judgements for the reviewers, tier 2 by exception, and the proposed issues for run 1b."""
+    import random
+    from common import evidence_files, read_json
+    rv = root / "review" / run
+    items = {}
+    for f in evidence_files(root):
+        d = read_json(f)
+        for it in d["items"]:
+            items[it["item_id"]] = {**it, "_source": d["source_id"]}
+
+    def text(i):
+        return i.get("translation_en") or i["stated_text"]
+    jh, js = read_csv(root / "judgements" / "judgements.csv")
+    links = read_csv(root / "links" / "links.csv")[1]
+    reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
+    conf = {j["object_id"]: j["value"] for j in js if j["judgement_type"] == "evidence_confidence"}
+    rel = {(j["object_id"], j["context_id"]): j["value"] for j in js if j["judgement_type"] == "relevance"}
+    dups = {l["from_id"] for l in links if l["link_type"] == "same_as_earlier" and reg.get(l["from_id"].rsplit("-", 1)[0], {}).get("version_of")}
+    issues = [r for r in read_csv(root / "taxonomy" / "reform_issues.csv")[1] if r["status"] == "approved"]
+    by = {}
+    for k, i in items.items():
+        if i["pass2"]["classification_status"] == "out_of_scope" or k in dups:
+            continue
+        for x in i["pass2"]["reform_issue_ids"]:
+            by.setdefault(x, []).append(k)
+    order = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
+    tier3 = ("direction_of_travel", "unresolved_gap", "priority", "tractability", "success", "attribution")
+    dec_h, decisions = read_csv(rv / "G6_decisions.csv") if (rv / "G6_decisions.csv").exists() else ([], [])
+    t3 = [[j["judgement_id"], j["judgement_type"], j["object_id"], j["value"], j["reason"], j["evidence_item_ids"], "", "", ""] for j in js if j["judgement_type"] in tier3]
+    t3.sort(key=lambda r: (r[1] != "priority", r[2]))
+    contested = {l[e] for l in links if l["link_type"] == "contradicts" and l["review_status"] == "validated" for e in ("from_id", "to_id")}
+    rest, ex = [], []
+    for j in js:
+        if j["judgement_type"] == "implementation_status":
+            ex.append(j)
+        elif j["judgement_type"] == "evidence_confidence":
+            i = items[j["object_id"]]
+            if j["value"] == "Low" or i.get("machine_translated") or j["object_id"] in contested:
+                ex.append(j)
+            else:
+                rest.append(j)
+    random.Random(20261030).shuffle(rest)
+    ex += rest[:round(len(rest) * 0.05)]
+    t2 = [[j["judgement_id"], j["judgement_type"], j["object_id"], j["context_id"], j["value"], j["reason"], j["evidence_item_ids"], "", ""] for j in ex]
+    index, dossiers = [], []
+    val = {(j["object_id"], j["judgement_type"]): j for j in js}
+    for r in issues:
+        x = r["issue_id"]
+        oid = x + "@MKD"
+        g = lambda t: val.get((oid, t), {}).get("value", "")
+        index.append([x, r["label"], g("priority"), g("direction_of_travel"), g("unresolved_gap"), g("tractability"), str(len(by.get(x, [])))])
+        rows = [["ISSUE", x, r["label"], r["definition"], "", "", "", ""]]
+        for t in tier3[:4]:
+            j = val.get((oid, t), {})
+            rows.append(["JUDGEMENT", t, j.get("value", ""), j.get("reason", ""), j.get("evidence_item_ids", ""), "", "", ""])
+        mine = set(by.get(x, []))
+        for l in links:
+            if l["link_type"] == "contradicts" and (l["from_id"] in mine or l["to_id"] in mine) and l["review_status"] != "proposed":
+                rows.append(["CONFIRMED CONFLICT" if l["review_status"] == "validated" else "NOTED DIFFERENCE", l["from_id"], l["to_id"], l["basis"], "", "", "", ""])
+        for k in sorted(mine, key=lambda k: (order.get(items[k]["pass2"]["chain_link"], 9), items[k]["dates"].get("publication_date") or "", k)):
+            i = items[k]
+            rows.append([i["pass2"]["chain_link"], k, (i["dates"].get("publication_date") or "")[:4], text(i), i["information_type"], conf.get(k, ""), rel.get((k, x), ""), ";".join(i["flags"])])
+        dossiers.append((x, ["section", "id_or_type", "year_or_value", "text_or_reason", "type_or_evidence", "confidence", "relevance", "flags"], rows))
+    return "G6_issue_dossiers.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Issue index", ["issue_id", "label", "priority", "direction_of_travel", "unresolved_gap", "tractability", "items"], index),
+        ("Tier 3 judgements", ["judgement_id", "judgement_type", "object_id", "value", "reason", "evidence_item_ids", "decision", "new_value", "override_reason"], t3),
+        ("Tier 2 by exception", ["judgement_id", "judgement_type", "object_id", "context", "value", "reason", "evidence_item_ids", "decision", "override_reason"], t2),
+        *dossiers,
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS = {"G6": g6, "G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
 
 
 def main(argv=None):

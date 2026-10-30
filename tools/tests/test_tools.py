@@ -94,8 +94,8 @@ def main():
             (shutil.copytree if src.is_dir() else shutil.copy2)(src, proj / name)
         samples = Path(tmp) / "samples"
         samples.mkdir()
-        # The real taxonomy, queues, links and entities refer to real evidence items, which are not copied; start the sample project with empty ones, and likewise the queues, links and entities.
-        for rel in ("taxonomy/reform_issues.csv", "taxonomy/unmatched_queue.csv", "taxonomy/ambiguous_queue.csv", "links/links.csv", "entities/interventions.csv", "entities/actors.csv"):
+        # The real taxonomy, queues, links, entities and judgements refer to real evidence items, which are not copied; start the sample project with empty ones, and likewise the queues, links, entities and judgements.
+        for rel in ("taxonomy/reform_issues.csv", "taxonomy/unmatched_queue.csv", "taxonomy/ambiguous_queue.csv", "links/links.csv", "entities/interventions.csv", "entities/actors.csv", "judgements/judgements.csv"):
             ri = proj / rel
             ri.write_text(ri.read_text(encoding="utf-8").splitlines()[0] + "\n", encoding="utf-8")
 
@@ -385,6 +385,17 @@ def main():
             ok = {"Ambiguous queue", "Unmatched queue", "Spot check", "Contradictions", "Out of scope"} <= set(wb5.sheetnames)
         check("export_review.py", "G5 package: queues, spot check, contradictions and out-of-scope items", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G5_classification.xlsx").unlink(missing_ok=True)
+        ri = proj / "taxonomy" / "reform_issues.csv"
+        drafted = ri.read_text(encoding="utf-8")
+        ri.write_text(drafted.replace(",draft,", ",approved,"), encoding="utf-8")
+        r = run(proj, "export_review.py", "G6")
+        ri.write_text(drafted, encoding="utf-8")
+        ok = r.returncode == 0 and (rv / "G6_issue_dossiers.xlsx").exists()
+        if ok:
+            wb6 = load_workbook(rv / "G6_issue_dossiers.xlsx")
+            ok = {"Issue index", "Tier 3 judgements", "Tier 2 by exception", "RI-TST-001"} <= set(wb6.sheetnames)
+        check("export_review.py", "G6 package: one dossier per issue, tier 3 and tier 2 sheets", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "G6_issue_dossiers.xlsx").unlink(missing_ok=True)
         (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
         lines = (proj / "taxonomy" / "reform_issues.csv").read_text(encoding="utf-8").splitlines()
         (proj / "taxonomy" / "reform_issues.csv").write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")
