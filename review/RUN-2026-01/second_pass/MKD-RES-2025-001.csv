@@ -1,0 +1,6 @@
+item_id,action,detail
+MKD-RES-2025-001-0026,none_needed,"Quote holds footnotes between the pages, against section 3 of the rules. Removing them makes the quote check fail, so the quote is unchanged and the problem is in extraction_note; needs a fix to drop_footnotes in tools/verify_quotes.py."
+MKD-RES-2025-001-0057,added_missed,"Page 3: foundational legal framework for data protection, at a separate place from -0021."
+MKD-RES-2025-001-0058,added_missed,Page 3: GDPR alignment as a starting point for the AI Act.
+MKD-RES-2025-001-0059,added_missed,Page 3: Article 9 principles applied by analogy to AI; the provisions before and after it are items -0022 and -0023.
+,none_needed,"Second-pass checker: checker-B, not the extracting agent. English keyword screen of the whole text (digital, electronic, e-, cyber, artificial intelligence, AI, interoperab, personal data, foreign worker, work permit, social security, EURES, EHIC, broadband, 5G, online); uncovered hits read. Hits in the EU AI Act background, the Netherlands example and the bibliography stay out, as the extraction notes state."

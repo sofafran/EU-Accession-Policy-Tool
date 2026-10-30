@@ -2,13 +2,13 @@
   "source_id": "MKD-IO-2024-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "extracted_at": "2026-10-29",
-    "status": "sample",
-    "pages_processed": "53-56, 83-86",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "3-14, 17 (contents, executive summary, Selected Policy Reforms, Table 2), 25, 36-37, 42-44, 53-56, 60-62, 65-68, 83-86; keyword screen over all 118 pages, with lines around each match read on the other pages",
     "codebook_version": "1.2",
-    "themes_version": "1.2",
-    "notes": "Read chapter 6 Jobs and Migration (pages 53-56) and chapter 11 Digital Development (pages 83-86) in full, plus the divider pages 51-52 and 81-82 (no content), and the Executive Summary digital paragraph (page 11), the Selected Policy Reforms table (pages 12-14) and Table 2 (page 17). Under the 0.2 Chapter 2 boundary only the two chapter 6 items on access of foreign workers to the labour market remain in Chapter 2 (0003, 0010); emigration, diaspora, remittances and returnee items were removed. Chapter 11 items are theme items with cluster and chapter empty. No recognition artefacts were found on the quoted pages; the recognised pages appear to be divider or blank pages, so no item carries the ocr flag. Two quotes cross a page break with footnotes in between (0027, 0050). The Chapter 2 recommendation on work permits and visas for foreign workers in the Selected Policy Reforms table (page 12, Private Sector Development) is extracted as 0075. Revised on 29 October 2026 under extraction rules 0.2 (R1 to R11): items outside the narrower Chapter 2 boundary or materiality test removed, statuses and notes updated, repeated claims added at each place; item IDs of kept items unchanged. Revised on 29 October 2026 under extraction rules 0.3 (R12 to R20). Summary-table rows that only restate chapter claims (0069 to 0074) removed under R16. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
+    "themes_version": "1.3",
+    "notes": "Read chapter 6 Jobs and Migration (pages 53-56) and chapter 11 Digital Development (pages 83-86) in full, plus the divider pages 51-52 and 81-82 (no content), and the Executive Summary digital paragraph (page 11), the Selected Policy Reforms table (pages 12-14) and Table 2 (page 17). Under the 0.2 Chapter 2 boundary only the two chapter 6 items on access of foreign workers to the labour market remain in Chapter 2 (0003, 0010); emigration, diaspora, remittances and returnee items were removed. Chapter 11 items are theme items with cluster and chapter empty. No recognition artefacts were found on the quoted pages; the recognised pages appear to be divider or blank pages, so no item carries the ocr flag. Two quotes cross a page break with footnotes in between (0027, 0050). The Chapter 2 recommendation on work permits and visas for foreign workers in the Selected Policy Reforms table (page 12, Private Sector Development) is extracted as 0075. Revised on 29 October 2026 under extraction rules 0.2 (R1 to R11): items outside the narrower Chapter 2 boundary or materiality test removed, statuses and notes updated, repeated claims added at each place; item IDs of kept items unchanged. Revised on 29 October 2026 under extraction rules 0.3 (R12 to R20). Summary-table rows that only restate chapter claims (0069 to 0074) removed under R16. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Revised on 30 October 2026 under extraction rules 0.4 from sample to complete: source of 118 pages, read the contents, the chapters on Jobs and Migration, Private Sector Development and Digital Development, and every other passage found by a keyword screen over the whole text (digital, electronic, e-government, e-service, online, cyber, AI, interoperability, personal data, data protection, broadband, ICT, internet, 5G, portal, eHealth, e-invoice, SEPA, foreign worker, work permit, immigration, migrant, social security, EURES, EHIC). Items 0003 to 0068 and 0076 to 0078 unchanged. Items 0075 and 0079 were moved from the page 12 table to page 66, same claim and same IDs, because chapter 8 has now been read and R16 no longer allows the table version; their earlier table quotes remain in the sample files. Items 0080 to 0109 are new, from chapters and pages the sample did not read. Earlier removed IDs (0001, 0002, 0004 to 0009, 0011 to 0013, 0051, 0052, 0054, 0060, 0069 to 0074) remain retired. Under 0.4 (R22) LEFT OUT as sector or back-office systems: IFMIS, SAMIS, ITIS by itself, PPP information system (pages 24-26, 67), Social Welfare Information System (pages 15, 47, 49), DBNM IT system (page 60), border digitalisation and Intelligent Transport Systems (pages 68, 90), arable land system and digital agriculture (page 115), water sector ICT (page 109), digital health as a possible engagement (page 44). Digital skills items not directly linked to an in-scope recommendation (pages 12, 54, 55, 66, 85-86) and general digital mentions in lists (pages 8, 10, 65) also left out. Chapter 6 items on emigration, diaspora and global skills partnerships stay out under the Chapter 2 boundary. Items 0082, 0090 to 0094 (SEPA): digital finance is a boundary case, flagged theme_doubtful; MKD-IO-2025-001 reports approval to join SEPA in March 2025, after this source. Second-pass check done (G3 condition 2). Item 0110 was added by the second-pass checker."
   },
   "classification": {
     "status": "not_started"
@@ -3603,15 +3603,15 @@
     {
       "item_id": "MKD-IO-2024-001-0075",
       "information_type": "recommendation",
-      "stated_text": "simplify the work permits and visa applications for foreign workers",
+      "stated_text": "Improve labor regulations to introduce more flexible working arrangements for domestic workers and simplify work permits and visa applications for foreign workers, especially technical experts and managerial personnel and their dependents.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Simplify work permits and visa applications for foreign workers.",
+      "summary": "Improve labour regulations, including by simplifying work permits and visa applications for foreign workers, especially technical experts, managers and their dependents.",
       "location": {
-        "page": 12,
+        "page": 66,
         "page_end": null,
-        "section": "Selected Policy Reforms, Private Sector Development",
+        "section": "8 Private Sector Development and Innovation, 3. Policy Responses for Consideration",
         "paragraph": null,
         "snapshot_file": null
       },
@@ -3653,10 +3653,8 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [
-        "table"
-      ],
-      "extraction_note": "Sits under Private Sector Development in the Selected Policy Reforms summary table, outside chapters 6 and 11. The same bullet also recommends more flexible working arrangements for domestic workers (general labour market, not quoted). The column mark 'x' is not quoted.",
+      "flags": [],
+      "extraction_note": "Moved under rules 0.4 from the Selected Policy Reforms table (page 12) to its place in the running text, now that chapter 8 has been read (R16). Same claim, same ID. Also at page 12.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],
@@ -3867,15 +3865,147 @@
     {
       "item_id": "MKD-IO-2024-001-0079",
       "information_type": "recommendation",
-      "stated_text": "Improve the efficiency of both the public and private sectors through accelerated digital transitions",
+      "stated_text": "Improve public and private sector efficiency by accelerating their digital transitions.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
-      "summary": "Improve public and private sector efficiency through faster digital transitions.",
+      "summary": "Improve public and private sector efficiency by accelerating their digital transitions.",
       "location": {
-        "page": 12,
+        "page": 66,
         "page_end": null,
-        "section": "Selected Policy Reforms, Private Sector Development",
+        "section": "8 Private Sector Development and Innovation, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Moved under rules 0.4 from the Selected Policy Reforms table (page 12) to its place in the running text, now that chapter 8 has been read (R16). Same claim, same ID. Also at page 12.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0080",
+      "information_type": "metric",
+      "stated_text": "About 83 percent of the population in North Macedonia use the internet, aligning with regional averages but revealing a significant gender gap.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 83 percent of North Macedonia's population use the internet, in line with regional averages but with a significant gender gap.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Population using the internet",
+        "value": 83,
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeats 0018 in another place (R10).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0081",
+      "information_type": "finding",
+      "stated_text": "Despite the dominance of micro, small, and medium enterprises (MSMEs) in the economy, productivity growth remains weak or stagnant, digitalization is low, and there is limited integration with regional and global value chains.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Although MSMEs dominate the economy, their productivity growth is weak or stagnant, digitalisation is low and value-chain integration limited.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "Executive Summary",
         "paragraph": null,
         "snapshot_file": null
       },
@@ -3920,9 +4050,1964 @@
         "reference_period": null
       },
       "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: low digitalisation is one of three weaknesses named.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0082",
+      "information_type": "recommendation",
+      "stated_text": "By modernizing payment systems and joining the Single Euro Payments Area (SEPA), North Macedonia can increase financial inclusion, bring more competition and innovation in payments, and drive down costs for end users in domestic as well as cross-border digital payments.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Modernising payment systems and joining SEPA can raise financial inclusion, competition and innovation, and lower costs of domestic and cross-border digital payments.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: digital finance is out by default and in only for connection to an EU electronic system; unclear whether SEPA counts.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0083",
+      "information_type": "finding",
+      "stated_text": "While efforts to digitalize the education system are underway, disparities persist in access to digital infrastructure and training among teachers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Efforts to digitalise education are under way, but disparities persist in access to digital infrastructure and in teacher training.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "3 Education, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: digitalisation of one sector, not framed as digital transformation of government.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0084",
+      "information_type": "intervention",
+      "stated_text": "Initiatives have included giving students and teachers access to digital learning resources, introducing online learning platforms, and improving connectivity in schools.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Education digitalisation initiatives have included digital learning resources, online learning platforms and better school connectivity.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "3 Education, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Efforts to digitalize the education system",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: online learning platforms are used by the public, but this sits inside an education reform.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0085",
+      "information_type": "intervention",
+      "stated_text": "The government has set up an eHealth system, Moj Termin, to facilitate appointments, but the system could usefully be updated to improve efficiency.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The government has set up an eHealth system, Moj Termin, to facilitate appointments.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "4 Health Systems, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "government",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Moj Termin (eHealth system)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0086",
+      "information_type": "recommendation",
+      "stated_text": "The government has set up an eHealth system, Moj Termin, to facilitate appointments, but the system could usefully be updated to improve efficiency.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Moj Termin eHealth system could usefully be updated to improve efficiency.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "4 Health Systems, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moj Termin",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Shares its sentence with 0085.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0087",
+      "information_type": "recommendation",
+      "stated_text": "For example, Moj Termin has the potential to be a powerful tool for measuring the quality of care by integrating core quality indicators into its electronic health records and developing dashboards that provide health professionals and policy makers with data on quality metrics.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moj Termin could measure quality of care by integrating quality indicators into electronic health records and providing dashboards.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "4 Health Systems, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: this use is internal to the health sector, while the appointments service is public.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0088",
+      "information_type": "recommendation",
+      "stated_text": "In addition, ensuring that Moj Termin can seamlessly exchange data with other relevant systems, including those at the Ministry of Social Policy, Demography and Youth (MSPDY), may empower LTC providers to deliver more efficient and coordinated care to their patients.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Ensuring Moj Termin can exchange data with other systems, including those at the MSPDY, may help long-term care providers coordinate care.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "4 Health Systems, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful",
+        "hedged"
+      ],
+      "extraction_note": "Doubtful: domestic data exchange inside a health reform, not connection to an EU electronic system.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0089",
+      "information_type": "recommendation",
+      "stated_text": "Ensuring digital literacy among patients and providers would strengthen the uptake of such reforms.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Ensuring digital literacy among patients and providers would strengthen uptake of the Moj Termin reforms.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "4 Health Systems, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Digital skills directly linked to the in-scope items 0086 to 0088.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0090",
+      "information_type": "recommendation",
+      "stated_text": "By modernizing payment systems and joining the Single Euro Payments Area (SEPA), North Macedonia can increase financial inclusion, bring more competition and innovation in payments, and drive down costs for end users for domestic as well as cross-border digital payments.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Modernising payment systems and joining SEPA can raise financial inclusion, competition and innovation, and lower costs of domestic and cross-border digital payments.",
+      "location": {
+        "page": 60,
+        "page_end": null,
+        "section": "7 Financial Sector, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Repeats 0082 in another place (R10). Doubtful for the same reason.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0091",
+      "information_type": "recommendation",
+      "stated_text": "Integrate payment systems into SEPA. SEPA allows customers to make cashless euro payments. Joining SEPA will unlock the transformative impact of digital payments and better satisfy the payment needs of consumers and businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Integrate payment systems into SEPA, which allows cashless euro payments and will unlock digital payments for consumers and businesses.",
+      "location": {
+        "page": 60,
+        "page_end": 61,
+        "section": "7 Financial Sector, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: as 0082. Also at page 11, Selected Policy Reforms table.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0092",
+      "information_type": "finding",
+      "stated_text": "Once it joins SEPA, North Macedonia will be connected in real time and without borders to the European payments market, opening up massive opportunities for digital payments growth and reducing the cost of remittances.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Joining SEPA would connect North Macedonia in real time to the European payments market, boosting digital payments and cutting remittance costs.",
+      "location": {
+        "page": 61,
+        "page_end": null,
+        "section": "7 Financial Sector, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: as 0082.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0093",
+      "information_type": "intervention",
+      "stated_text": "Technical assistance is being provided on modernization of payment systems, covering payment regulations and other requirements to achieve SEPA readiness, modernizing the payments infrastructure, and implementing reforms related to digitalization and financial inclusion.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "World Bank technical assistance covers payment regulations and SEPA readiness, payments infrastructure, and digitalisation and financial inclusion reforms.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "7 Financial Sector, 4. World Bank Group Engagement",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Technical assistance on modernization of payment systems",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: as 0082.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0094",
+      "information_type": "intervention",
+      "stated_text": "A regional Payments Systems Modernization Project, under preparation, can further support the national bank with investments in payment infrastructure. Possible TA will be available to support the implementation of SEPA scheme rules (once North Macedonia joins), integration with the European Central Bank TARGET Instant Payment System (TIPS), and the development of overlay services and regional interoperability (for example, QR codes).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A regional payments project under preparation may support SEPA scheme rules, integration with the ECB's TIPS, and regional interoperability.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "7 Financial Sector, 4. World Bank Group Engagement",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Regional Payments Systems Modernization Project",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table",
+        "theme_doubtful",
+        "hedged"
+      ],
+      "extraction_note": "Doubtful: as 0082; TIPS is an EU system, but this is payments infrastructure.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0095",
+      "information_type": "recommendation",
+      "stated_text": "The PRO needs to strengthen its operational effectiveness, with a focus on strengthening the tax compliance management system, enhancing selected management functions, expanding its tax revenue management information system (ITIS), and introducing e-invoices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Public Revenue Office should strengthen its operations, including expanding its tax information system and introducing e-invoices.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "1 Macroeconomics and Public Financial Management, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PRO",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: tax IT upgrades are out by default, while e-invoices may be a service businesses use online.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0096",
+      "information_type": "recommendation",
+      "stated_text": "Initiatives for improving the business environment for factoring include supporting the implantation of e-invoicing at the national level and maintaining a national registry, adopting necessary laws and bylaws, establishing an online platform portal, developing a promissory note register, and establishing a collateral registry.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Factoring initiatives include national e-invoicing, an online platform portal and registries, among other measures.",
+      "location": {
+        "page": 61,
+        "page_end": null,
+        "section": "7 Financial Sector, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: digital elements sit inside a financial-sector reform.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0097",
+      "information_type": "finding",
+      "stated_text": "MSMEs are dominant in the economy, but have in recent years exhibited weak or stagnant productivity growth, low levels of digitalization, and limited integration with regional and global value chains.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MSMEs dominate the economy but show weak productivity growth, low digitalisation and limited value-chain integration.",
+      "location": {
+        "page": 65,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 1. Overarching Messages",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Repeats 0081 in another place (R10). Doubtful for the same reason.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0098",
+      "information_type": "barrier",
+      "stated_text": "The emigration of skilled professionals out of North Macedonia and regulatory barriers to immigration of qualified workers exacerbate these difficulties.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Skilled emigration and regulatory barriers to the immigration of qualified workers exacerbate firms' labour shortages.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Chapter 2 on the regulatory barriers to immigration of qualified workers; emigration appears in the same sentence.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0099",
+      "information_type": "recommendation",
+      "stated_text": "Both the public and private sectors need to speed up digital transformation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The public and private sectors need to speed up digital transformation.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0100",
+      "information_type": "finding",
+      "stated_text": "Digitalization is low in North Macedonia for both the public and private sectors.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digitalisation is low in North Macedonia in both the public and private sectors.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0101",
+      "information_type": "metric",
+      "stated_text": "Despite major efforts in recent years, the country ranked 80th in the world on the 2022 e-Government Development Index, which is low compared to EU countries and some regional peers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia ranked 80th on the 2022 e-Government Development Index, low compared with EU countries and some regional peers.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E-Government Development Index rank",
+        "value": 80,
+        "unit": "rank",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "Repeats 0034 in another place (R10).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0102",
+      "information_type": "finding",
+      "stated_text": "Business e-services are uneven across government agencies, and the lack of automatic data sharing among institutions imposes additional time and cost requirements on companies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Business e-services vary across agencies, and the lack of automatic data sharing between institutions adds time and cost for companies.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0103",
+      "information_type": "finding",
+      "stated_text": "At the firm level, understanding of and demand for digitalization are quite low, especially among MSMEs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Firms' understanding of and demand for digitalisation are quite low, especially among MSMEs.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0104",
+      "information_type": "finding",
+      "stated_text": "Development of e-commerce capabilities remains at a nascent stage, despite enormous potential, as North Macedonia ranks last in the Western Balkans region on the level of e-commerce.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "E-commerce capabilities remain nascent; North Macedonia ranks last in the Western Balkans on e-commerce.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0105",
+      "information_type": "barrier",
+      "stated_text": "The main challenges include e-invoices, digital fiscal bills, and lack of cross-border delivery.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The main e-commerce challenges include e-invoices, digital fiscal bills and lack of cross-border delivery.",
+      "location": {
+        "page": 66,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 2. Key Challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0106",
+      "information_type": "recommendation",
+      "stated_text": "On the government side, strengthen the capacity of the relevant line ministry to drive digital transformation reforms and introduce e-government services to reduce the time and cost of services for the private sector.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Strengthen the line ministry's capacity to drive digital transformation and introduce e-government services to cut time and cost for the private sector.",
+      "location": {
+        "page": 66,
+        "page_end": 67,
+        "section": "8 Private Sector Development and Innovation, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0107",
+      "information_type": "recommendation",
+      "stated_text": "On the solution provider side, support local providers to develop affordable solutions to meet the specific digitalization and automation needs of MSMEs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Support local providers to develop affordable solutions for MSMEs' digitalisation and automation needs.",
+      "location": {
+        "page": 67,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0108",
+      "information_type": "recommendation",
+      "stated_text": "Improve trade facilitation by: (1) adopting the draft Law on Single Window for Trade to allow implementation of the new National Single Window (NSW) system; and (2) reducing border clearance times by providing a single system/window for traders to electronically submit regulated and harmonized data to complete foreign trade transactions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Adopt the draft Law on Single Window for Trade and provide a single electronic window for traders to submit harmonised data.",
+      "location": {
+        "page": 67,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 3. Policy Responses for Consideration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: customs and trade systems are out by default, though traders use this one directly. Similar points at page 90 and page 68 are not extracted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0109",
+      "information_type": "intervention",
+      "stated_text": "Competitiveness for Jobs and Economic Transformation (C-JET) grant (US$100,000) to assess the digital and green transformation needs of MSMEs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A US$100,000 C-JET grant is assessing MSMEs' digital and green transformation needs.",
+      "location": {
+        "page": 68,
+        "page_end": null,
+        "section": "8 Private Sector Development and Innovation, 4. World Bank Group Engagement",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Competitiveness for Jobs and Economic Transformation (C-JET) grant",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
         "table"
       ],
-      "extraction_note": "Added at G3 review. Selected Policy Reforms summary table, Private Sector Development (policy note 8 not otherwise extracted, so R16 does not apply); marked medium-term. The column mark 'x' is not quoted.",
+      "extraction_note": "Listed under Ongoing Support.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2024-001-0110",
+      "information_type": "metric",
+      "stated_text": "Digital Development Digital Development Agenda 50 (To be determined) In preparation",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The pipeline lists a Digital Development Agenda project of US$50 million, in preparation.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Table 2: WBG Existing and Pipeline Portfolio in North Macedonia",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-09",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank Group",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "World Bank Group",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Digital Development Agenda project amount",
+        "value": "50",
+        "unit": "US$ million",
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Amount column is headed US$m. Page 17, Table 2, row Digital Development Agenda.",
       "pass2": {
         "chain_link": null,
         "reform_issue_ids": [],

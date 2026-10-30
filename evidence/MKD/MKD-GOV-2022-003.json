@@ -1,0 +1,1609 @@
+{
+  "source_id": "MKD-GOV-2022-003",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "1-15 (2020 and 2021 sections, pages 8-15, extracted)",
+    "codebook_version": "1.2",
+    "themes_version": "1.3",
+    "notes": "Read in full (15 pages). The sections on 2017, 2018 and 2019 (pages 1-8) describe events before the time window and were not extracted; no exception has been logged for them, and pass 2 could revisit the annual report totals if the baseline is needed (561 in 2017, 981 in 2018, 1060 in 2019). Counts of 2017 to 2019 remain only where the 2020 and 2021 sentences themselves compare with them. Left out: domain registration counts (not a security claim), chart axis values, the named list of hacked sites on pages 8 and 12-13, descriptions of malware behaviour, and the claim that most 2020 reports are automated (pages 9-10), which cannot pass the quote check because chart labels sit between the pages. Sites hacked and reports received are CSIRT incident statistics, treated as TECH-CYBER incident response material and not as cybercrime statistics; items on phishing and fraud are flagged theme_doubtful for that boundary. The document has no running sections beyond year headings, so the section field gives the printed heading. Machine translation by the extracting agent throughout. Words split by spaces in the converted text are kept as printed. Second-pass check done (G3 condition 2)."
+  },
+  "classification": {
+    "status": "not_started"
+  },
+  "items": [
+    {
+      "item_id": "MKD-GOV-2022-003-0001",
+      "information_type": "metric",
+      "stated_text": "Во 2020 година, хакирани се вкупно 92 јавни веб-страници, споредено со 113 во 2019, 196 во 2018 и 349 во 2017 година.",
+      "quote_language": "mk",
+      "translation_en": "In 2020 a total of 92 public websites were hacked, compared with 113 in 2019, 196 in 2018 and 349 in 2017.",
+      "machine_translated": true,
+      "summary": "92 public websites were hacked in 2020, down from 113 in 2019, 196 in 2018 and 349 in 2017.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "2020: Јавни веб-страници во Република Северна Македонија",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Hacked public websites",
+        "value": 92,
+        "unit": "websites",
+        "reference_period": "2020"
+      },
+      "flags": [],
+      "extraction_note": "Source for hacked-site figures is the public Zone-H archive, as stated on the same page.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0002",
+      "information_type": "metric",
+      "stated_text": "Од нив, 6 се официјални страници на организации од владин сектор под .gov.mk доменот.",
+      "quote_language": "mk",
+      "translation_en": "Of these, 6 are official sites of government sector organisations under the .gov.mk domain.",
+      "machine_translated": true,
+      "summary": "Six of the websites hacked in 2020 were official government sector sites under .gov.mk.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "2020: Јавни веб-страници во Република Северна Македонија",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Hacked .gov.mk websites",
+        "value": 6,
+        "unit": "websites",
+        "reference_period": "2020"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0003",
+      "information_type": "finding",
+      "stated_text": "Примарна цел при хакирањето е да се промени содржината на веб страницата и хактивизам.",
+      "quote_language": "mk",
+      "translation_en": "The primary aim of the hacking is to change the content of the website, and hacktivism.",
+      "machine_translated": true,
+      "summary": "The 2020 hacks mainly aimed to change website content, and were hacktivism.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "2020: Јавни веб-страници во Република Северна Македонија",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0004",
+      "information_type": "finding",
+      "stated_text": "Иако Линукс е еден од по сигурните оперативни системи, главната причина за успешно хакирање на овие веб -страници е да се има администраторски привилегии на овие пакети со отворен код, а настанува како резултат на ненавремено откриени и ажурирани ранливости на CMS.",
+      "quote_language": "mk",
+      "translation_en": "Although Linux is one of the more secure operating systems, the main reason for the successful hacking of these websites is to obtain administrator privileges on these open-source packages, and it arises as a result of vulnerabilities in CMS not being discovered and updated in time.",
+      "machine_translated": true,
+      "summary": "Successful 2020 website hacks are attributed to CMS vulnerabilities not being discovered and updated in time.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "2020: Пријави за инциденти во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0005",
+      "information_type": "intervention",
+      "stated_text": "Во 2020 година, MKD-CIRT овозможи неколку начини за пријавување инциденти: - Анонимно известување преку веб-страница на MKD-CIRT со пополнување на онлајн образецот - Пријави за инциденти од конституентите преку нашиот систем за пријавување и управување со инциденти - Пријави на инциденти од други организации со кои имаме воспоставено соработка и имаме доверба во точноста на доставените информации",
+      "quote_language": "mk",
+      "translation_en": "In 2020 MKD-CIRT enabled several ways of reporting incidents: anonymous notification through the MKD-CIRT website by completing the online form; incident reports from constituents through our incident reporting and management system; incident reports from other organisations with which we have established cooperation and whose information we trust.",
+      "machine_translated": true,
+      "summary": "In 2020 MKD-CIRT offered reporting through an online form, a constituent reporting system and trusted partner organisations.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "2020: Пријави за инциденти во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": "2020",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Начини за пријавување инциденти преку MKD-CIRT",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0006",
+      "information_type": "metric",
+      "stated_text": "Во 2020 година, вкупниот број на Пријави за инциденти евидентирани преку системот за прием на пријави на MKD-CIRT изнесува 1443.",
+      "quote_language": "mk",
+      "translation_en": "In 2020 the total number of incident reports recorded through the MKD-CIRT report intake system was 1443.",
+      "machine_translated": true,
+      "summary": "MKD-CIRT recorded 1443 incident reports in 2020.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "2020: Пријави за инциденти во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Incident reports recorded by MKD-CIRT",
+        "value": 1443,
+        "unit": "reports",
+        "reference_period": "2020"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0007",
+      "information_type": "finding",
+      "stated_text": "Во текот на 2020 година, MKD-CIRT доби пријави за инциденти и барања за поддршка од македонски компании при: - онлајн измами, - man-in-the-middle и - фишинг напади.",
+      "quote_language": "mk",
+      "translation_en": "During 2020 MKD-CIRT received incident reports and requests for support from Macedonian companies concerning online fraud, man-in-the-middle and phishing attacks.",
+      "machine_translated": true,
+      "summary": "In 2020 Macedonian companies reported online fraud, man-in-the-middle and phishing attacks to MKD-CIRT and requested support.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "2020: Пријави за инциденти во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Fraud and phishing reports sit near the cybercrime boundary; kept as CSIRT incident handling.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0008",
+      "information_type": "finding",
+      "stated_text": "Забележан е инцидент со компромитација на сервер и клиенти за е -пошта на владина организација за што најитно е известена организацијата. и пратени се препораки до Советот за сајбер-безбедност.",
+      "quote_language": "mk",
+      "translation_en": "An incident was noted of compromise of a server and e-mail clients of a government organisation, of which the organisation was urgently notified, and recommendations were sent to the Council for Cyber Security.",
+      "machine_translated": true,
+      "summary": "In 2020 a government organisation had its server and e-mail clients compromised; it was notified and recommendations went to the Cyber Security Council.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "2020: Пријави за инциденти во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Совет за сајбер-безбедност",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0009",
+      "information_type": "finding",
+      "stated_text": "Забележан е инцидент со комбинација на DDoS напади и искористување на ранливости на јав на веб страница на државна комисија. Побарани се дополните информации за настанот но не е добиен одговор.",
+      "quote_language": "mk",
+      "translation_en": "An incident was noted combining DDoS attacks and exploitation of vulnerabilities of the public website of a state commission. Additional information about the event was requested but no reply was received.",
+      "machine_translated": true,
+      "summary": "A state commission website suffered DDoS attacks and exploited vulnerabilities in 2020; MKD-CIRT requested more information and received no reply.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "2020: Пријави за инциденти во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0010",
+      "information_type": "intervention",
+      "stated_text": "MKD-CIRT периодично ги известува операторите кои обезбедуваат услуга за широкопојасен интернет и работи со нив за да ги информира крајните корисници да ги исчистат нивните уреди од идентификуваниот малициозен софтвер, како и за заштита на безбедноста и интегритетот на мрежата на операторите кои обезбедуваат услуга за интернет.",
+      "quote_language": "mk",
+      "translation_en": "MKD-CIRT periodically notifies operators providing broadband internet service and works with them to inform end users to clean their devices of the identified malicious software, and to protect the security and integrity of the network of operators providing internet service.",
+      "machine_translated": true,
+      "summary": "MKD-CIRT periodically notifies broadband operators and works with them so end users clean devices of identified malware.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "2020: Малициозен софтвер присутен во Република Северна Македонија во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Периодично известување на операторите за малициозен софтвер",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same claim also extracted at the 2021 section, page 15.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0011",
+      "information_type": "finding",
+      "stated_text": "ВО моментов не постои легислатива во државата за задолжително пријавување на инциденти како и обврска за задолжително постапување по препораките од MKD-CIRT.",
+      "quote_language": "mk",
+      "translation_en": "At present there is no legislation in the country on mandatory reporting of incidents, nor an obligation to act mandatorily on the recommendations of MKD-CIRT.",
+      "machine_translated": true,
+      "summary": "At the time of writing, no law required incident reporting or compliance with MKD-CIRT recommendations.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "2020: Малициозен софтвер присутен во Република Северна Македонија во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same claim also extracted at the 2021 section, page 15. The Law on Security of Network and Information Systems (MKD-GOV-2025-007) was published later.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0012",
+      "information_type": "metric",
+      "stated_text": "Според податоците од сервисот на Shadowserver, трендот за 2020 година е просечно секој ден да има 600 - 700 македонски јавни IP v4 адреси кои се извор на штетни активности и најмалку ист број на уреди во државата што на дневна основа се инфицирани.",
+      "quote_language": "mk",
+      "translation_en": "According to data from the Shadowserver service, the trend for 2020 is an average of 600 to 700 Macedonian public IPv4 addresses each day that are sources of harmful activity, and at least the same number of devices in the country infected daily.",
+      "machine_translated": true,
+      "summary": "Shadowserver data show 600 to 700 Macedonian public IPv4 addresses a day as sources of harmful activity in 2020.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "2020: Малициозен софтвер присутен во Република Северна Македонија во 2020 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Shadowserver",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Macedonian public IPv4 addresses that are sources of harmful activity, daily average",
+        "value": "600-700",
+        "unit": "addresses per day",
+        "reference_period": "2020"
+      },
+      "flags": [
+        "reported_view",
+        "possible_misread"
+      ],
+      "extraction_note": "MKD-CIRT reports Shadowserver data.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0013",
+      "information_type": "metric",
+      "stated_text": "Во 2021 година, хакирани се вкупно 122 јавни веб-страници, споредено со 92 во 2020, 113 во 2019, 196 во 2018 и 349 во 2017 година.",
+      "quote_language": "mk",
+      "translation_en": "In 2021 a total of 122 public websites were hacked, compared with 92 in 2020, 113 in 2019, 196 in 2018 and 349 in 2017.",
+      "machine_translated": true,
+      "summary": "122 public websites were hacked in 2021, up from 92 in 2020.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "2021: Јавни веб-страници во Република Северна Македонија",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Hacked public websites",
+        "value": 122,
+        "unit": "websites",
+        "reference_period": "2021"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0014",
+      "information_type": "metric",
+      "stated_text": "Од нив, 8 се официјални страници на организации од владин сектор под .gov.mk доменот.",
+      "quote_language": "mk",
+      "translation_en": "Of these, 8 are official sites of government sector organisations under the .gov.mk domain.",
+      "machine_translated": true,
+      "summary": "Eight of the websites hacked in 2021 were official government sector sites under .gov.mk.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "2021: Јавни веб-страници во Република Северна Македонија",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Hacked .gov.mk websites",
+        "value": 8,
+        "unit": "websites",
+        "reference_period": "2021"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0015",
+      "information_type": "intervention",
+      "stated_text": "Во 2021 година, MKD-CIRT овозможи неколку начини за пријавување инциденти: - Анонимно известување преку веб -страница на MKD -CIRT со пополнување на онлајн образецот - Пријави за инциденти од конституентите преку нашиот систем за пријавување и управување со инциденти - Пријави на инциденти од други организации со кои имаме воспоставено соработка и имаме доверба во точноста на доставените информации",
+      "quote_language": "mk",
+      "translation_en": "In 2021 MKD-CIRT enabled several ways of reporting incidents: anonymous notification through the MKD-CIRT website by completing the online form; incident reports from constituents through our incident reporting and management system; incident reports from other organisations with which we have established cooperation and whose information we trust.",
+      "machine_translated": true,
+      "summary": "In 2021 MKD-CIRT offered reporting through an online form, a constituent reporting system and trusted partner organisations.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "2021: Пријави за инциденти во 2021 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": "2021",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Начини за пријавување инциденти преку MKD-CIRT",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0016",
+      "information_type": "metric",
+      "stated_text": "Во 2021 година, вкупниот број на Пријави за инциденти евидентирани преку системот за прием на пријави на MKD-CIRT изнесува 1880, но најголем дел од пријавите се автоматизирани дневни пријави и извештаи за малициозни активности кои се детектирани надвор од државата, а во кои се идентификувани македонски IP адреси како извор на штетните активности.",
+      "quote_language": "mk",
+      "translation_en": "In 2021 the total number of incident reports recorded through the MKD-CIRT report intake system was 1880, but most of the reports are automated daily reports and accounts of malicious activity detected outside the country, in which Macedonian IP addresses are identified as the source of the harmful activity.",
+      "machine_translated": true,
+      "summary": "MKD-CIRT recorded 1880 incident reports in 2021.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "2021: Пријави за инциденти во 2021 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Incident reports recorded by MKD-CIRT",
+        "value": 1880,
+        "unit": "reports",
+        "reference_period": "2021"
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0017",
+      "information_type": "finding",
+      "stated_text": "Често сопствени ците на овие македонски веб сајтови не знаат дека хакерите поставиле штетна содржина. Често овие веб сајтови немаат редовно ажурирање и техничка поддршка.",
+      "quote_language": "mk",
+      "translation_en": "Often the owners of these Macedonian websites do not know that hackers have placed harmful content. Often these websites do not have regular updating and technical support.",
+      "machine_translated": true,
+      "summary": "Owners of hacked Macedonian websites often do not know of the harmful content, and the sites often lack updating and support.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "2021: Видови на пријавени инциденти",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0018",
+      "information_type": "finding",
+      "stated_text": "Случај на компромитација на сметки за е -пошта на македонски сервер за е -пошта од организација од владин/јавен сектор. Извршена е злоупотреба на меил сервер за испраќање на фишинг пораки на адреси од адресар на компромитирани сметки за е-пошта;",
+      "quote_language": "mk",
+      "translation_en": "A case of compromise of e-mail accounts on a Macedonian e-mail server of a government or public sector organisation. The mail server was abused to send phishing messages to addresses from the address book of the compromised e-mail accounts.",
+      "machine_translated": true,
+      "summary": "In 2021 a public sector organisation had e-mail accounts compromised and its mail server abused to send phishing messages.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "2021: Видови на пријавени инциденти",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0019",
+      "information_type": "finding",
+      "stated_text": "Случаи на компромитација или ранливости на сервери за е -пошта што ги користат македонски организации. Кај некои од нив, бидејќи не се отстранети ранливостите, хакерите реализирале успешни рансомвер напади;",
+      "quote_language": "mk",
+      "translation_en": "Cases of compromise or vulnerabilities of e-mail servers used by Macedonian organisations. In some of them, because the vulnerabilities were not removed, hackers carried out successful ransomware attacks.",
+      "machine_translated": true,
+      "summary": "Some Macedonian organisations suffered ransomware attacks because vulnerabilities in their e-mail servers were not removed.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "2021: Видови на пријавени инциденти",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0020",
+      "information_type": "metric",
+      "stated_text": "Просечно по 2 фишинг кампањи по месец што ги таргетираат македонските граѓани.",
+      "quote_language": "mk",
+      "translation_en": "An average of 2 phishing campaigns per month targeting Macedonian citizens.",
+      "machine_translated": true,
+      "summary": "An average of two phishing campaigns a month targeted Macedonian citizens in 2021.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "2021: Видови на пријавени инциденти",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Phishing campaigns targeting Macedonian citizens",
+        "value": 2,
+        "unit": "campaigns per month (average)",
+        "reference_period": "2021"
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Phishing sits near the cybercrime boundary; kept as CSIRT incident handling.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0021",
+      "information_type": "finding",
+      "stated_text": "Ексфилтрација, т.е. кражба на податоци од македонски организации од јавен/владин сектор. Најчесто се злоупотребуваат ранливости на веб -страниците на организациите за да се добие пристап до податоци запишани на веб-серверот и да се добие пристап до другите мрежни ресурси на организацијата, како што се пораките за е -пошта и други документи на организацијата.",
+      "quote_language": "mk",
+      "translation_en": "Exfiltration, that is theft of data from Macedonian public or government sector organisations. Most often vulnerabilities of the websites of the organisations are abused to gain access to data stored on the web server and to gain access to other network resources of the organisation, such as e-mail messages and other documents of the organisation.",
+      "machine_translated": true,
+      "summary": "Data was stolen from Macedonian public sector organisations, most often through website vulnerabilities giving access to servers, e-mail and documents.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "2021: Видови на пријавени инциденти",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0022",
+      "information_type": "intervention",
+      "stated_text": "MKD-CIRT периодично ги известува операторите кои обезбедуваат услуга за широкопојасен интернет и работи со нив за да ги информира крајните корисници да ги исчистат нивните уреди од идентификуваниот малициозен софтвер, како и за заштита на безбедноста и интегритетот на мрежата на операторите кои обезбедуваат услуга за интернет.",
+      "quote_language": "mk",
+      "translation_en": "MKD-CIRT periodically notifies operators providing broadband internet service and works with them to inform end users to clean their devices of the identified malicious software, and to protect the security and integrity of the network of operators providing internet service.",
+      "machine_translated": true,
+      "summary": "MKD-CIRT periodically notifies broadband operators and works with them so end users clean devices of identified malware.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "2021: Малициозен софтвер присутен во Република Северна Македонија во 2021 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Периодично известување на операторите за малициозен софтвер",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same claim also extracted at the 2020 section, page 11.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0023",
+      "information_type": "finding",
+      "stated_text": "ВО моментов не постои легислатива во државата за задолжително пријавување на инциденти како и обврска за задолжително постапување по препораките од MKD-CIRT.",
+      "quote_language": "mk",
+      "translation_en": "At present there is no legislation in the country on mandatory reporting of incidents, nor an obligation to act mandatorily on the recommendations of MKD-CIRT.",
+      "machine_translated": true,
+      "summary": "At the time of writing, no law required incident reporting or compliance with MKD-CIRT recommendations.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "2021: Малициозен софтвер присутен во Република Северна Македонија во 2021 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same claim also extracted at the 2020 section, page 11.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0024",
+      "information_type": "metric",
+      "stated_text": "Во државата најзастапени типови на малвер се следните 5: МАЛВЕР Gamarue Unidentified Powmet HiddenAds Necurs",
+      "quote_language": "mk",
+      "translation_en": "The 5 most common types of malware in the country are the following: Gamarue, Unidentified, Powmet, HiddenAds, Necurs.",
+      "machine_translated": true,
+      "summary": "The five most common malware types in the country were Gamarue, Unidentified, Powmet, HiddenAds and Necurs.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "2021: Малициозен софтвер присутен во Република Северна Македонија во 2021 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Most common malware types",
+        "value": "Gamarue; Unidentified; Powmet; HiddenAds; Necurs",
+        "unit": "named types",
+        "reference_period": "2021"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2022-003-0025",
+      "information_type": "finding",
+      "stated_text": "Во 2021 година, вкупниот број на Пријави за инциденти евидентирани преку системот за прием на пријави на MKD-CIRT изнесува 1880, но најголем дел од пријавите се автоматизирани дневни пријави и извештаи за малициозни активности кои се детектирани надвор од државата, а во кои се идентификувани македонски IP адреси како извор на штетните активности.",
+      "quote_language": "mk",
+      "translation_en": "In 2021 the total number of incident reports recorded through the MKD-CIRT report intake system was 1880, but most of the reports are automated daily reports and accounts of malicious activity detected outside the country, in which Macedonian IP addresses are identified as the source of the harmful activity.",
+      "machine_translated": true,
+      "summary": "Most 2021 reports are automated reports of foreign-detected harmful activity from Macedonian IP addresses.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "2021: Пријави за инциденти во 2021 година",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2022",
+        "period_covered": "2017/2021",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MKD-CIRT",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MKD-CIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ]
+}

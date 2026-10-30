@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (FAMILIES, ITEM_ID_RE, SOURCE_ID_RE, evidence_files,  # noqa: E402
                     project_root, read_csv, read_json)
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 # type: (csv path, id column, prefix template, digits)
 SIMPLE = {
@@ -62,6 +62,11 @@ def next_item(root, source_id):
     ids = []
     if path.exists():
         ids = [it.get("item_id", "") for it in read_json(path).get("items", [])]
+    # Removed items stay unused: IDs in earlier sample copies and second-pass records count too.
+    for f in (Path(root) / "review").glob(f"*/sample_*/{source_id}.json"):
+        ids += [it.get("item_id", "") for it in read_json(f).get("items", [])]
+    for f in (Path(root) / "review").glob(f"*/second_pass/{source_id}.csv"):
+        ids += [r.get("item_id", "") for r in read_csv(f)[1]]
     nums = [int(mm.group(2)) for i in ids if (mm := ITEM_ID_RE.match(i)) and mm.group(1) == source_id]
     return fmt(f"{source_id}-", max(nums, default=0) + 1, 4)
 

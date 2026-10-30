@@ -2,13 +2,13 @@
   "source_id": "MKD-GOV-2021-001",
   "extraction": {
     "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "extracted_at": "2026-10-29",
-    "status": "sample",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
     "pages_processed": "1-3 (whole document)",
     "codebook_version": "1.2",
-    "themes_version": "1.2",
-    "notes": "Whole amending law read (Official Gazette 163/21, three pages). All provisions are Chapter 2 material and recorded as interventions with stated_status adopted (published law; no implementation assumed). One item per amended provision or paragraph of new Article 16. The 2015 base law (MKD-GOV-2015-001) was consulted only to explain what deleted or amended points referred to; context is given in extraction_note, not in summaries. One paragraph of new Article 16 (electronic reporting with a digital certificate, item 0014) carries technology theme tags, flagged theme_doubtful; paragraph 16 mentions data exchange between bodies without a system and is not tagged. Header, gazette numbering and signature blocks not extracted. Note that Article 16(12) and 16(14) set different deadlines (30 days and three days) for ending a foreigner's registration; recorded as stated. Revised under extraction rules 0.2: item 0029 (Article 8, renaming of the country in the base law) removed as outside the Chapter 2 boundary, the theme tag on item 0015 removed under the narrower materiality test, and eu_scale.applies_to added (null throughout). Checked under extraction rules 0.3: no changes needed (no 112, EU labour-market access or annex items; no quote over three sentences). G3 review correction: the item removed under rules 0.2 was 0029 (Article 7, secondary legislation within 30 days), not Article 8; Article 8 (renaming) is still item 0030. Article 7 restored as item 0032. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/)."
+    "themes_version": "1.3",
+    "notes": "Whole amending law read (Official Gazette 163/21, three pages). All provisions are Chapter 2 material and recorded as interventions with stated_status adopted (published law; no implementation assumed). One item per amended provision or paragraph of new Article 16. The 2015 base law (MKD-GOV-2015-001) was consulted only to explain what deleted or amended points referred to; context is given in extraction_note, not in summaries. One paragraph of new Article 16 (electronic reporting with a digital certificate, item 0014) carries technology theme tags, flagged theme_doubtful; paragraph 16 mentions data exchange between bodies without a system and is not tagged. Header, gazette numbering and signature blocks not extracted. Note that Article 16(12) and 16(14) set different deadlines (30 days and three days) for ending a foreigner's registration; recorded as stated. Revised under extraction rules 0.2: item 0029 (Article 8, renaming of the country in the base law) removed as outside the Chapter 2 boundary, the theme tag on item 0015 removed under the narrower materiality test, and eu_scale.applies_to added (null throughout). Checked under extraction rules 0.3: no changes needed (no 112, EU labour-market access or annex items; no quote over three sentences). G3 review correction: the item removed under rules 0.2 was 0029 (Article 7, secondary legislation within 30 days), not Article 8; Article 8 (renaming) is still item 0030. Article 7 restored as item 0032. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Revised under extraction rules 0.4 and theme list 1.3 for full extraction (30 Oct 2026): status set to complete; location.paragraph now gives the article of the amending law and the provision of Law 217/15 it amends (R23). No item added or removed and no quote changed; all IDs kept. ID 0029 stays retired and is not to be reused (Article 7 is 0032). Every provision stays itemised because this short law was reviewed in that form at G3. Second-pass check done (G3 condition 2)."
   },
   "classification": {
     "status": "not_started"
@@ -90,7 +90,7 @@
         "page": 1,
         "page_end": null,
         "section": "Член 1",
-        "paragraph": null,
+        "paragraph": "Art. 1; amends Art. 7(4) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -154,7 +154,7 @@
         "page": 1,
         "page_end": null,
         "section": "Член 1",
-        "paragraph": null,
+        "paragraph": "Art. 1; amends Art. 7(5) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -218,7 +218,7 @@
         "page": 1,
         "page_end": null,
         "section": "Член 1",
-        "paragraph": null,
+        "paragraph": "Art. 1; new Art. 7(6) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -282,7 +282,7 @@
         "page": 1,
         "page_end": null,
         "section": "Член 1",
-        "paragraph": null,
+        "paragraph": "Art. 1; new Art. 7(7) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -350,7 +350,7 @@
         "page": 1,
         "page_end": null,
         "section": "Член 1",
-        "paragraph": null,
+        "paragraph": "Art. 1; amends Art. 7(6) of Law 217/15, renumbered Art. 7(8)",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -414,7 +414,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 2",
-        "paragraph": null,
+        "paragraph": "Art. 2; deletes Art. 9(4) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -478,7 +478,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 3",
-        "paragraph": null,
+        "paragraph": "Art. 3; amends Art. 13(1) points 3 and 4 of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -542,7 +542,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 3",
-        "paragraph": null,
+        "paragraph": "Art. 3; new Art. 13(1) point 5 of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -606,7 +606,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 3",
-        "paragraph": null,
+        "paragraph": "Art. 3; new Art. 13(1) point 6 of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -674,7 +674,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(1) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -733,7 +733,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(2) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -792,7 +792,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(3) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -856,7 +856,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(4) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -926,7 +926,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(5) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -990,7 +990,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(6) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1049,7 +1049,7 @@
         "page": 2,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(7) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1117,7 +1117,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(8) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1181,7 +1181,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(9) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1240,7 +1240,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(10) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1299,7 +1299,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(11) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1363,7 +1363,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(12) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1427,7 +1427,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(13) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1486,7 +1486,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(14) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1545,7 +1545,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(15) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1609,7 +1609,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 4",
-        "paragraph": null,
+        "paragraph": "Art. 4; new Art. 16(16) of Law 217/15",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1673,7 +1673,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 5",
-        "paragraph": null,
+        "paragraph": "Art. 5",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1732,7 +1732,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 6",
-        "paragraph": null,
+        "paragraph": "Art. 6",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1791,7 +1791,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 7",
-        "paragraph": null,
+        "paragraph": "Art. 7",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1850,7 +1850,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 8",
-        "paragraph": null,
+        "paragraph": "Art. 8",
         "snapshot_file": null
       },
       "quote_verified": true,
@@ -1909,7 +1909,7 @@
         "page": 3,
         "page_end": null,
         "section": "Член 9",
-        "paragraph": null,
+        "paragraph": "Art. 9",
         "snapshot_file": null
       },
       "quote_verified": true,

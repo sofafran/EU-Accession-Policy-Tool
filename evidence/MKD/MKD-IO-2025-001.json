@@ -1,0 +1,589 @@
+{
+  "source_id": "MKD-IO-2025-001",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "5-6 (contents), 15-16 (overview), 31-32, 43-46, 59-60, 66-68, 80-82, 96-98 (North Macedonia country note); keyword screen over all 109 pages, with lines around each match read on the other pages",
+    "codebook_version": "1.2",
+    "themes_version": "1.3",
+    "notes": "Regional report of 109 pages: read the contents, the overview from page 15, the North Macedonia country note and the passages on digitalisation, migration, AI and the jobs strategy, and ran a keyword screen over the whole text (digital, electronic, e-government, online, cyber, AI, interoperability, personal data, broadband, 5G, internet, foreign, migrant, immigration, work permit, third-country, social security, EURES, EHIC). Page numbers are those of the PDF and the converted text, not the printed page numbers. Under the rule for regional documents, only claims naming North Macedonia, or the region where it is named in the passage, are extracted. Item 0004 (Table 1.2, page 46, which does not name North Macedonia) was removed at the second pass under that rule; its ID stays unused and its full text is in review/RUN-2026-01/second_pass/MKD-IO-2025-001.csv for the analyst at G5. LEFT OUT because the passage does not name North Macedonia, for the analyst to confirm: page 60 (foreign-born residents addressing shortages; targeted immigration policies; social security portability for emigrants) and page 80 (simplifying immigration rules; digitalising registration and reporting; digital inspection tools) and pages 81-82 (digital infrastructure, AI and telemedicine, national single windows). Also left out: pages 16 and 43 (lists of five reform areas with no claim beyond page 45), page 66 (online job postings and digital skills demand, not linked to an in-scope recommendation), pages 31-32 (financial inclusion and other digital finance content), page 74 (digitalisation as one form of firm upgrading). ICT employment figures are out of scope. The report contains no claim on foreign workers in North Macedonia specifically, and nothing on EURES, the European Labour Authority or social security coordination in the Chapter 2 sense. Pages 2, 12, 83 and 109 (text recognition) have no quoted content. Second-pass check done (G3 condition 2). Items 0008 and 0009 were added by the second-pass checker."
+  },
+  "classification": {
+    "status": "not_started"
+  },
+  "items": [
+    {
+      "item_id": "MKD-IO-2025-001-0001",
+      "information_type": "intervention",
+      "stated_text": "Montenegro and North Macedonia were approved to join SEPA’s geographic scope in November 2024 and March 2025 respectively",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia was approved to join the geographic scope of the Single Euro Payments Area in March 2025.",
+      "location": {
+        "page": 31,
+        "page_end": null,
+        "section": "Chapter 1, Financial sector is demonstrating resilience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": "2025-03",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Joining the Single Euro Payments Area (SEPA)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: digital finance is out by default and in only for connection to an EU electronic system; unclear whether SEPA counts. Compare MKD-IO-2024-001, which describes joining as still to come.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0002",
+      "information_type": "metric",
+      "stated_text": "Serbia and North Macedonia had the highest use in digital payments in 2024 at 77 and 75 percent respectively, above the ECA region average of 69 percent (Figure B1.3b).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "North Macedonia had 75 percent use of digital payments in 2024, above the 69 percent ECA regional average and second to Serbia.",
+      "location": {
+        "page": 31,
+        "page_end": null,
+        "section": "Box 1.3: Strengthening Financial Inclusion in the Western Balkans",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Use of digital payments",
+        "value": 75,
+        "unit": "percent",
+        "reference_period": "2024"
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: digital finance is out by default, though digital payments are a service the public uses online. The box text defines the indicator as adults making or receiving digital payments.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0003",
+      "information_type": "metric",
+      "stated_text": "Advancing digitalization, through secure digital infrastructure, e-signatures, and intelligent transport systems, could contribute 0.63 pp, with the largest gain in North Macedonia (0.8 pp).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Advancing digitalisation could add 0.63 percentage points to growth across the region, with the largest gain, 0.8 points, in North Macedonia.",
+      "location": {
+        "page": 45,
+        "page_end": null,
+        "section": "Chapter 1, Outlook remains positive while advancing EU convergence is key",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-INFRA",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Projected per capita growth gain from advancing digitalisation",
+        "value": 0.8,
+        "unit": "percentage points",
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": "A simulated projection, not an observed value; Table 1.2 (page 46) gives the assumptions.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0005",
+      "information_type": "finding",
+      "stated_text": "High-risk jobs have risen across the region, especially in Montenegro and North Macedonia, although these two countries still have the lowest shares (Figure 2.36).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Jobs at high risk from AI and automation rose especially in Montenegro and North Macedonia, though their shares remain the lowest in the region.",
+      "location": {
+        "page": 67,
+        "page_end": null,
+        "section": "Chapter 2, Jobs for the future will require stronger digital and green skills",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: concerns the labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0006",
+      "information_type": "finding",
+      "stated_text": "In contrast, the share of high-opportunity jobs has increased in North Macedonia and Bosnia and Herzegovina but declined in the rest of the region.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The share of jobs with high AI opportunity rose in North Macedonia and Bosnia and Herzegovina but fell elsewhere in the region.",
+      "location": {
+        "page": 67,
+        "page_end": null,
+        "section": "Chapter 2, Jobs for the future will require stronger digital and green skills",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Bosnia and Herzegovina",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: same reason as item 0005.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0007",
+      "information_type": "recommendation",
+      "stated_text": "Reforms of public administration, energy sector, digitalization, human capital, and private sector development, as outlined in the EU Growth Reform Plan, are essential to fostering faster convergence with average EU living standards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Reforms including digitalisation, as outlined in the EU Growth Reform Plan, are essential for faster convergence with EU living standards.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "North Macedonia, Key conditions and challenges",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: digitalisation is one of five named reform areas, with no digital content beyond the word.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0008",
+      "information_type": "finding",
+      "stated_text": "Analysis of national labor force surveys suggests that the region’s occupational structure is increasingly exposed to AI, although outcomes differ across countries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Labour force survey analysis suggests the region's occupational structure is increasingly exposed to AI, with differing outcomes across countries.",
+      "location": {
+        "page": 67,
+        "page_end": null,
+        "section": "Chapter 2, Jobs for the future will require stronger digital and green skills",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful",
+        "hedged"
+      ],
+      "extraction_note": "Doubtful: concerns the labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems. Regional claim in the passage that names North Macedonia (items 0005 and 0006).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-IO-2025-001-0009",
+      "information_type": "finding",
+      "stated_text": "High AI exposure is concentrated in skilled sectors such as ICT and finance, but the greatest risk falls on mid-skill jobs (for example, clerical and sales positions) that are highly exposed to automation yet offer little scope for AI complementarity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "High AI exposure is concentrated in ICT and finance, but the greatest risk falls on mid-skill jobs with little AI complementarity.",
+      "location": {
+        "page": 67,
+        "page_end": null,
+        "section": "Chapter 2, Jobs for the future will require stronger digital and green skills",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2025-10",
+        "period_covered": "2024/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Doubtful: concerns the labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems. Regional claim in the passage that names North Macedonia (items 0005 and 0006).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ]
+}
