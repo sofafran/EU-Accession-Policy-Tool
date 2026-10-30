@@ -8,13 +8,13 @@
     "pages_processed": "1-15 (whole document read; only the provisions listed in notes extracted)",
     "codebook_version": "1.2",
     "themes_version": "1.3",
-    "notes": "Whole law read (Official Gazette 217/15, 15 pages) to find the provisions touched by Official Gazette 163/21 (MKD-GOV-2021-001) and 86/25 (MKD-GOV-2025-001). Under logged exception LIM-0019 only those base provisions are extracted, all with scope_basis exception and flag out_of_window; each note says which amendment the provision explains. Article 16(2) and (4) to (7) are not extracted because the 2021 replacement repeats them. Quotes keep the country name as printed. Left out because no 2021 or 2025 amendment touches them, so they fall outside LIM-0019, although they bear on the Chapter 2 boundary or a theme: Art. 3 (ratified treaties), Art. 4(6) (non-discrimination), Art. 5(2) point 1 (foreigners given equality with nationals by a reciprocity agreement with the European Union are outside the quota), Art. 10 (work permit giving free access to the labour market), Art. 20 (personal data), Art. 21(1) and (2) (electronic records of foreigners). Raised for the analyst. Other articles, the signature block and the gazette headers are not extracted. Machine translation by the extracting agent throughout. Second-pass check done (G3 condition 2)."
+    "notes": "Whole law read (Official Gazette 217/15, 15 pages) to find the provisions touched by Official Gazette 163/21 (MKD-GOV-2021-001) and 86/25 (MKD-GOV-2025-001). Under logged exception LIM-0019 only those base provisions are extracted, all with scope_basis exception and flag out_of_window; each note says which amendment the provision explains. Article 16(2) and (4) to (7) are not extracted because the 2021 replacement repeats them. Quotes keep the country name as printed. Left out because no 2021 or 2025 amendment touches them, so they fall outside LIM-0019, although they bear on the Chapter 2 boundary or a theme: Art. 3 (ratified treaties), Art. 4(6) (non-discrimination), Art. 5(2) point 1 (foreigners given equality with nationals by a reciprocity agreement with the European Union are outside the quota), Art. 10 (work permit giving free access to the labour market), Art. 20 (personal data), Art. 21(1) and (2) (electronic records of foreigners). Raised for the analyst. Other articles, the signature block and the gazette headers are not extracted. Machine translation by the extracting agent throughout. Second-pass check done (G3 condition 2). MKD-GOV-2015-001-0026 added at G5 under LIM-0024."
   },
   "classification": {
     "status": "complete",
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
-    "taxonomy_version": "1.0",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
     "classified_at": "2026-10-30",
     "mechanisms_version": "1.0"
   },
@@ -1797,6 +1797,69 @@
         ],
         "classification_status": "auto",
         "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-GOV-2015-001-0026",
+      "information_type": "intervention",
+      "stated_text": "(2) Квотата нема да опфаќа странци:\n1) на кои врз основа на договор за реципроцитет со Европската унија им е дадена еднаквост со државјаните на Република Македонија,",
+      "quote_language": "mk",
+      "translation_en": "(2) The quota shall not cover foreigners:\n1) who, on the basis of a reciprocity agreement with the European Union, have been given equality with the nationals of the Republic of Macedonia,",
+      "machine_translated": true,
+      "summary": "The quota excludes foreigners given equality with nationals under a reciprocity agreement with the European Union.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Утврдување на квоти работни дозволи за странци кои можат да бидат работно ангажирани на територија на Република Македонија",
+        "paragraph": "Art. 5(2) point 1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2015-12-11",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА МАКЕДОНИЈА",
+        "actor_id": "ACT-MKD-0003"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Законот за вработување и работа на странци",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Allowed by LIM-0024, which extends LIM-0019 to this provision (G5-D03).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MKD-0001"
+        ],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Bears on the confirmed contradiction between MKD-EU-2024-001-0058 and MKD-EU-2025-003-0010 (G5-D03)."
       }
     }
   ]

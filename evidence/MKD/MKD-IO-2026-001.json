@@ -8,13 +8,13 @@
     "pages_processed": "1-9",
     "codebook_version": "1.2",
     "themes_version": "1.3",
-    "notes": "Read in full (nine pages; page 9 is references). Whole document concerns foreign workers in the Western Balkans, so items are Chapter 2 where they concern access to the labour market and rights of foreign workers. Under the rule for regional documents, extracted: claims naming North Macedonia and regional claims in the same section of findings. The Roadmap (pages 7-8) does not name North Macedonia. Its six items (0024 to 0029) were removed at the second pass under the rule for regional documents; their IDs stay unused and their full text is in review/RUN-2026-01/second_pass/MKD-IO-2026-001.csv for the analyst at G5. The highest ID ever used is 0029, so any new item must start at 0030. LEFT OUT as not naming North Macedonia: the recruitment findings on page 5 (unlicensed brokers, debt, monitoring of licensed agencies), which name other countries; claims about emigration from the region (page 2, out under the Chapter 2 boundary); country examples for Albania, Bosnia and Herzegovina, Kosovo, Montenegro and Serbia. Table 1 (page 4) rows that restate the running text are not extracted again, apart from row 5, which adds a claim (EU alignment, database access). This is a policy summary; the full PSIMM report is not in the source set. Second-pass check done (G3 condition 2)."
+    "notes": "Read in full (nine pages; page 9 is references). Whole document concerns foreign workers in the Western Balkans, so items are Chapter 2 where they concern access to the labour market and rights of foreign workers. Under the rule for regional documents, extracted: claims naming North Macedonia and regional claims in the same section of findings. The Roadmap (pages 7-8) does not name North Macedonia. Its six items (0024 to 0029) were removed at the second pass under the rule for regional documents; their IDs stay unused and their full text is in review/RUN-2026-01/second_pass/MKD-IO-2026-001.csv for the analyst at G5. The highest ID ever used is 0029, so any new item must start at 0030. LEFT OUT as not naming North Macedonia: the recruitment findings on page 5 (unlicensed brokers, debt, monitoring of licensed agencies), which name other countries; claims about emigration from the region (page 2, out under the Chapter 2 boundary); country examples for Albania, Bosnia and Herzegovina, Kosovo, Montenegro and Serbia. Table 1 (page 4) rows that restate the running text are not extracted again, apart from row 5, which adds a claim (EU alignment, database access). This is a policy summary; the full PSIMM report is not in the source set. Second-pass check done (G3 condition 2). Items removed at the second pass restored at G5 (G5-D02) and marked as regional."
   },
   "classification": {
     "status": "complete",
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
-    "taxonomy_version": "1.0",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
     "classified_at": "2026-10-30",
     "mechanisms_version": "1.0"
   },
@@ -73,7 +73,7 @@
         "reference_period": "2018 to 2024"
       },
       "flags": [],
-      "extraction_note": "Regional figure; no figure for North Macedonia is given. Also in the graphic on the same page.",
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Regional figure; no figure for North Macedonia is given. Also in the graphic on the same page.",
       "pass2": {
         "chain_link": "implementation",
         "reform_issue_ids": [
@@ -538,7 +538,7 @@
         "reported_view",
         "hedged"
       ],
-      "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3.",
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3.",
       "pass2": {
         "chain_link": "unresolved_gap",
         "reform_issue_ids": [
@@ -604,15 +604,17 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3. The passage continues on page 6, where North Macedonia is named.",
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3. The passage continues on page 6, where North Macedonia is named.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [
           "MEC-03"
         ],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Post-admission phase; regional passage."
       }
     },
@@ -675,15 +677,17 @@
       "flags": [
         "theme_doubtful"
       ],
-      "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3. Theme doubtful: non-interoperable data is one of several factors and the passage names no system.",
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3. Theme doubtful: non-interoperable data is one of several factors and the passage names no system.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [
           "MEC-07"
         ],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Theme test not met for TECH-INTEROP (one of several factors, names no system), so RI-TEC-028 is not assigned; in scope on chapter."
       }
     },
@@ -744,13 +748,15 @@
       "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [
           "MEC-03",
           "MEC-04"
         ],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Regional passage."
       }
     },
@@ -811,10 +817,12 @@
       "extraction_note": null,
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Names North Macedonia."
       }
     },
@@ -875,10 +883,12 @@
       "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Regional passage."
       }
     },
@@ -939,12 +949,14 @@
       "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [
           "MEC-12"
         ],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Regional passage."
       }
     },
@@ -1005,10 +1017,12 @@
       "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Employer-tied permits touch RI-FMW-002, but the claim is about safe reporting. Regional passage."
       }
     },
@@ -1135,10 +1149,12 @@
       "extraction_note": null,
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Names North Macedonia."
       }
     },
@@ -1541,13 +1557,379 @@
       "extraction_note": "Regional passage; North Macedonia is named in this section of the findings, and it is one of the partners listed on page 3. Kept from the summary table because 'EU-aligned' and 'database access' are not in the running text. Regional: the source does not say that North Macedonia's laws are EU-aligned.",
       "pass2": {
         "chain_link": "unresolved_gap",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [
           "MEC-03"
         ],
         "intervention_ids": [],
-        "classification_status": "queued_unmatched",
+        "classification_status": "analyst_resolved",
         "classification_note": "Regional: the source does not say that North Macedonia's laws are EU-aligned."
+      }
+    },
+    {
+      "item_id": "MKD-IO-2026-001-0024",
+      "information_type": "recommendation",
+      "stated_text": "The Roadmap proposes: extending existing approaches by replacing administratively-set quotas with planning grounded in integrated labour market data, introducing shortage occupation lists as an alternative or complement to rigid quota systems: establishing formal processes for sectoral labour market analysis, with clearly defined roles and regular review cycles; incorporating outbound mobility trends into planning.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Replace administrative quotas with data-based planning, introduce shortage occupation lists, set up formal sectoral labour market analysis, and include outbound mobility in planning.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "A Roadmap to Reform, 1 Evidence-based labour migration policy design",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-07",
+        "period_covered": "2025-10/2026-02",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Centre for Migration Policy Development",
+        "actor_id": "ACT-INT-0014"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Restored at G5.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Restored at G5 (G5-D02)."
+      }
+    },
+    {
+      "item_id": "MKD-IO-2026-001-0025",
+      "information_type": "recommendation",
+      "stated_text": "The Roadmap proposes: minimum due diligence requirements for employers and intermediaries before they can participate in recruitment; strengthening pre-licensing and periodic inspections and ongoing monitoring of private employment agencies, moving beyond administrative compliance towards substantive assessment of recruitment practices;  establishing registers of sanctioned or non-compliant actors to enable risk-based targeting; introducing trusted-actor frameworks for accredited employers and agencies with strong compliance records to streamline procedures for those who meet ethical standards;  clarifying of the legal status of agencies registered abroad that currently fall entirely outside domestic oversight.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Set due diligence for recruiters, strengthen agency inspection and monitoring, register sanctioned actors, create trusted-actor frameworks, clarify the status of agencies registered abroad.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "A Roadmap to Reform, 2 Oversight of recruitment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-07",
+        "period_covered": "2025-10/2026-02",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Centre for Migration Policy Development",
+        "actor_id": "ACT-INT-0014"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Restored at G5.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Restored at G5 (G5-D02)."
+      }
+    },
+    {
+      "item_id": "MKD-IO-2026-001-0026",
+      "information_type": "recommendation",
+      "stated_text": "The Roadmap proposes: introducing a unique foreign worker identifier linking permit records, employment status, social insurance registration, and inspection findings across institutions; establishing structured mandatory reporting of employment commencement and termination; creating regulated pathways for workers to change employers without losing legal status; using risk-based inspections to identify permit non-activation and early contract termination patterns systematically rather than reactively.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Introduce a unique foreign worker identifier linking records across institutions, mandatory employment reporting, regulated employer change without losing status, and risk-based inspections.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "A Roadmap to Reform, 3 Post-entry visibility & follow-up",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter",
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-07",
+        "period_covered": "2025-10/2026-02",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Centre for Migration Policy Development",
+        "actor_id": "ACT-INT-0014"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Restored at G5.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Restored at G5 (G5-D02)."
+      }
+    },
+    {
+      "item_id": "MKD-IO-2026-001-0027",
+      "information_type": "recommendation",
+      "stated_text": "The Roadmap proposes: mapping and formalising handover points between institutions at each stage of the migration pathway, including tax authorities, social insurance bodies, and business registries within operational coordination frameworks; introducing routine coordination mechanisms linking frontline implementation with policy decision-making; establishing data governance frameworks defining accesses to information, purpose, and accountability mechanisms.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Formalise institutional handover points, add routine coordination mechanisms, and establish data governance frameworks defining access, purpose and accountability.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "A Roadmap to Reform, 4 Institutional communication & information exchange",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter",
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-07",
+        "period_covered": "2025-10/2026-02",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Centre for Migration Policy Development",
+        "actor_id": "ACT-INT-0014"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Restored at G5.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Restored at G5 (G5-D02)."
+      }
+    },
+    {
+      "item_id": "MKD-IO-2026-001-0028",
+      "information_type": "recommendation",
+      "stated_text": "The Roadmap proposes: providing workers upon arrival with rights and obligations information in accessible language and format upon arrival; connecting complaint mechanisms to social protection and anti-trafficking referral pathways; introducing clear, confidential complaint channels with guaranteed non-retaliation; providing employers with sector-specific guidance on legal obligations, connecting non-compliance to graduated, proportionate follow-up rather than enforcement-only responses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Give workers accessible rights information on arrival, link complaints to protection referrals, guarantee confidential non-retaliatory channels, and give employers guidance with graduated follow-up.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "A Roadmap to Reform, 5 Improving access to safeguards for workers & employers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-07",
+        "period_covered": "2025-10/2026-02",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Centre for Migration Policy Development",
+        "actor_id": "ACT-INT-0014"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Restored at G5.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Restored at G5 (G5-D02)."
+      }
+    },
+    {
+      "item_id": "MKD-IO-2026-001-0029",
+      "information_type": "recommendation",
+      "stated_text": "The Roadmap proposes: strengthening bilateral labour cooperation, mechanisms and agency oversight; aligning pre-departure information with guidance from Western Balkan destinations; expanding consular coordination; incorporating joint frameworks for identifying and supporting victims of exploitation and trafficking.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Strengthen bilateral labour cooperation and agency oversight, align pre-departure information, expand consular coordination, and add joint frameworks for supporting victims of exploitation.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "A Roadmap to Reform, 6 Cooperation with countries of origin",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-07",
+        "period_covered": "2025-10/2026-02",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Centre for Migration Policy Development",
+        "actor_id": "ACT-INT-0014"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Regional claim that does not name North Macedonia; may support an issue but cannot alone support a finding about the country (G5-D02). Restored at G5.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "analyst_resolved",
+        "classification_note": "Restored at G5 (G5-D02)."
       }
     }
   ]

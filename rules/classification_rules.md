@@ -1,6 +1,6 @@
 # Classification rules (pass 2)
 
-Version 0.2, 29 October 2026. Status: draft, to be refined at gates G4 and G5. Changes create a new version and are listed in the change log at the end of this file.
+Version 0.3, 30 October 2026. Status: approved at G5 (GATE-0006). Changes create a new version and are listed in the change log at the end of this file.
 
 Pass 2 adds the interpretive layer to evidence items that have passed pass 1. It implements Codebook 5. It never changes the pass 1 fields (quote, type, location, dates, stated status). If a pass 1 error is found, it is recorded in the review queue for correction under the extraction rules rather than silently fixed.
 
@@ -80,7 +80,19 @@ Every item starts with `classification_status` `not_classified` (set in pass 1) 
 - `out_of_scope`: fails the scope check in section 5; waiting for the analyst at G5.
 - `analyst_resolved`: decided by the analyst, who is recorded in the gate log.
 
+## 8. Rulings from G5
+
+- **Chapter-level ratings:** a rating of a whole chapter, or a general statement such as "previous recommendations remain valid", fits no single issue. Leave `reform_issue_ids` empty, with a note. A rating of a sub-area that matches an issue goes to that issue.
+- **Non-EU findings:** a finding on how a named intervention is applied takes `implementation`, whether or not a classifier listed the intervention. Check this against the text, not the intervention list alone.
+- **Versions of one report:** two versions of the same document are one source. Record `version_of` in the register and link their items with `same_as_earlier`. They never corroborate each other.
+- **Regional evidence:** a claim about a whole region that does not name the target country may be kept, marked as regional in `extraction_note`. It may support an issue but cannot alone support a finding about the country.
+- **Military and classified systems:** out of scope. **Digital education:** out of scope under R2. **Government-wide inspection systems framed as digital government:** in scope.
+- **Same-sentence check:** before a gate, check that identical sentences are not classified differently without a reason.
+- **Problems the EU material does not raise:** they create no issue. List them in the outputs.
+
 ## Change log
+
+- 0.3 (30 Oct 2026): approved at G5 (GATE-0006). Section 8 added (decisions G5-D02, D07, D08, D05 and D14).
 
 - 0.2 (29 Oct 2026): `same_as_earlier` also links a claim repeated in two places of one document (extraction rules 0.2, rule issue R10).
 - 0.1b (29 Oct 2026): pre-G0 reconfiguration of the pilot (decisions A5 to A9 and D6). Country-neutral wording; scope check (section 5) and `out_of_scope` status for cross-cutting themes and chain items; former names of the country recorded on actors.

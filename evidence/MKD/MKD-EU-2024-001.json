@@ -13,8 +13,8 @@
   "classification": {
     "status": "complete",
     "run_id": "RUN-2026-01",
-    "rules_version": "0.2",
-    "taxonomy_version": "1.0",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
     "classified_at": "2026-10-30",
     "mechanisms_version": "1.0"
   },
@@ -4659,12 +4659,14 @@
       "extraction_note": "Theme doubtful: setting up a register is a TECH-DATA material example, but the text does not say whether the register is electronic or how its data are governed.",
       "pass2": {
         "chain_link": "country_response",
-        "reform_issue_ids": [],
+        "reform_issue_ids": [
+          "RI-FMW-009"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [
           "INT-MKD-0055"
         ],
-        "classification_status": "queued_ambiguous",
+        "classification_status": "analyst_resolved",
         "classification_note": "The text does not say whether the register is electronic: RI-FMW-009 if it is an administrative measure for coordination, RI-FMW-010 if it serves electronic exchange. In scope on chapter basis either way; the choice decides whether the law counts towards the technology chain"
       }
     },

@@ -1,11 +1,11 @@
 # Run record: RUN-2026-01
 
-Status: **in progress: stage 9, G5 package ready (4,399 items classified; G4 passed, GATE-0005)**
+Status: **in progress: stage 10, first-cut assessment (G5 passed, GATE-0006)**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-01 |
-| Current stage | 9 Classify and link (started 2026-10-30; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
+| Current stage | 10 First-cut assessment (started 2026-10-30; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
 | Purpose | Alpha product and methodology test. Run 1 produces a North Macedonia diagnostic (run 1a) and a comparator pilot (run 1b), and tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, outputs, and the usefulness of the review page. Lessons are recorded in the alpha learning log to inform scaling to further chapters, clusters and countries |
 | Target country | North Macedonia (MKD) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -19,10 +19,10 @@ Status: **in progress: stage 9, G5 package ready (4,399 items classified; G4 pas
 | Alpha learning log | `runs/RUN-2026-01/alpha_learning_log.csv` |
 | Codebooks version | 1.2 (Codebooks 1 to 6), 1.1 (Codebook 7) |
 | Extraction rules version | 0.4 (approved at G3, GATE-0004) |
-| Classification rules version | 0.2 |
+| Classification rules version | 0.3 (approved at G5, GATE-0006) |
 | Judgement rules version | 0.2 |
 | Theme list version | 1.3 (`taxonomy/themes.csv`; examples added for rule issues R1, R2, R12, R20, R21 and R22) |
-| Taxonomy version | 1.0 (approved at G4, GATE-0005) |
+| Taxonomy version | 1.1 (approved at G5, GATE-0006) |
 | Mechanism list version | 1.0 (approved at G4, GATE-0005) |
 | Data dictionary version | 1.3 (30 Oct 2026) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
@@ -65,5 +65,5 @@ These settings apply the country-neutral procedures to this run.
 - **Alpha set-up (29 Oct 2026), confirmed by Sofia:** run 1 is treated as an alpha product and methodology test (E6); a single review page, `index.html`, shows validated material and labelled work in progress but is not the gate-decision mechanism (E7); an alpha learning log holds curated lessons, while `run_notes.md` stays the raw working diary (E8); George is an alpha reviewer, with formal gate responsibilities unchanged (E9). These were folded into the current pre-G0 versions.
 
 - **G0 (29 Oct 2026):** passed with conditions (GATE-0001). The condition on the alpha lessons was met the same day: Sofia reviewed plain-language versions and set ALN-0001 and ALN-0003 to `implemented` and ALN-0002 to `accepted` (to be checked at G3 and G5). The other conditions stay open: verify the accession and cluster status at stage 1; leave the area codes to G4; keep the process flow gap recorded.
-- Active limits for this run are listed in `registers/limits_log.csv` (LIM-0008 to LIM-0023). LIM-0001 to LIM-0006 were recorded for the earlier Serbia configuration, and LIM-0007 before the review page was agreed; all were superseded on 29 Oct 2026, before G0.
+- Active limits for this run are listed in `registers/limits_log.csv` (LIM-0008 to LIM-0025). LIM-0001 to LIM-0006 were recorded for the earlier Serbia configuration, and LIM-0007 before the review page was agreed; all were superseded on 29 Oct 2026, before G0.
 - On 29 Oct 2026, before G0 and before any acquisition or extraction, the pilot was reconfigured from Serbia, Chapter 5 (Public procurement) to the scope above. The run kept its ID. Decisions behind this scope are recorded in `decisions/decision_log.md` (A5 to A9, D6, E5 to E9 and F2).
