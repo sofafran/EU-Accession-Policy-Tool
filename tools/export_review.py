@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.5.1"
+__version__ = "1.6.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -442,7 +442,9 @@ def g4(root, run):
     issue_rows = []
     for r in sorted(issues, key=lambda r: (r["status"] != "draft", r["issue_id"])):
         ids = by_issue.get(r["issue_id"], [])
-        issue_rows.append([r[h] for h in is_h] + [str(len(ids)), "", ""])
+        recs = [i for i in ids if items.get(i, {}).get("information_type") == "recommendation"]
+        firm = [i for i in recs if "theme_doubtful" not in items[i]["flags"]]
+        issue_rows.append([r[h] for h in is_h] + [str(len(ids)), str(len(recs)), str(len(firm)), "", ""])
     sample_rows = []
     for r in issues:
         for iid in by_issue.get(r["issue_id"], [])[:5]:
@@ -459,8 +461,11 @@ def g4(root, run):
     for f in sorted(spdir.glob("*.csv")) if spdir.exists() else []:
         c = Counter(r["action"] for r in read_csv(f)[1])
         sp.append([f.stem, c.get("added_missed", 0), c.get("split", 0)])
+    dec_path = root / "review" / run / "G4_decisions.csv"
+    dec_h, decisions = read_csv(dec_path) if dec_path.exists() else ([], [])
     return "G4_taxonomy.xlsx", [
-        ("Reform issues", is_h + ["EU requirement items", "reviewer_decision", "reviewer_comment"], issue_rows),
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Reform issues", is_h + ["EU requirement items", "recommendations", "recommendations not theme_doubtful", "reviewer_decision", "reviewer_comment"], issue_rows),
         ("Items under each issue", ["issue_id", "label", "item_id", "type", "quote", "English (machine translation)", "source"], sample_rows),
         ("Items fitting no issue", ["item_id", "type", "quote", "note"], unmatched),
         ("Mechanisms", me_h + ["reviewer_decision", "reviewer_comment"], [[m[h] for h in me_h] + ["", ""] for m in mechs]),

@@ -369,6 +369,15 @@ def main():
             ok = wb4.sheetnames[0] == "Reform issues" and wb4["Reform issues"].cell(2, 15).value == "1" and wb4["Items fitting no issue"].cell(2, 1).value == f"{sid}-0006"
         check("export_review.py", "G4 package: issues with item counts and items fitting no issue", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
+        (rv / "G4_decisions.csv").write_text("decision_id,decision_needed\nG4-D01,Test decision\n", encoding="utf-8")
+        r = run(proj, "export_review.py", "G4")
+        ok = r.returncode == 0 and (rv / "G4_taxonomy.xlsx").exists()
+        if ok:
+            wb4 = load_workbook(rv / "G4_taxonomy.xlsx")
+            ok = wb4.sheetnames[:2] == ["Decisions needed", "Reform issues"] and wb4["Decisions needed"].cell(2, 1).value == "G4-D01"
+        check("export_review.py", "G4 package: decisions needed come first when listed", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "G4_decisions.csv").unlink()
+        (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
         lines = (proj / "taxonomy" / "reform_issues.csv").read_text(encoding="utf-8").splitlines()
         (proj / "taxonomy" / "reform_issues.csv").write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")
 

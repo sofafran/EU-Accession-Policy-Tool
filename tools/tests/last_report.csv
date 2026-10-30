@@ -1,9 +1,9 @@
 tool,test,result,detail
-hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmp4f0o3yh2/samples/a.txt
+hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmpq_f9pd33/samples/a.txt
 "
 next_id.py,next limit after the highest recorded,pass,"LIM-0024
 "
-next_id.py,next lesson after the highest recorded,pass,"ALN-0020
+next_id.py,next lesson after the highest recorded,pass,"ALN-0021
 "
 next_id.py,first source ID,pass,"MKD-EU-2025-001
 "
@@ -13,10 +13,10 @@ next_id.py,next item after the highest in the file,pass,"MKD-EU-2025-004-0008
 "
 next_id.py,"refuses a source ID without country, family and year",pass,
 convert_to_text.py,text PDF: page markers and text,pass,
-convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmp4f0o3yh2/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
+convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmpq_f9pd33/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
 "
 convert_to_text.py,original file unchanged,pass,
-convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmp4f0o3yh2/samples/scan.txt: 1 page(s)
+convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmpq_f9pd33/samples/scan.txt: 1 page(s)
 ocr: text recognition used on page(s) 1 (mkd+eng); note 'ocr' in the register
 "
 convert_to_text.py,scanned PDF: Macedonian Cyrillic recognised,pass,"=== PAGE 1 ===
@@ -44,7 +44,7 @@ verify_quotes.py,page break with numbered running header and footnotes between t
 verify_quotes.py,exit status 1 when any quote fails,pass,
 verify_quotes.py,report written,pass,
 verify_quotes.py,"webpage: quote in cited section passes, other section fails",pass,"[True, False]"
-validate_data.py,clean sample project passes,pass,"validate_data 1.2.0: 1 evidence file(s), 4 item(s), 353 CSV row(s)
+validate_data.py,clean sample project passes,pass,"validate_data 1.2.0: 1 evidence file(s), 4 item(s), 357 CSV row(s)
 warning: judgements/judgements.csv: no committed version to compare with; protection check skipped
 warning: judgements/source_quality.csv: no committed version to compare with; protection check skipped
 0 error(s), 2 warning(s)
@@ -59,7 +59,7 @@ error: MKD-EU-2025-001-0001: unknown reform issue RI-FMW-999
 3 error(s), 3 warning(s)
 "
 validate_data.py,CSV header mismatch with data dictionary detected,pass,
-validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.2.0: 1 evidence file(s), 4 item(s), 354 CSV row(s)
+validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.2.0: 1 evidence file(s), 4 item(s), 358 CSV row(s)
 warning: judgements/judgements.csv: JDG-000001 is validated but its value has changed; restore it and propose a new row instead
 0 error(s), 1 warning(s)
 "
@@ -73,7 +73,9 @@ export_review.py,G3: agent items in a passage are withheld until it is hand-code
 export_review.py,hand-coding workbook is not overwritten without --force,pass,
 export_review.py,"review sample builds, leaves out passage items not yet hand-coded",pass,
 export_review.py,"G3: comparison finds matched, missed and extra items once hand-coded",pass,"['matched', 'missed by the agent', 'extra in the agent output']"
-export_review.py,G4 package: issues with item counts and items fitting no issue,pass,"wrote /tmp/tmp4f0o3yh2/proj/review/RUN-2026-01/G4_taxonomy.xlsx (8 sheets)
+export_review.py,G4 package: issues with item counts and items fitting no issue,pass,"wrote /tmp/tmpq_f9pd33/proj/review/RUN-2026-01/G4_taxonomy.xlsx (8 sheets)
+"
+export_review.py,G4 package: decisions needed come first when listed,pass,"wrote /tmp/tmpq_f9pd33/proj/review/RUN-2026-01/G4_taxonomy.xlsx (9 sheets)
 "
 build_review_page.py,page builds,pass,
 build_review_page.py,G0 shown as pending review while its package awaits decision,pass,

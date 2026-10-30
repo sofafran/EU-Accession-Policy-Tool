@@ -1,11 +1,11 @@
 # Run record: RUN-2026-01
 
-Status: **in progress: stage 7, G4 package ready (G3 passed with conditions, GATE-0004)**
+Status: **in progress: stage 8, full extraction (G4 passed, GATE-0005)**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-01 |
-| Current stage | 7 EU extraction and taxonomy (started 2026-10-29; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
+| Current stage | 8 Full extraction (started 2026-10-30; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
 | Purpose | Alpha product and methodology test. Run 1 produces a North Macedonia diagnostic (run 1a) and a comparator pilot (run 1b), and tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, outputs, and the usefulness of the review page. Lessons are recorded in the alpha learning log to inform scaling to further chapters, clusters and countries |
 | Target country | North Macedonia (MKD) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -22,11 +22,11 @@ Status: **in progress: stage 7, G4 package ready (G3 passed with conditions, GAT
 | Classification rules version | 0.2 |
 | Judgement rules version | 0.2 |
 | Theme list version | 1.3 (`taxonomy/themes.csv`; examples added for rule issues R1, R2, R12, R20, R21 and R22) |
-| Taxonomy version | none yet (created at G4) |
-| Mechanism list version | 0.1a draft (approved at G4) |
-| Data dictionary version | 1.2 (29 Oct 2026) |
+| Taxonomy version | 1.0 (approved at G4, GATE-0005) |
+| Mechanism list version | 1.0 (approved at G4, GATE-0005) |
+| Data dictionary version | 1.3 (30 Oct 2026) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.5.1 (adds the G4 taxonomy package); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.1 (analysis mock-up page, decision E11); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`, `next_id.py`; 56 of 56 tests passed on 29 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.6.0 (G4 taxonomy package, with a decisions sheet first and recommendation counts per issue); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.1 (analysis mock-up page, decision E11); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`, `next_id.py`; 57 of 57 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | |
 
@@ -51,7 +51,7 @@ These settings apply the country-neutral procedures to this run.
   - RES and CSO: analyses and monitoring of labour mobility, digital government, data protection, digital rights and the use of AI in North Macedonia.
 - **Original-language titles:** search hints include the Macedonian title, and the Albanian title where relevant.
 - **Text recognition languages:** English, Macedonian (Cyrillic) and Albanian.
-- **Reform-issue area codes (unresolved, decided at G4):** `FMW` for Chapter 2 issues and `TEC` for technology and AI issues are proposals only. They will be decided at G4 in the light of the evidence and the draft taxonomy.
+- **Reform-issue area codes (approved at G4, GATE-0005):** `FMW` for Chapter 2 issues and `TEC` for technology and AI issues.
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # Data dictionary
 
-Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
@@ -149,8 +149,8 @@ Curated, material lessons from an alpha run, especially those that matter for sc
 | issue_id | `RI-AREA-NNN` |
 | label | Short name |
 | definition | One or two sentences |
-| cluster | Cluster number |
-| chapters | Chapters, semicolon-separated |
+| cluster | Cluster number; blank if the issue spans clusters |
+| chapters | Chapters, semicolon-separated; blank if the evidence states no chapter |
 | themes | Theme codes, semicolon-separated (blank if none) |
 | mechanism_ids | Usual mechanisms, semicolon-separated |
 | example_item_ids | Two or three evidence items that illustrate it |
