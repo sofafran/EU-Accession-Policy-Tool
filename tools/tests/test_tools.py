@@ -94,9 +94,10 @@ def main():
             (shutil.copytree if src.is_dir() else shutil.copy2)(src, proj / name)
         samples = Path(tmp) / "samples"
         samples.mkdir()
-        # The real taxonomy refers to real evidence items, which are not copied; start the sample project with an empty one.
-        ri = proj / "taxonomy" / "reform_issues.csv"
-        ri.write_text(ri.read_text(encoding="utf-8").splitlines()[0] + "\n", encoding="utf-8")
+        # The real taxonomy, queues, links and entities refer to real evidence items, which are not copied; start the sample project with empty ones, and likewise the queues, links and entities.
+        for rel in ("taxonomy/reform_issues.csv", "taxonomy/unmatched_queue.csv", "taxonomy/ambiguous_queue.csv", "links/links.csv", "entities/interventions.csv", "entities/actors.csv"):
+            ri = proj / rel
+            ri.write_text(ri.read_text(encoding="utf-8").splitlines()[0] + "\n", encoding="utf-8")
 
         # hash_file
         f = samples / "a.txt"
