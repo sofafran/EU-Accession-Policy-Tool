@@ -8,10 +8,15 @@
     "pages_processed": "1-55",
     "codebook_version": "1.2",
     "themes_version": "1.3",
-    "notes": "Pass 1 full extraction under rules 0.4 from the converted text file (text-file page = printed page + 2). Read the cover note, table of contents, executive summary (pp. 4-6), section 4 key structural challenges (pp. 16-29, including the indicator table), section 5 on the 2022 policy guidance (pp. 30-34), Annex A (pp. 35-45), Annex B indicators (pp. 46-49), Annex C (p. 50) and Annex D (pp. 51-53); remaining pages scanned by keyword. No acquis chapter structure and no Chapter 2 material, so cluster and chapter are empty and all items are in scope on theme. Left out as outside the materiality test: the Public Revenue Office digital transformation and integrated IT tax system (PG 1 and measure 19, tax IT upgrades), IFMIS and the digitalisation of public financial management (back-office), the state aid management information system and registry (measure 14), the parafiscal charges web-portal (publishing online), the online business-to-business supplier portal and digital sales channels mentioned within FDI linkage and export policy, the electronic system for guarantees of origin in energy, the hybrid fund for green and digital start-ups, and stand-alone digital skills passages (the country report's call for a digital skills strategy and the survey on employees' digital skills). In the policy guidance table (page 32), the sentences on registered users and informational services restate page 22 and are not extracted again. Policy guidance scores are the Commission's PG scale, so eu_scale is left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+    "notes": "Pass 1 full extraction under rules 0.4 from the converted text file (text-file page = printed page + 2). Read the cover note, table of contents, executive summary (pp. 4-6), section 4 key structural challenges (pp. 16-29, including the indicator table), section 5 on the 2022 policy guidance (pp. 30-34), Annex A (pp. 35-45), Annex B indicators (pp. 46-49), Annex C (p. 50) and Annex D (pp. 51-53); remaining pages scanned by keyword. No acquis chapter structure and no Chapter 2 material, so cluster and chapter are empty and all items are in scope on theme. Left out as outside the materiality test: the Public Revenue Office digital transformation and integrated IT tax system (PG 1 and measure 19, tax IT upgrades), IFMIS and the digitalisation of public financial management (back-office), the state aid management information system and registry (measure 14), the parafiscal charges web-portal (publishing online), the online business-to-business supplier portal and digital sales channels mentioned within FDI linkage and export policy, the electronic system for guarantees of origin in energy, the hybrid fund for green and digital start-ups, and stand-alone digital skills passages (the country report's call for a digital skills strategy and the survey on employees' digital skills). In the policy guidance table (page 32), the sentences on registered users and informational services restate page 22 and are not extracted again. Policy guidance scores are the Commission's PG scale, so eu_scale is left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/. MKD-EU-2023-006-0045 added from the stage 9 recheck. MKD-EU-2023-006-0046 added from the stage 9 recheck. MKD-EU-2023-006-0047 added from the stage 9 recheck. MKD-EU-2023-006-0048 added from the stage 9 recheck. MKD-EU-2023-006-0049 added from the stage 9 recheck."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -74,12 +79,14 @@
       ],
       "extraction_note": "Digital transition is one item in a list of business environment weaknesses; materiality doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met narrowly: named as one factor in a list, but it matches the RI-TEC-033 definition on competitiveness; no further digital content"
       }
     },
     {
@@ -116,12 +123,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -142,12 +149,14 @@
       ],
       "extraction_note": "Promoting the digital transition is one item in a list; materiality doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met narrowly: named as one factor in a list, but it matches the RI-TEC-033 definition on competitiveness; promoting the digital transition is one measure among several"
       }
     },
     {
@@ -184,12 +193,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "National e-services portal (www.uslugi.gov.mk)",
@@ -208,11 +217,15 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0004 (finding).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -250,12 +263,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -274,11 +287,13 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0003 (intervention).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -317,12 +332,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -343,12 +358,14 @@
       ],
       "extraction_note": "Digitalisation is one item in a list of factors; materiality doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met narrowly: named as one factor in a list, but it matches the RI-TEC-033 definition on competitiveness; could not clearly be assigned to RI-TEC-003, as digitalising public administration is general and not about services"
       }
     },
     {
@@ -385,12 +402,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -409,11 +426,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -451,12 +470,12 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -478,12 +497,12 @@
       ],
       "extraction_note": "The Commission cites Finance Think (2022). Digitalisation of public administration is one example among several; materiality doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: digitalising public administration is one example among several in a claim about the informal sector"
       }
     },
     {
@@ -521,12 +540,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -545,12 +564,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 fit is loose: digitalising public administration is general; no 5G security claim, so RI-TEC-024 not used"
       }
     },
     {
@@ -587,12 +609,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -611,11 +633,13 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0010 (finding). Reference period not stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -653,12 +677,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -677,11 +701,13 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0009 (metric).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -719,12 +745,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Upgrade of the e-portal",
@@ -743,11 +769,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0125"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -785,12 +815,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -809,11 +839,15 @@
       "flags": [],
       "extraction_note": "Also at page 32 (policy guidance table).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -851,12 +885,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -875,11 +909,13 @@
       "flags": [],
       "extraction_note": "The Commission cites OECD (2022). Also at page 32 (policy guidance table).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -917,7 +953,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -941,11 +977,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-11",
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -988,7 +1029,7 @@
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1010,12 +1051,14 @@
       ],
       "extraction_note": "Digital skills tied to the use of online services; whether this meets the digital skills link test is for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: digital skills are tied directly to using online services (R2)"
       }
     },
     {
@@ -1053,12 +1096,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1079,12 +1122,14 @@
       ],
       "extraction_note": "Two linked sentences making one argument; the first cites ÖGfE (2022). Could be read as a lesson; kept as a finding because it states no specific experience.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Loose fit: a general argument for digital services; could not be clearly tied to the range or use of services"
       }
     },
     {
@@ -1122,12 +1167,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1146,11 +1191,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1193,7 +1241,7 @@
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "ERP measure 10: Broadening the scope of digital services provided on the national e-service portal",
@@ -1214,11 +1262,15 @@
       ],
       "extraction_note": "Measure of the government's programme as reported by the Commission.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0459"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1257,12 +1309,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1281,12 +1333,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement on the potential of regional cooperation; fits no issue"
       }
     },
     {
@@ -1328,7 +1380,7 @@
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1349,11 +1401,13 @@
       ],
       "extraction_note": "Footnote 14. E-commerce read as digitalisation of economic activity.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1391,12 +1445,12 @@
       },
       "speaker": {
         "name_as_stated": "Economic and Financial Dialogue",
-        "actor_id": null
+        "actor_id": "ACT-EU-0013"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1418,11 +1472,13 @@
       ],
       "extraction_note": "Text of the 2022 policy guidance (PG 4, point 2) in the Commission's assessment table; adopted at the Economic and Financial Dialogue of 24 May 2022 (section introduction, page 30).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1460,12 +1516,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1486,11 +1542,13 @@
       ],
       "extraction_note": "'Partial implementation' is the policy guidance scoring scale. Second pass (R23): the same sentence also states an intervention (upgrading the e-portal), now item -0044; both items quote the whole sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1533,7 +1591,7 @@
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1554,11 +1612,13 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1596,12 +1656,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1620,11 +1680,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1663,12 +1725,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1687,11 +1749,17 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0026 (recommendation).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0001",
+          "INT-INT-0006"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1729,12 +1797,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1753,11 +1821,13 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0025 (finding).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1796,12 +1866,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1820,11 +1890,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0078"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1862,12 +1939,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1888,12 +1965,17 @@
       ],
       "extraction_note": "Tax e-services used by taxpayers are digital government. Could also be a finding; outcome chosen because a result of named e-services is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0146",
+          "INT-MKD-0334"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Taxpayer e-services"
       }
     },
     {
@@ -1930,12 +2012,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1954,11 +2036,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1996,12 +2080,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2020,12 +2104,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Digital transformation section; general hampering of digitalisation in the economy; digital skills tied directly to it (R2)"
       }
     },
     {
@@ -2063,7 +2149,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2087,11 +2173,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0002",
+          "INT-EU-0001"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2129,12 +2220,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2153,11 +2244,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2195,12 +2288,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "EU-funded project to upgrade the e-services portal",
@@ -2219,11 +2312,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0125"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2262,12 +2359,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2286,11 +2383,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2328,12 +2428,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2354,11 +2454,15 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2396,12 +2500,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2420,11 +2524,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08",
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2462,12 +2571,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2486,11 +2595,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2528,12 +2639,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2554,12 +2665,16 @@
       ],
       "extraction_note": "Read in context this may describe gaps in the ERP measure rather than in the country's policy; materiality for broadband (TECH-INFRA) depends on that reading.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0092"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met for broadband targets only; the sentence assesses the Economic Reform Programme measure"
       }
     },
     {
@@ -2596,7 +2711,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2620,11 +2735,15 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0040 (recommendation). eHealth appointments are a public online service. Not flagged out_of_window: the claim concerns the system's current effect.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0131"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2662,12 +2781,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2686,11 +2805,15 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0039 (outcome).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0131"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2729,12 +2852,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Platform for appointments and traceability of health data (ERP measure 4)",
@@ -2753,11 +2876,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0313"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2795,12 +2922,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2821,11 +2948,13 @@
       ],
       "extraction_note": "Table columns (page 46): 2017, 2018, 2019, 2020, 2021, EU-27 average.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2863,12 +2992,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2889,11 +3018,13 @@
       ],
       "extraction_note": "Table columns (page 46): 2017, 2018, 2019, 2020, 2021, EU-27 average.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2931,12 +3062,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Upgrade of the e-portal www.uslugi.gov.mk",
@@ -2957,11 +3088,333 @@
       ],
       "extraction_note": "Second-pass split from -0022 (R23): one sentence holds the policy guidance score (finding) and an intervention (continued upgrade of the e-portal); both items quote the whole sentence. Policy guidance table (PG 4, point 2); twin of -0011 (page 22). Status in_progress: the work 'was continued'.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MKD-0125"
+        ],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-006-0045",
+      "information_type": "recommendation",
+      "stated_text": "The Commission’s country report notes the need to develop and adopt a strategy for developing digital skills and a reference framework for digital literacy throughout the society.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Commission’s country report notes the need to develop and adopt a strategy for developing digital skills and a reference framework for",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "4. KEY STRUCTURAL CHALLENGES AND REFORM PRIORITIES > Key challenge #2: Improving the competitiveness of domestic companies (including digital transition, integration in GVCs and reducing the informal economy)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-04-18",
+        "period_covered": "2023/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Added from the independent recheck of missed claims at stage 9 (review/RUN-2026-01/g5_qa/eu_recheck.csv).",
+      "pass2": {
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital skills not directly linked to an in-scope recommendation (R2)."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-006-0046",
+      "information_type": "recommendation",
+      "stated_text": "Digital technologies can boost the effectiveness of green transition policies. Investing in digital technologies such as smart IoT devices and meters, 5G and 6G connectivity , and digital twins of the energy system will facilitate the clean energy transition and also benefit citizens and companies",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digital technologies can boost the effectiveness of green transition policies. Investing in digital technologies such as smart IoT devices and meters, 5G",
+      "location": {
+        "page": 28,
+        "page_end": null,
+        "section": "4. KEY STRUCTURAL CHALLENGES AND REFORM PRIORITIES > Key challenge #2: Improving the competitiveness of domestic companies (including digital transition, integration in GVCs and reducing the informal economy)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023-04-18",
+        "period_covered": "2023/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Added from the independent recheck of missed claims at stage 9 (review/RUN-2026-01/g5_qa/eu_recheck.csv).",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement on digital technologies for the energy transition; no issue fits."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-006-0047",
+      "information_type": "finding",
+      "stated_text": "The number of registered users and completed services on the portal is increasing, but remains below expectations. Many of these servic es remain purely informational and cannot be carried out fully on line.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The number of registered users and completed services on the portal is increasing, but remains below expectations. Many of these servic es",
+      "location": {
+        "page": 32,
+        "page_end": null,
+        "section": "5. OVERVIEW OF THE IMPLEMENTATION OF THE POLICY GUIDANCE ADOPTED AT THE ECONOMIC AND FINANCIAL DIALOGUE IN 2022 > PG 4",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-04-18",
+        "period_covered": "2023/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Economic and Financial Dialogue",
+        "actor_id": "ACT-EU-0013"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added from the independent recheck of missed claims at stage 9 (review/RUN-2026-01/g5_qa/eu_recheck.csv).",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-006-0048",
+      "information_type": "recommendation",
+      "stated_text": "The European Commission’s 2022 country report recommends improvements to the PRO’s business processes, the development of a new integrated IT tax system for the PRO, improving its compliance risk management and further extending e-services for taxpayers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The European Commission’s 2022 country report recommends improvements to the PRO’s business processes, the development of a new integrated IT tax system",
+      "location": {
+        "page": 35,
+        "page_end": null,
+        "section": "5. OVERVIEW OF THE IMPLEMENTATION OF THE POLICY GUIDANCE ADOPTED AT THE ECONOMIC AND FINANCIAL DIALOGUE IN 2022 > PG 4",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-04-18",
+        "period_covered": "2023/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Economic and Financial Dialogue",
+        "actor_id": "ACT-EU-0013"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added from the independent recheck of missed claims at stage 9 (review/RUN-2026-01/g5_qa/eu_recheck.csv).",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Quote also covers the integrated IT tax system, out of the issue under G4-D04."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2023-006-0049",
+      "information_type": "finding",
+      "stated_text": "The ERP’s analysis of this sector mainly covers EU -projects related to e -government services to citizens and businesses. Information on the country’s strategic investment in, and approach to, digital transformation is largely lacking.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The ERP’s analysis of this sector mainly covers EU -projects related to e -government services to citizens and businesses. Information on the",
+      "location": {
+        "page": 39,
+        "page_end": null,
+        "section": "ANNEX A: ASSESSMENT OF THE OTHER AREA/SECTOR AND STRUCTURAL REFORM MEASURES INCLUDED IN THE 2023-2025 ERP > Digital transformation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-04-18",
+        "period_covered": "2023/2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added from the independent recheck of missed claims at stage 9 (review/RUN-2026-01/g5_qa/eu_recheck.csv).",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
         "classification_note": null
       }
     }

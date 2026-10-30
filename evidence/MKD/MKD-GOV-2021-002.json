@@ -11,7 +11,12 @@
     "notes": "The strategy has 110 pages and is general labour-market policy. Read: contents (pages 4-6), introduction (7-8), pages 16-17, 50-51, 56, 58-59, 71, 75-76, 81-83, 86-93 and the action plan pages 94, 99-101, 103-109; page 110 has no text. A keyword screen ran over pages 7-110 for: странц, странск, странец, мигра, дијаспор, ЕУРЕС, EURES, EHIC, социјално осигур, слобод на движ, работн дозвол, поглавје, acquis, ЕУ, дигитал, електронск, вештачка, интероперабил, лични податоци, сајбер, е-услуг, е-влада, онлајн, ИКТ, платформ, автоматиз, софтвер, систем, технолошк, интернет. No Chapter 2 content found: the strategy does not address the rights or access of EU or foreign workers, work permits, EURES or social security coordination. All items are theme items with cluster and chapter empty. Not read in full, as out of scope after the screen: macroeconomy, education, labour-market trends and the other policy sections. Left out: emigration figures, the Bulgarian passport passage and skills of emigrants (pages 16-17; nationals' access to EU labour markets, not linked to Chapter 2); refugees and asylum seekers named among groups at risk (pages 75, 86; general labour-market policy); digital skills statistics and targets (pages 19-20, 73, 77-80, 96-97; not linked to an in-scope technology recommendation, R2); ICT sector wages and value added (pages 12, 30); remote work (pages 56-57); and back-office Employment Agency ICT references (pages 50, 58, 71, 75; R12). Action plan targets and funding lines are not itemised unless the row names a digital measure. Machine translation by the extracting agent throughout. Second-pass check done (G3 condition 2)."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -53,7 +58,7 @@
       "subjects": [
         {
           "name_as_stated": "АВРСМ",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Онлајн платформата на АВРСМ",
@@ -72,12 +77,16 @@
       "flags": [],
       "extraction_note": "An online public service used directly by people and businesses (R12). Status from \"allows\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0159"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: not clear; viewing and search rather than a completed transaction, and on the agency portal."
       }
     },
     {
@@ -140,12 +149,12 @@
       ],
       "extraction_note": "theme_doubtful: an education sector information system, with no connection to an EU electronic system and no public online service stated (R22). Kept because the claim itself is about linking data systems. Baseline statement under Outcome 1.5.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: education sector system with no EU connection or public service (R22)."
       }
     },
     {
@@ -208,12 +217,14 @@
       ],
       "extraction_note": "theme_doubtful: a sector system connected to national databases, not to EU systems (R22). Planned measure, so proposed.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0162"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: education sector system linked to national databases only (R22)."
       }
     },
     {
@@ -271,12 +282,12 @@
       ],
       "extraction_note": "theme_doubtful: digital transformation is one of four factors listed, not the sole subject of the sentence.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: digital transformation is one of four factors listed, not the subject of the claim."
       }
     },
     {
@@ -318,7 +329,7 @@
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Гаранцијата за млади",
@@ -337,12 +348,16 @@
       "flags": [],
       "extraction_note": "The online tools and vacancy system are public services (R12). The ICT upgrade and profiling system in the same sentence are back-office and would not qualify alone. The converted text has a Latin letter in \"онлаjн\"; kept as printed, and the sentence cannot be shortened without an ellipsis.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0233"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Assigned for the online tools and vacancy system only; ICT upgrade and profiling are back-office. RI-TEC-003 test: agency portal, not the national e-services portal; assigned as a transactional service."
       }
     },
     {
@@ -384,7 +399,7 @@
       "subjects": [
         {
           "name_as_stated": "Министерство за образование и наука (МОН)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0013"
         }
       ],
       "intervention_as_stated": "Акциски план за вработување 2021-2023 година",
@@ -406,12 +421,15 @@
       ],
       "extraction_note": "theme_doubtful: interoperability of a sector system with no EU connection stated (R22). Timeframe in the table: 2021 to 2023.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0229",
+          "INT-MKD-0162"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Independent check at stage 9: fails the materiality test under extraction rules 0.4."
       }
     },
     {
@@ -453,7 +471,7 @@
       "subjects": [
         {
           "name_as_stated": "Министерство за економија (МЕ)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0006"
         }
       ],
       "intervention_as_stated": "Акциски план за вработување 2021-2023 година",
@@ -475,12 +493,14 @@
       ],
       "extraction_note": "theme_doubtful: digitalisation is one of two aims of a measure on business charges; it is not stated whether it creates a service for the public. Timeframe in the table: 2021 to 2023.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0229"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: a measure on business charges; no public online service stated."
       }
     },
     {
@@ -540,12 +560,16 @@
       ],
       "extraction_note": "theme_doubtful: e-commerce rules are the subject, but the stated aim is reducing informality. The converted text splits \"предл ог\" and \"е - трговија\"; kept as printed. Timeframe in the table: 2021 to 2023.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0229"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met narrowly: e-commerce rules are the subject, though the stated aim is reducing informality. Enforcement rather than alignment, so a partial fit."
       }
     },
     {
@@ -587,7 +611,7 @@
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Акциски план за вработување 2021-2023 година",
@@ -608,12 +632,16 @@
       ],
       "extraction_note": "An online public service used by jobseekers and employers (R12). The text prints \"слодоните\"; kept as printed. Timeframe in the table: 2021 to 2023.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0229"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: agency portal, not the national e-services portal; assigned as a transactional service."
       }
     },
     {
@@ -655,7 +683,7 @@
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Акциски план за вработување 2021-2023 година",
@@ -677,12 +705,14 @@
       ],
       "extraction_note": "theme_doubtful: the text does not say whether the new system is a back-office system or serves the public (R12). Outcome 3.2 concerns the Employment Agency. Timeframe in the table: 2021 to 2023.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0229"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: the text does not say whether the system serves the public, and no issue fits a cost-benefit analysis of an unnamed system."
       }
     },
     {
@@ -724,7 +754,7 @@
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Акциски план за вработување 2021-2023 година",
@@ -746,12 +776,16 @@
       ],
       "extraction_note": "An online public service used by people and enterprises (R12). The converted text splits \"в о текот\"; kept as printed. Timeframe in the table: 2021 to 2023.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0229"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: agency portal, not the national e-services portal; assigned as a transactional service."
       }
     },
     {
@@ -814,12 +848,12 @@
       ],
       "extraction_note": "theme_doubtful: a skills information tool in the education sector, with no connection to an EU electronic system or public online service stated (R22). Kept because the claim itself is about access to data, as with item 0002. Added at second pass.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: a skills information tool, with no EU connection or public online service stated (R22)."
       }
     }
   ]

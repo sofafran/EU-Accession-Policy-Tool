@@ -11,7 +11,12 @@
     "notes": "Whole document read. The North Macedonia paragraphs (55 to 66, pages 23-25) contain no Chapter 2 or technology content. Three horizontal passages addressed to the Western Balkans or all partners are extracted (Digital Agenda, digital service delivery, cyber cooperation). Not extracted: 'digital policy' in a list of areas of EU engagement (paragraph 3, no claim about partners), the EU commitment to support partners' resilience in areas 'such as food and energy security and cyber threats' (paragraph 17: the EU's own assistance commitment with cyber threats as one example), 'promoting the crucial green and digital transitions' in budget policy (paragraph 18, incidental), the sentence 'The EU will continue deepen this cooperation and its support to partners' after item -0003 (EU commitment), and passages about other countries. Speaker recorded as 'Council' as printed. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,7 +53,7 @@
       },
       "speaker": {
         "name_as_stated": "Council",
-        "actor_id": null
+        "actor_id": "ACT-EU-0003"
       },
       "subjects": [
         {
@@ -75,12 +80,15 @@
       ],
       "extraction_note": "Horizontal passage on the Western Balkans. Typed intervention (named programme) with status in_progress, since full implementation is awaited; it could also be read as an EU expectation (recommendation). Doubtful: the Digital Agenda is named together with the Economic and Investment Plan and the Green Agenda, and no digital measure is described.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0001",
+          "INT-EU-0002"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "General Council statement on implementing the Digital Agenda and the investment plan; no gap fits an approved issue."
       }
     },
     {
@@ -117,7 +125,7 @@
       },
       "speaker": {
         "name_as_stated": "Council",
-        "actor_id": null
+        "actor_id": "ACT-EU-0003"
       },
       "subjects": [
         {
@@ -141,12 +149,14 @@
       "flags": [],
       "extraction_note": "Horizontal passage on public administration reform across partners; no partner is named. Only the welcome of digital service delivery is in scope; the rest of the sentence (depoliticisation, accountability) is not technology content and is not extracted as a separate item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Assigned on the digital service delivery element only."
       }
     },
     {
@@ -183,7 +193,7 @@
       },
       "speaker": {
         "name_as_stated": "Council",
-        "actor_id": null
+        "actor_id": "ACT-EU-0003"
       },
       "subjects": [
         {
@@ -209,12 +219,14 @@
       ],
       "extraction_note": "Horizontal passage addressed to all partners. Typed finding: cooperation described without a named measure. Doubtful: cyber security is the main named strand, but the context is foreign and security policy cooperation against hybrid threats. Compare MKD-EU-2021-003-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met on cyber resilience and cyber security."
       }
     }
   ]

@@ -11,7 +11,12 @@
     "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4 and themes 1.3. Read the table of contents (pages 2-3), the introduction (page 4), the whole of section 1.2 Main findings (pages 5-21, where each chapter is summarised with standard preparation and progress wording and recommendations), and every later section, reading in full the pages that the table of contents or a keyword screen (digital, electronic, e-, online, data, cyber, artificial intelligence, interoperab, broadband, identification, portal, ICT, IT system, internet, 5G, platform, web) showed to carry technology content, plus all of Chapter 2 (pages 62-63) and the legal migration passage of Chapter 24 (page 46). Chapter 2 appears twice: a summary under 1.2 (pages 11-12) and the full section (pages 62-63); both are extracted as separate items. Period covered taken from footnote 3 of the report (15 June 2023 to 1 September 2024) because the register field is empty. Text-file page numbers are printed page numbers plus one. Left out as outside the materiality test under rules 0.4 (R21, R22): ACCMIS and other court back-office systems, IFMIS and human resources management information systems, the digitalised surveillance procedure, Interpol and SIENA exchanges, cybercrime statistics and the cybercrime department, the unified register of bank accounts and the digital denar, the IPR enforcement data platform, the State Market Inspectorate's internal procedures, the integrated IT tax system and the excise movement controls, customs IT consolidation and upgrades, the customs paperless environment, intelligence system and data warehouse, intelligent transport and electronic freight information, IACS and LPIS interoperability, fisheries and pesticide data, the social assistance IT system, the 112 emergency number staffing, the flood incident platform, the consumer information web platform and websites used to publish information. Media content of Chapter 10 and freedom of expression (media regulator, public broadcaster, digital national media, online media) was treated as outside the technology theme, except net neutrality. The seasonal-worker agreements on page 63 were left out as concerning nationals' access to EU labour markets. Graph 12 on page 36 (data protection inspections, complaints and data breach declarations) was not extracted because the converted text separates the values from their labels. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Reform Agenda",
@@ -74,12 +79,14 @@
       ],
       "extraction_note": "Theme doubtful: digital transition is one of five listed areas of the Reform Agenda; the passage names it but says nothing more about digital content. Status unclear: the text says only that the Reform Agenda covers these areas. Also at page 93 (Annex I lists the six Reform Agenda policy areas, including digitalisation).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0098"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Independent check at stage 9: fails the materiality test under extraction rules 0.4."
       }
     },
     {
@@ -118,12 +125,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -142,11 +149,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -184,12 +195,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -208,11 +219,13 @@
       "flags": [],
       "extraction_note": "Sub-area: protection of personal data, within fundamental rights (Chapter 23).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -250,12 +263,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -274,11 +287,13 @@
       "flags": [],
       "extraction_note": "One finding on the digitalisation of the economy; the clause on low digital skills of businesses is part of the same sentence and of the same type.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -314,12 +329,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -338,12 +353,12 @@
       "flags": [],
       "extraction_note": "One sentence gives both the preparation level and the progress level; kept as one finding because both claims are of the same type. The quote crosses the page break between pages 11 and 12.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G4-D09)"
       }
     },
     {
@@ -378,12 +393,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -402,12 +417,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G4-D09)"
       }
     },
     {
@@ -442,12 +457,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -466,11 +481,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-005",
+          "RI-FMW-004",
+          "RI-FMW-006"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -506,12 +527,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -530,11 +551,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -570,12 +595,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -594,11 +619,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-008",
+          "RI-FMW-009"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -636,12 +666,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -660,11 +690,15 @@
       "flags": [],
       "extraction_note": "The theme concerns the directive on digital tools and processes in company law; the cross-border operations part of the same recommendation is not a theme matter.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-035"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -702,12 +736,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -726,12 +760,12 @@
       "flags": [],
       "extraction_note": "Chapter covers media as well as digital transformation; theme tag reflects the digital part.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G4-D09)"
       }
     },
     {
@@ -769,12 +803,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -793,11 +827,14 @@
       "flags": [],
       "extraction_note": "Same sentence as the next item, which records the rulebooks as an intervention.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -835,12 +872,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Rulebooks aimed at reducing the cost of deploying high-speed networks",
@@ -859,11 +896,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the previous item; split because it also reports an intervention.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0192"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -901,12 +942,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -925,12 +966,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G4-D09)"
       }
     },
     {
@@ -969,12 +1010,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -993,12 +1034,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-022",
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Also covers the 5G toolbox (RI-TEC-024); limit of three issues reached"
       }
     },
     {
@@ -1035,12 +1082,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1059,11 +1106,16 @@
       "flags": [],
       "extraction_note": "The electronic communications regulator is a theme subject (TECH-INFRA); the media bodies in the same recommendation are not. The quote crosses the page break between pages 14 and 15. The next recommendation, on the 112 emergency number's staffing, was left out (R20).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [
+          "MEC-05",
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1101,12 +1153,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1125,11 +1177,13 @@
       "flags": [],
       "extraction_note": "Kept under R22: connection to EU electronic systems. The recommendation on a new integrated IT tax system for the Public Revenue Office was left out as a tax IT upgrade.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1167,12 +1221,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1191,11 +1245,15 @@
       "flags": [],
       "extraction_note": "Kept under R22: NCTS is an EU electronic transit system. The sentence 'Limited progress was made on the consolidation and upgrade of IT systems' on this page was left out as a customs IT upgrade.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0150"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1233,12 +1291,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1259,12 +1317,14 @@
       ],
       "extraction_note": "Theme doubtful: customs IT upgrades are out under R22 unless the claim concerns connection to EU electronic systems; the UCC work programme and MASP modules set the EU electronic customs systems, but the text does not say 'connect'. The text has 's trategic'; quoted as in the text file.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: alignment with the EU Union Customs Code work programme and MASP is in the issue definition"
       }
     },
     {
@@ -1301,12 +1361,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "National e-Services Portal (https://uslugi.gov.mk/)",
@@ -1325,11 +1385,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1367,12 +1431,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Upgrade of the National e-Services Portal",
@@ -1391,11 +1455,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the next item; split because it reports both an intervention and a finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0125"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1433,12 +1501,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1457,11 +1525,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1499,12 +1569,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1523,11 +1593,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1565,12 +1637,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1589,11 +1661,15 @@
       "flags": [],
       "extraction_note": "Two figures of the same type in one sentence, kept as one metric item. No reference period is stated ('currently'). Same sentence as the next item, which records the judgement that transactions are low.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1631,12 +1707,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1655,11 +1731,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1697,12 +1777,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1723,12 +1803,16 @@
       ],
       "extraction_note": "Theme doubtful: the population register is a base register used by e-government services and the sentence sits in the digital service delivery paragraph, but the text does not mention data systems or governance.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: the definition names the little-used population register"
       }
     },
     {
@@ -1765,12 +1849,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1789,11 +1873,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-027"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1831,12 +1919,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1855,11 +1943,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1897,12 +1989,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1921,11 +2013,13 @@
       "flags": [],
       "extraction_note": "Same sentence as the next item; split because it states both a finding and a recommendation.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1963,12 +2057,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1987,11 +2081,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-025",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2029,12 +2128,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2053,11 +2152,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2093,12 +2194,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2117,12 +2218,19 @@
       "flags": [],
       "extraction_note": "Chain: the passage names the Law on general administrative procedures, whose full implementation the in-scope recommendation on page 6 ties to digitalisation of registers, data exchange and electronic procedures. The text itself makes no digital link here.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12",
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0052"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain confirmed through the recommendation in MKD-EU-2024-001-0002, which ties full implementation of this law to data exchange; the text has no digital content of its own"
       }
     },
     {
@@ -2159,16 +2267,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Ministry of Justice",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0009"
         },
         {
           "name_as_stated": "Council for coordinating information and communication technology in judiciary (ICT Council)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0054"
         }
       ],
       "intervention_as_stated": "Rulebook on the composition and working methods of the Council for coordinating information and communication technology in judiciary (ICT Council)",
@@ -2189,12 +2297,16 @@
       ],
       "extraction_note": "Theme doubtful: digitalisation of the justice system is a sector matter; kept because the body coordinates ICT across the judiciary rather than a single back-office system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-010"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0204"
+        ],
+        "classification_status": "auto",
+        "classification_note": "recheck at G5"
       }
     },
     {
@@ -2231,12 +2343,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "ICT Council",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0054"
         }
       ],
       "intervention_as_stated": "ICT Strategy for the judiciary",
@@ -2257,12 +2369,14 @@
       ],
       "extraction_note": "Theme doubtful: as for the previous item. Status in_progress: the council is tasked with drafting the strategy.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0096"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Independent check at stage 9: fails the materiality test under extraction rules 0.4."
       }
     },
     {
@@ -2300,12 +2414,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2326,12 +2440,14 @@
       ],
       "extraction_note": "Theme doubtful: digitalisation of the justice system is a sector reform; communication with courts may be a service the public uses online (TECH-DGOV), but the text does not say so. The preceding sentences on ACCMIS were left out as a court back-office system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-010"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: communication with courts and videoconferencing are in the issue definition; recheck at G5"
       }
     },
     {
@@ -2368,12 +2484,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "State Commission for the Prevention of Corruption (SCPC)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0039"
         }
       ],
       "intervention_as_stated": "Electronic system to file statements of declaration of assets and interest",
@@ -2394,12 +2510,14 @@
       ],
       "extraction_note": "Theme doubtful: an online filing system used by declaring officials inside the anti-corruption reform; it may count as an online service (R12) or as a sector system (R22).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0158"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Sector filing tool inside anti-corruption reform, used by officials; materiality test not met, and it does not concern data exchange so RI-TEC-028 does not fit"
       }
     },
     {
@@ -2436,12 +2554,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2462,12 +2580,14 @@
       ],
       "extraction_note": "Theme doubtful: interoperability between national information systems, but inside the anti-corruption reform and not stated to connect to EU systems (R22).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: interoperability between registers for asset declaration checks is in the issue definition"
       }
     },
     {
@@ -2504,12 +2624,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2528,11 +2648,13 @@
       "flags": [],
       "extraction_note": "Sub-area: protection of personal data, within fundamental rights (Chapter 23). Same claim as the summary item on page 7; extracted at each place.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2570,12 +2692,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -2594,11 +2716,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2636,12 +2762,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Personal Data Protection Agency (PDPA)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -2660,11 +2786,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-05"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2702,12 +2832,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Personal Data Protection Agency (PDPA)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -2726,11 +2856,15 @@
       "flags": [],
       "extraction_note": "No reference date is stated ('now'). The sentence also gives a cause (low salaries); typed as metric because the number is the main claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2768,12 +2902,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Personal Data Protection Agency (PDPA)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -2792,11 +2926,16 @@
       "flags": [],
       "extraction_note": "'This' refers to the staff numbers in the preceding sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-09"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2834,12 +2973,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Personal Data Protection Agency (PDPA)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -2858,11 +2997,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-019"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2900,12 +3043,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Personal Data Protection Agency (PDPA)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -2924,11 +3067,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-019"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2966,16 +3113,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Parliament",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0003"
         },
         {
           "name_as_stated": "Personal Data Protection Agency (PDPA)",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -2994,11 +3141,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-019"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3036,12 +3187,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3060,11 +3211,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3102,12 +3255,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3128,12 +3281,16 @@
       ],
       "extraction_note": "Theme doubtful: analogue municipal registers concern digitalisation of registers, but within a property rights passage; the strategy part of the sentence is not a theme matter.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met for the analogue municipal registers only"
       }
     },
     {
@@ -3168,12 +3325,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3192,11 +3349,18 @@
       "flags": [],
       "extraction_note": "Sits under Chapter 24 (legal migration), but its subject, the employment law for foreigners, falls within the Chapter 2 boundary in the run record (rights and labour-market access of foreign workers in North Macedonia). Chapter tag kept from the heading.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0001"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3234,16 +3398,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Frontex",
-          "actor_id": null
+          "actor_id": "ACT-EU-0007"
         },
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Implementation plan to develop IT systems that are interoperable with EU IT systems",
@@ -3262,11 +3426,15 @@
       "flags": [],
       "extraction_note": "Kept under R22: the plan concerns interoperability with EU IT systems. Status proposed: a plan has been provided; the text does not say it has been adopted or started.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-030"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0181"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3304,12 +3472,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3328,11 +3496,13 @@
       "flags": [],
       "extraction_note": "Compare the summary on page 10, which says the digitalisation of the economy 'is advancing' without 'slowly'.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3370,12 +3540,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3394,11 +3564,13 @@
       "flags": [],
       "extraction_note": "Compare Annex II (page 97), which gives 83.7% for 2021.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3436,12 +3608,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3460,11 +3632,13 @@
       "flags": [],
       "extraction_note": "No reference period is stated. Same sentence as the next item, which records the finding on obstacles.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3502,12 +3676,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3526,11 +3700,13 @@
       "flags": [],
       "extraction_note": "Typed as finding: states that obstacles exist without saying what they are.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3568,12 +3744,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3594,12 +3770,14 @@
       ],
       "extraction_note": "Theme doubtful: the recommendation is framed as digital skills (not a theme area, R2); only item (iii), expanding fast internet access to small businesses and non-urban areas, is a theme matter (TECH-INFRA).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met for point (iii), fast internet for small businesses and non-urban areas, only; points (i) and (ii) are outside scope (R2)"
       }
     },
     {
@@ -3637,12 +3815,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3661,11 +3839,15 @@
       "flags": [],
       "extraction_note": "Kept under R12: the electronic procurement system is an online service used by bidders.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-006"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0132"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3703,12 +3885,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3727,11 +3909,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-006"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0134"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3767,12 +3953,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3791,11 +3977,13 @@
       "flags": [],
       "extraction_note": "Sub-area: alignment on access to the labour market, within Chapter 2.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-001"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3831,12 +4019,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Law on employment of foreigners",
@@ -3855,11 +4043,17 @@
       "flags": [],
       "extraction_note": "Named law described as in force; status adopted under rules 0.4 (R23).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0001"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3895,12 +4089,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -3919,11 +4113,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3959,12 +4157,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "EU citizens",
@@ -3987,11 +4185,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4027,12 +4229,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4051,11 +4253,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4091,12 +4297,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4115,11 +4321,13 @@
       "flags": [],
       "extraction_note": "The next sentence, on bilateral agreements for seasonal workers with Germany, Slovenia and Qatar, was left out as concerning nationals' access to foreign labour markets (run record Chapter 2 boundary).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4155,12 +4363,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4179,11 +4387,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4219,12 +4429,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4243,11 +4453,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4283,12 +4495,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Negotiations for bilateral social security agreements with Italy, USA and Greece",
@@ -4307,11 +4519,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the next item; split because it reports both an intervention and a finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0199"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4347,12 +4563,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4371,11 +4587,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4414,12 +4632,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Law on the register of mandatory social insurance",
@@ -4440,12 +4658,14 @@
       ],
       "extraction_note": "Theme doubtful: setting up a register is a TECH-DATA material example, but the text does not say whether the register is electronic or how its data are governed.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0055"
+        ],
+        "classification_status": "queued_ambiguous",
+        "classification_note": "The text does not say whether the register is electronic: RI-FMW-009 if it is an administrative measure for coordination, RI-FMW-010 if it serves electronic exchange. In scope on chapter basis either way; the choice decides whether the law counts towards the technology chain"
       }
     },
     {
@@ -4480,12 +4700,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4504,11 +4724,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4544,12 +4766,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4568,11 +4790,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4608,12 +4832,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Employment Agency",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": null,
@@ -4632,11 +4856,15 @@
       "flags": [],
       "extraction_note": "An anti-corruption measure the Commission places under Chapter 2 for the Employment Agency (run record boundary).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-013"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4674,12 +4902,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4698,11 +4926,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-007"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4740,12 +4972,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4764,12 +4996,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-007",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Under Chapter 3 and read with the point of single contact; could not clearly be assigned to RI-TEC-003 alone"
       }
     },
     {
@@ -4806,12 +5041,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4832,12 +5067,16 @@
       ],
       "extraction_note": "Theme doubtful: an electronic register of regulated professions is a register with data (TECH-DATA material example) but sits within the recognition of professional qualifications reform.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-007"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: the electronic register of regulated professions is in the issue definition"
       }
     },
     {
@@ -4874,12 +5113,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4898,11 +5137,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-035"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4940,12 +5183,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -4964,11 +5207,13 @@
       "flags": [],
       "extraction_note": "Kept under R22: connection to an EU electronic system (BRIS).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5006,12 +5251,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5032,12 +5277,12 @@
       ],
       "extraction_note": "Theme doubtful: Safety Gate is an EU electronic alert system, but the claim concerns legal alignment rather than connection to the system. 'It' is national legislation, named in the preceding sentence.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: the claim is legal alignment on product safety, not connection to the Safety Gate system"
       }
     },
     {
@@ -5075,12 +5320,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5099,11 +5344,15 @@
       "flags": [],
       "extraction_note": "Kept under R12: the e-health application is used by citizens. The upgraded syndromic disease reporting system and the missing IT module for tissue transplants on the same page were left out as sector systems (R22). Second pass: the clause on the existence of the e-health application was split off as intervention -0117.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5141,12 +5390,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5167,12 +5416,12 @@
       ],
       "extraction_note": "Theme doubtful: digitalisation is named as an anti-corruption tool in the health sector without further digital content.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: digitalisation is named as an anti-corruption tool in the health sector with no digital content"
       }
     },
     {
@@ -5210,12 +5459,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Long-term ICT strategy; national cybersecurity strategy",
@@ -5236,11 +5485,17 @@
       ],
       "extraction_note": "Ambiguous between intervention and finding: named strategies (R11) whose adoption is still pending. Status proposed: not yet adopted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0078",
+          "INT-MKD-0085"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5278,12 +5533,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Ministry of Digital Transformation",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -5302,11 +5557,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5344,12 +5603,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Agency for Electronic Communications",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0023"
         }
       ],
       "intervention_as_stated": "Rulebooks implementing the EU Directive on measures to reduce the cost of deploying high-speed electronic communications networks",
@@ -5368,11 +5627,15 @@
       "flags": [],
       "extraction_note": "The sentence also reports a proposal for new regulations on gigabit networks (status proposed); kept in one item because both claims are interventions.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0192"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5410,12 +5673,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5434,11 +5697,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5476,12 +5743,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "2019-2023 national broadband operational plan",
@@ -5500,11 +5767,15 @@
       "flags": [],
       "extraction_note": "Status adopted under rules 0.4 (R23): the plan is described only as remaining valid (in force). The next sentence, on the capacity of the 112 emergency number services, was left out (R20).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0092"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5542,12 +5813,12 @@
       },
       "speaker": {
         "name_as_stated": "BCO",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0047"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5568,11 +5839,13 @@
       ],
       "extraction_note": "Figure attributed to the BCO report published in March 2024; the text gives no separate reference period.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5610,12 +5883,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Long-term information and communication technologies strategy",
@@ -5636,11 +5909,15 @@
       ],
       "extraction_note": "Repeats, in the same section, the claim on the ICT strategy two paragraphs earlier; extracted at each place (R10). Ambiguous between intervention and finding, as for that item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0078"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5678,12 +5955,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5702,11 +5979,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [
+          "MEC-05"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5744,16 +6025,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Parliament",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0003"
         },
         {
           "name_as_stated": "AEC Commission",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0096"
         }
       ],
       "intervention_as_stated": "Dismissal of the members of the AEC Commission",
@@ -5774,12 +6055,14 @@
       ],
       "extraction_note": "Theme doubtful: an institutional event concerning the electronic communications regulator, placed directly after the recommendation on its independence; not itself a digital measure.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: event directly concerns the regulator appointments in the issue definition; the item does not itself show lack of independence"
       }
     },
     {
@@ -5816,12 +6099,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5840,11 +6123,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5882,12 +6167,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5906,11 +6191,13 @@
       "flags": [],
       "extraction_note": "Same claim as the page 27 item on the 135 services; extracted at each place.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5948,12 +6235,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -5972,11 +6259,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6014,12 +6303,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6038,11 +6327,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-027"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6081,12 +6374,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6105,11 +6398,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6147,12 +6445,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Pilot use of artificial intelligence in 112 for real-time transcription and translation",
@@ -6171,12 +6469,16 @@
       "flags": [],
       "extraction_note": "Kept under R20: the claim concerns an AI solution for the 112 emergency number.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0178"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Loose fit: the issue is framed on rules and structures; this pilot fits only under wider uptake"
       }
     },
     {
@@ -6213,12 +6515,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Trainings from European services on the DSA",
@@ -6237,11 +6539,15 @@
       "flags": [],
       "extraction_note": "Training directly linked to the in-scope recommendation to align with the Digital Services Act (R2).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0531"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6279,12 +6585,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6303,11 +6609,18 @@
       "flags": [],
       "extraction_note": "The quote crosses the page break between pages 69 and 70.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0042",
+          "INT-MKD-0085"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6345,12 +6658,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6369,11 +6682,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6411,12 +6728,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6435,11 +6752,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6477,12 +6798,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6501,11 +6822,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6543,12 +6867,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6567,11 +6891,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6607,12 +6935,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6631,12 +6959,18 @@
       "flags": [],
       "extraction_note": "Chain: names the Law on general administrative procedures, whose full implementation the in-scope recommendation on page 6 ties to digitalisation; placed in the Chapter 10 digital services paragraph. The text makes no digital link in this sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0052"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain confirmed through the recommendation in MKD-EU-2024-001-0002, which ties full implementation of this law to data exchange; the text has no digital content of its own"
       }
     },
     {
@@ -6673,12 +7007,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6697,11 +7031,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6739,12 +7075,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -6763,11 +7099,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6805,7 +7145,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -6829,11 +7169,15 @@
       "flags": [],
       "extraction_note": "Status adopted: the text reports the mandate but not whether construction has started.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0488"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6871,12 +7215,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "PRO",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0032"
         }
       ],
       "intervention_as_stated": null,
@@ -6895,12 +7239,14 @@
       "flags": [],
       "extraction_note": "Kept under R12: tax e-services are used by taxpayers. The new integrated IT tax system in the following sentences was left out as a tax IT upgrade (R22).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Covers taxpayer e-services; the business process and risk management parts are not digital"
       }
     },
     {
@@ -6937,12 +7283,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Education Management Information System (EMIS); digital textbooks in primary education",
@@ -6963,12 +7309,15 @@
       ],
       "extraction_note": "Theme doubtful: the text frames this as digital transformation of the education system, but it includes the sector system EMIS. The following recommendation on digital skills was left out (R2).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0162",
+          "INT-MKD-0376"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital transformation of education with a sector system and school equipment; no issue fits, and school connectivity under digital education is outside scope (R2)"
       }
     },
     {
@@ -7006,12 +7355,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "customs administration",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0033"
         }
       ],
       "intervention_as_stated": "ICT development strategy for 2021-2025",
@@ -7030,11 +7379,15 @@
       "flags": [],
       "extraction_note": "Kept under R22: the strategy is framed as developing national systems together with EU systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0091"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7072,12 +7425,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7096,11 +7449,15 @@
       "flags": [],
       "extraction_note": "Kept under R22: NCTS is an EU electronic transit system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0149"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7138,12 +7495,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7162,11 +7519,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0150"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7204,12 +7565,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7228,11 +7589,15 @@
       "flags": [],
       "extraction_note": "'This' refers to the delays in the NCTS Phase 5 upgrade in the preceding sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7270,12 +7635,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7294,11 +7659,15 @@
       "flags": [],
       "extraction_note": "Kept under R22: connection to an EU electronic system (CECIS). The other issues in the same list (sector reform, the disaster risk coordinator, the protection and rescue strategy) are not theme matters.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0182"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7336,12 +7705,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7360,11 +7729,15 @@
       "flags": [],
       "extraction_note": "Kept under R22: access to OWNRES is a connection to an EU electronic system. 'Some progress was made on consolidation and upgrade of IT systems' (customs) on the same page was left out as a customs IT upgrade.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0012"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7402,12 +7775,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7426,11 +7799,13 @@
       "flags": [],
       "extraction_note": "Reported as a result of EU assistance under IPA II (preceding sentence); typed as finding because no measured change is given. The reorganisation part of the sentence is not a theme matter.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7468,20 +7843,20 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "energy regulator",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0081"
         },
         {
           "name_as_stated": "pharmaceutical chamber",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0090"
         },
         {
           "name_as_stated": "pension insurance fund",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0046"
         }
       ],
       "intervention_as_stated": "Electronic services of the energy regulator, pharmaceutical chamber and pension insurance fund",
@@ -7500,11 +7875,15 @@
       "flags": [],
       "extraction_note": "Reported in the context of EU assistance under IPA II.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0348"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7542,12 +7921,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7568,11 +7947,13 @@
       ],
       "extraction_note": "Columns are 2011, 2018, 2019, 2020, 2021, 2022; 'w' means data supplied by the national statistical authority; source footnote 7: Agency for electronic communications. Values for 2018-2020 are 60.9, 65.1 and 66.1.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7610,12 +7991,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7636,11 +8017,13 @@
       ],
       "extraction_note": "Columns are 2011, 2018, 2019, 2020, 2021, 2022; 'w' means national data; source footnote 7: Agency for electronic communications. Values for 2018-2020 are 19, 22 and 23.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7678,12 +8061,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -7704,11 +8087,13 @@
       ],
       "extraction_note": "Columns are 2011, 2018, 2019, 2020, 2021, 2022. Compare page 55, which gives 83.6% for 2021; kept because the row adds earlier years and a different value.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7746,12 +8131,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "e-health application",
@@ -7770,11 +8155,15 @@
       "flags": [],
       "extraction_note": "Second pass (G3 condition 2): split from -0077, which keeps the finding that referrals are still on paper and the application is not interoperable. This item records the existence of the e-health application (named system), a service used by citizens (R12).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0131"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7812,7 +8201,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -7838,12 +8227,14 @@
       ],
       "extraction_note": "Second pass (G3 condition 2): added as missed. Horizontal passage addressed to all Western Balkans partners. Cyber is one element of hybrid threats; it is unclear whether this meets the materiality test for cybersecurity (security of networks and information systems). Analyst to confirm.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0028"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: horizontal EU support where cyber is one element of hybrid threats, with no claim on network security"
       }
     }
   ]

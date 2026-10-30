@@ -11,7 +11,12 @@
     "notes": "Pass 1 full extraction under rules 0.4 and themes 1.3. Multi-country joint conclusions: per analyst guidance only the North Macedonia section (pages 25-28) is extracted. No Chapter 2 content (the skills mismatch and emigration passage is general labour-market policy). Extracted the low level of digitalisation and, as doubtful, the guidance to continue digitalising the Public Revenue Office. Not extracted: the integrated financial management information system (pages 25 and 27, back-office public finance system). Period covered not given; left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "Participants of the Economic and Financial Dialogue",
-        "actor_id": null
+        "actor_id": "ACT-EU-0013"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -72,11 +77,13 @@
       "flags": [],
       "extraction_note": "Only the digitalisation element meets the materiality test.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -114,12 +121,12 @@
       },
       "speaker": {
         "name_as_stated": "Participants",
-        "actor_id": null
+        "actor_id": "ACT-EU-0013"
       },
       "subjects": [
         {
           "name_as_stated": "the Republic of North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -140,12 +147,12 @@
       ],
       "extraction_note": "Policy guidance 1. Doubtful: tax IT upgrades are out by default under rules 0.4, but the text frames it as digitalisation of a government body and does not say whether it concerns online services for taxpayers. Only the digitalisation element is relevant.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. Digitalisation of the Public Revenue Office is back-office tax IT with no mention of e-services (R22)."
       }
     }
   ]

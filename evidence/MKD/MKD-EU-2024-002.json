@@ -11,7 +11,12 @@
     "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. Multi-country Communication: only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, e-government, e-services, broadband, roaming, 5G, workers, social security, EURES, interoperability, electronic, data protection, connectivity, single market, technology) and full reading of every page with a hit, including the North Macedonia conclusions (paragraph 11, pages 23-24) and sections IV to VI. The annexes (third-party indicators and statistics) are listed at page 28 but are published separately (see MKD-EU-2024-003). Period covered left empty: the register gives none. Left out: digitalisation of the justice system and case management systems (page 9, back-office, R12); cybercrime (R21); general references to the green and digital transitions in the Growth Plan and Economic and Investment Plan. No North Macedonia-specific technology claim and no Chapter 2 material found in this document. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,7 +53,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -72,12 +77,16 @@
       "flags": [],
       "extraction_note": "Horizontal. Data protection is one of several areas listed; only that element is in scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Horizontal passage across the enlargement region; only the data protection element applies"
       }
     },
     {
@@ -114,7 +123,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -140,12 +149,12 @@
       ],
       "extraction_note": "Horizontal. Cyber-attacks are one element of hybrid threats; the passage does not focus on the security of networks and information systems, hence theme_doubtful. Two sentences, one claim.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: horizontal statement on hybrid threats where cyber-attacks are one element, with no claim on network security"
       }
     },
     {
@@ -185,7 +194,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -209,12 +218,20 @@
       "flags": [],
       "extraction_note": "Horizontal Growth Plan passage. SEPA, Green Lanes, conformity assessment agreements and the Critical Medicines Alliance in the same list are out of scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-033",
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0008",
+          "INT-EU-0037",
+          "INT-EU-0006"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Horizontal Growth Plan passage; only the digital measures apply"
       }
     },
     {
@@ -251,7 +268,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -277,12 +294,14 @@
       ],
       "extraction_note": "The digital transition is one of several focus areas and no digital measure is named, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0004"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: digital transition is one of several focus areas of the Common Regional Market plan, with no digital measure named"
       }
     },
     {
@@ -319,7 +338,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -347,11 +366,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0006"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -392,7 +415,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -416,12 +439,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-024",
+          "RI-TEC-025",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Horizontal passage; also touches cyber resilience frameworks (RI-TEC-022); limit of three issues reached"
       }
     },
     {
@@ -459,7 +486,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -483,11 +510,15 @@
       "flags": [],
       "extraction_note": "Commitment with a 2027 deadline; status proposed. Related to item -0003 (page 14).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0008"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     }

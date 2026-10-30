@@ -11,7 +11,12 @@
     "notes": "Regional report of 109 pages: read the contents, the overview from page 15, the North Macedonia country note and the passages on digitalisation, migration, AI and the jobs strategy, and ran a keyword screen over the whole text (digital, electronic, e-government, online, cyber, AI, interoperability, personal data, broadband, 5G, internet, foreign, migrant, immigration, work permit, third-country, social security, EURES, EHIC). Page numbers are those of the PDF and the converted text, not the printed page numbers. Under the rule for regional documents, only claims naming North Macedonia, or the region where it is named in the passage, are extracted. Item 0004 (Table 1.2, page 46, which does not name North Macedonia) was removed at the second pass under that rule; its ID stays unused and its full text is in review/RUN-2026-01/second_pass/MKD-IO-2025-001.csv for the analyst at G5. LEFT OUT because the passage does not name North Macedonia, for the analyst to confirm: page 60 (foreign-born residents addressing shortages; targeted immigration policies; social security portability for emigrants) and page 80 (simplifying immigration rules; digitalising registration and reporting; digital inspection tools) and pages 81-82 (digital infrastructure, AI and telemedicine, national single windows). Also left out: pages 16 and 43 (lists of five reform areas with no claim beyond page 45), page 66 (online job postings and digital skills demand, not linked to an in-scope recommendation), pages 31-32 (financial inclusion and other digital finance content), page 74 (digitalisation as one form of firm upgrading). ICT employment figures are out of scope. The report contains no claim on foreign workers in North Macedonia specifically, and nothing on EURES, the European Labour Authority or social security coordination in the Chapter 2 sense. Pages 2, 12, 83 and 109 (text recognition) have no quoted content. Second-pass check done (G3 condition 2). Items 0008 and 0009 were added by the second-pass checker."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,16 +53,16 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         }
       ],
       "intervention_as_stated": "Joining the Single Euro Payments Area (SEPA)",
@@ -78,12 +83,14 @@
       ],
       "extraction_note": "Doubtful: digital finance is out by default and in only for connection to an EU electronic system; unclear whether SEPA counts. Compare MKD-IO-2024-001, which describes joining as still to come.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0256"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: digital finance; approval to join a payments area is not connection to an EU electronic system, and no issue covers it."
       }
     },
     {
@@ -120,16 +127,16 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -150,12 +157,12 @@
       ],
       "extraction_note": "Doubtful: digital finance is out by default, though digital payments are a service the public uses online. The box text defines the indicator as adults making or receiving digital payments.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital finance is out by default and no issue covers use of digital payments."
       }
     },
     {
@@ -194,12 +201,12 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -220,12 +227,12 @@
       ],
       "extraction_note": "A simulated projection, not an observed value; Table 1.2 (page 46) gives the assumptions.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G4-D09). Theme-wide simulated projection across digitalisation."
       }
     },
     {
@@ -262,16 +269,16 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -292,12 +299,12 @@
       ],
       "extraction_note": "Doubtful: concerns the labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems."
       }
     },
     {
@@ -334,16 +341,16 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Bosnia and Herzegovina",
-          "actor_id": null
+          "actor_id": "ACT-INT-0021"
         }
       ],
       "intervention_as_stated": null,
@@ -364,12 +371,12 @@
       ],
       "extraction_note": "Doubtful: same reason as item 0005.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems."
       }
     },
     {
@@ -406,12 +413,12 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -432,12 +439,12 @@
       ],
       "extraction_note": "Doubtful: digitalisation is one of five named reform areas, with no digital content beyond the word.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Independent check at stage 9: fails the materiality test under extraction rules 0.4."
       }
     },
     {
@@ -474,16 +481,16 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -505,12 +512,12 @@
       ],
       "extraction_note": "Doubtful: concerns the labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems. Regional claim in the passage that names North Macedonia (items 0005 and 0006).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems."
       }
     },
     {
@@ -547,16 +554,16 @@
       },
       "speaker": {
         "name_as_stated": "World Bank",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -577,12 +584,12 @@
       ],
       "extraction_note": "Doubtful: concerns the labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems. Regional claim in the passage that names North Macedonia (items 0005 and 0006).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: labour-market exposure of jobs to AI, not the development, use, regulation or oversight of AI systems."
       }
     }
   ]

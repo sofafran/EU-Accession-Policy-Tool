@@ -11,7 +11,12 @@
     "notes": "Annex covering all five Western Balkan partners. Read in full: the general part on monitoring and the scoreboard (pages 1-3), the North Macedonia tables of Appendix 1 (pages 39-54), the North Macedonia allocation table of Appendix 2 (page 67) and the indicator list of Appendix 3 (page 69). Pages 4-38 and 55-66 (Albania, Kosovo, Montenegro and Serbia) were not extracted; page 68 is near-empty (register notes ocr). Each payment condition is one item, typed recommendation as an EU-approved condition for payment (the steps originate in the Reform Agenda but are set by the Commission decision as conditions); deadlines are recorded in extraction_note, not as event dates, because they are targets rather than events. All items carry the table flag. No Chapter 2 material: the guarantee mechanism for employees' claims (page 46) and the Labour Inspectorate targets (page 46) are general labour-market or insolvency matters outside the run record's Chapter 2 boundary. Left out as not material under rules 0.4: the Ministry of Finance transitory IT project database (page 40, back-office); teacher training in digital skills and curricula integrating the European Digital Competence Framework (page 45, digital skills not linked to an in-scope recommendation); the SAMIS state aid system precondition (page 47, back-office); the ICT priority area of the smart specialisation matchmaking and the innovation centres (page 48); Intelligent Transport Systems, eFTI and the eCMR convention (page 51, transport digital systems, out by default); the court case management system ACCMIS (page 52) and the asset management case software (page 54) (back-office); digital forensic analysts (page 53). Theme-doubtful items (school connectivity, para-fiscal digital register, e-customs systems, drugs Early Warning System) are extracted and flagged for the analyst. Appendix 3 indicator 11 (extent to which a NIS2 cyber resilience framework is set up and operational) is a Commission monitoring indicator for all partners, not a claim; not extracted. Period covered not given; left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -74,11 +79,15 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-26. E-procurement platform used by bidders, treated as an online public service (rules 0.4 section 4).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-006"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0134"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -116,12 +125,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -142,11 +151,18 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-25.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0042",
+          "INT-MKD-0085"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -184,12 +200,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -210,11 +226,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-26.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -252,12 +270,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -278,11 +296,14 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-26.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -320,12 +341,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -346,11 +367,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-26.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -388,12 +411,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -414,11 +437,18 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-25.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0023",
+          "INT-EU-0039"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -457,12 +487,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -483,11 +513,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-27.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -526,12 +558,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -552,11 +584,14 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-27.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-024",
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -594,12 +629,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -620,11 +655,17 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-25.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0031"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -663,12 +704,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -689,11 +730,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-25.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -732,12 +775,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -758,11 +801,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-26.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -800,12 +845,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -826,11 +871,15 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-25.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -869,12 +918,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -895,11 +944,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-26.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -937,12 +988,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -963,11 +1014,17 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-27.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0108",
+          "INT-INT-0009",
+          "INT-INT-0008"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1005,12 +1062,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1031,11 +1088,13 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-27.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1074,12 +1133,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1100,11 +1159,14 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-27.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1142,12 +1204,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1169,12 +1231,12 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-25. Theme doubtful: school connectivity and IT equipment inside an education reform; may be an incidental sector measure rather than digital infrastructure in the theme sense.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: school connectivity under digital education is outside scope (R2)"
       }
     },
     {
@@ -1211,12 +1273,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1238,12 +1300,15 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-27. Theme doubtful: a public register linked to an e-portal used by businesses, but set within a para-fiscal charges reform. Only the first sentence of the step is quoted; the rest concerns the charges methodology.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Materiality met: the digital public register is the subject; could not clearly be assigned to RI-TEC-003, as it is a register linked to the e-portal, not a transaction service"
       }
     },
     {
@@ -1281,12 +1346,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1308,12 +1373,16 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-26. Theme doubtful: the reform is framed as e-customs services for economic operators, and NCTS links to the common transit system, but customs IT upgrades are out by default under rules 0.4.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0151"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met: NCTS is an EU electronic system"
       }
     },
     {
@@ -1350,12 +1419,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1377,12 +1446,16 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Jun-27. Theme doubtful: customs IT upgrade within the e-customs services reform; out by default under rules 0.4 unless treated as a service used online by economic operators.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0152"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met: the export control system is in the issue definition"
       }
     },
     {
@@ -1419,12 +1492,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1446,12 +1519,16 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-27. Theme doubtful: customs IT upgrade within the e-customs services reform; out by default under rules 0.4 unless treated as a service used online by economic operators.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0153"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met: the import control system is in the issue definition"
       }
     },
     {
@@ -1488,12 +1565,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1515,12 +1592,12 @@
       ],
       "extraction_note": "Payment condition (step) in the table approved by the Commission; typed recommendation as an EU-approved condition for payment that originates in the Reform Agenda. Deadline as printed: Dec-26. Theme doubtful: connection to an EU system is named, but it is a drug-monitoring network within organised crime reform and the text does not say it is an electronic system.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: drugs Early Warning System within a drug-trafficking measure; the text does not say the connection is electronic"
       }
     }
   ]

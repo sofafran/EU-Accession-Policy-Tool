@@ -11,7 +11,12 @@
     "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. Multi-country Communication covering ten enlargement countries: only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, e-government, e-services, broadband, roaming, workers, social security, EURES, interoperability, electronic, data protection, connectivity, information society, technology) and full reading of every page with a hit, including the North Macedonia conclusions (paragraph 9, page 20), the thematic Annex 1 (pages 28-43) and the digital part of Annex 2 on the Economic and Investment Plan (pages 45-46). Annex 3 (Eastern partners) and Annexes 4 and 5 (statistics) contain nothing on North Macedonia in scope. Period covered left empty: the register gives none. Left out: cybercrime passages (R21); passages on Ukraine, Moldova and Georgia; WBIF digital projects naming only Serbia and Albania; a general reference to Innovation Agenda cooperation on digitalisation and cyber-security (page 47), judged incidental. The document gives two different target years for near-domestic EU roaming prices (2027 at page 13, 2028 at page 46). No Chapter 2 material found. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,7 +53,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -72,12 +77,16 @@
       "flags": [],
       "extraction_note": "Quote runs over the page break; footnotes 7 to 9 and the page number are left out. Twin of item -0014 (Annex 1, page 36) for the conference. Second pass: the finding on cyberattacks in the first sentence is recorded as item -0033.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0014"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -114,12 +123,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "EU",
-          "actor_id": null
+          "actor_id": "ACT-EU-0001"
         },
         {
           "name_as_stated": "Western Balkans",
@@ -142,12 +151,16 @@
       "flags": [],
       "extraction_note": "'The summit' is the EU-Western Balkans Summit in Tirana, December 2022, named in the preceding sentences. Twin of item -0005 (page 13).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -184,7 +197,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -210,12 +223,12 @@
       ],
       "extraction_note": "Horizontal. Cyberattacks are one element of hybrid threats here; the passage is mainly about disinformation and FIMI, hence theme_doubtful. Twin in Annex 1, page 36 (item -0010).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: mainly hybrid threats and disinformation, with cyberattacks one element; materiality test not met"
       }
     },
     {
@@ -252,7 +265,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -261,7 +274,7 @@
         },
         {
           "name_as_stated": "EU",
-          "actor_id": null
+          "actor_id": "ACT-EU-0001"
         }
       ],
       "intervention_as_stated": "Lowering roaming charges between the Western Balkans and the EU",
@@ -280,12 +293,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -322,12 +339,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "EU",
-          "actor_id": null
+          "actor_id": "ACT-EU-0001"
         },
         {
           "name_as_stated": "Western Balkans",
@@ -350,12 +367,16 @@
       "flags": [],
       "extraction_note": "Twin of item -0002 (page 4).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -392,7 +413,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -401,7 +422,7 @@
         },
         {
           "name_as_stated": "EU",
-          "actor_id": null
+          "actor_id": "ACT-EU-0001"
         }
       ],
       "intervention_as_stated": "Roadmap for lowering roaming costs between the EU and the Western Balkans",
@@ -420,12 +441,16 @@
       "flags": [],
       "extraction_note": "Annex 2 (page 46, item -0026) gives the day, 1 October 2023, and says the reduction concerns data roaming.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices"
       }
     },
     {
@@ -462,7 +487,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -471,7 +496,7 @@
         },
         {
           "name_as_stated": "EU",
-          "actor_id": null
+          "actor_id": "ACT-EU-0001"
         }
       ],
       "intervention_as_stated": "Process for lowering roaming prices with the EU",
@@ -490,12 +515,16 @@
       "flags": [],
       "extraction_note": "Annex 2 (page 46, item -0027) states 2028 as the target for prices close to Roam Like at Home; the two dates differ within the document and are not reconciled here.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -532,20 +561,20 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Regional Cooperation Council",
-          "actor_id": null
+          "actor_id": "ACT-INT-0003"
         },
         {
           "name_as_stated": "Central European Free Trade Agreement (CEFTA)",
-          "actor_id": null
+          "actor_id": "ACT-INT-0001"
         },
         {
           "name_as_stated": "Western Balkans 6 Chamber Investment Forum",
-          "actor_id": null
+          "actor_id": "ACT-INT-0016"
         }
       ],
       "intervention_as_stated": null,
@@ -566,12 +595,12 @@
       ],
       "extraction_note": "Second pass: quote cut to the first sentence (finding on the extent of work); the aims of the work, including electronic services, are now item -0034. Theme doubtful as for -0034: the in-scope element is in the second sentence.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: quote has no digital content; materiality test not met"
       }
     },
     {
@@ -608,7 +637,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -632,11 +661,13 @@
       "flags": [],
       "extraction_note": "Horizontal. Two sentences, one claim; 'this' in the second sentence refers to the completion of frameworks.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -674,7 +705,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -700,12 +731,12 @@
       ],
       "extraction_note": "Twin of item -0003 (page 10); same theme doubt.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: mainly hybrid threats and disinformation, with cyberattacks one element; materiality test not met"
       }
     },
     {
@@ -742,7 +773,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -768,11 +799,13 @@
       ],
       "extraction_note": "States a priority rather than a finding; recorded as a recommendation, as for similar wording in earlier Communications.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -810,7 +843,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -834,12 +867,14 @@
       "flags": [],
       "extraction_note": "The countries are not named, so it is not stated whether North Macedonia is among them.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Horizontal; North Macedonia not named"
       }
     },
     {
@@ -876,28 +911,28 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         },
         {
           "name_as_stated": "Ukraine",
-          "actor_id": null
+          "actor_id": "ACT-INT-0027"
         },
         {
           "name_as_stated": "Moldova",
-          "actor_id": null
+          "actor_id": "ACT-INT-0023"
         }
       ],
       "intervention_as_stated": null,
@@ -916,11 +951,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -958,7 +995,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -982,12 +1019,16 @@
       "flags": [],
       "extraction_note": "Twin of item -0001 (pages 3-4).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0014"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1024,7 +1065,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1048,12 +1089,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Horizontal; North Macedonia not named"
       }
     },
     {
@@ -1090,7 +1133,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1114,11 +1157,13 @@
       "flags": [],
       "extraction_note": "North Macedonia is among the 'other countries' by exclusion. Same sentence as item -0017 (recommendation).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1156,7 +1201,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1180,11 +1225,13 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0016 (finding). The digital skills element is tied to access to digital public services.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1222,7 +1269,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1248,12 +1295,12 @@
       ],
       "extraction_note": "Horizontal economic policy guidance; the digital transition is named only in general terms, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: digital transition is one entry in general economic guidance; materiality test not met"
       }
     },
     {
@@ -1291,7 +1338,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1315,12 +1362,17 @@
       "flags": [],
       "extraction_note": "Quote runs over the page break. The next sentence names WBIF projects in Serbia and Albania only and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-034",
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0002"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Regional EU support Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1357,7 +1409,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1381,12 +1433,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Regional EU dialogue on digital policy; matches no approved issue"
       }
     },
     {
@@ -1423,24 +1475,24 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         },
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": "Association Agreement to the Digital Europe Programme (DIGITAL)",
@@ -1459,11 +1511,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0105"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1501,24 +1557,24 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "Montenegro",
-          "actor_id": null
+          "actor_id": "ACT-INT-0024"
         },
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -1539,11 +1595,13 @@
       ],
       "extraction_note": "Forward-looking statement of what the association will allow; recorded as a finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1581,7 +1639,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1605,12 +1663,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Political declaration on the internet; matches no approved issue"
       }
     },
     {
@@ -1647,7 +1705,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1671,12 +1729,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Regional association with BEREC; does not address regulator independence or capacity under RI-TEC-012 and matches no approved issue"
       }
     },
     {
@@ -1713,7 +1771,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1737,12 +1795,16 @@
       "flags": [],
       "extraction_note": "The converted text has a full stop after 'agreement' inside the sentence; kept as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0006"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices"
       }
     },
     {
@@ -1779,7 +1841,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1803,12 +1865,16 @@
       "flags": [],
       "extraction_note": "Twin of item -0006 (page 13).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0107"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices"
       }
     },
     {
@@ -1845,7 +1911,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1869,12 +1935,16 @@
       "flags": [],
       "extraction_note": "Target year 2028 here; section VI (page 13, item -0007) says 2027. Recorded as printed; possible contradiction for pass 2.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0470"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Fits RI-TEC-011 only through its roaming element; no separate issue for roaming prices Chain link: implementation: agreed by operators, not a country response"
       }
     },
     {
@@ -1911,7 +1981,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1935,12 +2005,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "EU promotion of digital solutions (Balkathon); matches no approved issue"
       }
     },
     {
@@ -1977,7 +2047,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2001,12 +2071,12 @@
       "flags": [],
       "extraction_note": "Status proposed: 'in preparation'.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Regional EU programme in preparation; matches no approved issue"
       }
     },
     {
@@ -2043,7 +2113,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2067,12 +2137,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0024"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -2109,7 +2183,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2133,12 +2207,14 @@
       "flags": [],
       "extraction_note": "Regional total; no breakdown by country. The expected leverage of EUR 240 million is in the second sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Regional EU funding total; closest fit is the funding element of RI-TEC-014"
       }
     },
     {
@@ -2175,7 +2251,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2199,12 +2275,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Regional EU guarantee; closest fit is the funding element of RI-TEC-014 Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -2241,7 +2321,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2265,11 +2345,13 @@
       "flags": [],
       "extraction_note": "Split from -0001 in the second-pass check: the first sentence also states that several cyberattacks took place in the Western Balkan countries (finding). Quotes the first sentence only.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2307,20 +2389,20 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Regional Cooperation Council",
-          "actor_id": null
+          "actor_id": "ACT-INT-0003"
         },
         {
           "name_as_stated": "Central European Free Trade Agreement (CEFTA)",
-          "actor_id": null
+          "actor_id": "ACT-INT-0001"
         },
         {
           "name_as_stated": "Western Balkans 6 Chamber Investment Forum",
-          "actor_id": null
+          "actor_id": "ACT-INT-0016"
         }
       ],
       "intervention_as_stated": "Common Regional Market initiative, including the provision of electronic services",
@@ -2341,12 +2423,12 @@
       ],
       "extraction_note": "Split from -0008 in the second-pass check (second sentence). Only 'provision of electronic services' may meet the materiality test and the text does not say what these services are, hence theme_doubtful. The following sentences on mobility agreements (ID travel, qualifications) concern intra-regional mobility, not Chapter 2 as bounded in the run record, and are not extracted.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: electronic services are one aim of a wider regional market initiative; materiality test not met"
       }
     },
     {
@@ -2383,7 +2465,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2409,12 +2491,12 @@
       ],
       "extraction_note": "Added in the second-pass check. Horizontal. Digital transition of businesses named as an aim and one scheme is called Go Digital, but no digital content is described, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: digital transition named only as an aim and in a scheme title; no digital content; materiality test not met"
       }
     },
     {
@@ -2452,7 +2534,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -2482,12 +2564,12 @@
       ],
       "extraction_note": "Added in the second-pass check. Horizontal, under the Innovation Agenda. Digitalisation and cybersecurity are two of several areas listed, with no measure described, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Independent check at stage 9: fails the materiality test under extraction rules 0.4."
       }
     }
   ]

@@ -11,7 +11,12 @@
     "notes": "Pass 1 full extraction under extraction rules 0.4 and themes 1.3. Whole country chapter read (abstract, pillars I to IV, annexes), with a keyword search for technology terms. Excluded under rules 0.4 and the analyst guidance: court and prosecution case management (ACCMIS and the prosecution case management system), court IT equipment and staffing, audio and video recording of hearings, publication of court rulings and other documents on websites, the State Commission for Prevention of Corruption's software, asset declaration system and database interoperability (back-office or enforcement systems), cybercrime units, and online media regulation and online harassment of journalists (media content, not technology). General claims on the digitalisation of the judiciary and the body that steers it are extracted with theme_doubtful for the analyst to decide. No Chapter 2 material. No period covered is stated in the register or the document (only the ECHR cut-off date), so period_covered is null. Also excluded: the Constitutional Court's organisational software (back-office) and the electronic Register of Online Media/Internet Portals (media regulation). Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -74,12 +79,14 @@
       ],
       "extraction_note": "Doubtful: judicial digitalisation is largely back-office justice (case management is out under rules 0.4); kept as a general claim on digitalisation of the judiciary. Heading-style first sentence of the paragraph, with its own claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-010"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "recheck at G5. theme_doubtful resolved: materiality met as a general claim on digitalisation of the judiciary"
       }
     },
     {
@@ -116,16 +123,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Administrative Court",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0083"
         },
         {
           "name_as_stated": "Higher Administrative Court",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0084"
         }
       ],
       "intervention_as_stated": "Digital interconnection between the Administrative Court, the Higher Administrative Court and other public bodies",
@@ -146,12 +153,17 @@
       ],
       "extraction_note": "Doubtful: interoperability between courts and other public bodies may be a back-office justice system (out) or cross-government interoperability (TECH-INTEROP). The claimed effects (coordination, costs) are stated without evidence and not split as an outcome.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-010",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0274"
+        ],
+        "classification_status": "auto",
+        "classification_note": "recheck at G5. theme_doubtful resolved: materiality met as electronic exchange between courts and other public bodies; RI-TEC-028 second for the cross-institution exchange"
       }
     },
     {
@@ -188,12 +200,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -212,12 +224,14 @@
       "flags": [],
       "extraction_note": "Quote runs over the page break; footnotes at the foot of page 15 are skipped. The figure 117 is a footnote marker inside the sentence.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0140"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-consultation platform; RI-TEC-008 retired at G4; no other issue fits"
       }
     },
     {
@@ -254,12 +268,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -278,12 +292,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0140"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-consultation platform; RI-TEC-008 retired at G4; no other issue fits"
       }
     },
     {
@@ -320,12 +336,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -344,12 +360,14 @@
       "flags": [],
       "extraction_note": "Quote ends before footnote marker 118.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0140"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-consultation platform; RI-TEC-008 retired at G4; no other issue fits"
       }
     },
     {
@@ -386,12 +404,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Single National Electronic Register of Regulations (ENER)",
@@ -410,12 +428,14 @@
       "flags": [],
       "extraction_note": "From footnote 117.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0140"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-consultation platform; RI-TEC-008 retired at G4; no other issue fits"
       }
     },
     {
@@ -452,12 +472,12 @@
       },
       "speaker": {
         "name_as_stated": "Government of North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -478,12 +498,14 @@
       ],
       "extraction_note": "From footnote 118, citing Government of North Macedonia (2026); 'these' are the 74 draft laws subject to regulatory impact assessment in 2025 (preceding sentence).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0140"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-consultation platform; RI-TEC-008 retired at G4; no other issue fits"
       }
     }
   ]

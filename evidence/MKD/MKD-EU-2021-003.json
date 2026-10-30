@@ -11,7 +11,12 @@
     "notes": "Whole document read. The North Macedonia paragraphs (40 to 50, pages 18-21) contain no Chapter 2 or technology content (elections, rule of law, judiciary, public administration, intelligence services, migration, economic reforms, census, bilateral relations, CFSP). Horizontal passages addressed to all partners were checked; one passage naming cyber-resilience is extracted with theme_doubtful. Not extracted: 'Green Agenda and sustainable connectivity' (no digital content stated), and passages on other countries (for example online harassment in Montenegro). Speaker recorded as 'Council' as printed. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,7 +53,7 @@
       },
       "speaker": {
         "name_as_stated": "Council",
-        "actor_id": null
+        "actor_id": "ACT-EU-0003"
       },
       "subjects": [
         {
@@ -74,12 +79,12 @@
       ],
       "extraction_note": "Horizontal passage addressed to all partners (the paragraph speaks of 'partners'). Doubtful: cyber-resilience is one of four strands of cooperation against hybrid threats, in a foreign and security policy context.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Hybrid threats passage; cyber is one strand in a list and no gap fits RI-TEC-023 or RI-TEC-022, so the materiality test is not met."
       }
     }
   ]

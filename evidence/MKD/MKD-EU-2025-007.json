@@ -11,7 +11,12 @@
     "notes": "Whole document read. Presidency conclusions issued in the absence of consensus (supported by 26 delegations); the text speaks as 'the Council', recorded as printed. The North Macedonia paragraphs (66 to 75, pages 23-26) contain no Chapter 2 or technology content ('modernisation of its public administration' has no digital content). One horizontal passage on roaming for the Western Balkans partners is extracted. Not extracted: joining the Single Euro Payments Area (digital finance, out under R22), Moldova's cyber-attacks and 'new technological tools' (other country), Serbia's Regulatory Authority for Electronic Media (other country, media), advanced technology items in Türkiye's sanctions (other country). Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,7 +53,7 @@
       },
       "speaker": {
         "name_as_stated": "Council",
-        "actor_id": null
+        "actor_id": "ACT-EU-0003"
       },
       "subjects": [
         {
@@ -57,7 +62,7 @@
         },
         {
           "name_as_stated": "Commission",
-          "actor_id": null
+          "actor_id": "ACT-EU-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -78,12 +83,14 @@
       ],
       "extraction_note": "Bullet in paragraph 10 under the lead-in 'It looks forward to, in particular:'; 'the same goal' refers to the preceding bullet, Ukraine and Moldova joining the 'Roam like at home area' (calls and mobile data without additional charges). Doubtful: roaming concerns access to mobile communications services rather than network infrastructure itself.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met; roaming is named in the RI-TEC-011 definition. Concerns the Western Balkans as a group"
       }
     }
   ]

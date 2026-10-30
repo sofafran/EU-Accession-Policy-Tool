@@ -11,7 +11,12 @@
     "notes": "Whole decision read (pages 1-9). The decision approves the Reform Agendas of five partners; only recital (15) concerns North Macedonia specifically, and only its reference to the digital transition is extracted (theme_doubtful). Other recitals and articles are procedural or financial (facility amounts, pre-financing, WBIF channelling, approval of the Reform Agendas) or concern other partners, and make no Chapter 2 or technology claim. No Chapter 2 material. Period covered not given in the register or the document; left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -74,12 +79,12 @@
       ],
       "extraction_note": "Commission conclusion on the North Macedonia Reform Agenda in recital (15). The digital transition is one aim in a list of broad aims; kept as theme_doubtful because the claim is general and may be incidental under the materiality test.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality test not met: digital transition is one aim in a list of broad aims of the Reform Agenda"
       }
     }
   ]

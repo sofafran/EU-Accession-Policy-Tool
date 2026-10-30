@@ -11,7 +11,12 @@
     "notes": "Read all 71 pages of the converted text in full. The table of contents lists annexes up to page 90 (criteria, register contents, contracts, comparison of 10 services, public service digitalisation, chart analyses), but the ministry's PDF has only 71 pages and ends at recommendation 24, so the annexes were not available. Reporting period checked: the audit states it covers 2020 to 2023, with some earlier and later matters up to the date of the report (pages 7 and 27), so the period sits inside the run's time window; period_covered is taken from the document because the register has none. Data reaching back (catalogue users from 2018, training in 2019, portal launch December 2019, 2019 laws) concern the continuing situation and are not flagged; no item carries out_of_window. Page 2 is blank; the register records text recognition there but no text results. Left out as background or incidental: definitions (pages 5-6), reasons for the audit, the list of strategies (pages 13-15), the objectives and methodology except the audit's own population figures on page 29, descriptions of portal components and procedures, the internal State Audit Office staff survey (page 24, chart labels not readable as claims), Macedonian-language chart labels, the key-figures infographic on pages 11-12 (restates the summary), the description of the 2018 incident rulebook, and the example of one institution's EUR 34,000 project (page 46). The Ombudsman passage on citizenship applications (page 17) is out of scope. Commission reports are quoted in the audit in Macedonian and are extracted with reported_view and chapter 10, so check them against the English originals; they do not corroborate those reports independently. No Chapter 2 material: a statement that portal services cover foreign nationals (page 20) and Employment Agency e-services are incidental; no claim on foreign workers' access, EURES or social security coordination. Source inconsistencies reported and not resolved: Tetovo one-stop-shop use 7.57 in the text and 37.57 in Table 8; rise in requests 48,000 (page 47) and 40,000 (page 68); e-services 95 (page 45), 234 (page 47), 277 services through the portal (page 29) and 392 in the quoted Commission report; 7 institutions with expired seals (page 55) and six listed in Figure 17. Machine translation by the extracting agent throughout. MISA is used in translations for МИОА, which is the earlier name of the Ministry of Digital Transformation; names kept as printed. Second-pass change: the 2019 adoption of the digitalisation laws (pages 8, 14 and 31) now carries out_of_window as a controlled exception, so the earlier statement that no item carries the flag no longer holds. Second-pass check done (G3 condition 2)."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -49,7 +54,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -68,11 +73,14 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0139.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -111,7 +119,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -130,12 +138,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0038",
+          "INT-MKD-0052"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -172,7 +187,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -191,12 +206,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "queued_unmatched",
+        "classification_note": "Materiality met: IT staffing or digital competence directly tied to digitalisation of government. RI-TEC-002 covers only the lead ministry or agency, so no issue fits."
       }
     },
     {
@@ -234,7 +251,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -253,11 +270,17 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0129.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -295,7 +318,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -314,11 +337,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the next item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -356,7 +383,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -375,11 +402,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the previous item. The reference date comes from page 47 and Table 7.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -417,7 +448,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
@@ -441,12 +472,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -484,7 +517,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -503,11 +536,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -545,7 +583,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -564,11 +602,13 @@
       "flags": [],
       "extraction_note": "Same sentence as the next item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -606,7 +646,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -625,11 +665,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the previous item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -668,7 +712,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -687,12 +731,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -729,7 +778,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Национален совет за дигитална трансформација; две работни групи",
@@ -748,11 +797,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0119"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -791,7 +844,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -810,11 +863,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0119"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -853,7 +913,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -872,11 +932,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -914,7 +979,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -935,12 +1000,14 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to supporting e-services.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "queued_unmatched",
+        "classification_note": "Materiality met: IT staffing or digital competence directly tied to digitalisation of government. RI-TEC-002 covers only the lead ministry or agency, so no issue fits."
       }
     },
     {
@@ -977,7 +1044,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -996,12 +1063,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0268"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -1038,7 +1111,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1057,11 +1130,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1099,7 +1176,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1118,11 +1195,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1160,7 +1241,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1179,11 +1260,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1221,12 +1308,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерството за информатичко општество",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -1245,11 +1332,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1287,7 +1378,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1306,12 +1397,14 @@
       "flags": [],
       "extraction_note": "The Macedonian says the absence of skills 'contributes to efficient use', which reads as the opposite of the passage's sense; translated as printed and not corrected. Digital skills item, kept because it is directly linked to the portal.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Citizens' digital skills only as a limit on portal use."
       }
     },
     {
@@ -1349,7 +1442,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1368,12 +1461,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -1411,7 +1511,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1430,11 +1530,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1472,7 +1575,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1491,11 +1594,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1533,7 +1638,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1552,11 +1657,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1594,7 +1701,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1613,11 +1720,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1655,7 +1768,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Една точка на услуги",
@@ -1674,12 +1787,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0201"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -1716,7 +1833,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1735,12 +1852,14 @@
       "flags": [],
       "extraction_note": "Source inconsistency: Table 8 on page 62 gives 37.57 for Tetovo (864 tickets over 23 months), not 7.57. Quoted as printed. Same claim also extracted at item MKD-GOV-2024-007-0119.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -1777,7 +1896,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1796,11 +1915,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1838,7 +1961,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1857,11 +1980,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1900,7 +2025,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1919,11 +2044,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1961,7 +2089,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Национален портал за електронски услуги",
@@ -1980,11 +2108,15 @@
       "flags": [],
       "extraction_note": "Launched just before the time window; the claim describes a service still in use, so it is not flagged out_of_window.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2024,7 +2156,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "пакет закони за дигитализација",
@@ -2045,11 +2177,19 @@
       ],
       "extraction_note": "Kept as a controlled exception: the claim is mainly about the 2019 adoption of the laws, which is needed to explain the legal basis of the portal and the alignment deadline assessed in this report (items -0011, -0056, -0126). The laws remain in force; those later claims are not flagged. No logged exception; analyst to confirm.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-025",
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0035",
+          "INT-MKD-0036",
+          "INT-MKD-0030"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2108,11 +2248,15 @@
       ],
       "extraction_note": "The audit quotes the strategy without saying in this passage whether it has been adopted, hence unclear.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0088"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2150,7 +2294,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": "долгорочна стратегија за ИКТ (2021-2026)",
@@ -2171,11 +2315,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0078"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2213,7 +2361,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2234,11 +2382,16 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2276,7 +2429,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2297,11 +2450,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. The same sentence appears in the quoted 2022 and 2023 reports.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2339,7 +2496,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": "договор за асоцијација кон Програмата „Дигитална Европа“",
@@ -2360,11 +2517,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0105"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2402,7 +2563,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2423,11 +2584,17 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0542"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2465,7 +2632,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2486,11 +2653,18 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0128"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2528,7 +2702,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2549,11 +2723,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. Differs from the audit's own counts: 234 e-services on page 47 and 277 services on page 29.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2591,7 +2769,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2612,11 +2790,13 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2655,7 +2835,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2674,11 +2854,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0128"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2716,12 +2903,12 @@
       },
       "speaker": {
         "name_as_stated": "Народниот правобранител",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0041"
       },
       "subjects": [
         {
           "name_as_stated": "Управата за водење на матичните книги",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0044"
         }
       ],
       "intervention_as_stated": null,
@@ -2743,12 +2930,12 @@
       ],
       "extraction_note": "Most of the list concerns registry procedures; only part concerns the electronic system, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubt resolved: complaints mainly about registry procedures; the electronic system is incidental, so materiality is not met."
       }
     },
     {
@@ -2785,12 +2972,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -2809,11 +2996,13 @@
       "flags": [],
       "extraction_note": "Also at page 40, where 7 million euro of IPA funds is added.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2851,7 +3040,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2872,11 +3061,13 @@
       ],
       "extraction_note": "From Table 1 on projects co-financed under the Instrument for Pre-Accession Assistance.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2914,7 +3105,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2933,11 +3124,13 @@
       "flags": [],
       "extraction_note": "Also at page 40.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2976,7 +3169,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Централен регистар на население",
@@ -2995,11 +3188,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0127"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3038,7 +3236,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Систем за единствена најава; еИД",
@@ -3057,11 +3255,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0317",
+          "INT-MKD-0110"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3099,7 +3303,7 @@
       },
       "speaker": {
         "name_as_stated": "Институтот за политички истражувања – ИПИС",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0095"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3120,11 +3324,15 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3162,7 +3370,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3183,11 +3391,13 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3225,7 +3435,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3244,12 +3454,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -3286,7 +3498,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3305,11 +3517,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3347,7 +3561,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3366,11 +3580,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3408,7 +3624,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3427,11 +3643,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3469,7 +3687,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "законска легислатива за дигитализација и електронски услуги",
@@ -3488,12 +3706,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0038"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -3530,12 +3752,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": "две координативни групи",
@@ -3554,11 +3776,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0378"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3596,7 +3822,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3615,11 +3841,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3657,7 +3887,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3676,11 +3906,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3718,7 +3952,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3737,11 +3971,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3779,7 +4017,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3798,12 +4036,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -3840,7 +4082,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3859,12 +4101,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0052",
+          "INT-MKD-0035"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -3901,7 +4150,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3920,12 +4169,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -3962,7 +4215,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "А 4.1.1.1. Национална долгорочна ИКТ стратегија",
@@ -3981,11 +4234,17 @@
       "flags": [],
       "extraction_note": "Listed in the evaluation of the Public Administration Reform Strategy 2018-2022 under activities that have not been implemented (page 35, lead-in).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0078"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4023,7 +4282,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "А 4.1.3.7. систем за електронска идентификација и автентикација во администрацијата",
@@ -4042,11 +4301,17 @@
       "flags": [],
       "extraction_note": "Listed in the evaluation of the Public Administration Reform Strategy 2018-2022 under activities that have not been implemented (page 35, lead-in).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0282"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4085,12 +4350,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -4109,11 +4374,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4151,7 +4419,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Национален совет за дигитална трансформација",
@@ -4170,11 +4438,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0119"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4212,7 +4484,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Нацрт концепт за дигитална трансформација на општеството",
@@ -4231,11 +4503,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0456"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4273,7 +4549,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4292,11 +4568,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4334,12 +4614,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Националниот совет за дигитална трансформација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0052"
         }
       ],
       "intervention_as_stated": null,
@@ -4358,11 +4638,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4400,7 +4684,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Патоказ за Дигитална Трансформација (2024 - 2026 - 2028 - 2030)",
@@ -4419,11 +4703,15 @@
       "flags": [],
       "extraction_note": "The '25' in the quote is a footnote marker; the footnote cites draft minutes of the 221st session dated 16.01.2024.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0087"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4461,7 +4749,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4480,11 +4768,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4522,7 +4812,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4541,11 +4831,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4583,12 +4875,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -4607,11 +4899,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4650,7 +4944,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4669,11 +4963,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07",
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4711,12 +5010,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -4735,11 +5034,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4777,7 +5081,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4798,12 +5102,14 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to carrying out digitalisation.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "queued_unmatched",
+        "classification_note": "Materiality met: IT staffing or digital competence directly tied to digitalisation of government. RI-TEC-002 covers only the lead ministry or agency, so no issue fits."
       }
     },
     {
@@ -4840,7 +5146,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4861,12 +5167,14 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to carrying out digitalisation. Not a Chapter 2 matter: it concerns public sector pay, not worker mobility.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "queued_unmatched",
+        "classification_note": "Materiality met: IT staffing or digital competence directly tied to digitalisation of government. RI-TEC-002 covers only the lead ministry or agency, so no issue fits."
       }
     },
     {
@@ -4903,7 +5211,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4922,12 +5230,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -4964,7 +5274,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -4983,12 +5293,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0268"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -5025,7 +5341,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5044,12 +5360,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -5086,7 +5406,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5105,12 +5425,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0268"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -5147,7 +5473,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5166,12 +5492,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -5209,7 +5539,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5228,12 +5558,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0268"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -5270,7 +5607,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5289,11 +5626,13 @@
       "flags": [],
       "extraction_note": "The base of 95 e-services differs from 234 on page 47 and 277 services on page 29; the source does not reconcile them.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5331,7 +5670,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5350,11 +5689,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5392,7 +5733,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5411,11 +5752,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5454,7 +5799,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5473,11 +5818,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124",
+          "INT-MKD-0110"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5515,7 +5866,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5534,11 +5885,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5577,7 +5932,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5596,11 +5951,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5639,7 +5999,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5658,11 +6018,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5701,7 +6066,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5720,11 +6085,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0317"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5762,7 +6134,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5781,11 +6153,13 @@
       "flags": [],
       "extraction_note": "The conclusion on page 68 gives 40,000 for the rise in requests; Table 7 implies about 48,000. Reported, not resolved.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5823,7 +6197,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5844,11 +6218,13 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5886,12 +6262,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -5910,11 +6286,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5952,7 +6334,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -5971,11 +6353,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6013,7 +6397,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6032,11 +6416,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6074,7 +6462,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6093,11 +6481,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6136,7 +6526,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6155,12 +6545,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0038"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -6197,7 +6594,7 @@
       },
       "speaker": {
         "name_as_stated": "МИОА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0004"
       },
       "subjects": [],
       "intervention_as_stated": "интеграција на дигитален идентитет на МастерКард во порталот за е-услуги",
@@ -6218,11 +6615,15 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0294"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6260,7 +6661,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6279,11 +6680,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6322,7 +6727,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6341,11 +6746,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0110"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6383,7 +6795,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6402,11 +6814,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6444,7 +6858,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6463,11 +6877,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6505,7 +6921,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6524,11 +6940,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6566,12 +6986,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -6590,11 +7010,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6633,7 +7057,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6652,11 +7076,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6694,7 +7123,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6713,11 +7142,13 @@
       "flags": [],
       "extraction_note": "Figure 17 on page 56 lists six institutions, some with validity to 19.05.2023. Reported, not resolved.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6755,12 +7186,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -6779,11 +7210,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0112"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6821,7 +7256,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6840,11 +7275,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6882,7 +7319,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6901,11 +7338,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6943,7 +7384,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -6962,11 +7403,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7004,7 +7447,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7023,11 +7466,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7065,7 +7512,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7084,11 +7531,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7126,7 +7577,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7145,11 +7596,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7187,7 +7640,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7206,11 +7659,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7248,7 +7705,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7267,12 +7724,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -7309,16 +7768,16 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "ЦРРСМ",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0034"
         },
         {
           "name_as_stated": "ФЗОРСМ",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0045"
         }
       ],
       "intervention_as_stated": null,
@@ -7337,12 +7796,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -7379,7 +7840,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7398,12 +7859,14 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0028.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -7440,7 +7903,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7459,12 +7922,14 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0137.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -7501,7 +7966,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "стратешка цел за DESI индексот, 2023-2027",
@@ -7520,11 +7985,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0236"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7562,7 +8031,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7581,11 +8050,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7623,7 +8094,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7642,11 +8113,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7684,7 +8157,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7703,11 +8176,13 @@
       "flags": [],
       "extraction_note": "The sentence continues on page 67; icon labels sit between the pages in the converted text, so the two parts are separate items.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7745,7 +8220,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7764,11 +8239,15 @@
       "flags": [],
       "extraction_note": "The sentence begins on page 66 with 'недостатокот' (the lack); icon labels sit between the pages in the converted text, so the quote starts on page 67.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -7807,7 +8286,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7826,12 +8305,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01",
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0052"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -7869,7 +8355,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7888,12 +8374,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -7930,7 +8420,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -7949,12 +8439,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0268"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -7992,7 +8488,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8011,11 +8507,17 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8053,7 +8555,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8072,12 +8574,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "queued_unmatched",
+        "classification_note": "Materiality met: IT staffing or digital competence directly tied to digitalisation of government. RI-TEC-002 covers only the lead ministry or agency, so no issue fits."
       }
     },
     {
@@ -8114,7 +8618,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8133,11 +8637,15 @@
       "flags": [],
       "extraction_note": "Page 47 gives 48,000 for the rise in requests. Reported, not resolved.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8175,7 +8683,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8194,11 +8702,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8236,7 +8746,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8255,11 +8765,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8297,7 +8811,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8316,11 +8830,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8358,12 +8876,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "МИОА",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -8382,11 +8900,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8424,7 +8946,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8443,11 +8965,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8485,7 +9011,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8504,12 +9030,14 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0120.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -8546,7 +9074,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8565,11 +9093,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8608,7 +9138,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8627,11 +9157,14 @@
       "flags": [],
       "extraction_note": "Same claim also extracted at item MKD-GOV-2024-007-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8669,7 +9202,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -8688,11 +9221,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8731,12 +9270,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -8755,12 +9294,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: alignment of other laws with the digitalisation package; definition does not clearly cover this."
       }
     },
     {
@@ -8798,12 +9341,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -8822,11 +9365,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8864,12 +9411,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -8888,12 +9435,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -8930,12 +9481,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -8954,11 +9505,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -8996,12 +9549,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9020,12 +9573,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -9062,12 +9619,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9086,11 +9643,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9128,12 +9687,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9152,11 +9711,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9195,12 +9756,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9219,11 +9780,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9261,12 +9825,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9285,11 +9849,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9327,12 +9895,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9351,11 +9919,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9393,12 +9965,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9417,11 +9989,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9460,12 +10034,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9484,11 +10058,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9526,12 +10103,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9550,11 +10127,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9592,12 +10171,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9616,11 +10195,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9658,12 +10239,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9682,11 +10263,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9724,12 +10307,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9748,12 +10331,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -9790,12 +10375,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Министерство за информатичко општество и администрација",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -9814,11 +10399,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9856,12 +10443,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -9880,11 +10467,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9923,12 +10514,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -9947,11 +10538,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -9989,12 +10583,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -10013,11 +10607,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10055,12 +10651,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -10079,12 +10675,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Mandatory standardisation of state systems; RI-TEC-027 covers only alignment with EU frameworks, so RI-TEC-002 is the nearest fit."
       }
     },
     {
@@ -10121,12 +10719,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -10147,12 +10745,14 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to the functioning of institutions' systems.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "queued_unmatched",
+        "classification_note": "Materiality met: IT staffing or digital competence directly tied to digitalisation of government. RI-TEC-002 covers only the lead ministry or agency, so no issue fits."
       }
     },
     {
@@ -10190,12 +10790,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -10214,11 +10814,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10256,12 +10859,12 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [
         {
           "name_as_stated": "Владата на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0002"
         }
       ],
       "intervention_as_stated": null,
@@ -10280,11 +10883,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10323,7 +10928,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "законска легислатива за дигитализација и електронски услуги",
@@ -10344,11 +10949,15 @@
       ],
       "extraction_note": "Kept as a controlled exception: the claim is mainly about the 2019 adoption, which is needed to explain the alignment deadline and delays in items -0011, -0056 and -0126. No logged exception; analyst to confirm.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0038"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10386,7 +10995,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10405,11 +11014,17 @@
       "flags": [],
       "extraction_note": "Conclusion wording at item -0140.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10447,7 +11062,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10466,11 +11081,13 @@
       "flags": [],
       "extraction_note": "Same figure at items -0009 and -0098.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10508,7 +11125,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10527,12 +11144,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: general claim about e-services and corruption prevention; fit not clear."
       }
     },
     {
@@ -10569,7 +11188,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10591,12 +11210,12 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. Digital skills; the report places it directly after the long-term ICT strategy, so the link to an in-scope recommendation is doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital skills (R2): general strategy and literacy framework; not directly linked to an in-scope recommendation."
       }
     },
     {
@@ -10633,7 +11252,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10654,11 +11273,13 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. Same sentence as the next item. Finding part.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10696,7 +11317,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10717,11 +11338,13 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. Same sentence as the previous item. Recommendation part.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10759,7 +11382,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10780,11 +11403,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. The quoted 2023 report repeats the sentence without the comma.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10822,7 +11449,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10844,12 +11471,12 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use. Digital skills; the report ties them to the ICT strategy.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital skills (R2): general skills activities; not directly linked to an in-scope recommendation."
       }
     },
     {
@@ -10886,7 +11513,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": "Национален портал за електронски услуги",
@@ -10907,11 +11534,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -10949,7 +11580,7 @@
       },
       "speaker": {
         "name_as_stated": "Европската Комисија",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -10970,11 +11601,15 @@
       ],
       "extraction_note": "The audit quotes the Commission's report in Macedonian, under the report's Chapter 10 heading. Check the English original before use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11012,7 +11647,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11031,11 +11666,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11074,7 +11713,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "законска легислатива за дигитализација и електронски услуги",
@@ -11095,11 +11734,15 @@
       ],
       "extraction_note": "Kept as a controlled exception: the claim is mainly about the 2019 adoption, which is needed to explain the alignment deadline and delays in items -0011, -0056 and -0126. No logged exception; analyst to confirm.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0038"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11137,7 +11780,7 @@
       },
       "speaker": {
         "name_as_stated": "Владата на Република Северна Македонија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0002"
       },
       "subjects": [],
       "intervention_as_stated": "заклучок од 87 седница на Владата",
@@ -11158,11 +11801,15 @@
       ],
       "extraction_note": "The audit quotes the conclusion of the 87th session in 2021.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0251"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11200,7 +11847,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "работна група за потребната опрема за дигитализација",
@@ -11219,11 +11866,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0382"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11282,11 +11933,15 @@
       ],
       "extraction_note": "The audit quotes the conclusions of the meeting of 22.05.2022.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0255"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11345,11 +12000,15 @@
       ],
       "extraction_note": "The audit quotes the conclusions of the meeting of 22.05.2022.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0255"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11387,7 +12046,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11406,11 +12065,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11449,7 +12110,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Нацрт концепт за дигитална трансформација на општеството",
@@ -11468,11 +12129,15 @@
       "flags": [],
       "extraction_note": "Follows item -0068.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0456"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11510,7 +12175,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "План за политиките за добро владеење за 2023 година, цел 17",
@@ -11529,11 +12194,15 @@
       "flags": [],
       "extraction_note": "Goal 17 of the plan as quoted in the audit. The audit calls it the plan for 2023; status adopted is the nearest value.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0239"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11571,7 +12240,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "Патоказ за Дигитална Трансформација (2024 - 2026 - 2028 - 2030)",
@@ -11590,11 +12259,15 @@
       "flags": [],
       "extraction_note": "Sentence after item -0071.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0087"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11632,7 +12305,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11651,11 +12324,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11693,7 +12368,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11712,11 +12387,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -11754,7 +12433,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11775,12 +12454,16 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to digitalisation projects and major systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Theme doubt resolved: materiality met; staff of the lead ministry."
       }
     },
     {
@@ -11817,7 +12500,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11838,12 +12521,16 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to digitalisation projects and major systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Theme doubt resolved: materiality met; staff of the lead ministry."
       }
     },
     {
@@ -11880,7 +12567,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11901,12 +12588,16 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to systems under MISA.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Theme doubt resolved: materiality met; staff of the lead ministry."
       }
     },
     {
@@ -11944,7 +12635,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -11965,12 +12656,22 @@
       ],
       "extraction_note": "IT staffing, linked by the audit to named systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-003",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124",
+          "INT-MKD-0128",
+          "INT-MKD-0127"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Theme doubt resolved: materiality met; staff of the lead ministry working on named systems."
       }
     },
     {
@@ -12007,7 +12708,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12026,12 +12727,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -12068,7 +12775,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12087,11 +12794,15 @@
       "flags": [],
       "extraction_note": "Sentence after item -0093. The audit elsewhere gives 0.556 requests per registered user.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12129,7 +12840,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12148,11 +12859,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12190,7 +12907,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12209,11 +12926,13 @@
       "flags": [],
       "extraction_note": "Summary wording at item -0024.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12251,7 +12970,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12270,11 +12989,13 @@
       "flags": [],
       "extraction_note": "The 36 in the quote is a footnote marker. Sentence before item -0104.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12313,7 +13034,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12332,11 +13053,14 @@
       "flags": [],
       "extraction_note": "Follows item -0110 on documents issued with expired seal certificates.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12374,7 +13098,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12393,11 +13117,13 @@
       "flags": [],
       "extraction_note": "The Guidelines are the WCAG guidelines named earlier on the page.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12435,7 +13161,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12454,11 +13180,13 @@
       "flags": [],
       "extraction_note": "The numbers after the names are footnote markers.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12496,7 +13224,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12515,11 +13243,13 @@
       "flags": [],
       "extraction_note": "Sentence after item -0114.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12557,7 +13287,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12576,11 +13306,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12618,7 +13350,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12637,11 +13369,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12679,7 +13413,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12698,11 +13432,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0124"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12740,7 +13478,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "портал за Една точка за услуги",
@@ -12759,12 +13497,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0308"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -12801,7 +13543,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12820,11 +13562,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12862,7 +13608,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12881,11 +13627,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12924,7 +13672,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -12943,11 +13691,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -12985,7 +13735,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -13004,12 +13754,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: back-office administration of the portal service catalogue; fit not clear."
       }
     },
     {
@@ -13046,7 +13800,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": "канцеларии за Една точка на услуги",
@@ -13065,12 +13819,16 @@
       "flags": [],
       "extraction_note": "Conclusion twin of item -0027.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0201"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -13107,7 +13865,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -13126,12 +13884,14 @@
       "flags": [],
       "extraction_note": "Conclusion twin of items -0028 and -0119; the source inconsistency noted there applies.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: physical one-stop shops, reached only through people with limited digital means; fit not clear."
       }
     },
     {
@@ -13168,7 +13928,7 @@
       },
       "speaker": {
         "name_as_stated": "Државен завод за ревизија",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0037"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -13187,11 +13947,13 @@
       "flags": [],
       "extraction_note": "Conclusion twin of item -0098.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     }

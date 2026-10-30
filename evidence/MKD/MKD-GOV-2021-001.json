@@ -11,7 +11,12 @@
     "notes": "Whole amending law read (Official Gazette 163/21, three pages). All provisions are Chapter 2 material and recorded as interventions with stated_status adopted (published law; no implementation assumed). One item per amended provision or paragraph of new Article 16. The 2015 base law (MKD-GOV-2015-001) was consulted only to explain what deleted or amended points referred to; context is given in extraction_note, not in summaries. One paragraph of new Article 16 (electronic reporting with a digital certificate, item 0014) carries technology theme tags, flagged theme_doubtful; paragraph 16 mentions data exchange between bodies without a system and is not tagged. Header, gazette numbering and signature blocks not extracted. Note that Article 16(12) and 16(14) set different deadlines (30 days and three days) for ending a foreigner's registration; recorded as stated. Revised under extraction rules 0.2: item 0029 (Article 8, renaming of the country in the base law) removed as outside the Chapter 2 boundary, the theme tag on item 0015 removed under the narrower materiality test, and eu_scale.applies_to added (null throughout). Checked under extraction rules 0.3: no changes needed (no 112, EU labour-market access or annex items; no quote over three sentences). G3 review correction: the item removed under rules 0.2 was 0029 (Article 7, secondary legislation within 30 days), not Article 8; Article 8 (renaming) is still item 0030. Article 7 restored as item 0032. G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Revised under extraction rules 0.4 and theme list 1.3 for full extraction (30 Oct 2026): status set to complete; location.paragraph now gives the article of the amending law and the provision of Law 217/15 it amends (R23). No item added or removed and no quote changed; all IDs kept. ID 0029 stays retired and is not to be reused (Article 7 is 0032). Every provision stays itemised because this short law was reviewed in that form at G3. Second-pass check done (G3 condition 2)."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -51,7 +56,7 @@
       "subjects": [
         {
           "name_as_stated": "Собранието на Република Северна Македонија",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0003"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -70,11 +75,16 @@
       "flags": [],
       "extraction_note": "Promulgation decree. Speaker is the two signatories named in the decree.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -110,7 +120,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -134,11 +144,15 @@
       "flags": [],
       "extraction_note": "Context from the 2015 base law (MKD-GOV-2015-001, consulted, not extracted): Article 7(4) lists grounds for revoking a work permit; point 2 was a stay outside the country for more than six months without interruption.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -174,7 +188,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -198,11 +212,15 @@
       "flags": [],
       "extraction_note": "Context from the 2015 base law: Article 7(5) exempted holders of indefinite work permits from the revocation ground in paragraph (4) point 2.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -238,12 +256,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -262,11 +280,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -302,7 +324,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -330,11 +352,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -370,7 +396,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -394,11 +420,15 @@
       "flags": [],
       "extraction_note": "Context from the 2015 base law: Article 7(6) empowered the labour minister to prescribe the form and content of the permit form.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -434,7 +464,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -458,11 +488,15 @@
       "flags": [],
       "extraction_note": "Context from the 2015 base law: Article 9(4) empowered the labour minister to prescribe the form and content of the application form and the documents required for applications by foreigners already resident on another basis.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -498,7 +532,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -522,11 +556,15 @@
       "flags": [],
       "extraction_note": "Context from the 2015 base law: Article 13(1) lists cases in which a work permit is not required; the old point 4 covered work of up to 60 days registered by the responsible person.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -562,7 +600,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -586,11 +624,15 @@
       "flags": [],
       "extraction_note": "Article 13(1) of the base law lists cases in which a work permit is not required.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -626,7 +668,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -635,7 +677,7 @@
         },
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -654,12 +696,19 @@
       "flags": [],
       "extraction_note": "Article 13(1) of the base law lists cases in which a work permit is not required.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Permit exemption is conditional on domestic labour being unavailable: a domestic preference, not a stated nationality condition, hence RI-FMW-001 second. Conflict with the acquis is for G5 to assess."
       }
     },
     {
@@ -694,7 +743,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -713,11 +762,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -753,7 +806,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -772,11 +825,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -812,12 +869,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -836,11 +893,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -880,7 +941,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
@@ -906,12 +967,17 @@
       ],
       "extraction_note": "Under rules 0.3 (R12) electronic reporting by employers is an online public service used by businesses, so TECH-DGOV is clear-cut. theme_doubtful is kept for TECH-EID only: the digital certificate is a condition of the electronic procedure, not the subject of the paragraph.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: online reporting for employers within the work registration procedure, not the national portal; assigned second. TECH-EID materiality not met: the certificate is a condition, not the subject, so RI-TEC-026 is not assigned."
       }
     },
     {
@@ -946,12 +1012,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -970,11 +1036,15 @@
       "flags": [],
       "extraction_note": "Theme tag removed under rules 0.2 (R1): an electronic form from the Agency's system within the work registration procedure, not framed as digital transformation.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1010,7 +1080,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1029,11 +1099,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1069,16 +1143,16 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         },
         {
           "name_as_stated": "Министерството за внатрешни работи",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0008"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1097,11 +1171,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1137,12 +1215,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1161,11 +1239,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1201,7 +1283,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1220,11 +1302,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1260,7 +1346,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1279,11 +1365,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1319,12 +1409,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1343,11 +1433,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1383,12 +1477,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1407,11 +1501,15 @@
       "flags": [],
       "extraction_note": "Paragraph (14) sets a three-day deadline for deregistration; both deadlines are recorded as stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1447,7 +1545,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1466,11 +1564,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1506,7 +1608,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1525,11 +1627,15 @@
       "flags": [],
       "extraction_note": "Paragraph (12) sets a 30-day deadline for registering the end of work; both deadlines are recorded as stated, not reconciled.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1565,12 +1671,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Агенцијата за вработување",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0022"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1589,11 +1695,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1629,12 +1739,12 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [
         {
           "name_as_stated": "Министерот надлежен за работите од областа на трудот",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0006"
         }
       ],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1653,11 +1763,15 @@
       "flags": [],
       "extraction_note": "Data exchange between bodies is mentioned without reference to an electronic system, so no theme tag (incidental under TECH-INTEROP).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1693,7 +1807,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1712,11 +1826,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1752,7 +1870,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1771,11 +1889,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1811,7 +1933,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Подзаконските акти предвидени со овој закон",
@@ -1830,11 +1952,16 @@
       "flags": [],
       "extraction_note": "Added at the G3 independent review: Article 7 was item 0029 in sample 0.1b and was removed in the 0.2 revision, although the 0.2 note describes the removed item as Article 8 (renaming). Status adopted refers to the provision in the published law; whether the secondary acts were adopted is not stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0002",
+          "INT-MKD-0385"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1870,7 +1997,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1889,12 +2016,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Formal provision of the amending law; no substantive content."
       }
     },
     {
@@ -1929,7 +2061,7 @@
       },
       "speaker": {
         "name_as_stated": "СОБРАНИЕ НА РЕПУБЛИКА СЕВЕРНА МАКЕДОНИЈА",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0003"
       },
       "subjects": [],
       "intervention_as_stated": "Законот за изменување и дополнување на Законот за вработување и работа на странци",
@@ -1948,12 +2080,17 @@
       "flags": [],
       "extraction_note": "The text gives the Gazette issue date (16.7.2021) in the page header, but the article itself states no date, so event_date is left empty.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0002"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Formal provision of the amending law; no substantive content."
       }
     }
   ]

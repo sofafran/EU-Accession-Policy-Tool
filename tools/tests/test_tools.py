@@ -377,6 +377,13 @@ def main():
             ok = wb4.sheetnames[:2] == ["Decisions needed", "Reform issues"] and wb4["Decisions needed"].cell(2, 1).value == "G4-D01"
         check("export_review.py", "G4 package: decisions needed come first when listed", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G4_decisions.csv").unlink()
+        r = run(proj, "export_review.py", "G5")
+        ok = r.returncode == 0 and (rv / "G5_classification.xlsx").exists()
+        if ok:
+            wb5 = load_workbook(rv / "G5_classification.xlsx")
+            ok = {"Ambiguous queue", "Unmatched queue", "Spot check", "Contradictions", "Out of scope"} <= set(wb5.sheetnames)
+        check("export_review.py", "G5 package: queues, spot check, contradictions and out-of-scope items", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "G5_classification.xlsx").unlink(missing_ok=True)
         (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
         lines = (proj / "taxonomy" / "reform_issues.csv").read_text(encoding="utf-8").splitlines()
         (proj / "taxonomy" / "reform_issues.csv").write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")

@@ -11,7 +11,12 @@
     "notes": "Searched the whole report for technology and AI material only, as the analyst instructed (keyword search plus reading of every hit in context); no other content extracted. No Chapter 2 content. Page 73 carries only a page number (checked against the PDF). Not extracted as out of scope under rules 0.4 (R22: sector digital systems; incidental mentions): the IACS and LPIS databases, the customs electronic system for tariff quotas, the agricultural market information system and its website, wine and product registers, the FVA information system for food operators and the electronic register of food supplements, online remote sales controls, national animal identification and movement databases and planned FAO software, RASFF background text and RASFF department staffing, the HaDEA veterinary grants (agency name only), the pesticide residue database and plant variety database alignment (see note on item -0007), the EU fisheries control digitalisation background, the cohesion policy management information system and IPA monitoring software and digital performance tools (back-office), 'digital solutions' for integrated planning, the 'green and digital society' priority of the National Development Strategy, the national transport strategy and Intelligent Transport Strategy, the misuse of the IT system for testing public administration candidates (recruitment irregularities, back-office tool) and the Integrated Tax Information System (tax IT). Speaker conventions: country presentation parts are North Macedonia's reported view; Commission assessment parts are the European Commission. period_covered is empty in the register and not stated in the report. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "FVA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0030"
         }
       ],
       "intervention_as_stated": "notification through Animal Disease Information System (ADIS)",
@@ -75,12 +80,16 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Doubtful: use of an EU electronic system (ADIS) is stated, but the subject of the claim is disease notification in a sector reform.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0009"
+        ],
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met because use of an EU electronic system (ADIS) is stated"
       }
     },
     {
@@ -117,12 +126,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "notification through the ADIS system",
@@ -143,12 +152,16 @@
       ],
       "extraction_note": "Doubtful for the same reason as item -0001. The second half of the sentence (alignment commitment by 2026) is not technology content.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0009"
+        ],
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met for ADIS use only; the 2026 alignment commitment is not technology content"
       }
     },
     {
@@ -185,12 +198,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -209,12 +222,14 @@
       "flags": [],
       "extraction_note": "Material under R22: integration with EU electronic systems (IMSOC).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: Commission assessment of integration already achieved, not a requirement or gap"
       }
     },
     {
@@ -251,12 +266,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Information Management System for Official Controls (IMSOC): ADIS, iRASFF and TRACES",
@@ -275,11 +290,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0019",
+          "INT-EU-0009",
+          "INT-EU-0021",
+          "INT-EU-0010"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -317,12 +339,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "TRACES platform; electronic certification feature",
@@ -341,11 +363,15 @@
       "flags": [],
       "extraction_note": "Status in_practice for the use of TRACES; the text also says the country 'has actively engaged into' implementing the electronic certification feature, which is work under way.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0010"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -383,12 +409,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "TRACES module for phytosanitary certification",
@@ -407,11 +433,15 @@
       "flags": [],
       "extraction_note": "Status proposed: an expressed interest only.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0321"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -449,12 +479,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "phytosanitary information system synchronised with the EU database of active substances",
@@ -476,12 +506,16 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Doubtful: a sector information system, but the claim concerns its synchronisation with an EU database. Not extracted nearby: the pesticide residue database 'in accordance with' the EU Pesticides Database (content alignment), the planned upgrade of phytosanitary information systems by 2026 and the recommendation to align plant variety databases with EU databases (sector systems, R22).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0312"
+        ],
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met because the claim concerns synchronisation with an EU database, not the sector system alone"
       }
     },
     {
@@ -518,12 +552,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "E-procurement tool",
@@ -545,12 +579,16 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Doubtful: e-procurement portals used by bidders are TECH-DGOV (R12), but here the tool is described only for administrative control and reporting.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-006"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0132"
+        ],
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met; the tool is e-procurement and its risk-based use matches RI-TEC-006. Chapter 22 context is not among the chapters listed for the issue"
       }
     },
     {
@@ -587,12 +625,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Smart Specialisation Strategy (S3) 2024-2027 and Action Plan 2024-2025",
@@ -614,12 +652,15 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. One claim over two sentences. Doubtful: a research and innovation strategy; the digital transition and ICT are named as priorities, but no digital measure is described.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0093",
+          "INT-MKD-0094"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. A research and innovation strategy naming ICT as a priority; no digital measure described"
       }
     },
     {
@@ -656,12 +697,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "National Operational Broadband Plan (2020-2029)",
@@ -682,11 +723,15 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Status unclear: the text says 'prepared', not adopted. Presented under cohesion policy enabling conditions.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0092"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -725,12 +770,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -751,12 +796,18 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. TECH-DIGI for the national ICT strategy.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-014",
+          "RI-TEC-011",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-002 added to the seed issues for the national ICT strategy"
       }
     },
     {
@@ -793,12 +844,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "dedicated digital platforms",
@@ -820,12 +871,14 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Doubtful: online consultation platforms are public-facing, but they are one of several consultation channels and are not described.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0271"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. E-consultation platform; RI-TEC-008 retired at G4; no other issue fits"
       }
     }
   ]

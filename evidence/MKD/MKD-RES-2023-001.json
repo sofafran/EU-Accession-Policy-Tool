@@ -11,7 +11,12 @@
     "notes": "Whole study read. Under the Chapter 2 boundary in the run record (rules 0.2, R8), items are kept only where the text concerns access to the labour market and the movement of foreign workers: the Open Balkan labour market memorandum and its effects (eased or facilitated mobility, simplified employment rules, opening the labour market upon EU accession) and the inflow of Serbian workers into North Macedonia. Left out: emigration statistics and patterns of Macedonian workers, wage differentials and outflow claims not linked in the text to labour market access or foreign workers, general labour-market statistics and occupational gaps, and the policy recommendations on active labour market, education and regional investment policy (general labour-market policy). Recommendation headings that introduce lists are not extracted (R9). ICT occupations are mentioned often; judged incidental to the technology theme because technology is not the subject of the claims. Speaker is Finance Think unless the text attributes the claim to another body. Revised under rules 0.2 and themes 1.1 on 29 October 2026: 36 items removed (R8, R9), one missed claim added as -0056, and eu_scale.applies_to added (null throughout). Revised under rules 0.3 and themes 1.2 on 29 October 2026: Open Balkan items about North Macedonian workers moving out removed (R13: -0019, -0022 to -0025), recommendation heading -0049 restored (R15) and TECH-DGOV restored on -0001 (R12). G3 independent review applied routine fixes (see review/RUN-2026-01/g3_qa/). Finalised on 30 October 2026 under extraction rules 0.4 and themes 1.3: all items and their IDs are kept unchanged; the whole study was screened again for foreign workers, Open Balkan, permits, EURES, social security, recognition of qualifications and digital terms, and rules R21 to R23 needed no change to any item. No new items were added, so the highest ID ever used stays -0056; removed IDs (-0004, -0006 to -0017, -0019 to -0027, -0032 to -0034, -0037, -0039, -0041, -0043 to -0048, -0050 to -0055) are not reused. Two sentences listed as low-importance misses in the G3 review stay out as judgement calls: page 14 (Albanian migrants in North Macedonia, not stated to be workers, literature review) and page 58 (direction of the movement of labour is implied, not stated). The claims on pages 37 and 49 that eased mobility may deepen occupational gaps by drawing North Macedonian workers out stay out under R13. Second-pass check done (G3 condition 2)."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -49,20 +54,20 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": "Memorandum of Cooperation related to the free access to the labor market in the Western Balkans",
@@ -81,12 +86,14 @@
       "flags": [],
       "extraction_note": "Status from 'have been signed so far'. TECH-DGOV restored under R12: the electronic application for obtaining an identification number is an online procedure used directly by residents. Subjects taken from the preceding sentence naming the three Open Balkan countries. No signature date is stated.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0010"
+        ],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Electronic ID number application alone could go to RI-TEC-003 (not clearly: one element of a memorandum); the subject is the memorandum."
       }
     },
     {
@@ -121,20 +128,20 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": "Memorandum of Cooperation related to the free access to the labor market in the Western Balkans",
@@ -153,11 +160,13 @@
       "flags": [],
       "extraction_note": "Describes the content of the memorandum in the previous item; status as stated there ('signed').",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0010"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -193,20 +202,20 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": "Memorandum of Cooperation related to the free access to the labor market in the Western Balkans",
@@ -225,11 +234,13 @@
       "flags": [],
       "extraction_note": "Describes the content of the memorandum; status as stated in the first memorandum item ('signed'). The study cites its own earlier policy brief.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0010"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -265,20 +276,20 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -297,11 +308,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0033"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -337,20 +350,20 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         },
         {
           "name_as_stated": "Albania",
-          "actor_id": null
+          "actor_id": "ACT-INT-0020"
         }
       ],
       "intervention_as_stated": null,
@@ -369,11 +382,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0033"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -409,16 +424,16 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -437,11 +452,11 @@
       "flags": [],
       "extraction_note": "Kept under the Chapter 2 boundary (R8): concerns the inflow of foreign (Serbian) workers into the labour market of North Macedonia.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -477,16 +492,16 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -505,11 +520,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0033"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -545,16 +562,16 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -573,11 +590,11 @@
       "flags": [],
       "extraction_note": "Kept under the Chapter 2 boundary (R8): concerns the inflow of foreign (Serbian) workers into the labour market of North Macedonia.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -613,16 +630,16 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -643,11 +660,11 @@
       ],
       "extraction_note": "Kept under the Chapter 2 boundary (R8): concerns the inflow of foreign (Serbian) workers into the labour market of North Macedonia.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -683,16 +700,16 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -713,11 +730,11 @@
       ],
       "extraction_note": "Kept under the Chapter 2 boundary (R8): concerns the inflow of foreign (Serbian) workers into the labour market of North Macedonia. Quote extended in the G3 independent review to include the preceding sentence, which states the wage premium that 'This' refers to (rule 1).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -753,16 +770,16 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Serbia",
-          "actor_id": null
+          "actor_id": "ACT-INT-0025"
         }
       ],
       "intervention_as_stated": null,
@@ -781,11 +798,11 @@
       "flags": [],
       "extraction_note": "Kept under the Chapter 2 boundary (R8): concerns the inflow of foreign (Serbian) workers into the labour market of North Macedonia.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -821,12 +838,12 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -845,11 +862,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0033"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -885,12 +904,12 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -909,11 +928,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0033"
+        ],
+        "classification_status": "queued_unmatched",
         "classification_note": null
       }
     },
@@ -949,12 +970,12 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -973,12 +994,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-INT-0033"
+        ],
+        "classification_status": "queued_unmatched",
+        "classification_note": "The accession element touches RI-FMW-001, but the subject is the Open Balkan Initiative."
       }
     },
     {
@@ -1013,12 +1036,12 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1037,12 +1060,12 @@
       "flags": [],
       "extraction_note": "Restored under R15: the heading carries its own claim (reducing the need to import foreign workers), which the bullet points below it do not repeat.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General education and labour-market policy, outside the Chapter 2 boundary in the run record despite the chapter tag."
       }
     },
     {
@@ -1077,7 +1100,7 @@
       },
       "speaker": {
         "name_as_stated": "Finance Think",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0093"
       },
       "subjects": [
         {
@@ -1101,12 +1124,12 @@
       "flags": [],
       "extraction_note": "Added in the 0.2 revision: a claim on page 7 missed in the 0.1b sample (not a page-break or duplicate case).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G4-D09)"
       }
     }
   ]

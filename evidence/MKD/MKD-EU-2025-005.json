@@ -11,7 +11,12 @@
     "notes": "Searched the whole report for technology and AI material only, as the analyst instructed (keyword search plus reading of every hit in context, and of the chapter introductions and summaries); no other content extracted. No Chapter 2 content. Pages 65 and 66 carry only page numbers (checked against the PDF: no text or images). Not extracted as out of scope under rules 0.4 (R22: other sector digital systems; incidental mentions): European Electronic Tolling Systems and the Open Balkan toll interoperability, intelligent transport systems and the ITS strategy, digital and smart tachographs (except item -0004), rail and air traffic management interoperability (technical, not information systems), aviation cybersecurity measures (one act in a list of aligned acts), the European train driver register plan (EU-level intention), smart meters and data management in the electricity market, gas data exchange rules, the regulator's market monitoring software, the Environmental Information System and water information system (publishing information), Natura 2000 data software and 'digitalisation' of nature protection, the planned IT Forest timber tracing system, the car registration IT system for CO2 standards, anti-corruption 'digitalization of procedures' and digitalisation recommendations in transport and energy, and the integrity monitoring software. Speaker conventions: country presentation parts are North Macedonia's reported view; Commission assessment parts are the European Commission. period_covered is empty in the register and not stated in the report. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -75,12 +80,14 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Doubtful: only one of the three acts concerns an EU electronic system (the public interface connected to the Internal Market Information System); the others are road transport rules. Typed finding: a planned alignment date with no national measure named.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met only for the act on the public interface to the Internal Market Information System; the other two acts are road transport rules Chain link: implementation: the country account of its own alignment, not an EU requirement"
       }
     },
     {
@@ -117,12 +124,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "access to the Internal Market Information System",
@@ -143,11 +150,15 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Status proposed: a request, not yet granted. Material: connection to an EU electronic system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0188"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -185,12 +196,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -209,12 +220,16 @@
       "flags": [],
       "extraction_note": "One claim over two sentences. Responds to the request in item -0002.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0188"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain link: country_response: Commission notes a national request and its handling, not an EU requirement"
       }
     },
     {
@@ -251,12 +266,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -278,12 +293,16 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Quote is the lead-in and the first two items of a bulleted list; the list continues with two tachograph equipment acts not extracted. Doubtful: tachographs are a sector digital system (out under R22), but the second act concerns interconnection of electronic registers across the EU.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met only for the act on interconnection of electronic registers of driver cards; tachograph rules themselves are a sector matter under R22"
       }
     },
     {
@@ -320,12 +339,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "participation in Ecurie and the European Radiological Data Exchange Platform (EURDEP)",
@@ -346,12 +365,17 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Material under R22: participation in EU electronic exchange systems. The next sentence (IAEA systems ITDB and USIE) is not an EU system and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0016",
+          "INT-EU-0018"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chapter 15 is not among the chapters listed for RI-TEC-032; fits on the definition (connection to EU electronic systems)"
       }
     },
     {
@@ -388,12 +412,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "electronic system EXIM",
@@ -415,12 +439,14 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Quote is one item of a list within a longer sentence. 'Might be done' read as 'can be done'. Doubtful: the text describes EXIM as used by institutions; it is not stated that applicants use it directly, so it may be a back-office licensing system rather than an online public service. See also items -0014 and -0015 on the same system.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0280"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. EXIM is described as used by institutions within sector licensing; not stated that applicants use it directly (R12, R22)"
       }
     },
     {
@@ -457,12 +483,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -483,12 +509,16 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Material: INSPIRE governs the sharing and interoperability of spatial data; the Commission links it to other EU data legislation (item -0013).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0475"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: the country account of its own alignment, not an EU requirement"
       }
     },
     {
@@ -525,12 +555,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Law on National Spatial Data Infrastructure (NSDI); Regulations on Metadata Standards and Network Services",
@@ -551,11 +581,17 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0067",
+          "INT-MKD-0215",
+          "INT-MKD-0216"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -593,16 +629,16 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "NSDI Council",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0088"
         },
         {
           "name_as_stated": "NSDI Committee",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0087"
         }
       ],
       "intervention_as_stated": "tri-partite agreement between NSDI Council, NSDI Committee and working groups",
@@ -623,11 +659,15 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0503"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -665,12 +705,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "national geoportal",
@@ -691,11 +731,15 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Current situation referring back to 2015; not flagged out_of_window.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0303"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -733,12 +777,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -759,12 +803,14 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Refers to the INSPIRE Directive named in the preceding sentences (items -0007 to -0010).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: the country account of its own alignment, not an EU requirement"
       }
     },
     {
@@ -801,12 +847,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -825,12 +871,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Chain link: implementation: Commission assessment of the frameworks already in place, not a requirement or gap"
       }
     },
     {
@@ -867,12 +915,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -891,11 +939,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -933,12 +983,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "dedicated website (EXIM)",
@@ -960,12 +1010,14 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Forestry context (timber import and export). Doubtful: EXIM is described as a control tool; it is not stated here that traders use it directly. The forest police part of the sentence is not technology content. The next sentence (planned IT Forest system for timber tracing) is a sector system and is not extracted.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0280"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. EXIM is named as a control tool in forestry; not stated that traders use it directly (R12, R22)"
       }
     },
     {
@@ -1002,16 +1054,16 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         },
         {
           "name_as_stated": "Ministry of Health",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0012"
         }
       ],
       "intervention_as_stated": "EXIM system",
@@ -1032,12 +1084,16 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Material under R12: an online service used directly by businesses.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0280"
+        ],
+        "classification_status": "auto",
+        "classification_note": "RI-TEC-003 test: not clearly assignable. EXIM is a sector permit portal used by businesses, not the national e-services portal; it fits only on a wide reading and no other issue fits"
       }
     },
     {
@@ -1074,12 +1130,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1100,12 +1156,14 @@
       ],
       "extraction_note": "Context: REACH implementation. Doubtful: the security of information systems is the subject, but the databases are sector databases inside the chemicals reform.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful resolved: materiality met because the security of information systems is the subject of the claim, though the databases sit in the chemicals reform; Chapter 27 is not among the chapters listed for RI-TEC-023"
       }
     },
     {
@@ -1142,12 +1200,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "E-PRTR portal",
@@ -1169,12 +1227,14 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Portal of the E-PRTR system named in the preceding sentence. Status unclear (R19): the portal exists but is not available. Doubtful: a public data portal within environment reform; it may count only as publishing information online.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0276"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. A portal publishing environmental register data online within a sector reform; no issue fits"
       }
     },
     {
@@ -1211,12 +1271,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "connection with the Common Emergency Communication and Information System (CECIS)",
@@ -1237,11 +1297,15 @@
       ],
       "extraction_note": "Country presentation: North Macedonia's own account, recorded as its reported view. Quote runs over the page break; the printed page number is left out. Material under R22: connection to an EU electronic system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0182"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1279,12 +1343,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1303,11 +1367,15 @@
       "flags": [],
       "extraction_note": "Material under R22: connection to an EU electronic system. Twin of the plan in item -0018.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0182"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1345,12 +1413,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1372,12 +1440,12 @@
       ],
       "extraction_note": "Split from item -0017 at the second pass (same sentence). Reported view of North Macedonia.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met, as for item -0017"
       }
     },
     {
@@ -1414,12 +1482,12 @@
       },
       "speaker": {
         "name_as_stated": "North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0001"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Draft law amending the Law on road traffic safety (national contact point for data exchange under Directive (EU) 2015/413)",
@@ -1441,12 +1509,14 @@
       ],
       "extraction_note": "Added at the second pass. Quote runs over a page break; the printed page number is left out. theme_doubtful: cross-border exchange of road-safety offence data between Member States under Directive (EU) 2015/413 is an EU electronic data exchange, but the text names no EU system and the area is transport enforcement (R22).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0075"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met. The text names no EU electronic system and the area is transport enforcement (R22)"
       }
     },
     {
@@ -1483,12 +1553,12 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -1509,12 +1579,14 @@
       ],
       "extraction_note": "Added at the second pass. theme_doubtful: cross-border exchange of road-safety offence data between Member States under Directive (EU) 2015/413 is an EU electronic data exchange, but the text names no EU system and the area is transport enforcement (R22).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0075"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful: materiality not met, as for item -0021. Seed issue RI-TEC-032 not applied"
       }
     }
   ]

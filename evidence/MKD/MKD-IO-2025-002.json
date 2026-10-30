@@ -11,7 +11,12 @@
     "notes": "Read in full (one page). Only one passage meets the scope, and it is flagged as doubtful: the World Bank Country Manager's statement naming digitalisation among reform areas. Growth, fiscal, labour participation and outmigration content is out of scope (general labour-market policy and emigration not linked to Chapter 2). The source register expected low value. Second-pass check done (G3 condition 2)."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "Carole Megevand, World Bank Country Manager for North Macedonia",
-        "actor_id": null
+        "actor_id": "ACT-INT-0010"
       },
       "subjects": [
         {
           "name_as_stated": "North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": null,
@@ -74,12 +79,12 @@
       ],
       "extraction_note": "Doubtful: digitalisation is one of four named reform areas, with no digital content beyond the word.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme test not met: digitalisation is one named reform area among several, with no digital content."
       }
     }
   ]

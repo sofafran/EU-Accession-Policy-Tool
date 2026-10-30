@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.6.0"
+__version__ = "1.7.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -478,7 +478,78 @@ def g4(root, run):
     ]
 
 
-BUILDERS = {"G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
+def g5(root, run):
+    """G5 classification package (P3, stage 9): decisions first, then the queues, the 10 per cent sample with independent verdicts,
+    the spot-check sheet, entity lists sorted so duplicates sit together, contradictions, and out-of-scope and doubtful items."""
+    from common import evidence_files, read_json
+    rv = root / "review" / run
+    qa = rv / "g5_qa"
+    items = {}
+    for f in evidence_files(root):
+        for it in read_json(f)["items"]:
+            items[it["item_id"]] = it
+
+    def text(i):
+        return i.get("translation_en") or i["stated_text"]
+
+    def verdicts(*names):
+        out = {}
+        for n in names:
+            if (qa / n).exists():
+                for r in read_csv(qa / n)[1]:
+                    out[r["item_id"]] = r
+        return out
+    dec_h, decisions = read_csv(rv / "G5_decisions.csv") if (rv / "G5_decisions.csv").exists() else ([], [])
+    un_h, unmatched = read_csv(root / "taxonomy" / "unmatched_queue.csv")
+    am_h, ambiguous = read_csv(root / "taxonomy" / "ambiguous_queue.csv")
+    cv = verdicts("class_verdicts_A.csv", "class_verdicts_B.csv")
+    sample = [[k, items[k]["information_type"], text(items[k]), ";".join(items[k]["pass2"]["reform_issue_ids"]), ";".join(items[k]["pass2"]["mechanism_ids"]),
+               items[k]["pass2"]["chain_link"], v["verdict"], v["error_type"], v["comment"]] for k, v in cv.items() if k in items]
+    sv = verdicts("spot_verdicts.csv")
+    spot = []
+    if (rv / "G5_spot_check.csv").exists():
+        for r in read_csv(rv / "G5_spot_check.csv")[1]:
+            i = items.get(r["item_id"])
+            if i:
+                spot.append([r["item_id"], r["why_selected"], r["flags"], i["information_type"], text(i), sv.get(r["item_id"], {}).get("verdict", ""), sv.get(r["item_id"], {}).get("comment", "")])
+    in_h, ints = read_csv(root / "entities" / "interventions.csv")
+    ac_h, acts = read_csv(root / "entities" / "actors.csv")
+    links = read_csv(root / "links" / "links.csv")[1]
+    cvd = {}
+    if (qa / "contradiction_verdicts.csv").exists():
+        for r in read_csv(qa / "contradiction_verdicts.csv")[1]:
+            cvd[(r["from_id"], r["to_id"])] = r
+    con = []
+    for l in links:
+        if l["link_type"] == "contradicts":
+            a, b = items.get(l["from_id"]), items.get(l["to_id"])
+            v = cvd.get((l["from_id"], l["to_id"]), {})
+            con.append([l["link_id"], l["from_id"], text(a) if a else "", l["to_id"], text(b) if b else "", l["basis"], v.get("verdict", ""), v.get("comment", "")])
+    con.sort(key=lambda r: (r[6] != "confirmed", r[0]))
+    oos = [[k, i["information_type"], text(i), ";".join(i["themes"]), ";".join(i["flags"]), i["pass2"]["classification_note"] or ""] for k, i in items.items() if i["pass2"]["classification_status"] == "out_of_scope"]
+    doubt = [[k, i["pass2"]["classification_status"], ";".join(i["pass2"]["reform_issue_ids"]), text(i), i["pass2"]["classification_note"] or ""] for k, i in items.items()
+             if "theme_doubtful" in i["flags"] and i["pass2"]["classification_status"] != "out_of_scope"]
+    q_h, queries = read_csv(rv / "pass2" / "pass1_queries.csv") if (rv / "pass2" / "pass1_queries.csv").exists() else (["item_id", "query"], [])
+    rec = read_csv(qa / "eu_recheck.csv") if (qa / "eu_recheck.csv").exists() else (["source_id"], [])
+    return "G5_classification.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Ambiguous queue", am_h, [[r[h] for h in am_h] for r in ambiguous]),
+        ("Unmatched queue", un_h, [[r[h] for h in un_h] for r in sorted(unmatched, key=lambda r: r["proposed_label"])]),
+        ("Sample 10 percent", ["item_id", "type", "text", "reform_issue_ids", "mechanism_ids", "chain_link", "independent_verdict", "error_type", "comment"], sample),
+        ("Spot check", ["item_id", "why_selected", "flags", "type", "text", "independent_verdict", "comment"], spot),
+        ("Interventions", in_h, sorted([[r[h] for h in in_h] for r in ints], key=lambda r: (r[in_h.index("name")] or "").lower())),
+        ("Actors", ac_h, sorted([[r[h] for h in ac_h] for r in acts], key=lambda r: (r[ac_h.index("name")] or "").lower())),
+        ("Contradictions", ["link_id", "from_id", "from_text", "to_id", "to_text", "basis", "independent_verdict", "comment"], con),
+        ("Out of scope", ["item_id", "type", "text", "themes", "flags", "note"], oos),
+        ("Still doubtful in scope", ["item_id", "status", "reform_issue_ids", "text", "note"], doubt),
+        ("Pass 1 queries", q_h, [[r[h] for h in q_h] for r in queries]),
+        ("EU missed claims", rec[0], [[r[h] for h in rec[0]] for r in rec[1]]),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS = {"G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
 
 
 def main(argv=None):

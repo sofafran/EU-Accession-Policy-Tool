@@ -11,7 +11,12 @@
     "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. Multi-country Communication covering ten enlargement countries: only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, artificial intelligence, e-government, e-services, broadband, roaming, 5G, wallet, workers, social security, EURES, interoperability, electronic, data protection, connectivity, single market, technology) and full reading of every page with a hit, including the North Macedonia passages in section III.1 (page 5) and the conclusions (paragraph 14, page 32), and sections III.2 to III.4. Annex I (third-party indices) and Annex II (statistics, page 60 converted by text recognition) have no in-scope indicators; the 'basic digital skills' rows are not linked to an in-scope recommendation (R2). Period covered left empty: the register gives none. Left out: cybercrime and cyber-enabled crime (page 13, R21); passages on Ukraine, Moldova and Georgia; general references to the green and digital transitions in the Growth Plan and IPA III. No North Macedonia-specific technology claim and no Chapter 2 material found in this document. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,7 +53,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -72,11 +77,15 @@
       "flags": [],
       "extraction_note": "Horizontal. Data protection is one of several areas listed; only that element is in scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -114,7 +123,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -148,12 +157,17 @@
       ],
       "extraction_note": "Horizontal. 'These institutions' refers to the Ombudsperson, national human rights institutions, equality bodies and data protection authorities named in the preceding sentence; only the data protection authorities are in scope, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-09",
+          "MEC-05"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful, materiality met: \"these institutions\" include data protection authorities and the claim is about their resources and independence. Horizontal statement."
       }
     },
     {
@@ -190,7 +204,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -216,12 +230,12 @@
       ],
       "extraction_note": "Horizontal. Cyber-attacks are one element of hybrid threats; the passage does not focus on the security of networks and information systems, hence theme_doubtful. Two sentences, one claim. The cybercrime passage on page 13 is not extracted (R21).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful, materiality not met: hybrid threats are the subject; cyber-attacks are one listed element."
       }
     },
     {
@@ -258,7 +272,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -284,12 +298,12 @@
       ],
       "extraction_note": "Horizontal; the digital transition is named only in general terms, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful, materiality not met: the digital transition is named only in general terms; no issue fits."
       }
     },
     {
@@ -326,16 +340,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Moldova",
-          "actor_id": null
+          "actor_id": "ACT-INT-0023"
         },
         {
           "name_as_stated": "Ukraine",
-          "actor_id": null
+          "actor_id": "ACT-INT-0027"
         },
         {
           "name_as_stated": "Western Balkan partners",
@@ -358,11 +372,13 @@
       "flags": [],
       "extraction_note": "Only the telecommunications (roaming) element is in scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -400,16 +416,16 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
           "name_as_stated": "Moldova",
-          "actor_id": null
+          "actor_id": "ACT-INT-0023"
         },
         {
           "name_as_stated": "Ukraine",
-          "actor_id": null
+          "actor_id": "ACT-INT-0027"
         },
         {
           "name_as_stated": "Western Balkan partners",
@@ -434,12 +450,12 @@
       ],
       "extraction_note": "Trust services are named only in a list with no detail, hence theme_doubtful. Status from 'work in all these areas will continue'.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "theme_doubtful, materiality not met: trust services named only in a list of gradual integration areas."
       }
     },
     {
@@ -476,7 +492,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -500,11 +516,13 @@
       "flags": [],
       "extraction_note": "The next sentences on Ukraine and Moldova are not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -542,7 +560,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -570,11 +588,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0006",
+          "INT-MKD-0107"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -612,7 +635,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -636,11 +659,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0043"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -678,7 +705,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -704,12 +731,14 @@
       ],
       "extraction_note": "Customs IT systems are out of scope unless the claim concerns connection to an EU electronic system (rules 0.4, R22). Alignment with the EU digital customs acquis may imply interoperability with EU customs systems, but the text does not say so, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "theme_doubtful, materiality met: the claim concerns alignment of digital systems with the EU digital customs acquis."
       }
     },
     {
@@ -749,7 +778,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -773,11 +802,15 @@
       "flags": [],
       "extraction_note": "Same wording as in the 2024 Communication.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-024",
+          "RI-TEC-025",
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -816,7 +849,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -840,11 +873,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0108",
+          "INT-INT-0008"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -882,7 +920,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -906,11 +944,15 @@
       "flags": [],
       "extraction_note": "Regional figure; no breakdown by country. Same sentence as item -0014 (intervention).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0036"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -948,7 +990,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -972,11 +1014,15 @@
       "flags": [],
       "extraction_note": "Same sentence as item -0013 (metric).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0036"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1015,7 +1061,7 @@
       },
       "speaker": {
         "name_as_stated": "European Commission",
-        "actor_id": null
+        "actor_id": "ACT-EU-0002"
       },
       "subjects": [
         {
@@ -1039,11 +1085,15 @@
       "flags": [],
       "extraction_note": "The digital skills element is tied to digital technologies including artificial intelligence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-EU-0006"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     }

@@ -11,7 +11,12 @@
     "notes": "Read in full. The document is the Agency's own plan, so targets and planned measures are interventions with proposed status, and the KPI rows are extracted as interventions with no value, because no initial or target value is given (page 20). Only KPI rows with a time frame for a named measure or a digital content are extracted; the many activity-count rows are left out as they add no claim. The SWOT table on pages 8 and 9 is treated as a summary table: where the running text makes the same claim, the running text item is kept and carries \"also at page 8\"; SWOT entries with no counterpart, or with a different strength of wording, are extracted with the flag table. Website and media mentions, general awareness-raising activities, and the opportunities that only restate goals are left out. No date of formal adoption is stated: the Strategy's status is `unclear`. The text contains internal tensions, which are recorded in item notes and not resolved: awareness has increased (page 7) against low awareness (page 8 and page 14); strong DPO cooperation against DPO isolation (page 8); close alignment with the EU acquis against the need for full GDPR transposition (pages 8 and 13). The action plan annex announced on page 11 is not in the text. Second-pass check done (G3 condition 2)."
   },
   "classification": {
-    "status": "not_started"
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.2",
+    "taxonomy_version": "1.0",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -48,12 +53,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "Republic of North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Strategy for the Implementation of the Right to Personal Data Protection 2025-2030",
@@ -72,11 +77,17 @@
       "flags": [],
       "extraction_note": "The text says the Strategy was developed and describes its contents but does not say whether or when it was formally adopted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-020",
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -114,12 +125,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "European Commission",
-          "actor_id": null
+          "actor_id": "ACT-EU-0002"
         }
       ],
       "intervention_as_stated": "Strategy for the Implementation of the Right to Personal Data Protection 2025-2030",
@@ -138,11 +149,17 @@
       "flags": [],
       "extraction_note": "Page 4 says the support came through the TAIEX instrument of the European Union.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-020",
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -180,7 +197,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -208,11 +225,13 @@
       "flags": [],
       "extraction_note": "A claim by the responsible agency about its own law. Page 8 also lists low public awareness as a weakness (item -0009).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -250,7 +269,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": "Law on Personal Data Protection (LPDP)",
@@ -269,11 +288,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0010"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -311,12 +334,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -337,11 +360,13 @@
       ],
       "extraction_note": "Compare page 13 (item -0029), which says further efforts are needed for full transposition of the GDPR and Directive (EU) 2016/680.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -379,7 +404,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -405,11 +430,13 @@
       ],
       "extraction_note": "Compare the weakness listed on the same page on the isolation of DPOs, repeated at page 17 (items -0043 and -0044).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -447,12 +474,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -473,11 +500,13 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -515,7 +544,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -541,11 +570,17 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0010"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -583,7 +618,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -613,11 +648,13 @@
       ],
       "extraction_note": "Compare page 7 (item -0003), which says awareness has significantly increased.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -655,12 +692,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -681,11 +718,16 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-09",
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -724,7 +766,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -751,12 +793,16 @@
       ],
       "extraction_note": "TECH-INTEROP is doubtful: the source uses the word interoperability for a communication platform among officers, not for an exchange between information systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0291"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met on TECH-DATA only. \"Interoperability\" here means a communication platform among officers, not data exchange between institutions, so RI-TEC-028 does not apply."
       }
     },
     {
@@ -793,12 +839,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -820,11 +866,15 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -862,16 +912,16 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "Ministry of Finance",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0010"
         }
       ],
       "intervention_as_stated": null,
@@ -893,11 +943,15 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-05"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -935,12 +989,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -962,11 +1016,16 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020",
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1004,7 +1063,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -1030,11 +1089,17 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0013"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1072,12 +1137,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -1099,11 +1164,13 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1141,12 +1208,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Strategy for the Implementation of the Right to Personal Data Protection 2025-2030",
@@ -1165,11 +1232,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1207,12 +1278,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Draft Law for Amending and Supplementing the Law on Personal Data Protection",
@@ -1233,11 +1304,16 @@
       ],
       "extraction_note": "The sentence breaks off as printed (\"because the Law.\"); the next sentence appears to continue it (item -0019).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-018",
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0013"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1275,12 +1351,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -1299,11 +1375,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1341,12 +1421,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Draft Law for Amending and Supplementing the Law on Personal Data Protection",
@@ -1365,11 +1445,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0013"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1407,12 +1491,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -1433,11 +1517,16 @@
       ],
       "extraction_note": "Page 8 states this without the hedge (item -0010).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-09",
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1476,12 +1565,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Strengthening the capacities of the PDPA",
@@ -1502,12 +1591,16 @@
       ],
       "extraction_note": "TECH-AI is doubtful: AI-based systems are given only as an example of new technologies. Page 22 sets capacity indicators for this activity.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met on TECH-DATA. AI-based systems are only an example of new technologies, so RI-TEC-001 is not assigned."
       }
     },
     {
@@ -1544,12 +1637,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -1568,11 +1661,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-05"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1610,7 +1707,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -1634,11 +1731,16 @@
       "flags": [],
       "extraction_note": "Also at page 8 (SWOT, non-compliance of sectoral legislation with the GDPR).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0433"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1676,12 +1778,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Law for Amending and Supplementing the Law on Personal Data Protection",
@@ -1700,11 +1802,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0013"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1742,12 +1849,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Strengthening the capacities of the PDPA",
@@ -1766,11 +1873,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1808,12 +1919,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "ministries",
@@ -1836,11 +1947,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0499"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1878,7 +1993,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -1897,11 +2012,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01",
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0010"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1939,12 +2061,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": null,
@@ -1963,11 +2085,15 @@
       "flags": [],
       "extraction_note": "Compare the Law's own statement of harmonisation with the GDPR (MKD-GOV-2020-001-0002) and page 8 of this document (item -0005).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2005,7 +2131,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2024,11 +2150,17 @@
       "flags": [],
       "extraction_note": "Also at page 8 (SWOT, non-transposition of the Law Enforcement Directive).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0017"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2066,7 +2198,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": "law that will transpose the EU Law Enforcement Directive",
@@ -2085,11 +2217,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0017"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2127,7 +2263,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -2157,11 +2293,15 @@
       ],
       "extraction_note": "The text reads \"essential 00to harmonize\"; quoted as it appears.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0471"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2201,7 +2341,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": "Harmonization of Legislation in the Context of Digitization Processes",
@@ -2220,12 +2360,20 @@
       "flags": [],
       "extraction_note": "Also lists the e-Privacy Directive, European Health Data Space Regulation, Digital Services Act and Digital Markets Act.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-001",
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [
+          "INT-MKD-0472"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Also names NIS2 (RI-TEC-022) and EU data acts (RI-TEC-016); the three best fits are given."
       }
     },
     {
@@ -2262,12 +2410,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "Republic of North Macedonia",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0001"
         }
       ],
       "intervention_as_stated": "Framework Convention on Artificial Intelligence and Human Rights, Democracy, and the Rule of Law of the Council of Europe",
@@ -2286,11 +2434,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0028"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2328,12 +2480,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Methodology for Data Transfer Impact Assessment",
@@ -2352,11 +2504,15 @@
       "flags": [],
       "extraction_note": "Page 23 gives the time frame as the second quarter of 2026 (item -0053).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0498"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2395,12 +2551,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "acts resulting from the EU digital strategy",
@@ -2419,11 +2575,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0533"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2461,12 +2622,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "citizens",
@@ -2489,11 +2650,13 @@
       "flags": [],
       "extraction_note": "The text reads \"there remains is significant need\"; quoted as it appears.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2531,16 +2694,16 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "European Data Protection Board",
-          "actor_id": null
+          "actor_id": "ACT-EU-0009"
         }
       ],
       "intervention_as_stated": "observer status in the European Data Protection Board activities",
@@ -2561,12 +2724,16 @@
       ],
       "extraction_note": "\"20i7 Initiative\" is quoted as it appears.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0418"
+        ],
+        "classification_status": "auto",
+        "classification_note": "International cooperation of the authority; closest fit, no issue covers this directly."
       }
     },
     {
@@ -2603,7 +2770,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -2627,11 +2794,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2669,16 +2838,16 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "European Data Protection Board",
-          "actor_id": null
+          "actor_id": "ACT-EU-0009"
         }
       ],
       "intervention_as_stated": "collaboration with the European Data Protection Board",
@@ -2697,11 +2866,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0444"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2739,7 +2912,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -2758,11 +2931,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2800,7 +2975,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -2828,11 +3003,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2870,7 +3047,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -2894,11 +3071,15 @@
       "flags": [],
       "extraction_note": "Also at page 8 (SWOT, isolation of DPOs).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-05"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2936,7 +3117,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -2964,11 +3145,13 @@
       "flags": [],
       "extraction_note": "Also at page 8 (SWOT, isolation of DPOs).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3006,12 +3189,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "DPOs",
@@ -3034,11 +3217,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0527"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3077,7 +3264,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -3103,12 +3290,16 @@
       ],
       "extraction_note": "TECH-DGOV is doubtful: an online training tool used by officers. Page 24 sets e-classroom indicators; see also MKD-CSO-2025-001 on the tool's creation.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MKD-0279"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Materiality met on TECH-DATA only. The e-classroom is a training tool for officers, not a public e-service, so it could not clearly be assigned to RI-TEC-003."
       }
     },
     {
@@ -3145,24 +3336,24 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "Ministry of Justice",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0009"
         },
         {
           "name_as_stated": "Ministry of Public Administration",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0005"
         },
         {
           "name_as_stated": "Ministry of Finance",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0010"
         },
         {
           "name_as_stated": "Ministry of Digital Transformation",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0004"
         }
       ],
       "intervention_as_stated": null,
@@ -3183,11 +3374,16 @@
       ],
       "extraction_note": "The ministries are named in the preceding sentence. Could also be read as a finding; the sentence explains what progress depends on.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3225,7 +3421,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": null,
@@ -3244,11 +3440,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3286,12 +3484,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Law Amending and Supplementing the Law on Personal Data Protection",
@@ -3312,11 +3510,15 @@
       ],
       "extraction_note": "A planned time frame. No result is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0013"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3354,7 +3556,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": "Amendment of the sectoral legislation on misdemeanour sanctions",
@@ -3375,11 +3577,15 @@
       ],
       "extraction_note": "A planned time frame. No result is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0433"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3417,12 +3623,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Strengthening the capacities of the PDPA",
@@ -3444,12 +3650,12 @@
       ],
       "extraction_note": "TECH-DIGI is doubtful: an internal IT measure of one agency. \"Number of new hardware and software equipment purchased\" on the same page was not extracted as incidental.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Materiality not met: internal IT indicator of one agency, and no issue covers it."
       }
     },
     {
@@ -3486,7 +3692,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": "Law on the Transposition of the EU Law Enforcement Directive",
@@ -3507,11 +3713,15 @@
       ],
       "extraction_note": "A planned time frame. No result is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0017"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3549,12 +3759,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Methodology for Data Transfer Impact Assessment",
@@ -3575,11 +3785,15 @@
       ],
       "extraction_note": "A planned time frame. No result is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0498"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3618,7 +3832,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [],
       "intervention_as_stated": "Harmonization of legislation from the aspect of digitization processes",
@@ -3639,11 +3853,16 @@
       ],
       "extraction_note": "No value or target is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0472"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3682,12 +3901,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         },
         {
           "name_as_stated": "citizens",
@@ -3713,12 +3932,14 @@
       ],
       "extraction_note": "TECH-DGOV is doubtful: a single indicator on electronic filing. No value or target is stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-003"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Citizens' electronic filing with one agency. Could not clearly be assigned to RI-TEC-003, which concerns the national portal; closest fit, single indicator."
       }
     },
     {
@@ -3755,7 +3976,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -3781,11 +4002,15 @@
       ],
       "extraction_note": "Page 17 speaks of officers using the opportunities of the DPO network, and page 18 of activating it; the sources do not say whether it exists already.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0381"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3823,12 +4048,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Framework Convention on Artificial Intelligence and Human Rights, Democracy, and the Rule of Law of the Council of Europe",
@@ -3847,11 +4072,15 @@
       "flags": [],
       "extraction_note": "Same subject as item -0034 (page 13); pass 2 to link them.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-INT-0028"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3889,12 +4118,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Law on Transposition of the EU Law Enforcement Directive",
@@ -3913,11 +4142,15 @@
       "flags": [],
       "extraction_note": "Same subject as items -0031 (page 13) and -0052 (page 23); pass 2 to link them.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0017"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3955,12 +4188,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "Strategic goal 2 – Harmonize legislation",
@@ -3979,11 +4212,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4021,7 +4258,7 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
@@ -4045,11 +4282,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0018"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4087,12 +4328,12 @@
       },
       "speaker": {
         "name_as_stated": "Personal Data Protection Agency",
-        "actor_id": null
+        "actor_id": "ACT-MKD-0024"
       },
       "subjects": [
         {
           "name_as_stated": "PDPA",
-          "actor_id": null
+          "actor_id": "ACT-MKD-0024"
         }
       ],
       "intervention_as_stated": "documents on certification and codes of conduct",
@@ -4111,11 +4352,15 @@
       "flags": [],
       "extraction_note": "Certification is judged in item -0042 (page 17).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
+        "intervention_ids": [
+          "INT-MKD-0455"
+        ],
+        "classification_status": "auto",
         "classification_note": null
       }
     }
