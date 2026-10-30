@@ -1,6 +1,6 @@
 # Judgement rules
 
-Version 0.2, 29 October 2026. Status: draft, to be refined at gate G6. Changes create a new version and are listed in the change log at the end of this file.
+Version 0.3, 30 October 2026. Status: approved at G6 (GATE-0007). Changes create a new version and are listed in the change log at the end of this file.
 
 These rules tell the agent how to make first-cut judgements. The questions, scales and criteria are defined in Codebook 6, which takes precedence if the two ever differ. This file adds the operational detail.
 
@@ -41,6 +41,10 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 - **Unresolved gap:** compare the latest EU requirement items for the issue with the implementation status of the interventions that respond to them. At stage 10 these statuses are still proposals, so say so in the reason; the reviewers check both together at G6. Describe in one sentence what remains.
 - **Success and attribution:** only judge an outcome that has a `leads_to` link. Never judge success from government reporting alone (Codebook 2).
 - **Priority:** consider whether the issue appears in EU benchmarks or repeated key recommendations, and how central it is to the chapter or theme. **Tractability:** consider the mechanisms involved, the actors needed and evidence of past progress.
+- **Priority test (G6-D02):** High usually means the issue is named in a benchmark, Reform Agenda payment condition or key recommendation repeated across three or more reports, and is central to the chapter or theme. A core acquis requirement repeated across three or more reports, with no progress recorded in the main findings, can also be High; say why. Evidence volume, and national or audit material, never raise priority. Calibrate priority across all issues before a gate.
+- **Legal progress (G6-D05):** a law reviewed by the Commission may count as `improving`, with the gap as `partly_addressed`, but the reason and the outputs must say the improvement is legal only. Adoption alone is not improvement.
+- **Regional evidence:** a claim that does not name the target country may support an issue but cannot alone support a finding about the country.
+- **Versions of one report:** count once.
 - **Conflicting evidence:** when items contradict each other, say so in the reason and cite both sides. Do not resolve a conflict by choosing the higher-quality source without saying so.
 
 ## 4. Re-runs
@@ -50,6 +54,7 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 
 ## Change log
 
+- 0.3 (30 Oct 2026): approved at G6 (GATE-0007). Priority test, legal progress, regional evidence and versions of one report added.
 - 0.2 (29 Oct 2026): direction of travel distinguishes chapter-level from sub-area progress wording (rule issue R3, approved by the analyst).
 - 0.1b (29 Oct 2026): pre-G0 reconfiguration of the pilot (decisions A5 to A9 and D6). Country-neutral wording; source quality per chapter or theme; direction of travel and priority for issues from cross-cutting themes.
 - 0.1 (23 Oct 2026): first draft from the approved architecture.

@@ -34,4 +34,4 @@ Propose, with reasons and evidence:
 - implementation status, success and attribution for the comparator interventions;
 - lessons stated by sources, and transferability of each lesson to the target country, with conditions.
 
-**G6b decision (both reviewers):** validate or override. Only validated cases and lessons may be used for draft policy options.
+**G6b decision (the reviewer or reviewers named in the run record):** validate or override. Only validated cases and lessons may be used for draft policy options.

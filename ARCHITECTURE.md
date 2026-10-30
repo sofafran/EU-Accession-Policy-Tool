@@ -77,9 +77,9 @@ Known gap (29 Oct 2026): `process_flow.png` and `process_flow.dot` are not in th
 | 8 Full extraction | Extract remaining sources | Extracts, checks quotes, prepares spot check | none | none | P2 |
 | 9 Classify and link | Tag issues, mechanisms, entities, links | Classifies, queues doubtful cases | Resolves queues, approves new issues | G5 | P3 |
 | 10 Assessment | First-cut judgements | Proposes all judgements with reasons | none | none | P3 |
-| 11 Validation | Check tier 3 judgements, choose 1b issues | Prepares issue dossiers | Validates or overrides (Sofia and George) | G6 | P3 |
+| 11 Validation | Check tier 3 judgements, choose 1b issues | Prepares issue dossiers | Validates or overrides (reviewer named in the run record) | G6 | P3 |
 | 1b Comparator pilot | Small repeat of stages 1 to 11 for 2 to 3 issues | As above | As above | G1b, G2b, G5b, G6b | P4 |
-| 12 Outputs | Write overview, briefs, reports, draft options | Drafts | Sign off (Sofia and George) | G7 | P5 |
+| 12 Outputs | Write overview, briefs, reports, draft options | Drafts | Sign off (reviewer named in the run record) | G7 | P5 |
 | 13 Close | Run review and proposed changes | Drafts | Approves changes | G8 | P5 |
 | 14 Next run | Incremental update | Reuses, updates, flags | Starts it | G0 onward | P5 |
 
@@ -93,7 +93,7 @@ Every gate is blocking and is recorded in `registers/gate_log.csv` with the date
 | 2. AI decides; analyst reviews in bulk or by exception | Goes ahead, surfaces at the next gate | Clear-cut exclusions, extraction once rules are approved, source quality, evidence confidence, relevance, uncontested implementation status |
 | 3. AI proposes only; analyst decides | Nothing proceeds without a decision | Requirements list, judgement-based exclusions, taxonomy changes, ambiguous classification, comparator selection and relevance, direction of travel, unresolved gap, success, attribution, transferability, priority and tractability, policy options, codebook and scope changes |
 
-Reviewers for run 1: Sofia at every gate; Sofia and George together at G6, G6b and G7. George is also an alpha reviewer of the developing product and the review page throughout the run; this is not a formal gate role.
+Reviewers for run 1: Sofia at every gate, as sole decision-maker for the alpha (decision E13, which replaces the earlier arrangement of Sofia and George together at G6, G6b and G7). George is also an alpha reviewer of the developing product and the review page throughout the run; this is not a formal gate role.
 
 **Review page.** `index.html` in the repository root is the human-facing review interface. It shows validated material and work in progress, labelled `Validated`, `Pending review`, `Proposed`, `Draft` or `Not started`. It is generated from the project files by `tools/build_review_page.py` and is never the place where a gate decision is made.
 
