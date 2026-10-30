@@ -1,0 +1,971 @@
+{
+  "source_id": "MDA-GOV-2024-002",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "1 (whole page; the full survey report it links to was not retrieved)",
+    "notes": "Agency summary of its own commissioned survey, run to measure a project it implements; sample 3040 people aged 18 and over. The full report and its questionnaire were not read. The page has no statement of who carried out the fieldwork. Headings that state the findings are not extracted separately. Later rounds to 2024 are referred to in MDA-GOV-2025-001 but were not found. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-GOV-2024-002.csv.",
+    "codebook_version": "1.2",
+    "themes_version": "1.3"
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-GOV-2024-002-0001",
+      "information_type": "metric",
+      "stated_text": "More than half of the respondents (55.3%) who used any public services in the last 12 months say that at least one of the services was accessed electronically.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Of respondents using any public service in 12 months, 55.3% accessed at least one electronically.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Service users accessing at least one service electronically",
+        "value": 55.3,
+        "unit": "percent of respondents who used any public service",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements. 'At least one' is a low threshold; not all services used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use; low threshold."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0002",
+      "information_type": "metric",
+      "stated_text": "The difference between the share of online and offline access is relatively small (54.5% vs. 52.6%), but it is the point where the rate of online access exceeds offline access for the first time since these measurements have been made.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Online access (54.5%) exceeds offline (52.6%) for the first time since measurements began; the difference is small.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Share of online and offline access",
+        "value": "54.5 online; 52.6 offline",
+        "unit": "percent",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of online and offline access."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0003",
+      "information_type": "metric",
+      "stated_text": "Given a choice between the two ways of accessing a service, online or offline, more than half of respondents (56%) say they would choose to access the public service online, compared to 39.7% who opt for the traditional, offline method at the desk.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Given the choice, 56% would access the service online, and 39.7% offline at the desk.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Stated preference for online access",
+        "value": "56 online; 39.7 offline",
+        "unit": "percent of respondents",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements. A stated preference, not use.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: stated preference, not use."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0004",
+      "information_type": "metric",
+      "stated_text": "electronic population documentation services (36.7%), electronic tax services (34.0%), electronic cadastral services (22.3%), and e-CNAS services (21.2%)",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Most accessed digital services: population documents 36.7%, tax 34.0%, cadastral 22.3%, e-CNAS 21.2%.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Most accessed digital public services",
+        "value": "36.7; 34.0; 22.3; 21.2",
+        "unit": "percent",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use by service type."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0005",
+      "information_type": "metric",
+      "stated_text": "Users of the services.gov.md portal report a satisfaction level of 76.3%, while users of specialized websites of provider institutions are 74.4%.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Satisfaction is 76.3% among services.gov.md portal users and 74.4% among users of provider websites.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "User satisfaction",
+        "value": "76.3 portal; 74.4 provider websites",
+        "unit": "percent",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0011"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: satisfaction on the portal against provider websites."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0006",
+      "information_type": "metric",
+      "stated_text": "41.3% of respondents rated the quality of electronic public services as high or medium.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "41.3% of respondents rated the quality of electronic public services as high or medium.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Quality of e-services rated high or medium",
+        "value": 41.3,
+        "unit": "percent of respondents",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: rated quality of e-services."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0007",
+      "information_type": "metric",
+      "stated_text": "26.2% of respondents can be defined as “delegators” or users with high support needs, preferring to delegate entirely to another person to access and obtain the e-service.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "26.2% of respondents are delegators, who prefer another person to access and obtain the e-service for them.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Respondents delegating access to another person",
+        "value": 26.2,
+        "unit": "percent of respondents",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: users who delegate access; the portal does not serve them directly."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0008",
+      "information_type": "metric",
+      "stated_text": "Young people (aged 18-29) used e-services six times more often than the elderly (aged 60-74).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "People aged 18-29 used e-services six times more often than people aged 60-74.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Use of e-services by age",
+        "value": "six times",
+        "unit": "ratio, aged 18-29 to aged 60-74",
+        "reference_period": "August to September 2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: age gap in use."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0009",
+      "information_type": "metric",
+      "stated_text": "The combined indicator of user satisfaction with the quality of public services delivered electronically has increased by 10% since 2022.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Combined user satisfaction with electronic public services rose by 10% since 2022.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Combined satisfaction indicator, change since 2022",
+        "value": "+10",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use of or satisfaction with e-services."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0010",
+      "information_type": "metric",
+      "stated_text": "40.5% declared themselves independent users, saying that they prefer to access online services independently, without support from others.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "40.5% are independent users of online services.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Independent users",
+        "value": "40.5",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use of or satisfaction with e-services."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0011",
+      "information_type": "metric",
+      "stated_text": "31.0% prefer to access on their own, but still acknowledge that they would need support from other people: they are described in the survey as assisted users",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "31.0% are assisted users who would need support.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Assisted users",
+        "value": "31.0",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use of or satisfaction with e-services."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0012",
+      "information_type": "metric",
+      "stated_text": "The survey data shows that more and more people access public e-services via mobile phone (81.2%), 3% more than in 2022 and 8% more than in 2021.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "81.2% access public e-services by mobile phone, up on 2022 and 2021.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Access to e-services by mobile phone",
+        "value": "81.2",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use of or satisfaction with e-services."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0013",
+      "information_type": "metric",
+      "stated_text": "The majority of respondents say they are willing and open to using e-services, with 47.4%, above the 2020 and 2021 figures.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "47.4% are willing to use e-services, above 2020 and 2021.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Willingness to use e-services",
+        "value": "47.4",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements. Printed as a 'majority' although 47.4% is below half.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: survey measure of use of or satisfaction with e-services."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0014",
+      "information_type": "metric",
+      "stated_text": "In particular, news pages and social media (52%), outperform dedicated government websites (21.6%).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "News pages and social media (52%) outperform government websites (21.6%) as information sources.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Information sources",
+        "value": "52 news and social media; 21.6 government websites",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": "Self-reported survey answer, in an agency summary; the survey measures a project the agency implements.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "implementation: where people get information; the item does not concern the portal."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-002-0015",
+      "information_type": "intervention",
+      "stated_text": "The survey is conducted annually on behalf of the e-Governance Agency to measure the results of implementing the project “Modernization of Government Services” (MGSP), implemented by the e-Governance Agency with the support of the World Bank.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The annual survey measures the results of the World Bank supported MGSP project run by the agency.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "2023 ANNUAL NATIONAL SURVEY, AN X-RAY OF ELECTRONIC PUBLIC SERVICES USE IN THE REPUBLIC OF MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-002_AGE_2023-Annual-National-Survey.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-01-15",
+        "period_covered": "23 August to 10 September 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project; Annual National Survey",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0025",
+          "INT-MDA-0001"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: the MGSP project and its yearly use survey."
+      }
+    }
+  ]
+}

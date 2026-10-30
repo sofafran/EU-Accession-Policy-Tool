@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.9.0"
+__version__ = "1.10.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -645,7 +645,83 @@ def g1b(root, run):
     ]
 
 
-BUILDERS = {"G1b": g1b, "G6": g6, "G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
+def g6b(root, run):
+    """G6b package (P4, step 5): decisions first, the cases in the E14 structure, then comparator relevance, lessons, success and
+    attribution, implementation status and tier 2 ratings, the independent check and the gaps."""
+    from common import evidence_files, read_json
+    rv = root / "review" / run / "run1b"
+    dec_h, decisions = read_csv(rv / "G6b_decisions.csv") if (rv / "G6b_decisions.csv").exists() else ([], [])
+    cases = {r["case_id"]: r for r in read_csv(root / "entities" / "comparator_cases.csv")[1]}
+    drafted = []
+    case_h = []
+    for f in sorted((rv / "cases").glob("cases_*.csv")) if (rv / "cases").exists() else []:
+        case_h, rows = read_csv(f)
+        drafted += rows
+    items = {}
+    for f in evidence_files(root):
+        d = read_json(f)
+        for it in d["items"]:
+            items[it["item_id"]] = it
+
+    def text(k):
+        i = items.get(k, {})
+        return i.get("translation_en") or i.get("stated_text", "")
+    links = {r["link_id"]: r for r in read_csv(root / "links" / "links.csv")[1]}
+    js = [j for j in read_csv(root / "judgements" / "judgements.csv")[1] if j["review_status"] == "proposed"]
+    comp = {"ALB", "HRV", "MDA", "MNE", "SRB"}
+
+    def is_comp(i):
+        return i[:3] in comp
+    review = ["decision", "new_value", "override_reason"]
+
+    def row(j, *extra):
+        return [j["judgement_id"], j["object_id"], *extra, j["value"], j["reason"], j["evidence_item_ids"], "", "", ""]
+    relevance = [row(j, cases[j["object_id"]]["country"], j["context_id"]) for j in js if j["judgement_type"] == "comparator_relevance" and j["object_id"] in cases]
+    lessons = [row(j, text(j["object_id"]), j["context_id"]) for j in js if j["judgement_type"] == "transferability"]
+    success, status, tier2 = [], [], []
+    by_link = {}
+    for j in js:
+        if j["judgement_type"] in ("success", "attribution"):
+            by_link.setdefault(j["object_id"], {})[j["judgement_type"]] = j
+    for lid, pair in sorted(by_link.items()):
+        l = links.get(lid, {})
+        s, a = pair.get("success", {}), pair.get("attribution", {})
+        success.append([lid, l.get("from_id", ""), l.get("to_id", ""), text(l.get("to_id", "")), l.get("basis", ""), s.get("judgement_id", ""), s.get("value", ""), s.get("reason", ""),
+                        a.get("judgement_id", ""), a.get("value", ""), a.get("reason", ""), "", "", ""])
+    for j in js:
+        if j["judgement_type"] == "implementation_status" and j["object_id"].startswith("INT-") and is_comp(j["object_id"][4:]):
+            status.append(row(j, j["context_id"]))
+        elif j["judgement_type"] in ("evidence_confidence", "relevance") and is_comp(j["object_id"]):
+            i = items.get(j["object_id"], {})
+            if j["value"] == "Low" or i.get("machine_translated"):
+                tier2.append(row(j, j["judgement_type"], j["context_id"]))
+    checks = []
+    check_h = []
+    for f in sorted((rv / "g6b_qa").glob("check_*.csv")) if (rv / "g6b_qa").exists() else []:
+        check_h, rows = read_csv(f)
+        checks += [[f.stem[6:]] + [r[h] for h in check_h] for r in rows]
+    checks.sort(key=lambda r: r[check_h.index("severity") + 1] != "serious" if "severity" in check_h else 0)
+    reg = read_csv(root / "registers" / "source_register.csv")[1]
+    gaps = [[r["source_id"], r["country"], r["title"], r["url"], r["status_reason"]] for r in reg if r["role"] == "comparator" and r["status"] != "available"]
+    queue_h, queue = read_csv(root / "taxonomy" / "unmatched_queue.csv")
+    queue = [[r[h] for h in queue_h] for r in queue if is_comp(r.get(queue_h[1], "")) or any(is_comp(r[h]) for h in queue_h[:3])]
+    return "G6b_comparators.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Cases", case_h or ["case_id"], [[r[h] for h in case_h] for r in drafted]),
+        ("Comparator relevance", ["judgement_id", "case_id", "country", "issue", "value", "reason", "evidence_item_ids", *review], relevance),
+        ("Lessons and transferability", ["judgement_id", "item_id", "text", "target", "value", "reason", "evidence_item_ids", *review], lessons),
+        ("Success and attribution", ["link_id", "intervention", "outcome_item", "outcome_text", "basis", "success_id", "success", "success_reason", "attribution_id", "attribution", "attribution_reason", *review], success),
+        ("Implementation status", ["judgement_id", "intervention", "as_of", "value", "reason", "evidence_item_ids", *review], status),
+        ("Tier 2 by exception", ["judgement_id", "item", "type", "context", "value", "reason", "evidence_item_ids", *review], tier2),
+        ("Independent check", ["issue"] + (check_h or ["finding"]), checks),
+        ("Gaps in sources", ["source_id", "country", "title", "url", "reason"], gaps),
+        ("Unmatched queue", queue_h, queue),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS = {"G6b": g6b, "G1b": g1b, "G6": g6, "G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
 
 
 def main(argv=None):

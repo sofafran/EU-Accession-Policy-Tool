@@ -95,7 +95,7 @@ def main():
         samples = Path(tmp) / "samples"
         samples.mkdir()
         # The real taxonomy, queues, links, entities and judgements refer to real evidence items, which are not copied; start the sample project with empty ones, and likewise the queues, links, entities and judgements.
-        for rel in ("taxonomy/reform_issues.csv", "taxonomy/unmatched_queue.csv", "taxonomy/ambiguous_queue.csv", "links/links.csv", "entities/interventions.csv", "entities/actors.csv", "judgements/judgements.csv"):
+        for rel in ("taxonomy/reform_issues.csv", "taxonomy/unmatched_queue.csv", "taxonomy/ambiguous_queue.csv", "links/links.csv", "entities/comparator_cases.csv", "entities/interventions.csv", "entities/actors.csv", "judgements/judgements.csv"):
             ri = proj / rel
             ri.write_text(ri.read_text(encoding="utf-8").splitlines()[0] + "\n", encoding="utf-8")
 
@@ -392,6 +392,10 @@ def main():
         ok = r.returncode == 0 and "Comparator source lines" in load_workbook(rv / "G1b_comparators.xlsx").sheetnames
         check("export_review.py", "G1b package: countries checked and comparator source lines", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G1b_comparators.xlsx").unlink(missing_ok=True)
+        r = run(proj, "export_review.py", "G6b")
+        ok = r.returncode == 0 and {"Cases", "Lessons and transferability", "Success and attribution", "Gaps in sources"} <= set(load_workbook(rv / "G6b_comparators.xlsx").sheetnames)
+        check("export_review.py", "G6b package: cases, lessons, success and attribution, and gaps", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "G6b_comparators.xlsx").unlink(missing_ok=True)
         r = run(proj, "export_review.py", "G6")
         ri.write_text(drafted, encoding="utf-8")
         ok = r.returncode == 0 and (rv / "G6_issue_dossiers.xlsx").exists()

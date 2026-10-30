@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -345,7 +345,7 @@ class Page:
                 "Will show the issues chosen for the pilot, comparator countries and cases, lessons and transferability. Populated after "
                 "G6; validated at G1b to G6b.")
         rows = [[escape(c["case_id"]), escape(c["country"]), escape(c["reform_issue_id"]), escape(c["description"]),
-                 label("Validated" if c.get("selected_at") else "Proposed")] for c in cases]
+                 label(self.status("G6b", True))] for c in cases]
         return "Comparator pilot (run 1b) " + label(self.status("G6b", True)), table(["Case", "Country", "Issue", "Description", "Status"], rows)
 
     def outputs(self):

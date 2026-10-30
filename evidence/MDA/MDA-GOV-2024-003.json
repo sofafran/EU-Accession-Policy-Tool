@@ -1,0 +1,419 @@
+{
+  "source_id": "MDA-GOV-2024-003",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "1 (whole page)",
+    "notes": "Live agency page. Its 2022 creation date is not the date of the figures, which are labelled 2024. Romanian used because the English version of the page (egov.md) carries no figures; translations are machine translations, confidence capped at Medium. For the analyst, not resolved: the page gives over 2.6 million requests daily and 600 million exchanges in total, and these are not reconciled on the page. The 480+ figure combines public and private institutions without a split, and no denominator is given. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-GOV-2024-003.csv.",
+    "codebook_version": "1.2",
+    "themes_version": "1.3"
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-GOV-2024-003-0001",
+      "information_type": "metric",
+      "stated_text": "2,6 + milioane de solicitări de schimb de date procesate zilnic;",
+      "quote_language": "ro",
+      "translation_en": "2.6+ million data exchange requests processed daily;",
+      "machine_translated": true,
+      "summary": "Agency figure: over 2.6 million data exchange requests are processed daily on MConnect.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Platforma Guvernamentală de Interoperabilitate",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-003_AGE_MConnect-platform-page.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Data exchange requests processed daily",
+        "value": "2.6+ million",
+        "unit": "requests per day",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Under the page heading 'MConnect in figures, statistics 2024'. Self-reported; connection is not regular use, and no public and private split is given.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: self-reported throughput; does not show regular use by institutions."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-003-0002",
+      "information_type": "metric",
+      "stated_text": "600 de milioane de schimburi de date efectuate în total, între instituții publice și private;",
+      "quote_language": "ro",
+      "translation_en": "600 million data exchanges carried out in total, between public and private institutions;",
+      "machine_translated": true,
+      "summary": "Agency figure: 600 million data exchanges in total between public and private institutions.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Platforma Guvernamentală de Interoperabilitate",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-003_AGE_MConnect-platform-page.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Total data exchanges",
+        "value": "600 million",
+        "unit": "exchanges",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Under the page heading 'MConnect in figures, statistics 2024'. Self-reported; connection is not regular use, and no public and private split is given.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: self-reported total, not reconciled with the daily figure on the page."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-003-0003",
+      "information_type": "metric",
+      "stated_text": "480+ instituții publice și private conectate la sistemul național de interoperabilitate;",
+      "quote_language": "ro",
+      "translation_en": "480+ public and private institutions connected to the national interoperability system;",
+      "machine_translated": true,
+      "summary": "Agency figure: over 480 public and private institutions are connected to the national interoperability system.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Platforma Guvernamentală de Interoperabilitate",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-003_AGE_MConnect-platform-page.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Public and private institutions connected",
+        "value": "480+",
+        "unit": "institutions",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Under the page heading 'MConnect in figures, statistics 2024'. Self-reported; connection is not regular use, and no public and private split is given.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: connection is not regular use, and no public and private split."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-003-0004",
+      "information_type": "intervention",
+      "stated_text": "Prin platforma de interoperabilitate mconnect.gov.md , autoritățile publice fac schimb de date în timp real, fără a le solicita de la cetățeni și mediul de business în formă de certificate, rapoarte, etc.",
+      "quote_language": "ro",
+      "translation_en": "Through the interoperability platform mconnect.gov.md, public authorities exchange data in real time, without requesting them from citizens and the business environment in the form of certificates, reports, etc.",
+      "machine_translated": true,
+      "summary": "Public authorities exchange data in real time through MConnect without asking citizens or businesses for certificates.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Platforma Guvernamentală de Interoperabilitate",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-003_AGE_MConnect-platform-page.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MConnect interoperability platform",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Self-described by the operating agency; says nothing on how regularly it is used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: the platform as described by its operator."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-003-0005",
+      "information_type": "intervention",
+      "stated_text": "Gratuitatea Datelor – datele deținute de participanții publici sunt puse la dispoziție altor participanți publici în mod gratuit.",
+      "quote_language": "ro",
+      "translation_en": "Free Data: data held by public participants are made available to other public participants free of charge.",
+      "machine_translated": true,
+      "summary": "Data held by public participants are made available to other public participants free of charge.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Platforma Guvernamentală de Interoperabilitate",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-003_AGE_MConnect-platform-page.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MConnect principle of free data between public participants",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: a design rule of the platform."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-003-0006",
+      "information_type": "intervention",
+      "stated_text": "Participanții la schimbul de date sunt obligați să asigure disponibilitatea tuturor seturilor de date deținute;",
+      "quote_language": "ro",
+      "translation_en": "Participants in the data exchange are obliged to ensure the availability of all data sets they hold;",
+      "machine_translated": true,
+      "summary": "Participants in data exchange must make all data sets they hold available.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Platforma Guvernamentală de Interoperabilitate",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2024-003_AGE_MConnect-platform-page.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MConnect obligation to make data available",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The page states the obligation; it does not say how far it is met.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: an obligation on participants."
+      }
+    }
+  ]
+}

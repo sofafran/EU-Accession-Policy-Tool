@@ -1,0 +1,1094 @@
+{
+  "source_id": "MNE-GOV-2025-002",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "4, 12-14, 21-26, 31, 49; keyword screen of the rest",
+    "codebook_version": "1.2",
+    "themes_version": "1.3",
+    "notes": "Operational goals 1.2 and 2.2 (pages 12-14, 21-26) and indicator tables read; the rest keyword-screened. Author is the Ministry of Public Administration; government self-report. PDF metadata title still says 2022; the cover says 2024 and April 2025."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MNE-GOV-2025-002-0001",
+      "information_type": "intervention",
+      "stated_text": "Ministarstvo javne uprave je uspostavilo Jedinstveni sistem za elektronsku razmjenu podataka (JSERP) između državnih organa i organa državne uprave.",
+      "quote_language": "sr",
+      "translation_en": "The Ministry of Public Administration has established the Single System for Electronic Data Exchange (JSERP) between state bodies and state administration bodies.",
+      "machine_translated": true,
+      "summary": "Ministry states it has established JSERP between state and state administration bodies.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "Single System for Electronic Data Exchange (JSERP)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0005"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: JSERP established."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0002",
+      "information_type": "metric",
+      "stated_text": "Pristup platformi JSERP ima 21 institucija dok je u Metaregistar prijavljeno 45 registara.",
+      "quote_language": "sr",
+      "translation_en": "21 institutions have access to the JSERP platform, while 45 registers are registered in the Metaregister.",
+      "machine_translated": true,
+      "summary": "21 institutions have JSERP access and 45 registers are in the Metaregister.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "institutions with JSERP access; registers in Metaregister",
+        "value": "21; 45",
+        "unit": "institutions; registers",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used. Against a target of 80 registers for 2024 (page 14).",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0005",
+          "INT-MNE-0010"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: 21 institutions and 45 registers; target 80 registers."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0003",
+      "information_type": "metric",
+      "stated_text": "Trenutno su aktivne elektronske razmjene podataka između 18 parova registara putem kojih se odvija razmjena podataka preko nekog određenog web servisa. Tokom 2024. godine bilo je preko 8 miliona upita kroz navedenu platformu.",
+      "quote_language": "sr",
+      "translation_en": "Electronic data exchanges are currently active between 18 pairs of registers, through which data are exchanged via a particular web service. During 2024 there were over 8 million queries through the platform.",
+      "machine_translated": true,
+      "summary": "18 register pairs actively exchanging; over 8 million queries through the platform in 2024.",
+      "location": {
+        "page": 12,
+        "page_end": 13,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "register pairs exchanging; queries on JSERP",
+        "value": "18; over 8 million",
+        "unit": "pairs; queries",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0005"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: 18 pairs of registers and 8 million queries in 2024."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0004",
+      "information_type": "intervention",
+      "stated_text": "U toku je izrada nove platforme sistema za elektronsku razmjenu podataka – JSERP koja između ostalog treba da omogući brzo i efikasno povezivanje novih članova (institucija) sa sistemom JSERP, bezbjedan prenos podataka između članova JSERP -a i čuvanje evidencija u standardnom i mašinski čitljivom formatu.",
+      "quote_language": "sr",
+      "translation_en": "A new platform for the electronic data exchange system, JSERP, is being developed; it should among other things enable quick and efficient connection of new member institutions, secure data transfer between members and record keeping in a standard, machine-readable format.",
+      "machine_translated": true,
+      "summary": "A new JSERP platform is being built to connect new institutions quickly and transfer data securely.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "new JSERP platform",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0005"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: new platform in development."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0005",
+      "information_type": "barrier",
+      "stated_text": "Izazovi koji su identifikovani u cilju pune implementacije interoperabilnosti između institucija javne uprave je nedovoljna dostupnost podataka iz elektronskih registara putem web servisa, kao i nedovoljna ažurnost institucija u cilju regulisanja pravnih i organizacionih preduslova za razmjenu podataka, te neujednačena praksa proaktivne objave otvorenih podataka javnog sektora.",
+      "quote_language": "sr",
+      "translation_en": "The challenges identified for full interoperability between public administration institutions are insufficient availability of data from electronic registers through web services, insufficient promptness of institutions in settling the legal and organisational preconditions for data exchange, and uneven practice in proactive publication of public sector open data.",
+      "machine_translated": true,
+      "summary": "Ministry: register data is insufficiently available by web service; institutions are slow on legal and organisational preconditions.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "unresolved_gap: ministry on what stops full interoperability."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0006",
+      "information_type": "metric",
+      "stated_text": "Procenat e-usluga koje se vode u katalogu usluga elektronske uprave, a koje po jednom upitu mogu prikupiti podatke više od jednog registra n/a 0 0",
+      "quote_language": "sr",
+      "translation_en": "Percentage of e-services in the e-government service catalogue that can collect data from more than one register in one query: n/a, 0, 0",
+      "machine_translated": true,
+      "summary": "Share of catalogued e-services drawing on more than one register in one query: 0 in 2023 and 2024.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "share of catalogued e-services querying more than one register at once",
+        "value": 0,
+        "unit": "percent",
+        "reference_period": "2023 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used. Columns are baseline, 2023 and 2024; the 2024 target is 10% (page 14; same data at page 31).",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: 0% of e-services can query more than one register."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0007",
+      "information_type": "metric",
+      "stated_text": "Procenat ispunjenosti planiranih aktivnosti predviđenih za 2024. godinu iznosi 43,14%.",
+      "quote_language": "sr",
+      "translation_en": "The rate of fulfilment of planned activities for 2024 is 43.14%.",
+      "machine_translated": true,
+      "summary": "43.14% of Digital Transformation Strategy activities planned for 2024 were fulfilled.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "fulfilment of planned Digital Transformation Strategy activities",
+        "value": 43.14,
+        "unit": "percent",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used. Refers to all strategy activities, not only e-services.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0001"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "implementation: whole-strategy delivery rate, not the portal or data exchange; outside the three case issues (LIM-0026); nearest approved issue RI-TEC-002."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0008",
+      "information_type": "finding",
+      "stated_text": "Nedovoljna interoperabilnost i n iska upotreba e-usluga kod građana su ključni izazovi.",
+      "quote_language": "sr",
+      "translation_en": "Insufficient interoperability and low use of e-services among citizens are key challenges.",
+      "machine_translated": true,
+      "summary": "Ministry: insufficient interoperability and low citizen use of e-services are key challenges.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used. Converted text splits or runs words together here; the quote keeps the converted form.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "unresolved_gap: interoperability and low use named as key challenges."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0009",
+      "information_type": "metric",
+      "stated_text": "Index on-line usluga (OSI) 0,5412 0,5528 0,5124",
+      "quote_language": "sr",
+      "translation_en": "Online Service Index (OSI): 0.5412, 0.5528, 0.5124",
+      "machine_translated": true,
+      "summary": "Online Service Index: baseline 0.5412, 2023 0.5528, 2024 0.5124.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Online Service Index (OSI)",
+        "value": "0.5412; 0.5528; 0.5124",
+        "unit": "index",
+        "reference_period": "baseline, 2023, 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used. The text at page 25 says the indicator shows a slight rise, while the table shows a fall from 2023 to 2024. Recorded as stated.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: UN Online Service Index; text says a rise, table a fall."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0010",
+      "information_type": "intervention",
+      "stated_text": "Novi portal eUprave – https://euprava.gov.me/ predstavlja centralnu tačku za pristup uslugama koje pruža javna uprava.",
+      "quote_language": "sr",
+      "translation_en": "The new eGovernment portal, https://euprava.gov.me/, is the central point of access to services provided by the public administration.",
+      "machine_translated": true,
+      "summary": "Ministry describes the new eGovernment portal as the central access point for public services.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "new eGovernment portal",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0022"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: portal described as the central access point."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0011",
+      "information_type": "barrier",
+      "stated_text": "Pomenuta Metodologija nije izrađena zbog nedostatka finansijskih sredstava u pomenutom projektu.",
+      "quote_language": "sr",
+      "translation_en": "The said Methodology was not developed for lack of financial resources in the said project.",
+      "machine_translated": true,
+      "summary": "Methodology for user-oriented e-services was not developed for lack of project funds.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the extraction agent; Montenegrin has no ISO 639-1 code, so \"sr\" is used. The methodology is the one for standardising and developing user-oriented e-services.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
+        "intervention_ids": [
+          "INT-MNE-0003"
+        ],
+        "classification_status": "auto",
+        "classification_note": "unresolved_gap: methodology for e-services not developed for lack of funds."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0012",
+      "information_type": "outcome",
+      "stated_text": "Platforma JSERP obezbjeđuje komunikaciju između postojećih informacionih sistema i registara i bržu razmjenu informacija između građana i uprave, omogućavajući automatizovanu razmjenu i upotrebu velikih količina podataka iz državnih registara, te je samim tim i pružanje usluga elektronskim putem značajno poboljšano.",
+      "quote_language": "sr",
+      "translation_en": "The JSERP platform provides communication between existing information systems and registers and faster exchange of information between citizens and the administration, enabling automated exchange and use of large amounts of data from state registers, and electronic service delivery has thereby been significantly improved.",
+      "machine_translated": true,
+      "summary": "The ministry says JSERP enables automated register data exchange, and that electronic service delivery has therefore significantly improved.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the second-pass checker; Montenegrin has no ISO 639-1 code, so \"sr\" is used. Government self-report; no figure given for the improvement.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0005"
+        ],
+        "classification_status": "auto",
+        "classification_note": "outcome: government claim that service delivery improved through JSERP; no figure."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0013",
+      "information_type": "barrier",
+      "stated_text": "Kada je riječ o procentu eUsluga u katalogu usluga isti se nije mijenjao , naime Ministarstvo javne uprave je tokom 2023. godine inovirao postojeći modul Kataloga eUsluga na portalu Vlade CG sa ciljem proširenja liste atributa koje isti sadrži, međutim institucije ne objavljuju svoje usluge na Portalu Vlade .",
+      "quote_language": "sr",
+      "translation_en": "As regards the percentage of e-services in the service catalogue, it did not change; the Ministry of Public Administration upgraded the existing e-services catalogue module on the Government portal during 2023 to extend its list of attributes, but institutions do not publish their services on the Government Portal.",
+      "machine_translated": true,
+      "summary": "The catalogue indicator did not change: the ministry upgraded the catalogue module in 2023, but institutions do not publish their services on the Government Portal.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the second-pass checker; Montenegrin has no ISO 639-1 code, so \"sr\" is used. The old Government Portal, before the new eUprava portal.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MNE-0019"
+        ],
+        "classification_status": "auto",
+        "classification_note": "unresolved_gap: institutions do not publish their services on the Government Portal (the old portal)."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0014",
+      "information_type": "outcome",
+      "stated_text": "Uspješnost ovih inicijativa pokazuje podatak da je čak 90% studenata i studentkinja upisalo fakultet online od uvođenja ove usluge.",
+      "quote_language": "sr",
+      "translation_en": "The success of these initiatives is shown by the fact that as many as 90% of students have enrolled in university online since this service was introduced.",
+      "machine_translated": true,
+      "summary": "The ministry says 90% of students have enrolled in university online since this service was introduced.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Machine translated by the second-pass checker; Montenegrin has no ISO 639-1 code, so \"sr\" is used. Government self-report, on online enrolment under the project \"eUsluge i digitalna infrastruktura\". No reference year is given.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0012",
+          "INT-MNE-0003"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "outcome: 90% online university enrolment is one sector service, not stated to be on the national portal. The clearest use result here: analyst may wish to allow it; outside the three case issues (LIM-0026); nearest approved issue RI-TEC-037."
+      }
+    },
+    {
+      "item_id": "MNE-GOV-2025-002-0015",
+      "information_type": "metric",
+      "stated_text": "Procenat e-usluga koje se vode u katalogu usluga elektronske uprave, a koje po jednom upitu mogu prikupiti podatke više od jednog registra n/a 0 0 10% od svih elektronskih usluga iz kataloga e-usluga",
+      "quote_language": "sr",
+      "translation_en": "Percentage of e-services in the e-government service catalogue that can collect data from more than one register in one query: n/a, 0, 0, 10% of all electronic services in the e-services catalogue.",
+      "machine_translated": true,
+      "summary": "Share of catalogue e-services querying more than one register: 0 in 2023 and 2024, target 10%.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-04",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Government of Montenegro, Ministry of Public Administration",
+        "actor_id": "ACT-MNE-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added after the G6b independent check. Columns from the table header: baseline, 2023, 2024, then target by 2024. Extends MNE-GOV-2025-002-0006, which stops before the target. Non-legal machine-translated source, outside LIM-0029 as worded, for the analyst to confirm at G6b.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0005"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Added after the G6b independent check; for the analyst to accept at G6b."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1177 @@
+{
+  "source_id": "SRB-CSO-2025-001",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-10-30",
+    "status": "complete",
+    "pages_processed": "6-7, 13, 19-25, 53-55 (PDF page numbers; keyword search of the whole text for once-only, ex officio, interoperability, service bus, data exchange, databases and registers)",
+    "codebook_version": "1.2",
+    "themes_version": "1.3",
+    "notes": "Run 1b comparator extraction limited to RI-TEC-028 (LIM-0026). A text search finds no mention of the Government Service Bus, eZUP, the interoperability framework or database connection, so the report does not itself link once-only results to connected databases. PDF page 13 states that scores are incomparable with earlier editions because of methodological changes, so the report gives no before and after baseline on resubmission. The report gives the headline survey figure as 54% (PDF page 7) and \"around 53%\" (PDF page 25). SIGMA is cited only second hand (PDF pages 19 and 20) and was not extracted."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
+    "classified_at": "2026-10-30",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "SRB-CSO-2025-001-0001",
+      "information_type": "finding",
+      "stated_text": "In contrast, citizen-centric delivery is better regulated, notably through provisions such as the once-only principle and one-stop shops.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Citizen-centric delivery is better regulated, notably through the once-only principle and one-stop shops.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Regulation of once-only; the report does not name the Bus or eZUP."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0002",
+      "information_type": "barrier",
+      "stated_text": "Moreover, fragmented institutional responsibilities indicate a lack of a coordination mechanism which would steer the translation of citizen-centric principles into service delivery practices, as jurisdiction is divided between the Ministry of Public Administration and Local Self-Government, Office for IT and eGovernment and the Public Policy Secretariat, while individual service providers have jurisdiction over their respective services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Divided jurisdiction across three central bodies and individual providers indicates no mechanism steering citizen-centric delivery.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Concerns service delivery coordination; data exchange is not named in the passage.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "unresolved_gap: About service delivery and e-services generally; the passage does not name data exchange. Fits no approved issue open to Serbia and RI-TEC-028 is not stretched to cover it. Mechanism is for the service delivery claim only."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0003",
+      "information_type": "metric",
+      "stated_text": "inconsistent application of the once-only principle, with 54% of citizens reporting that the last time they requested a public administration service, they had to submit documents already held by the state.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "54% of citizens reported submitting documents already held by the state at their last service request.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Citizens reporting they had to submit documents already held by the state at last service request",
+        "value": "54",
+        "unit": "% of surveyed citizens",
+        "reference_period": "February 2025"
+      },
+      "flags": [],
+      "extraction_note": "Survey of 1006 citizens, 15 to 19 February 2025, margin of error ±3,52% at 95% (pages 24 and 53). The body of the report (page 25) says around 53%. Perception survey; not linked to any database or service.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Documents already held by the state still requested: administrative data not shared ex officio. Survey result, no link to a named platform."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0004",
+      "information_type": "metric",
+      "stated_text": "E 1.9 Public service providers implement the once-only principle during service delivery Practice in implementation 3/3",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER scores once-only implementation by sampled service providers at 3 out of 3.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E 1.9 once-only principle implemented by service providers (sample of seven services)",
+        "value": "3/3",
+        "unit": "points",
+        "reference_period": "2022-07/2024-12"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Sample of seven services. Sits against the survey results in items 0003 and 0013."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0005",
+      "information_type": "metric",
+      "stated_text": "E 1.13 Citizens’ awareness of the once-only principle Outcomes and impact 1.5/2",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER scores citizens' awareness of the once-only principle at 1.5 out of 2.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E 1.13 citizens' awareness of the once-only principle",
+        "value": "1.5/2",
+        "unit": "points",
+        "reference_period": "February 2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Awareness score, not use."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0006",
+      "information_type": "metric",
+      "stated_text": "E 1.14 Citizens’ reported experience with the implementation of the once-only principle Outcomes and impact 0.5/2",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER scores citizens' reported once-only experience at 0.5 out of 2.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E 1.14 citizens' reported experience with the once-only principle",
+        "value": "0.5/2",
+        "unit": "points",
+        "reference_period": "February 2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Reported experience score. Sits against item 0004."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0007",
+      "information_type": "barrier",
+      "stated_text": "Such developments were hampered by the fragmentation of responsibilities among institutions and the lack of a coordination system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Service delivery consolidation was hampered by fragmented responsibilities and no coordination system.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission, as cited by WeBER",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Footnote 8 cites the European Commission, Serbia Report 2024, so this is not independent corroboration of SRB-EU-2024-001.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "unresolved_gap: About service delivery and e-services generally; the passage does not name data exchange. Fits no approved issue open to Serbia and RI-TEC-028 is not stretched to cover it. Mechanism is for the service delivery claim only. Cites the Commission 2024 report, so not independent of SRB-EU-2024-001-0008."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0008",
+      "information_type": "intervention",
+      "stated_text": "Moreover, the citizen-centric approach was enhanced with the introduction of the once-only principle, which was introduced in the Law on General Administrative Procedure.15 This principle implies that citizens and business entities can be asked to provide necessary data from official records, such as the facts contained in the civil registers, only once for the purpose of decision-making in the administrative procedure, after which the authorities exchange information internally, with due respect for the protection of personal data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on General Administrative Procedure introduced the once-only principle: citizens provide official-record data once, then authorities exchange it internally.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": "once-only principle, Law on General Administrative Procedure",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Footnote 15 cites Articles 9 and 103 of the Law on General Administrative Procedure, Official Gazette no. 18/2016. The 15 after Procedure is that footnote mark, kept because quotes are word for word.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: The legal duty behind data exchange."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0009",
+      "information_type": "finding",
+      "stated_text": "On a more positive note, the research confirmed that the once-only principle is implemented by service providers when delivering observed sample services, except for the property registration.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER confirmed once-only is implemented for the sampled services, except property registration.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Sample: property registration, company registration, vehicle registration, passport, ID card, VAT declaration, VAT payment (page 13). The report does not state how many documents were requested or whether any were requested again.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Implementation in the sample except property registration."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0010",
+      "information_type": "finding",
+      "stated_text": "This service is no longer available to the citizens and has to be obtained through lawyers and geodetic organisations acting as citizen representatives in obtaining the eDesk (eŠalter) service to register a property. Hence, it is unclear if the once-only principle is applied or can be applied in this situation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Property registration now runs through lawyers and geodetic organisations, so once-only application there is unclear.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Compare the ministry's claim on buying real estate (SRB-GOV-2023-002): pass 2 should consider a contradicts link.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008",
+          "INT-SRB-0010"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Consider a contradicts link with SRB-GOV-2023-002-0006; they may concern different steps."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0011",
+      "information_type": "metric",
+      "stated_text": "Namely, 68% of surveyed citizens expressed their agreement with the statement: “When requesting public administration services, I am not required to provide documents already held by the state (such as birth, citizenship, unemployment certificates, etc.)”.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "68% of surveyed citizens agreed they are not required to provide documents already held by the state.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Citizens agreeing they are not required to provide documents already held by the state",
+        "value": "68",
+        "unit": "% of surveyed citizens",
+        "reference_period": "February 2025"
+      },
+      "flags": [],
+      "extraction_note": "Survey of 1006 citizens, 15 to 19 February 2025, margin of error ±3,52% at 95% (pages 24 and 53). This general statement and the last-request statement (53 to 54%) point in different directions; the report treats the first as awareness and the second as experience.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: General agreement, 68%, against the last-request result of 53 to 54%. Report both."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0012",
+      "information_type": "finding",
+      "stated_text": "Although relatively high, the results indicate the need for more awareness-raising campaigns, as this principle was introduced in 2016, so that more citizens become informed on their rights.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER says the results show a need for more awareness-raising on the once-only principle.",
+      "location": {
+        "page": 24,
+        "page_end": 25,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Could be read as a recommendation; kept as a finding because it interprets survey results.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Awareness of a right, not use of a platform."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0013",
+      "information_type": "metric",
+      "stated_text": "Moreover, the reported experience with the implementation of this principle is hardly satisfactory – around 53% of citizens stated that the last time they requested a public administration service, they had to submit documents already held by the state.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Around 53% of citizens said they had to submit documents already held by the state at their last request.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Citizens reporting they had to submit documents already held by the state at last service request",
+        "value": "around 53",
+        "unit": "% of surveyed citizens",
+        "reference_period": "February 2025"
+      },
+      "flags": [],
+      "extraction_note": "Survey of 1006 citizens, 15 to 19 February 2025, margin of error ±3,52% at 95% (pages 24 and 53). The executive summary (page 7) says 54%. The base for the chart is N = 1006 (page 25). The survey has no earlier comparable reading in this report.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Same survey as item 0003 (54% there, around 53% here); same claim, do not count twice."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0014",
+      "information_type": "finding",
+      "stated_text": "These results indicate that, although introduced almost a decade ago, the once-only principle is not applied consistently by service providers to the fullest, showing a need for standardisation of service delivery and for monitoring the quality not only of delivered services but also of the manner in which the public administration provides them, thus ensuring compliance with legal requirements.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER concludes the once-only principle is not applied consistently and that standardisation and quality monitoring are needed.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Source states the principle is not applied consistently after almost a decade."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0015",
+      "information_type": "metric",
+      "stated_text": "E 1.4 Regulations stipulate application of ‘once-only principle’ Legislation 1/1",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER scores regulation of the once-only principle at 1 out of 1.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E 1.4 regulations stipulate application of the once-only principle",
+        "value": "1/1",
+        "unit": "points",
+        "reference_period": "2022-07/2024-12"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Added at second pass. Same table as items 0004 to 0006.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Legislation score only."
+      }
+    },
+    {
+      "item_id": "SRB-CSO-2025-001-0016",
+      "information_type": "recommendation",
+      "stated_text": "Finally, the public perception survey findings suggested that public administration bodies in Serbia should still invest efforts in raising awareness on the once-only principle.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "WeBER says Serbian public bodies should still invest in raising awareness of the once-only principle.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "II.1 Citizen-centric service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-07",
+        "period_covered": "2022-07/2024-12",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "WeBER 3.0 (European Policy Centre - CEP)",
+        "actor_id": "ACT-SRB-0003"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added at second pass.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-SRB-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "unresolved_gap: CSO recommendation on awareness of the principle."
+      }
+    }
+  ]
+}

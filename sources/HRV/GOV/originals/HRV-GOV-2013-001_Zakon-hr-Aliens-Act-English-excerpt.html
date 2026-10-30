@@ -1,0 +1,1287 @@
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="hr">
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+<script>
+(function () {
+  var seen = {};
+  var sent = 0;
+
+  function stripQuery(url) {
+    var cut = url.length;
+    var query = url.indexOf('?');
+    var hash = url.indexOf('#');
+    if (query >= 0 && query < cut) cut = query;
+    if (hash >= 0 && hash < cut) cut = hash;
+    return url.substring(0, cut);
+  }
+
+  function sameSitePath(urlString) {
+    try {
+      var url = new URL(urlString, location.href);
+      if (url.protocol !== 'http:' && url.protocol !== 'https:') return null;
+      var host = url.hostname.replace(/^www\./i, '').toLowerCase();
+      var here = location.hostname.replace(/^www\./i, '').toLowerCase();
+      if (host !== here) return null;
+      return url.pathname || '/';
+    } catch (ignore) {
+      return null;
+    }
+  }
+
+  function frameFromStack(stack) {
+    if (!stack) return null;
+    var re = /(https?:\/\/[^)\s]+):(\d+):(\d+)/g;
+    var match;
+    while ((match = re.exec(stack))) {
+      if (sameSitePath(match[1])) {
+        return {
+          file: stripQuery(match[1]),
+          line: parseInt(match[2], 10) || 0,
+          column: parseInt(match[3], 10) || 0
+        };
+      }
+    }
+    return null;
+  }
+
+  function timezoneLabel() {
+    var offset = new Date().getTimezoneOffset();
+    var sign = offset <= 0 ? '+' : '-';
+    var abs = Math.abs(offset);
+    var hours = Math.floor(abs / 60);
+    var mins = abs % 60;
+    if (!mins) return 'UTC' + sign + hours;
+    return 'UTC' + sign + hours + ':' + (mins < 10 ? '0' : '') + mins;
+  }
+
+  function deviceInfo() {
+    var parts = [];
+    try {
+      if (navigator.language) parts.push(navigator.language);
+      if (window.screen && screen.width && screen.height) {
+        parts.push('screen ' + screen.width + 'x' + screen.height);
+      }
+      if (window.innerWidth && window.innerHeight) {
+        parts.push('viewport ' + window.innerWidth + 'x' + window.innerHeight);
+      }
+      if (window.devicePixelRatio) parts.push('dpr ' + window.devicePixelRatio);
+      if (navigator.platform) parts.push(navigator.platform);
+      parts.push(timezoneLabel());
+    } catch (ignore) {}
+    return parts.join(', ').substring(0, 300);
+  }
+
+  function interesting(message) {
+    if (!message) return false;
+    if (message === 'Script error.') return false;
+    if (message.indexOf('ResizeObserver loop') === 0) return false;
+    if (message.indexOf('__gCrWeb') !== -1) return false;
+    return true;
+  }
+
+  function report(message, file, line, column, stack) {
+    try {
+      if (sent >= 20) return;
+      message = String(message || '').replace(/\s+/g, ' ').trim();
+      if (message.length > 500) message = message.substring(0, 500);
+      if (!interesting(message)) return;
+
+      var useFile = file || '';
+      var useLine = line || 0;
+      var useColumn = column || 0;
+      if (!sameSitePath(useFile)) {
+        var frame = frameFromStack(stack);
+        if (!frame) return;
+        useFile = frame.file;
+        useLine = frame.line;
+        useColumn = frame.column;
+      }
+
+      var path = sameSitePath(useFile);
+      if (!path) return;
+      var key = message + '\n' + path + '\n' + useLine;
+      if (seen[key]) return;
+      seen[key] = true;
+      sent++;
+
+      var payload = JSON.stringify({
+        message: message,
+        file: stripQuery(String(useFile)),
+        line: useLine,
+        column: useColumn,
+        stack: stack ? String(stack).substring(0, 1500) : '',
+        page: location.pathname || '/',
+        device: deviceInfo()
+      });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/client-error', new Blob([payload], { type: 'application/json' }));
+      }
+    } catch (ignore) {}
+  }
+
+  window.addEventListener('error', function (event) {
+    if (!event || (event.target && event.target !== window)) return;
+    var err = event.error;
+    report(event.message, event.filename, event.lineno, event.colno, err && err.stack);
+  });
+
+  window.addEventListener('unhandledrejection', function (event) {
+    var reason = event && event.reason;
+    var message = 'unhandledrejection';
+    var stack = '';
+    if (typeof reason === 'string') {
+      message = reason;
+    } else if (reason) {
+      message = reason.message ? String(reason.message) : String(reason);
+      stack = reason.stack ? String(reason.stack) : '';
+    }
+    var frame = frameFromStack(stack);
+    report(message, frame ? frame.file : '', frame ? frame.line : 0, frame ? frame.column : 0, stack);
+  });
+})();
+</script>
+
+
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53NVVSFG');</script>
+
+
+
+    
+	  <title>The Aliens Act -  Zakon.hr</title>
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Magićmarinac d.o.o.">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no">
+    <meta name="theme-color" content="#EEEEEE">
+    <meta name="msapplication-TileColor" content="#EEEEEE">
+    <!--OG Tags-->
+    <meta property="og:title" content="Zakon.hr">
+    <meta property="og:site_name" content="Zakon.hr">
+    <meta property="og:url" content="https://www.zakon.hr">
+    <meta property="og:description" content="#">
+    <meta property="og:type" content="website">
+    <!--     <meta property="og:image" content="">
+     -->
+    <meta property="og:locale" content="hr_HR">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Zakon.hr" />
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="/assets/fonts/GolosText-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/assets/css-vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css?v=901e860" />
+    <link rel="stylesheet" href="/assets/css/zakonhr.css?v=901e860" />
+
+    
+      <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+      <script src="https://cdn.234doo.com/zakonhr.js?v=901e860"></script>
+    
+    <script defer src="/assets/js/zakon_v2_7.js?v=901e860"></script>
+	
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Zakon.hr",
+      "url" : "https://www.zakon.hr"
+    }
+  </script>
+
+  
+ </head>
+
+<body>
+    
+    
+    
+    
+    
+    
+    <div class="body-wrapper">
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="nav-left">
+                <div class="nav-logo-wrapper">
+                    <a href="/" class="info-link info-link-below">
+                        <img src="/assets/images/logo.svg" alt="Zakon.hr" width="181" height="68" fetchpriority="high" />
+                    </a>
+                </div>
+            </div>
+            <div class="nav-holder">  
+                <div class="nav-icons">
+                    <a href="/" class="info-link info-link-below">
+                        <span class="info-modal">Naslovnica</span><img src="/assets/images/home.svg" alt="Početna"/></a>
+                    <a class="open-searchbar info-link info-link-below"><span class="info-modal">Tražilica</span><img src="/assets/images/search-nav.svg"
+                            alt="Pretraga" /></a>
+                    <a href="/profil/obavijesti" class="info-link info-link-below"><span class="info-modal">Obavijesti</span><img src="/assets/images/bell.svg" alt="Obavijesti" /></a>
+                    
+                   
+                   
+                </div>
+                
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="/c/blog/900/opci-uvjeti-koristenja" >Uvjeti</a></li>
+                        
+                        <li><a href="/select" >Cjenik</a></li>
+                        <li><a href="/kontakt" >Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                
+                <a href="/login" class="moj-profil">Prijava / Registracija
+                
+                <div class="nav-right">
+                    <div class="nav-registration">
+                        <img src="/assets/images/user.svg" alt="Prijava/Registracija" />
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div id="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</nav> 
+
+    <div class="baza-container">
+        <div class="container">
+            
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="baza-info-container">
+    <span></span>
+    <div class="baza-info">Baza je ažurirana 20.10.2026. zaključno sa NN 110/26 &nbsp;EU 2024/2679</div>
+    <span></span>
+</div>   
+        </div>
+    </div>
+
+    <div class="samostalni-search-container">
+        <div class="container">
+            
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<form  class="search-container" action="/search">
+    <div class="input-mobile-container">
+        <div class="dropdown-container">
+            <span class="small-button sve-baze"><span class="dropdown-text">Sve baze</span></span>
+            <ul class="dropdown-items">
+                <li class="dropdown-item" data-target="sve-baze" data-value="">Sve baze</li>
+                <li class="dropdown-item" data-target="zakoni" data-value="0">Zakoni</li>
+                <li class="dropdown-item" data-target="podzakonski" data-value="7">Podzakonski</li>
+                <li class="dropdown-item" data-target="sudska-praksa" data-value="11">Sudska praksa</li>
+                <li class="dropdown-item" data-target="eu-propisi" data-value="12">EU propisi</li>
+                <li class="dropdown-item" data-target="vijesti" data-value="9">Vijesti</li>
+            </ul>
+        </div>
+        <div class="input-container">
+                <input type="text" placeholder="Unesite ključnu riječ ili naziv dokumenata" name="q"  tabIndex="0"  autocomplete="off"  value="" />
+                <ul class="autocomplete-dropdown" id="autocomplete-dropdown"></ul>
+            <div class="input-focus-container">
+                <div id="sve-baze" class="focus-content active">
+                    <div class="focus-content-header">
+                        <div class="propisi medium">
+                            <div class="checkbox-wrapper">
+                                <input id="checkbox-id-vazeci" type="checkbox" name="fs" value="1" checked class="vazeci-checkbox">
+                                <label for="checkbox-id-vazeci">Pretraži samo važeće propise</label>
+                            </div>
+                        </div>
+                        <div class="upute">
+                            <span class="medium">Upute za pretraživanje</span>
+                        </div>
+                        <div class="zatvori-container">
+                            <span class="zatvori">
+                                <img src="/assets/images/close.svg" alt="Zatvori" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="focus-content-upute">
+                        <div class="left-content">
+                            <span class="medium">Brze upute za pretraživanje</span>
+                            <p class="small">Znak* znači da može biti 0 ili više znakova na tom
+                                mjestu
+                                (pretraga po korijenu riječi npr ustav* će naći i 'ustav',
+                                'ustavnih',
+                                'ustavnim'.</p>
+                            <p class="small">Znak ? zamjenjuje jedan znak npr. ustav? će naći
+                                'ustavu',
+                                ali neće 'ustavnih', 'ustavnim'.</p>
+                            <p class="small">Znak - (minus) ispred riječi će izostaviti dokumente
+                                koji
+                                sadrže tu riječ.</p>
+                            <p class="small">Redoslijed ključnih riječi koje upisujete doprinosi
+                                preciznosti rezultata pretrage, ali pogrešan redoslijed neće
+                                zaustaviti
+                                pretragu.</p>
+                            <p class="small">Ukoliko tražite sadržaj sa točno određenim
+                                redoslijedom,
+                                ključne riječi stavite u navodnike "" i navedite ih tim
+                                redoslijedom.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p class="as-h5">Pretražujete kroz sve baze objavljene na <a
+                                    href="https://www.zakon.hr/">Zakon.hr</a></p>
+                            <p class="as-h5">Probajte pretragu po jednoj ili više ključnih riječi iz
+                                situacije za
+                                koju
+                                se informirate, kako bi Vam pronašli sve relevantne sadržaje. </p>
+                            
+                        </div>
+                    </div>
+                    <!--                                         <div class="focus-content-recent-search">
+                        <p class="small medium">Prethodne pretrage</p>
+                        <div class="recent-search-container">
+                            <div class="recent-search">Kazneni zakon<span></span></div>
+                            <div class="recent-search">Prebivalište boravište<span></span></div>
+                            <div class="recent-search">Ugovor o autorskom djelu<span></span></div>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="zakoni" class="focus-content">
+                    <div class="focus-content-header">
+                        <div class="propisi medium">
+                            <div class="checkbox-wrapper">
+                                <input id="checkbox-id-zakoni" type="checkbox" checked class="vazeci-checkbox">
+                                <label for="checkbox-id-zakoni">Pretraži samo važeće propise</label>
+                            </div>
+                        </div>
+                        <div class="upute">
+                            <span class="medium">Upute za pretraživanje</span>
+                        </div>
+                        <div class="zatvori-container">
+                            <span class="zatvori">
+                                <img src="/assets/images/close.svg" alt="Zatvori" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="focus-content-upute">
+                        <div class="left-content">
+                            <span class="medium">Brze upute za pretraživanje</span>
+                            <p class="small">Znak* znači da može biti 0 ili više znakova na tom
+                                mjestu
+                                (pretraga po korijenu riječi npr ustav* će naći i 'ustav',
+                                'ustavnih',
+                                'ustavnim'.</p>
+                            <p class="small">Znak ? zamjenjuje jedan znak npr. ustav? će naći
+                                'ustavu',
+                                ali neće 'ustavnih', 'ustavnim'.</p>
+                            <p class="small">Znak - (minus) ispred riječi će izostaviti dokumente
+                                koji
+                                sadrže tu riječ.</p>
+                            <p class="small">Redoslijed ključnih riječi koje upisujete doprinosi
+                                preciznosti rezultata pretrage, ali pogrešan redoslijed neće
+                                zaustaviti
+                                pretragu.</p>
+                            <p class="small">Ukoliko tražite sadržaj sa točno određenim
+                                redoslijedom,
+                                ključne riječi stavite u navodnike "" i navedite ih tim
+                                redoslijedom.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p class="as-h5">Pretražujete kroz sve važeće zakone (870) Republike
+                                Hrvatske, a kraj svakog zakona imate objavljene i njegove ranije
+                                verzije desetak godina unatrag</p>
+                            <p class="as-h5">Probajte pretragu po jednoj ili više ključnih riječi iz
+                                situacije za
+                                koju
+                                se informirate, kako bi Vam pronašli sve relevantne sadržaje. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="podzakonski" class="focus-content">
+                    <div class="focus-content-header">
+                        <div class="propisi medium">
+                            <div class="checkbox-wrapper">
+                                <input id="checkbox-id-podzakonski" type="checkbox" checked class="vazeci-checkbox">
+                                <label for="checkbox-id-podzakonski">Pretraži samo važeće propise</label>
+                            </div>
+                        </div>
+                        <div class="upute">
+                            <span class="medium">Upute za pretraživanje</span>
+                        </div>
+                        <div class="zatvori-container">
+                            <span class="zatvori">
+                                <img src="/assets/images/close.svg" alt="Zatvori" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="focus-content-upute">
+                        <div class="left-content">
+                            <span class="medium">Brze upute za pretraživanje</span>
+                            <p class="small">Znak* znači da može biti 0 ili više znakova na tom
+                                mjestu
+                                (pretraga po korijenu riječi npr ustav* će naći i 'ustav',
+                                'ustavnih',
+                                'ustavnim'.</p>
+                            <p class="small">Znak ? zamjenjuje jedan znak npr. ustav? će naći
+                                'ustavu',
+                                ali neće 'ustavnih', 'ustavnim'.</p>
+                            <p class="small">Znak - (minus) ispred riječi će izostaviti dokumente
+                                koji
+                                sadrže tu riječ.</p>
+                            <p class="small">Redoslijed ključnih riječi koje upisujete doprinosi
+                                preciznosti rezultata pretrage, ali pogrešan redoslijed neće
+                                zaustaviti
+                                pretragu.</p>
+                            <p class="small">Ukoliko tražite sadržaj sa točno određenim
+                                redoslijedom,
+                                ključne riječi stavite u navodnike "" i navedite ih tim
+                                redoslijedom.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p class="as-h5">Pretražujete kroz sve važeće podzakonske propise (preko
+                                10.000) Republike Hrvatske</p>
+                            <p class="as-h5">Probajte pretragu po jednoj ili više ključnih riječi iz
+                                situacije za
+                                koju
+                                se informirate, kako bi Vam pronašli sve relevantne sadržaje. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="sudska-praksa" class="focus-content">
+                    <div class="focus-content-header">
+                        <div class="propisi medium">
+                            <div class="checkbox-wrapper">
+                                <input id="checkbox-id-sudska-praksa" type="checkbox" checked class="vazeci-checkbox">
+                                <label for="checkbox-id-sudska-praksa">Pretraži samo važeće propise</label>
+                            </div>
+                        </div>
+                        <div class="upute">
+                            <span class="medium">Upute za pretraživanje</span>
+                        </div>
+                        <div class="zatvori-container">
+                            <span class="zatvori">
+                                <img src="/assets/images/close.svg" alt="Zatvori" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="focus-content-upute">
+                        <div class="left-content">
+                            <span class="medium">Brze upute za pretraživanje</span>
+                            <p class="small">Znak* znači da može biti 0 ili više znakova na tom
+                                mjestu
+                                (pretraga po korijenu riječi npr ustav* će naći i 'ustav',
+                                'ustavnih',
+                                'ustavnim'.</p>
+                            <p class="small">Znak ? zamjenjuje jedan znak npr. ustav? će naći
+                                'ustavu',
+                                ali neće 'ustavnih', 'ustavnim'.</p>
+                            <p class="small">Znak - (minus) ispred riječi će izostaviti dokumente
+                                koji
+                                sadrže tu riječ.</p>
+                            <p class="small">Redoslijed ključnih riječi koje upisujete doprinosi
+                                preciznosti rezultata pretrage, ali pogrešan redoslijed neće
+                                zaustaviti
+                                pretragu.</p>
+                            <p class="small">Ukoliko tražite sadržaj sa točno određenim
+                                redoslijedom,
+                                ključne riječi stavite u navodnike "" i navedite ih tim
+                                redoslijedom.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p class="as-h5">Pretražujete kroz odluke sudova RH, Suda EU i Europskog
+                                suda za ljudska prava</p>
+                            <p class="as-h5">Probajte pretragu po jednoj ili više ključnih riječi iz
+                                situacije za
+                                koju
+                                se informirate, kako bi Vam pronašli sve relevantne sadržaje. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="eu-propisi" class="focus-content">
+                    <div class="focus-content-header">
+                        <div class="propisi medium">
+                            <div class="checkbox-wrapper">
+                                <input id="checkbox-id-eu-propisi" type="checkbox" checked class="vazeci-checkbox">
+                                <label for="checkbox-id-eu-propisi">Pretraži samo važeće propise</label>
+                            </div>
+                        </div>
+                        <div class="upute">
+                            <span class="medium">Upute za pretraživanje</span>
+                        </div>
+                        <div class="zatvori-container">
+                            <span class="zatvori">
+                                <img src="/assets/images/close.svg" alt="Zatvori" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="focus-content-upute">
+                        <div class="left-content">
+                            <span class="medium">Brze upute za pretraživanje</span>
+                            <p class="small">Znak* znači da može biti 0 ili više znakova na tom
+                                mjestu
+                                (pretraga po korijenu riječi npr ustav* će naći i 'ustav',
+                                'ustavnih',
+                                'ustavnim'.</p>
+                            <p class="small">Znak ? zamjenjuje jedan znak npr. ustav? će naći
+                                'ustavu',
+                                ali neće 'ustavnih', 'ustavnim'.</p>
+                            <p class="small">Znak - (minus) ispred riječi će izostaviti dokumente
+                                koji
+                                sadrže tu riječ.</p>
+                            <p class="small">Redoslijed ključnih riječi koje upisujete doprinosi
+                                preciznosti rezultata pretrage, ali pogrešan redoslijed neće
+                                zaustaviti
+                                pretragu.</p>
+                            <p class="small">Ukoliko tražite sadržaj sa točno određenim
+                                redoslijedom,
+                                ključne riječi stavite u navodnike "" i navedite ih tim
+                                redoslijedom.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p class="as-h5">Ppretražujete kroz sve važeće direktive i uredbe EU
+                                zakonske snage (koje su donijeli Vijeće i Parlament), a kraj svakog
+                                dokumenta je poveznica prema svim ostalim povezanim propisima</p>
+                            <p class="as-h5">Probajte pretragu po jednoj ili više ključnih riječi iz
+                                situacije za
+                                koju
+                                se informirate, kako bi Vam pronašli sve relevantne sadržaje. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="vijesti" class="focus-content">
+                    <div class="focus-content-header">
+                        <div class="propisi medium">
+                            <div class="checkbox-wrapper">
+                                <input id="checkbox-id-vijesti" type="checkbox" checked class="vazeci-checkbox">
+                                <label for="checkbox-id-vijesti">Pretraži samo važeće propise</label>
+                            </div>
+                        </div>
+                        <div class="upute">
+                            <span class="medium">Upute za pretraživanje</span>
+                        </div>
+                        <div class="zatvori-container">
+                            <span class="zatvori">
+                                <img src="/assets/images/close.svg" alt="Zatvori" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="focus-content-upute">
+                        <div class="left-content">
+                            <span class="medium">Brze upute za pretraživanje</span>
+                            <p class="small">Znak* znači da može biti 0 ili više znakova na tom
+                                mjestu
+                                (pretraga po korijenu riječi npr ustav* će naći i 'ustav',
+                                'ustavnih',
+                                'ustavnim'.</p>
+                            <p class="small">Znak ? zamjenjuje jedan znak npr. ustav? će naći
+                                'ustavu',
+                                ali neće 'ustavnih', 'ustavnim'.</p>
+                            <p class="small">Znak - (minus) ispred riječi će izostaviti dokumente
+                                koji
+                                sadrže tu riječ.</p>
+                            <p class="small">Redoslijed ključnih riječi koje upisujete doprinosi
+                                preciznosti rezultata pretrage, ali pogrešan redoslijed neće
+                                zaustaviti
+                                pretragu.</p>
+                            <p class="small">Ukoliko tražite sadržaj sa točno određenim
+                                redoslijedom,
+                                ključne riječi stavite u navodnike "" i navedite ih tim
+                                redoslijedom.
+                            </p>
+                        </div>
+                        <div class="right-content">
+                            <p class="as-h5">pretražujete kroz razne pravne vijesti koje smo mi
+                                sastavili ili samo prenijeli</p>
+                            <p class="as-h5">Probajte pretragu po jednoj ili više ključnih riječi iz
+                                situacije za
+                                koju
+                                se informirate, kako bi Vam pronašli sve relevantne sadržaje. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <input type="hidden" name="t" id="selected-target" value="" />
+
+    <button type="submit" class="small-button">Traži</button>
+</form>
+        </div>
+    </div> 
+
+    <div class="search-overlay"></div>
+
+    <main class="zakon-page">
+            <div class="left" id="left">
+                
+                <div class="alati" id="alati">
+                    <button type="button" class="alati-dock" id="alati-dock" aria-expanded="true" aria-label="Priveži uz rub"></button>
+                    <div class="search-bar info-link info-link-above search-bar-denied">
+                        <span class="info-modal">Pretraži tekst</span>
+                        
+                            
+                            
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            var bar = document.querySelector('#alati .search-bar-denied');
+                            if (!bar) return;
+                            bar.addEventListener('click', function() {
+                                showNotification('Vaš paket pretplate ne uključuje pretragu teksta na stranici.', 'info');
+                            });
+                        });
+                        </script>
+                            
+                        
+                    </div>
+                    
+                    
+                        
+                        
+                    <a class="download-pdf download-pdf-denied info-link info-link-above" href="#" id="alati-preuzmi-pdf-gumb"><span class="info-modal">Preuzmi dokument</span></a>
+                        
+                    
+                    
+                    <a class="bell info-link info-link-above" id="bell-icon"><span class="info-modal">Postavite obavijest</span></a>
+                    <a class="prijava info-link info-link-above" data-modal="modal-prijava-nepravilnosti" href="#"><span class="info-modal">Prijavite nepravilnost</span></a>
+                    
+                    
+                    <div class="to-top info-link info-link-above" onclick="backToTop()"><span class="info-modal">Na vrh</span></div>
+                </div>
+                
+                
+                <div class="main-zakon-container">
+                    <div class="cms-scroll-header" id="cms-scroll-header" hidden>
+                        <p class="cms-scroll-title" title="The Aliens Act">The Aliens Act</p>
+                        
+                            
+                                
+                                
+                            
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                        
+                            
+                                
+                                
+                                
+                                   
+                                
+                            
+                        
+                    <div class="main-zakon-header">
+                        
+
+                        
+                        
+                            
+                            
+                        <a class="zakon-preuzmi zakon-preuzmi-denied" href="#" id="zakon-preuzmi-pdf-gumb"><div id="atopdlbutton-pdf">Preuzmi dokument<span>PDF</span></div></a>
+                        <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            document.querySelectorAll('#zakon-preuzmi-pdf-gumb, #alati-preuzmi-pdf-gumb').forEach(function(pdfBtn) {
+                                pdfBtn.addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                    showNotification('Vaš paket pretplate ne uključuje preuzimanje ovog dokumenta.', 'info');
+                                });
+                            });
+                        });
+                        </script>
+                            
+                        
+                        
+                        <div id="cms-title-sentinel"></div>
+                    </div>
+                    <div class="main-zakon-content">
+                        <div id="pretrazitekst" class="tekst-zakona">
+                            
+                            
+                            
+
+                            
+                            
+                            <style>
+                            .cms-block-admin-id {
+                                margin-left: 0.55rem;
+                                font-size: 12px;
+                                font-weight: 600;
+                                color: #444;
+                                vertical-align: middle;
+                                white-space: nowrap;
+                            }
+                            .cms-block-copy {
+                                border: 0;
+                                background: none;
+                                padding: 0;
+                                margin: 0 0 0 0.2rem;
+                                font: inherit;
+                                line-height: 1;
+                                cursor: pointer;
+                                vertical-align: middle;
+                            }
+                            </style>
+                            
+                                
+                                <div class="cms-block" id="17983-b457000">
+                                
+                                
+                                
+                                <div class="cms-block-content"><h1>The Aliens Act</h1>
+<p>&nbsp;</p>
+<p>1. If you are interested in purchace of this documet, for purpose of compiling our offer, please send us, via&nbsp;<a href="/cdn-cgi/l/email-protection#7c111d15103c061d17131252140e430f091e16191f0841281419594e4c1d101519120f594e4c1d1f08594e4c51594e4c1819111d1218594e4c1a130e594e4c131a1a190e5a1d110c471e13180541281419594e4c3d101519120f594e4c3d1f08594c3d594c3d19121b10150f14594e4c080e1d120f101d08151312594e4c131a594e4c1f13120f131015181d081918594e4c3f0e131d08151d12594e4c101d0b594c3d331a1a151f151d10594e4c1b1d0619080819594e4c4d4f4c594e3a4e4c4d4d594e3f594e4c4b48594e3a4e4c4d4f594c3d594c3d2c0e151f19594f3d594e4c494c4c594e3f4c4c594e4c1712594e4c130e594e4c4a4b594e3f494c594e4c59394e59444e593d3f594e4c542a3d28594e4c15121f100918191855594c3d594c3d594c3d351a594e4c051309594e4c1d0e19594e4c151208190e190f081918594e4c1512594e4c0c090e1f141d1f19594e4c131a594e4c0814150f594e4c18131f09111908594e3f594e4c1a130e594e4c0c090e0c130f19594e4c131a594e4c1f13110c151015121b594e4c13090e594e4c131a1a190e594e3f594e4c0c10191d0f19594e4c0f191218594e4c090f594e3f594e4c0a151d594e4c111d151059484c061d17131252140e594e3f594e4c0513090e594e4c181d081d594e4c594f3d594c3d594c3d51594e4c121d1119594e4c130e594e4c1f13110c1d1205594e4c121d1119594c3d594c3d51594e4c1d18180e190f0f594c3d594c3d51594e4c0c130f081d10594e4c1f131819594e4c1d1218594e4c1f150805594e3a0f081d0819594c3d594c3d51594e4c2c190e0f13121d10594e4c1518191208151a151f1d08151312594e4c1209111e190e594e4c5433353e55594e4c1a130e594e4c3f0e131d08151d12594e4c0f091e16191f080f594e4c130e594e4c2a3d28594e4c3538594e4c1209111e190e594e4c1a130e594e4c1a130e19151b12594e4c0f091e16191f080f594c3d594c3d3d1a08190e594e4c0b19594e4c0e191f19150a19594e4c0513090e594e4c0c1d0511191208594e3f594e4c0b19594e4c0b151010594e4c0f191218594e4c051309594e4c0e190d09190f081918594e4c18131f0911191208594e4c1d1218594e4c13090e594e4c15120a13151f1952" class="parsedCmsBlockLink"><span class="__cf_email__" data-cfemail="fe939f9792be849f959190d0968c">[email&#160;protected]</span></a>, your data :</p>
+<p>- name or company name</p>
+<p>- address</p>
+<p>- postal code and city/state</p>
+<p>- Personal identification number (OIB) for Croatian subjects or VAT ID number for foreign subjects</p>
+<p>2. When we receive this data, we will send you our offer with instructions for payment.</p>
+<p>3. After we receive your payment, we will send you requested document in PDF and our invoice.</p>
+<p align="center">&nbsp;</p>
+<p>I. GENERAL PROVISIONS_ 2</p>
+<p>II. TRAVEL DOCUMENTS_ 4</p>
+<p>III. VISAS_ 5</p>
+<p>IV. ENTRY AND DEPARTURE OF ALIENS_ 12</p>
+<p>V. STAY OF ALIENS_ 13</p>
+<p>VI. RETURN MEASURES_ 31</p>
+<p>VII. IDENTITY DOCUMENTS_ 42</p>
+<p>VIII. REGISTRATION OF STAY_ 43</p>
+<p>IX. MOVEMENT OF ALIENS IN UNIFORM_ 44</p>
+<p>X. ENTRY, STAY AND WORK OF NATIONALS OF EEA MEMBER STATES AND THEIR FAMILY MEMBERS_ 45</p>
+<p>XI. STAY AND WORK OF THIRD-COUNTRY NATIONALS HAVING APPROVED PERMANENT STAY IN ANOTHER EEA MEMBER STATE, AND OF THEIR FAMILY MEMBERS_ 54</p>
+<p>XII. STAY AND WORK OF HIGH-SKILLED THIRD-COUNTRY NATIONALS_ 55</p>
+<p>XIII. DATA FILING SYSTEMS_ 58</p>
+<p>XIV. INSPECTION AND ADMINISTRATIVE SUPERVISION OF THE IMPLEMENTATION OF THE ACT_ 59</p>
+<p>XV. PENAL PROVISIONS_ 62</p>
+<p>XVI. TRANSITIONAL AND FINAL PROVISIONS_ 66</p>
+<p>Transitional and final provisions from OG 74/13 68</p>
+<p align="center">Article 1 (<a href="https://www.zakon.hr/cms.htm?id=412" class="parsedCmsBlockLink">OG 74/13</a>)</p>
+<p>(1) This Act regulates conditions for the entry, movement and the work of aliens and the conditions of work, and the rights of posted workers in the Republic of Croatia.</p>
+<p>(2) The provisions of this Act relating to the stay and work of aliens shall not apply to the staff of diplomatic missions and consular posts, to the members of missions of the United Nations organisations and other specialised institutions of the United Nations, to members of the missions of international organisations accredited in the Republic of Croatia and to members of their family or household.</p>
+<p>(3) In this Act, certain nouns are in the masculine gender, but are used as neutral to cover both the masculine and feminine grammatical gender.</p>
+<p>(4) This Act transposes into the legislation of the Republic of Croatia the following directives:</p>
+<p>– Directive 2008/115/EC of the European Parliament and of the Council of 16 December 2008 on common standards and procedures in Member States for returning illegally staying third-country nationals; (Official Journal No. L 348 of 24 December 2008),</p>
+<p>– Council Directive 2001/51/EC of 28 June 2001 supplementing the provisions of Article 26 of the Convention implementing the Schengen Agreement of 14 June 1985; (Official Journal No. L 187 of 10 July 2001),</p>
+<p>– Council Directive 2002/90/EC of 28 November 2002 defining the facilitation of unauthorised entry, transit and residence; (Official Journal No. L 328 of 5 December 2002),</p>
+<p>– Council Directive 2003/110/EC of 25 November 2003 on assistance in cases of transit for the purposes of removal by air; (Official Journal No. L 321 of 6 December 2003),</p>
+<p>– Council Directive 2001/40/EC of 28 May 2001 on the mutual recognition of decisions on the expulsion of third country nationals; (Official Journal No. L 149 of 2 June 2001),</p>
+<p>– Council Framework Decision 2002/946/JHA of 28 November 2002 on the strengthening of the penal framework to prevent the facilitation of unauthorised entry, transit and residence; (Official Journal No. L 328 of 5 December 2002),</p>
+<p>– Council Decision 2004/191/EC of 23 February 2004 setting out the criteria and practical arrangements for the compensation of the financial imbalances resulting from the application of Directive 2001/40/EC on the mutual recognition of decisions on the expulsion of third-country nationals; (Official Journal No. L 60 of 27 February 2004),</p>
+<p>– Council Decision 2004/573/EC of 29 April 2004 on the organisation of joint flights for removals from the territory of two or more Member States, of third-country nationals who are subjects of individual removal orders; (Official Journal No. L 261 of 6 August 2004),</p>
+<p>– Directive 2004/3 8/EC of the European Parliament and of the Council of 29 April 2004 on the right of citizens of the Union and their family members to move and reside freely within the territory of the Member States; (Official Journal No. L 158 of 30 April 2004),</p>
+<p>– Council Directive 2009/50/EC of 25 May 2009 on the conditions of entry and residence of third-country nationals for the purposes of highly qualified employment; (Official Journal No. L 155 of 18 June 2009),</p>
+<p>– Directive 2009/52/EC of the European Parliament and of the Council of 18 June 2009 providing for minimum standards on sanctions and measures against employers of illegally staying third-country nationals; (Official Journal No. L 168 of 30 June 2009),</p>
+<p>– Directive 96/71/EC of the European Parliament and of the Council of 16 December 1996 concerning the posting of workers in the framework of the provision of services, (Official Journal No. L 18 of 21 January 1997),</p>
+<p>– Council Directive 2003/109/EC of 25 November 2003 concerning the status of third-country nationals who are long-term residents; (Official Journal No. L 16 of 23 January 2004),</p>
+<p>– Council Directive 2003/86/EC of 22 September 2003 on the right to family reunification; (Official Journal No. L 251 of 3 October 2003),</p>
+<p>– Council Directive 2004/114/EC of 13 December 2004 on the conditions of admission of third-country nationals for the purposes of studies, pupil exchange, unremunerated training or voluntary service; (Official Journal No. L 375 of 23 December 2004),</p>
+<p>– Council Directive 2004/81/EC of 29 April 2004 on the residence permit issued to third-country nationals who are victims of trafficking in human beings or who have been the subject of an action to facilitate illegal immigration, who cooperate with the competent authorities; (Official Journal No. L 261 of 6 August 2004),</p>
+<p>– Council Directive 2005/71/EC of 12 October 2005 on a specific procedure for admitting third-country nationals for the purposes of scientific research; (Official Journal No. L 289 of 3 November 2005),</p>
+<p>– Council Resolution 97/C 382/01 of 4 December 1997 on measures to be adopted on the combating of marriages of convenience; (Official Journal No. C 382 of 16 December 1997),</p>
+<p>– Council Recommendation of 27 September 1996 on combating the illegal employment of third-country nationals; (Official Journal No. C 304 of 14 October 1996),</p>
+<p>– Council Directive 2004/83/EC of 29 April 2004 on minimum standards for the qualification and status of third country nationals or stateless persons as refugees or as persons who otherwise need international protection and the content of the protection granted; (Official Journal No. L 304 of 30 September 2004),</p>
+<p>– Directive 2011/51/EU of the European Parliament and of the Council of 11 May 2011 amending Council Directive 2003/109/EC to extend its scope to beneficiaries of international protection; (Official Journal No. L 132 of 19 May 2011),</p>
+<p>– Directive 2011/98/EU of the European Parliament and of the Council of 13 December 2011 on a single application procedure for a single permit for third-country nationals to reside and work in the territory of a Member State and on a common set of rights for third-country workers legally residing in a Member State; (Official Journal No. L 343 of 23 December 2011).</p>
+<p>(5) This Act regulates the implementation of the following EU Regulations:</p>
+<p>– Regulation (EC) No. 810/2009 of the European Parliament and of the Council of 13 July 2009 establishing a community code on visas (Visa Code); (Official Journal No. L 243 of 15 September 2009),</p>
+<p>– Regulation (EC) No. 767/2008 of the European Parliament and of the Council of 9 July 2008 concerning the Visa Information System (VIS) and the exchange of data between Member States on short-stay visas (VIS Regulation); (Official Journal No. L 218 of 13 August 2008).</p>
+<p align="center">Article 2 (<a href="https://www.zakon.hr/cms.htm?id=412" class="parsedCmsBlockLink">OG 74/13</a>)</p>
+<p>For the purposes of this Act, the following terms have the following meanings:</p>
+<p>1.&nbsp;An alien means any person who is not a Croatian national.</p>
+<p>2.&nbsp;A stateless person means an alien who is not considered to be a national by any state under its national legislation.</p>
+<p>3.&nbsp;A travel document means a foreign travel document and the travel document for aliens.</p>
+<p>4.&nbsp;A foreign travel document means a document that the competent body of another state issues to its nationals or aliens for travel abroad.</p>
+<p>5. The travel document for aliens means the laissez-passer for aliens, the refugee travel document for aliens, the travel document for stateless persons, the travel document for asylees issued in accordance with special regulations and the document issued on the basis of international agreements.</p>
+<p>6.&nbsp;A carrier means a natural or legal person registered for the performance of the activity of rendering transport services to persons.</p>
+<p>7.&nbsp;An employer means a legal or natural person who entered into an employment relationship with an alien or takes advantage of his work.</p>
+<p>8.&nbsp;A subcontractor means an employer - legal or natural person who entered into a works subcontracting agreement with another legal or natural person and who entered into an employment relationship with an alien or takes advantage of his work.</p>
+<p>9.&nbsp;A daily migrant means a national of a neighbouring state in which he has permanent residence and who enters the Republic of Croatia to work and returns to his home country on a daily basis.</p>
+<p>10.&nbsp;A seasonal worker means an alien residing in a state of his nationality or in a state in which he has approved permanent stay who concluded a contract for the performance of a particular job within a particular time period not longer than 6 months with an employer having his registered office (seat) in the Republic of Croatia.</p>
+<p>11.&nbsp;A national of a Member State of the European Economic Area (hereinafter the EEA) means an alien having the nationality of one of the EEA Member States.</p>
+<p>12.&nbsp;A third-country national means an alien not having the nationality of an EEA Member State.</p>
+<p>13.&nbsp;A high-skilled worker means a third-country national employed in the Republic of Croatia pursuant to special regulations governing employment-legal relations in the Republic of Croatia, who is paid for the work concerned and who has the required, that is, adequate and special expertise as demonstrated by highly professional qualifications.</p>
+<p>14.&nbsp;Highly professional qualifications means completed university education or completed undergraduate and graduate university studies or an integrated undergraduate and graduate university study or specialised graduate occupational study.</p>
+<p>15. The Agency for Temporary Employment is an employer that on the basis of an agreement on the assignment of workers assigns workers to a particular user for the performance of temporary jobs.</p>
+<p align="center">Article 3</p>
+<p>An alien holding multiple nationalities shall use during his stay in and leave the Republic of Croatia with the travel document he used to enter the Republic of Croatia.</p>
+<p align="center">Article 4</p>
+<p>(1) An alien shall comply with laws and regulations, and decisions of the state authorities during his movement and stay in the Republic of Croatia.</p>
+<p>(2) An alien whose movement is restricted to a particular area may move only within such area.</p>
+<p>(3) The document for movement within a particular area may be taken away from an alien acting contrary to the provision of paragraph 2 of this Article, subject to the issuing of a certificate.</p>
+<p>&nbsp;</p></div>
+                                </div>
+                                <p style="text-align:center;">&nbsp;</p>
+                                
+                            
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<div class="resizer" id="dragMe">
+    <div class="resizer-img-wrapper">
+        <span class="resizer-img"></span>
+    </div>
+</div>
+<div class="right">
+    <div class="main-zakon-container main-zakon-container-sidebar">
+        <div class="pane-buttons-container">
+            <a class="right-pane-button" id="pop-up-pane" target="_blank" title="Otvori u novom prozoru"></a>
+            <a class="right-pane-button" id="close-pane" onclick="closeMobilePane()" title="Zatvori"></a>
+        </div>
+        <div class="main-zakon-header"></div>
+        <div class="main-zakon-content">
+            
+                
+                
+                    
+
+
+
+
+
+
+
+
+
+
+
+<h1><strong>Upoznajte novi Zakon.hr</strong></h1><h5><strong>Pravni izvori sada su pregledniji, povezaniji i jednostavniji za korištenje</strong></h5><p>Novi Zakon.hr nije samo redizajn postojeće stranice. Cjelokupnu podatkovnu osnovu izgradili smo iznova kako bismo omogućili brže pronalaženje pravnih informacija, jednostavnije povezivanje izvora i razvoj novih funkcionalnosti.</p><p>Zakoni i drugi propisi sada su strukturirani po pojedinim člancima. Time smo stvorili temelje za preciznije pretraživanje, izravno povezivanje s određenim člankom, praćenje promjena te povezivanje propisa sa sudskom praksom, podzakonskim propisima, vijestima i drugim relevantnim sadržajima.</p><h5><strong>Što donosi novi Zakon.hr?</strong></h5><p><strong>- Novi dizajn usmjeren na preglednost i produktivnost</strong> – sadržaj, alati i povezani pravni izvori organizirani su tako da vam tijekom rada budu dostupni uz što manje dodatnih koraka.&nbsp;</p><p><strong>- Pretpregledni prozor (preview pane)</strong> – povezane sadržaje možete pregledavati u posebnom bočnom prozoru, bez napuštanja propisa na kojem radite i gubitka trenutačnog konteksta.&nbsp;</p><p><strong>- Nova tražilica</strong> – pretražujte sve baze zajedno ili odaberite određenu vrstu sadržaja, uz jasnije organizirane i preglednije rezultate.&nbsp;</p><p><strong>- Arhiva ranijih verzija zakona</strong> – pronađite tekst zakona koji je vrijedio u određenom razdoblju, što je osobito važno za postupke koji se odnose na ranije nastale pravne odnose.&nbsp;</p><p><strong>- Usporedba verzija</strong> – usporedite različite verzije zakona i lakše utvrdite što je pojedinom izmjenom promijenjeno.&nbsp;</p><p><strong>- Povezani pravni izvori</strong> – sa stranice pojedinog zakona brzo pristupite podzakonskim propisima, povezanim zakonima, ranijim verzijama i pripadajućim vijestima.&nbsp;</p><p><strong>- Praćenje sadržaja i obavijesti</strong> – pratite odabrane pravne sadržaje i primajte obavijesti o njihovim promjenama.&nbsp;</p><p><strong>- Preuzimanje dokumenata</strong> – ovisno o odabranom paketu, dokumente možete preuzimati u PDF formatu.&nbsp;</p><p><strong>- Automatski sadržaj</strong> - kazalo sadržaja propisa automatski se generira gdje je moguće, za lakšu navigaciju kroz velike dokumente.</p><p>- <strong>'Mala' tražilica</strong> kroz tekst prikazanog sadržaja, osobito korisno za dugačke propise kada pristupate s mobilnog uređaja.</p><p><strong>- Moj Profil</strong> - korisnici mogu upravljati svojim profilom, praćenim sadržajima, obavijestima i drugim dostupnim postavkama.</p><h5><strong>Besplatna registracija</strong></h5><p>Otvorite korisnički račun i upoznajte mogućnosti novog sustava. Registracija je besplatna i sama po sebi ne stvara obvezu plaćanja.</p><p>Registrirani korisnici mogu upravljati svojim profilom, praćenim sadržajima, obavijestima i drugim dostupnim postavkama.</p><h5><strong>Novi paketi pretplate</strong></h5><p>Za pristup naplatnim bazama i naprednim funkcionalnostima dostupni su novi paketi pretplate <a target="_blank" rel="noopener noreferrer" href="https://www.zakon.hr/select"><strong>Classic</strong> i <strong>PLUS</strong></a>.</p><p>Odaberite paket prema opsegu sadržaja i funkcija koje su vam potrebne. Paket PLUS namijenjen je korisnicima koji Zakon.hr redovito koriste kao profesionalni radni alat i žele puni pristup dostupnim pravnim sadržajima i funkcionalnostima.</p><h5><strong>Zakon.hr je trenutačno u beta fazi</strong></h5><p>Novu verziju nastavljamo razvijati. Još uvijek dopunjavamo i provjeravamo baze podataka, povezujemo postojeće sadržaje te postupno uvodimo nove funkcionalnosti.</p><p>Ako primijetite pogrešku, nedostatak ili imate prijedlog za poboljšanje, javite nam se. Vaše iskustvo pomoći će nam da Zakon.hr učinimo još pouzdanijim i praktičnijim pravnim alatom.</p><h5><strong>Registrirajte se besplatno i isprobajte novi Zakon.hr.</strong></h5>
+
+                
+            
+        </div>
+    </div>
+</div>
+
+            
+    </main> 
+    
+
+
+<footer>
+    <div class="container">
+        <div class="footer-container-div">
+            <div class="footer-first-div">
+                <!--                     <a href="" class="button button-outline prijava-newsletter-button">Prijavite se na naš Newsletter za
+                                        najnovije vijesti</a> -->
+                <span class="back-to-top-button" onclick="backToTop()"></span>
+            </div>
+            <div class="footer-legal">
+                <ul class="footer-legal-links" aria-label="Pravni dokumenti">
+                    <li><a href="/c/blog/1057894/opci-uvjeti-koristenja-zakon.hr-2.0">Opći uvjeti korištenja</a></li>
+                    <li><a href="/c/blog/1057897/politika-privatnosti-zakon.hr-v2.0">Politika privatnosti</a></li>
+                    <li><a href="/c/blog/1057896/politika-kolacica-zakon.hr-v2.0">Politika kolačića</a></li>
+                    <li><a href="/select">Cjenik</a></li>
+                    <li><a href="/c/blog/1057893/predugovorne-informacije-v2.0">Predugovorne informacije za potrošača</a></li>
+                    <li><a href="/c/blog/1057898/obavijest-o-nacinu-isticanja-prigovora-potrosaca-v2.0">Obavijest o načinu isticanja prigovora potrošača</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-company">
+                    <span class="medium">Copyright &copy; Ante Borić</span>
+                    <span class="footer-company-info">Val savjetovanje d.o.o.<br />Kulmerska 31, 10000 Zagreb</span>
+                </div>
+                <div class="mm-potpis-container">
+                    <a href="https://magicmarinac.hr/izrada-web-stranica-ux-ui-dizajn/" target="_blank"
+                        class="mm-potpis">Made in MagićMarinac</a>
+                </div>
+            </div>
+            <p class="footer-disclaimer">
+                <strong>Zakon.hr je privatni pravno-informacijski i nakladnički projekt.</strong>
+                Zakon.hr nije službeni izvor propisa niti individualni pravni savjet. Prije pravnog postupanja
+                potrebno je provjeriti službeni izvor, datum važenja i druge okolnosti konkretnog slučaja.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.body.dataset.previewPane = 'false';</script>
+<script src="/assets/js/main.js?v=901e860"></script>
+<script src="/assets/js/se_extras.js?v=901e860"></script>
+<script src="/assets/js/vendors/swiper-bundle.min.js"></script>
+<script src="/assets/js/vendors/gsap.min.js"></script>
+<script src="/assets/js/vendors/ScrollTrigger.min.js"></script>
+
+
+
+   
+
+    </div>
+
+    
+    <div class="modal" id="modal-obavijesti">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="no-padding-top">Pratite ovaj sadržaj</h2>
+            <p>Primajte obavijesti na vaš e-mail u slučaju promjena na ovom dokumentu vezano za:</p>
+            <form id="obavijesti-form">
+                <input type="hidden" name="cmsContentId" value="17983" />
+                <div class="form-group">
+                    <label><input type="checkbox" name="watchContent" value="true" checked /> Sadržaj</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="watchSubordinateRegulations" value="true"  /> Podzakonski propisi</label>
+                </div>
+                
+                <div class="buttons-container">
+                    <button type="submit" class="button button-blue button-responsive">Spremi</button>
+                    
+                    <button type="button" class="button button-outline button-responsive modal-close-btn">Odustani</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-prijava-nepravilnosti">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="no-padding-top">Prijavite nepravilnost</h2>
+            <form id="prijava-nepravilnosti-form">
+                <div class="form-group">
+                    <div class="form-group-inner">
+                        <input type="email" id="prijava-email" name="email" placeholder="Vaš e-mail (neobavezno)" value="" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group-inner">
+                        <textarea id="prijava-message" name="message" class="text" required placeholder="Opišite nepravilnost..."></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div id="prijava-turnstile" class="cf-turnstile" data-sitekey="0x4AAAAAAEPyczWtj4xELjkK" data-action="report"></div>
+                </div>
+                <div class="buttons-container">
+                    <button type="submit" class="button button-blue button-responsive">Pošalji</button>
+                    <button type="button" class="button button-outline button-responsive modal-close-btn">Odustani</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script>
+    document.getElementById('bell-icon').addEventListener('click', function(e) {
+        
+        
+        showNotification('Za korištenje obavijesti morate biti prijavljeni.', 'warning', 5000);
+        
+    });
+
+    document.getElementById('obavijesti-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var form = this;
+
+        var watchContent = form.querySelector('input[name="watchContent"]').checked;
+        var watchSubordinateRegulations = form.querySelector('input[name="watchSubordinateRegulations"]').checked;
+        var caseLawEl = form.querySelector('input[name="watchCaseLaw"]');
+        var watchCaseLaw = caseLawEl ? caseLawEl.checked : false;
+
+        if (!confirmNoCheckboxes(watchContent, watchSubordinateRegulations, watchCaseLaw)) {
+            return;
+        }
+
+        var submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Spremam...';
+
+        var cmsContentId = form.querySelector('input[name="cmsContentId"]').value;
+
+        saveContentNotificationApi(cmsContentId, watchContent, watchSubordinateRegulations, watchCaseLaw)
+        .then(function(response) {
+            var modal = document.getElementById('modal-obavijesti');
+            modal.style.display = 'none';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Spremi';
+            if (response.ok) {
+                var bell = document.getElementById('bell-icon');
+                if (bell) bell.classList.add('bell-active');
+                showNotification('Obavijest je uspješno spremljena!', 'success', 5000);
+            } else {
+                response.text().then(function(msg) {
+                    showNotification(msg || 'Došlo je do pogreške. Molimo pokušajte ponovno.', 'error');
+                });
+            }
+        })
+        .catch(function() {
+            var modal = document.getElementById('modal-obavijesti');
+            modal.style.display = 'none';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Spremi';
+            showNotification('Došlo je do pogreške. Molimo pokušajte ponovno.', 'error');
+        });
+    });
+
+    function deleteContentNotification() {
+        if (!confirm('Jeste li sigurni da želite izbrisati obavijest?')) return;
+        var cmsContentId = document.querySelector('#obavijesti-form input[name="cmsContentId"]').value;
+        deleteContentNotificationApi(cmsContentId)
+        .then(function(response) {
+            var modal = document.getElementById('modal-obavijesti');
+            modal.style.display = 'none';
+            if (response.ok) {
+                var bell = document.getElementById('bell-icon');
+                if (bell) bell.classList.remove('bell-active');
+                showNotification('Obavijest je uspješno izbrisana!', 'success', 5000);
+            } else {
+                showNotification('Došlo je do pogreške. Molimo pokušajte ponovno.', 'error');
+            }
+        })
+        .catch(function() {
+            var modal = document.getElementById('modal-obavijesti');
+            modal.style.display = 'none';
+            showNotification('Došlo je do pogreške. Molimo pokušajte ponovno.', 'error');
+        });
+    }
+
+    document.getElementById('prijava-nepravilnosti-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var form = this;
+        var submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Šaljem...';
+
+        var turnstileInput = form.querySelector('textarea[name="cf-turnstile-response"], input[name="cf-turnstile-response"]');
+        var turnstileToken = turnstileInput ? turnstileInput.value : '';
+
+        var params = new URLSearchParams();
+        params.append('pageUrl', window.location.href);
+        params.append('email', document.getElementById('prijava-email').value);
+        params.append('message', document.getElementById('prijava-message').value);
+        params.append('cf-turnstile-response', turnstileToken);
+
+        fetch('/prijava-nepravilnosti', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: params.toString()
+        })
+        .then(function(response) {
+            var modal = document.getElementById('modal-prijava-nepravilnosti');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Pošalji';
+            if (window.turnstile) { window.turnstile.reset('#prijava-turnstile'); }
+            if (response.ok) {
+                modal.style.display = 'none';
+                form.reset();
+                showNotification('Hvala na prijavi! Vaša poruka je uspješno poslana.', 'success', 10000);
+            } else {
+                response.text().then(function(msg) {
+                    showNotification(msg || 'Došlo je do pogreške pri slanju. Molimo pokušajte ponovno.', 'error');
+                });
+            }
+        })
+        .catch(function() {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Pošalji';
+            if (window.turnstile) { window.turnstile.reset('#prijava-turnstile'); }
+            showNotification('Došlo je do pogreške pri slanju. Molimo pokušajte ponovno.', 'error');
+        });
+    });
+
+    function copyCmsBlockIdFallback(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+    }
+
+    function highlightCmsBlock(target) {
+        if (!target) return;
+        target.classList.remove('cms-article-highlight');
+        // force reflow so the animation can replay
+        void target.offsetWidth;
+        target.classList.add('cms-article-highlight');
+    }
+
+    // Scroll to and briefly highlight the article block referenced by the URL hash (e.g. #40779-5)
+    function scrollToArticleAnchor() {
+        var hash = window.location.hash;
+        if (!hash || hash.length < 2) return;
+        var id = decodeURIComponent(hash.substring(1));
+        var target;
+        try {
+            target = document.getElementById(id);
+        } catch (e) {
+            return;
+        }
+        if (!target) return;
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        highlightCmsBlock(target);
+    }
+    window.addEventListener('hashchange', scrollToArticleAnchor);
+    document.addEventListener('DOMContentLoaded', function() {
+        // slight delay so layout/ads settle before scrolling
+        setTimeout(scrollToArticleAnchor, 200);
+        document.querySelectorAll('.cms-block-admin').forEach(function(admin) {
+            admin.addEventListener('mouseenter', function() {
+                var block = admin.nextElementSibling;
+                if (block && block.classList.contains('cms-block')) {
+                    highlightCmsBlock(block);
+                }
+            });
+        });
+        document.querySelectorAll('.cms-block-copy').forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var value = btn.getAttribute('data-copy') || '';
+                if (!value) return;
+                var done = function() {
+                    showNotification('Kopirano: ' + value, 'success', 2000);
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(value).then(done).catch(function() {
+                        copyCmsBlockIdFallback(value);
+                        done();
+                    });
+                } else {
+                    copyCmsBlockIdFallback(value);
+                    done();
+                }
+            });
+        });
+    });
+    </script>
+    
+
+    <script src="/assets/js/cms-scroll-header.js?v=901e860"></script>
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>
