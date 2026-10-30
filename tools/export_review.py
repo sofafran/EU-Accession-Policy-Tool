@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.8.0"
+__version__ = "1.9.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -625,7 +625,27 @@ def g6(root, run):
     ]
 
 
-BUILDERS = {"G6": g6, "G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
+def g1b(root, run):
+    """G1b package (P4, step 2): decisions first, the countries checked per issue, and the comparator source lines."""
+    rv = root / "review" / run / "run1b"
+    dec_h, decisions = read_csv(rv / "G1b_decisions.csv") if (rv / "G1b_decisions.csv").exists() else ([], [])
+    countries, c_h = [], []
+    for f in sorted(rv.glob("*_countries.csv")) if rv.exists() else []:
+        h, rows = read_csv(f)
+        c_h = ["issue"] + h
+        countries += [[f.stem.split("_")[0]] + [r[k] for k in h] for r in rows]
+    header, rows = read_csv(root / "registers" / "source_requirements.csv")
+    lines = [r for r in rows if r.get("role") == "comparator"]
+    return "G1b_comparators.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Countries checked", c_h or ["issue"], countries),
+        ("Comparator source lines", header + ["reviewer_decision", "reviewer_comment"], [[r[h] for h in header] + ["", ""] for r in lines]),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS = {"G1b": g1b, "G6": g6, "G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
 
 
 def main(argv=None):

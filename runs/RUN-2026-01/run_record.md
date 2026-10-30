@@ -1,6 +1,6 @@
 # Run record: RUN-2026-01
 
-Status: **in progress: run 1b, comparator pilot (G6 passed, GATE-0007)**
+Status: **in progress: run 1b step 2, G1b package ready (G6 passed, GATE-0007)**
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Status: **in progress: run 1b, comparator pilot (G6 passed, GATE-0007)**
 | Mechanism list version | 1.0 (approved at G4, GATE-0005) |
 | Data dictionary version | 1.3 (30 Oct 2026) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.8.0 (adds the G6 issue dossiers); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.1 (analysis mock-up page, decision E11); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 59 of 59 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.9.0 (adds the G1b comparator package); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.2 (analysis mock-up page, decision E11; single approver); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 60 of 60 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | |
 

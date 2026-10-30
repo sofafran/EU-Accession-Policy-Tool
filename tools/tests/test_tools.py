@@ -388,6 +388,10 @@ def main():
         ri = proj / "taxonomy" / "reform_issues.csv"
         drafted = ri.read_text(encoding="utf-8")
         ri.write_text(drafted.replace(",draft,", ",approved,"), encoding="utf-8")
+        r = run(proj, "export_review.py", "G1b")
+        ok = r.returncode == 0 and "Comparator source lines" in load_workbook(rv / "G1b_comparators.xlsx").sheetnames
+        check("export_review.py", "G1b package: countries checked and comparator source lines", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "G1b_comparators.xlsx").unlink(missing_ok=True)
         r = run(proj, "export_review.py", "G6")
         ri.write_text(drafted, encoding="utf-8")
         ok = r.returncode == 0 and (rv / "G6_issue_dossiers.xlsx").exists()

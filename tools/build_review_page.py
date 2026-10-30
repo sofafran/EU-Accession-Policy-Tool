@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.1.1"
+__version__ = "1.1.2"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -238,7 +238,7 @@ class Page:
     def approvers(self):
         out = {}
         for part in self.rec.get("Reviewers", "").split(";"):
-            m = re.match(r"\s*(?:Formal gate approvers:\s*)?(.+?)\s*\((.+)\)\s*$", part)
+            m = re.match(r"\s*(?:Formal gate approvers?:\s*)?(.+?)\s*\((.+)\)\s*$", part)
             if not m:
                 continue
             names = re.sub(r"\s+together$", "", m.group(1))
