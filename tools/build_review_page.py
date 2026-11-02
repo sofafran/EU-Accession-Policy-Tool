@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.1.6"
+__version__ = "1.2.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -192,6 +192,18 @@ class Page:
         return ('<section class="notice" aria-label="Alpha summary"><h2>Alpha summary for management</h2>'
                 "<p>A short, plain-English page on what the alpha built, what it found, what it taught us and the choices for the next run, "
                 'for readers who do not need the review detail.</p><p><a class="button" href="alpha_summary.html">Open the alpha summary</a></p></section>')
+
+    def analysis_link(self):
+        if gate_passed(self.decisions, "G7"):
+            text = ("The validated results in one navigable page: overview, reform issues with filters and search, High-priority issues, "
+                    "comparator lessons, draft policy options (internal drafts) and evidence limits.")
+            title = "Analysis"
+        else:
+            text = ("A single scrolling page that shows how the evidence and, later, the analysis are being built, section by section along "
+                    "the analytical chain. It is a draft review aid, not a product.")
+            title = "Analysis mock-up"
+        return (f'<section class="notice" aria-label="{title}"><h2>{title}</h2><p>{text}</p>'
+                '<p><a class="button" href="analysis.html">Open the analysis page</a></p></section>')
 
     def status(self, gate, has_data):
         if gate_passed(self.decisions, gate):
@@ -471,7 +483,7 @@ class Page:
 </section>
 {self.summary_link()}
 {body}
-<section class="notice" aria-label="Analysis mock-up"><h2>Analysis mock-up</h2><p>A single scrolling page that shows how the evidence and, later, the analysis are being built, section by section along the analytical chain. It is a draft review aid, not a product.</p><p><a class="button" href="analysis.html">Open the analysis page</a></p></section>
+{self.analysis_link()}
 <footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Rebuilt when each gate package is prepared and after each gate decision.</p></footer>
 </div>
 </body>
@@ -734,7 +746,12 @@ def main(argv=None):
     out.write_text(page.render(), encoding="utf-8")
     print(f"wrote {out}")
     analysis = Path(a.analysis_output) if a.analysis_output else out.parent / "analysis.html"
-    analysis.write_text(AnalysisPage(root, a.run, page.today).render(), encoding="utf-8")
+    if gate_passed(page.decisions, "G7") and (root / "outputs" / a.run).exists():
+        from product_page import ProductPage
+        html = ProductPage(page).render(CSS, __version__, page.today)
+    else:
+        html = AnalysisPage(root, a.run, page.today).render()
+    analysis.write_text(html, encoding="utf-8")
     print(f"wrote {analysis}")
     return 0
 
