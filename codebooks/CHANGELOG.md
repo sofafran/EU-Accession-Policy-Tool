@@ -1,5 +1,15 @@
 # Codebook change log
 
+## Approved at G8 of RUN-2026-01 (GATE-0013, 2 November 2026), to be applied at the start of the next run
+
+These changes were approved by Sofia at G8 and are not yet applied. Each will be applied as a new version (Codebooks 1.3 and 1.2 for Codebook 7, extraction rules 0.5, classification rules 0.4, judgement rules 0.5, taxonomy 1.2 after review, data dictionary 1.5) when the next run starts, and this entry will then be replaced by the version entries. Full wording and reasons: `runs/RUN-2026-01/run_review.md`, section 5, and `review/RUN-2026-01/G8_proposed_changes.csv`.
+
+- **Codebooks:** PC-01 (Codebook 6, case-level transferability as labelled agent synthesis); PC-02 (Codebook 7, reviewers named in the run record, agent synthesis labelled, warnings alongside options); PC-03 (Codebook 2, manual retrieval route and near-duplicate check); PC-04 (Codebooks 1 or 3, volume effect of a cross-cutting theme).
+- **Rules:** PC-05 (extraction, standard second pass with yield by family); PC-06 and PC-07 (classification, country statements in screening reports, same-sentence check, merge step for parallel taxonomy drafts); PC-08 to PC-10 (judgement, final wording and reason-value consistency, searches behind claims of absence, no truncated inputs, helper briefs checked against the rules).
+- **Taxonomy:** PC-11 (consider MEC-04 for RI-TEC-028); PC-12 (problems raised only by national sources).
+- **Data dictionary:** PC-13 (`reform_issue_ids` on interventions); PC-14 (seven case fields in `entities/comparator_cases.csv`).
+- **Procedures and tools:** PC-15 (procedure P5 stage 12 method); PC-16 (procedure P4 limits check under standing instruction); PC-17 (tests for `build_outputs.py` and further tool checks).
+
 ## Version 1.2 (Codebooks 1 to 6) and 1.1 (Codebook 7), 29 October 2026
 
 Pre-G0 reconfiguration of the pilot from Serbia, Chapter 5 (Public procurement) to North Macedonia, Chapter 2 plus a technology and AI theme. Run-specific settings moved to the run record, CLAUDE.md and the limits log; the codebooks were made country-neutral. Decision IDs refer to `decisions/decision_log.md`.

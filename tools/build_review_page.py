@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.1.4"
+__version__ = "1.1.5"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -159,6 +159,31 @@ class Page:
             return False
         # Hand-coding and review-sample workbooks are inputs the analyst fills in before a gate, not gate packages.
         return any(f for f in self.review_dir.glob(f"{gate}_*.xlsx") if "handcoding" not in f.name and "review_sample" not in f.name) if self.review_dir.exists() else False
+
+    def completed(self):
+        """A closing summary once G8 has passed, drawn only from the run record, gate log, judgements and outputs."""
+        if not gate_passed(self.decisions, "G8"):
+            return None
+        _, js = read_csv(self.root / "judgements" / "judgements.csv")
+        iss = [j for j in js if j["object_type"] == "issue_country"]
+        cnt = lambda t, v: sum(1 for j in iss if j["judgement_type"] == t and j["value"] == v)
+        n = len({j["object_id"] for j in iss})
+        out_dir = self.root / "outputs" / self.run
+        files = sorted(out_dir.glob("*.md")) if out_dir.exists() else []
+        briefs = sum(1 for f in files if f.name.startswith("issue_brief_"))
+        comps = sum(1 for f in files if f.name.startswith("comparator_brief_"))
+        g8 = [r for r in self.decisions.values() if r["gate"] == "G8"][-1]
+        facts_ = [
+            ("Run", escape(self.run) + " " + label("Validated") + " closed at G8 on " + escape(g8["date"]) + f" ({escape(g8['gate_decision_id'])})"),
+            ("Reform issues", f"{n}: {cnt('priority', 'High')} High, {cnt('priority', 'Medium')} Medium and {cnt('priority', 'Low')} Low priority; "
+                              f"{cnt('direction_of_travel', 'persistent')} persistent and {cnt('direction_of_travel', 'improving')} improving; "
+                              f"{cnt('unresolved_gap', 'open')} gaps open, {cnt('unresolved_gap', 'partly_addressed')} partly addressed, {cnt('unresolved_gap', 'closed')} closed"),
+            ("Outputs", f"Scope overview, {briefs} issue briefs, coverage and limits report, {comps} comparator briefs; draft policy options stay internal drafts"),
+            ("Closed", md(self.rec.get("Closed", ""))),
+        ]
+        review = self.root / "runs" / self.run / "run_review.md"
+        link = f'<p><a href="{escape(review.relative_to(self.root).as_posix())}">Read the run review</a> for the gate history, error rates, approved changes and scaling readiness.</p>' if review.exists() else ""
+        return "Alpha completed " + label("Validated"), facts(facts_) + link
 
     def status(self, gate, has_data):
         if gate_passed(self.decisions, gate):
@@ -406,6 +431,8 @@ class Page:
                     ("extraction", self.extraction()), ("taxonomy", self.taxonomy()), ("classification", self.classification()),
                     ("assessment", self.assessment()), ("comparators", self.comparators()), ("outputs", self.outputs()),
                     ("lessons", self.lessons())]
+        if self.completed():
+            sections.insert(0, ("completed", self.completed()))
         gaps = self.known_gaps()
         if gaps:
             sections.append(("gaps", gaps))
@@ -652,6 +679,8 @@ class AnalysisPage(Page):
                     ("response", self.s_response()), ("implementation", self.s_implementation()), ("issues", self.s_issues()),
                     ("assessment", self.s_assessment()), ("comparators", self.s_comparators()), ("options", self.s_options()),
                     ("limits", self.s_limits())]
+        if self.completed():
+            sections.insert(0, ("completed", self.completed()))
         nav = "".join(f'<a href="#{sid}">{escape(re.sub(r"<span.*?</span>|<[^>]+>", "", t).strip())}</a>' for sid, (t, _) in sections)
         body = "".join(f'<section id="{sid}"><h2>{t}</h2>{c}</section>' for sid, (t, c) in sections)
         return f"""<!doctype html>

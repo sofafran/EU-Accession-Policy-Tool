@@ -1,6 +1,6 @@
 # Run review: RUN-2026-01
 
-**Status: Proposed, for decision at G8.** Written at stage 13 on 2 November 2026 by the agent, following procedure P5. Every change listed here is a proposal. Sofia decides each one at G8, and sets the final status of each alpha learning log row (decision E13). The proposed changes, lesson statuses and decisions are also in `review/RUN-2026-01/G8_close.xlsx`.
+**Status: Final. G8 passed on 2 November 2026 (GATE-0013); RUN-2026-01 is closed as the completed North Macedonia alpha.** Written at stage 13 by the agent, following procedure P5, and decided by Sofia (decision E13). Sofia approved all 17 proposed changes in section 5, to be applied as new versions at the start of the next run; set the alpha learning log statuses as proposed in section 8; and kept the run's limits active, with LIM-0031 to LIM-0035 confirmed. The next-run scope was not decided (section 7). The decisions are recorded in `review/RUN-2026-01/G8_decisions.csv` and the gate log.
 
 ## 1. What the run produced
 
@@ -31,6 +31,7 @@ The main finding is persistence. 33 of 48 issues have a persistent direction of 
 | G5b | 30 Oct | pass with conditions (GATE-0010) | Passed under standing instruction, to be confirmed at G6b (confirmed). Unmatched comparator items stay unused. |
 | G6b | 2 Nov | pass (GATE-0011) | Comparator judgements validated; case-level transferability as conditional agent synthesis (Option A, E15); judgement rules 0.4; data dictionary 1.4; LIM-0030. |
 | G7 | 2 Nov | pass (GATE-0012) | All outputs signed off; policy options stay internal drafts; seven judgements flagged for re-review; output writers' points carried to G8. |
+| G8 | 2 Nov | pass (GATE-0013) | Run review accepted; changes PC-01 to PC-17 approved for the next run; lesson statuses set; limits kept, LIM-0031 to LIM-0035 confirmed; run closed. Next-run scope left to be decided after review of the completed alpha. |
 
 Every gate was passed; none failed. All gate decisions from G6 onwards were taken by Sofia alone (E13). G2b and G5b were passed under a standing instruction and confirmed later, which saved time but moved the discovery of a language-limit problem to G6b (ALN-0030).
 
@@ -74,9 +75,9 @@ Every gate was passed; none failed. All gate decisions from G6 onwards were take
 | No outcome data on comparator reforms | E15 | Draft policy options are design options and warnings, not proven routes. |
 | Laws that reserve private sector posts for nationals not identified | none | No policy option on this part of the RI-FMW-001 gap. |
 
-## 5. Proposed changes
+## 5. Changes approved at G8
 
-Each change is proposed for decision at G8. Where a change is approved, it is applied as a new version and listed in `codebooks/CHANGELOG.md`, as procedure P5 requires.
+All 17 changes were approved at G8 (GATE-0013). They are listed in `codebooks/CHANGELOG.md` as approved and are applied as new versions at the start of the next run.
 
 ### Codebooks
 
@@ -124,18 +125,13 @@ Each change is proposed for decision at G8. Where a change is approved, it is ap
 
 Seven validated or overridden judgements carry `rereview_flag` (GATE-0012): JDG-009200, JDG-009263, JDG-009341, JDG-009407, JDG-009561, JDG-009626 and JDG-009751. Under CLAUDE.md rule 6 they stay in use until the analyst decides on new rows at the next G6. The other writers' points (run_notes 2026-11-02) are covered by PC-06, PC-08 and PC-13.
 
-## 7. Proposed scope for the next run
+## 7. Scope for the next run
 
-The agent does not start a new run (stage 14); this is a proposal only.
+**Decided at G8: to be decided after review of the completed alpha.** No new run has been started (stage 14 starts only when the analyst asks).
 
-**Recommended: RUN-2026-02 as a country-scaling test.** Apply the changes approved at G8, then run the same scope (Chapter 2 and the technology and AI theme) for Montenegro.
-- *Why:* the alpha tested one country, and the main scaling questions in the learning log concern countries and languages (ALN-0001, ALN-0003, ALN-0007).
-- *Head start:* Montenegro already has 17 registered comparator sources, some of which can be reused.
-- *Contrast:* it has provisionally closed Chapter 2, which tests the method on a country at a later accession stage.
-
-**Alongside it,** refresh North Macedonia when the 2026 enlargement package is published, as procedure P5 stage 14 describes. Only new and changed documents would be processed, and the seven flagged judgements re-reviewed at G6.
-
-**Alternative:** stay with North Macedonia and add Chapter 3 (Right of establishment and freedom to provide services). This links to RI-TEC-007 and tests chapter scaling, but it repeats the language set already tested.
+The agent's proposal at G8, recorded for that later review and not decided, was:
+- a country-scaling test, running the same scope for Montenegro (17 comparator sources already registered), alongside a refresh of North Macedonia when the 2026 enlargement package is published;
+- or, as an alternative, a chapter-scaling test, adding Chapter 3 for North Macedonia.
 
 ## 8. Scaling readiness
 
@@ -173,7 +169,7 @@ The alpha shows that the chain, the gates and the outputs work end to end for on
 - Case-level transferability (ALN-0031) should become a standard judgement only after a second pilot.
 - Comparator evidence on what worked is thin across the region, so comparator work is best limited to issues where outcome evidence exists or can be commissioned.
 
-**Proposed statuses for the alpha learning log** are listed in the G8 package. In short:
-- *Implemented* where the change was made during the run: ALN-0010, ALN-0011, ALN-0012, ALN-0013, ALN-0026 and ALN-0031.
-- *Accepted* where the change is proposed above for the next run.
-- *Accepted* for ALN-0027, with its decision on reviewers due before any external use.
+**Final statuses of the alpha learning log**, set at G8 as proposed:
+- *Implemented* where the change was made during the run: ALN-0001, ALN-0003, ALN-0010, ALN-0011, ALN-0012, ALN-0013, ALN-0026 and ALN-0031.
+- *Accepted* for the other 26 rows, carried forward by the approved changes or kept as standing lessons for scaling.
+- ALN-0027 is accepted, with its decision on reviewers due before any external use.
