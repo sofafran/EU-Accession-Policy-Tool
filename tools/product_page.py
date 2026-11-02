@@ -62,6 +62,10 @@ dl.kv dd { margin: 0; }
 .note { color: var(--muted); font-size: .9rem; }
 .quote { font-size: .9rem; }
 .assess { margin: 6px 0; font-size: .95rem; }
+.prog { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .86rem; margin: 4px 0 0; color: var(--muted); }
+.prog b { color: var(--text); font-weight: 600; }
+details.prog26 > summary { font-weight: 500; }
+.banner26 { border: 1px dashed var(--border); border-radius: 8px; padding: 8px 12px; margin: 10px 0; background: var(--bg); }
 nav.top a.active { border-color: var(--accent); background: var(--accent); color: var(--bg); }
 .says { margin: 6px 0 10px; padding-left: 20px; } .says li { margin: 4px 0; }
 .stat a { text-decoration: none; color: inherit; display: block; }
@@ -74,7 +78,7 @@ JS = r"""
 (function () {
   var cards = Array.prototype.slice.call(document.querySelectorAll('.issue'));
   var f = { q: document.getElementById('f-q'), strand: document.getElementById('f-strand'), pri: document.getElementById('f-pri'),
-            dir: document.getElementById('f-dir'), gap: document.getElementById('f-gap'), st: document.getElementById('f-st') };
+            dir: document.getElementById('f-dir'), gap: document.getElementById('f-gap'), st: document.getElementById('f-st'), u26: document.getElementById('f-u26') };
   var count = document.getElementById('f-count');
   function apply() {
     var q = f.q.value.trim().toLowerCase(), n = 0;
@@ -82,6 +86,7 @@ JS = r"""
       var ok = (!f.strand.value || c.dataset.strand === f.strand.value) && (!f.pri.value || c.dataset.priority === f.pri.value) &&
                (!f.dir.value || c.dataset.direction === f.dir.value) && (!f.gap.value || c.dataset.gap === f.gap.value) &&
                (!f.st.value || (' ' + c.dataset.status + ' ').indexOf(' ' + f.st.value + ' ') !== -1) &&
+               (!f.u26.value || (' ' + c.dataset.u26 + ' ').indexOf(' ' + f.u26.value + ' ') !== -1) &&
                (!q || c.dataset.search.indexOf(q) !== -1);
       c.classList.toggle('hidden', !ok);
       if (ok) n++;
@@ -91,7 +96,7 @@ JS = r"""
     });
     count.textContent = 'Showing ' + n + ' of ' + cards.length + ' reform issues';
   }
-  function reset() { f.q.value = ''; f.strand.value = ''; f.pri.value = ''; f.dir.value = ''; f.gap.value = ''; f.st.value = ''; apply(); }
+  function reset() { f.q.value = ''; f.strand.value = ''; f.pri.value = ''; f.dir.value = ''; f.gap.value = ''; f.st.value = ''; f.u26.value = ''; apply(); }
   ['input', 'change'].forEach(function (ev) { Object.keys(f).forEach(function (k) { f[k].addEventListener(ev, apply); }); });
   document.getElementById('f-reset').addEventListener('click', reset);
   document.querySelectorAll('a[data-strand]').forEach(function (a) {
@@ -102,7 +107,7 @@ JS = r"""
     var el = id && document.getElementById(id);
     if (el && el.classList.contains('issue')) {
       if (el.classList.contains('hidden')) reset();
-      var d = el.querySelector('details.more'); if (d) d.open = true;
+      var d = el.querySelector('details.more:not(.prog26)'); if (d) d.open = true;
       el.scrollIntoView();
     }
   }
@@ -130,6 +135,7 @@ def lbl(text, cls):
 
 VAL = lbl("Validated", "validated")
 DRAFT = lbl("Internal draft", "internal")
+AWAIT = lbl("Awaiting 2026 Enlargement Package", "limit")
 SYN = lbl("Agent synthesis", "synth")
 
 
@@ -177,6 +183,12 @@ class ProductPage:
         self.opts = {x: self.parse_options(x) for x in self.cases}
         self.themes = {r["theme_code"]: r["label"] for r in read_csv(self.root / "taxonomy" / "themes.csv")[1]}
         self.mechs = {r["mechanism_id"]: r["label"] for r in read_csv(self.root / "taxonomy" / "mechanisms.csv")[1]}
+        # 2025 -> 2026 comparison (decision E18). The annual country report of each year is the anchor; everything else stays as judged.
+        self.alljs = read_csv(self.root / "judgements" / "judgements.csv")[1]
+        rep_year = lambda y: {sid for sid, r in self.D["reg"].items() if sid.startswith("MKD-EU-") and r["document_type"] == "annual report"
+                              and r["publication_date"].startswith(y) and r["status"] == "available"}
+        self.rep25, self.rep26 = rep_year("2025"), rep_year("2026")
+        self.other26 = {sid for sid, r in self.D["reg"].items() if sid.startswith("MKD-EU-") and r["publication_date"].startswith("2026")} - self.rep26
         self.g7 = [r for r in page.decisions.values() if r["gate"] == "G7"][-1]
 
     # Helpers ------------------------------------------------------------------
@@ -244,6 +256,90 @@ class ProductPage:
             out += " " + lbl("Flagged for re-review", "limit")
         return out
 
+    def banner(self):
+        n = Counter(self.u26(r["issue_id"])[0] for r in self.D["issues"])
+        held = sum(1 for r in self.D["issues"] if any(self.D["items"][k]["_source"] in self.other26 for k in self.D["by"].get(r["issue_id"], [])))
+        if not self.rep26:
+            head = (f'<b>2026 update:</b> {AWAIT} No 2026 country report on North Macedonia is in the project yet, so every issue shows its 2025 position and '
+                    'the current validated judgements, and its 2026 update is marked as awaiting the package. ')
+        else:
+            head = (f'<b>2026 update:</b> 2026 country report added. {n["assessed"]} issues assessed, {n["proposed"]} with proposed changes, '
+                    f'{n["no_new"]} with no new report item. ')
+        return (f'<div class="banner26">{head}{held} issues already draw on other 2026 official EU evidence (the 2026 Rule of Law country chapter, the 2026 economic '
+                'reform programme assessment and conclusions, the third Reform Agenda payment assessment and the 2026 subcommittee), which is part of the '
+                'validated alpha and is not a substitute for the Enlargement Package. Open <b>2025 &rarr; 2026 comparison</b> on any issue card.</div>')
+
+    def u26(self, x):
+        """State of the 2026 update for an issue: awaiting (no 2026 country report registered or no item from it on this issue),
+        proposed (2026 report items exist, comparison not yet validated) or assessed."""
+        ks = self.D["by"].get(x, [])
+        new = [k for k in ks if self.D["items"][k]["_source"] in self.rep26]
+        if not self.rep26:
+            return "awaiting", new
+        if not new:
+            return "no_new", new
+        js = [j for j in self.alljs if j["object_id"] == x + "@MKD" and any(k in new for k in split_list(j["evidence_item_ids"]))]
+        return ("assessed" if js and all(j["review_status"] in ("validated", "overridden") for j in js) else "proposed"), new
+
+    def progression(self, x):
+        """2025 position, 2026 update, what changed, current direction and priority. Presentation of existing records only."""
+        it = self.D["items"]
+        ks = self.D["by"].get(x, [])
+        p25 = [k for k in ks if it[k]["_source"] in self.rep25]
+        o26 = [k for k in ks if it[k]["_source"] in self.other26]
+        state, new = self.u26(x)
+        J = self.views[x]["J"]
+        latest = max(ks, key=lambda k: (it[k]["dates"].get("publication_date") or "", k)) if ks else None
+        def summ(ids, n=4):
+            return "<ul class=\"ints\">" + "".join(f'<li>{escape(it[k]["summary"])} <code>{escape(k)}</code></li>' for k in ids[:n]) + "</ul>" + \
+                   (f'<p class="note">and {len(ids) - n} more in the references below.</p>' if len(ids) > n else "")
+        if p25:
+            pos25 = f'<p class="note">{len(p25)} item{"s" if len(p25) != 1 else ""} from the Commission\'s 2025 report on North Macedonia.</p>' + summ(p25) + self.refs(p25, "2025 report quotes")
+        else:
+            pos25 = '<p class="note">The 2025 report has no in-scope item on this issue; the alpha position rests on other sources (see the evidence below).</p>'
+        if state == "awaiting":
+            up26 = f'<p>{AWAIT}</p>'
+        elif state == "no_new":
+            up26 = '<p class="note">The 2026 report has no in-scope item on this issue.</p>'
+        else:
+            up26 = f'<p class="note">{len(new)} item{"s" if len(new) != 1 else ""} from the 2026 report.</p>' + summ(new) + self.refs(new, "2026 report quotes")
+        if o26:
+            up26 += (f'<p class="note">{VAL} Other 2026 official EU evidence already in the alpha, and already reflected in the current judgements '
+                     f'({len(o26)} item{"s" if len(o26) != 1 else ""}; not the Enlargement Package):</p>' + summ(o26, 3) + self.refs(o26, "2026 official EU quotes held"))
+        if state == "awaiting":
+            chg = f'<p class="note">Not yet assessed. {AWAIT}</p>'
+        elif state == "no_new":
+            chg = '<p class="note">No new evidence on this issue in the 2026 report, so the judgements stand.</p>'
+        else:
+            rows = []
+            for k in new:
+                ls = [l for l in self.D["links"] if l["from_id"] == k and l["link_type"] in ("corroborates", "contradicts", "same_as_earlier", "replaces", "amends")]
+                kind = ", ".join(sorted({l["link_type"].replace("_", " ") + ("" if l["review_status"] == "validated" else " (proposed)") for l in ls})) or "new: no earlier item linked"
+                rows.append(f'<li><code>{escape(k)}</code> · {escape(kind)}</li>')
+            sup = [j for j in self.alljs if j["object_id"] == x + "@MKD" and j["supersedes"] and any(n in new for n in split_list(j["evidence_item_ids"]))]
+            for j in sup:
+                old = next((o for o in self.alljs if o["judgement_id"] == j["supersedes"]), {})
+                lab = VAL if j["review_status"] in ("validated", "overridden") else lbl("Proposed", "synth")
+                rows.append(f'<li><b>{escape(pretty(j["judgement_type"]))}</b>: {escape(pretty(old.get("value")))} &rarr; {escape(pretty(j["value"]))} {lab}</li>')
+            chg = (lbl("Proposed", "synth") + " " if state == "proposed" else "") + f'<ul class="ints">{"".join(rows)}</ul>'
+        def cur(t):
+            j = J.get(t, {})
+            pend = [n for n in self.alljs if n["supersedes"] == j.get("judgement_id") and n["review_status"] == "proposed"] if j else []
+            extra = "".join(f' &rarr; <b>{escape(pretty(n["value"]))}</b> {lbl("Proposed", "synth")}' for n in pend)
+            return f'<b>{escape(pretty(j.get("value")))}</b> {VAL}{extra}'
+        latest_html = (f'{escape((it[latest]["dates"].get("publication_date") or "")[:10])}, {escape(self.D["reg"].get(it[latest]["_source"], {}).get("title", "")[:90])} '
+                       f'<code>{escape(latest)}</code>') if latest else "none"
+        strip = (f'<div class="prog"><span><b>2025 report:</b> {len(p25)} item{"s" if len(p25) != 1 else ""}</span>'
+                 f'<span><b>2026 update:</b> {AWAIT if state == "awaiting" else escape({"no_new": "no new item", "proposed": "proposed", "assessed": "assessed"}[state])}</span></div>')
+        block = (f'<details class="more prog26"><summary>2025 &rarr; 2026 comparison</summary><div class="detail"><dl class="kv">'
+                 f'<dt>Latest evidence</dt><dd>{latest_html}</dd>'
+                 f'<dt>2025 position</dt><dd>{pos25}</dd>'
+                 f'<dt>2026 update</dt><dd>{up26}</dd>'
+                 f'<dt>What changed</dt><dd>{chg}</dd>'
+                 f'<dt>Current direction of travel</dt><dd>{cur("direction_of_travel")}</dd>'
+                 f'<dt>Current priority</dt><dd>{cur("priority")}</dd></dl></div></details>')
+        return state, strip, block
+
     def parse_options(self, x):
         body = narrative(self.root, self.run, f"comparator_{x}").get("Draft policy options", "")
         opts, cur = [], None
@@ -294,6 +390,7 @@ class ProductPage:
             f'<dt>Evidence window</dt><dd>{escape(rec.get("Time window", "").split(";")[0])}; freeze date {escape(rec.get("Evidence freeze date", "").split(" ")[0])}</dd></dl>'
             f'<div class="stats">{st}</div>'
             f'<h3>What this analysis says {VAL}</h3><ul class="says">{says}</ul>'
+            + self.banner() +
             '<p class="note">Jump straight to: <a href="#priority">the High-priority issues</a> · <a href="#issues">all issues, with filters</a> · '
             '<a href="#comparators">comparator lessons</a> · <a href="#options">draft policy options</a>.</p>')
 
@@ -326,12 +423,14 @@ class ProductPage:
         oq = N.get("Open questions", "")
         oq_html = "<ul>" + "".join(f"<li>{text(l[2:])}</li>" for l in oq.splitlines() if l.startswith("- ")) + "</ul>" if oq else ""
         mt = lbl("Evidence limit: relies partly on machine translation", "limit") if V["mt"] else ""
+        u_state, u_strip, u_block = self.progression(x)
+        o26 = "held" if any(self.D["items"][k]["_source"] in self.other26 for k in self.D["by"].get(x, [])) else ""
         return (f'<article class="issue" id="{escape(x)}" data-strand="{self.strand(x)}" data-priority="{escape(J.get("priority", {}).get("value", ""))}" '
                 f'data-direction="{escape(J.get("direction_of_travel", {}).get("value", ""))}" data-gap="{escape(J.get("unresolved_gap", {}).get("value", ""))}" '
-                f'data-status="{" ".join(self.status(x))}" data-search="{escape(search)}">'
+                f'data-status="{" ".join(self.status(x))}" data-u26="{u_state} {o26}" data-search="{escape(search)}">'
                 f'<div class="top"><a class="idlink" href="#{escape(x)}" title="Link to this issue">{escape(x)} · {STRAND[self.strand(x)]}</a><span>{self.status_labels(x)}</span></div>'
                 f'<h4>{escape(r["label"])}</h4><div>{self.chips(x)}</div>'
-                f'<p class="assess"><b>Assessment:</b> {text(assess)}</p>'
+                f'<p class="assess"><b>Assessment:</b> {text(assess)}</p>{u_strip}{u_block}'
                 f'<p class="gap"><b>Unresolved gap ({escape(pretty(J.get("unresolved_gap", {}).get("value")))}):</b> {text(gap)}</p>'
                 f'<details class="more"><summary>View detail</summary><div class="detail">'
                 f'<h5>Assessment in brief</h5><p>{text(N.get("In brief", ""))}</p>'
@@ -358,6 +457,9 @@ class ProductPage:
                 f'<label>Unresolved gap<select id="f-gap"><option value="">All</option>{opt(gaps)}</select></label>'
                 '<label>Judgement status<select id="f-st"><option value="">All</option>'
                 + "".join(f'<option value="{k}">{escape(v)}</option>' for k, v in STATUS.items()) + '</select></label>'
+                '<label>2026 update<select id="f-u26"><option value="">All</option><option value="awaiting">Awaiting 2026 Enlargement Package</option>'
+                '<option value="held">Has 2026 official EU evidence already held</option><option value="proposed">2026 change proposed</option>'
+                '<option value="assessed">2026 change validated</option><option value="no_new">No new 2026 report item</option></select></label>'
                 '<button id="f-reset" type="button">Reset</button></div>'
                 f'<p class="count" id="f-count" aria-live="polite">Showing {len(self.D["issues"])} of {len(self.D["issues"])} reform issues</p>')
         key = lambda r: (PRI.get(self.jv(r["issue_id"], "priority").get("value"), 3), r["issue_id"])
@@ -386,7 +488,9 @@ class ProductPage:
                        f'<dt>Why it matters</dt><dd>{text(p_.get("reason", ""))}{escape(ov)}</dd>'
                        f'<dt>Direction of travel</dt><dd><b>{escape(pretty(d.get("value")))}.</b> {text(" ".join(sentences(d.get("reason", ""))[:2]))}</dd>'
                        f'<dt>Main evidence</dt><dd><ul>{main}</ul>{self.refs(pids, "Quotes")}</dd>'
-                       f'<dt>Unresolved gap</dt><dd><b>{escape(pretty(g.get("value")))}.</b> {text(what_remains(g.get("reason", "")))}</dd></dl></div>')
+                       f'<dt>Unresolved gap</dt><dd><b>{escape(pretty(g.get("value")))}.</b> {text(what_remains(g.get("reason", "")))}</dd>'
+                       f'<dt>2026 update</dt><dd>{AWAIT if self.u26(x)[0] == "awaiting" else escape(pretty(self.u26(x)[0]))} '
+                       f'<a href="#{escape(x)}">2025 &rarr; 2026 comparison on the issue card</a></dd></dl></div>')
         idx = "".join(f'<li><a href="#p-{escape(r["issue_id"])}">{escape(r["label"])}</a> <span class="idlink">{escape(r["issue_id"])}</span></li>' for r in hi)
         return "priority", f"Priority issues ({len(hi)} High)", (
             f'<p>{VAL} The issues rated High priority at G6, in ID order. Every statement is taken from the validated judgements; '

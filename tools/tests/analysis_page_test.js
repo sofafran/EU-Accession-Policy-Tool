@@ -36,10 +36,10 @@ d.getElementById('f-reset').click();
 d.querySelector('nav.top a[data-strand="tec"]').click(); t('nav Technology filters to tech', vis() === 34 && d.getElementById('f-strand').value === 'tec');
 d.querySelector('nav.top a[data-strand="fmw"]').click(); t('nav Chapter 2 filters to fmw', vis() === 14);
 ({ d, w } = load('#RI-TEC-028'));
-t('anchor opens card', d.querySelector('#RI-TEC-028 details.more').open && w.__scrolled === 'RI-TEC-028');
+t('anchor opens card', d.querySelector('#RI-TEC-028 details.more:not(.prog26)').open && w.__scrolled === 'RI-TEC-028');
 ({ d, w } = load(''));
 set('f-strand', 'fmw'); w.location.hash = '#RI-TEC-036'; w.dispatchEvent(new w.HashChangeEvent('hashchange'));
-t('anchor to hidden card resets filters and opens', !d.getElementById('RI-TEC-036').classList.contains('hidden') && d.querySelector('#RI-TEC-036 details.more').open);
+t('anchor to hidden card resets filters and opens', !d.getElementById('RI-TEC-036').classList.contains('hidden') && d.querySelector('#RI-TEC-036 details.more:not(.prog26)').open);
 t('options labelled internal draft', [...d.querySelectorAll('.option')].every(o => o.textContent.includes('Internal draft')) && d.querySelectorAll('.option').length === 10);
 t('cases labelled agent synthesis', [...d.querySelectorAll('.case')].every(o => o.textContent.includes('Agent synthesis')) && d.querySelectorAll('.case').length === 9);
 t('19 priority panels', d.querySelectorAll('.pcard').length === 19);
@@ -53,4 +53,11 @@ t('priority index links resolve', [...d.querySelectorAll('.pindex a')].length ==
 t('overview stat tiles link to sections', [...d.querySelectorAll('.stat a')].every(a => d.getElementById(a.getAttribute('href').slice(1))));
 t('summary as bullets', d.querySelectorAll('#overview ul.says li').length >= 5);
 t('flagged label visible', d.querySelector('#RI-FMW-003').textContent.includes('Flagged for re-review'));
+t('every card has a 2025 -> 2026 comparison', [...d.querySelectorAll('.issue')].every(c => c.querySelector('details.prog26') && /2025 position/.test(c.querySelector('details.prog26').textContent) && /Current priority/.test(c.querySelector('details.prog26').textContent)));
+t('comparison panels start collapsed', [...d.querySelectorAll('details.prog26')].every(x => !x.open));
+const u26n = d.querySelectorAll('.issue[data-u26~="awaiting"]').length;
+if (u26n) { set('f-u26', 'awaiting'); t('2026 filter awaiting', vis() === u26n); d.getElementById('f-reset').click();
+  t('awaiting label shown', d.querySelector('#RI-FMW-001 .prog').textContent.includes('Awaiting 2026 Enlargement Package')); }
+set('f-u26', 'held'); t('2026 filter: evidence held -> 13', vis() === 13); d.getElementById('f-reset').click();
+t('banner present', !!d.querySelector('#overview .banner26'));
 console.log(`${ok} passed, ${bad} failed`);

@@ -1,11 +1,11 @@
 # Run record: RUN-2026-01
 
-Status: **closed: completed North Macedonia alpha (G8 passed, GATE-0013, 2 November 2026). Next-run scope to be decided after review of the completed alpha**
+Status: **closed: completed North Macedonia alpha (G8 passed, GATE-0013, 2 November 2026). Next-run scope to be decided after review of the completed alpha. Refresh with the 2026 Enlargement Package prepared (E18), awaiting publication**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-01 |
-| Current stage | Closed after stage 13 (G8 passed 2026-11-02; no new run started; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
+| Current stage | Refresh R0: prepared, awaiting the 2026 Enlargement Package (E18, `runs/RUN-2026-01/refresh_plan.md`); closed after stage 13 (G8 passed 2026-11-02; no new run started; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
 | Purpose | Alpha product and methodology test. Run 1 produces a North Macedonia diagnostic (run 1a) and a comparator pilot (run 1b), and tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, outputs, and the usefulness of the review page. Lessons are recorded in the alpha learning log to inform scaling to further chapters, clusters and countries |
 | Target country | North Macedonia (MKD) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -26,7 +26,7 @@ Status: **closed: completed North Macedonia alpha (G8 passed, GATE-0013, 2 Novem
 | Mechanism list version | 1.0 (approved at G4, GATE-0005) |
 | Data dictionary version | 1.4 (2 Nov 2026, G6b-D05) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.12.0 (adds the G7 and G8 packages); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.2.0 (after G7, `analysis.html` is the navigable product page built by `product_page.py`; closing summary after G8; link to `alpha_summary.html`); analysis page checked by `tools/tests/analysis_page_test.js` (25 of 25 on 2 Nov 2026); `build_outputs.py` 1.0.1 (stage 12 outputs; status line follows the G7 decision); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 61 of 61 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.12.0 (adds the G7 and G8 packages); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.3.0 (2025 to 2026 comparison on every issue card, E18; after G7, `analysis.html` is the navigable product page built by `product_page.py`; closing summary after G8; link to `alpha_summary.html`); analysis page checked by `tools/tests/analysis_page_test.js` (39 of 39 on 2 Nov 2026); `refresh_delta.py` 1.0.0 (E18); `build_outputs.py` 1.0.1 (stage 12 outputs; status line follows the G7 decision); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 61 of 61 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | 2026-11-02 (G8, GATE-0013). Run review: `runs/RUN-2026-01/run_review.md`. Changes PC-01 to PC-17 approved, to be applied at the start of the next run. Next-run scope: to be decided after review of the completed alpha |
 
