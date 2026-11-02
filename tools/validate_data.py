@@ -11,9 +11,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (ITEM_ID_RE, SOURCE_ID_RE, dictionary_tables, evidence_files,  # noqa: E402
-                    project_root, read_csv, read_json, split_list)
+                    lessons_path, project_root, read_csv, read_json, runs_with_records, split_list)
 
-__version__ = "1.2.0"
+__version__ = "1.4.0"
 
 ID_COLUMNS = {
     "registers/source_requirements.csv": "requirement_id",
@@ -60,9 +60,17 @@ class Report:
         self.warnings.append(msg)
 
 
+LESSONS_KEY = "runs/<run_id>/learning_log.csv"
+LESSONS_KEY_ALPHA = "runs/<run_id>/alpha_learning_log.csv"  # data dictionary heading before E19
+
+
+def is_lessons(rel):
+    return rel.startswith("runs/") and rel.endswith("learning_log.csv")
+
+
 def load_tables(root, run_ids):
     tables = {}
-    for rel in list(ID_COLUMNS) + [f"runs/{r}/alpha_learning_log.csv" for r in run_ids]:
+    for rel in list(ID_COLUMNS) + [lessons_path(root, r).relative_to(root).as_posix() for r in run_ids]:
         tables[rel] = read_csv(Path(root) / rel)
     return tables
 
@@ -70,7 +78,7 @@ def load_tables(root, run_ids):
 def check_headers(root, tables, rep):
     expected = dictionary_tables(root)
     for rel, (header, _) in tables.items():
-        key = "runs/<run_id>/alpha_learning_log.csv" if rel.endswith("alpha_learning_log.csv") else rel
+        key = (LESSONS_KEY if LESSONS_KEY in expected else LESSONS_KEY_ALPHA) if is_lessons(rel) else rel
         if key not in expected:
             rep.warn(f"{rel}: not described in the data dictionary")
             continue
@@ -96,12 +104,19 @@ def check_ids_unique(tables, rep):
                 rep.error(f"{rel}: duplicate {col} {v}")
             seen.add(v)
         ids[rel] = seen
+    owner = {}
+    for rel, seen in ids.items():
+        if is_lessons(rel):
+            for v in seen:
+                if v in owner:
+                    rep.error(f"{rel}: lesson ID {v} is already used in {owner[v]}; lesson IDs are never reused across runs")
+                owner.setdefault(v, rel)
     return ids
 
 
 def check_enums(tables, rep):
     for rel, (_, rows) in tables.items():
-        key_rel = "ALN" if rel.endswith("alpha_learning_log.csv") else rel
+        key_rel = "ALN" if is_lessons(rel) else rel
         for (t, col), allowed in ENUMS.items():
             if t != key_rel:
                 continue
@@ -200,7 +215,7 @@ def check_references(tables, ids, items, files, rep):
     refs("judgements/judgements.csv", "evidence_item_ids", set(items), "item")
     refs("judgements/judgements.csv", "supersedes", judgements, "judgement", multi=False)
     for rel in tables:
-        if rel.endswith("alpha_learning_log.csv"):
+        if is_lessons(rel):
             refs(rel, "decided_at", gates, "gate decision", multi=False)
 
     for r in tables["registers/limits_log.csv"][1]:
@@ -248,6 +263,27 @@ def check_references(tables, ids, items, files, rep):
             rep.error(f"{iid}: extraction_note cites unknown limit {lim}")
 
 
+def check_theme_issues(tables, items, rep):
+    """A reform issue from a cross-cutting theme must be supported by at least one in-scope recommendation
+    (procedure P2 stage 7; classification rules: theme scope). PC-17, ALN-0020."""
+    by_issue = {}
+    for it in items.values():
+        p2 = it.get("pass2", {})
+        if p2.get("classification_status") == "out_of_scope":
+            continue
+        for x in p2.get("reform_issue_ids", []):
+            by_issue.setdefault(x, []).append(it)
+    for r in tables["taxonomy/reform_issues.csv"][1]:
+        if not split_list(r.get("themes")) or r.get("status") not in ("draft", "approved"):
+            continue
+        x = r["issue_id"]
+        mine = by_issue.get(x, [])
+        if not mine:
+            rep.warn(f"{x}: theme issue has no classified items yet, so its supporting recommendation cannot be checked (show the count in the G4 package)")
+        elif not any(i.get("information_type") == "recommendation" for i in mine):
+            rep.error(f"{x}: theme issue has {len(mine)} in-scope item(s) but no recommendation; an issue from a cross-cutting theme needs at least one (procedure P2 stage 7)")
+
+
 def check_protected_judgements(root, rep):
     """Warn if value, reason or review status of a validated or overridden judgement changed since the last commit."""
     for rel, key in (("judgements/judgements.csv", "judgement_id"), ("judgements/source_quality.csv", "sq_id")):
@@ -275,13 +311,13 @@ def check_protected_judgements(root, rep):
 def main(argv=None):
     p = argparse.ArgumentParser(
         description="Check evidence files against the JSON schema, CSV headers against the data dictionary, that IDs are unique and that "
-                    "every ID referred to exists (including theme codes), and warn if a validated or overridden judgement has changed "
+                    "every ID referred to exists (including theme codes), that every draft or approved theme issue has an in-scope recommendation, and warn if a validated or overridden judgement has changed "
                     "since the last commit. Exits with status 1 if any error is found.")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = project_root(a.root)
-    run_ids = sorted(d.name for d in (root / "runs").iterdir() if d.is_dir()) if (root / "runs").exists() else []
+    run_ids = runs_with_records(root) if (root / "runs").exists() else []  # runs/_template has no run record and is skipped
     rep = Report()
     tables = load_tables(root, run_ids)
     check_headers(root, tables, rep)
@@ -289,6 +325,7 @@ def main(argv=None):
     check_enums(tables, rep)
     items, files = check_evidence(root, root / "schemas" / "evidence_item.schema.json", rep)
     check_references(tables, ids, items, files, rep)
+    check_theme_issues(tables, items, rep)
     check_protected_judgements(root, rep)
     print(f"validate_data {__version__}: {len(files)} evidence file(s), {len(items)} item(s), {sum(len(t[1]) for t in tables.values())} CSV row(s)")
     for w in rep.warnings:

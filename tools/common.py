@@ -122,3 +122,42 @@ def gate_decisions(root, run_id):
 def gate_passed(decisions, gate):
     r = decisions.get(gate)
     return bool(r) and r.get("decision") in ("pass", "pass_with_conditions")
+
+
+# Countries (E19). One list for every tool: the accession countries in the rollout plan and the comparator countries
+# used so far. Kosovo uses XKX, the code in common use; the EU designation "Kosovo*" and its footnote are set in the run record.
+COUNTRIES = {
+    "MKD": "North Macedonia", "MNE": "Montenegro", "ALB": "Albania", "MDA": "Moldova", "UKR": "Ukraine",
+    "SRB": "Serbia", "BIH": "Bosnia and Herzegovina", "GEO": "Georgia", "TUR": "Türkiye", "XKX": "Kosovo",
+    "HRV": "Croatia",
+}
+
+
+def run_country(root, run_id):
+    """Country code of a run, from the `Target country` field of its run record, written as `Name (CCC)`."""
+    fields, _ = run_record(root, run_id)
+    m = re.search(r"\(([A-Z]{3})\)", fields.get("Target country", ""))
+    if not m:
+        raise ValueError(f"{run_id}: the run record's Target country must end with the country code in brackets, for example 'Montenegro (MNE)'")
+    return m.group(1)
+
+
+def country_name(code):
+    return COUNTRIES.get(code, code)
+
+
+def lessons_path(root, run_id):
+    """The run's curated lessons file: learning_log.csv from RUN-2026-02 on, alpha_learning_log.csv in the alpha (E19)."""
+    d = Path(root) / "runs" / run_id
+    return d / "learning_log.csv" if (d / "learning_log.csv").exists() or not (d / "alpha_learning_log.csv").exists() else d / "alpha_learning_log.csv"
+
+
+def gate_id(root, run_id, gate):
+    """Gate decision ID of the latest pass of a gate for a run, or ''."""
+    r = gate_decisions(root, run_id).get(gate)
+    return r["gate_decision_id"] if r and r.get("decision") in ("pass", "pass_with_conditions") else ""
+
+
+def runs_with_records(root):
+    """Run IDs that have a run record, in ID order (the template folder is skipped)."""
+    return sorted(p.parent.name for p in (Path(root) / "runs").glob("RUN-*/run_record.md"))

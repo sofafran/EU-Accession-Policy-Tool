@@ -52,6 +52,24 @@ def minimal_pdf(pages):
     return out.encode("latin-1")
 
 
+def image_pdf(heading):
+    """One page with a short text heading over an image body: the layout that hid text in ALN-0021."""
+    stream = f"BT /F1 14 Tf 50 750 Td ({heading}) Tj ET q 500 0 0 600 50 100 cm /Im1 Do Q"
+    objs = ["<< /Type /Catalog /Pages 2 0 R >>", "<< /Type /Pages /Kids [5 0 R] /Count 1 >>",
+            "<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>",
+            "<< /Type /XObject /Subtype /Image /Width 1 /Height 1 /ColorSpace /DeviceGray /BitsPerComponent 8 /Length 1 >>\nstream\n\x80\nendstream",
+            "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> /XObject << /Im1 4 0 R >> >> /Contents 6 0 R >>",
+            f"<< /Length {len(stream)} >>\nstream\n{stream}\nendstream"]
+    out, offsets = "%PDF-1.4\n", []
+    for i, o in enumerate(objs, start=1):
+        offsets.append(len(out.encode("latin-1")))
+        out += f"{i} 0 obj\n{o}\nendobj\n"
+    xref = len(out.encode("latin-1"))
+    out += f"xref\n0 {len(objs) + 1}\n0000000000 65535 f \n" + "".join(f"{o:010d} 00000 n \n" for o in offsets)
+    out += f"trailer\n<< /Size {len(objs) + 1} /Root 1 0 R >>\nstartxref\n{xref}\n%%EOF\n"
+    return out.encode("latin-1")
+
+
 def scanned_pdf(path, lines):
     from PIL import Image, ImageDraw, ImageFont
     img = Image.new("RGB", (2480, 1200), "white")
@@ -147,6 +165,18 @@ def main():
         check("convert_to_text.py", "text PDF: page markers and text", "=== PAGE 1 ===" in txt and "=== PAGE 2 ===" in txt and "some level of preparation" in txt, r.stderr[-300:])
         check("convert_to_text.py", "text PDF: no text recognition needed", "ocr:" not in r.stdout, r.stdout)
         check("convert_to_text.py", "original file unchanged", hashlib.sha256(orig.read_bytes()).hexdigest() == before)
+        check("convert_to_text.py", "density: characters per page reported for a text PDF", "density: 2 page(s), median" in r.stdout, r.stdout)
+        thin = samples / "thin.pdf"
+        thin.write_bytes(image_pdf("Annual report of the regulator: recommendations"))
+        dens = samples / "thin_density.csv"
+        r = run(proj, "convert_to_text.py", str(thin), str(samples / "thin.txt"), "--density-report", str(dens))
+        tt = (samples / "thin.txt").read_text(encoding="utf-8") if r.returncode == 0 else ""
+        check("convert_to_text.py", "density: thin page with an image flagged, text recognition not run, text kept",
+              "thin page 1" in r.stdout and "page has an image" in r.stdout and "ocr:" not in r.stdout and "Annual report of the regulator" in tt, r.stdout + r.stderr[-300:])
+        drows = list(csv.DictReader(dens.open(encoding="utf-8"))) if dens.exists() else []
+        check("convert_to_text.py", "density: CSV report lists each page with image and thin flags",
+              len(drows) == 1 and drows[0]["has_image"] == "yes" and drows[0]["thin"] == "yes", str(drows))
+        check("convert_to_text.py", "density: whole document reported as thin", "document is thin" in r.stdout, r.stdout)
 
         # convert_to_text: scanned PDF with Macedonian Cyrillic
         scan = samples / "scan.pdf"
@@ -290,6 +320,75 @@ def main():
         r = run(proj, "validate_data.py")
         check("validate_data.py", "change to a validated judgement is flagged", "JDG-000001 is validated but its value has changed" in r.stdout, r.stdout[-500:])
         jpath.write_text(hdr + "\n", encoding="utf-8")
+        subprocess.run(["git", "-C", str(proj), "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qam", "reset judgements"], check=True)
+        ri_path = proj / "taxonomy" / "reform_issues.csv"
+        ri_before = ri_path.read_text(encoding="utf-8")
+        ri_path.write_text(ri_before + "RI-TST-002,Test theme issue,A test definition.,,,TECH-AI,,,,draft,,,RUN-2026-01,\n", encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "theme issue with no classified items gives a warning only", "RI-TST-002: theme issue has no classified items yet" in r.stdout and r.returncode == 0,
+              " | ".join(l for l in r.stdout.splitlines() if l.startswith("error") or "RI-TST" in l)[-600:])
+        th = json.loads(ev.read_text(encoding="utf-8"))
+        th["items"][0]["pass2"]["reform_issue_ids"] = ["RI-TST-002"]
+        th["items"][0]["pass2"]["classification_status"] = "auto"
+        ev.write_text(json.dumps(th, ensure_ascii=False), encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "theme issue with items but no recommendation is an error", "RI-TST-002: theme issue has 1 in-scope item(s) but no recommendation" in r.stdout and r.returncode == 1, r.stdout[-400:])
+        th["items"][0]["information_type"] = "recommendation"
+        ev.write_text(json.dumps(th, ensure_ascii=False), encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "theme issue supported by a recommendation passes", "RI-TST-002" not in r.stdout, r.stdout[-400:])
+        ri_path.write_text(ri_before, encoding="utf-8")
+        ev.write_text(json.dumps(good, ensure_ascii=False), encoding="utf-8")
+
+        # lessons files: from RUN-2026-02 a run keeps runs/<run_id>/learning_log.csv; runs/_template is not a run (E19)
+        alpha_ll = (proj / "runs" / "RUN-2026-01" / "alpha_learning_log.csv").read_text(encoding="utf-8").splitlines()
+        r2 = proj / "runs" / "RUN-2099-02"
+        r2.mkdir(parents=True)
+        (r2 / "run_record.md").write_text("# Run record: RUN-2099-02 (test)\n", encoding="utf-8")
+        (r2 / "learning_log.csv").write_text(alpha_ll[0] + "\n", encoding="utf-8")
+        r = run(proj, "next_id.py", "lesson", "--run", "RUN-2099-02")
+        want = f"ALN-{highest('runs/RUN-2026-01/alpha_learning_log.csv', 'lesson_id', 'ALN-') + 1:04d}"
+        check("next_id.py", "next lesson in a new run continues after the highest in any run", r.stdout.strip() == want, r.stdout + r.stderr[-300:])
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "new run's learning_log.csv checked; template folder skipped",
+              r.returncode == 0 and "_template" not in r.stdout and "RUN-2099-02/learning_log.csv: file missing" not in r.stdout,
+              " | ".join(l for l in r.stdout.splitlines() if l.startswith("error"))[-600:])
+        (r2 / "learning_log.csv").write_text(alpha_ll[0] + "\n" + alpha_ll[1] + "\n", encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "lesson ID reused across runs is an error", "is already used in runs/RUN-2026-01/alpha_learning_log.csv" in r.stdout and r.returncode == 1, r.stdout[-400:])
+        shutil.rmtree(r2)
+
+        # near_duplicates (a separate small project: three sources, two versions of one document)
+        nd = Path(tmp) / "nd"
+        (nd / "registers").mkdir(parents=True)
+        reg_hdr = (ROOT / "registers" / "source_register.csv").read_text(encoding="utf-8").splitlines()[0]
+        cols = reg_hdr.split(",")
+        def reg_row(sid, title, version_of=""):
+            vals = {"source_id": sid, "title": title, "country": "MNE", "version_of": version_of}
+            return ",".join(vals.get(c, "") for c in cols)
+        (nd / "registers" / "source_register.csv").write_text("\n".join([reg_hdr, reg_row("MNE-EU-2024-001", "Screening report (Commission version)"),
+                                                                       reg_row("MNE-EU-2024-002", "Screening report (Council version)"),
+                                                                       reg_row("MNE-EU-2024-003", "Unrelated report")]) + "\n", encoding="utf-8")
+        ndt = nd / "sources" / "MNE" / "EU" / "text"
+        ndt.mkdir(parents=True)
+        import random
+        rnd = random.Random(7)
+        vocab = [f"word{n}" for n in range(400)]
+        base = [" ".join(rnd.choice(vocab) for _ in range(12)) + "." for _ in range(150)]
+        other = [" ".join(rnd.choice(vocab) for _ in range(12)) + "." for _ in range(150)]
+        (ndt / "MNE-EU-2024-001.txt").write_text("=== PAGE 1 ===\n" + "\n".join(base) + "\n", encoding="utf-8")
+        (ndt / "MNE-EU-2024-002.txt").write_text("=== PAGE 1 ===\nCOUNCIL OF THE EUROPEAN UNION\n=== PAGE 2 ===\n" + "\n".join(base[:140]) + "\n", encoding="utf-8")
+        (ndt / "MNE-EU-2024-003.txt").write_text("=== PAGE 1 ===\n" + "\n".join(other) + "\n", encoding="utf-8")
+        ndr = subprocess.run([sys.executable, str(proj / "tools" / "near_duplicates.py"), "--run", "RUN-TEST", "--root", str(nd)], capture_output=True, text=True)
+        rows = list(csv.DictReader((nd / "review" / "RUN-TEST" / "near_duplicates.csv").open(encoding="utf-8"))) if ndr.returncode == 0 else []
+        check("near_duplicates.py", "two versions of one document reported, unrelated source not",
+              [(x["source_a"], x["source_b"], x["already_recorded"]) for x in rows] == [("MNE-EU-2024-001", "MNE-EU-2024-002", "no")], ndr.stdout + ndr.stderr[-300:])
+        reg_txt = (nd / "registers" / "source_register.csv").read_text(encoding="utf-8")
+        (nd / "registers" / "source_register.csv").write_text(reg_txt.replace(reg_row("MNE-EU-2024-002", "Screening report (Council version)"),
+                                                                              reg_row("MNE-EU-2024-002", "Screening report (Council version)", "MNE-EU-2024-001")), encoding="utf-8")
+        ndr = subprocess.run([sys.executable, str(proj / "tools" / "near_duplicates.py"), "--run", "RUN-TEST", "--root", str(nd)], capture_output=True, text=True)
+        rows = list(csv.DictReader((nd / "review" / "RUN-TEST" / "near_duplicates.csv").open(encoding="utf-8")))
+        check("near_duplicates.py", "pair already recorded with version_of is marked as recorded", rows and rows[0]["already_recorded"] == "yes", str(rows))
 
         # export_review
         for gate, name in (("G0", "G0_run_setup.xlsx"), ("G1", "G1_source_requirements.xlsx"), ("G2", "G2_source_review.xlsx")):
@@ -430,7 +529,7 @@ def main():
                 self.stack, self.ok = [], True
 
             def handle_starttag(self, tag, attrs):
-                if tag not in ("meta", "br", "link", "img"):
+                if tag not in ("meta", "br", "link", "img", "input"):
                     self.stack.append(tag)
 
             def handle_endtag(self, tag):
@@ -439,19 +538,148 @@ def main():
         hp = P()
         hp.feed(page)
         check("build_review_page.py", "HTML tags balanced", hp.ok and not hp.stack)
-        check("build_review_page.py", "review page links to the analysis page", 'href="analysis.html"' in page)
-        apage = (Path(tmp) / "analysis.html").read_text(encoding="utf-8") if (Path(tmp) / "analysis.html").exists() else ""
+        check("build_review_page.py", "review page links to the country page and the regional page", 'href="analysis/MKD.html"' in page and 'href="analysis.html"' in page)
+        cpath = Path(tmp) / "analysis" / "MKD.html"
+        apage = cpath.read_text(encoding="utf-8") if cpath.exists() else ""
         hp2 = P()
         hp2.feed(apage)
-        check("build_review_page.py", "analysis page builds, balanced, self-contained", bool(apage) and hp2.ok and not hp2.stack and "<script" not in apage and "<link" not in apage)
-        check("build_review_page.py", "analysis page shows quotes with item IDs and placeholders for later sections",
+        check("build_review_page.py", "country page (before G7) builds in analysis/, balanced, self-contained", bool(apage) and hp2.ok and not hp2.stack and "<script" not in apage and "<link" not in apage)
+        check("build_review_page.py", "country page shows quotes with item IDs and placeholders for later sections",
               f"{sid}-0001" in apage and "Reform issues" in apage and "layout only" in apage)
+        check("build_review_page.py", "country page links back one folder up", 'href="../index.html"' in apage and 'href="../analysis.html"' in apage)
+        rpage = (Path(tmp) / "analysis.html").read_text(encoding="utf-8") if (Path(tmp) / "analysis.html").exists() else ""
+        hp3 = P()
+        hp3.feed(rpage)
+        check("build_review_page.py", "regional page builds, balanced, no external files", bool(rpage) and hp3.ok and not hp3.stack and "<link" not in rpage and " src=" not in rpage)
+        check("build_review_page.py", "regional page lists the planned countries and shows no judgement that is not validated",
+              "Montenegro" in rpage and "Kosovo" in rpage and "Not started" in rpage and "Priority <b>" not in rpage)  # the sample project has no judgements
         with (rv / "G3_passages.csv").open("a", encoding="utf-8") as fh:
             fh.write("P2,MKD-EU-2025-001,2,In the coming year,,test\n")
         run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-11-10")
-        apage = (Path(tmp) / "analysis.html").read_text(encoding="utf-8")
-        check("build_review_page.py", "analysis page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",
+        apage = cpath.read_text(encoding="utf-8")
+        check("build_review_page.py", "country page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",
               f"{sid}-0006" not in apage and f"{sid}-0001" in apage and "left out until the analyst has hand-coded them" in apage)
+
+        # acquire: a local web server only, never the real internet
+        import http.server
+        import os
+        import threading
+        pdf_bytes = minimal_pdf([["Test report on Chapter 2."]])
+
+        class H(http.server.BaseHTTPRequestHandler):
+            def log_message(self, *args):
+                pass
+
+            def do_GET(self):
+                if self.path == "/robots.txt":
+                    body, code, ctype = b"User-agent: *\nDisallow: /private/\n", 200, "text/plain"
+                elif self.path in ("/doc.pdf", "/private/doc.pdf"):
+                    body, code, ctype = pdf_bytes, 200, "application/pdf"
+                elif self.path == "/secret.pdf":
+                    body, code, ctype = b"Forbidden", 403, "text/plain"
+                elif self.path == "/report":
+                    self.send_response(302)
+                    self.send_header("Location", "/account/login?next=/report")
+                    self.end_headers()
+                    return
+                elif self.path.startswith("/account/login"):
+                    body, code, ctype = b"<html><form><input type='password' name='p'></form></html>", 200, "text/html"
+                else:
+                    body, code, ctype = b"Not found", 404, "text/plain"
+                self.send_response(code)
+                self.send_header("Content-Type", ctype)
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                self.wfile.write(body)
+        srv = http.server.ThreadingHTTPServer(("127.0.0.1", 0), H)
+        threading.Thread(target=srv.serve_forever, daemon=True).start()
+        base_url = f"http://127.0.0.1:{srv.server_address[1]}"
+        aq = Path(tmp) / "aq"
+        (aq / "registers").mkdir(parents=True)
+        (aq / "registers" / "source_register.csv").write_text(reg_hdr + "\n", encoding="utf-8")
+        env = {**os.environ, "NO_PROXY": "127.0.0.1,localhost", "no_proxy": "127.0.0.1,localhost"}
+        for k in ("HTTP_PROXY", "http_proxy", "HTTPS_PROXY", "https_proxy", "ALL_PROXY", "all_proxy"):
+            env.pop(k, None)
+
+        def acquire(*args):
+            return subprocess.run([sys.executable, str(proj / "tools" / "acquire.py"), *args, "--run", "RUN-TEST", "--country", "MNE", "--family", "EU",
+                                   "--year", "2026", "--root", str(aq)], capture_output=True, text=True, env=env)
+        orig_dir = aq / "sources" / "MNE" / "EU" / "originals"
+        r = acquire(f"{base_url}/doc.pdf", "--slug", "EC Montenegro Report 2026")
+        saved = orig_dir / "MNE-EU-2026-001_EC-Montenegro-Report-2026.pdf"
+        check("acquire.py", "download filed under the naming convention, read-only, with its SHA-256",
+              r.returncode == 0 and saved.exists() and not os.access(saved, os.W_OK) and hashlib.sha256(pdf_bytes).hexdigest() in r.stdout
+              and saved.read_bytes() == pdf_bytes, r.stdout + r.stderr[-300:])
+        r = acquire(f"{base_url}/doc.pdf", "--slug", "Again", "--source-id", "MNE-EU-2026-001")
+        check("acquire.py", "refuses to overwrite an existing original", r.returncode == 2 and saved.read_bytes() == pdf_bytes, r.stdout + r.stderr[-300:])
+        with (aq / "registers" / "source_register.csv").open("a", encoding="utf-8") as fh:
+            fh.write(",".join({"source_id": "MNE-EU-2026-001", "content_hash": hashlib.sha256(pdf_bytes).hexdigest()}.get(c, "") for c in cols) + "\n")
+        r = acquire(f"{base_url}/doc.pdf", "--slug", "Copy")
+        check("acquire.py", "exact duplicate of a registered file is not saved",
+              r.returncode == 3 and "MNE-EU-2026-001" in r.stdout and not list(orig_dir.glob("MNE-EU-2026-002*")), r.stdout + r.stderr[-300:])
+        r = acquire(f"{base_url}/secret.pdf", "--slug", "Secret")
+        check("acquire.py", "403 recorded as a retrieval failure, nothing saved", r.returncode == 1 and "access forbidden" in r.stdout and not list(orig_dir.glob("MNE-EU-2026-002*")), r.stdout + r.stderr[-300:])
+        r = acquire(f"{base_url}/report", "--slug", "Behind login")
+        check("acquire.py", "redirect to a login page is refused", r.returncode == 1 and "login" in r.stdout, r.stdout + r.stderr[-300:])
+        r = acquire(f"{base_url}/private/doc.pdf", "--slug", "Private")
+        check("acquire.py", "robots.txt disallow is respected", r.returncode == 1 and "robots.txt" in r.stdout, r.stdout + r.stderr[-300:])
+        inbox = aq / "sources" / "_inbox"
+        inbox.mkdir(parents=True)
+        (inbox / "hand.pdf").write_bytes(minimal_pdf([["Saved by hand by the analyst."]]))
+        r = acquire("--manual", str(inbox / "hand.pdf"), "--slug", "Manual Copy", "--convert")
+        hand = orig_dir / "MNE-EU-2026-002_Manual-Copy.pdf"
+        txt_hand = aq / "sources" / "MNE" / "EU" / "text" / "MNE-EU-2026-002.txt"
+        check("acquire.py", "manual route: inbox file copied, inbox kept, converted to text",
+              r.returncode == 0 and hand.exists() and (inbox / "hand.pdf").exists() and txt_hand.exists() and "Saved by hand" in txt_hand.read_text(encoding="utf-8"),
+              r.stdout + r.stderr[-300:])
+        (samples / "outside.pdf").write_bytes(b"%PDF-1.4")
+        r = acquire("--manual", str(samples / "outside.pdf"), "--slug", "Outside")
+        check("acquire.py", "manual route only accepts files from sources/_inbox/", r.returncode != 0 and "_inbox" in r.stderr, r.stderr[-300:])
+        alog = list(csv.DictReader((aq / "review" / "RUN-TEST" / "acquisition_log.csv").open(encoding="utf-8")))
+        check("acquire.py", "every attempt logged with its result", [x["result"] for x in alog] == ["saved", "refused", "duplicate", "failed", "failed", "failed", "saved"], str([x["result"] for x in alog]))
+        srv.shutdown()
+
+        # build_outputs: rebuild the validated RUN-2026-01 outputs from a copy of the real data and compare
+        bo = Path(tmp) / "bo"
+        for name in ("evidence", "registers", "taxonomy", "entities", "links", "judgements", "runs", "tools", "schemas"):
+            shutil.copytree(ROOT / name, bo / name)
+        for name in ("stage12", "run1b"):
+            shutil.copytree(ROOT / "review" / "RUN-2026-01" / name, bo / "review" / "RUN-2026-01" / name)
+        r = subprocess.run([sys.executable, str(bo / "tools" / "build_outputs.py"), "--run", "RUN-2026-01", "--root", str(bo)], capture_output=True, text=True)
+        built, ref = bo / "outputs" / "RUN-2026-01", ROOT / "outputs" / "RUN-2026-01"
+        # The coverage report lists the limits as they now stand (the log grew after G7), so it is compared by structure only.
+        same = sorted(f.name for f in ref.glob("*.md") if f.name != "coverage_and_limits_report.md")
+        diff = [n for n in same if not (built / n).exists() or (built / n).read_bytes() != (ref / n).read_bytes()]
+        check("build_outputs.py", "rebuilds the G7 issue, scope and comparator briefs byte for byte", r.returncode == 0 and same and not diff,
+              (r.stderr[-300:] or "") + f" differ: {diff[:5]}")
+        cov = (built / "coverage_and_limits_report.md").read_text(encoding="utf-8") if (built / "coverage_and_limits_report.md").exists() else ""
+        check("build_outputs.py", "coverage and limits report builds with its sections", all(h in cov for h in ("## Source requirements", "## Reliance on machine translation", "## Active limits")))
+        import re as _re
+        raw_id = _re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES)-\d{4}-\d{3}-\d{4}\b")
+        leaks = [f.name for f in built.glob("*.md") if raw_id.search(f.read_text(encoding="utf-8").split("## Annex")[0])]
+        check("build_outputs.py", "evidence item IDs appear only in the annex, not in the running text", not leaks, str(leaks[:5]))
+        annex_ok = True
+        evid = {}
+        for f in (bo / "evidence").glob("*/*.json"):
+            for it in json.loads(f.read_text(encoding="utf-8"))["items"]:
+                evid[it["item_id"]] = it["stated_text"].replace("\n", " ").strip()
+        for f in list(built.glob("issue_brief_*.md"))[:5]:
+            for line in f.read_text(encoding="utf-8").split("## Annex")[-1].splitlines():
+                m = _re.match(r"^\[\d+\] \*\*(\S+)\*\*\. .*?\"(.*?)\"(?: Machine translation:|$)", line)
+                if m and evid.get(m.group(1)) != m.group(2):
+                    annex_ok = False
+        check("build_outputs.py", "annex quotes each item word for word", annex_ok)
+        gl = bo / "registers" / "gate_log.csv"
+        gl.write_text("\n".join(l for l in gl.read_text(encoding="utf-8").splitlines() if ",G7," not in l) + "\n", encoding="utf-8")
+        r = subprocess.run([sys.executable, str(bo / "tools" / "build_outputs.py"), "--run", "RUN-2026-01", "--root", str(bo)], capture_output=True, text=True)
+        anyb = next(iter(sorted(built.glob("issue_brief_*.md"))), None)
+        check("build_outputs.py", "status line reads Draft when G7 has not passed",
+              r.returncode == 0 and anyb is not None and "Draft, prepared at stage 12 for sign-off at G7" in anyb.read_text(encoding="utf-8"), r.stderr[-300:])
+        shutil.rmtree(bo / "review" / "RUN-2026-01" / "stage12" / "factpacks", ignore_errors=True)
+        r = subprocess.run([sys.executable, str(bo / "tools" / "build_outputs.py"), "--run", "RUN-2026-01", "--root", str(bo), "--factpacks"], capture_output=True, text=True)
+        n_issues = sum(1 for row in csv.DictReader((bo / "taxonomy" / "reform_issues.csv").open(encoding="utf-8")) if row["status"] == "approved")
+        packs = list((bo / "review" / "RUN-2026-01" / "stage12" / "factpacks").glob("*.md"))
+        check("build_outputs.py", "one fact pack per approved issue", r.returncode == 0 and len(packs) == n_issues, f"{len(packs)} packs, {n_issues} issues")
 
     passed = sum(r[2] == "pass" for r in results)
     print(f"\n{passed}/{len(results)} tests passed")

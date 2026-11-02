@@ -6,8 +6,8 @@ import re
 from collections import Counter
 from html import escape
 
-from build_outputs import COUNTRIES, issue_view, load, narrative, names_of
-from common import read_csv, split_list
+from build_outputs import COUNTRIES, issue_view, lesson_field, load, narrative, names_of
+from common import gate_passed, read_csv, split_list
 
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 PRI = {"High": 0, "Medium": 1, "Low": 2}
@@ -158,6 +158,20 @@ def no_refs(t):
     return re.sub(r"\s+([.,;])", r"\1", t).strip()
 
 
+# Wording specific to one run, kept so that its page does not change when the tool is generalised (E19).
+RUN_TEXT = {
+    "RUN-2026-01": {
+        "other26": "(the 2026 Rule of Law country chapter, the 2026 economic reform programme assessment and conclusions, the third Reform Agenda payment "
+                   "assessment and the 2026 subcommittee), which is part of the validated alpha",
+        "status": "Completed alpha",
+        "title": "Accession Alpha Analysis",
+        "lang": "translations from Macedonian and other languages are machine translations",
+        "summary": "alpha_summary.html",
+        "summary_label": "Alpha summary",
+    },
+}
+NUM = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
+
 STATUS = {"validated": "Validated at G6", "analyst": "Set by the analyst at G6", "rereview": "Flagged for re-review at G7"}
 
 
@@ -171,7 +185,10 @@ class ProductPage:
     def __init__(self, page):
         self.p = page
         self.root, self.run = page.root, page.run
+        self.up = "../"  # the country page sits in analysis/, one folder below the project root
         self.D = load(self.root, self.run)
+        self.cc, self.cname = self.D["cc"], self.D["cname"]
+        self.T = RUN_TEXT.get(self.run, {})
         self.names = names_of(self.D)
         self.views = {r["issue_id"]: issue_view(self.D, r) for r in self.D["issues"]}
         self.narr = {r["issue_id"]: narrative(self.root, self.run, r["issue_id"]) for r in self.D["issues"]}
@@ -185,10 +202,10 @@ class ProductPage:
         self.mechs = {r["mechanism_id"]: r["label"] for r in read_csv(self.root / "taxonomy" / "mechanisms.csv")[1]}
         # 2025 -> 2026 comparison (decision E18). The annual country report of each year is the anchor; everything else stays as judged.
         self.alljs = read_csv(self.root / "judgements" / "judgements.csv")[1]
-        rep_year = lambda y: {sid for sid, r in self.D["reg"].items() if sid.startswith("MKD-EU-") and r["document_type"] == "annual report"
+        rep_year = lambda y: {sid for sid, r in self.D["reg"].items() if sid.startswith(f"{self.cc}-EU-") and r["document_type"] == "annual report"
                               and r["publication_date"].startswith(y) and r["status"] == "available"}
         self.rep25, self.rep26 = rep_year("2025"), rep_year("2026")
-        self.other26 = {sid for sid, r in self.D["reg"].items() if sid.startswith("MKD-EU-") and r["publication_date"].startswith("2026")} - self.rep26
+        self.other26 = {sid for sid, r in self.D["reg"].items() if sid.startswith(f"{self.cc}-EU-") and r["publication_date"].startswith("2026")} - self.rep26
         self.g7 = [r for r in page.decisions.values() if r["gate"] == "G7"][-1]
 
     # Helpers ------------------------------------------------------------------
@@ -260,14 +277,14 @@ class ProductPage:
         n = Counter(self.u26(r["issue_id"])[0] for r in self.D["issues"])
         held = sum(1 for r in self.D["issues"] if any(self.D["items"][k]["_source"] in self.other26 for k in self.D["by"].get(r["issue_id"], [])))
         if not self.rep26:
-            head = (f'<b>2026 update:</b> {AWAIT} No 2026 country report on North Macedonia is in the project yet, so every issue shows its 2025 position and '
+            head = (f'<b>2026 update:</b> {AWAIT} No 2026 country report on {escape(self.cname)} is in the project yet, so every issue shows its 2025 position and '
                     'the current validated judgements, and its 2026 update is marked as awaiting the package. ')
         else:
             head = (f'<b>2026 update:</b> 2026 country report added. {n["assessed"]} issues assessed, {n["proposed"]} with proposed changes, '
                     f'{n["no_new"]} with no new report item. ')
-        return (f'<div class="banner26">{head}{held} issues already draw on other 2026 official EU evidence (the 2026 Rule of Law country chapter, the 2026 economic '
-                'reform programme assessment and conclusions, the third Reform Agenda payment assessment and the 2026 subcommittee), which is part of the '
-                'validated alpha and is not a substitute for the Enlargement Package. Open <b>2025 &rarr; 2026 comparison</b> on any issue card.</div>')
+        return (f'<div class="banner26">{head}{held} issues already draw on other 2026 official EU evidence '
+                + self.T.get("other26", f"({len(self.other26)} document{'s' if len(self.other26) != 1 else ''}), which is part of the validated run") +
+                ' and is not a substitute for the Enlargement Package. Open <b>2025 &rarr; 2026 comparison</b> on any issue card.</div>')
 
     def u26(self, x):
         """State of the 2026 update for an issue: awaiting (no 2026 country report registered or no item from it on this issue),
@@ -278,7 +295,7 @@ class ProductPage:
             return "awaiting", new
         if not new:
             return "no_new", new
-        js = [j for j in self.alljs if j["object_id"] == x + "@MKD" and any(k in new for k in split_list(j["evidence_item_ids"]))]
+        js = [j for j in self.alljs if j["object_id"] == f"{x}@{self.cc}" and any(k in new for k in split_list(j["evidence_item_ids"]))]
         return ("assessed" if js and all(j["review_status"] in ("validated", "overridden") for j in js) else "proposed"), new
 
     def progression(self, x):
@@ -294,7 +311,7 @@ class ProductPage:
             return "<ul class=\"ints\">" + "".join(f'<li>{escape(it[k]["summary"])} <code>{escape(k)}</code></li>' for k in ids[:n]) + "</ul>" + \
                    (f'<p class="note">and {len(ids) - n} more in the references below.</p>' if len(ids) > n else "")
         if p25:
-            pos25 = f'<p class="note">{len(p25)} item{"s" if len(p25) != 1 else ""} from the Commission\'s 2025 report on North Macedonia.</p>' + summ(p25) + self.refs(p25, "2025 report quotes")
+            pos25 = f'<p class="note">{len(p25)} item{"s" if len(p25) != 1 else ""} from the Commission\'s 2025 report on {escape(self.cname)}.</p>' + summ(p25) + self.refs(p25, "2025 report quotes")
         else:
             pos25 = '<p class="note">The 2025 report has no in-scope item on this issue; the alpha position rests on other sources (see the evidence below).</p>'
         if state == "awaiting":
@@ -316,7 +333,7 @@ class ProductPage:
                 ls = [l for l in self.D["links"] if l["from_id"] == k and l["link_type"] in ("corroborates", "contradicts", "same_as_earlier", "replaces", "amends")]
                 kind = ", ".join(sorted({l["link_type"].replace("_", " ") + ("" if l["review_status"] == "validated" else " (proposed)") for l in ls})) or "new: no earlier item linked"
                 rows.append(f'<li><code>{escape(k)}</code> · {escape(kind)}</li>')
-            sup = [j for j in self.alljs if j["object_id"] == x + "@MKD" and j["supersedes"] and any(n in new for n in split_list(j["evidence_item_ids"]))]
+            sup = [j for j in self.alljs if j["object_id"] == f"{x}@{self.cc}" and j["supersedes"] and any(n in new for n in split_list(j["evidence_item_ids"]))]
             for j in sup:
                 old = next((o for o in self.alljs if o["judgement_id"] == j["supersedes"]), {})
                 lab = VAL if j["review_status"] in ("validated", "overridden") else lbl("Proposed", "synth")
@@ -366,15 +383,15 @@ class ProductPage:
     def overview(self):
         n_src = Counter(r["role"] for r in self.D["reg"].values())
         items = self.D["items"]
-        mkd = sum(1 for i in items.values() if i["country"] == "MKD")
+        mkd = sum(1 for i in items.values() if i["country"] == self.cc)
         pri = Counter(self.jv(r["issue_id"], "priority").get("value") for r in self.D["issues"])
         ncase = sum(len(v) for v in self.cases.values())
         nopt = sum(1 for v in self.opts.values() for o in v if o["title"].startswith("Option"))
         nwarn = sum(1 for v in self.opts.values() for o in v if o.get("warning"))
         rec = self.p.rec
         summ = narrative(self.root, self.run, "scope_overview").get("Summary", "")
-        stats = [(f"{n_src['target'] + n_src['comparator']}", f"sources ({n_src['target']} North Macedonia, {n_src['comparator']} comparator)"),
-                 (f"{len(items):,}", f"evidence items ({mkd:,} North Macedonia)"),
+        stats = [(f"{n_src['target'] + n_src['comparator']}", f"sources ({n_src['target']} {self.cname}, {n_src['comparator']} comparator)"),
+                 (f"{len(items):,}", f"evidence items ({mkd:,} {self.cname})"),
                  (str(len(self.D["issues"])), f"reform issues ({sum(1 for r in self.D['issues'] if self.strand(r['issue_id']) == 'fmw')} Chapter 2, "
                                               f"{sum(1 for r in self.D['issues'] if self.strand(r['issue_id']) == 'tec')} technology)"),
                  (f"{pri['High']} / {pri['Medium']} / {pri['Low']}", "High / Medium / Low priority"),
@@ -386,7 +403,7 @@ class ProductPage:
         return "overview", "Overview", (
             f'<p>{VAL} Outputs signed off at G7 ({escape(self.g7["gate_decision_id"])}); judgements validated at G6 and G6b. Draft policy options stay {DRAFT}.</p>'
             f'<dl class="kv"><dt>Country</dt><dd>{escape(rec.get("Target country", ""))}</dd>'
-            f'<dt>Scope</dt><dd>Chapter 2 (Freedom of movement for workers) and the cross-cutting technology and AI theme; comparator pilot on three issues</dd>'
+            f'<dt>Scope</dt><dd>Chapter 2 (Freedom of movement for workers) and the cross-cutting technology and AI theme; comparator pilot on {NUM.get(len(self.cases), len(self.cases))} issue{"s" if len(self.cases) != 1 else ""}</dd>'
             f'<dt>Evidence window</dt><dd>{escape(rec.get("Time window", "").split(";")[0])}; freeze date {escape(rec.get("Evidence freeze date", "").split(" ")[0])}</dd></dl>'
             f'<div class="stats">{st}</div>'
             f'<h3>What this analysis says {VAL}</h3><ul class="says">{says}</ul>'
@@ -442,7 +459,7 @@ class ProductPage:
                 + (f'<h5>Open questions</h5>{oq_html}' if oq_html else "")
                 + f'<h5>Evidence</h5><p class="note">{len(V["mine"])} in-scope items from {len(V["srcs"])} sources; {V["mt"]} machine translated. {mt}</p>'
                 + self.refs(ids)
-                + f'<p class="note">Full brief: <a href="outputs/{escape(self.run)}/issue_brief_{escape(x)}.md">issue_brief_{escape(x)}.md</a></p>'
+                + f'<p class="note">Full brief: <a href="{self.up}outputs/{escape(self.run)}/issue_brief_{escape(x)}.md">issue_brief_{escape(x)}.md</a></p>'
                 + '</div></details></article>')
 
     def issues(self):
@@ -501,7 +518,7 @@ class ProductPage:
         parts = [("problem_addressed", "Problem addressed", False), ("reform_or_mechanism", "What was tried", False),
                  ("how_implemented", "How it was implemented", False), ("evidence_of_results", "Observed result", False),
                  ("limitations_of_evidence", "Limitations of the evidence", False),
-                 ("practical_lesson_for_north_macedonia", "Practical lesson for North Macedonia", True),
+                 ("practical_lesson", f"Practical lesson for {self.cname}", True),
                  ("transferable", "What could transfer", True), ("not_transferable", "Conditions and what does not transfer", True)]
         out = ""
         for x, cases in self.cases.items():
@@ -511,6 +528,7 @@ class ProductPage:
                 cid = c["case_id"]
                 rel, tr = self.J.get((cid, "comparator_relevance"), {}), self.J.get((cid, "transferability"), {})
                 ids = [k for f in ("reform_items", "implementation_items", "outcome_items") for k in split_list(c.get(f, ""))]
+                parts[5] = (lesson_field({0: c}), parts[5][1], True)
                 rows = "".join(f'<dt>{escape(h)}{" " + SYN if syn else ""}</dt><dd>{text(c.get(f, ""))}</dd>' for f, h, syn in parts)
                 body += (f'<div class="case" id="{escape(cid)}"><div class="top"><span class="idlink">{escape(cid)}</span><span>{VAL}</span></div>'
                          f'<h4>{escape(COUNTRIES.get(c["country"], c["country"]))}</h4>'
@@ -524,7 +542,7 @@ class ProductPage:
             lessons = narrative(self.root, self.run, f"comparator_{x}").get("Lessons across the cases", "")
             out += (f'<div class="compbox"><h3>{escape(r["label"])} <a class="idlink" href="#{escape(x)}">{escape(x)}</a></h3>'
                     f'<p><b>Lessons across the cases</b> {SYN} {text(lessons)}</p>{self.refs(self.ids_in(lessons))}{body}'
-                    f'<p class="note">Full brief: <a href="outputs/{escape(self.run)}/comparator_brief_{escape(x)}.md">comparator_brief_{escape(x)}.md</a></p></div>')
+                    f'<p class="note">Full brief: <a href="{self.up}outputs/{escape(self.run)}/comparator_brief_{escape(x)}.md">comparator_brief_{escape(x)}.md</a></p></div>')
         return "comparators", "Comparators", (
             f'<p>{VAL} Comparator cases validated at G6b. The cases show what was tried, not what worked: no case shows a reform that measurably raised '
             f'use or changed access. Fields marked {SYN} are the tool\'s own reading across the evidence, validated by the analyst as conditional hypotheses; '
@@ -545,8 +563,8 @@ class ProductPage:
                 comp = f.get("Comparator evidence", "") or o["text"]
                 rationale, _, transfer = comp.partition("Transferability conditional")
                 transfer = ("Conditional" + transfer) if transfer else ""
-                countries = [n for n in COUNTRIES.values() if n != "North Macedonia" and n in comp]
-                kv = (f'<dt>North Macedonia issue</dt><dd><a href="#{escape(x)}">{escape(r["label"])}</a> ({escape(x)})</dd>'
+                countries = sorted(n for n in COUNTRIES.values() if n != self.cname and n in comp)
+                kv = (f'<dt>{escape(self.cname)} issue</dt><dd><a href="#{escape(x)}">{escape(r["label"])}</a> ({escape(x)})</dd>'
                       f'<dt>Comparator it draws on</dt><dd>{escape(", ".join(countries) or "see rationale")}</dd>')
                 if f.get("Gap addressed"):
                     kv += f'<dt>Gap it addresses</dt><dd>{text(f["Gap addressed"])}</dd>'
@@ -569,17 +587,17 @@ class ProductPage:
         N = narrative(self.root, self.run, "coverage_and_limits")
         lim = [r for r in read_csv(self.root / "registers" / "limits_log.csv")[1] if r["run_id"] == self.run and r["status"] == "active"]
         rows = "".join(f'<li><code>{escape(r["limit_id"])}</code> <span class="st">{escape(r["limit_type"])}</span> · {escape(r["description"])}</li>' for r in lim)
-        mkd = [i for i in self.D["items"].values() if i["country"] == "MKD" and i["pass2"]["classification_status"] != "out_of_scope"]
+        mkd = [i for i in self.D["items"].values() if i["country"] == self.cc and i["pass2"]["classification_status"] != "out_of_scope"]
         mt = sum(1 for i in mkd if i.get("machine_translated"))
         return "evidence", "Evidence and limits", (
             f'<p>{VAL} From the coverage and limits report signed off at G7.</p>'
             f'<h3>Source coverage</h3><p>{text(N.get("Summary", ""))}</p>'
-            f'<p>{lbl("Evidence limit", "limit")} {mt:,} of {len(mkd):,} in-scope North Macedonia items ({100 * mt / max(len(mkd), 1):.0f}%) are machine translated, '
+            f'<p>{lbl("Evidence limit", "limit")} {mt:,} of {len(mkd):,} in-scope {escape(self.cname)} items ({100 * mt / max(len(mkd), 1):.0f}%) are machine translated, '
             'and their evidence confidence is capped at Medium. Source quality, evidence confidence and relevance are kept as separate judgements and never combined.</p>'
             f'<h3>Methodological limitations</h3><p>{text(N.get("Methodological limitations", ""))}</p>'
             f'<details class="refs"><summary>Active limits for this run ({len(lim)})</summary><ul class="ints">{rows}</ul></details>'
-            f'<p class="note">Reports: <a href="outputs/{escape(self.run)}/coverage_and_limits_report.md">coverage and limits report</a> · '
-            f'<a href="outputs/{escape(self.run)}/scope_overview.md">scope overview</a> · <a href="runs/{escape(self.run)}/run_review.md">run review</a></p>')
+            f'<p class="note">Reports: <a href="{self.up}outputs/{escape(self.run)}/coverage_and_limits_report.md">coverage and limits report</a> · '
+            f'<a href="{self.up}outputs/{escape(self.run)}/scope_overview.md">scope overview</a> · <a href="{self.up}runs/{escape(self.run)}/run_review.md">run review</a></p>')
 
     def render(self, css, version, today):
         secs = [self.overview(), self.issues(), self.priority(), self.comparators(), self.options(), self.evidence()]
@@ -587,12 +605,17 @@ class ProductPage:
                '<a href="#priority">Priority issues</a><a href="#comparators">Comparators</a><a href="#options">Policy options</a><a href="#evidence">Evidence and limits</a>')
         body = "".join(f'<section id="{sid}"><h2>{escape(title)}</h2>{content}<a class="totop" href="#top">Back to top</a></section>' for sid, title, content in secs)
         country = self.p.rec.get("Target country", "")
+        status = self.T.get("status") or ("Completed run" if gate_passed(self.p.decisions, "G8") else "Outputs validated at G7")
+        summ = self.T.get("summary") or f"summary/{self.cc}.html"
+        summ = (f' · <a href="{self.up}{summ}">{escape(self.T.get("summary_label", "Country summary"))}</a>'
+                if (self.root / summ).exists() else "")
+        lang = self.T.get("lang", "translations from languages other than English are machine translations")
         return f"""<!doctype html>
 <html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accession Alpha Analysis</title>
+<title>{escape(self.T.get("title", f"{self.cname} Accession Analysis"))}</title>
 <!-- Generated by tools/build_review_page.py {version} on {today} from validated records only. Do not edit by hand: rebuild instead. -->
 <style>{css}{CSS_EXTRA}</style>
 </head>
@@ -600,11 +623,11 @@ class ProductPage:
 <div class="wrap" id="top">
 <header>
 <h1>Analysis: {escape(country)}</h1>
-<p class="sub">{escape(self.run)} · Completed alpha · Page updated {escape(today)} · <a href="index.html">Review page</a> · <a href="alpha_summary.html">Alpha summary</a></p>
+<p class="sub">{escape(self.run)} · {escape(status)} · Page updated {escape(today)} · <a href="{self.up}analysis.html">All countries</a> · <a href="{self.up}index.html">Review page</a>{summ}</p>
 </header>
 <nav class="top" aria-label="Sections">{nav}</nav>
 {body}
-<footer><p>Generated from the validated records of {escape(self.run)} by <code>tools/build_review_page.py</code> {version}. Presentation only: it adds no analysis. Quotes are shown word for word with their item IDs; translations from Macedonian and other languages are machine translations. <a href="#top">Back to top</a></p></footer>
+<footer><p>Generated from the validated records of {escape(self.run)} by <code>tools/build_review_page.py</code> {version}. Presentation only: it adds no analysis. Quotes are shown word for word with their item IDs; {lang}. <a href="#top">Back to top</a></p></footer>
 </div>
 <script>{JS}</script>
 </body>

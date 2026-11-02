@@ -1,6 +1,6 @@
 # EU Accession Reform Intelligence Tool | Limits
 
-Version 1.2, 29 October 2026. Made country-neutral, with cross-cutting themes and the out-of-scope rule added, when the pilot was reconfigured before gate G0 (decisions A5 to A9, D6, E8 and F2). Version 1.1 followed the architecture review (decisions A1, A2, A3, A4, C2, E2 and E3).
+Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19): one target country per run, and the volume effect of a cross-cutting theme (PC-04). Version 1.2, 29 October 2026. Made country-neutral, with cross-cutting themes and the out-of-scope rule added, when the pilot was reconfigured before gate G0 (decisions A5 to A9, D6, E8 and F2). Version 1.1 followed the architecture review (decisions A1, A2, A3, A4, C2, E2 and E3).
 
 This codebook defines the initial limits of the tool, what is deliberately excluded, and how those limits should change as the model develops.
 
@@ -12,8 +12,8 @@ The one deliberate exception in the first run is the comparator pilot (run 1b). 
 
 The first version should recognise several types of limit:
 
-- **Country scope:** the pilot country only for the first full run, plus targeted comparator evidence for the run 1b pilot.
-- **Thematic scope:** a run's scope can combine whole negotiating chapters with cross-cutting themes. A theme is defined in a controlled list (`taxonomy/themes.csv`) and covers material that relates materially to it wherever it occurs in the accession material; incidental references are out of scope. For every issue that originates from in-scope material, the full analytical chain is followed. Material outside the in-scope chapters and themes is out of scope unless it is needed to follow the chain of an issue already in scope. Chapters and themes not named in the run record are simply outside the scope; no list of deferred chapters is kept.
+- **Country scope:** one target country per run, set in the run record, in the order of the rollout plan (`runs/rollout_plan.md`), plus targeted comparator evidence for the issues chosen for the comparator step. The first run, the alpha, covered one pilot country.
+- **Thematic scope:** a run's scope can combine whole negotiating chapters with cross-cutting themes. A theme is defined in a controlled list (`taxonomy/themes.csv`) and covers material that relates materially to it wherever it occurs in the accession material; incidental references are out of scope. A cross-cutting theme makes every annual and screening report relevant, not only the sections of the in-scope chapters: in the alpha the theme produced about 2.7 times as many items as the chapter, so time and volume plans must allow for it. For every issue that originates from in-scope material, the full analytical chain is followed. Material outside the in-scope chapters and themes is out of scope unless it is needed to follow the chain of an issue already in scope. Chapters and themes not named in the run record are simply outside the scope; no list of deferred chapters is kept.
 - **Time scope:** evidence from a start date fixed in the run record, chosen to give enough annual assessments to judge direction of travel, up to a fixed evidence freeze date set at the start of each run. Older documents are used only by logged exception, for example to explain the origin or evolution of an issue that is still open.
 - **Evidence scope:** not every theoretically useful document will necessarily be available or retrievable.
 - **Accessibility:** sources that cannot be obtained reliably or in a usable format should be recorded rather than silently ignored. Paywalls and logins are never bypassed.

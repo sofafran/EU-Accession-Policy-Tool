@@ -1,6 +1,6 @@
 # Extraction rules (pass 1)
 
-Version 0.4, 29 October 2026. Status: approved at gate G3 (GATE-0004) for full extraction, after two sample rounds and an independent review (rule issues R1 to R23). Every change after G3 creates a new version (0.2, 0.3 and so on) and is listed in the change log at the end of this file.
+Version 0.5, 2 November 2026. Status: approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17, applied on 2 November 2026 before RUN-2026-02 (decision E19). Changes create a new version and are listed in the change log at the end of this file. Version 0.4 was approved at G3 of RUN-2026-01 (GATE-0004) after two sample rounds and an independent review (rule issues R1 to R23).
 
 These rules tell the agent how to turn a converted source text into evidence items. They implement Codebook 4. Pass 1 stays close to the text: it records what a source says, not what it means for the analysis. Classification (reform issue, mechanism, links) happens in pass 2 and must not be attempted here.
 
@@ -103,6 +103,10 @@ Use these flags only. Each must be explained in `extraction_note` where it is no
 
 After extracting a source, the agent runs the quote verification tool. For PDFs and documents with pages, it checks the cited page; for webpages, which have no pages, it checks the cited section of the text file. Every item whose quote is not found word for word at the cited location is set to `quote_verified: false` and must be corrected or removed before the source counts as extracted. No item with `quote_verified: false` may reach a review sheet as final.
 
+### Second-pass check (PC-05)
+
+After the first pass on a source, a different agent reads the source again against these rules and lists in-scope claims the first pass missed. Its additions are extracted under the same rules and quote-checked like any other item. At G3 and G5 the agent reports the second pass's yield (items added per hundred first-pass items) by source family; any family whose yield is well below the others is resampled, because a low yield there may mean the check itself was weak.
+
 ## 9. Illustrative examples
 
 The passages below are invented for illustration only. They show the expected split, not real evidence. "The country" stands for the target country's name as printed.
@@ -127,6 +131,8 @@ The passages below are invented for illustration only. They show the expected sp
 | none |  | "publish the annual report … on its website" |  |  | Not extracted: the reference to a website is incidental |
 
 ## Change log
+
+- 0.5 (2 Nov 2026): PC-05 (GATE-0013), applied before RUN-2026-02 (E19). The second-pass check by a different agent is standard, with its yield reported by source family at G3 and G5.
 
 - 0.4 (29 Oct 2026): approved at G3 (GATE-0004). Cybercrime law enforcement out of the cybersecurity area (R21); other sector digital systems out unless the claim is about connecting to EU electronic systems or a public online service (R22); clarifications on splitting claims, shared-sentence quotes, laws in force and legal paragraph numbers (R23).
 - 0.3 (29 Oct 2026): approved by the analyst after the re-run (rule issues R12 to R20). Online public services used by citizens or businesses are digital government wherever they sit; back-office sector systems are not (R12); the in-scope chapter boundary is set in the run record (R13, R14); headings that carry their own claim are kept (R15); summary tables and annexes that only restate are not extracted again (R16); quotes over page breaks skip footnotes too (R17); quotes are cut to the claim and long quotes are flagged by validation (R18); `unclear` for named systems that do not work (R19); the 112 emergency number is out unless the claim is about a digital or AI solution (R20).

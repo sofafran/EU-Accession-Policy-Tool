@@ -7,12 +7,12 @@ Read this file before starting any of stages 0 to 4. Gates G0, G1 and G2 sit in 
 **When a gate package is prepared:**
 
 1. Run `tools/validate_data.py`.
-2. Review `runs/<run_id>/run_notes.md` since the last gate and propose rows for `runs/<run_id>/alpha_learning_log.csv` for any material lesson, with status `open`. Add the proposed rows to the gate package.
-3. Rebuild the review page and the analysis page with `tools/build_review_page.py`. The material in the package appears on the page as `Pending review`; agent proposals as `Proposed`; unfinished work as `Draft`.
+2. Review `runs/<run_id>/run_notes.md` since the last gate and propose rows for `runs/<run_id>/learning_log.csv` (`alpha_learning_log.csv` in RUN-2026-01) for any material lesson, with status `open`. Add the proposed rows to the gate package.
+3. Rebuild the review page, the run's country page and the regional page with `tools/build_review_page.py`. The material in the package appears on the page as `Pending review`; agent proposals as `Proposed`; unfinished work as `Draft`.
 
 **After the gate decision is recorded in the gate log:**
 
-1. Update the statuses of the alpha learning log rows the reviewer decided on, with the gate decision ID in `decided_at`.
+1. Update the statuses of the learning log rows the reviewer decided on, with the gate decision ID in `decided_at`.
 2. Rebuild the review page. Material the gate passed becomes `Validated`; overridden judgements show the reviewer's value.
 3. Offer to commit the project, with the gate decision in the commit message.
 
@@ -22,12 +22,13 @@ The review page is never the place where a decision is made. If George's feedbac
 
 **Goal:** fix what this run covers before any work starts.
 
-1. Read `runs/RUN-2026-01/run_record.md`, including its run-specific settings.
-2. Check that the helper tools listed in `tools/README.md` exist and work. If they do not exist yet, build them first, test each on a small sample file, and record their versions in the run record.
-3. Check that all CSV templates exist with the headers defined in `schemas/data_dictionary.md`.
-4. Ask the analyst to set the evidence freeze date. Until it is set, the run record shows `TBC` and G0 cannot pass.
-5. Check that `index.html` and the alpha learning log exist, and build and test `tools/build_review_page.py` with the other tools.
-6. Present the G0 package: the completed run record, the active entries in the limits log, the versions of the codebooks and rules, and the proposed alpha learning log rows.
+1. Create `runs/<run_id>/` from `runs/_template/` if it does not exist yet (only when the analyst has asked to start the run), and read the run record, including its run-specific settings. The core method is not edited to start a run; any country-specific deviation goes in the run record and is approved at G0.
+2. Check the country afresh, without assuming anything from earlier runs: its accession status, whether Chapter 2 (or the run's chapter) is opened, closed or under benchmarks, which official EU documents exist (latest annual report, screening report, Reform Agenda or equivalent, Rule of Law country chapter), its official languages and text-recognition data, and any evidence the project already holds for it. Record each point in the run record as "to be confirmed at stage 1" until it is checked against registered EU sources.
+3. Check that the helper tools listed in `tools/README.md` exist and work. If they do not exist yet, build them first, test each on a small sample file, and record their versions in the run record.
+4. Check that all CSV templates exist with the headers defined in `schemas/data_dictionary.md`.
+5. Ask the analyst to set the evidence freeze date. Until it is set, the run record shows `TBC` and G0 cannot pass.
+6. Check that `index.html` and the learning log exist, and build and test `tools/build_review_page.py` with the other tools.
+7. Present the G0 package: the completed run record, the active entries in the limits log, the versions of the codebooks and rules, and the proposed learning log rows.
 
 **G0 decision (analyst):** approve the scope, freeze date, reviewers and versions. Record it in the gate log.
 
@@ -55,14 +56,14 @@ The review page is never the place where a decision is made. If George's feedbac
 For each requirement line:
 
 1. Search for the document, preferring the issuing institution's own website over copies hosted elsewhere.
-2. Download the original to a temporary location and compute its SHA-256 fingerprint.
+2. Download the original with `tools/acquire.py`, which computes its SHA-256 fingerprint and stops, recording a retrieval failure, on a login, paywall or block. If a public document cannot be downloaded automatically, list it for manual retrieval: the analyst places it in `sources/_inbox/` and it is registered in the same way (PC-03).
 3. Compare the fingerprint with `content_hash` in the register:
    - same fingerprint as an existing source: register it as `duplicate` of that source (tier 1) and do not file it again;
    - same document title and institution but a different fingerprint: treat it as a possible new version and flag it for G2.
 4. Assign the next source ID (`<country code>-<family>-<publication year>-<sequence>`) and file the original as `sources/<country code>/<family>/originals/<source_id>_<short-label>.<ext>`. The short label uses hyphens, no spaces, for example `CCC-EU-2025-001_EC_Country-Report-2025.pdf`, where `CCC` is the country code. The run record gives the code and an example for the run.
 5. Convert it to text at `sources/<country code>/<family>/text/<source_id>.txt`, with a marker line `=== PAGE n ===` before each page. For webpages, save the HTML snapshot as the original and the readable text as the text file, with section headings kept.
 6. If the text is unreadable or the PDF is scanned, run text recognition in the languages listed in the run record and note `ocr` in the register notes.
-7. Record the language of the document. If it is not English, note in the register why no suitable English version was used. Then add a register row with all fields, `status` `available` and `added_in_run` `RUN-2026-01`.
+7. Record the language of the document. If it is not English, note in the register why no suitable English version was used. Then add a register row with all fields, `status` `available` and `added_in_run` set to the run ID.
 
 When a document cannot be obtained:
 
@@ -72,6 +73,8 @@ When a document cannot be obtained:
 
 Manual drop-in: documents the analyst adds to `sources/_inbox/` are registered in the same way. Ask the analyst for the URL and requirement if they are not obvious, and move the file out of the inbox once it is registered.
 
+Before G2, run `tools/near_duplicates.py` on the country's text files and treat each pair it reports as a possible version (step 3), so that one document is not counted twice (PC-03).
+
 Clear-cut exclusions (outside the time window, outside the country scope, outside the in-scope chapters and themes) are tier 2: the agent records them with the reason and they are listed for review at G2.
 
 ## Stage 3: Register and organise
@@ -79,7 +82,7 @@ Clear-cut exclusions (outside the time window, outside the country scope, outsid
 1. Check the register for completeness and for possible versions (step 3 above).
 2. Propose source quality ratings for each in-scope chapter or theme the source covers in `judgements/source_quality.csv`, following the judgement rules (tier 2).
 3. Update the status of every requirement line.
-4. Export the G2 package to `review/RUN-2026-01/G2_source_review.xlsx` with these sheets:
+4. Export the G2 package to `review/<run_id>/G2_source_review.xlsx` with these sheets:
    - the source register;
    - requirements with their status, with gaps first;
    - exclusions and inaccessible documents;

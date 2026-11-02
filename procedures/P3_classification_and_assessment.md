@@ -7,7 +7,8 @@ Read this file, `rules/classification_rules.md` and `rules/judgement_rules.md` b
 1. Run pass 2 on every evidence item against the approved taxonomy and mechanism list versions: chain link, reform issues, mechanisms, interventions and actors, and the scope check in the classification rules.
 2. Build or update `entities/interventions.csv` and `entities/actors.csv`.
 3. Create links in `links/links.csv` following the classification rules.
-4. Export `review/RUN-2026-01/G5_classification.xlsx` with:
+4. Before the export, run the same-sentence check and check that country statements in screening reports are classified as country responses (classification rules, PC-06).
+5. Export `review/<run_id>/G5_classification.xlsx` with:
    - the ambiguous queue (`taxonomy/ambiguous_queue.csv`);
    - the unmatched queue with proposed new issues;
    - a random 10 per cent of automatically classified items;
@@ -30,9 +31,10 @@ Make judgements in this order, citing evidence items for each:
 
 ## Stage 11: Analytical validation (gate G6)
 
-1. Export one dossier per reform issue in `review/RUN-2026-01/G6_issue_dossiers.xlsx`. Each dossier lays out the chain (EU requirement over the years, country response, implementation, outcomes, gap), the proposed judgements with their reasons and evidence, conflicting evidence, and the confidence and relevance of the key items.
-2. Add a sheet listing all tier 3 judgements with columns for the reviewers' decision (`validate`, `override` with a new value and reason).
-3. Add a sheet of tier 2 judgements for review by exception: all Low evidence confidence ratings, all machine-translated items, all implementation statuses, every item with a `contradicts` link, and a random 5 per cent of the rest. Reviewers may validate them in bulk and override individual rows.
-4. Propose two or three reform issues for the comparator pilot (run 1b), with a short reason for each: importance for accession, a clear unresolved gap, and a likelihood that comparator evidence exists.
+1. Before the export, check each tier 3 reason against its value and cited items, its wording, any claim of absence and any statement of conflict (judgement rules, PC-08 and PC-09).
+2. Export one dossier per reform issue in `review/<run_id>/G6_issue_dossiers.xlsx`. Each dossier lays out the chain (EU requirement over the years, country response, implementation, outcomes, gap), the proposed judgements with their reasons and evidence, conflicting evidence, and the confidence and relevance of the key items.
+3. Add a sheet listing all tier 3 judgements with columns for the reviewers' decision (`validate`, `override` with a new value and reason).
+4. Add a sheet of tier 2 judgements for review by exception: all Low evidence confidence ratings, all machine-translated items, all implementation statuses, every item with a `contradicts` link, and a random 5 per cent of the rest. Reviewers may validate them in bulk and override individual rows.
+5. Propose two or three reform issues for the comparator step (procedure P4), with a short reason for each: importance for accession, a clear unresolved gap, and a likelihood that comparator evidence exists.
 
-**G6 decision (both reviewers named in the run record):** validate or override each tier 3 judgement and choose the issues for run 1b. Record overrides in `judgements/judgements.csv` with the reviewer and reason. Record the gate decision with both reviewers.
+**G6 decision (the reviewers named in the run record):** validate or override each tier 3 judgement and choose the issues for the comparator step. Record overrides in `judgements/judgements.csv` with the reviewer and reason. Record the gate decision with the reviewers. Once G6 passes, the run's validated judgements appear in the comparisons on the regional page.

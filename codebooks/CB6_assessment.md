@@ -1,6 +1,6 @@
 # EU Accession Reform Intelligence Tool | Assessment
 
-Version 1.2, 29 October 2026. Made country-neutral when the pilot was reconfigured before gate G0 (decision F2). Version 1.1 followed the architecture review (decisions B1, B3, C4 and E2).
+Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19): transferability of a comparator case (PC-01). Version 1.2, 29 October 2026. Made country-neutral when the pilot was reconfigured before gate G0 (decision F2). Version 1.1 followed the architecture review (decisions B1, B3, C4 and E2).
 
 This codebook defines the kinds of **judgement** the tool should eventually be able to make about the information it has extracted and connected.
 
@@ -21,7 +21,7 @@ The main judgements, what each is attached to, and the scale each uses are:
 - **Success or result:** did the intervention appear to work, fail, produce mixed results or remain too early to judge? Attached to the link between an intervention and an outcome.
 - **Attribution:** how confident are we that the intervention contributed to the observed outcome? Attached to the same link. Rated High, Medium or Low.
 - **Comparator relevance:** how closely does another country’s experience match the problem being analysed? Attached to a pair: a target-country reform issue and a comparator case. Rated High, Medium or Low.
-- **Transferability:** could the underlying mechanism realistically work in the target country? Attached to a lesson, applied to the target country. Rated likely, conditional or unlikely, with the conditions stated.
+- **Transferability:** could the underlying mechanism realistically work in the target country? Attached to a lesson stated by a source, or to a comparator case, where the case's lesson is drawn by the agent across the case's evidence and is labelled as agent synthesis; applied to the target country. Rated likely, conditional or unlikely, with the conditions stated.
 - **Priority and tractability:** how important is the issue for accession and how realistic is it for government to make progress? Attached to a reform issue in a country. Priority and tractability are each rated High, Medium or Low.
 
 Every scale also allows "insufficient evidence". The agent should use it rather than force a rating.

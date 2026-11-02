@@ -1,7 +1,7 @@
 tool,test,result,detail
-hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmph4ssolhd/samples/a.txt
+hash_file.py,known SHA-256 of 'abc',pass,"ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad  /tmp/tmpvwywyidd/samples/a.txt
 "
-next_id.py,next limit after the highest recorded,pass,"LIM-0036
+next_id.py,next limit after the highest recorded,pass,"LIM-0038
 "
 next_id.py,next lesson after the highest recorded,pass,"ALN-0035
 "
@@ -13,11 +13,35 @@ next_id.py,next item after the highest in the file,pass,"MKD-EU-2025-004-0008
 "
 next_id.py,"refuses a source ID without country, family and year",pass,
 convert_to_text.py,text PDF: page markers and text,pass,
-convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmph4ssolhd/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
+convert_to_text.py,text PDF: no text recognition needed,pass,"wrote /tmp/tmpvwywyidd/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
+density: 2 page(s), median 151 characters per page; 2 thin page(s) under 200 characters
+density: thin page 1: 151 characters (no image found: check the page by eye)
+density: thin page 2: 97 characters (no image found: check the page by eye)
+density: WARNING document is thin: 2 of 2 pages under 200 characters; report at G2
 "
 convert_to_text.py,original file unchanged,pass,
-convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmph4ssolhd/samples/scan.txt: 1 page(s)
+convert_to_text.py,density: characters per page reported for a text PDF,pass,"wrote /tmp/tmpvwywyidd/proj/sources/MKD/EU/text/MKD-EU-2025-001.txt: 2 page(s)
+density: 2 page(s), median 151 characters per page; 2 thin page(s) under 200 characters
+density: thin page 1: 151 characters (no image found: check the page by eye)
+density: thin page 2: 97 characters (no image found: check the page by eye)
+density: WARNING document is thin: 2 of 2 pages under 200 characters; report at G2
+"
+convert_to_text.py,"density: thin page with an image flagged, text recognition not run, text kept",pass,"wrote /tmp/tmpvwywyidd/samples/thin.txt: 1 page(s)
+density: 1 page(s), median 42 characters per page; 1 thin page(s) under 200 characters
+density: thin page 1: 42 characters (page has an image: text may be in the image; rerun with --ocr-pages)
+density: WARNING document is thin: 1 of 1 pages under 200 characters; report at G2
+"
+convert_to_text.py,density: CSV report lists each page with image and thin flags,pass,"[{'page': '1', 'characters': '42', 'has_image': 'yes', 'ocr': 'no', 'thin': 'yes'}]"
+convert_to_text.py,density: whole document reported as thin,pass,"wrote /tmp/tmpvwywyidd/samples/thin.txt: 1 page(s)
+density: 1 page(s), median 42 characters per page; 1 thin page(s) under 200 characters
+density: thin page 1: 42 characters (page has an image: text may be in the image; rerun with --ocr-pages)
+density: WARNING document is thin: 1 of 1 pages under 200 characters; report at G2
+"
+convert_to_text.py,scanned PDF: text recognition reported,pass,"wrote /tmp/tmpvwywyidd/samples/scan.txt: 1 page(s)
 ocr: text recognition used on page(s) 1 (mkd+eng); note 'ocr' in the register
+density: 1 page(s), median 67 characters per page; 1 thin page(s) under 200 characters
+density: thin page 1: 67 characters (after text recognition)
+density: WARNING document is thin: 1 of 1 pages under 200 characters; report at G2
 "
 convert_to_text.py,scanned PDF: Macedonian Cyrillic recognised,pass,"=== PAGE 1 ===
 Министерство за информатичко општество
@@ -44,7 +68,7 @@ verify_quotes.py,page break with numbered running header and footnotes between t
 verify_quotes.py,exit status 1 when any quote fails,pass,
 verify_quotes.py,report written,pass,
 verify_quotes.py,"webpage: quote in cited section passes, other section fails",pass,"[True, False]"
-validate_data.py,clean sample project passes,pass,"validate_data 1.2.0: 1 evidence file(s), 4 item(s), 556 CSV row(s)
+validate_data.py,clean sample project passes,pass,"validate_data 1.4.0: 1 evidence file(s), 4 item(s), 558 CSV row(s)
 warning: judgements/judgements.csv: no committed version to compare with; protection check skipped
 warning: judgements/source_quality.csv: no committed version to compare with; protection check skipped
 0 error(s), 2 warning(s)
@@ -59,10 +83,28 @@ error: MKD-EU-2025-001-0001: unknown reform issue RI-FMW-999
 3 error(s), 3 warning(s)
 "
 validate_data.py,CSV header mismatch with data dictionary detected,pass,
-validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.2.0: 1 evidence file(s), 4 item(s), 557 CSV row(s)
+validate_data.py,change to a validated judgement is flagged,pass,"validate_data 1.4.0: 1 evidence file(s), 4 item(s), 559 CSV row(s)
 warning: judgements/judgements.csv: JDG-000001 is validated but its value has changed; restore it and propose a new row instead
 0 error(s), 1 warning(s)
 "
+validate_data.py,theme issue with no classified items gives a warning only,pass,"warning: RI-TST-002: theme issue has no classified items yet, so its supporting recommendation cannot be checked (show the count in the G4 package)"
+validate_data.py,theme issue with items but no recommendation is an error,pass,"validate_data 1.4.0: 1 evidence file(s), 4 item(s), 559 CSV row(s)
+error: RI-TST-002: theme issue has 1 in-scope item(s) but no recommendation; an issue from a cross-cutting theme needs at least one (procedure P2 stage 7)
+1 error(s), 0 warning(s)
+"
+validate_data.py,theme issue supported by a recommendation passes,pass,"validate_data 1.4.0: 1 evidence file(s), 4 item(s), 559 CSV row(s)
+0 error(s), 0 warning(s)
+"
+next_id.py,next lesson in a new run continues after the highest in any run,pass,"ALN-0035
+"
+validate_data.py,new run's learning_log.csv checked; template folder skipped,pass,
+validate_data.py,lesson ID reused across runs is an error,pass,"validate_data 1.4.0: 1 evidence file(s), 4 item(s), 559 CSV row(s)
+error: runs/RUN-2099-02/learning_log.csv: lesson ID ALN-0001 is already used in runs/RUN-2026-01/alpha_learning_log.csv; lesson IDs are never reused across runs
+1 error(s), 0 warning(s)
+"
+near_duplicates.py,"two versions of one document reported, unrelated source not",pass,"near_duplicates 1.0.0: 3 source text(s) compared; 1 pair(s) above the thresholds, 1 not yet recorded; wrote /tmp/tmpvwywyidd/nd/review/RUN-TEST/near_duplicates.csv
+"
+near_duplicates.py,pair already recorded with version_of is marked as recorded,pass,"[{'source_a': 'MNE-EU-2024-001', 'source_b': 'MNE-EU-2024-002', 'title_a': 'Screening report (Commission version)', 'title_b': 'Screening report (Council version)', 'jaccard': '0.93', 'containment': '1.00', 'already_recorded': 'yes', 'note': 'recorded as a version in the register'}]"
 export_review.py,G0 package builds,pass,
 export_review.py,G1 package builds,pass,
 export_review.py,G2 package builds,pass,
@@ -73,17 +115,17 @@ export_review.py,G3: agent items in a passage are withheld until it is hand-code
 export_review.py,hand-coding workbook is not overwritten without --force,pass,
 export_review.py,"review sample builds, leaves out passage items not yet hand-coded",pass,
 export_review.py,"G3: comparison finds matched, missed and extra items once hand-coded",pass,"['matched', 'missed by the agent', 'extra in the agent output']"
-export_review.py,G4 package: issues with item counts and items fitting no issue,pass,"wrote /tmp/tmph4ssolhd/proj/review/RUN-2026-01/G4_taxonomy.xlsx (8 sheets)
+export_review.py,G4 package: issues with item counts and items fitting no issue,pass,"wrote /tmp/tmpvwywyidd/proj/review/RUN-2026-01/G4_taxonomy.xlsx (8 sheets)
 "
-export_review.py,G4 package: decisions needed come first when listed,pass,"wrote /tmp/tmph4ssolhd/proj/review/RUN-2026-01/G4_taxonomy.xlsx (9 sheets)
+export_review.py,G4 package: decisions needed come first when listed,pass,"wrote /tmp/tmpvwywyidd/proj/review/RUN-2026-01/G4_taxonomy.xlsx (9 sheets)
 "
-export_review.py,"G5 package: queues, spot check, contradictions and out-of-scope items",pass,"wrote /tmp/tmph4ssolhd/proj/review/RUN-2026-01/G5_classification.xlsx (13 sheets)
+export_review.py,"G5 package: queues, spot check, contradictions and out-of-scope items",pass,"wrote /tmp/tmpvwywyidd/proj/review/RUN-2026-01/G5_classification.xlsx (13 sheets)
 "
-export_review.py,G1b package: countries checked and comparator source lines,pass,"wrote /tmp/tmph4ssolhd/proj/review/RUN-2026-01/G1b_comparators.xlsx (4 sheets)
+export_review.py,G1b package: countries checked and comparator source lines,pass,"wrote /tmp/tmpvwywyidd/proj/review/RUN-2026-01/G1b_comparators.xlsx (4 sheets)
 "
-export_review.py,"G6b package: cases, lessons, success and attribution, and gaps",pass,"wrote /tmp/tmph4ssolhd/proj/review/RUN-2026-01/G6b_comparators.xlsx (11 sheets)
+export_review.py,"G6b package: cases, lessons, success and attribution, and gaps",pass,"wrote /tmp/tmpvwywyidd/proj/review/RUN-2026-01/G6b_comparators.xlsx (11 sheets)
 "
-export_review.py,"G6 package: one dossier per issue, tier 3 and tier 2 sheets",pass,"wrote /tmp/tmph4ssolhd/proj/review/RUN-2026-01/G6_issue_dossiers.xlsx (6 sheets)
+export_review.py,"G6 package: one dossier per issue, tier 3 and tier 2 sheets",pass,"wrote /tmp/tmpvwywyidd/proj/review/RUN-2026-01/G6_issue_dossiers.xlsx (6 sheets)
 "
 build_review_page.py,page builds,pass,
 build_review_page.py,G0 shown as pending review while its package awaits decision,pass,
@@ -92,7 +134,67 @@ build_review_page.py,"no external scripts, fonts or stylesheets",pass,
 build_review_page.py,extraction section shows the sample,pass,
 build_review_page.py,"after a pass, G0 shown as validated",pass,
 build_review_page.py,HTML tags balanced,pass,
-build_review_page.py,review page links to the analysis page,pass,
-build_review_page.py,"analysis page builds, balanced, self-contained",pass,
-build_review_page.py,analysis page shows quotes with item IDs and placeholders for later sections,pass,
-build_review_page.py,"analysis page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",pass,
+build_review_page.py,review page links to the country page and the regional page,pass,
+build_review_page.py,"country page (before G7) builds in analysis/, balanced, self-contained",pass,
+build_review_page.py,country page shows quotes with item IDs and placeholders for later sections,pass,
+build_review_page.py,country page links back one folder up,pass,
+build_review_page.py,"regional page builds, balanced, no external files",pass,
+build_review_page.py,regional page lists the planned countries and shows no judgement that is not validated,pass,
+build_review_page.py,"country page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",pass,
+acquire.py,"download filed under the naming convention, read-only, with its SHA-256",pass,"saved sources/MNE/EU/originals/MNE-EU-2026-001_EC-Montenegro-Report-2026.pdf (read-only)
+register fields:
+  source_id: MNE-EU-2026-001
+  source_family: EU
+  country: MNE
+  url: http://127.0.0.1:35167/doc.pdf
+  retrieval_date: 2026-11-02
+  local_file: sources/MNE/EU/originals/MNE-EU-2026-001_EC-Montenegro-Report-2026.pdf
+  file_format: pdf
+  content_hash: 7277ec4744df9718ac17584bfb1077b3729623fa6bfb52183c2e43ed25eef061
+  status: available
+  notes: 
+"
+acquire.py,refuses to overwrite an existing original,pass,"refused: an original for MNE-EU-2026-001 already exists (MNE-EU-2026-001_EC-Montenegro-Report-2026.pdf); originals are never overwritten
+"
+acquire.py,exact duplicate of a registered file is not saved,pass,"duplicate: the file is identical to registered source MNE-EU-2026-001 (SHA-256 7277ec4744df9718ac17584bfb1077b3729623fa6bfb52183c2e43ed25eef061); not saved
+"
+acquire.py,"403 recorded as a retrieval failure, nothing saved",pass,"failed: access forbidden (HTTP 403)
+record the source as inaccessible (status_reason: access forbidden), or retrieve it by hand and rerun with --manual
+"
+acquire.py,redirect to a login page is refused,pass,"failed: redirected to what looks like a login or subscription page (http://127.0.0.1:35167/account/login?next=/report) (HTTP 200)
+record the source as inaccessible (status_reason: redirected to what looks like a login or subscription page (http://127.0.0.1:35167/account/login?next=/report)), or retrieve it by hand and rerun with --manual
+"
+acquire.py,robots.txt disallow is respected,pass,"failed: robots.txt disallows automated access; retrieve by hand and add with --manual, or record as inaccessible
+record the source as inaccessible (status_reason: robots.txt disallows automated access; retrieve by hand and add with --manual, or record as inaccessible), or retrieve it by hand and rerun with --manual
+"
+acquire.py,"manual route: inbox file copied, inbox kept, converted to text",pass,"saved sources/MNE/EU/originals/MNE-EU-2026-002_Manual-Copy.pdf (read-only)
+register fields:
+  source_id: MNE-EU-2026-002
+  source_family: EU
+  country: MNE
+  url: 
+  retrieval_date: 2026-11-02
+  local_file: sources/MNE/EU/originals/MNE-EU-2026-002_Manual-Copy.pdf
+  file_format: pdf
+  content_hash: f9bdc302b944ce05106c82498a64e2b297258ce57b4beee90818b4d853aeec95
+  status: available
+  notes: retrieved by hand (manual route)
+wrote /tmp/tmpvwywyidd/aq/sources/MNE/EU/text/MNE-EU-2026-002.txt: 1 page(s)
+ocr: text recognition used on page(s) 1 (eng); note 'ocr' in the register
+density: 1 page(s), median 24 characters per page; 1 thin page(s) under 200 characters
+density: thin page 1: 24 characters (after text recognition)
+density: WARNING document is thin: 1 of 1 pages under 200 characters; report at G2
+"
+acquire.py,manual route only accepts files from sources/_inbox/,pass,"                  --family {EU,GOV,IO,RES,CSO} --year YEAR --slug SLUG
+                  [--source-id SOURCE_ID] [--convert] [--ocr-langs OCR_LANGS]
+                  [--root ROOT] [--version]
+                  [url]
+acquire.py: error: --manual must name a file in /tmp/tmpvwywyidd/aq/sources/_inbox
+"
+acquire.py,every attempt logged with its result,pass,"['saved', 'refused', 'duplicate', 'failed', 'failed', 'failed', 'saved']"
+build_outputs.py,"rebuilds the G7 issue, scope and comparator briefs byte for byte",pass, differ: []
+build_outputs.py,coverage and limits report builds with its sections,pass,
+build_outputs.py,"evidence item IDs appear only in the annex, not in the running text",pass,[]
+build_outputs.py,annex quotes each item word for word,pass,
+build_outputs.py,status line reads Draft when G7 has not passed,pass,
+build_outputs.py,one fact pack per approved issue,pass,"48 packs, 48 issues"

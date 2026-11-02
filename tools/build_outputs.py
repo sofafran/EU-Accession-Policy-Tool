@@ -14,18 +14,37 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import evidence_files, project_root, read_csv, read_json, split_list  # noqa: E402
+from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, run_record, runs_with_records, split_list  # noqa: E402
 
-VERSION = "1.0.1"
+VERSION = "1.1.0"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
 CHAIN = {"eu_requirement": "EU requirement", "country_response": "Country response", "implementation": "Implementation",
          "outcome": "Outcome", "unresolved_gap": "Unresolved gap", "lesson": "Lesson"}
-COUNTRIES = {"ALB": "Albania", "HRV": "Croatia", "MDA": "Moldova", "MNE": "Montenegro", "SRB": "Serbia", "MKD": "North Macedonia"}
-DRAFT = ("**Status: {status}.** It uses only judgements validated at G6 (GATE-0007) "
-         "and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that "
+DRAFT = ("**Status: {status}.** It uses only judgements validated at G6 ({g6}) "
+         "and, for comparator material, G6b ({g6b}). Sections marked *Agent synthesis* are written by the tool from that "
          "material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.")
+
+
+MISSED = {"RUN-2026-01": "about one in eight in-scope claims in EU sources may have been missed (LIM-0025)"}
+MISSED_DEFAULT = "the share of in-scope claims that may have been missed, measured at the second-pass check, is given in the coverage and limits report"
+
+
+def long_date(d):
+    """2026-10-29 -> 29 October 2026."""
+    import datetime as dt
+    try:
+        x = dt.date.fromisoformat(d)
+    except ValueError:
+        return d
+    return f"{x.day} {x.strftime('%B')} {x.year}"
+
+
+def lesson_field(cases):
+    """Case column for the practical lesson: country-neutral `practical_lesson`, or the alpha's `practical_lesson_for_north_macedonia`."""
+    first = next(iter(cases.values()), {})
+    return next((k for k in first if k.startswith("practical_lesson")), "practical_lesson")
 
 
 class Refs:
@@ -66,6 +85,7 @@ class Refs:
 
 
 def load(root, run):
+    cc = run_country(root, run)
     items = {}
     for f in evidence_files(root):
         d = read_json(f)
@@ -85,11 +105,13 @@ def load(root, run):
     dups = {l["from_id"] for l in links if l["link_type"] == "same_as_earlier" and reg.get(l["from_id"].rsplit("-", 1)[0], {}).get("version_of")}
     by = {}
     for k, i in items.items():
-        if i["country"] != "MKD" or i["pass2"]["classification_status"] == "out_of_scope" or k in dups:
+        if i["country"] != cc or i["pass2"]["classification_status"] == "out_of_scope" or k in dups:
             continue
         for x in i["pass2"]["reform_issue_ids"]:
             by.setdefault(x, []).append(k)
-    return dict(items=items, js=ok, links=links, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by)
+    fields = run_record(root, run)[0]
+    return dict(items=items, js=ok, links=links, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
+                start=fields.get("Time window", "")[:4], freeze=fields.get("Evidence freeze date", "")[:10])
 
 
 def quality(D, k, issue):
@@ -102,12 +124,12 @@ def quality(D, k, issue):
 
 
 def issue_view(D, issue):
-    x, oid = issue["issue_id"], issue["issue_id"] + "@MKD"
+    x, oid = issue["issue_id"], issue["issue_id"] + "@" + D["cc"]
     J = {j["judgement_type"]: j for j in D["js"] if j["object_id"] == oid}
     mine = set(D["by"].get(x, []))
     conf = {j["object_id"]: j["value"] for j in D["js"] if j["judgement_type"] == "evidence_confidence"}
     rel = {j["object_id"]: j["value"] for j in D["js"] if j["judgement_type"] == "relevance" and j["context_id"] == x}
-    iids = sorted({n for k in mine for n in D["items"][k]["pass2"]["intervention_ids"] if n.startswith("INT-MKD")})
+    iids = sorted({n for k in mine for n in D["items"][k]["pass2"]["intervention_ids"] if n.startswith(f"INT-{D['cc']}")})
     status = {}
     for j in D["js"]:
         if j["judgement_type"] == "implementation_status" and j["object_id"] in iids:
@@ -125,7 +147,7 @@ def issue_view(D, issue):
         for k in split_list(J.get(t, {}).get("evidence_item_ids", "")):
             if k in D["items"] and k not in key:
                 key.append(k)
-    reqs = sorted((k for k in mine if D["items"][k]["pass2"]["chain_link"] == "eu_requirement" and D["items"][k]["_source"].startswith("MKD-EU")),
+    reqs = sorted((k for k in mine if D["items"][k]["pass2"]["chain_link"] == "eu_requirement" and D["items"][k]["_source"].startswith(f"{D['cc']}-EU")),
                   key=lambda k: (D["items"][k]["dates"].get("publication_date") or "", k))
     mt = sum(1 for k in mine if D["items"][k].get("machine_translated"))
     srcs = {D["items"][k]["_source"] for k in mine}
@@ -161,7 +183,7 @@ def issue_brief(root, run, D, issue):
     N = narrative(root, run, x)
     syn = lambda s: N.get(s) or "*Not yet written.*"
     mechs = "; ".join(f"{D['mech'].get(m, m)} ({m})" for m in split_list(issue["mechanism_ids"]))
-    out = [f"# Issue brief: {issue['label']}", "", f"{x} · North Macedonia · {DRAFT}", "",
+    out = [f"# Issue brief: {issue['label']}", "", f"{x} · {D['cname']} · {DRAFT}", "",
            f"**Issue definition.** {issue['definition']} **Problem mechanisms:** {mechs}.", "",
            "## In brief (agent synthesis)", "", R.sub(syn("In brief"), names), "",
            "## Assessment (validated at G6)", ""]
@@ -207,15 +229,15 @@ def issue_brief(root, run, D, issue):
     out += table(["Ref", "Year", "Source", "Chain link", "What the source says (summary)", "Source quality", "Evidence confidence", "Relevance", "Notes"], rows)
     out += ["## Open questions (agent synthesis)", "", R.sub(syn("Open questions"), names), "",
             "## Coverage and limits", "",
-            f"This brief rests on {len(V['mine'])} in-scope evidence items from {len(V['srcs'])} sources dated from 2020 to the evidence freeze "
-            f"of 29 October 2026, of which {V['mt']} are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; "
-            "about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.", ""]
+            f"This brief rests on {len(V['mine'])} in-scope evidence items from {len(V['srcs'])} sources dated from {D['start']} to the evidence freeze "
+            f"of {long_date(D['freeze'])}, of which {V['mt']} are machine translated. It covers {D['cname']} only and the scope of {run}; "
+            f"{MISSED.get(run, MISSED_DEFAULT)}. Full limits are in the coverage and limits report.", ""]
     return out + R.annex(D["reg"])
 
 
 def scope_overview(root, run, D):
     R, N = Refs(D["items"]), narrative(root, run, "scope_overview")
-    out = ["# Scope overview: North Macedonia, RUN-2026-01", "", DRAFT, "",
+    out = [f"# Scope overview: {D['cname']}, {run}", "", DRAFT, "",
            "## Summary (agent synthesis)", "", R.sub(N.get("Summary", "*Not yet written.*")), ""]
     groups = {}
     for r in D["issues"]:
@@ -240,25 +262,26 @@ def coverage(root, run, D):
     req = read_csv(root / "registers" / "source_requirements.csv")[1]
     lim = read_csv(root / "registers" / "limits_log.csv")[1]
     reg = [r for r in D["reg"].values() if r["role"] == "target"]
-    out = ["# Source coverage and limits report: RUN-2026-01", "", DRAFT, "",
+    out = [f"# Source coverage and limits report: {run}", "", DRAFT, "",
            "## Summary (agent synthesis)", "", R.sub(N.get("Summary", "*Not yet written.*")), "",
            "## Source requirements", ""]
     c = collections.Counter(r["status"] for r in req if r["role"] != "comparator")
-    out += [f"North Macedonia requirements by status: " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())) + ".", ""]
+    out += [f"{D['cname']} requirements by status: " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())) + ".", ""]
     out += table(["Requirement", "Description", "Core or supporting", "Status", "Notes"],
                  [[r["requirement_id"], r["description"], r["core_or_supporting"], r["status"], r["notes"]] for r in req if r["role"] != "comparator" and r["status"] != "found"])
     c = collections.Counter(r["status"] for r in reg)
-    out += ["## Sources for North Macedonia", "", "By status: " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())) + ".", ""]
+    out += [f"## Sources for {D['cname']}", "", "By status: " + ", ".join(f"{k} {v}" for k, v in sorted(c.items())) + ".", ""]
     out += ["### Excluded and inaccessible", ""]
     out += table(["Source", "Title", "Status", "Reason"], [[r["source_id"], r["title"], r["status"], r["status_reason"]] for r in reg if r["status"] not in ("available", "processed", "extracted")])
-    mt = [k for k, i in D["items"].items() if i["country"] == "MKD" and i.get("machine_translated") and i["pass2"]["classification_status"] != "out_of_scope"]
-    allk = [k for k, i in D["items"].items() if i["country"] == "MKD" and i["pass2"]["classification_status"] != "out_of_scope"]
+    mt = [k for k, i in D["items"].items() if i["country"] == D["cc"] and i.get("machine_translated") and i["pass2"]["classification_status"] != "out_of_scope"]
+    allk = [k for k, i in D["items"].items() if i["country"] == D["cc"] and i["pass2"]["classification_status"] != "out_of_scope"]
     msrc = sorted({D["items"][k]["_source"] for k in mt})
     out += ["## Reliance on machine translation", "",
-            f"{len(mt)} of {len(allk)} in-scope North Macedonia items ({100 * len(mt) / max(len(allk), 1):.0f}%) are machine translated, "
+            f"{len(mt)} of {len(allk)} in-scope {D['cname']} items ({100 * len(mt) / max(len(allk), 1):.0f}%) are machine translated, "
             f"from {len(msrc)} sources: {', '.join(msrc)}. Their evidence confidence is capped at Medium.", ""]
-    cmp_ = [k for k, i in D["items"].items() if i["country"] != "MKD" and i.get("machine_translated")]
-    out += [f"In the comparator pilot, {len(cmp_)} items are machine translated, under LIM-0029 and LIM-0030, also capped at Medium.", ""]
+    cmp_ = [k for k, i in D["items"].items() if i["country"] != D["cc"] and i.get("machine_translated")]
+    cl = [r["limit_id"] for r in lim if r["run_id"] == run and r["limit_type"] == "language" and r["applies_to"] == "run:1b"]
+    out += [f"In the comparator pilot, {len(cmp_)} items are machine translated, under {' and '.join(cl) or 'the language limits'}, also capped at Medium.", ""]
     out += ["## Active limits", ""]
     out += table(["Limit", "Type", "Description", "Applies to", "Revisit"], [[r["limit_id"], r["limit_type"], r["description"], r["applies_to"], r["revisit_in"]] for r in lim if r["run_id"] == run and r["status"] == "active"])
     out += ["## Methodological limitations found during testing (agent synthesis)", "", R.sub(N.get("Methodological limitations", "*Not yet written.*")), ""]
@@ -271,9 +294,9 @@ def comparator_brief(root, run, D, issue):
     cases = {r["case_id"]: r for r in read_csv(root / "review" / run / "run1b" / "cases" / f"cases_{x}.csv")[1]}
     J = {(j["object_id"], j["judgement_type"]): j for j in D["js"]}
     V = issue_view(D, issue)
-    out = [f"# Comparator brief: {issue['label']}", "", f"{x} · North Macedonia · {DRAFT} "
+    out = [f"# Comparator brief: {issue['label']}", "", f"{x} · {D['cname']} · {DRAFT} "
            "**Draft policy options at the end are internal drafts** and stay so after sign-off at G7 until a separate decision adapts them for an external audience.", "",
-           "## The issue in North Macedonia (validated at G6)", "",
+           f"## The issue in {D['cname']} (validated at G6)", "",
            f"**Unresolved gap ({V['J']['unresolved_gap']['value']}).** {R.sub(V['J']['unresolved_gap']['reason'], names)}", "",
            f"**Priority {V['J']['priority']['value']}, tractability {V['J']['tractability']['value']}, direction of travel {V['J']['direction_of_travel']['value']}.**", "",
            "## Reading this brief (agent synthesis)", "", R.sub(N.get("Reading this brief", "*Not yet written.*"), names), "",
@@ -283,7 +306,7 @@ def comparator_brief(root, run, D, issue):
     out += table(["Case", "Country", "Comparator relevance", "Transferability (agent synthesis)", "Summary"], rows)
     parts = [("problem_addressed", "Problem addressed"), ("reform_or_mechanism", "Reform or mechanism used"), ("how_implemented", "How it was implemented"),
              ("evidence_of_results", "Evidence of results"), ("limitations_of_evidence", "Limitations of the evidence"),
-             ("practical_lesson_for_north_macedonia", "Practical lesson for North Macedonia (agent synthesis)"),
+             (lesson_field(cases), f"Practical lesson for {D['cname']} (agent synthesis)"),
              ("transferable", "What is transferable (agent synthesis)"), ("not_transferable", "What is not transferable (agent synthesis)")]
     for cid, c in cases.items():
         rj, tj = J.get((cid, "comparator_relevance"), {}), J.get((cid, "transferability"), {})
@@ -320,15 +343,16 @@ def factpack(D, issue):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--root")
-    ap.add_argument("--run", default="RUN-2026-01")
+    ap.add_argument("--run", help="run ID (default: the active run, the latest run with a run record)")
     ap.add_argument("--factpacks", action="store_true", help="write fact packs for the narrative sections instead of the outputs")
     ap.add_argument("--version", action="version", version=VERSION)
     a = ap.parse_args(argv)
     root = project_root(a.root)
+    a.run = a.run or runs_with_records(root)[-1]
     D = load(root, a.run)
     global DRAFT
     g7 = [r for r in read_csv(root / "registers" / "gate_log.csv")[1] if r["run_id"] == a.run and r["gate"] == "G7" and r["decision"] in ("pass", "pass_with_conditions")]
-    DRAFT = DRAFT.format(status=f"Validated at G7 ({g7[-1]['gate_decision_id']}), internal output" if g7 else "Draft, prepared at stage 12 for sign-off at G7")
+    DRAFT = DRAFT.format(g6=gate_id(root, a.run, "G6"), g6b=gate_id(root, a.run, "G6b") or "not held", status=f"Validated at G7 ({g7[-1]['gate_decision_id']}), internal output" if g7 else "Draft, prepared at stage 12 for sign-off at G7")
     write = lambda p, lines: (p.parent.mkdir(parents=True, exist_ok=True), p.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8"))
     if a.factpacks:
         for r in D["issues"]:

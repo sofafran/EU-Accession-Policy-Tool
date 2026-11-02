@@ -1,6 +1,6 @@
 # EU Accession Reform Intelligence Tool | Sources
 
-Version 1.2, 29 October 2026. Made country-neutral, with the language rule generalised, when the pilot was reconfigured before gate G0 (decisions A8 and F2). Version 1.1 followed the architecture review (decisions A4, B2, C1, C2, C4 and C5).
+Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19): manual retrieval route and near-duplicate check (PC-03). Version 1.2, 29 October 2026. Made country-neutral, with the language rule generalised, when the pilot was reconfigured before gate G0 (decisions A8 and F2). Version 1.1 followed the architecture review (decisions A4, B2, C1, C2, C4 and C5).
 
 This codebook defines where the tool should look for information, what each source family can legitimately tell us, and how much weight should be placed on that information. The purpose is to give future agents clear boundaries when gathering evidence: different sources serve different analytical purposes. There are five source families.
 
@@ -83,6 +83,8 @@ Each of the three is rated High, Medium or Low with a one-line reason, or record
 ## Finding sources
 
 Before collecting documents, the agent drafts a source requirements list: one line for each type of document the analysis expects to exist, for example the Commission's annual report on the target country for each year, or the annual reports of the national body responsible for an in-scope area. The analyst approves this list before acquisition begins. Each source collected is linked to the requirement it satisfies, so any requirement with no source against it is visible as a gap rather than silently missing.
+
+Some publishers block automated downloads. When a document is public but cannot be downloaded automatically, the agent records the retrieval failure and lists the document for manual retrieval: the analyst downloads it, places it in the inbox, and it is registered in the normal way. A document behind a login or paywall is recorded as inaccessible and never retrieved by other means. During acquisition the agent also runs a near-duplicate check across the country's sources, so that two copies or versions of one document with different fingerprints are recorded as versions of one source and not counted twice.
 
 ## Language
 

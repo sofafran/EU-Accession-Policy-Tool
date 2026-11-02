@@ -1,13 +1,13 @@
 # Data dictionary
 
-Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.5, 2 November 2026 (PC-13 and PC-14 from G8 of RUN-2026-01, GATE-0013, applied before RUN-2026-02 under decision E19: `reform_issue_ids` on interventions; the case fields on comparator cases; the learning log is `learning_log.csv` from RUN-2026-02, `alpha_learning_log.csv` in RUN-2026-01). Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
 - CSV files are UTF-8, comma-separated, with a header row. Lists inside a cell are separated by a semicolon and no space, for example `ACT-MKD-0001;ACT-MKD-0004`.
 - Dates use `YYYY-MM-DD`, or `YYYY-MM` or `YYYY` when only that precision is known. A period is written as `start/end`, for example `2024-06/2025-06`.
 - Chapters are written as two-digit codes in quotes in JSON and as plain two-digit codes in CSV, for example `02`, `10`, `23`. Lists of chapters are semicolon-separated. Where a source or item has no chapter, the field is left empty.
-- Country codes use three letters (`ALB`, `BIH`, `MKD`, `MNE`, `SRB`, `XKX` and so on). EU institutions use `EU`. The ID examples below use `MKD` only as an illustration.
+- Country codes use three letters: `MKD`, `MNE`, `ALB`, `MDA`, `UKR`, `SRB`, `BIH`, `GEO`, `TUR` and `XKX` for the rollout countries (`XKX` is the code in common use for Kosovo, not an official ISO code), and the ISO code for any other country, for example `HRV`. The list is kept in `tools/common.py`. EU institutions use `EU`. The ID examples below use `MKD` only as an illustration.
 - Theme codes come from `taxonomy/themes.csv`, for example `TECH-AI`. Lists of themes are semicolon-separated.
 - Language codes use ISO 639-1, for example `en`, `mk`, `sq`.
 - IDs are permanent. They are never changed, reused or deleted, even if the record is later excluded or retired.
@@ -30,7 +30,7 @@ General rules:
 | Source quality rating | `SQ-NNNNN` | `SQ-00045` |
 | Limit | `LIM-NNNN` | `LIM-0003` |
 | Gate decision | `GATE-NNNN` | `GATE-0001` |
-| Alpha lesson | `ALN-NNNN` | `ALN-0001` |
+| Lesson (learning log) | `ALN-NNNN`, one sequence across all runs | `ALN-0001` |
 
 Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are proposed in the run record and approved at G4 when the taxonomy is drafted. Theme codes are listed in `taxonomy/themes.csv`.
 
@@ -118,9 +118,9 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | linked_changes | Rules, taxonomy or codebook versions created as a result |
 | notes | Free text |
 
-## runs/<run_id>/alpha_learning_log.csv
+## runs/<run_id>/learning_log.csv
 
-Curated, material lessons from an alpha run, especially those that matter for scaling. Raw notes stay in `run_notes.md`; limits, decisions and gate outcomes stay in their own logs and are cited here, not repeated.
+Called `alpha_learning_log.csv` in RUN-2026-01. Curated, material lessons from a run, especially those that matter for scaling. Raw notes stay in `run_notes.md`; limits, decisions and gate outcomes stay in their own logs and are cited here, not repeated.
 
 | Field | Meaning |
 |---|---|
@@ -224,6 +224,7 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 | intervention_type | `law`, `secondary_legislation`, `strategy`, `action_plan`, `institutional_change`, `programme`, `it_system`, `other` |
 | responsible_actor_ids | Actors, semicolon-separated |
 | chapters | Chapters |
+| reform_issue_ids | Reform issues the intervention responds to, semicolon-separated; set at classification and reviewed at G5. Blank for interventions recorded before data dictionary 1.5 (RUN-2026-01) |
 | stated_adoption_date | Adoption date as stated by a source |
 | first_item_id | First evidence item that mentions it |
 | notes | Free text |
@@ -251,6 +252,14 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 | reform_issue_id | Target-country reform issue it is compared with |
 | intervention_ids | Comparator interventions involved |
 | description | One or two sentences |
+| problem_addressed | The problem the comparator country faced, as the evidence shows it |
+| reform_or_mechanism | The reform or mechanism used |
+| how_implemented | How it was implemented |
+| evidence_of_results | Evidence of results, kept apart from adoption |
+| limitations_of_evidence | Limits of that evidence, including attribution |
+| practical_lesson | Practical lesson for the target country (agent synthesis, labelled so) |
+| transferable | What is transferable, and under which conditions (agent synthesis) |
+| not_transferable | What is not transferable (agent synthesis) |
 | selected_at | Gate decision that selected it |
 | notes | Free text |
 

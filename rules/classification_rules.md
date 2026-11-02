@@ -1,6 +1,6 @@
 # Classification rules (pass 2)
 
-Version 0.3, 30 October 2026. Status: approved at G5 (GATE-0006). Changes create a new version and are listed in the change log at the end of this file.
+Version 0.4, 2 November 2026. Status: approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17, applied on 2 November 2026 before RUN-2026-02 (decision E19). Changes create a new version and are listed in the change log at the end of this file. Version 0.3 was approved at G5 of RUN-2026-01 (GATE-0006).
 
 Pass 2 adds the interpretive layer to evidence items that have passed pass 1. It implements Codebook 5. It never changes the pass 1 fields (quote, type, location, dates, stated status). If a pass 1 error is found, it is recorded in the review queue for correction under the extraction rules rather than silently fixed.
 
@@ -30,6 +30,7 @@ Assign one `chain_link` per item, using this table as the default and departing 
 - If no approved issue fits, set `classification_status` to `queued_unmatched` and add a row to `taxonomy/unmatched_queue.csv` with a proposed label and definition. Never add an issue to the taxonomy directly.
 - If two or more issues fit equally well and the choice matters for the analysis, set `classification_status` to `queued_ambiguous` and add a row to `taxonomy/ambiguous_queue.csv` for gate G5.
 - Use the issue definitions and exclusion notes in the taxonomy, not the issue labels alone.
+- The taxonomy is shared across countries. Assign an existing issue only where its definition genuinely fits the item. Never stretch an issue first defined from another country's evidence; use the unmatched queue instead.
 
 ## 3. Problem mechanisms
 
@@ -87,10 +88,14 @@ Every item starts with `classification_status` `not_classified` (set in pass 1) 
 - **Versions of one report:** two versions of the same document are one source. Record `version_of` in the register and link their items with `same_as_earlier`. They never corroborate each other.
 - **Regional evidence:** a claim about a whole region that does not name the target country may be kept, marked as regional in `extraction_note`. It may support an issue but cannot alone support a finding about the country.
 - **Military and classified systems:** out of scope. **Digital education:** out of scope under R2. **Government-wide inspection systems framed as digital government:** in scope.
-- **Same-sentence check:** before a gate, check that identical sentences are not classified differently without a reason.
-- **Problems the EU material does not raise:** they create no issue. List them in the outputs.
+- **Same-sentence check (PC-06):** before G5, list identical sentences that are classified differently, and resolve each or record the reason.
+- **Country statements in screening reports (PC-06):** in screening reports and similar documents where the country presents its own position, the country's statements are classified as `country_response`, not `eu_requirement`. Only the Commission's assessment and recommendations are EU requirements.
+- **Parallel taxonomy drafts (PC-07):** when more than one agent drafts parts of the taxonomy, list the items mapped to issues in more than one part and resolve each overlap (merge, split or exclusion note) before the gate.
+- **Problems the EU material does not raise (PC-12):** items describing a problem raised only by national or independent sources go to the unmatched queue, with a `proposed_definition` that starts "Not raised in EU material:". The analyst may approve such a problem as an issue at G4 or G5 (Codebook 5). Until then it creates no issue and is listed in the outputs.
 
 ## Change log
+
+- 0.4 (2 Nov 2026): PC-06, PC-07 and PC-12 (GATE-0013), applied before RUN-2026-02 (E19). Country statements in screening reports are country responses; same-sentence check before G5; overlap check after parallel taxonomy drafting; route for problems raised only by national or independent sources; the taxonomy is shared across countries and never stretched.
 
 - 0.3 (30 Oct 2026): approved at G5 (GATE-0006). Section 8 added (decisions G5-D02, D07, D08, D05 and D14).
 

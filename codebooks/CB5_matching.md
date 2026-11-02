@@ -1,6 +1,6 @@
 # EU Accession Reform Intelligence Tool | Matching considerations
 
-Version 1.2, 29 October 2026. Made country-neutral, with cross-cutting themes brought forward from a later stage, when the pilot was reconfigured before gate G0 (decisions D6 and F2). Version 1.1 followed the architecture review (decisions B1, B2, D4 and D5).
+Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19): one taxonomy shared across countries, and problems raised only by national or independent sources (PC-12). Version 1.2, 29 October 2026. Made country-neutral, with cross-cutting themes brought forward from a later stage, when the pilot was reconfigured before gate G0 (decisions D6 and F2). Version 1.1 followed the architecture review (decisions B1, B2, D4 and D5).
 
 This codebook defines how the information in the tool should **connect** so that users can explore the same evidence base from different starting points.
 
@@ -17,7 +17,11 @@ This depends on a reform-issue taxonomy: a controlled list that every evidence i
 - **Reform issues:** specific problems, drafted by the agent from the EU requirements found in the sources and approved by the analyst. An issue should be specific enough that a single EU requirement maps clearly to it, and general enough that another country could plausibly face the same issue. Reform issue IDs carry no country code, so the same issue can be found across countries.
 - **Problem mechanisms:** a short fixed list of underlying reasons why reforms stall, such as a legal gap, weak enforcement, lack of institutional independence or vested interests. Two countries can describe an issue differently but share the same mechanism, which is what makes comparison and transferability possible.
 
-The taxonomy is a living file with version numbers. The agent may propose a new issue when evidence fits none of the existing ones, but only the analyst can add, merge, split or retire issues. Retired IDs are never reused, and each new version of the taxonomy triggers a re-run of classification for the evidence affected by the change.
+The taxonomy is a living file with version numbers. The agent may propose a new issue when evidence fits none of the existing ones, but only the analyst can add, merge, split or retire issues. Retired IDs are never reused, and each new version of the taxonomy triggers a re-run of classification for the evidence affected by the change. The evidence of a closed run keeps the taxonomy version it was classified with.
+
+The taxonomy is shared by all countries, which is what makes comparison possible. A country's evidence is assigned to an existing issue only where the issue's definition genuinely fits; it is never stretched to fit an issue first defined from another country's evidence. Evidence that fits no issue goes to the unmatched queue and may lead to a new shared issue, proposed at the run's taxonomy or classification gate.
+
+Issues are usually derived from EU requirements. A problem raised only by national or independent sources may also be proposed as an issue when it falls within the scope and more than one source raises it. Its definition states that the EU material does not raise it, that origin is shown wherever the issue is reported, and under the judgement rules such evidence never raises priority on its own.
 
 Information should also connect across **time**, allowing the tool to follow how the same issue develops across several years and link assessments, reforms and outcomes. To do this reliably, the publication date of a document, the period it covers and the date of the event described are recorded separately.
 

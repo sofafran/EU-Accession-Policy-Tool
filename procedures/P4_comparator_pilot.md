@@ -1,10 +1,12 @@
-# Procedure P4: Comparator pilot, run 1b
+# Procedure P4: Comparator step (run 1b in the alpha)
 
 Read this file before starting the comparator pilot. It applies only to the two or three reform issues chosen at G6. It reuses stages 1 to 11 on a small scale, with gates marked with the suffix `b` (G1b, G2b, G5b, G6b) in the gate log. Follow "Around every gate" in procedure P1 for the learning log and the review page; comparator material appears in its own section of the page.
 
 ## Step 1: Record the expansion
 
 Add a limits log entry stating that comparator evidence is being gathered for the named issues only, as a deliberate expansion approved at G6, with no full country model.
+
+In runs after the alpha, choose comparators first from countries already in the project: their validated evidence, judgements and cases are reused and not collected again (E19). Collect new comparator evidence only where a needed comparator is missing, for example a member state that reformed before accession. A comparator country's own validated judgements are context for the comparison; they are never evidence about the target country.
 
 ## Step 2: Choose comparator countries (gate G1b)
 
@@ -19,6 +21,8 @@ Candidates include other accession countries and recent member states. Propose c
 ## Step 3: Acquire and register (gate G2b)
 
 Follow stages 2 to 4 of procedure P1, filing documents under `sources/<country code>/<family>/`. Comparator documents are registered with `role` `comparator`. Present a short G2b package.
+
+When G2b or G5b passes under a standing instruction from the analyst, first run an automatic check of every comparator source and item against the active limits (time window, languages, public sources only), and list any breach in the gate log notes for the analyst to confirm at G6b (PC-16).
 
 ## Step 4: Extract and classify (gate G5b)
 

@@ -1,10 +1,10 @@
 # CLAUDE.md: EU Accession Reform Intelligence Tool
 
-You are working on an AI-enabled analytical tool that turns EU accession assessments into reform priorities and practical policy options. RUN-2026-01 is an alpha product and methodology test: it produces analysis and also tests the workflow, the method and the review page, so that lessons can inform scaling to more chapters, clusters and countries. Your role is to extract, organise and propose. The analyst decides. The method is set out in seven codebooks; this file tells you how to work within it.
+You are working on an AI-enabled analytical tool that turns EU accession assessments into reform priorities and practical policy options. RUN-2026-01, the North Macedonia alpha, tested the method and is closed. The method is now being scaled country by country, one run per country, following `runs/rollout_plan.md` (decision E19). North Macedonia is the methodological baseline, not a substantive template. Your role is to extract, organise and propose. The analyst decides. The method is set out in seven codebooks; this file tells you how to work within it.
 
 ## Start of every session
 
-1. Read the active run record in `runs/` (currently `runs/RUN-2026-01/run_record.md`) and the last entries in `registers/gate_log.csv`.
+1. Read the active run record and the last entries in `registers/gate_log.csv`. The active run is the latest `runs/RUN-*` folder with a run record (`runs/_template/` is not a run). On 2 November 2026 that is still the closed RUN-2026-01; no country run has started. Read `runs/rollout_plan.md` too.
 2. Read `current_stage` in the run record to see which stage the run is at, and check it against the last gate decision. Update `current_stage` every time you start a new stage.
 3. Read the procedure for that stage in `procedures/` before doing anything, and the rules file it names.
 4. Tell the analyst in one or two sentences where the run stands and what you propose to do next.
@@ -14,19 +14,23 @@ You are working on an AI-enabled analytical tool that turns EU accession assessm
 | 0 to 4: setup and sources | `procedures/P1_setup_and_sources.md` | Codebook 2 | G0, G1, G2 |
 | 5 to 8: extraction and taxonomy | `procedures/P2_extraction.md` | `rules/extraction_rules.md` | G3, G4 |
 | 9 to 11: classification and assessment | `procedures/P3_classification_and_assessment.md` | `rules/classification_rules.md`, `rules/judgement_rules.md` | G5, G6 |
-| Run 1b comparator pilot | `procedures/P4_comparator_pilot.md` | all rules | G1b, G2b, G5b, G6b |
+| Comparator step (run 1b in the alpha) | `procedures/P4_comparator_pilot.md` | all rules | G1b, G2b, G5b, G6b |
 | 12 to 14: outputs, close, next run | `procedures/P5_outputs_and_close.md` | Codebook 7 | G7, G8 |
 
-## Current scope (RUN-2026-01)
+## Current scope
 
-- North Macedonia (MKD) only.
-- All of Chapter 2 (Freedom of movement for workers) in its EU meaning: rights and access of EU and foreign workers, labour-market access, EURES, social security coordination and EHIC (emigration only where directly linked). See the run record.
-- Recommendations materially relating to technology and AI wherever they occur, as defined in `taxonomy/themes.csv`: the technology or digital issue itself must be the subject. Incidental references, and IT tools mentioned within another sector's reform, are out of scope; digital skills only where directly linked to an in-scope recommendation.
+- **Scope is set per run, in the run record.** The default for every country run is:
+  - all of Chapter 2 (Freedom of movement for workers) in its EU meaning: rights and access of EU and foreign workers, labour-market access, EURES, social security coordination and EHIC (emigration only where directly linked);
+  - recommendations materially relating to technology and AI wherever they occur, as defined in `taxonomy/themes.csv`. The technology or digital issue itself must be the subject. Incidental references, and IT tools mentioned within another sector's reform, are out of scope; digital skills only where directly linked to an in-scope recommendation.
 - Follow the full analytical chain for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Other material is out of scope unless it is needed to follow the chain of an issue already in scope.
-- Evidence from 1 January 2020 to the evidence freeze date in the run record; earlier material only by logged exception.
-- Comparator evidence only in run 1b, only for the issues chosen at G6.
-- English primary; Macedonian or Albanian only for core relevant sources with no suitable English version. Machine translation is flagged and capped at Medium confidence.
-- Active limits are in `registers/limits_log.csv`. Never work outside them. If something useful falls outside the scope, record it in the limits log and tell the analyst.
+- Evidence from 1 January 2020 to the run's evidence freeze date; earlier material only by logged exception.
+- Comparator evidence only in the comparator step, only for the issues chosen at G6, drawn first from countries already in the project.
+- English primary; the target country's official languages only for core relevant sources with no suitable English version. Machine translation is flagged and capped at Medium confidence.
+- **Each country is checked afresh** at its own G0 and G1: accession status, Chapter 2 context, official documents, languages and evidence base. Nothing found for one country is assumed for another.
+- **One shared taxonomy:** classify against existing issues only where they genuinely fit. Never stretch an issue to fit a new country; use the unmatched queue.
+- **Run template:** start a run only when the analyst asks, by copying `runs/_template/`. A country-specific deviation goes in the run record and is approved at G0; the core method is not edited to start a run.
+- **Closed runs:** RUN-2026-01 is closed. Never change its evidence, judgements or outputs, except through its planned 2026 refresh (E18, `runs/RUN-2026-01/refresh_plan.md`), which uses its own rule versions.
+- Active limits are in `registers/limits_log.csv`, by run. Never work outside them. If something useful falls outside the scope, record it in the limits log and tell the analyst.
 
 ## Rules you must never break
 
@@ -68,8 +72,9 @@ Anything else is tier 3.
 | Gate review spreadsheets | `review/<run_id>/` |
 | Outputs | `outputs/<run_id>/` |
 | Helper scripts | `tools/` (specified in `tools/README.md`) |
-| Review page | `index.html` in the repository root, and the analysis mock-up `analysis.html` linked from it, both generated by `tools/build_review_page.py` |
-| Lessons from the run | `runs/<run_id>/alpha_learning_log.csv` (curated); `runs/<run_id>/run_notes.md` (raw diary) |
+| Review and analysis pages | `index.html` (review page of the active run; a closed run keeps `review_<run_id>.html`), the regional page `analysis.html` and one country page per run in `analysis/<country code>.html`, all generated by `tools/build_review_page.py` |
+| Rollout plan and run template | `runs/rollout_plan.md`, `runs/_template/` |
+| Lessons from the run | `runs/<run_id>/learning_log.csv` (curated; `alpha_learning_log.csv` in RUN-2026-01); `runs/<run_id>/run_notes.md` (raw diary) |
 
 ## Working conventions
 
@@ -81,10 +86,10 @@ Anything else is tier 3.
 - **Conflicting evidence:** record it with `contradicts` links and report it. Do not resolve it silently.
 - **Writing:** plain British English, full sentences, no em dashes. Outputs cite evidence item IDs in an annex, not in the running text.
 - **Talking to the analyst:** keep updates short; say what you did, what needs a decision, and where the file is.
-- **Review page:** `index.html` is the human-facing review interface for the alpha, with the analysis mock-up `analysis.html` linked from it (decision E11); the same tool rebuilds both, and the analysis page shows only real evidence or labelled placeholders, never items from a hand-coding passage that has not been hand-coded. Rebuild it when a gate package is prepared and again after the gate decision, following "Around every gate" in procedure P1. Label everything shown as `Validated`, `Pending review`, `Proposed`, `Draft` or `Not started`; never present anything as validated before its gate has passed. Never put analysis on the page that does not exist in the project files. The page is not the gate-decision mechanism: decisions stay in the review spreadsheets and `registers/gate_log.csv`.
-- **Alpha reviewer:** George reviews the developing product and the review page throughout the run, but is a formal approver only at the gates named in the run record. George's feedback reaches the analyst separately; when the analyst passes on material feedback, record it in the alpha learning log and, where relevant, in the decision log, limits log or run record.
-- **Lessons:** note problems as they arise in `run_notes.md` (low threshold). When a lesson is material, especially for scaling, propose a row in `alpha_learning_log.csv` that cites the note, decision, limit or gate instead of repeating it. Rows stay `open` until the analyst confirms their status at a gate.
+- **Pages:** `index.html` is the human-facing review interface for the active run. `analysis/<country code>.html` is the run's country page: a draft review aid before G7, the navigable product page after it. `analysis.html` is the regional page, which compares countries using validated judgements only, after each country's G6 (decisions E11, E17, E19). The same tool rebuilds all of them, and the pages show only real evidence or labelled placeholders, never items from a hand-coding passage that has not been hand-coded. Rebuild them when a gate package is prepared and again after the gate decision, following "Around every gate" in procedure P1. Label everything shown as `Validated`, `Pending review`, `Proposed`, `Draft` or `Not started`; never present anything as validated before its gate has passed. Never put analysis on the page that does not exist in the project files. The page is not the gate-decision mechanism: decisions stay in the review spreadsheets and `registers/gate_log.csv`.
+- **Other reviewers:** George, and any reviewers named in a run record, review the developing product and the pages, but are formal approvers only at the gates named in the run record. Their feedback reaches the analyst separately; when the analyst passes on material feedback, record it in the learning log and, where relevant, in the decision log, limits log or run record.
+- **Lessons:** note problems as they arise in `run_notes.md` (low threshold). When a lesson is material, especially for scaling, propose a row in the run's learning log that cites the note, decision, limit or gate instead of repeating it. Rows stay `open` until the analyst confirms their status at a gate.
 
 ## If the method seems wrong
 
-If a codebook, rule or procedure seems to produce poor results, keep following it, record the problem with examples in `runs/<run_id>/run_notes.md`, propose an alpha learning log row if it is material, and raise it at the next gate as a proposed change. Do not change the method on your own.
+If a codebook, rule or procedure seems to produce poor results, keep following it, record the problem with examples in `runs/<run_id>/run_notes.md`, propose a learning log row if it is material, and raise it at the next gate as a proposed change. Do not change the method on your own.

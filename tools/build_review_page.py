@@ -10,10 +10,10 @@ from html import escape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
+from common import (country_name, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.3.0"
+__version__ = "1.4.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -165,7 +165,7 @@ class Page:
         if not gate_passed(self.decisions, "G8"):
             return None
         _, js = read_csv(self.root / "judgements" / "judgements.csv")
-        iss = [j for j in js if j["object_type"] == "issue_country"]
+        iss = [j for j in js if j["object_type"] == "issue_country" and j["object_id"].endswith("@" + run_country(self.root, self.run))]
         cnt = lambda t, v: sum(1 for j in iss if j["judgement_type"] == t and j["value"] == v)
         n = len({j["object_id"] for j in iss})
         out_dir = self.root / "outputs" / self.run
@@ -183,11 +183,11 @@ class Page:
         ]
         review = self.root / "runs" / self.run / "run_review.md"
         link = f'<p><a href="{escape(review.relative_to(self.root).as_posix())}">Read the run review</a> for the gate history, error rates, approved changes and scaling readiness.</p>' if review.exists() else ""
-        return "Alpha completed " + label("Validated"), facts(facts_) + link
+        return ("Alpha completed " if self.run == "RUN-2026-01" else "Run completed ") + label("Validated"), facts(facts_) + link
 
     def summary_link(self):
         """Prominent link to the management summary of a completed alpha, if the page exists."""
-        if not (self.root / "alpha_summary.html").exists():
+        if self.run != "RUN-2026-01" or not (self.root / "alpha_summary.html").exists():
             return ""
         return ('<section class="notice" aria-label="Alpha summary"><h2>Alpha summary for management</h2>'
                 "<p>A short, plain-English page on what the alpha built, what it found, what it taught us and the choices for the next run, "
@@ -202,8 +202,10 @@ class Page:
             text = ("A single scrolling page that shows how the evidence and, later, the analysis are being built, section by section along "
                     "the analytical chain. It is a draft review aid, not a product.")
             title = "Analysis mock-up"
+        cc = run_country(self.root, self.run)
         return (f'<section class="notice" aria-label="{title}"><h2>{title}</h2><p>{text}</p>'
-                '<p><a class="button" href="analysis.html">Open the analysis page</a></p></section>')
+                f'<p><a class="button" href="analysis/{cc}.html">Open the {escape(country_name(cc))} page</a> '
+                '<a class="button" href="analysis.html">Open the regional page</a></p></section>')
 
     def status(self, gate, has_data):
         if gate_passed(self.decisions, gate):
@@ -409,7 +411,8 @@ class Page:
         return "Outputs " + label(st), table(["File", "Status", "Note"], rows)
 
     def lessons(self):
-        _, rows = read_csv(self.root / "runs" / self.run / "alpha_learning_log.csv")
+        lp = lessons_path(self.root, self.run)
+        _, rows = read_csv(lp)
         pend = self.current_package() is not None
 
         def st(r):
@@ -419,7 +422,7 @@ class Page:
             if s == "open":
                 return label("Pending review" if pend else "Proposed")
             return escape(s)
-        body = f'<p class="sub">Curated lessons from <code>runs/{escape(self.run)}/alpha_learning_log.csv</code>. Each is confirmed by the analyst at a gate.</p>'
+        body = f'<p class="sub">Curated lessons from <code>runs/{escape(self.run)}/{escape(lp.name)}</code>. Each is confirmed by the analyst at a gate.</p>'
         body += table(["ID", "Area", "Lesson", "Scaling", "Status"], [
             [escape(r["lesson_id"]), escape(r["area"].replace("_", " ")), escape(r["description"]),
              escape(r["scaling_dimension"].replace(";", "; ")), st(r)] for r in rows]) if rows else placeholder("No lessons recorded yet.")
@@ -499,6 +502,7 @@ class AnalysisPage(Page):
 
     def __init__(self, root, run, today):
         super().__init__(root, run, today)
+        self.cc = run_country(root, run)
         self.reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
         self.items, self.withheld = self.load_items()
 
@@ -521,6 +525,8 @@ class AnalysisPage(Page):
                 if any(p["source_id"] == data["source_id"] and it["location"].get("page") == int(p["page"])
                        and norm(it["stated_text"]) in t for p, t in open_passages):
                     withheld += 1
+                    continue
+                if it.get("country") != self.cc or it.get("role", "target") != "target":
                     continue
                 it["_source"] = data["source_id"]
                 it["_status"] = data["extraction"]["status"]
@@ -691,7 +697,7 @@ class AnalysisPage(Page):
         _, limits = read_csv(self.root / "registers" / "limits_log.csv")
         act = [r for r in limits if r["run_id"] == self.run and r["status"] == "active"]
         body = "<h3>Active limits</h3>" + table(["ID", "Type", "Limit"], [[escape(r["limit_id"]), escape(r["limit_type"]), escape(r["description"])] for r in act])
-        _, lessons = read_csv(self.root / "runs" / self.run / "alpha_learning_log.csv")
+        _, lessons = read_csv(lessons_path(self.root, self.run))
         body += "<h3>Alpha lessons</h3>" + table(["ID", "Lesson", "Status"], [[escape(r["lesson_id"]), escape(r["description"]), escape(r["status"])] for r in lessons])
         return "Limits and alpha lessons", body
 
@@ -709,7 +715,7 @@ class AnalysisPage(Page):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accession Alpha Analysis</title>
+<title>{escape(country_name(self.cc))} Analysis Draft</title>
 <!-- Generated by tools/build_review_page.py {__version__} on {self.today}. Do not edit by hand: rebuild instead. Draft review aid, not a product. -->
 <style>{CSS}</style>
 </head>
@@ -717,11 +723,11 @@ class AnalysisPage(Page):
 <div class="wrap">
 <header>
 <h1>Analysis mock-up: {escape(self.rec.get("Target country", ""))}</h1>
-<p class="sub">{escape(self.run)} · Draft review aid · Page updated {escape(self.today)} · <a href="index.html">Back to the review page</a></p>
+<p class="sub">{escape(self.run)} · Draft review aid · Page updated {escape(self.today)} · <a href="../analysis.html">All countries</a> · <a href="../index.html">Back to the review page</a></p>
 </header>
 <nav class="sticky" aria-label="Sections">{nav}</nav>
 {body}
-<footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Quotes are shown word for word with their item IDs; translations from Macedonian are machine translations. <a href="index.html">Back to the review page</a>.</p></footer>
+<footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Quotes are shown word for word with their item IDs; translations from languages other than English are machine translations. <a href="../index.html">Back to the review page</a>.</p></footer>
 </div>
 </body>
 </html>
@@ -730,29 +736,45 @@ class AnalysisPage(Page):
 
 def main(argv=None):
     p = argparse.ArgumentParser(
-        description="Regenerate index.html, and the analysis mock-up analysis.html linked from it, from the run record, gate log, limits log, registers, taxonomy, evidence, judgements, outputs "
-                    "and alpha learning log. Each page is one self-contained file (inline styles, no external scripts or fonts). Status labels "
-                    "come from the gate log, review packages and review statuses, never from the tool's own judgement.")
-    p.add_argument("--run", default="RUN-2026-01", help="run ID (default RUN-2026-01)")
+        description="Regenerate the review page of a run (index.html for the active run; review_<run_id>.html is also kept for a closed run), "
+                    "the run's country page analysis/<country code>.html and the regional page analysis.html, from the run record, gate log, "
+                    "limits log, registers, taxonomy, evidence, judgements, outputs and learning log. Each page is one self-contained file "
+                    "(inline styles, no external scripts or fonts). Status labels come from the gate log, review packages and review statuses, "
+                    "never from the tool's own judgement.")
+    p.add_argument("--run", help="run ID (default: the active run, the latest run with a run record)")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
-    p.add_argument("--output", help="file to write (default index.html in the project root)")
-    p.add_argument("--analysis-output", help="analysis page to write (default analysis.html next to the review page)")
+    p.add_argument("--output", help="review page to write (default index.html in the project root for the active run, else review_<run_id>.html)")
+    p.add_argument("--analysis-output", help="country page to write (default analysis/<country code>.html next to the review page)")
+    p.add_argument("--regional-output", help="regional page to write (default analysis.html next to the review page)")
     p.add_argument("--date", help="date shown on the page (default today, YYYY-MM-DD)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = project_root(a.root)
-    page = Page(root, a.run, a.date or dt.date.today().isoformat())
-    out = Path(a.output) if a.output else root / "index.html"
-    out.write_text(page.render(), encoding="utf-8")
+    runs = runs_with_records(root)
+    run = a.run or runs[-1]
+    page = Page(root, run, a.date or dt.date.today().isoformat())
+    active = run == runs[-1]
+    out = Path(a.output) if a.output else root / ("index.html" if active else f"review_{run}.html")
+    html = page.render()
+    out.write_text(html, encoding="utf-8")
     print(f"wrote {out}")
-    analysis = Path(a.analysis_output) if a.analysis_output else out.parent / "analysis.html"
-    if gate_passed(page.decisions, "G7") and (root / "outputs" / a.run).exists():
+    if not a.output and active and gate_passed(page.decisions, "G8"):
+        (root / f"review_{run}.html").write_text(html, encoding="utf-8")  # a closed run keeps its review page once a later run takes index.html
+        print(f"wrote {root / f'review_{run}.html'}")
+    cc = run_country(root, run)
+    analysis = Path(a.analysis_output) if a.analysis_output else out.parent / "analysis" / f"{cc}.html"
+    analysis.parent.mkdir(parents=True, exist_ok=True)
+    if gate_passed(page.decisions, "G7") and (root / "outputs" / run).exists():
         from product_page import ProductPage
         html = ProductPage(page).render(CSS, __version__, page.today)
     else:
-        html = AnalysisPage(root, a.run, page.today).render()
+        html = AnalysisPage(root, run, page.today).render()
     analysis.write_text(html, encoding="utf-8")
     print(f"wrote {analysis}")
+    from regional_page import RegionalPage
+    regional = Path(a.regional_output) if a.regional_output else out.parent / "analysis.html"
+    regional.write_text(RegionalPage(root, page.today, __version__).render(CSS), encoding="utf-8")
+    print(f"wrote {regional}")
     return 0
 
 

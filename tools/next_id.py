@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (FAMILIES, ITEM_ID_RE, SOURCE_ID_RE, evidence_files,  # noqa: E402
                     project_root, read_csv, read_json)
 
-__version__ = "1.1.0"
+__version__ = "1.2.0"
 
 # type: (csv path, id column, prefix template, digits)
 SIMPLE = {
@@ -85,11 +85,14 @@ def main(argv=None):
     p.add_argument("--year", help="publication year (source)")
     p.add_argument("--source-id", help="source ID (item)")
     p.add_argument("--area", help="reform issue area code (issue)")
-    p.add_argument("--run", default="RUN-2026-01", help="run ID (lesson); default RUN-2026-01")
+    p.add_argument("--run", help="run ID (lesson); default: the active run, the latest run with a run record")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = project_root(a.root)
+    if not a.run:
+        from common import runs_with_records
+        a.run = runs_with_records(root)[-1]
 
     def need(*names):
         missing = [n for n in names if not getattr(a, n.replace("-", "_"))]
@@ -118,8 +121,9 @@ def main(argv=None):
         need("country")
         print(next_with_country(root, "entities/actors.csv", "actor_id", "ACT", a.country))
     elif a.type == "lesson":
-        rel = f"runs/{a.run}/alpha_learning_log.csv"
-        print(fmt("ALN-", max_seq(ids_in(root, rel, "lesson_id"), "ALN-", 4) + 1, 4))
+        from common import lessons_path, runs_with_records
+        rels = {lessons_path(root, r).relative_to(root).as_posix() for r in runs_with_records(root) + [a.run]}  # lesson IDs are never reused across runs
+        print(fmt("ALN-", max_seq([i for rel in sorted(rels) for i in ids_in(root, rel, "lesson_id")], "ALN-", 4) + 1, 4))
     return 0
 
 

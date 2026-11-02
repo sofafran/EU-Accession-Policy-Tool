@@ -9,9 +9,9 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
+from common import lessons_path, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.12.0"
+__version__ = "1.13.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -85,9 +85,9 @@ def validation_lines(root):
 
 
 def lessons_sheet(root, run):
-    header, rows = read_csv(root / "runs" / run / "alpha_learning_log.csv")
+    header, rows = read_csv(lessons_path(root, run))
     header = header + ["reviewer_decision", "reviewer_comment"] if header else ["lesson_id"]
-    return table_sheet("Alpha lessons", header, rows, first=lambda r: r.get("status") == "open")
+    return table_sheet("Lessons", header, rows, first=lambda r: r.get("status") == "open")
 
 
 def decision_register(root):
@@ -121,7 +121,7 @@ def g0(root, run):
         ["Helper tools", rec.get("Tools versions", ""), "Approve (sheet 'Tools')"],
         ["Active limits", ", ".join(r["limit_id"] for r in active), "Approve (sheet 'Active limits')"],
         ["Decisions behind this configuration", "", "Confirm the decisions taken for this run (sheet 'Decision register')"],
-        ["Alpha lessons", ", ".join(r["lesson_id"] for r in read_csv(root / "runs" / run / "alpha_learning_log.csv")[1] if r["status"] == "open"), "Set a status for each (sheet 'Alpha lessons')"],
+        ["Lessons", ", ".join(r["lesson_id"] for r in read_csv(lessons_path(root, run))[1] if r["status"] == "open"), "Set a status for each (sheet 'Lessons')"],
     ]
     return "G0_run_setup.xlsx", [
         ("Decisions needed", ["item", "current value", "decision needed", "reviewer_decision", "reviewer_comment"], [n + ["", ""] for n in needed]),
@@ -599,7 +599,7 @@ def g6(root, run):
     val = {(j["object_id"], j["judgement_type"]): j for j in js}
     for r in issues:
         x = r["issue_id"]
-        oid = x + "@MKD"
+        oid = x + "@" + run_country(root, run)
         g = lambda t: val.get((oid, t), {}).get("value", "")
         index.append([x, r["label"], g("priority"), g("direction_of_travel"), g("unresolved_gap"), g("tractability"), str(len(by.get(x, [])))])
         rows = [["ISSUE", x, r["label"], r["definition"], "", "", "", ""]]
@@ -773,12 +773,13 @@ def main(argv=None):
                     "so the analyst never reads raw JSON. Version 1.3.0 builds G0, G1, G2, G3 (with a comparison against any earlier sample kept in review/<run_id>/sample_<rules version>/) and the stage 5 hand-coding workbook "
                     "(from review/<run_id>/G3_passages.csv and G3_sample.csv); sheets for later gates are added and tested before those gates are reached.")
     p.add_argument("gate", choices=sorted(BUILDERS), help="gate to build the package for")
-    p.add_argument("--run", default="RUN-2026-01", help="run ID (default RUN-2026-01)")
+    p.add_argument("--run", help="run ID (default: the active run, the latest run with a run record)")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--force", action="store_true", help="overwrite a workbook the analyst fills in (hand-coding, review sample)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = project_root(a.root)
+    a.run = a.run or runs_with_records(root)[-1]
     built = BUILDERS[a.gate](root, a.run)
     name, sheets, dropdowns = built if len(built) == 3 else (*built, None)
     out = root / "review" / a.run / name

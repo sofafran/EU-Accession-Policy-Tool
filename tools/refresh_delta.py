@@ -3,7 +3,7 @@
 propose links and re-judge only the affected issues. Reads only; writes one review spreadsheet (CSV). Adds no analysis:
 the columns `proposed_link_type`, `proposed_effect` and `note` are left blank for the agent to fill and the analyst to review.
 
-Usage: python3 tools/refresh_delta.py --sources MKD-EU-2026-0NN [MKD-EU-2026-0NN ...] [--run RUN-2026-01]
+Usage: python3 tools/refresh_delta.py --sources CCC-EU-2026-0NN [CCC-EU-2026-0NN ...] [--run <run_id>]
 Output: review/<run>/refresh/refresh_delta.csv (one row per in-scope item of the new sources), and a summary on screen.
 """
 
@@ -15,9 +15,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_outputs import load  # noqa: E402
-from common import project_root, split_list  # noqa: E402
+from common import project_root, runs_with_records, split_list  # noqa: E402
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 COLS = ["item_id", "source_id", "chain_link", "reform_issue_ids", "summary", "earlier_items_same_issue_and_link",
         "current_direction", "current_priority", "current_gap", "proposed_link_type", "proposed_effect", "note"]
 
@@ -25,11 +25,12 @@ COLS = ["item_id", "source_id", "chain_link", "reform_issue_ids", "summary", "ea
 def main(argv=None):
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     p.add_argument("--sources", nargs="+", required=True)
-    p.add_argument("--run", default="RUN-2026-01")
+    p.add_argument("--run", help="run ID (default: the active run, the latest run with a run record)")
     p.add_argument("--root", default=None)
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = Path(a.root) if a.root else project_root()
+    a.run = a.run or runs_with_records(root)[-1]
     D = load(root, a.run)
     J = {}
     for j in D["js"]:
@@ -51,7 +52,7 @@ def main(argv=None):
             issues[x] += 1
             earlier += [e for e in D["by"].get(x, []) if e not in new and D["items"][e]["pass2"]["chain_link"] == i["pass2"]["chain_link"]
                         and (D["items"][e]["dates"].get("publication_date") or "") >= "2024"]
-        g = lambda t: "; ".join(f"{x}: {J.get((x + '@MKD', t), {}).get('value', '')}" for x in xs)
+        g = lambda t: "; ".join(f"{x}: {J.get((x + '@' + D['cc'], t), {}).get('value', '')}" for x in xs)
         rows.append({"item_id": k, "source_id": i["_source"], "chain_link": i["pass2"]["chain_link"], "reform_issue_ids": ";".join(xs),
                      "summary": i["summary"], "earlier_items_same_issue_and_link": ";".join(sorted(set(earlier))),
                      "current_direction": g("direction_of_travel"), "current_priority": g("priority"), "current_gap": g("unresolved_gap"),

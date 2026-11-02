@@ -1,5 +1,5 @@
 // Headless check of the analysis product page (navigation, filters, search, anchors, labels).
-// Usage: npm i jsdom@24.1.3 in a scratch folder, then: NODE_PATH=<that folder>/node_modules node tools/tests/analysis_page_test.js analysis.html
+// Usage: npm i jsdom@24.1.3 in a scratch folder, then: NODE_PATH=<that folder>/node_modules node tools/tests/analysis_page_test.js analysis/MKD.html
 const fs = require('fs'); const { JSDOM } = require('jsdom');
 const html = fs.readFileSync(process.argv[2], 'utf8');
 let ok = 0, bad = 0; const t = (n, c) => { if (c) ok++; else { bad++; console.log('FAIL', n); } };

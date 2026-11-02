@@ -1,6 +1,6 @@
 # Judgement rules
 
-Version 0.4, 2 November 2026. Status: approved at G6b (GATE-0011). Changes create a new version and are listed in the change log at the end of this file.
+Version 0.5, 2 November 2026. Status: approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17, applied on 2 November 2026 before RUN-2026-02 (decision E19). Changes create a new version and are listed in the change log at the end of this file. Version 0.4 was approved at G6b of RUN-2026-01 (GATE-0011).
 
 These rules tell the agent how to make first-cut judgements. The questions, scales and criteria are defined in Codebook 6, which takes precedence if the two ever differ. This file adds the operational detail.
 
@@ -38,7 +38,7 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 - **Source quality:** fill in the six factor columns first (yes, partly, no or not applicable; primary or secondary), then the overall value. A source can have different ratings for different chapters or themes.
 - **Evidence confidence:** apply the Codebook 6 criteria. Cap at Medium if `machine_translated` is true. Lower by one level if the item is flagged `hedged` or `ocr`, unless the claim is corroborated.
 - **Direction of travel:** base it on the sequence of EU standard-scale wording across years (`preparation_level`, `progress_level`) first, then on independent evidence. Cite the items for each year used. If the Commission wording is unchanged for three or more reports, the default is `persistent`. Use only wording with `eu_scale.applies_to` `chapter` for a chapter-wide issue; use `sub_area` wording only for an issue that matches that sub-area, and say so in the reason. The standard scale rates a whole chapter. For an issue that comes from a cross-cutting theme, or that is only part of a chapter, use the chapter's scale as context only: base the judgement on the issue's own items (repeated or changed recommendations and findings) and say in the reason that the scale was not decisive.
-- **Unresolved gap:** compare the latest EU requirement items for the issue with the implementation status of the interventions that respond to them. At stage 10 these statuses are still proposals, so say so in the reason; the reviewers check both together at G6. Describe in one sentence what remains.
+- **Unresolved gap:** compare the latest EU requirement items for the issue with the implementation status of the interventions that respond to them. At stage 10 these statuses are still proposals; the reviewers check both together at G6. Do not mention their proposal status in the reason (see wording of reasons). Describe in one sentence what remains.
 - **Success and attribution:** only judge an outcome that has a `leads_to` link. Never judge success from government reporting alone (Codebook 2).
 - **Priority:** consider whether the issue appears in EU benchmarks or repeated key recommendations, and how central it is to the chapter or theme. **Tractability:** consider the mechanisms involved, the actors needed and evidence of past progress.
 - **Priority test (G6-D02):** High usually means the issue is named in a benchmark, Reform Agenda payment condition or key recommendation repeated across three or more reports, and is central to the chapter or theme. A core acquis requirement repeated across three or more reports, with no progress recorded in the main findings, can also be High; say why. Evidence volume, and national or audit material, never raise priority. Calibrate priority across all issues before a gate.
@@ -46,6 +46,10 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 - **Regional evidence:** a claim that does not name the target country may support an issue but cannot alone support a finding about the country.
 - **Versions of one report:** count once.
 - **Conflicting evidence:** when items contradict each other, say so in the reason and cite both sides. Do not resolve a conflict by choosing the higher-quality source without saying so.
+- **Wording of reasons (PC-08):** write each reason in final, third-person wording, as it will appear in the outputs. Never refer to the stage, to proposals or to review statuses. A reason that says sources conflict must cite a `contradicts` link, or be reworded. Before G6, check each reason against its value and the items it cites.
+- **Claims of absence (PC-09):** a reason that says something is absent (no item, no evidence, not mentioned) states the search behind it, across all of the country's items. Inputs to an agent making a judgement are never truncated by count.
+- **Helper agents (PC-10):** briefs to helper agents are checked against these rules before use. A brief never applies a stricter test than these rules; any stricter test is logged as a proposed rule change instead.
+- **Several countries:** judgements are made for one country on its own evidence. Another country's judgement on the same issue is never evidence for this country, except through the comparator step.
 
 ## 4. Re-runs
 
@@ -53,6 +57,8 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 - If new evidence or a new rules version would change such a judgement, add a new proposed row whose `supersedes` field names the old judgement, set `rereview_flag` to `yes` on the old row (the only field that may be touched), and list both in the gate package for the next G6. The old judgement stays validated and in use until the analyst decides.
 
 ## Change log
+
+- 0.5 (2 Nov 2026): PC-08 to PC-10 (GATE-0013), applied before RUN-2026-02 (E19). Final wording of reasons and a reason-value check before G6; searches behind claims of absence and no truncated inputs; helper briefs checked against the rules; each country judged on its own evidence.
 
 - 0.4 (2 Nov 2026): approved at G6b (GATE-0011, G6b-D05 Option A). Transferability may also attach to a comparator case, one judgement per case, using the case's transferable and not-transferable statements as its conditions, labelled agent synthesis.
 - 0.3 (30 Oct 2026): approved at G6 (GATE-0007). Priority test, legal progress, regional evidence and versions of one report added.

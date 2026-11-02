@@ -10,6 +10,8 @@ The first run covers **North Macedonia: all of Chapter 2 (Freedom of movement fo
 
 RUN-2026-01 is an **alpha product and methodology test**. Besides the analysis, it tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, the outputs, and the usefulness of a single review page (`index.html`). Material lessons are kept in an alpha learning log and inform scaling to further chapters, clusters and countries.
 
+**Multi-country rollout (decision E19, 2 November 2026).** After the alpha closed, the same method is applied country by country, one run per accession country, in the order of `runs/rollout_plan.md`: Montenegro, Albania, Moldova, Ukraine, Serbia, Bosnia and Herzegovina, Georgia, Türkiye and Kosovo. The shared core stays as described below: codebooks, rules, procedures, data model, one shared taxonomy, registers, judgements and tools. Each run adds a folder created from `runs/_template/`, with a run record that holds the country settings and any approved deviation. Each country is checked afresh at its own G0 and G1. Issue judgements are stored per country (`RI-FMW-007@MNE`), and the regional page `analysis.html` compares only validated judgements, after each country's G6. Each country also has its own page, `analysis/<code>.html`. The descriptions of run 1 below are kept as the alpha's design record.
+
 ## 2. Decisions at a glance
 
 | ID | Decision | Agreed outcome |
@@ -238,8 +240,11 @@ Version 1.2 of Codebooks 1 to 6 and version 1.1 of Codebook 7 (29 October 2026) 
 
 ```
 eu-accession-tool/
-  index.html                 review page (generated; hosted on GitHub Pages)
-  analysis.html              analysis mock-up linked from the review page (generated; decision E11)
+  index.html                 review page of the active run (generated; hosted on GitHub Pages)
+  review_<run_id>.html       review page kept for each closed run (generated)
+  analysis.html              regional landing page: countries, headlines, priority issues, themes, comparison (generated; E19)
+  analysis/<code>.html       one page per country (generated; E11, E17, E19)
+  alpha_summary.html         management summary of the North Macedonia alpha (written by hand; E16)
   CLAUDE.md                  instructions every agent session reads first
   ARCHITECTURE.md            this document
   codebooks/                 Codebooks 1 to 7 (Markdown) and CHANGELOG.md
@@ -253,9 +258,11 @@ eu-accession-tool/
   entities/                  interventions, actors, comparator cases
   links/                     links between records
   judgements/                source quality and all other judgements
-  review/RUN-2026-01/        spreadsheets prepared for each gate
-  outputs/RUN-2026-01/       run outputs
-  runs/RUN-2026-01/          run record, run notes, alpha learning log and, at the end, run review
+  review/<run_id>/           spreadsheets prepared for each gate
+  outputs/<run_id>/          run outputs
+  runs/<run_id>/             run record, run notes, learning log and, at the end, run review
+  runs/_template/            run template for a new country run (E19)
+  runs/rollout_plan.md       multi-country rollout plan (E19)
   decisions/                 architecture decision log
   tools/                     helper scripts (specified, built at stage 0)
 ```

@@ -1,6 +1,6 @@
 # Run record: RUN-2026-01
 
-Status: **closed: completed North Macedonia alpha (G8 passed, GATE-0013, 2 November 2026). Next-run scope to be decided after review of the completed alpha. Refresh with the 2026 Enlargement Package prepared (E18), awaiting publication**
+Status: **closed: completed North Macedonia alpha (G8 passed, GATE-0013, 2 November 2026). Next step decided on 2 November 2026: multi-country rollout (E19, `runs/rollout_plan.md`). Refresh with the 2026 Enlargement Package prepared (E18), awaiting publication**
 
 | Field | Value |
 |---|---|
@@ -68,3 +68,4 @@ These settings apply the country-neutral procedures to this run.
 - **G0 (29 Oct 2026):** passed with conditions (GATE-0001). The condition on the alpha lessons was met the same day: Sofia reviewed plain-language versions and set ALN-0001 and ALN-0003 to `implemented` and ALN-0002 to `accepted` (to be checked at G3 and G5). The other conditions stay open: verify the accession and cluster status at stage 1; leave the area codes to G4; keep the process flow gap recorded.
 - Active limits for this run are listed in `registers/limits_log.csv` (LIM-0008 to LIM-0035). LIM-0001 to LIM-0006 were recorded for the earlier Serbia configuration, and LIM-0007 before the review page was agreed; all were superseded on 29 Oct 2026, before G0.
 - On 29 Oct 2026, before G0 and before any acquisition or extraction, the pilot was reconfigured from Serbia, Chapter 5 (Public procurement) to the scope above. The run kept its ID. Decisions behind this scope are recorded in `decisions/decision_log.md` (A5 to A9, D6, E5 to E9 and F2).
+- **Multi-country rollout (2 Nov 2026, E19).** Sofia decided the next step left open at G8 (G8-D03): the method is scaled to nine further countries, one run each, with this alpha as the methodological baseline. The shared method moved to new versions with PC-01 to PC-17 (PC-11 carried to RUN-2026-02 G4). This run keeps the versions recorded above; none of its evidence, judgements or outputs changed. Its country page moved to `analysis/MKD.html` with the same content; `analysis.html` is now the regional page, and this run's review page is also kept as `review_RUN-2026-01.html`.

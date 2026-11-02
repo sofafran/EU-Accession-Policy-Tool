@@ -1,6 +1,6 @@
 # EU Accession Reform Intelligence Tool | Data architecture
 
-Version 1.2, 29 October 2026. Made country-neutral, with scope and theme tags added to the first pass, when the pilot was reconfigured before gate G0 (decisions D6 and F2). Version 1.1 followed the architecture review (decisions B2, C1, C2, C3, D1, D2, D3 and E1).
+Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19). No change in substance to this codebook; the data dictionary (1.5) adds issue IDs on interventions and the comparator case fields. Version 1.2, 29 October 2026. Made country-neutral, with scope and theme tags added to the first pass, when the pilot was reconfigured before gate G0 (decisions D6 and F2). Version 1.1 followed the architecture review (decisions B2, C1, C2, C3, D1, D2, D3 and E1).
 
 This codebook defines how source documents should be prepared, parsed and converted into structured information that can later be matched and assessed.
 

@@ -1,14 +1,23 @@
 # Codebook change log
 
-## Approved at G8 of RUN-2026-01 (GATE-0013, 2 November 2026), to be applied at the start of the next run
+## Version 1.3 (Codebooks 1 to 6) and 1.2 (Codebook 7), 2 November 2026
 
-These changes were approved by Sofia at G8 and are not yet applied. Each will be applied as a new version (Codebooks 1.3 and 1.2 for Codebook 7, extraction rules 0.5, classification rules 0.4, judgement rules 0.5, taxonomy 1.2 after review, data dictionary 1.5) when the next run starts, and this entry will then be replaced by the version entries. Full wording and reasons: `runs/RUN-2026-01/run_review.md`, section 5, and `review/RUN-2026-01/G8_proposed_changes.csv`.
+The changes PC-01 to PC-17, approved by Sofia at G8 of RUN-2026-01 (GATE-0013), applied as new shared-core versions before RUN-2026-02, together with the multi-country rollout (decision E19, `runs/rollout_plan.md`). Full wording and reasons: `runs/RUN-2026-01/run_review.md`, section 5, and `review/RUN-2026-01/G8_proposed_changes.csv`. RUN-2026-01 keeps the versions recorded in its run record and evidence files; none of its evidence, judgements or outputs changed.
 
-- **Codebooks:** PC-01 (Codebook 6, case-level transferability as labelled agent synthesis); PC-02 (Codebook 7, reviewers named in the run record, agent synthesis labelled, warnings alongside options); PC-03 (Codebook 2, manual retrieval route and near-duplicate check); PC-04 (Codebooks 1 or 3, volume effect of a cross-cutting theme).
-- **Rules:** PC-05 (extraction, standard second pass with yield by family); PC-06 and PC-07 (classification, country statements in screening reports, same-sentence check, merge step for parallel taxonomy drafts); PC-08 to PC-10 (judgement, final wording and reason-value consistency, searches behind claims of absence, no truncated inputs, helper briefs checked against the rules).
-- **Taxonomy:** PC-11 (consider MEC-04 for RI-TEC-028); PC-12 (problems raised only by national sources).
-- **Data dictionary:** PC-13 (`reform_issue_ids` on interventions); PC-14 (seven case fields in `entities/comparator_cases.csv`).
-- **Procedures and tools:** PC-15 (procedure P5 stage 12 method); PC-16 (procedure P4 limits check under standing instruction); PC-17 (tests for `build_outputs.py` and further tool checks).
+- **Codebook 1:** later runs apply the method country by country; North Macedonia is the methodological baseline, not a substantive template; one shared taxonomy for comparison (E19).
+- **Codebook 2:** manual retrieval route for publishers that block automated download, and a near-duplicate check at acquisition (PC-03).
+- **Codebook 3:** one target country per run, following the rollout plan; a cross-cutting theme makes every annual and screening report relevant, and time and volume plans must allow for it (PC-04).
+- **Codebook 4:** no change in substance; version aligned.
+- **Codebook 5:** the taxonomy is shared and never stretched to fit a new country; route for problems raised only by national or independent sources (PC-12); evidence of a closed run keeps its taxonomy version.
+- **Codebook 6:** transferability may attach to a comparator case, with the case's lesson labelled agent synthesis (PC-01).
+- **Codebook 7:** reviewers named in the run record; agent synthesis labelled in every output; warnings alongside options (PC-02); outputs of each run, and the country and regional pages.
+- **Extraction rules 0.5:** standard second-pass check by a different agent, with its yield reported by source family (PC-05).
+- **Classification rules 0.4:** country statements in screening reports are country responses, and a same-sentence check before G5 (PC-06); overlap check after parallel taxonomy drafting (PC-07); route for problems not raised in EU material (PC-12); the taxonomy is shared.
+- **Judgement rules 0.5:** final wording of reasons and a reason-value check (PC-08); searches behind claims of absence and no truncated inputs (PC-09); helper briefs checked against the rules (PC-10); each country judged on its own evidence.
+- **Taxonomy:** stays at 1.1. PC-12 is applied through Codebook 5 and the classification rules. PC-11 (consider MEC-04 for RI-TEC-028) is carried to RUN-2026-02's G4 as a proposal, because changing the shared row now would change how a validated North Macedonia issue is shown.
+- **Data dictionary 1.5:** `reform_issue_ids` on interventions (PC-13); the case fields on comparator cases, filled for the nine alpha cases by copying the text validated at G6b word for word (PC-14); the learning log is `learning_log.csv` from RUN-2026-02; country code list.
+- **Procedures:** `<run_id>` in place of the alpha's run ID; country checks at stage 0; shared-taxonomy route at stage 7; the checks above before G3, G5 and G6; stage 12 method and output writing as a review step (PC-15); limits check under a standing instruction (PC-16); comparators first from countries already in the project.
+- **Tools:** tests for `build_outputs.py`, a text-density check in `convert_to_text.py`, a near-duplicate check, a check that every theme issue has a recommendation, and a tested acquisition tool (PC-17). The tools now read the run's country from its run record, and the pages are split into a regional page and one page per country (E19).
 
 ## Version 1.2 (Codebooks 1 to 6) and 1.1 (Codebook 7), 29 October 2026
 
