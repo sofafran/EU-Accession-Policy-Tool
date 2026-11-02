@@ -38,7 +38,7 @@ nav.top a:hover, nav.top a:focus { border-color: var(--accent); }
 .count { font-weight: 600; margin: 4px 0 8px; }
 .group h3 { margin-top: 18px; }
 .issue, .pcard, .case, .option { border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin: 10px 0; background: var(--surface); }
-.issue .top, .case .top, .option .top { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; justify-content: space-between; }
+.issue .top, .pcard .top, .case .top, .option .top { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; justify-content: space-between; }
 .issue h4, .pcard h4, .case h4, .option h4 { margin: 2px 0 6px; font-size: 1.02rem; }
 .idlink { font-family: ui-monospace, monospace; font-size: .82rem; color: var(--muted); text-decoration: none; }
 .idlink:hover { text-decoration: underline; }
@@ -61,6 +61,12 @@ dl.kv dd { margin: 0; }
 .compbox { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 4px 14px 10px; margin: 14px 0; }
 .note { color: var(--muted); font-size: .9rem; }
 .quote { font-size: .9rem; }
+.assess { margin: 6px 0; font-size: .95rem; }
+nav.top a.active { border-color: var(--accent); background: var(--accent); color: var(--bg); }
+.says { margin: 6px 0 10px; padding-left: 20px; } .says li { margin: 4px 0; }
+.stat a { text-decoration: none; color: inherit; display: block; }
+.stat:has(a):hover { border-color: var(--accent); }
+.pindex { columns: 2 320px; column-gap: 24px; padding-left: 20px; font-size: .92rem; } .pindex li { break-inside: avoid; margin: 2px 0; }
 @media (max-width: 700px) { dl.kv { grid-template-columns: 1fr; } .filters input[type=search] { min-width: 0; width: 100%; } }
 """
 
@@ -68,13 +74,14 @@ JS = r"""
 (function () {
   var cards = Array.prototype.slice.call(document.querySelectorAll('.issue'));
   var f = { q: document.getElementById('f-q'), strand: document.getElementById('f-strand'), pri: document.getElementById('f-pri'),
-            dir: document.getElementById('f-dir'), gap: document.getElementById('f-gap') };
+            dir: document.getElementById('f-dir'), gap: document.getElementById('f-gap'), st: document.getElementById('f-st') };
   var count = document.getElementById('f-count');
   function apply() {
     var q = f.q.value.trim().toLowerCase(), n = 0;
     cards.forEach(function (c) {
       var ok = (!f.strand.value || c.dataset.strand === f.strand.value) && (!f.pri.value || c.dataset.priority === f.pri.value) &&
                (!f.dir.value || c.dataset.direction === f.dir.value) && (!f.gap.value || c.dataset.gap === f.gap.value) &&
+               (!f.st.value || (' ' + c.dataset.status + ' ').indexOf(' ' + f.st.value + ' ') !== -1) &&
                (!q || c.dataset.search.indexOf(q) !== -1);
       c.classList.toggle('hidden', !ok);
       if (ok) n++;
@@ -84,7 +91,7 @@ JS = r"""
     });
     count.textContent = 'Showing ' + n + ' of ' + cards.length + ' reform issues';
   }
-  function reset() { f.q.value = ''; f.strand.value = ''; f.pri.value = ''; f.dir.value = ''; f.gap.value = ''; apply(); }
+  function reset() { f.q.value = ''; f.strand.value = ''; f.pri.value = ''; f.dir.value = ''; f.gap.value = ''; f.st.value = ''; apply(); }
   ['input', 'change'].forEach(function (ev) { Object.keys(f).forEach(function (k) { f[k].addEventListener(ev, apply); }); });
   document.getElementById('f-reset').addEventListener('click', reset);
   document.querySelectorAll('a[data-strand]').forEach(function (a) {
@@ -99,9 +106,20 @@ JS = r"""
       el.scrollIntoView();
     }
   }
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.top a'));
+  function spy() {
+    var cur = null;
+    links.forEach(function (a) {
+      var t = document.getElementById(a.getAttribute('href').slice(1));
+      if (t && !t.classList.contains('hidden') && t.getBoundingClientRect().top <= 90) cur = a;
+    });
+    links.forEach(function (a) { a.classList.toggle('active', a === cur); });
+  }
+  window.addEventListener('scroll', spy, { passive: true });
   window.addEventListener('hashchange', openHash);
   apply();
   openHash();
+  spy();
 })();
 """
 
@@ -128,6 +146,15 @@ def sentences(t):
     return [s for s in re.split(r"(?<=[.])\s+(?=[A-Z])", (t or "").strip()) if s]
 
 
+def no_refs(t):
+    """Drop bracketed lists of item IDs, for the one-line summaries on collapsed cards (the IDs stay in the detail)."""
+    t = re.sub(r"\s*\((?:[^()]*?\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b[^()]*?)\)", "", t or "")
+    return re.sub(r"\s+([.,;])", r"\1", t).strip()
+
+
+STATUS = {"validated": "Validated at G6", "analyst": "Set by the analyst at G6", "rereview": "Flagged for re-review at G7"}
+
+
 def what_remains(reason):
     ss = sentences(reason)
     hit = next((s for s in ss if s.startswith("What remains")), None)
@@ -148,6 +175,8 @@ class ProductPage:
         self.ent = {r["case_id"]: r for r in read_csv(self.root / "entities" / "comparator_cases.csv")[1]}
         self.J = {(j["object_id"], j["judgement_type"]): j for j in self.D["js"]}
         self.opts = {x: self.parse_options(x) for x in self.cases}
+        self.themes = {r["theme_code"]: r["label"] for r in read_csv(self.root / "taxonomy" / "themes.csv")[1]}
+        self.mechs = {r["mechanism_id"]: r["label"] for r in read_csv(self.root / "taxonomy" / "mechanisms.csv")[1]}
         self.g7 = [r for r in page.decisions.values() if r["gate"] == "G7"][-1]
 
     # Helpers ------------------------------------------------------------------
@@ -197,6 +226,24 @@ class ProductPage:
                 f'<span class="chip">Gap <b>{escape(pretty(g("unresolved_gap")))}</b></span>'
                 f'<span class="chip">Tractability <b>{escape(g("tractability"))}</b></span>')
 
+    def status(self, x):
+        J = self.views[x]["J"]
+        st = ["validated"]
+        if any(j.get("review_status") == "overridden" for j in J.values()):
+            st.append("analyst")
+        if any(j.get("rereview_flag") == "yes" for j in J.values()):
+            st.append("rereview")
+        return st
+
+    def status_labels(self, x):
+        st = self.status(x)
+        out = VAL
+        if "analyst" in st:
+            out += " " + lbl("Set by the analyst at G6", "internal")
+        if "rereview" in st:
+            out += " " + lbl("Flagged for re-review", "limit")
+        return out
+
     def parse_options(self, x):
         body = narrative(self.root, self.run, f"comparator_{x}").get("Draft policy options", "")
         opts, cur = [], None
@@ -237,14 +284,16 @@ class ProductPage:
                  (f"{pri['High']} / {pri['Medium']} / {pri['Low']}", "High / Medium / Low priority"),
                  (str(ncase), "comparator cases"),
                  (f"{nopt}" + (f" + {nwarn}" if nwarn else ""), "draft policy options" + (" + warning" if nwarn else ""))]
-        st = "".join(f'<div class="stat"><div class="n">{escape(a)}</div><div class="l">{escape(b)}</div></div>' for a, b in stats)
+        hrefs = ["#evidence", "#evidence", "#issues", "#priority", "#comparators", "#options"]
+        st = "".join(f'<div class="stat"><a href="{h}"><div class="n">{escape(a)}</div><div class="l">{escape(b)}</div></a></div>' for (a, b), h in zip(stats, hrefs))
+        says = "".join(f"<li>{text(s)}</li>" for s in sentences(summ))
         return "overview", "Overview", (
             f'<p>{VAL} Outputs signed off at G7 ({escape(self.g7["gate_decision_id"])}); judgements validated at G6 and G6b. Draft policy options stay {DRAFT}.</p>'
             f'<dl class="kv"><dt>Country</dt><dd>{escape(rec.get("Target country", ""))}</dd>'
             f'<dt>Scope</dt><dd>Chapter 2 (Freedom of movement for workers) and the cross-cutting technology and AI theme; comparator pilot on three issues</dd>'
             f'<dt>Evidence window</dt><dd>{escape(rec.get("Time window", "").split(";")[0])}; freeze date {escape(rec.get("Evidence freeze date", "").split(" ")[0])}</dd></dl>'
             f'<div class="stats">{st}</div>'
-            f'<h3>What this analysis says {VAL}</h3><p>{text(summ)}</p>'
+            f'<h3>What this analysis says {VAL}</h3><ul class="says">{says}</ul>'
             '<p class="note">Jump straight to: <a href="#priority">the High-priority issues</a> · <a href="#issues">all issues, with filters</a> · '
             '<a href="#comparators">comparator lessons</a> · <a href="#options">draft policy options</a>.</p>')
 
@@ -269,16 +318,20 @@ class ProductPage:
         conflicts = "".join(f'<li>{text(l["basis"])}</li>' for l in V["conflicts"])
         ids = list(V["key"]) + self.ids_in(N.get("In brief", ""), N.get("How the EU requirement has changed", ""), N.get("Open questions", ""))
         ids += [k for l in V["conflicts"] for k in (l["from_id"], l["to_id"])]
-        search = " ".join([x, r["label"], r["definition"], STRAND[self.strand(x)], gap, N.get("In brief", "")]).lower()
+        kw = [self.themes.get(t, t) for t in split_list(r.get("themes", ""))] + [self.mechs.get(m, m) for m in split_list(r.get("mechanism_ids", ""))]
+        brief = sentences(no_refs(N.get("In brief", "")))
+        assess = brief[0] if brief else ""
+        search = " ".join([x, r["label"], r["definition"], STRAND[self.strand(x)], gap, N.get("In brief", "")] + kw).lower()
         search = re.sub(r"\s+", " ", ITEM.sub("", search))
         oq = N.get("Open questions", "")
         oq_html = "<ul>" + "".join(f"<li>{text(l[2:])}</li>" for l in oq.splitlines() if l.startswith("- ")) + "</ul>" if oq else ""
         mt = lbl("Evidence limit: relies partly on machine translation", "limit") if V["mt"] else ""
         return (f'<article class="issue" id="{escape(x)}" data-strand="{self.strand(x)}" data-priority="{escape(J.get("priority", {}).get("value", ""))}" '
                 f'data-direction="{escape(J.get("direction_of_travel", {}).get("value", ""))}" data-gap="{escape(J.get("unresolved_gap", {}).get("value", ""))}" '
-                f'data-search="{escape(search)}">'
-                f'<div class="top"><a class="idlink" href="#{escape(x)}" title="Link to this issue">{escape(x)} · {STRAND[self.strand(x)]}</a><span>{VAL}</span></div>'
+                f'data-status="{" ".join(self.status(x))}" data-search="{escape(search)}">'
+                f'<div class="top"><a class="idlink" href="#{escape(x)}" title="Link to this issue">{escape(x)} · {STRAND[self.strand(x)]}</a><span>{self.status_labels(x)}</span></div>'
                 f'<h4>{escape(r["label"])}</h4><div>{self.chips(x)}</div>'
+                f'<p class="assess"><b>Assessment:</b> {text(assess)}</p>'
                 f'<p class="gap"><b>Unresolved gap ({escape(pretty(J.get("unresolved_gap", {}).get("value")))}):</b> {text(gap)}</p>'
                 f'<details class="more"><summary>View detail</summary><div class="detail">'
                 f'<h5>Assessment in brief</h5><p>{text(N.get("In brief", ""))}</p>'
@@ -303,6 +356,8 @@ class ProductPage:
                 '<label>Priority<select id="f-pri"><option value="">All</option><option>High</option><option>Medium</option><option>Low</option></select></label>'
                 f'<label>Direction of travel<select id="f-dir"><option value="">All</option>{opt(dirs)}</select></label>'
                 f'<label>Unresolved gap<select id="f-gap"><option value="">All</option>{opt(gaps)}</select></label>'
+                '<label>Judgement status<select id="f-st"><option value="">All</option>'
+                + "".join(f'<option value="{k}">{escape(v)}</option>' for k, v in STATUS.items()) + '</select></label>'
                 '<button id="f-reset" type="button">Reset</button></div>'
                 f'<p class="count" id="f-count" aria-live="polite">Showing {len(self.D["issues"])} of {len(self.D["issues"])} reform issues</p>')
         key = lambda r: (PRI.get(self.jv(r["issue_id"], "priority").get("value"), 3), r["issue_id"])
@@ -325,16 +380,18 @@ class ProductPage:
             pids = split_list(p_.get("evidence_item_ids", ""))
             main = "".join(f'<li>{escape(self.D["items"][k]["summary"])} <code>{escape(k)}</code></li>' for k in pids if k in self.D["items"])
             ov = " (set by the analyst at G6)" if p_.get("review_status") == "overridden" else ""
-            out.append(f'<div class="pcard"><div class="top"><a class="idlink" href="#{escape(x)}">{escape(x)} · {STRAND[self.strand(x)]} · open the issue card</a></div>'
+            out.append(f'<div class="pcard" id="p-{escape(x)}"><div class="top"><a class="idlink" href="#{escape(x)}">{escape(x)} · {STRAND[self.strand(x)]} · open the issue card</a><span>{self.status_labels(x)}</span></div>'
                        f'<h4>{escape(r["label"])}</h4>'
                        f'<dl class="kv"><dt>Problem</dt><dd>{escape(r["definition"])}</dd>'
                        f'<dt>Why it matters</dt><dd>{text(p_.get("reason", ""))}{escape(ov)}</dd>'
                        f'<dt>Direction of travel</dt><dd><b>{escape(pretty(d.get("value")))}.</b> {text(" ".join(sentences(d.get("reason", ""))[:2]))}</dd>'
                        f'<dt>Main evidence</dt><dd><ul>{main}</ul>{self.refs(pids, "Quotes")}</dd>'
                        f'<dt>Unresolved gap</dt><dd><b>{escape(pretty(g.get("value")))}.</b> {text(what_remains(g.get("reason", "")))}</dd></dl></div>')
+        idx = "".join(f'<li><a href="#p-{escape(r["issue_id"])}">{escape(r["label"])}</a> <span class="idlink">{escape(r["issue_id"])}</span></li>' for r in hi)
         return "priority", f"Priority issues ({len(hi)} High)", (
             f'<p>{VAL} The issues rated High priority at G6, in ID order. Every statement is taken from the validated judgements; '
-            '"Why it matters" is the priority rationale.</p>' + "".join(out))
+            '"Why it matters" is the priority rationale.</p>'
+            f'<details class="refs" open><summary>The {len(hi)} High-priority issues at a glance</summary><ol class="pindex">{idx}</ol></details>' + "".join(out))
 
     def comparators(self):
         parts = [("problem_addressed", "Problem addressed", False), ("reform_or_mechanism", "What was tried", False),

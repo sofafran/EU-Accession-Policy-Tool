@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
