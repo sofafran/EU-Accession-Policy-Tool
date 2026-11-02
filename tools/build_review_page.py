@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.1.5"
+__version__ = "1.1.6"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -184,6 +184,14 @@ class Page:
         review = self.root / "runs" / self.run / "run_review.md"
         link = f'<p><a href="{escape(review.relative_to(self.root).as_posix())}">Read the run review</a> for the gate history, error rates, approved changes and scaling readiness.</p>' if review.exists() else ""
         return "Alpha completed " + label("Validated"), facts(facts_) + link
+
+    def summary_link(self):
+        """Prominent link to the management summary of a completed alpha, if the page exists."""
+        if not (self.root / "alpha_summary.html").exists():
+            return ""
+        return ('<section class="notice" aria-label="Alpha summary"><h2>Alpha summary for management</h2>'
+                "<p>A short, plain-English page on what the alpha built, what it found, what it taught us and the choices for the next run, "
+                'for readers who do not need the review detail.</p><p><a class="button" href="alpha_summary.html">Open the alpha summary</a></p></section>')
 
     def status(self, gate, has_data):
         if gate_passed(self.decisions, gate):
@@ -461,6 +469,7 @@ class Page:
 <p>This page lets reviewers follow how the alpha is developing. It is a review interface, not the place where decisions are made: gate decisions are taken on the review spreadsheets and recorded in the gate log. Nothing on this page is analysis unless it is labelled {label("Validated")}.</p>
 <div class="legend">{legend}</div>
 </section>
+{self.summary_link()}
 {body}
 <section class="notice" aria-label="Analysis mock-up"><h2>Analysis mock-up</h2><p>A single scrolling page that shows how the evidence and, later, the analysis are being built, section by section along the analytical chain. It is a draft review aid, not a product.</p><p><a class="button" href="analysis.html">Open the analysis page</a></p></section>
 <footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Rebuilt when each gate package is prepared and after each gate decision.</p></footer>

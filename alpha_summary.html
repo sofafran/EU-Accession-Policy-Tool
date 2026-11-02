@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accession Alpha Summary</title>
+<!-- Management summary of the completed RUN-2026-01 alpha (North Macedonia), written from the closed run records on 2 November 2026.
+     Static page: it does not change with the project files. Gate decisions are recorded in registers/gate_log.csv. -->
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --text: #1d1f23; --muted: #5b616b; --border: #dcdde0; --accent: #2f5d8a; --accent-soft: #e6eefa;
+  --finding-bg: #e3f2e6; --finding-fg: #1f5e2c;
+  --lesson-bg: #efe8f7;  --lesson-fg: #563d7c;
+  --draft-bg: #fff1d6;   --draft-fg: #7a4b00;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171a; --surface: #1e2125; --text: #e7e8ea; --muted: #a2a8b1; --border: #343840; --accent: #8db7e3; --accent-soft: #1c2d45;
+    --finding-bg: #1d3a24; --finding-fg: #a8dcb3; --lesson-bg: #2f2540; --lesson-fg: #cdb8ec; --draft-bg: #3d2f12; --draft-fg: #f3cf8a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171a; --surface: #1e2125; --text: #e7e8ea; --muted: #a2a8b1; --border: #343840; --accent: #8db7e3; --accent-soft: #1c2d45;
+  --finding-bg: #1d3a24; --finding-fg: #a8dcb3; --lesson-bg: #2f2540; --lesson-fg: #cdb8ec; --draft-bg: #3d2f12; --draft-fg: #f3cf8a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 32px 16px 72px; }
+a { color: var(--accent); }
+.hero { padding: 8px 0 24px; border-bottom: 1px solid var(--border); }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; font-weight: 600; color: var(--accent); margin: 0 0 8px; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 12px; }
+.lede { font-size: 1.12rem; color: var(--muted); margin: 0 0 16px; max-width: 46em; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+nav a { text-decoration: none; font-size: .9rem; border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; background: var(--surface); }
+nav a:hover { border-color: var(--accent); }
+section { margin-top: 40px; }
+h2 { font-size: 1.45rem; margin: 0 0 6px; }
+h2 .num { color: var(--accent); margin-right: 8px; }
+h3 { font-size: 1.05rem; margin: 22px 0 8px; }
+p { margin: 0 0 12px; }
+.intro { color: var(--muted); margin-bottom: 16px; }
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; margin: 14px 0; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 16px 0; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.stat .n { font-size: 1.8rem; font-weight: 700; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stat .l { font-size: .9rem; color: var(--muted); margin-top: 4px; }
+.chain { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin: 14px 0; padding: 0; list-style: none; counter-reset: step; }
+.chain li { background: var(--accent-soft); border-radius: 8px; padding: 10px 12px; font-size: .92rem; counter-increment: step; }
+.chain li::before { content: counter(step); display: block; font-weight: 700; color: var(--accent); font-size: .8rem; }
+.chain li b { display: block; }
+.tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .02em; padding: 2px 9px; border-radius: 999px; vertical-align: middle; white-space: nowrap; }
+.tag.finding { background: var(--finding-bg); color: var(--finding-fg); }
+.tag.lesson { background: var(--lesson-bg); color: var(--lesson-fg); }
+.tag.draft { background: var(--draft-bg); color: var(--draft-fg); }
+ul { margin: 0 0 12px; padding-left: 20px; }
+li { margin-bottom: 6px; }
+.example { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin: 18px 0; overflow: hidden; }
+.example header { padding: 14px 20px; border-bottom: 1px solid var(--border); }
+.example header h3 { margin: 0; }
+.example header p { margin: 4px 0 0; color: var(--muted); font-size: .92rem; }
+.steps { margin: 0; padding: 0; list-style: none; }
+.steps li { display: grid; grid-template-columns: 190px 1fr; gap: 12px; padding: 12px 20px; border-bottom: 1px solid var(--border); margin: 0; }
+.steps li:last-child { border-bottom: 0; }
+.steps .k { font-weight: 600; font-size: .9rem; color: var(--accent); }
+.steps .draftrow { background: var(--draft-bg); }
+.steps .draftrow .k { color: var(--draft-fg); }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.grid2 .panel { margin: 0; }
+.option { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 10px; padding: 16px 20px; margin: 12px 0; }
+.option h3 { margin-top: 0; }
+.option dl { display: grid; grid-template-columns: 150px 1fr; gap: 6px 14px; margin: 0; }
+.option dt { color: var(--muted); font-size: .92rem; }
+.option dd { margin: 0; }
+.note { font-size: .9rem; color: var(--muted); }
+.callout { border-left: 4px solid var(--accent); background: var(--surface); border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 16px 0; }
+footer { color: var(--muted); font-size: .85rem; margin-top: 48px; border-top: 1px solid var(--border); padding-top: 16px; }
+@media (max-width: 640px) {
+  h1 { font-size: 1.6rem; }
+  .steps li, .option dl { grid-template-columns: 1fr; gap: 2px; }
+  .grid2 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+<p class="eyebrow">EU Accession Reform Intelligence Tool · Alpha summary</p>
+<h1>The North Macedonia alpha: what we built, what it found, what we learned</h1>
+<p class="lede">The first full test of a tool that turns EU accession assessments into evidence-based reform priorities and practical policy options. It ran from 29 October to 2 November 2026 and closed with every quality gate passed.</p>
+<p class="note">This page summarises the completed alpha for a general reader. The detailed evidence, judgements and decisions sit in the <a href="index.html">review page</a> and the project files. <span class="tag finding">Finding</span> marks what the evidence shows about North Macedonia; <span class="tag lesson">Lesson</span> marks what we learned about the method; <span class="tag draft">Internal draft</span> marks draft policy options, which are not validated recommendations.</p>
+<nav aria-label="Sections">
+<a href="#build">1. What did we build?</a>
+<a href="#produce">2. What did it produce?</a>
+<a href="#product">3. What does the product look like?</a>
+<a href="#learn">4. What did we learn?</a>
+<a href="#next">5. What do we decide next?</a>
+</nav>
+</div>
+
+<section id="build">
+<h2><span class="num">1</span>What did we build?</h2>
+<p class="intro">A structured, traceable way to answer three questions about a country seeking EU membership: what the EU is asking for, what the country has actually done, and what could help close the gap.</p>
+<p>The tool reads the EU's own assessments of a candidate country, alongside national laws, strategies, audits and independent reports. It extracts each relevant statement word for word, with its page, and links it into a chain that runs from the EU's requirement to the reform still needed. At each step the tool proposes and a human analyst decides: nothing becomes a finding until it has passed a review gate.</p>
+
+<div class="panel">
+<h3 style="margin-top:0">What the alpha covered</h3>
+<ul>
+<li><b>Country:</b> North Macedonia, with evidence from January 2020 to late October 2026.</li>
+<li><b>Topics:</b> all of Chapter 2 of the accession negotiations (free movement of workers: the rights of EU and foreign workers, job-search cooperation, social security coordination and health cover), plus every EU recommendation that is about technology and digital government, wherever it appears.</li>
+<li><b>Comparisons:</b> for three high-priority issues, how five other countries (Albania, Croatia, Moldova, Montenegro and Serbia) tackled the same problem.</li>
+</ul>
+</div>
+
+<h3>The analytical chain</h3>
+<ol class="chain">
+<li><b>EU requirement</b>What the EU asks for</li>
+<li><b>Evidence</b>Exact quotes from EU, national and independent sources</li>
+<li><b>Reform issue</b>The underlying problem, named once and tracked</li>
+<li><b>Assessment</b>Direction of travel, remaining gap, priority, ease of progress</li>
+<li><b>Comparator lesson</b>What similar countries tried, and with what result</li>
+<li><b>Policy option</b>A draft option for discussion, with risks and conditions</li>
+</ol>
+<p class="note">Three things are kept apart throughout: what a source says, what the analysis concludes, and how far a lesson from elsewhere is likely to transfer. Adopting a law is never treated as proof that it worked.</p>
+</section>
+
+<section id="produce">
+<h2><span class="num">2</span>What did the North Macedonia alpha produce?</h2>
+<p class="intro">A complete, reviewed evidence base and a set of signed-off internal outputs, built in five days.</p>
+
+<div class="stats">
+<div class="stat"><div class="n">166</div><div class="l">sources reviewed (112 on North Macedonia, 54 on comparator countries)</div></div>
+<div class="stat"><div class="n">4,988</div><div class="l">evidence items, each quoted word for word with its page</div></div>
+<div class="stat"><div class="n">48</div><div class="l">reform issues (14 on workers, 34 on technology)</div></div>
+<div class="stat"><div class="n">11,072</div><div class="l">assessments, all reviewed by the analyst</div></div>
+<div class="stat"><div class="n">9</div><div class="l">comparator cases in five countries</div></div>
+<div class="stat"><div class="n">9 + 1</div><div class="l">draft policy options, plus one warning, all internal drafts</div></div>
+</div>
+<p class="note">Outputs signed off at the final outputs review: a scope overview, 48 issue briefs, a source coverage and limits report, and three comparator briefs. The assessments include source quality, confidence and relevance for every item, and four overall judgements for each reform issue.</p>
+
+<h3>The most important findings <span class="tag finding">Finding</span></h3>
+<div class="panel">
+<ul>
+<li><b>Reform has largely stood still.</b> On 33 of the 48 issues the EU's assessment has barely changed since 2020. None of the 48 gaps is closed: 20 remain open and 27 are only partly addressed.</li>
+<li><b>Workers' rights: the legal barrier remains.</b> North Macedonia's law on employing foreigners still treats EU citizens like any other foreign national, and some private sector jobs are reserved for nationals. The EU has asked for this to change every year from 2020 to 2025. None of the 14 workers' issues is improving.</li>
+<li><b>Technology: laws are moving faster than practice.</b> Five technology issues are improving, with progress clearest in new laws on electronic communications, cybersecurity and electronic identification. But systems already built are little used: the national e-services portal has few fully online services that people actually use, and few government bodies use the data-exchange platform that the law requires them to use.</li>
+<li><b>The priorities are clear.</b> 19 issues are rated high priority, led by those tied to conditions for EU payments under the Reform Agenda or to EU recommendations repeated year after year.</li>
+<li><b>Neighbours show what was tried, not what worked.</b> None of the nine comparator cases shows a reform that measurably raised use of a digital system or changed EU workers' access. The comparisons are useful as design choices and warnings, not as proven routes.</li>
+<li><b>Artificial intelligence is barely addressed by the EU material.</b> The EU's reports contain only two specific AI requirements in six years, so AI evidence comes mainly from a national audit.</li>
+</ul>
+</div>
+</section>
+
+<section id="product">
+<h2><span class="num">3</span>What does the product look like?</h2>
+<p class="intro">Two real examples from the run, followed along the chain from the EU's requirement to a draft option. Every statement below traces to quoted evidence in the project files.</p>
+
+<article class="example">
+<header>
+<h3>Example 1: The national e-services portal</h3>
+<p>Technology and digital government · rated high priority</p>
+</header>
+<ol class="steps">
+<li><span class="k">EU requirement</span><span>The EU asks North Macedonia to offer many more fully online public services. A 50% increase in e-services is a condition for EU payments under the Reform Agenda, due by mid-2027.</span></li>
+<li><span class="k">Country response</span><span>A national e-services portal has run since 2019 and was upgraded with EU funding.</span></li>
+<li><span class="k">Implementation and outcome</span><span>The EU's 2024 report found that the most commonly requested services were still not online and gave about 2,070 applications a month for 292,179 users. The State Audit Office found low use. In 2026 the EU described digital government as "quite underdeveloped".</span></li>
+<li><span class="k">Unresolved gap</span><span>Partly addressed. Still needed: many more fully online, commonly requested services that people actually use, on an agreed count, and equal access for people with disabilities.</span></li>
+<li><span class="k">Reform issue and priority</span><span>"National e-services portal limited in range and use": high priority, little change since 2020, moderately tractable.</span></li>
+<li><span class="k">Comparator lesson</span><span>In Moldova in 2022, 128 of 226 digital services had no users at all. In Montenegro, a new portal improved information, but none of seven essential services checked by a monitor was on it. Lesson, judged to transfer only under conditions: counting services says little about use, and a portal without the most-needed services may only improve information.</span></li>
+<li class="draftrow"><span class="k">Draft policy option <span class="tag draft">Internal draft</span></span><span>Agree one service-by-service count that records actual use, and repeat it; put the most-requested services fully online before widening the range. Lead: the Ministry of Digital Transformation, with the institutions that own the services. Main risk: a count produced once for a payment condition and then dropped.</span></li>
+</ol>
+</article>
+
+<article class="example">
+<header>
+<h3>Example 2: Equal treatment of EU workers</h3>
+<p>Chapter 2, free movement of workers · rated high priority</p>
+</header>
+<ol class="steps">
+<li><span class="k">EU requirement</span><span>EU citizens must be able to work in North Macedonia on the same terms as nationals, without work permits, by the time of accession. The EU has repeated this recommendation every year from 2020 to 2025.</span></li>
+<li><span class="k">Country response</span><span>The law on employing foreigners was amended in 2021 and 2025, but the 2025 change only renamed government bodies. Further amendments are planned, but their content is unknown.</span></li>
+<li><span class="k">Implementation and outcome</span><span>The EU's 2025 assessment says the law does not distinguish EU citizens from other foreigners, and that legislation is only partially aligned.</span></li>
+<li><span class="k">Unresolved gap</span><span>Open. Still needed: equal treatment of EU workers in law, including an end to private sector posts reserved for nationals.</span></li>
+<li><span class="k">Reform issue and priority</span><span>"Nationality discrimination in access to employment": high priority, no change since 2020, moderately tractable.</span></li>
+<li><span class="k">Comparator lesson</span><span>Croatia (2011) and Montenegro (2025) wrote a separate set of rules for EU citizens into their foreigners laws, with some parts starting only on accession. Serbia simplified permits for all foreigners, yet the EU still found its law misaligned. Lesson, judged to transfer only under conditions: a distinct regime for EU citizens is a workable design, but no case shows that delaying it to accession is enough, and simplifying permits alone does not close the gap.</span></li>
+<li class="draftrow"><span class="k">Draft policy option <span class="tag draft">Internal draft</span></span><span>Write equal treatment for EU citizens into law as a distinct regime, and settle early whether parts may start only on accession. Lead: the ministry responsible for labour, with adoption by Parliament. Main risk: a clause the EU does not accept as full alignment, while reserved posts remain untouched.</span></li>
+</ol>
+</article>
+<p class="note">Draft policy options are internal drafts for discussion. They rest on reviewed evidence and on lessons that the analyst accepted as conditional, but they are not validated recommendations and have not been prepared for an external audience.</p>
+</section>
+
+<section id="learn">
+<h2><span class="num">4</span>What did the alpha teach us? <span class="tag lesson">Lesson</span></h2>
+<p class="intro">These are lessons about the method, not findings about North Macedonia.</p>
+
+<div class="grid2">
+<div class="panel">
+<h3 style="margin-top:0">What worked well</h3>
+<ul>
+<li>Every claim traces back to an exact quote, with its page and a permanent reference.</li>
+<li>Review gates kept the tool proposing and the analyst deciding, and each gate needed only a short list of genuine decisions.</li>
+<li>Independent checks before each gate, carried out by agents that had not done the work, caught most errors before they reached the analysis.</li>
+<li>Judging priority across all issues at once kept the ratings consistent.</li>
+<li>Outputs were built from reviewed data, so they stay consistent and traceable.</li>
+<li>The full cycle, from sources to signed-off outputs, took five days.</li>
+</ul>
+</div>
+<div class="panel">
+<h3 style="margin-top:0">Where the method struggled</h3>
+<ul>
+<li><b>Missed claims:</b> roughly one in eight relevant statements was missed in the first pass, mostly minor ones.</li>
+<li><b>Consistency:</b> agents working in parallel applied unwritten rules differently.</li>
+<li><b>Claims of absence:</b> a claim that something was missing was sometimes made without a complete search.</li>
+<li><b>Access and language:</b> several key international reports could not be downloaded automatically, and most national documents exist only in Macedonian, so they rely on machine translation.</li>
+<li><b>Results evidence:</b> evidence of what reforms achieved is thin across the region, so comparisons are about design rather than proven results.</li>
+<li><b>Single reviewer:</b> one person validated every judgement, and no person read the source documents directly.</li>
+</ul>
+</div>
+</div>
+
+<h3>What independent quality checks found</h3>
+<div class="panel">
+<ul>
+<li><b>Extraction:</b> in the test sample, 93% of items were fully correct. The type of statement was right 99.6% of the time, and no wrong page references were found. The main errors were quotes holding two separate claims.</li>
+<li><b>Classification:</b> of 391 sampled items, 351 were correctly placed, 34 were arguable and 6 were wrong.</li>
+<li><b>Comparator cases:</b> the first drafts contained 24 serious errors in about 480 claims, mostly overstated lessons or unsupported claims that something was absent. All were corrected and rechecked before review.</li>
+<li><b>Final outputs:</b> writing the outputs worked as a last check. It surfaced old working language and a few mislabelled items, and seven judgements are flagged for another look in the next run.</li>
+</ul>
+<p class="note">Routine automatic checks caught almost none of these problems; the independent checks caught most of them.</p>
+</div>
+
+<h3>Changes agreed before scaling</h3>
+<p>The final review approved 17 changes, to be applied when the next run starts. They fall into five themes.</p>
+<div class="panel">
+<ul>
+<li><b>Get the right sources in.</b> A route for reports that block automatic download, a check for duplicate documents, a check for scanned pages that lose their text, and planning for the extra volume a cross-cutting theme brings.</li>
+<li><b>Make extraction and classification consistent.</b> A standard second check of every source, reported by source type, plus clearer rules for statements a country makes about itself and a step to reconcile work done in parallel.</li>
+<li><b>Make judgements clearer and checkable.</b> Final wording before review, an automatic check that each reason supports its rating, and a documented search behind any claim that something is missing.</li>
+<li><b>Fit the data model to comparison and outputs.</b> Formal recognition of case-level lessons, a direct link from each reform to its issues, case details held with the core data, the output-building method written into the procedures, and tests for the output builder.</li>
+<li><b>Tighten coverage and safeguards.</b> A way to capture problems raised only by national or independent sources, a review of one enforcement gap in the issue list, and an automatic limits check whenever a review gate is passed quickly.</li>
+</ul>
+</div>
+</section>
+
+<section id="next">
+<h2><span class="num">5</span>What do we decide next?</h2>
+<p class="intro">The next run's scope is to be decided after this alpha has been reviewed. No new run has started. There are four main options, which can be combined.</p>
+
+<div class="option">
+<h3>A. Test the same method on a second country</h3>
+<dl>
+<dt>Benefit</dt><dd>Shows whether the tool works beyond one country, which is the main question for scaling. Montenegro, for example, already has sources registered from the comparator work and has provisionally closed Chapter 2.</dd>
+<dt>What it tests</dt><dd>Whether the method works in a new country and language, how much effort a second country takes, and whether the analysis can track a country at a later stage of negotiations.</dd>
+</dl>
+</div>
+
+<div class="option">
+<h3>B. Expand North Macedonia into another chapter</h3>
+<dl>
+<dt>Benefit</dt><dd>Builds a fuller picture of one country, reusing its sources and language set. Chapter 3, on business establishment and services, links to an existing technology issue.</dd>
+<dt>What it tests</dt><dd>Whether the issue list and methods extend to new subject matter, and how the evidence volume grows chapter by chapter.</dd>
+</dl>
+</div>
+
+<div class="option">
+<h3>C. Refresh North Macedonia after the 2026 Enlargement Package</h3>
+<dl>
+<dt>Benefit</dt><dd>Brings the analysis up to date with the EU's next annual assessment, which had not been published when the evidence was frozen.</dd>
+<dt>What it tests</dt><dd>How cheaply the tool can be updated: processing only new documents, and re-reviewing only the judgements they affect, including the seven already flagged.</dd>
+</dl>
+</div>
+
+<div class="option">
+<h3>D. Make the methodology improvements first</h3>
+<dl>
+<dt>Benefit</dt><dd>Applies the 17 agreed changes before any new scope, so the next run starts on a firmer base and its results can be compared cleanly with this one.</dd>
+<dt>What it tests</dt><dd>Whether the changes reduce missed claims, inconsistency and late corrections, which can be measured against this alpha's error rates.</dd>
+</dl>
+</div>
+
+<div class="callout">
+<p><b>Decisions that apply to any option</b></p>
+<ul>
+<li>Who besides the analyst should review analytical judgements before any output is shared outside the team.</li>
+<li>Whether to bring in reviewers who read the national languages, or accept that evidence relying on machine translation stays at medium confidence.</li>
+<li>Whether to keep comparator work only for issues where evidence of results exists or can be obtained.</li>
+</ul>
+</div>
+</section>
+
+<footer>
+<p>Summary of RUN-2026-01, the completed North Macedonia alpha, closed on 2 November 2026. Written from the closed run records: the run review, the gate log, the validated judgements and the signed-off outputs. It adds no new analysis. Policy options shown are internal drafts. <a href="index.html">Back to the review page</a> · <a href="analysis.html">Analysis page</a></p>
+</footer>
+</div>
+</body>
+</html>
