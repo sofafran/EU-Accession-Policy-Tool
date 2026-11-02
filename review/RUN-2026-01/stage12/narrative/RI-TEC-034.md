@@ -1,0 +1,14 @@
+## In brief
+
+The Commission asks North Macedonia to align with the Digital Services Act and the Digital Markets Act, to align fully with electronic commerce rules and to harmonise its legislation with the Geo-blocking Regulation, and its screening report finds no alignment with the platform-to-business regulation (MKD-EU-2025-001-0138; MKD-EU-2025-004-0065; MKD-EU-2025-004-0029). The country states it plans to align with the platform-to-business and geo-blocking rules by 2027 and with the Digital Services Act and Digital Markets Act by 2028, and it has asked to join the related EU expert groups, which the Commission will explore (MKD-EU-2025-004-0030; MKD-EU-2025-004-0032; MKD-EU-2025-004-0092; MKD-EU-2025-004-0101; MKD-EU-2025-004-0108). The only delivered step is training from European services on the Digital Services Act in June 2024 (MKD-EU-2024-001-0094). No draft law and no outcome evidence are reported. The validated judgements are priority Medium, direction of travel persistent, unresolved gap open and tractability Medium.
+
+## How the EU requirement has changed
+
+From 2021 to 2023 the Commission's concern was the slow pace of e-commerce (MKD-EU-2021-001-0108; MKD-EU-2022-006-0028; MKD-EU-2023-006-0029). From 2023 it asked for alignment with the Digital Services Act and Digital Markets Act to be stepped up, first to give businesses predictability, then in 2024 alongside equal access to online services, and in November 2025 as something the country still needs to do (MKD-EU-2023-001-0139; MKD-EU-2024-001-0092; MKD-EU-2025-001-0138). The 2025 screening widened the requirement: it found legislation largely aligned with the e-Commerce Directive but not aligned with the platform-to-business or geo-blocking rules, and asked for full alignment on electronic commerce and geo-blocking (MKD-EU-2025-004-0027; MKD-EU-2025-004-0029; MKD-EU-2025-004-0031; MKD-EU-2025-004-0065).
+
+## Open questions
+
+- No draft law transposing any of these acts is reported, so a published draft or legislative programme entry would show whether the 2027 and 2028 targets are realistic (MKD-EU-2025-004-0028; MKD-EU-2025-004-0030).
+- The finding that legislation is largely aligned with the e-Commerce Directive and the call to align fully differ in degree and were not treated as closure, and a table of concordance for the e-commerce law would settle what is missing (MKD-EU-2025-004-0027; MKD-EU-2025-004-0065).
+- Growth figures for internet transactions are country-reported, partly repeated and on differing bases, so a consistent e-commerce statistical series would be needed to judge whether e-commerce is still slow (MKD-EU-2021-001-0107; MKD-EU-2022-006-0027).
+- The input does not show which authorities would apply platform rules or whether they have the capacity, and an institutional plan for enforcement would settle this (MKD-EU-2024-001-0094).

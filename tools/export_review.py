@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.10.0"
+__version__ = "1.11.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -722,6 +722,29 @@ def g6b(root, run):
 
 
 BUILDERS = {"G6b": g6b, "G1b": g1b, "G6": g6, "G5": g5, "G4": g4, "G0": g0, "G1": g1, "G2": g2, "G3-handcoding": g3_handcoding, "G3": g3, "G3-review-sample": g3_review_sample}
+
+
+def g7(root, run):
+    """G7 package (P5, stage 12): decisions first, then an index of the outputs with their size and annex references, and the alpha lessons."""
+    import re
+    rv = root / "review" / run
+    dec_h, decisions = read_csv(rv / "G7_decisions.csv") if (rv / "G7_decisions.csv").exists() else ([], [])
+    idx = []
+    for f in sorted((root / "outputs" / run).glob("*.md")):
+        t = f.read_text(encoding="utf-8")
+        body = t.split("## Annex", 1)[0]
+        kind = "comparator brief and draft options" if f.name.startswith("comparator_brief_") else "issue brief" if f.name.startswith("issue_brief_") else "report"
+        idx.append([f.name, kind, str(len(body.split())), str(len(re.findall(r"^\[\d+\] \*\*", t, re.M))),
+                    "yes" if "*Not yet written.*" in t else "no", "Draft", ""])
+    return "G7_outputs.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Outputs", ["file", "kind", "words_before_annex", "annex_items", "missing_narrative", "status", "reviewer_comment"], idx),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS["G7"] = g7
 
 
 def main(argv=None):

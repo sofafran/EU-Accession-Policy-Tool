@@ -1,0 +1,14 @@
+## In brief
+
+The Commission asks North Macedonia to upgrade its point of single contact so that service providers have full online information and procedures under the Services Directive, especially on licences, and to set up a transparent electronic register of all regulated professions (MKD-EU-2024-001-0071; MKD-EU-2025-001-0113; MKD-EU-2025-001-0206). The Commission reports that the point of single contact was upgraded and reached 312 online services by September 2025, and the platform is assessed as implemented, not in practice, as no source gives evidence of use (MKD-EU-2025-001-0111; MKD-EU-2025-001-0112). The Commission still finds it not fully in line with the acquis, and states that the list and register of regulated professions are yet to be put in place (MKD-EU-2025-003-0124; MKD-EU-2025-003-0120). Whether the new Central Register portal has simplified procedures is insufficient_evidence (MKD-EU-2025-003-0122). The gap is assessed as partly_addressed. Priority is Medium, direction of travel is persistent and tractability is Medium.
+
+## How the EU requirement has changed
+
+The Commission's wording has changed little in substance. On the register of regulated professions, it asks in 2020 and 2021 for data validation to be finalised, notes in 2022 that a transparent list is missing, and from 2024 states that the list and register are "yet to be put in place", adding in November 2025 a call for a transparent electronic register of all regulated professions (MKD-EU-2020-001-0171; MKD-EU-2021-001-0074; MKD-EU-2022-001-0077; MKD-EU-2024-001-0073; MKD-EU-2025-001-0206). On the point of single contact, it moves from asking for one to be established in 2021 to asking, in nearly identical words in 2023, 2024 and 2025, for www.uslugi.gov.mk to be upgraded to meet the Services Directive, with the November 2025 report adding licences and business procedures (MKD-EU-2021-001-0124; MKD-EU-2023-001-0103; MKD-EU-2024-001-0071; MKD-EU-2025-003-0123; MKD-EU-2025-001-0113).
+
+## Open questions
+
+- In the same screening report the country says the Central Register is the point of single contact while the Commission names www.uslugi.gov.mk, and this confirmed conflict needs a statement of the legal designation to settle it (MKD-EU-2025-003-0121; MKD-EU-2025-003-0123).
+- Sources give conflicting counts of online services for 2024 (264, 246 and 124) and the fall from 238 in 2023 is unexplained, so a consistent series with stated definitions would be needed (MKD-GOV-2024-001-0092; MKD-EU-2024-009-0014; MKD-EU-2024-001-0072; MKD-EU-2023-001-0104).
+- Whether the 2024-2025 action plan on the Services Directive and the business licence portal upgrade were completed is insufficient_evidence, and government reports on these measures would settle it (MKD-EU-2023-001-0102; MKD-EU-2021-001-0073).
+- No source reports how far service providers actually use the online services, so usage data for the portal would be needed to judge results.

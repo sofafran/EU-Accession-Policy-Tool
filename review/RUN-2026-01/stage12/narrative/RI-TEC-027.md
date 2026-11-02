@@ -1,0 +1,13 @@
+## In brief
+
+The Commission asks North Macedonia to align its national interoperability framework and legislation with the European Interoperability Framework and the Interoperable Europe Act (MKD-EU-2024-001-0091; MKD-EU-2025-001-0137). North Macedonia stated at the 2023 screening that its framework was aligned with European Interoperability Framework 2.0 and that it planned further alignment with the updated version, and its 2025 digital strategy, in machine translation, says care will be taken to align (MKD-EU-2023-003-0012; MKD-EU-2023-003-0009; MKD-GOV-2025-004-0140). The State Audit Office found in 2022 that no study supported the ministry's claim to follow that framework (MKD-GOV-2022-004-0069). The alignment itself is rated proposed, and no aligned text is shown. The Commission links outdated legislation with under-use of the interoperability platform as an obstacle to digital services (MKD-EU-2023-001-0014). The validated assessment is that the gap is open, the direction of travel is persistent, priority is Medium and tractability is High.
+
+## How the EU requirement has changed
+
+The requirement has barely changed. In July 2023 the screening report asks North Macedonia to align with the latest European Interoperability Framework and to seek alignment with the proposed Interoperable Europe Act (MKD-EU-2023-003-0013; MKD-EU-2023-003-0015). The 2023 and 2024 reports repeat in identical words that the country should align with both the framework, latest revised in 2017, and the Interoperable Europe Act, and the 2024 report specifies national legislation (MKD-EU-2023-001-0015; MKD-EU-2024-001-0027; MKD-EU-2024-001-0091). In 2025 the wording becomes a call to continue efforts to align with both, which reports no result (MKD-EU-2025-001-0049; MKD-EU-2025-001-0137).
+
+## Open questions
+
+- The 2023 screening states that the national framework is aligned with European Interoperability Framework 2.0, while the Commission asks for alignment with the latest framework and the audit found no alignment study; this tension is not recorded as a confirmed conflict, and a Commission assessment of the national framework text would settle it (MKD-EU-2023-003-0012; MKD-EU-2023-001-0015; MKD-GOV-2022-004-0069).
+- The only evidence of current national plans is a machine-translated strategy capped at Medium confidence, so a draft or adopted legal text aligning the framework would settle whether work has started (MKD-GOV-2025-004-0140).
+- The Commission treats under-use of the interoperability platform as part of the obstacle, so evidence on whether alignment changes how many institutions exchange data would show whether alignment matters in practice (MKD-EU-2023-001-0014).

@@ -1,0 +1,14 @@
+## In brief
+
+The Commission has found since 2021 that North Macedonia's Personal Data Protection Agency depends on government for staff and funds, and in 2025 said its capacities need to improve (MKD-EU-2021-001-0032; MKD-EU-2024-001-0040; MKD-EU-2025-001-0211). The Agency drafted amendments to secure its autonomy in April 2022, but its own machine-translated report says adoption had still not started in 2025 (MKD-GOV-2026-002-0032; MKD-GOV-2026-002-0037). The Commission reports staff falling from 21 to 20, and the Agency reports 18 at the end of 2024 and 17 at the end of 2025 (MKD-EU-2023-001-0036; MKD-EU-2024-001-0041; MKD-GOV-2025-010-0011; MKD-GOV-2026-002-0016). The Commission also found no director appointed from January 2025 (MKD-EU-2025-001-0204). The 2020 data protection law is validated as in_practice, with weak application, and no outcome is recorded. What remains is autonomy in hiring and spending, and resources matching the Agency's tasks. The unresolved gap is open and the direction of travel is worsening. Priority is Medium and tractability is Medium.
+
+## How the EU requirement has changed
+
+The Commission's concern has stayed the same in substance but its findings have become more severe. In 2021 it described the Agency's dependence on the Ministry of Finance and another ministry for recruitment and organisation (MKD-EU-2021-001-0032). In 2022 and 2023 it said understaffing seriously harmed implementation, and in 2023 it called for alignment on the Agency's independence and noted that it is not financially autonomous (MKD-EU-2022-001-0023; MKD-EU-2023-001-0028; MKD-EU-2023-001-0037). In 2024 it said the Agency lacks independence to hire staff and spend its budget (MKD-EU-2024-001-0040). In 2025 it added that no director had been appointed and called for improved capacities, while a general communication asked for sustained resources and stronger independence (MKD-EU-2025-001-0204; MKD-EU-2025-001-0211; MKD-EU-2025-002-0002).
+
+## Open questions
+
+- The latest staffing, budget and funding refusals rest on the Agency's own machine-translated reports capped at Medium confidence, some at Low (MKD-GOV-2025-010-0012; MKD-GOV-2026-002-0016; MKD-GOV-2026-002-0017); Commission or Ministry of Finance figures would settle them.
+- Whether the director reported by the Agency from December 2025 has improved its functioning is not shown, so later Commission assessments of the Agency's operation are needed.
+- How far the 2025 to 2030 data protection strategy has been carried out is unclear, since the Commission says implementation was held back (MKD-EU-2025-001-0069); a progress report against the strategy's actions would settle it.
+- No outcome evidence shows whether the Agency's supervision improves compliance (MKD-GOV-2026-002-0040), so data on compliance rates over time are needed.

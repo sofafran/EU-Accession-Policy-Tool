@@ -1,6 +1,6 @@
 # Run record: RUN-2026-01
 
-Status: **in progress: stage 12, outputs (G6b passed, GATE-0011)**
+Status: **in progress: stage 12, G7 package ready for Sofia (`review/RUN-2026-01/G7_outputs.xlsx`)**
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Status: **in progress: stage 12, outputs (G6b passed, GATE-0011)**
 | Mechanism list version | 1.0 (approved at G4, GATE-0005) |
 | Data dictionary version | 1.4 (2 Nov 2026, G6b-D05) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.10.0 (adds the G6b comparator package); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.3 (analysis mock-up page, decision E11; single approver; cases stay unvalidated until G6b); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 61 of 61 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.11.0 (adds the G7 outputs package); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.4 (analysis page lists the draft policy options as internal drafts); `build_outputs.py` 1.0.0 (stage 12 outputs); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 61 of 61 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | |
 

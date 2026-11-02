@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (evidence_files, gate_decisions, gate_passed, project_root,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.1.3"
+__version__ = "1.1.4"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -622,6 +622,20 @@ class AnalysisPage(Page):
 
     def s_options(self):
         title, body = self.outputs()
+        import re
+        rows = []
+        for f in sorted((self.root / "outputs" / self.run).glob("comparator_brief_*.md")):
+            text = f.read_text(encoding="utf-8").split("## Draft policy options", 1)
+            if len(text) < 2:
+                continue
+            for m in re.finditer(r"^\*\*((?:Option \d+|A warning)[^*]*)\*\*", text[1].split("## Annex", 1)[0], re.M):
+                rows.append([escape(f.stem[len("comparator_brief_"):]), escape(m.group(1).rstrip(".")), label(self.status("G7", True)) + " internal draft"])
+        if rows:
+            body = ("<h3>Draft policy options (agent synthesis, internal drafts)</h3>"
+                    + table(["Issue", "Option", "Status"], rows)
+                    + "<p>Each option states the gap, the mechanism, the comparator evidence with its transferability judgement and conditions, "
+                      "risks and preconditions, and who would need to act. Transferability judgements are agent synthesis, validated at G6b as conditional hypotheses; "
+                      "the cases show what was tried, not what worked. Full text in the comparator briefs.</p>" + body)
         return "Draft policy options and outputs " + title.split("Outputs ", 1)[-1], body + placeholder(
             "Draft policy options are written only for the two or three issues chosen for the comparator pilot, after G6b, and stay internal drafts after sign-off at G7.")
 

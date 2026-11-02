@@ -1,0 +1,13 @@
+## In brief
+
+The Commission asks North Macedonia to further align its legislation and exchange of good practice with the EURES and European Labour Authority regulations, and its screening report finds national law not aligned with the regulation establishing the Authority (MKD-EU-2025-001-0012; MKD-EU-2025-003-0076; MKD-EU-2025-003-0079). The Commission reports that capacity building for civil servants on EURES and the Authority took place, and this training is assessed as implemented, but no source shows the knowledge in use and it does not align the law (MKD-EU-2023-001-0087; MKD-EU-2023-001-0096). The country states medium-term plans to harmonise, with full implementation on accession, and to prepare the State Labour Inspectorate for tasks coordinated by the Authority, including inspections and undeclared work; both are assessed as proposed (MKD-EU-2025-003-0077; MKD-EU-2025-003-0078; MKD-EU-2025-003-0080). No outcome has been assessed. The gap is open, the direction of travel is persistent, the priority is Medium and tractability is Medium.
+
+## How the EU requirement has changed
+
+The European Labour Authority first appears in the evidence in the 2023 report, inside a key recommendation mainly about strengthening the Employment Service Agency through training, further alignment of legislation and exchange of good practice in line with the EURES and Authority regulations (MKD-EU-2023-001-0089). The 2024 and 2025 reports repeat this recommendation almost word for word, with the 2025 report only spelling out the full names of EURES and the Authority (MKD-EU-2024-001-0007; MKD-EU-2025-001-0012). The only direct findings on the Authority come from the February 2025 screening report, which states twice that North Macedonia is not aligned with the regulation establishing it (MKD-EU-2025-003-0076; MKD-EU-2025-003-0079). The requirement is therefore unchanged in substance since 2023.
+
+## Open questions
+
+- No source shows that the training on EURES and the Authority is being used in practice, so evidence of trained staff applying it, for example in the Employment Service Agency or the labour inspectorate, would settle whether it has had any effect (MKD-EU-2023-001-0096).
+- The content and timing of the medium-term harmonisation plan are not set out, so a draft law, action plan or timetable would show whether alignment is under way (MKD-EU-2025-003-0077; MKD-EU-2025-003-0080).
+- No item shows the institutional, procedural and administrative preparations of the State Labour Inspectorate being carried out, which inspectorate reports or Commission findings could confirm (MKD-EU-2025-003-0078).

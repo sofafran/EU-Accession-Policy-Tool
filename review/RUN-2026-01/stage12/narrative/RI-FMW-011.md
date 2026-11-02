@@ -1,0 +1,14 @@
+## In brief
+
+The Commission reports each year that citizens of only some Member States can use the European Health Insurance Card or access medical services in North Macedonia (MKD-EU-2024-001-0068; MKD-EU-2025-001-0108). From 2020 to 2024 the reports record nine agreements or nine Member States, and the 2024 and 2025 reports state there has been no development on the EHIC (MKD-EU-2020-001-0087; MKD-EU-2021-001-0071; MKD-EU-2022-001-0072; MKD-EU-2023-001-0100; MKD-EU-2024-001-0068; MKD-EU-2025-001-0108). Use of the card with these nine states is assessed as in_practice, and the bilateral social security agreements as implemented. The Commission finds alignment with the technical needs of the EHIC satisfactory (MKD-EU-2025-003-0102), and the outcome is assessed as mixed success with Medium attribution, because coverage is limited to nine Member States. Access for citizens of the other Member States remains, and the gap is assessed as partly_addressed. Priority is Medium, direction of travel is persistent and tractability is Medium.
+
+## How the EU requirement has changed
+
+The Commission's finding has changed little. From 2020 to 2023 the reports record nine agreements, or nine Member States, allowing use of the card, and in 2021 the Commission notes that no new EHIC agreements were concluded (MKD-EU-2020-001-0087; MKD-EU-2021-001-0071; MKD-EU-2021-001-0072; MKD-EU-2022-001-0072; MKD-EU-2023-001-0100). In 2024 it states plainly that there has been no development, with citizens of only nine Member States having access (MKD-EU-2024-001-0068). The 2025 screening report adds a more positive note, finding technical alignment satisfactory (MKD-EU-2025-003-0102). The November 2025 report again states no development but lists fourteen Member States with access to medical services (MKD-EU-2025-001-0108; MKD-EU-2025-001-0109); this was assessed as a difference of scope, not growth, because the five added states have agreements that do not include EHIC use (MKD-EU-2025-003-0198).
+
+## Open questions
+
+- The sources describe the basis for EHIC use differently, with the country stating unilateral use and the Commission stating bilateral agreements, and the agreement texts or a Health Insurance Fund statement would be needed to settle which applies (MKD-EU-2025-003-0100; MKD-EU-2025-003-0102).
+- The country reports that agreements could soon be reached with Hungary, Romania and Croatia, but no source records a new agreement, so later Commission reports or ministry lists would show whether this has happened (MKD-EU-2025-003-0100).
+- The status of the bilateral agreements rests on government reporting alone, and independent confirmation of how they are applied, such as data on EHIC claims handled by healthcare institutions, would strengthen the assessment.
+- No outcome data show how many EU citizens actually use the card in the country, and usage or reimbursement figures from the Health Insurance Fund would help to judge results.

@@ -1,0 +1,13 @@
+## In brief
+
+The Commission asks North Macedonia to align further with Directive (EU) 2019/1151 on the use of digital tools and processes in company law, including scrutiny of a company's object and verification of the appointment and disqualification of directors (MKD-EU-2025-003-0149; MKD-EU-2025-001-0015; MKD-EU-2025-001-0116). The country cites the Law on Trade Companies and the Law on Central Registry as regulating this area, both assessed as adopted (MKD-EU-2025-003-0187). The Commission states that company registration and filing can be carried out fully online through the Central Registry's one-stop shop, which is assessed as in_practice, and it finds a high level of alignment with disclosure requirements and digital tools (MKD-EU-2023-001-0108; MKD-EU-2025-001-0115; MKD-EU-2025-003-0142). No outcome has been assessed. What remains is the narrower set of legal amendments, with no draft reported. The gap is assessed as partly_addressed. Priority is Medium, direction of travel is persistent and tractability is High.
+
+## How the EU requirement has changed
+
+The Commission's wording is essentially unchanged. In 2021 and 2022 it states that further alignment is necessary with the 2019 acquis on digital tools and cross-border operations, and from 2023 to November 2025 the key recommendations ask for alignment on the use of digital tools and processes in company law, always bundled with cross-border operations and, in some years, shareholder engagement (MKD-EU-2021-001-0075; MKD-EU-2022-001-0078; MKD-EU-2023-001-0107; MKD-EU-2024-001-0010; MKD-EU-2025-001-0015). The ask becomes more specific from 2024, naming scrutiny of the company's object and checks on directors (MKD-EU-2024-001-0074; MKD-EU-2025-003-0149). The February 2025 screening report adds that alignment is already high, which narrows the remaining ask but does not show change over time (MKD-EU-2025-003-0142).
+
+## Open questions
+
+- North Macedonia states it is aligned with the acquis on digital tools in company law while the Commission says further alignment is necessary, and this confirmed conflict needs a provision-by-provision comparison with Directive (EU) 2019/1151 to settle it (MKD-EU-2025-003-0133; MKD-EU-2025-001-0116).
+- No source reports a draft amendment on object scrutiny or director checks, so a government legislative plan or draft law would show whether work has started (MKD-EU-2025-003-0149).
+- Free online access to basic company information rests on the country's own presentation, and an independent check of the registry would be needed to confirm it is in practice (MKD-EU-2025-003-0135).

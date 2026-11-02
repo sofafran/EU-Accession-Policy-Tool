@@ -1,0 +1,13 @@
+## In brief
+
+The Commission asks North Macedonia to ensure that, by accession, restrictions on access to the public sector apply only to posts directly involving the exercise of public authority and the safeguarding of the general interest of the State, in line with the case law of the Court of Justice (MKD-EU-2025-003-0026; MKD-EU-2025-003-0035). The Commission reports each year that EU citizens cannot access public administration posts other than a short list of positions in healthcare and higher education (MKD-EU-2024-001-0060; MKD-EU-2025-001-0100). The screening report records that foreigners have no access to public employment, with exemptions for medical, dental and pharmacy experts in health and for higher education (MKD-EU-2025-003-0021; MKD-EU-2025-003-0023). No intervention responding to this issue is linked in the evidence, so there is no implementation status and no outcome to assess. The gap is open, the direction of travel is persistent, the priority is Medium and tractability is Medium.
+
+## How the EU requirement has changed
+
+The Commission's finding has stayed essentially the same. In 2020 it stated that EU citizens do not have access to public administration posts, and from 2021 it added the exception for some positions in health and education (MKD-EU-2020-001-0080; MKD-EU-2021-001-0064). The 2022 and 2023 reports say EU citizens "still" cannot access these posts, and the 2024 and 2025 reports describe the exceptions as a short list in healthcare and higher education (MKD-EU-2022-001-0066; MKD-EU-2023-001-0094; MKD-EU-2024-001-0060; MKD-EU-2025-001-0100). The explicit requirement appears only in the February 2025 screening report, which sets the public authority test, asks the country to examine which civil service categories could be reserved for nationals, and links both to case law (MKD-EU-2025-003-0026; MKD-EU-2025-003-0027; MKD-EU-2025-003-0035).
+
+## Open questions
+
+- It is not settled whether the words "in all sectors" in the 2023 to 2025 key recommendation cover public sector posts, which would raise the priority to High, and a statement from the Commission or the reviewers' reading of the wider report would settle it (MKD-EU-2023-001-0090; MKD-EU-2025-001-0013).
+- The evidence contains no government plan, review of civil servant categories or draft law on this issue, so a national response document would be needed before any status could be assessed (MKD-EU-2025-003-0027).
+- The scope of the health and higher education exemptions rests on the country's account in the screening report, and the legal texts or data on EU citizens employed under them would confirm how they work (MKD-EU-2025-003-0021; MKD-EU-2025-003-0022; MKD-EU-2025-003-0023).

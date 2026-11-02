@@ -1,0 +1,13 @@
+## In brief
+
+The Commission asks North Macedonia to develop human capacity and upgrade its IT capacity so that it can exchange social security data with Member States through EESSI, and to step up its capacity to use EHIC data electronically so that it is ready at accession (MKD-EU-2025-003-0092; MKD-EU-2025-003-0103; MKD-EU-2025-003-0108). The Commission finds the country still at an early stage on EESSI (MKD-EU-2025-003-0098). The country reports plans for a single unified registry of insured persons within two years, financed by a World Bank loan, and for an analysis of law, capacity and IT infrastructure leading to defined EESSI access points within five years (MKD-EU-2025-003-0096; MKD-EU-2025-003-0097). Both are assessed as proposed, and no source shows either in operation. The country also reports that its healthcare facilities have no EHIC reader, so the data cannot be processed electronically (MKD-EU-2025-003-0101). The unresolved gap is assessed as open. Priority is Medium, direction of travel is insufficient_evidence and tractability is Medium.
+
+## How the EU requirement has changed
+
+The requirement appears in the evidence only from 2025, so no change over 2020 to 2025 can be traced. The February 2025 screening report states that North Macedonia is "still at an early stage" on EESSI and asks it to step up alignment, develop human capacities, upgrade IT capacities and increase its capacity to use EHIC data electronically (MKD-EU-2025-003-0098; MKD-EU-2025-003-0099; MKD-EU-2025-003-0092; MKD-EU-2025-003-0103; MKD-EU-2025-003-0108). The November 2025 annual report then adds administrative preparation for electronic exchange of social security data to its key recommendation, alongside concluding bilateral agreements (MKD-EU-2025-001-0014). The word "still" suggests the issue predates 2025, but the earlier reports in the evidence do not state it.
+
+## Open questions
+
+- Direction of travel is insufficient_evidence because the rating rests on a single year of Commission assessment, and earlier Commission or government material on EESSI readiness would be needed to show a trend.
+- The registry and its World Bank financing rest on the country's own account in the screening report, and loan documents or project progress reports would show whether the plan has moved forward (MKD-EU-2025-003-0096).
+- No source reports progress on defining EESSI access points or on equipping healthcare facilities with EHIC readers, and later Commission reports or ministry and Health Insurance Fund updates would be needed to settle whether either has begun (MKD-EU-2025-003-0097; MKD-EU-2025-003-0101).

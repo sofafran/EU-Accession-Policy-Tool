@@ -1,0 +1,13 @@
+## In brief
+
+The Commission states that data protection in the electoral sector needs improvement, that there is no assessment of whether the Electoral Code is harmonised with the data protection law, and that oversight of personal data used in election campaigns is inadequate (MKD-EU-2022-001-0029; MKD-EU-2023-003-0080; MKD-EU-2023-001-0045). Amendments supplementing the provisions on biometric voter identification were adopted in April 2021 (MKD-EU-2021-001-0004), and the Commission notes that the Electoral Code brought in biometric data without prior consultation of the Personal Data Protection Agency (MKD-EU-2022-001-0030; MKD-EU-2023-003-0081). The amendments are assessed as adopted, and no item shows biometric identification used at an election. The Commission reports that the State Election Commission addressed some irregularities identified in supervision (MKD-EU-2022-001-0031; MKD-EU-2023-003-0082), but this does not reach the assessment of the Code or campaign data oversight. No evidence after 2023 addresses the issue. The validated judgements are priority Low, direction of travel insufficient_evidence, unresolved gap open and tractability Medium.
+
+## How the EU requirement has changed
+
+The Commission first raised the issue in its 2022 report, stating that several improvements were needed in data protection in the electoral sector (MKD-EU-2022-001-0029). The 2023 screening report and the 2023 report repeated this in almost the same words and added specific points: no assessment of the Code against data protection law, the need to ensure respect for privacy, and inadequate oversight of campaign data (MKD-EU-2023-003-0079; MKD-EU-2023-003-0080; MKD-EU-2023-003-0083; MKD-EU-2023-001-0042; MKD-EU-2023-001-0045). The finding on the missing prior consultation appears in both years (MKD-EU-2022-001-0133; MKD-EU-2023-003-0129). No Commission item from 2024 or 2025 addresses the issue, so the requirement has not been restated since 2023.
+
+## Open questions
+
+- The direction of travel is insufficient_evidence because the 2024 and 2025 Commission reports are silent, and a later Commission or Personal Data Protection Agency assessment would show whether the problem continues or has eased (MKD-EU-2023-001-0042).
+- Whether any assessment of the Electoral Code against the data protection law has since been carried out is not known, and a published assessment or Agency opinion would settle it (MKD-EU-2023-003-0080).
+- The record does not show whether oversight of personal data in election campaigns has improved, and Agency supervision reports covering recent elections would be needed (MKD-EU-2023-001-0045; MKD-EU-2023-003-0082).
