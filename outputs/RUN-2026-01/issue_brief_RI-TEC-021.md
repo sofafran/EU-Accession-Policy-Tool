@@ -1,6 +1,6 @@
 # Issue brief: Personal data protection in electoral processes weak
 
-RI-TEC-021 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-021 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The processing of personal data in elections, including biometric data and campaign use, lacks oversight and was introduced without assessing compliance or consulting the data protection authority. **Problem mechanisms:** Weak enforcement or oversight (MEC-04); Coordination failure (MEC-08).
 

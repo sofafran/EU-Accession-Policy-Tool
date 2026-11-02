@@ -1,6 +1,6 @@
 # Issue brief: Interoperability platform and data exchange underused
 
-RI-TEC-028 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-028 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Institutions do not use the national interoperability platform regularly, so administrative data are not shared ex officio between institutions, including for checks such as asset declarations and inspections. **Problem mechanisms:** Coordination failure (MEC-08); Insufficient resources (MEC-09).
 

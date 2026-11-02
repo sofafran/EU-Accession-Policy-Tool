@@ -1,6 +1,6 @@
 # Issue brief: Electronic public procurement tools underused
 
-RI-TEC-006 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-006 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The electronic public procurement system works, but some of its modules, such as the e-marketplace for low-value contracts and e-catalogues, are incomplete or little used by contracting authorities, and its data are not yet used for red-flag analysis. **Problem mechanisms:** Weak administrative capacity (MEC-03); Poor transparency or unreliable data (MEC-07).
 

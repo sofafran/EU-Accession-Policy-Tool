@@ -16,14 +16,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import evidence_files, project_root, read_csv, read_json, split_list  # noqa: E402
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
 CHAIN = {"eu_requirement": "EU requirement", "country_response": "Country response", "implementation": "Implementation",
          "outcome": "Outcome", "unresolved_gap": "Unresolved gap", "lesson": "Lesson"}
 COUNTRIES = {"ALB": "Albania", "HRV": "Croatia", "MDA": "Moldova", "MNE": "Montenegro", "SRB": "Serbia", "MKD": "North Macedonia"}
-DRAFT = ("**Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) "
+DRAFT = ("**Status: {status}.** It uses only judgements validated at G6 (GATE-0007) "
          "and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that "
          "material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.")
 
@@ -326,6 +326,9 @@ def main(argv=None):
     a = ap.parse_args(argv)
     root = project_root(a.root)
     D = load(root, a.run)
+    global DRAFT
+    g7 = [r for r in read_csv(root / "registers" / "gate_log.csv")[1] if r["run_id"] == a.run and r["gate"] == "G7" and r["decision"] in ("pass", "pass_with_conditions")]
+    DRAFT = DRAFT.format(status=f"Validated at G7 ({g7[-1]['gate_decision_id']}), internal output" if g7 else "Draft, prepared at stage 12 for sign-off at G7")
     write = lambda p, lines: (p.parent.mkdir(parents=True, exist_ok=True), p.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8"))
     if a.factpacks:
         for r in D["issues"]:

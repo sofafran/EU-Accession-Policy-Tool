@@ -1,6 +1,6 @@
 # Issue brief: Access and rights of third-country workers
 
-RI-FMW-014 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-FMW-014 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Workers from outside the EU face barriers to accessing the labour market, or their rights after admission are not protected or monitored. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak enforcement or oversight (MEC-04).
 

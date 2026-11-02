@@ -1,6 +1,6 @@
 # Issue brief: Broadband and high-capacity network coverage uneven
 
-RI-TEC-013 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-013 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Small businesses and rural or non-urban areas face obstacles to fixed broadband, and high-capacity and 5G networks are still being rolled out. **Problem mechanisms:** Insufficient resources (MEC-09).
 

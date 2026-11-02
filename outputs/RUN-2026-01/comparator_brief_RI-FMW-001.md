@@ -1,6 +1,6 @@
 # Comparator brief: Nationality discrimination in access to employment
 
-RI-FMW-001 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. **Draft policy options at the end are internal drafts** and stay so after sign-off at G7 until a separate decision adapts them for an external audience.
+RI-FMW-001 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. **Draft policy options at the end are internal drafts** and stay so after sign-off at G7 until a separate decision adapts them for an external audience.
 
 ## The issue in North Macedonia (validated at G6)
 

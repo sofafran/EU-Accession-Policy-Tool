@@ -1,6 +1,6 @@
 # Issue brief: Readiness for electronic exchange of social security information
 
-RI-FMW-010 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-FMW-010 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The institutions lack the IT and human capacity to exchange social security information electronically with Member States (the EESSI system) and to use electronic health insurance data. **Problem mechanisms:** Weak administrative capacity (MEC-03).
 

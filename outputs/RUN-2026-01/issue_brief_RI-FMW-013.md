@@ -1,6 +1,6 @@
 # Issue brief: Weak corruption prevention in the administration of worker mobility
 
-RI-FMW-013 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-FMW-013 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The bodies administering free movement of workers, notably the employment service, lack a specific integrity policy, internal controls and audit capacity to prevent corruption. **Problem mechanisms:** Weak administrative capacity (MEC-03); Weak enforcement or oversight (MEC-04).
 

@@ -1,6 +1,6 @@
 # Issue brief: Data protection authority not consulted and its advice not followed
 
-RI-TEC-019 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-019 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The data protection authority is not systematically consulted on sector and implementing laws, its recommendations are often not implemented, and parliament does not follow up its reports. **Problem mechanisms:** Coordination failure (MEC-08); Weak enforcement or oversight (MEC-04).
 

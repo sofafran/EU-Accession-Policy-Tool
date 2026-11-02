@@ -1,6 +1,6 @@
 # Issue brief: Personal data protection law not aligned with EU rules
 
-RI-TEC-017 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-017 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The personal data protection framework is not fully aligned with the General Data Protection Regulation, the Law Enforcement Directive and the ePrivacy Directive, rules on international transfers are missing, and sector laws are not harmonised. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Missing implementing rules (MEC-02).
 

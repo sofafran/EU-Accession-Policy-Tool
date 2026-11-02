@@ -1,6 +1,6 @@
 # Issue brief: Digital transformation strategy and governance weak
 
-RI-TEC-002 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-002 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** There is no adopted long-term strategy for digital transformation aligned with EU targets, or the ministry or agency responsible lacks the capacity, staff and inter-institutional coordination to lead and monitor it. **Problem mechanisms:** Weak administrative capacity (MEC-03); Coordination failure (MEC-08); Poor transparency or unreliable data (MEC-07).
 

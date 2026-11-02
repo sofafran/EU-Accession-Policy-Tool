@@ -1,6 +1,6 @@
 # Issue brief: Electronic communications law not aligned with EU rules
 
-RI-TEC-011 · North Macedonia · **Status: Draft.** Prepared at stage 12 for sign-off at G7. It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-011 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The law on electronic communications is not fully aligned with the European Electronic Communications Code, the Gigabit Infrastructure Act and related rules on cost reduction, spectrum, roaming and open internet access. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Missing implementing rules (MEC-02).
 
