@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.11.0"
+__version__ = "1.12.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -745,6 +745,26 @@ def g7(root, run):
 
 
 BUILDERS["G7"] = g7
+
+
+def g8(root, run):
+    """G8 package (P5, stage 13): decisions first, then the proposed changes from the run review, proposed lesson statuses and active limits."""
+    rv = root / "review" / run
+    sheet = lambda name, title: (title, *read_csv(rv / name)) if (rv / name).exists() else None
+    dec_h, decisions = read_csv(rv / "G8_decisions.csv") if (rv / "G8_decisions.csv").exists() else ([], [])
+    ch_h, ch = read_csv(rv / "G8_proposed_changes.csv")
+    ls_h, ls = read_csv(rv / "G8_lesson_statuses.csv")
+    lim_h, lim = read_csv(root / "registers" / "limits_log.csv")
+    return "G8_close.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Proposed changes", ch_h + ["decision", "comment"], [[r[h] for h in ch_h] + ["", ""] for r in ch]),
+        ("Lesson statuses", ls_h + ["final_status", "comment"], [[r[h] for h in ls_h] + ["", ""] for r in ls]),
+        ("Active limits", lim_h, [[r[h] for h in lim_h] for r in lim if r["run_id"] == run and r["status"] == "active"]),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS["G8"] = g8
 
 
 def main(argv=None):

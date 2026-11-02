@@ -1,6 +1,6 @@
 # Run record: RUN-2026-01
 
-Status: **in progress: stage 13, closing the run (G7 passed, GATE-0012)**
+Status: **in progress: stage 13, G8 package ready for Sofia (`review/RUN-2026-01/G8_close.xlsx`; run review in `runs/RUN-2026-01/run_review.md`)**
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Status: **in progress: stage 13, closing the run (G7 passed, GATE-0012)**
 | Mechanism list version | 1.0 (approved at G4, GATE-0005) |
 | Data dictionary version | 1.4 (2 Nov 2026, G6b-D05) |
 | Evidence schema version | 1.2 (29 Oct 2026) |
-| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.11.0 (adds the G7 outputs package); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.4 (analysis page lists the draft policy options as internal drafts); `build_outputs.py` 1.0.1 (stage 12 outputs; status line follows the G7 decision); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 61 of 61 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
+| Tools versions | `convert_to_text.py` 1.1.0 (legacy Word files, stage 2); `export_review.py` 1.12.0 (adds the G7 and G8 packages); `verify_quotes.py` 1.2.3 (quotes across page breaks: page numbers, running headers and footnotes between pages skipped); `build_review_page.py` 1.1.4 (analysis page lists the draft policy options as internal drafts); `build_outputs.py` 1.0.1 (stage 12 outputs; status line follows the G7 decision); `validate_data.py` 1.2.0 (long-quote warning; theme code required on theme-basis items); 1.0.0 for `hash_file.py`; `next_id.py` 1.1.0 (IDs of removed items stay unused); 61 of 61 tests passed on 30 Oct 2026 (`tools/tests/last_report.csv`); catdoc 0.95 for legacy Word; dependencies in `tools/requirements.txt`; text recognition with Tesseract 5.3.4 (eng, mkd, sqi) |
 | Started | 2026-10-29 (stage 0) |
 | Closed | |
 
@@ -66,5 +66,5 @@ These settings apply the country-neutral procedures to this run.
 - **Alpha set-up (29 Oct 2026), confirmed by Sofia:** run 1 is treated as an alpha product and methodology test (E6); a single review page, `index.html`, shows validated material and labelled work in progress but is not the gate-decision mechanism (E7); an alpha learning log holds curated lessons, while `run_notes.md` stays the raw working diary (E8); George is an alpha reviewer, with formal gate responsibilities unchanged (E9). These were folded into the current pre-G0 versions.
 
 - **G0 (29 Oct 2026):** passed with conditions (GATE-0001). The condition on the alpha lessons was met the same day: Sofia reviewed plain-language versions and set ALN-0001 and ALN-0003 to `implemented` and ALN-0002 to `accepted` (to be checked at G3 and G5). The other conditions stay open: verify the accession and cluster status at stage 1; leave the area codes to G4; keep the process flow gap recorded.
-- Active limits for this run are listed in `registers/limits_log.csv` (LIM-0008 to LIM-0030). LIM-0001 to LIM-0006 were recorded for the earlier Serbia configuration, and LIM-0007 before the review page was agreed; all were superseded on 29 Oct 2026, before G0.
+- Active limits for this run are listed in `registers/limits_log.csv` (LIM-0008 to LIM-0035). LIM-0001 to LIM-0006 were recorded for the earlier Serbia configuration, and LIM-0007 before the review page was agreed; all were superseded on 29 Oct 2026, before G0.
 - On 29 Oct 2026, before G0 and before any acquisition or extraction, the pilot was reconfigured from Serbia, Chapter 5 (Public procurement) to the scope above. The run kept its ID. Decisions behind this scope are recorded in `decisions/decision_log.md` (A5 to A9, D6, E5 to E9 and F2).
