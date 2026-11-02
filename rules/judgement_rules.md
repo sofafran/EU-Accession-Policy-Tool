@@ -1,6 +1,6 @@
 # Judgement rules
 
-Version 0.3, 30 October 2026. Status: approved at G6 (GATE-0007). Changes create a new version and are listed in the change log at the end of this file.
+Version 0.4, 2 November 2026. Status: approved at G6b (GATE-0011). Changes create a new version and are listed in the change log at the end of this file.
 
 These rules tell the agent how to make first-cut judgements. The questions, scales and criteria are defined in Codebook 6, which takes precedence if the two ever differ. This file adds the operational detail.
 
@@ -27,7 +27,7 @@ Each judgement is one row in `judgements/judgements.csv` (or `judgements/source_
 | Success or result | `link` (intervention to outcome) | worked / failed / mixed / too_early | 3 |
 | Attribution | `link` (intervention to outcome) | High / Medium / Low | 3 |
 | Comparator relevance | `issue_comparator` (object ID is the comparator case) | High / Medium / Low | 3 |
-| Transferability | `item` (lesson) for the target country | likely / conditional / unlikely | 3 |
+| Transferability | `item` (lesson stated by a source) or `issue_comparator` (the case's lesson, which is agent synthesis and labelled so in the reason and in every output), for the target country | likely / conditional / unlikely | 3 |
 | Priority | `issue_country` | High / Medium / Low | 3 |
 | Tractability | `issue_country` | High / Medium / Low | 3 |
 
@@ -54,6 +54,7 @@ Every scale also allows `insufficient_evidence`. Use it rather than force a valu
 
 ## Change log
 
+- 0.4 (2 Nov 2026): approved at G6b (GATE-0011, G6b-D05 Option A). Transferability may also attach to a comparator case, one judgement per case, using the case's transferable and not-transferable statements as its conditions, labelled agent synthesis.
 - 0.3 (30 Oct 2026): approved at G6 (GATE-0007). Priority test, legal progress, regional evidence and versions of one report added.
 - 0.2 (29 Oct 2026): direction of travel distinguishes chapter-level from sub-area progress wording (rule issue R3, approved by the analyst).
 - 0.1b (29 Oct 2026): pre-G0 reconfiguration of the pilot (decisions A5 to A9 and D6). Country-neutral wording; source quality per chapter or theme; direction of travel and priority for issues from cross-cutting themes.

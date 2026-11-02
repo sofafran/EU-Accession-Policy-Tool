@@ -1,6 +1,6 @@
 # Data dictionary
 
-Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
@@ -300,7 +300,7 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 | judgement_id | `JDG-NNNNNN` |
 | judgement_type | `evidence_confidence`, `relevance`, `implementation_status`, `direction_of_travel`, `unresolved_gap`, `success`, `attribution`, `comparator_relevance`, `transferability`, `priority`, `tractability` |
 | object_type | `item`, `intervention`, `issue_country`, `link`, `issue_comparator` |
-| object_id | ID of the object: an item, intervention or link ID; for `issue_country`, the issue and country written as `RI-FMW-007@MKD`; for `issue_comparator`, the comparator case ID (`CMP-NNNN`), which already names the target-country issue |
+| object_id | ID of the object: an item, intervention or link ID; for `issue_country`, the issue and country written as `RI-FMW-007@MKD`; for `issue_comparator`, the comparator case ID (`CMP-NNNN`), which already names the target-country issue; used for comparator relevance and, from version 1.4, for a case-level transferability judgement |
 | context_id | Extra context, for example the reform issue for a relevance judgement, or the date for implementation status |
 | value | Value from the allowed scale in the judgement rules, or `insufficient_evidence` |
 | reason | One to three sentences |
