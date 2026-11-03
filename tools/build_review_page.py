@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (country_name, review_page_name, run_extraction, run_items, run_requirements, run_sources, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.6.1"
+__version__ = "1.7.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
