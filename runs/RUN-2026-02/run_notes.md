@@ -19,3 +19,13 @@ Notes are not curated and are not shown on the review page. When a note proves m
 - G0 passed (GATE-0014). Building E21 showed that "adopting" an earlier run's item would not work: classification is held on the item (`pass2`), so a Moldova reclassification would overwrite the alpha's. Settled by keeping each item in one run only; a later run quotes the passage again as its own item. Exact-duplicate checks must therefore compare items within a run, not across runs in one file.
 - `build_review_page.py` and the G3 export now count only the run's own extraction records and items, so Moldova's page will not show North Macedonia comparator items as Moldova extraction.
 - Two more tests assumed one run (next lesson ID read only the alpha log). Fixed; 95 of 95 pass.
+
+## 2026-11-03, stage 2 and 3
+
+- Acquisition by two agents (EU; GOV, IO, RES and CSO), merged by the lead agent: 62 new register rows. Restricted Council documents: the EU agent downloaded the two EU common positions (MDA-EU-2026-001, -002) before seeing the LIMITE marking. The repository is public, so both originals and text files are listed in `.gitignore`, never pushed, registered `excluded` and not used (LIM-0045). Lesson: acquire.py should refuse, or at least warn on, a LIMITE marking before filing.
+- Horizontal EU documents (enlargement communications 2023 to 2025, Council conclusions December 2023 and 2024) were byte-identical to sources registered under North Macedonia (MKD-EU-...). They are matched to REQ-076 and REQ-082 by their MKD IDs, not registered again. Their `country` reads MKD although they cover all candidates: a scaling issue for the shared register (scaling note S8).
+- legis.md blocks automated access, so no consolidated law text is held (LIM-0046). Chapter 2 depends on these laws; manual retrieval requested from Sofia.
+- near_duplicates: MDA-EU-2026-003 and MDA-EU-2026-005 are the second and third release decisions under the Reform and Growth Facility, built on one template; they are different decisions, not versions (tier 1).
+- Acquisition log: a failed attempt for Law 200/2010 is logged under MDA-GOV-2026-002, an ID now used by another source. The log is a history of attempts; the register is authoritative.
+- MDA-GOV-2026-013 is an ARCOM home page saved by mistake during an access test; registered `excluded`.
+- SIGMA Monitoring Report 2023 (MDA-IO-2023-001) is a gov.md copy, because sigmaweb.org blocks automated access; to be checked at G2 as a faithful copy.

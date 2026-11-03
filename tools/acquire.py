@@ -16,6 +16,7 @@ import os
 import re
 import shutil
 import stat
+import subprocess
 import sys
 import tempfile
 import urllib.error
@@ -27,7 +28,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import FAMILIES, SOURCE_ID_RE, project_root, read_csv, write_csv  # noqa: E402
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 USER_AGENT = f"EU-Accession-Policy-Tool/{__version__} (research; public documents only)"
 BLOCKED = {401: "login required", 402: "payment required", 403: "access forbidden", 407: "proxy login required",
            429: "too many requests (rate limit)", 451: "unavailable for legal reasons"}
@@ -110,6 +111,25 @@ def download(url, dest_dir):
     return tmp, ext, str(status)
 
 
+RESTRICTED = re.compile(r"\bLIMITE\b|RESTREINT UE|EU RESTRICTED|\bCONFIDENTIEL UE\b")
+
+
+def restricted_marking(path, ext):
+    """A security or distribution marking on the first pages (LIMITE, RESTREINT UE and similar), or ''. Such documents
+    are not filed: the repository is public, and restricted documents are not used (CLAUDE.md rule 9, LIM-0045)."""
+    try:
+        if ext == ".pdf" and shutil.which("pdftotext"):
+            text = subprocess.run(["pdftotext", "-l", "3", str(path), "-"], capture_output=True, text=True, timeout=60).stdout
+        elif ext in (".html", ".htm", ".txt"):
+            text = path.read_text(encoding="utf-8", errors="replace")[:200000]
+        else:
+            return ""
+    except (OSError, subprocess.SubprocessError):
+        return ""
+    m = RESTRICTED.search(text)
+    return m.group(0) if m else ""
+
+
 def log(root, run, row):
     path = root / "review" / run / "acquisition_log.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -176,6 +196,13 @@ def main(argv=None):
                           "detail": f"exact duplicate of registered source {dup}; not saved"})
         print(f"duplicate: the file is identical to registered source {dup} (SHA-256 {digest}); not saved")
         return 3
+    marking = restricted_marking(tmp, ext)
+    if marking:
+        tmp.unlink()
+        log(root, a.run, {"date": today, "source_id": sid, "url_or_file": where, "result": "refused", "http_status": status,
+                          "detail": f"restricted marking '{marking}' on the first pages; not filed"})
+        print(f"refused: the document carries the marking '{marking}'; restricted documents are not filed or used. Record it as inaccessible (status_reason: restricted)")
+        return 4
     name = f"{sid}_{slugify(a.slug)}{ext}"
     final = originals / name
     os.replace(tmp, final)

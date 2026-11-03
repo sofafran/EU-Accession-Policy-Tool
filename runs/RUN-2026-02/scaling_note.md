@@ -15,6 +15,8 @@ No change to the method is proposed unless a problem below says so. Each point s
 | S5 | Earlier unmatched Moldova items were raised against North Macedonia issues | Taxonomy | Re-examined at G4 |
 | S6 | The method has no rule on territorial coverage | Scope | Run deviation at G0 (G0-D03) |
 | S7 | Countries compared on different rule versions and within-country scales | Regional page | Check at Moldova's G6 |
+| S8 | Horizontal EU documents are registered under the first country that used them | Register | Reused by ID; change proposed for the Moldova review |
+| S9 | Restricted documents and a public repository | Sources | Kept out of git (LIM-0045); tool change proposed |
 
 ## S1. Tools and tests assumed one run
 
@@ -59,3 +61,19 @@ No change to the method is proposed unless a problem below says so. Each point s
 **Found:** North Macedonia's judgements were made under judgement rules 0.2 to 0.4 and taxonomy 1.1; Moldova's will use judgement rules 0.5. Priority and tractability are judged within a country, not across countries. The regional page will compare the two once Moldova passes G6.
 
 **Proposed:** at Moldova's G6, check that the regional page shows each country's rule versions and states that priority is a within-country judgement, so the comparison is not read as a ranking of countries. No change before then, because there is nothing to compare yet.
+
+## S8. Horizontal EU documents are registered under the first country that used them
+
+**Found at stage 2:** the enlargement communications for 2023 to 2025 and the December Council conclusions cover every candidate country. They were registered in the alpha as `MKD-EU-...` with `country` MKD. Moldova downloads were byte-identical, so they are matched to Moldova's requirement lines by their MKD IDs and not registered again (IDs are permanent).
+
+**Effect:** filters by country, the source counts on country pages, and quality ratings per country treat these documents as North Macedonia documents. This will recur in every country.
+
+**Proposed for the Moldova review, no change now:** allow `country` to read `multi` (or a semicolon list) for horizontal EU documents, keeping the existing IDs. Items extracted from them already carry their own `country`, so evidence is not affected.
+
+## S9. Restricted documents and a public repository
+
+**Found at stage 2:** two Council documents marked LIMITE were publicly downloadable and were downloaded before the marking was seen. The repository and its pages are public (E10), so anything filed under `sources/` would be published on the next push.
+
+**Done:** both files are listed in `.gitignore`, registered `excluded`, and not used (LIM-0045).
+
+**Proposed:** `acquire.py` should check the first pages for "LIMITE" or similar markings and refuse to file the document. This is a small tool change, not a method change.

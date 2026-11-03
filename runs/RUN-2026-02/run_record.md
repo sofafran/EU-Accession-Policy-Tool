@@ -5,7 +5,7 @@ Status: **G0 passed (GATE-0014), stage 1 in progress**
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-02 |
-| Current stage | 2 Acquisition |
+| Current stage | 5 Extraction (waiting for the 2026 Moldova report, due 4 November 2026) |
 | Purpose | First country run of the controlled scaling phase (decisions E19 and E20, `runs/rollout_plan.md`). It applies the method validated in the North Macedonia alpha (RUN-2026-01) to Moldova, as a diagnostic covering the chain from EU requirement to priority, with a comparator step for the issues chosen at G6. It is also the first test of the shared multi-country architecture: what it teaches is reviewed before Montenegro (RUN-2026-03) starts |
 | Target country | Moldova (MDA) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -26,7 +26,7 @@ Status: **G0 passed (GATE-0014), stage 1 in progress**
 | Mechanism list version | 1.0 |
 | Data dictionary version | 1.6 (G0-D02, E21) |
 | Evidence schema version | 1.3 (G0-D02, E21: several runs' extractions per evidence file) |
-| Tools versions | `acquire.py` 1.0.0; `build_review_page.py` 1.5.0; `convert_to_text.py` 1.2.0; `export_review.py` 1.13.1; `hash_file.py` 1.0.0; `near_duplicates.py` 1.0.0; `next_id.py` 1.2.0; `refresh_delta.py` 1.1.0; `start_extraction.py` 1.0.0; `validate_data.py` 1.5.0; `verify_quotes.py` 1.2.3. Test report `tools/tests/last_report.csv`: 95 of 95 passed on 3 November 2026. Text recognition: Tesseract with `eng` and `ron` |
+| Tools versions | `acquire.py` 1.1.0; `build_review_page.py` 1.5.0; `convert_to_text.py` 1.2.0; `export_review.py` 1.13.1; `hash_file.py` 1.0.0; `near_duplicates.py` 1.0.0; `next_id.py` 1.2.0; `refresh_delta.py` 1.1.0; `start_extraction.py` 1.0.0; `validate_data.py` 1.5.0; `verify_quotes.py` 1.2.3. Test report `tools/tests/last_report.csv`: 96 of 96 passed on 3 November 2026. Text recognition: Tesseract with `eng` and `ron` |
 | Started | 2026-11-03 (stage 0) |
 | Closed | |
 

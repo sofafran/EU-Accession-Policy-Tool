@@ -666,8 +666,12 @@ def main():
         (samples / "outside.pdf").write_bytes(b"%PDF-1.4")
         r = acquire("--manual", str(samples / "outside.pdf"), "--slug", "Outside")
         check("acquire.py", "manual route only accepts files from sources/_inbox/", r.returncode != 0 and "_inbox" in r.stderr, r.stderr[-300:])
+        (inbox / "limite.pdf").write_bytes(minimal_pdf([["Council of the European Union", "LIMITE", "EU common position"]]))
+        r = acquire("--manual", str(inbox / "limite.pdf"), "--slug", "Restricted")
+        check("acquire.py", "document marked LIMITE is refused and not filed (LIM-0045)",
+              r.returncode == 4 and "LIMITE" in r.stdout and not list(orig_dir.glob("MNE-EU-2026-003*")), r.stdout + r.stderr[-300:])
         alog = list(csv.DictReader((aq / "review" / "RUN-TEST" / "acquisition_log.csv").open(encoding="utf-8")))
-        check("acquire.py", "every attempt logged with its result", [x["result"] for x in alog] == ["saved", "refused", "duplicate", "failed", "failed", "failed", "saved"], str([x["result"] for x in alog]))
+        check("acquire.py", "every attempt logged with its result", [x["result"] for x in alog] == ["saved", "refused", "duplicate", "failed", "failed", "failed", "saved", "refused"], str([x["result"] for x in alog]))
         srv.shutdown()
 
         # build_outputs: rebuild the validated RUN-2026-01 outputs from a copy of the real data and compare
