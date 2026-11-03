@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (country_name, review_page_name, run_extraction, run_items, run_requirements, run_sources, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.6.0"
+__version__ = "1.6.1"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -487,7 +487,7 @@ class Page:
 <div class="wrap">
 <header>
 <h1>EU Accession Reform Intelligence Tool: {self.word} review</h1>
-<p class="sub">{escape(self.run)} · {escape(country)} · Page updated {escape(self.today)}</p>
+<p class="sub">{escape(self.run)} · {escape(country)} · Page updated {escape(self.today)} · <a href="tool-explainer.html">How the tool works</a></p>
 <nav aria-label="Sections">{nav}</nav>
 </header>
 <section class="notice" aria-label="About this page">

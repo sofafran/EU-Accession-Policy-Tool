@@ -1,6 +1,6 @@
 # Run record: RUN-2026-02
 
-Status: **G0 passed (GATE-0014), stage 1 in progress**
+Status: **G3 passed with conditions (GATE-0017), stage 7 in progress: paused awaiting the 2026 Moldova report, before G4**
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ Status: **G0 passed (GATE-0014), stage 1 in progress**
 | Mechanism list version | 1.0 |
 | Data dictionary version | 1.6 (G0-D02, E21) |
 | Evidence schema version | 1.3 (G0-D02, E21: several runs' extractions per evidence file) |
-| Tools versions | `acquire.py` 1.1.0; `build_review_page.py` 1.6.0; `build_outputs.py` 1.2.0; `convert_to_text.py` 1.2.0; `export_review.py` 1.14.1; `hash_file.py` 1.0.0; `near_duplicates.py` 1.0.0; `next_id.py` 1.2.0; `refresh_delta.py` 1.1.0; `start_extraction.py` 1.0.0; `validate_data.py` 1.5.0; `verify_quotes.py` 1.2.3. Test report `tools/tests/last_report.csv`: 96 of 96 passed on 3 November 2026. Text recognition: Tesseract with `eng` and `ron` |
+| Tools versions | `acquire.py` 1.1.0; `build_review_page.py` 1.6.1; `build_outputs.py` 1.2.0; `convert_to_text.py` 1.2.0; `export_review.py` 1.14.1; `hash_file.py` 1.0.0; `near_duplicates.py` 1.0.0; `next_id.py` 1.2.0; `refresh_delta.py` 1.1.0; `start_extraction.py` 1.0.0; `validate_data.py` 1.5.0; `verify_quotes.py` 1.2.3. Test report `tools/tests/last_report.csv`: 96 of 96 passed on 3 November 2026. Text recognition: Tesseract with `eng` and `ron` |
 | Started | 2026-11-03 (stage 0) |
 | Closed | |
 

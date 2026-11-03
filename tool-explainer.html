@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accession Tool Explainer</title>
+<meta name="description" content="An explainer of the EU Accession Reform Intelligence Tool: what it does, how the method works, where AI and human judgement sit, and how it scales across accession countries.">
+<style>
+:root{
+  --bg:#f6f5f1; --surface:#ffffff; --surface-2:#fbfaf7;
+  --ink:#15202e; --ink-2:#465263; --ink-3:#7a8392; --line:#e2dfd7; --line-2:#ece9e2;
+  --brand:#18324f; --brand-2:#2c4f78;
+  --in:#776d5e;   --in-bg:#f0ece4;   --in-bd:#d8d0c2;
+  --ai:#0d6e69;   --ai-bg:#e2f1ee;   --ai-bd:#a9d3cc;
+  --data:#284a7a; --data-bg:#e7edf6; --data-bd:#b5c6df;
+  --gate:#a86400; --gate-bg:#fcefd6; --gate-bd:#e9c27e;
+  --judg:#664a98; --judg-bg:#eee8f7; --judg-bd:#cbbbe5;
+  --out:#22663f;  --out-bg:#e1efe6;  --out-bd:#a8cfb6;
+  --radius:14px; --shadow:0 1px 2px rgba(21,32,46,.05),0 6px 20px rgba(21,32,46,.06);
+  --font:"Inter","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-2)}
+button{font-family:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.wrap.wide{max-width:1400px}
+.wrap.wide>.inner{max-width:1132px;margin:0 auto}
+@media (max-width:600px){.wrap{padding:0 16px}}
+
+/* ---------- Navigation ---------- */
+.nav{position:sticky;top:0;z-index:50;background:rgba(246,245,241,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:18px;height:58px}
+.brand{font-weight:700;font-size:14px;letter-spacing:.01em;white-space:nowrap;color:var(--brand)}
+.brand span{color:var(--ink-3);font-weight:500}
+.nav ol{min-width:0;list-style:none;display:flex;gap:2px;margin:0 0 0 auto;padding:0;overflow-x:auto;scrollbar-width:none}
+.nav ol::-webkit-scrollbar{display:none}
+.nav a{display:block;padding:7px 11px;border-radius:999px;font-size:13px;color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.nav a b{font-weight:600;color:var(--ink-3);margin-right:5px}
+.nav a:hover{background:var(--line-2)}
+.nav a.active{background:var(--brand);color:#fff}
+.nav a.active b{color:#b9c8dc}
+@media (max-width:900px){.brand{display:none}.nav ol{margin-left:0}}
+
+/* ---------- Sections ---------- */
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand-2)}
+.eyebrow i{font-style:normal;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;font-size:11px;letter-spacing:0}
+h1,h2,h3{margin:0;letter-spacing:-.015em;line-height:1.15}
+h2{font-size:clamp(28px,3.4vw,40px);margin:14px 0 12px;max-width:820px}
+h3{font-size:18px}
+.lede{font-size:18px;color:var(--ink-2);max-width:720px;margin:0}
+.muted{color:var(--ink-3)}
+.small{font-size:13px}
+
+/* ---------- Hero ---------- */
+.hero{padding:96px 0 72px;background:radial-gradient(1200px 400px at 85% -10%,#e3e9f2 0,transparent 60%),var(--bg)}
+.hero h1{font-size:clamp(34px,5.2vw,62px);max-width:900px;margin:18px 0 18px}
+.hero h1 em{font-style:normal;color:var(--brand-2)}
+.principle{display:inline-flex;align-items:center;gap:14px;margin-top:28px;padding:16px 22px;border-radius:var(--radius);background:var(--brand);color:#fff;font-size:clamp(17px,2vw,21px);font-weight:600;box-shadow:var(--shadow)}
+.principle small{display:block;font-size:12px;font-weight:500;color:#b9c8dc;letter-spacing:.06em;text-transform:uppercase}
+.tag-note{display:inline-block;margin-top:22px;font-size:13px;color:var(--ink-3);border:1px dashed var(--line);padding:6px 12px;border-radius:999px;background:var(--surface)}
+
+/* ---------- Legend and element kinds ---------- */
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:34px}
+.lg{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--ink-2)}
+.sw{width:22px;height:16px;flex:none}
+.sw.in{background:var(--in-bg);border:1.5px solid var(--in);border-radius:3px;clip-path:polygon(0 0,72% 0,100% 30%,100% 100%,0 100%)}
+.sw.ai{background:var(--ai-bg);border:1.5px solid var(--ai);border-radius:999px}
+.sw.data{background:var(--data-bg);border:1.5px solid var(--data);border-radius:3px;box-shadow:3px 3px 0 -1px var(--data-bg),3px 3px 0 0 var(--data)}
+.sw.gate{width:14px;height:14px;margin:0 4px;background:var(--gate-bg);border:1.5px solid var(--gate);transform:rotate(45deg)}
+.sw.judg{background:var(--judg-bg);border:1.5px solid var(--judg);clip-path:polygon(18% 0,100% 0,100% 100%,18% 100%,0 50%)}
+.sw.out{background:var(--out);border-radius:4px}
+
+/* ---------- Generic cards ---------- */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:18px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink-2);white-space:nowrap}
+
+/* ---------- 1. Why ---------- */
+.why{display:grid;grid-template-columns:1fr 150px 1fr;gap:20px;align-items:center;margin-top:46px}
+.docs{display:grid;gap:10px}
+.doc{display:flex;align-items:center;gap:12px;padding:13px 16px;background:var(--surface);border:1px solid var(--in-bd);border-left:4px solid var(--in);border-radius:10px;font-weight:600;font-size:15px}
+.doc svg{flex:none;color:var(--in)}
+.doc:nth-child(2){margin-left:18px}.doc:nth-child(3){margin-left:6px}.doc:nth-child(4){margin-left:24px}.doc:nth-child(5){margin-left:10px}
+.break{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-size:12px;color:var(--ink-3);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.break svg{width:100%;height:40px}
+.qs{display:grid;gap:12px}
+.q{padding:16px 18px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:flex;gap:14px;align-items:center;font-size:17px;font-weight:600}
+.q i{font-style:normal;flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--bg);color:var(--brand-2);font-weight:700;border:1px dashed var(--brand-2)}
+.why-foot{margin-top:40px;padding:18px 22px;border-radius:12px;background:var(--surface);border:1px solid var(--line);font-size:17px;max-width:860px}
+.why-foot strong{color:var(--brand)}
+@media (max-width:860px){.why{grid-template-columns:1fr}.break{flex-direction:row;justify-content:center}.break svg{width:60px;transform:rotate(90deg)}.doc{margin-left:0!important}}
+
+/* ---------- 2. What ---------- */
+.flow3{display:grid;grid-template-columns:1fr 46px 1fr 46px 1fr;align-items:stretch;margin-top:46px}
+.flow3 .arrow{display:grid;place-items:center;color:var(--ink-3);font-size:24px}
+.f3{border-radius:var(--radius);padding:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--shadow)}
+.f3 .k{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.f3 h3{font-size:22px;margin:8px 0 10px}
+.f3 p{margin:0;color:var(--ink-2);font-size:15px}
+.f3.a{border-top:5px solid var(--in)} .f3.a .k{color:var(--in)}
+.f3.b{border-top:5px solid var(--ai)} .f3.b .k{color:var(--ai)}
+.f3.c{border-top:5px solid var(--out)} .f3.c .k{color:var(--out)}
+@media (max-width:860px){.flow3{grid-template-columns:1fr}.flow3 .arrow{transform:rotate(90deg);height:40px}}
+.commit{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.cm{padding:18px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line)}
+.cm b{display:block;font-size:15px;margin-bottom:4px}
+.cm span{font-size:14px;color:var(--ink-2)}
+@media (max-width:900px){.commit{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.commit{grid-template-columns:1fr}}
+.scope{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:16px 20px;border-radius:12px;border:1px dashed var(--brand-2);background:#eef2f7}
+.scope .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-2);margin-right:6px}
+.scope .chip{white-space:normal;background:#fff;border-color:#c9d5e5;color:var(--brand)}
+
+/* ---------- 3. Method map ---------- */
+.map-tools{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:34px 0 16px}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{border:0;background:none;padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600;color:var(--ink-2);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--brand);color:#fff}
+.switch{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--gate-bd);background:var(--gate-bg);color:#7a4900;padding:6px 14px 6px 8px;border-radius:999px;font-size:13px;font-weight:700;cursor:pointer}
+.switch .knob{width:34px;height:20px;border-radius:999px;background:#e8d3ab;position:relative;transition:.2s}
+.switch .knob::after{content:"";position:absolute;top:3px;left:3px;width:14px;height:14px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.switch[aria-pressed="true"] .knob{background:var(--gate)}
+.switch[aria-pressed="true"] .knob::after{left:17px}
+.reset{border:0;background:none;color:var(--ink-3);font-size:13px;cursor:pointer;text-decoration:underline}
+
+.map{margin:0 auto;max-width:1360px;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.layer{position:relative;display:block;transition:opacity .25s}
+.layer-label{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.layer-label b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)}
+.layer-label span{font-size:12.5px;color:var(--ink-3);line-height:1.35}
+.joint{margin:10px 0 12px}
+.joint div{display:flex;align-items:center;gap:10px;color:var(--ink-3);font-size:12px;font-weight:600;letter-spacing:.04em}
+.joint div::before,.joint div::after{content:"";flex:1;border-top:1px dashed var(--line)}
+
+.groups{display:flex;gap:10px}
+.group{flex:var(--n) 1 0;min-width:0;border-radius:12px;padding:9px;background:var(--surface-2);border:1px solid var(--line-2)}
+.ghead{display:flex;flex-direction:column;align-items:flex-start;gap:5px;margin-bottom:10px}
+.ghead .gt{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3);line-height:1.25}
+.gates{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-start;margin-left:-3px;cursor:pointer;padding:3px;border-radius:8px;border:0;background:none}
+.gates:hover,.gates:focus-visible{background:var(--gate-bg)}
+.gate{width:22px;height:22px;display:grid;place-items:center;flex:none}
+.gate::before{content:"";position:absolute;width:15px;height:15px;background:var(--gate-bg);border:1.5px solid var(--gate);transform:rotate(45deg);border-radius:2px}
+.gate{position:relative}
+.gate em{position:relative;font-style:normal;font-size:7.5px;font-weight:800;color:#7a4900;letter-spacing:-.02em}
+.nodes{display:flex;gap:15px}
+@media (max-width:1150px){
+  .groups{flex-direction:column}
+  .nodes{flex-wrap:wrap;gap:10px}
+}
+
+.node{position:relative;flex:1 1 0;min-width:0;overflow-wrap:break-word;cursor:pointer;text-align:left;border:1.5px solid;padding:10px 10px 11px;font-size:12.5px;font-weight:700;color:var(--ink);line-height:1.25;transition:opacity .25s,box-shadow .2s,transform .15s;background:#fff}
+.node:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(21,32,46,.1)}
+.node:focus-visible{outline:3px solid var(--brand-2);outline-offset:2px}
+.node .sub{display:block;margin-top:4px;font-size:11px;font-weight:500;color:var(--ink-3)}
+.node .num{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;font-size:10px;margin-right:6px;background:#fff;border:1px solid currentColor;vertical-align:1px}
+.node .jt{white-space:nowrap;display:inline-block;margin-top:6px;font-size:10px;font-weight:700;padding:2px 7px 2px 9px;color:var(--judg);background:var(--judg-bg);clip-path:polygon(7px 0,100% 0,100% 100%,7px 100%,0 50%)}
+.k-in{background:var(--in-bg);border-color:var(--in-bd);border-radius:8px;clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+.k-in .num{color:var(--in)}
+.k-ai{background:var(--ai-bg);border-color:var(--ai-bd);border-radius:22px;padding-left:14px;padding-right:14px}
+.k-ai .num{color:var(--ai)}
+.k-data{background:var(--data-bg);border-color:var(--data-bd);border-radius:8px;box-shadow:4px 4px 0 -1.5px #fff,4px 4px 0 0 var(--data-bd)}
+.k-data .num{color:var(--data)}
+.k-judg{background:var(--judg-bg);border-color:var(--judg-bd);border-radius:6px;clip-path:polygon(12px 0,100% 0,100% 100%,12px 100%,0 50%);padding-left:18px}
+.k-judg .num{color:var(--judg)}
+.k-out{background:var(--out);border-color:var(--out);color:#fff;border-radius:8px}
+.k-out .sub{color:#cfe6d7}
+.k-out .num{color:#fff;background:transparent}
+.ai-mark{display:inline-block;margin-left:4px;color:var(--ai);font-size:11px}
+
+/* arrows between nodes */
+.flowline .node:not(.last)::after{content:"";position:absolute;right:-13px;top:50%;width:10px;height:10px;border-top:2px solid #b9b4a8;border-right:2px solid #b9b4a8;transform:translateY(-50%) rotate(45deg);clip-path:none}
+.flowline .k-in:not(.last),.flowline .k-judg:not(.last){clip-path:none}
+.flowline .k-in:not(.last){border-top-right-radius:14px}
+@media (max-width:1150px){.flowline .group .node:not(.last)::after{display:block}}
+@media (max-width:640px){.flowline .node:not(.last)::after{display:none}}
+@media (max-width:900px){#L-data .nodes{flex-wrap:wrap;gap:10px}#L-data .node{flex:1 1 calc(33% - 10px)}}
+@media (max-width:560px){#L-data .node{flex-basis:calc(50% - 10px)}}
+
+/* chain stated / assessed band */
+.sa{display:flex;gap:0;margin-top:10px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.sa div{flex:1;text-align:center;padding:5px 6px;border-radius:6px}
+.sa .st{background:var(--in-bg);color:var(--in);margin-right:4px}
+.sa .as{background:var(--judg-bg);color:var(--judg)}
+.logs{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:12px;color:var(--ink-3)}
+
+/* focus + human states */
+.map.focus .node,.map.focus .gates{opacity:.22}
+.map.focus .on{opacity:1!important;box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--brand-2)}
+.map.focus .k-in.on,.map.focus .k-judg.on{box-shadow:none;outline:2.5px solid var(--brand-2);outline-offset:3px}
+.map.human .node:not([data-human]){opacity:.18}
+.map.human .node[data-human]{box-shadow:0 0 0 2.5px var(--gate)}
+.map.human .k-in[data-human],.map.human .k-judg[data-human]{box-shadow:none;outline:2.5px solid var(--gate);outline-offset:3px}
+.map.human .gates{background:var(--gate-bg)}
+.map.human .gate::before{border-width:2px;box-shadow:0 0 0 3px rgba(168,100,0,.18)}
+.map[data-view="process"] .layer:not(#L-process),.map[data-view="chain"] .layer:not(#L-chain),.map[data-view="data"] .layer:not(#L-data){opacity:.18}
+
+.detail{margin-top:18px;display:grid;grid-template-columns:240px 1fr 1fr 1fr;gap:18px;padding:20px 22px;border-radius:14px;background:var(--brand);color:#fff;min-height:118px}
+.detail .dk{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#a9bbd2;font-weight:700}
+.detail h3{font-size:20px;margin-top:6px;color:#fff}
+.detail .col p{margin:4px 0 0;font-size:14px;color:#e2e9f2;line-height:1.5}
+.detail .hint{grid-column:1/-1;color:#c7d4e4;font-size:15px;align-self:center}
+@media (max-width:900px){.detail{grid-template-columns:1fr}}
+.map-note{margin-top:12px;font-size:12px;color:var(--ink-3)}
+
+/* ---------- 4. Chain step-through ---------- */
+.stepper{display:grid;grid-template-columns:300px 1fr;gap:26px;margin-top:40px;align-items:start}
+@media (max-width:860px){.stepper{grid-template-columns:1fr}}
+.rail{list-style:none;margin:0;padding:0;position:relative}
+.rail::before{content:"";position:absolute;left:15px;top:14px;bottom:14px;width:2px;background:var(--line)}
+.rail li button{position:relative;display:flex;align-items:center;gap:12px;width:100%;border:0;background:none;padding:7px 8px 7px 0;font-size:15px;font-weight:600;color:var(--ink-3);cursor:pointer;text-align:left;border-radius:8px}
+.rail li button .dot{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;background:var(--surface);border:2px solid var(--line);color:var(--ink-3);z-index:1}
+.rail li button.done{color:var(--ink-2)}
+.rail li button.done .dot{border-color:var(--brand-2);color:var(--brand-2)}
+.rail li button.cur{color:var(--ink)}
+.rail li button.cur .dot{background:var(--brand);border-color:var(--brand);color:#fff}
+.rail .grp{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-2);padding:12px 0 2px 46px}
+.rail .grp:first-child{padding-top:0}
+@media (max-width:860px){.rail{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}.rail::before,.rail .grp{display:none}.rail li button span.t{display:none}.rail li button{padding:0}}
+.stage{position:relative;padding:30px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);min-height:420px;display:flex;flex-direction:column}
+.illus{position:absolute;top:18px;right:18px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#7a4900;background:var(--gate-bg);border:1px dashed var(--gate);padding:5px 10px;border-radius:999px}
+.stage .gl{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-2)}
+.stage h3{font-size:30px;margin:8px 0 6px;padding-right:110px}
+.stage .def{font-size:17px;color:var(--ink-2);margin:0 0 22px;max-width:640px}
+.issue{border:1.5px dashed var(--line);border-radius:14px;padding:18px 20px;background:var(--surface-2)}
+.issue .il{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.issue p{margin:8px 0 0;font-size:17px}
+.ph{display:inline-block;padding:0 7px;border-radius:5px;background:#e9e6de;color:var(--ink-2);font-weight:600}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.fact{padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#fff}
+.fact .fl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.fact .fv{margin-top:5px;font-weight:600;font-size:14px;display:flex;align-items:center;gap:8px}
+@media (max-width:640px){.facts{grid-template-columns:1fr}}
+.stage-nav{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:24px}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:600;font-size:14px;padding:10px 16px;border-radius:999px;cursor:pointer}
+.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn:disabled{opacity:.4;cursor:default}
+.bar{flex:1;height:4px;border-radius:4px;background:var(--line-2);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--brand-2);width:10%;transition:width .3s}
+
+/* ---------- 5. Human + AI ---------- */
+.big-principle{margin-top:36px;padding:34px;border-radius:20px;background:var(--brand);color:#fff;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
+.big-principle p{margin:0;font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.big-principle p span{color:#9fd7cf}
+.big-principle p b{color:#f2c46d}
+.big-principle .sub{font-size:15px;color:#c3d1e2;margin-top:10px;font-weight:500}
+@media (max-width:760px){.big-principle{grid-template-columns:1fr}}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+@media (max-width:900px){.tiers{grid-template-columns:1fr}}
+.tier{border-radius:16px;padding:22px;background:var(--surface);border:1px solid var(--line);position:relative;overflow:hidden}
+.tier::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px}
+.tier.t1::before{background:var(--ai)} .tier.t2::before{background:linear-gradient(var(--ai),var(--gate))} .tier.t3::before{background:var(--gate)}
+.tier .tn{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.tier h3{margin:6px 0 12px;font-size:20px}
+.meter{display:flex;gap:4px;margin-bottom:14px}
+.meter i{flex:1;height:6px;border-radius:3px;background:var(--line-2)}
+.t1 .meter i:nth-child(-n+3){background:var(--ai)}
+.t2 .meter i:nth-child(-n+2){background:var(--ai)} .t2 .meter i:nth-child(3){background:var(--gate)}
+.t3 .meter i:nth-child(1){background:var(--ai)} .t3 .meter i:nth-child(n+2){background:var(--gate)}
+.meter-l{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-3);margin:-8px 0 14px}
+.tier ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.tier li{font-size:12.5px;padding:4px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--line-2);color:var(--ink-2)}
+.t3 li{background:var(--gate-bg);border-color:var(--gate-bd);color:#6d4300}
+.expand{margin-top:12px}
+.expand summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--brand-2);list-style:none}
+.expand summary::-webkit-details-marker{display:none}
+.expand summary::before{content:"+ ";font-weight:700}
+.expand[open] summary::before{content:"− "}
+.expand ul{margin-top:10px}
+
+.gatestrip{margin-top:26px;padding:22px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.gatestrip .row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:16px;position:relative}
+.gatestrip .row::before{content:"";position:absolute;left:4%;right:4%;top:22px;border-top:2px dashed var(--gate-bd)}
+.gp{position:relative;text-align:center}
+.gp .ds{display:flex;justify-content:center;gap:8px;height:44px;align-items:center;background:var(--surface);width:max-content;margin:0 auto;padding:0 6px}
+.gp .ds .gate{width:26px;height:26px}
+.gp .ds .gate::before{width:18px;height:18px}
+.gp .ds .gate em{font-size:8.5px}
+.gp b{display:block;font-size:13px;margin-top:6px}
+.gp span{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
+@media (max-width:760px){.gatestrip .row{grid-template-columns:1fr;text-align:left}.gatestrip .row::before{display:none}.gp{display:grid;grid-template-columns:150px 1fr;align-items:center;text-align:left}.gp .ds{margin:0}}
+.safe{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+@media (max-width:900px){.safe{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.safe{grid-template-columns:1fr}}
+.sf{display:flex;gap:12px;padding:14px 16px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);font-size:14px;font-weight:600}
+.sf svg{flex:none;color:var(--brand-2);margin-top:1px}
+.sf span{display:block;font-weight:400;color:var(--ink-3);font-size:13px;margin-top:2px}
+
+/* ---------- 6. Outputs ---------- */
+.outs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+@media (max-width:900px){.outs{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.outs{grid-template-columns:1fr}}
+.out{position:relative;padding:22px;border-radius:16px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.out .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--out-bg);color:var(--out);margin-bottom:14px}
+.out.page .ic{background:var(--out);color:#fff}
+.out h3{font-size:17px}
+.out p{margin:6px 0 0;font-size:14px;color:var(--ink-2)}
+.out .when{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;color:var(--out);background:var(--out-bg);padding:3px 9px;border-radius:999px}
+.out.wide{grid-column:span 3;display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+@media (max-width:900px){.out.wide{grid-column:span 2}}
+@media (max-width:560px){.out.wide{grid-column:span 1;grid-template-columns:1fr}}
+.labels{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.st-chip{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid}
+.st-chip::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.s-val{color:var(--out);background:var(--out-bg);border-color:var(--out-bd)}
+.s-pen{color:#8a5400;background:var(--gate-bg);border-color:var(--gate-bd)}
+.s-pro{color:var(--judg);background:var(--judg-bg);border-color:var(--judg-bd)}
+.s-dra{color:var(--data);background:var(--data-bg);border-color:var(--data-bd)}
+.s-not{color:var(--ink-3);background:var(--bg);border-color:var(--line)}
+.trace{margin-top:30px;padding:24px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.trace-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:14px}
+.tr{padding:10px 14px;font-size:14px;font-weight:700;border:1.5px solid}
+.tr small{display:block;font-size:11px;font-weight:500;color:var(--ink-3)}
+.tr-sep{color:var(--ink-3);font-size:18px}
+.trace p{margin:14px 0 0;font-size:14px;color:var(--ink-2)}
+
+/* ---------- 7. Scaling ---------- */
+.scale{margin-top:40px;display:grid;gap:0;justify-items:center}
+.core{width:min(760px,100%);padding:24px 26px;border-radius:20px;background:var(--brand);color:#fff;text-align:center;box-shadow:var(--shadow)}
+.core .k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a9bbd2;font-weight:700}
+.core h3{font-size:24px;margin:6px 0 14px;color:#fff}
+.core .items{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.core .items span{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.fan{width:100%;height:56px}
+.countries{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:100%}
+@media (max-width:900px){.countries{grid-template-columns:1fr 1fr}.fan{height:30px}}
+@media (max-width:520px){.countries{grid-template-columns:1fr}}
+.ctry{text-align:left;cursor:pointer;padding:18px;border-radius:16px;background:var(--surface);border:1.5px solid var(--line);box-shadow:var(--shadow);transition:transform .15s,border-color .2s;font:inherit;color:inherit}
+.ctry:hover{transform:translateY(-2px)}
+.ctry[aria-expanded="true"]{border-color:var(--brand-2)}
+.ctry .cs{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.ctry h3{margin:10px 0 4px;font-size:18px}
+.ctry .cd{font-size:13px;color:var(--ink-2)}
+.ctry .more{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--line-2);font-size:13px;color:var(--ink-2)}
+.ctry[aria-expanded="true"] .more{display:block}
+.ctry .more ul{margin:6px 0 0;padding-left:18px}
+.ctry .tap{display:block;margin-top:10px;font-size:12px;color:var(--brand-2);font-weight:600}
+.ctry[aria-expanded="true"] .tap{display:none}
+.c-alpha .cs{background:var(--out-bg);color:var(--out)}
+.c-next .cs{background:var(--data-bg);color:var(--data)}
+.c-plan .cs{background:var(--bg);color:var(--ink-2);border:1px solid var(--line)}
+.c-future{border-style:dashed;background:var(--surface-2);box-shadow:none}
+.c-future .cs{background:transparent;color:var(--ink-3);border:1px dashed var(--line)}
+.comp{width:100%;display:flex;justify-content:center;margin:14px 0 0}
+.comp span{font-size:12px;font-weight:600;color:var(--judg);background:var(--judg-bg);border:1px solid var(--judg-bd);padding:6px 14px;border-radius:999px;display:inline-flex;align-items:center;gap:8px}
+.funnel{width:100%;height:56px}
+.region{width:min(760px,100%);padding:22px 26px;border-radius:20px;background:var(--out);color:#fff;text-align:center}
+.region .k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#bfe0cb;font-weight:700}
+.region h3{color:#fff;font-size:22px;margin:6px 0 6px}
+.region p{margin:0;color:#d9eee1;font-size:14px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+@media (max-width:760px){.split{grid-template-columns:1fr}}
+.split .card h3{font-size:16px;display:flex;align-items:center;gap:10px}
+.split ul{margin:12px 0 0;padding:0;list-style:none}
+.split li{padding:8px 0;border-bottom:1px solid var(--line-2);font-size:14px;color:var(--ink-2)}
+.split li:last-child{border-bottom:0}
+.notes3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+@media (max-width:860px){.notes3{grid-template-columns:1fr}}
+.n3{padding:16px;border-radius:12px;background:#eef2f7;border:1px solid #d5dfeb;font-size:14px;color:var(--brand)}
+.n3 b{display:block;margin-bottom:3px}
+
+/* ---------- 8. Now and potential ---------- */
+.nowfut{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
+@media (max-width:860px){.nowfut{grid-template-columns:1fr}}
+.col-now,.col-fut{border-radius:20px;padding:26px}
+.col-now{background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow)}
+.col-fut{background:repeating-linear-gradient(135deg,#fbfaf7 0 12px,#f6f4ee 12px 24px);border:2px dashed #cfc9bc}
+.col-now .k,.col-fut .k{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.col-now .k{color:var(--out)} .col-fut .k{color:var(--ink-3)}
+.col-now h3,.col-fut h3{font-size:22px;margin:8px 0 16px}
+.li{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--line-2);font-size:15px}
+.li:first-of-type{border-top:0}
+.li svg{flex:none;margin-top:3px}
+.col-now .li svg{color:var(--out)}
+.col-fut .li svg{color:var(--ink-3)}
+.disclaim{margin-top:16px;font-size:13px;color:var(--ink-2);padding:12px 14px;border-radius:10px;background:#fff;border:1px solid var(--line)}
+
+footer{padding:40px 0 60px;color:var(--ink-3);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer a{color:var(--brand-2);font-weight:600}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <div class="brand">Accession Reform Intelligence <span>· Explainer</span></div>
+    <ol>
+      <li><a href="#why"><b>1</b>Why</a></li>
+      <li><a href="#what"><b>2</b>What it does</a></li>
+      <li><a href="#map"><b>3</b>Method map</a></li>
+      <li><a href="#chain"><b>4</b>Chain</a></li>
+      <li><a href="#human"><b>5</b>Human + AI</a></li>
+      <li><a href="#outputs"><b>6</b>Outputs</a></li>
+      <li><a href="#scale"><b>7</b>Countries</a></li>
+      <li><a href="#next"><b>8</b>Today and next</a></li>
+    </ol>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">EU Accession Reform Intelligence Tool</span>
+    <h1>From EU accession assessments to <em>evidence-backed reform priorities</em> and practical policy options.</h1>
+    <p class="lede">A structured, reviewable method for following each reform issue from what the EU asks, through what a country has done, to what could realistically come next.</p>
+    <div class="principle">
+      <div><small>Governing principle</small>AI extracts, organises and proposes. Analysts decide.</div>
+    </div>
+    <div><span class="tag-note">Explainer of the method and product. This page shows no live results.</span></div>
+    <div class="legend" aria-label="Key to visual elements">
+      <span class="lg"><i class="sw in"></i>Inputs and evidence</span>
+      <span class="lg"><i class="sw ai"></i>AI processing</span>
+      <span class="lg"><i class="sw data"></i>Structured data</span>
+      <span class="lg"><i class="sw gate"></i>Human review gate</span>
+      <span class="lg"><i class="sw judg"></i>Analytical judgement</span>
+      <span class="lg"><i class="sw out"></i>Final output</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- 1 WHY -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow"><i>1</i>Why this tool exists</span>
+    <h2>Accession reports say what needs fixing. They rarely show what happened next.</h2>
+    <p class="lede">The evidence exists, but it is spread across many documents and years. It is not joined up into a view a decision-maker can use.</p>
+
+    <div class="why">
+      <div class="docs">
+        <div class="doc"><svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M2 1h9l5 5v13H2z" stroke="currentColor" stroke-width="1.6"/><path d="M11 1v5h5" stroke="currentColor" stroke-width="1.6"/></svg>EU assessments and official EU material</div>
+        <div class="doc"><svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M2 1h9l5 5v13H2z" stroke="currentColor" stroke-width="1.6"/><path d="M11 1v5h5" stroke="currentColor" stroke-width="1.6"/></svg>National government material</div>
+        <div class="doc"><svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M2 1h9l5 5v13H2z" stroke="currentColor" stroke-width="1.6"/><path d="M11 1v5h5" stroke="currentColor" stroke-width="1.6"/></svg>International and institutional evidence</div>
+        <div class="doc"><svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M2 1h9l5 5v13H2z" stroke="currentColor" stroke-width="1.6"/><path d="M11 1v5h5" stroke="currentColor" stroke-width="1.6"/></svg>Research and analytical evidence</div>
+        <div class="doc"><svg width="18" height="20" viewBox="0 0 18 20" fill="none"><path d="M2 1h9l5 5v13H2z" stroke="currentColor" stroke-width="1.6"/><path d="M11 1v5h5" stroke="currentColor" stroke-width="1.6"/></svg>Other relevant evidence</div>
+      </div>
+      <div class="break" aria-hidden="true">
+        <svg viewBox="0 0 150 40"><path d="M4 20h44" stroke="#b9b4a8" stroke-width="2" stroke-dasharray="5 5"/><path d="M58 12l10 16M72 12l10 16" stroke="#c0392b" stroke-width="2" stroke-linecap="round" opacity=".6"/><path d="M92 20h44" stroke="#b9b4a8" stroke-width="2" stroke-dasharray="5 5"/><path d="M136 14l8 6-8 6" fill="none" stroke="#b9b4a8" stroke-width="2"/></svg>
+        No systematic link
+      </div>
+      <div class="qs">
+        <div class="q"><i>?</i>Has the country responded?</div>
+        <div class="q"><i>?</i>Is the response applied, and did it work?</div>
+        <div class="q"><i>?</i>What remains open, and what have others done?</div>
+        <div class="q"><i>?</i>What should be prioritised next?</div>
+      </div>
+    </div>
+    <p class="why-foot"><strong>The tool closes that gap.</strong> It follows each reform issue end to end, keeps every claim tied to its source, and puts the important judgements in human hands.</p>
+  </div>
+</section>
+
+<!-- 2 WHAT -->
+<section id="what">
+  <div class="wrap">
+    <span class="eyebrow"><i>2</i>What the tool does</span>
+    <h2>It turns scattered evidence into reviewed priorities and options.</h2>
+
+    <div class="flow3">
+      <div class="f3 a"><div class="k">Evidence in</div><h3>Collect and register</h3><p>Relevant sources are gathered and logged. Every document gets a permanent ID, and originals are never edited.</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="f3 b"><div class="k">Structured analysis</div><h3>Extract, classify, link</h3><p>Exact quotes become evidence items. These are tagged to shared reform issues and connected along one analytical chain.</p></div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="f3 c"><div class="k">Priorities and options out</div><h3>Judge and propose</h3><p>Proposed judgements are reviewed by analysts. They feed priorities, comparator lessons and draft policy options.</p></div>
+    </div>
+
+    <div class="commit">
+      <div class="cm"><b>Stated vs assessed</b><span>What a source says is kept apart from what we conclude.</span></div>
+      <div class="cm"><b>Exact quotes</b><span>Every item quotes its source word for word, with a page or section, and is checked automatically.</span></div>
+      <div class="cm"><b>Human gates</b><span>Each phase closes with a blocking review. Nothing crosses a gate on its own.</span></div>
+      <div class="cm"><b>Fully traceable</b><span>Outputs, judgements and evidence are linked and versioned.</span></div>
+    </div>
+
+    <div class="scope">
+      <span class="lbl">Default scope of a country run</span>
+      <span class="chip">Chapter 2 · Freedom of movement for workers</span>
+      <span class="chip">Technology and AI recommendations, wherever they occur</span>
+      <span class="chip">Evidence from 1 January 2020</span>
+      <span class="chip">English primary</span>
+    </div>
+  </div>
+</section>
+
+<!-- 3 MAP -->
+<section id="map">
+  <div class="wrap wide">
+    <div class="inner">
+    <span class="eyebrow"><i>3</i>How the system works</span>
+    <h2>The method map: one view of the whole system.</h2>
+    <p class="lede">Three connected layers. The process fills the analytical chain, and every step is recorded as structured, traceable data. Select any element to see how it connects.</p>
+
+    <div class="map-tools">
+      <div class="seg" role="group" aria-label="Focus a layer">
+        <button data-view="all" aria-pressed="true">Full map</button>
+        <button data-view="process" aria-pressed="false">Process</button>
+        <button data-view="chain" aria-pressed="false">Chain</button>
+        <button data-view="data" aria-pressed="false">Data</button>
+      </div>
+      <button class="switch" id="humanToggle" aria-pressed="false"><span class="knob"></span>Show human decisions</button>
+      <button class="reset" id="mapReset">Clear selection</button>
+    </div>
+    </div>
+
+    <div class="map" id="theMap" data-view="all">
+
+      <!-- PROCESS -->
+      <div class="layer" id="L-process">
+        <div class="layer-label"><b>Process</b><span>How the work flows, in five phases, each closed by human gates</span></div>
+        <div class="groups">
+          <div class="group" style="--n:2">
+            <div class="ghead"><span class="gt">Setup and sources</span><button class="gates" data-id="ph1" aria-label="Gates for setup and sources"><span class="gate"><em>G0</em></span><span class="gate"><em>G1</em></span><span class="gate"><em>G2</em></span></button></div>
+            <div class="nodes flowline">
+              <button class="node k-in" data-id="p-sources">Sources<span class="sub">Collected against requirements</span></button>
+              <button class="node k-ai" data-id="p-register">Registration<span class="ai-mark">✦</span><span class="sub">IDs, register, quality</span></button>
+            </div>
+          </div>
+          <div class="group" style="--n:1">
+            <div class="ghead"><span class="gt">Extraction and taxonomy</span><button class="gates" data-id="ph2" aria-label="Gates for extraction and taxonomy"><span class="gate"><em>G3</em></span><span class="gate"><em>G4</em></span></button></div>
+            <div class="nodes flowline">
+              <button class="node k-ai" data-id="p-extract">Extraction<span class="ai-mark">✦</span><span class="sub">Exact quotes</span></button>
+            </div>
+          </div>
+          <div class="group" style="--n:2">
+            <div class="ghead"><span class="gt">Classification and assessment</span><button class="gates" data-id="ph3" aria-label="Gates for classification and assessment"><span class="gate"><em>G5</em></span><span class="gate"><em>G6</em></span></button></div>
+            <div class="nodes flowline">
+              <button class="node k-ai" data-id="p-classify">Classification and matching<span class="ai-mark">✦</span><span class="sub">Issues, themes, links</span></button>
+              <button class="node k-ai" data-id="p-assess" data-human>Assessment<span class="ai-mark">✦</span><span class="sub">Judgements proposed</span><span class="jt">reviewed</span></button>
+            </div>
+          </div>
+          <div class="group" style="--n:1">
+            <div class="ghead"><span class="gt">Comparator step</span><button class="gates" data-id="ph4" aria-label="Gates for comparator step"><span class="gate"><em>1b</em></span><span class="gate"><em>2b</em></span><span class="gate"><em>5b</em></span><span class="gate"><em>6b</em></span></button></div>
+            <div class="nodes flowline">
+              <button class="node k-ai" data-id="p-compare" data-human>Comparator analysis<span class="ai-mark">✦</span><span class="sub">Chosen issues only</span></button>
+            </div>
+          </div>
+          <div class="group" style="--n:1">
+            <div class="ghead"><span class="gt">Outputs and close</span><button class="gates" data-id="ph5" aria-label="Gates for outputs and close"><span class="gate"><em>G7</em></span><span class="gate"><em>G8</em></span></button></div>
+            <div class="nodes flowline">
+              <button class="node k-out last" data-id="p-outputs" data-human>Outputs<span class="sub">Pages and products</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="joint"><div></div><div>fills</div></div>
+
+      <!-- CHAIN -->
+      <div class="layer" id="L-chain">
+        <div class="layer-label"><b>Analytical chain</b><span>What is followed for every in-scope reform issue</span></div>
+        <div>
+          <div class="groups">
+            <div class="group" style="--n:2">
+              <div class="ghead"><span class="gt">What the EU asks</span></div>
+              <div class="nodes flowline">
+                <button class="node k-in" data-id="c1"><span class="num">1</span>EU requirement</button>
+                <button class="node k-data" data-id="c2" data-human><span class="num">2</span>Reform issue</button>
+              </div>
+            </div>
+            <div class="group" style="--n:3">
+              <div class="ghead"><span class="gt">What the country did</span></div>
+              <div class="nodes flowline">
+                <button class="node k-in" data-id="c3"><span class="num">3</span>Country response</button>
+                <button class="node k-in" data-id="c4" data-human><span class="num">4</span>Imple&shy;mentation<br><span class="jt">judgement</span></button>
+                <button class="node k-in" data-id="c5" data-human><span class="num">5</span>Outcome<br><span class="jt">judgement</span></button>
+              </div>
+            </div>
+            <div class="group" style="--n:1">
+              <div class="ghead"><span class="gt">What remains</span></div>
+              <div class="nodes flowline">
+                <button class="node k-judg" data-id="c6" data-human><span class="num">6</span>Unresolved gap</button>
+              </div>
+            </div>
+            <div class="group" style="--n:2">
+              <div class="ghead"><span class="gt">What others learned</span></div>
+              <div class="nodes flowline">
+                <button class="node k-in" data-id="c7" data-human><span class="num">7</span>Comparator evidence</button>
+                <button class="node k-in" data-id="c8" data-human><span class="num">8</span>Lesson<br><span class="jt">judgement</span></button>
+              </div>
+            </div>
+            <div class="group" style="--n:2">
+              <div class="ghead"><span class="gt">What to do</span></div>
+              <div class="nodes flowline">
+                <button class="node k-judg" data-id="c9" data-human><span class="num">9</span>Priority</button>
+                <button class="node k-out last" data-id="c10" data-human><span class="num">10</span>Policy option</button>
+              </div>
+            </div>
+          </div>
+          <div class="sa" aria-hidden="true"><div class="st">Stated: what sources say</div><div class="as">Assessed: what reviewers conclude</div></div>
+        </div>
+      </div>
+
+      <div class="joint"><div></div><div>recorded as</div></div>
+
+      <!-- DATA -->
+      <div class="layer" id="L-data">
+        <div class="layer-label"><b>Data and traceability</b><span>Every step leaves a permanent, versioned record</span></div>
+        <div>
+          <div class="nodes flowline">
+            <button class="node k-in" data-id="d-sources">Sources<span class="sub">Source register</span></button>
+            <button class="node k-data" data-id="d-evidence">Evidence items<span class="sub">Quote + page</span></button>
+            <button class="node k-data" data-id="d-taxonomy">Taxonomy<span class="sub">Shared issues, themes</span></button>
+            <button class="node k-data" data-id="d-links">Links<span class="sub">Incl. contradicts</span></button>
+            <button class="node k-judg" data-id="d-judgements" data-human>Judgements<span class="sub">Never overwritten</span></button>
+            <button class="node k-out last" data-id="d-outputs" data-human>Outputs<span class="sub">Evidence in annex</span></button>
+          </div>
+          <div class="logs"><span>Logged throughout:</span><span class="chip">Gate decisions</span><span class="chip">Scope limits</span><span class="chip">Lessons learned</span><span class="chip">Version history</span></div>
+        </div>
+      </div>
+
+      <div class="detail" id="detail" aria-live="polite">
+        <div class="hint">Select any element above to see what happens there, who decides, and what is recorded.</div>
+      </div>
+    </div>
+    <p class="map-note inner">✦ marks AI processing. Where judgements sit on the chain is indicative, to show where reviewed conclusions enter.</p>
+  </div>
+</section>
+
+<!-- 4 CHAIN -->
+<section id="chain">
+  <div class="wrap">
+    <span class="eyebrow"><i>4</i>The analytical chain</span>
+    <h2>Ten links, from what the EU asks to what could be done.</h2>
+    <p class="lede">Step through how one reform issue moves along the chain. Adoption is never treated as success.</p>
+
+    <div class="stepper">
+      <ol class="rail" id="rail"></ol>
+      <div class="stage" id="stage">
+        <span class="illus">Illustrative only</span>
+        <div class="gl" id="sGroup"></div>
+        <h3 id="sTitle"></h3>
+        <p class="def" id="sDef"></p>
+        <div class="issue">
+          <div class="il">Illustrative issue: placeholder, not a real finding</div>
+          <p id="sEx"></p>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="fl">Nature</div><div class="fv" id="sNature"></div></div>
+          <div class="fact"><div class="fl">Who does the work</div><div class="fv" id="sWho"></div></div>
+          <div class="fact"><div class="fl">Recorded as</div><div class="fv" id="sRec"></div></div>
+        </div>
+        <div class="stage-nav">
+          <button class="btn" id="prev">← Back</button>
+          <div class="bar"><i id="barFill"></i></div>
+          <button class="btn primary" id="next">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 HUMAN -->
+<section id="human">
+  <div class="wrap">
+    <span class="eyebrow"><i>5</i>Human judgement + AI</span>
+    <h2>The tool proposes. It never concludes on its own.</h2>
+
+    <div class="big-principle">
+      <div>
+        <p><span>AI extracts, organises and proposes.</span> <b>Analysts decide.</b></p>
+        <div class="sub">Authority is set in three levels. Every substantive analytical judgement is a human decision.</div>
+      </div>
+    </div>
+
+    <div class="tiers">
+      <div class="tier t1">
+        <div class="tn">Level 1</div>
+        <h3>AI performs and logs</h3>
+        <div class="meter"><i></i><i></i><i></i></div>
+        <div class="meter-l"><span>AI</span><span>Human</span></div>
+        <ul><li>File naming and IDs</li><li>Format conversion</li><li>Exact-duplicate detection</li><li>Retrieval failures</li><li>Quote verification</li><li>Structural tags</li></ul>
+        <p class="small muted" style="margin:14px 0 0">Mechanical operations. The log can always be checked.</p>
+      </div>
+      <div class="tier t2">
+        <div class="tn">Level 2</div>
+        <h3>AI decides, analyst reviews at the next gate</h3>
+        <div class="meter"><i></i><i></i><i></i></div>
+        <div class="meter-l"><span>AI</span><span>Human</span></div>
+        <ul><li>Clear-cut exclusions</li><li>Clear-cut theme tags</li><li>Extraction under approved rules</li><li>Source quality</li><li>Evidence confidence</li><li>Relevance</li><li>Implementation status where sources agree</li></ul>
+        <p class="small muted" style="margin:14px 0 0">Lower-risk decisions, surfaced for review. Doubtful cases are flagged.</p>
+      </div>
+      <div class="tier t3">
+        <div class="tn">Level 3</div>
+        <h3>AI proposes, humans decide</h3>
+        <div class="meter"><i></i><i></i><i></i></div>
+        <div class="meter-l"><span>AI</span><span>Human</span></div>
+        <ul><li>Unresolved gap</li><li>Direction of travel</li><li>Success and attribution</li><li>Priority and tractability</li><li>Policy options</li></ul>
+        <details class="expand"><summary>All level 3 matters</summary>
+          <ul><li>Source requirements</li><li>Judgement-based exclusions</li><li>Taxonomy changes</li><li>Ambiguous classifications</li><li>Comparator choices</li><li>Comparator relevance</li><li>Transferability</li><li>Any change to method, rules or scope</li></ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="gatestrip">
+      <h3>Human decision points across the whole workflow</h3>
+      <p class="small muted" style="margin:6px 0 0">Every gate is blocking. A stage starts only after a recorded pass by the reviewers named for that run.</p>
+      <div class="row">
+        <div class="gp"><div class="ds"><span class="gate"><em>G0</em></span><span class="gate"><em>G1</em></span><span class="gate"><em>G2</em></span></div><div><b>Setup and sources</b><span>Scope and country checks</span></div></div>
+        <div class="gp"><div class="ds"><span class="gate"><em>G3</em></span><span class="gate"><em>G4</em></span></div><div><b>Extraction and taxonomy</b><span>Rules and issues</span></div></div>
+        <div class="gp"><div class="ds"><span class="gate"><em>G5</em></span><span class="gate"><em>G6</em></span></div><div><b>Classification and assessment</b><span>Judgements validated</span></div></div>
+        <div class="gp"><div class="ds"><span class="gate"><em>1b</em></span><span class="gate"><em>2b</em></span><span class="gate"><em>5b</em></span><span class="gate"><em>6b</em></span></div><div><b>Comparator step</b><span>Chosen issues only</span></div></div>
+        <div class="gp"><div class="ds"><span class="gate"><em>G7</em></span><span class="gate"><em>G8</em></span></div><div><b>Outputs and close</b><span>Product and lessons</span></div></div>
+      </div>
+    </div>
+
+    <div class="safe">
+      <div class="sf"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V4z" stroke="currentColor" stroke-width="1.6"/></svg><div>Stated and assessed kept apart<span>Sources are never confused with conclusions</span></div></div>
+      <div class="sf"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V4z" stroke="currentColor" stroke-width="1.6"/></svg><div>Exact quotes only<span>Checked automatically, never paraphrased</span></div></div>
+      <div class="sf"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V4z" stroke="currentColor" stroke-width="1.6"/></svg><div>Validated judgements kept<span>Re-reviews add a new record, never overwrite</span></div></div>
+      <div class="sf"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V4z" stroke="currentColor" stroke-width="1.6"/></svg><div>Conflicts shown, not hidden<span>Contradicting evidence is linked and reported</span></div></div>
+      <div class="sf"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V4z" stroke="currentColor" stroke-width="1.6"/></svg><div>No guessing<span>"Insufficient evidence", a flag or a review queue instead</span></div></div>
+      <div class="sf"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1l7 3v5c0 4-3 7-7 8-4-1-7-4-7-8V4z" stroke="currentColor" stroke-width="1.6"/></svg><div>Scope held fixed<span>The tool never widens scope or starts a run itself</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 OUTPUTS -->
+<section id="outputs">
+  <div class="wrap">
+    <span class="eyebrow"><i>6</i>What the tool produces</span>
+    <h2>Usable products, with an honest status on everything shown.</h2>
+
+    <div class="outs">
+      <div class="out page"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M2 7h16" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Review page</h3><p>The human-facing review interface for the active run.</p><span class="when">Active run</span></div>
+      <div class="out page"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.6"/><path d="M2.5 10h15M10 2.5c2.5 3 2.5 12 0 15M10 2.5c-2.5 3-2.5 12 0 15" stroke="currentColor" stroke-width="1.4"/></svg></div><h3>Country analysis page</h3><p>One per country run. A review aid while in progress, then the navigable product.</p><span class="when">Product after G7</span></div>
+      <div class="out page"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="10" width="4" height="7" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="8" y="6" width="4" height="11" rx="1" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="4" height="14" rx="1" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Regional comparison page</h3><p>Compares countries using validated judgements only.</p><span class="when">After each country's G6</span></div>
+      <div class="out"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 3h10v14H5z" stroke="currentColor" stroke-width="1.6"/><path d="M8 8l1.5 1.5L13 6M8 13h5" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Reform issue judgements</h3><p>Gap, direction of travel, priority and tractability, each reviewed.</p></div>
+      <div class="out"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h5M12 10h5M8 6l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></div><h3>Comparator lessons</h3><p>What other countries' experience suggests for issues chosen at G6.</p></div>
+      <div class="out"><div class="ic"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2l2.3 5 5.2.5-4 3.5 1.2 5.2L10 13.5 5.3 16.2l1.2-5.2-4-3.5 5.2-.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div><h3>Draft policy options</h3><p>Proposed by AI where applicable, decided by reviewers.</p></div>
+      <div class="out wide">
+        <div><h3>Status labels on everything shown</h3><p>Nothing is presented as validated before its gate has passed.</p></div>
+        <div class="labels">
+          <span class="st-chip s-val">Validated</span>
+          <span class="st-chip s-pen">Pending review</span>
+          <span class="st-chip s-pro">Proposed</span>
+          <span class="st-chip s-dra">Draft</span>
+          <span class="st-chip s-not">Not started</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trace">
+      <h3>Every conclusion can be traced back to its source</h3>
+      <div class="trace-row">
+        <div class="tr k-out" style="border-radius:8px">Output<small style="color:#cfe6d7">Page or product</small></div><span class="tr-sep">→</span>
+        <div class="tr k-judg">Judgement<small>Reviewed, versioned</small></div><span class="tr-sep">→</span>
+        <div class="tr k-data">Evidence item<small>Permanent ID</small></div><span class="tr-sep">→</span>
+        <div class="tr k-in" style="border-radius:8px">Exact quote<small>Page or section</small></div><span class="tr-sep">→</span>
+        <div class="tr k-in" style="border-radius:8px">Source<small>Original kept untouched</small></div>
+      </div>
+      <p>Outputs cite evidence item IDs in an annex, so the main text stays readable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 SCALE -->
+<section id="scale">
+  <div class="wrap">
+    <span class="eyebrow"><i>7</i>One method, many countries</span>
+    <h2>A shared core, country-specific evidence, and a regional view.</h2>
+    <p class="lede">Each country is run one at a time with the same method. Its evidence, judgements and outputs are its own.</p>
+
+    <div class="scale">
+      <div class="core">
+        <div class="k">Shared methodological core</div>
+        <h3>One method, reused for every country</h3>
+        <div class="items"><span>Seven codebooks</span><span>Procedures and versioned rules</span><span>One shared taxonomy</span><span>Cross-cutting themes</span><span>Run template</span><span>Page generator</span></div>
+      </div>
+      <svg class="fan" viewBox="0 0 1000 56" preserveAspectRatio="none" aria-hidden="true"><path d="M500 0 V18 M500 18 C500 36 125 30 125 56 M500 18 C500 36 375 30 375 56 M500 18 C500 36 625 30 625 56 M500 18 C500 36 875 30 875 56" fill="none" stroke="#9fb0c6" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+      <div class="countries">
+        <button class="ctry c-alpha" aria-expanded="false"><span class="cs">Validated · alpha complete</span><h3>North Macedonia</h3><div class="cd">Methodological alpha and baseline</div><span class="tap">Details +</span>
+          <div class="more">The alpha run (RUN-2026-01) is closed. All gates from G0 to G8 passed between 29 October and 2 November 2026, and the outputs were signed off at G7. Policy options remain internal drafts. A refresh with the 2026 Enlargement Package is prepared and will follow its publication. The alpha tested the method end to end. It is the methodological baseline, <strong>not a substantive template</strong>: its findings are not applied to other countries.<ul><li>Closed run, kept unchanged</li><li>Planned refresh with its own rule versions</li></ul></div></button>
+        <button class="ctry c-next" aria-expanded="false"><span class="cs">In progress · pending review</span><h3>Moldova</h3><div class="cd">First country run of the rollout</div><span class="tap">Details +</span>
+          <div class="more">The first country run of the rollout (RUN-2026-02) began on 3 November 2026. Gates G0 to G3 have passed, the last three with conditions to be confirmed at later gates. Extraction of EU sources and a draft mapping to the shared taxonomy are under way. The run is paused until the 2026 Moldova report is published, before the taxonomy review (G4). No findings are validated yet.<ul><li>Checked afresh at G0 and G1</li><li>Own evidence, judgements and country page</li></ul></div></button>
+        <button class="ctry c-plan" aria-expanded="false"><span class="cs">Not started</span><h3>Montenegro</h3><div class="cd">Planned next run</div><span class="tap">Details +</span>
+          <div class="more">Planned as the next country run (RUN-2026-03). It will start only after the lessons from the Moldova run have been reviewed. Some Montenegro sources are already held from the North Macedonia comparator step, but no Montenegro run has begun. Same core method. Any country-specific deviation is recorded in its run record and approved at G0.</div></button>
+        <button class="ctry c-future" aria-expanded="false"><span class="cs">Future</span><h3>Further accession countries</h3><div class="cd">Future scaling</div><span class="tap">Details +</span>
+          <div class="more">Added one run at a time. The precise rollout will be populated from the repository's rollout plan.</div></button>
+      </div>
+      <div class="comp"><span>⇄ Comparator evidence is drawn first from countries already in the project</span></div>
+      <svg class="funnel" viewBox="0 0 1000 56" preserveAspectRatio="none" aria-hidden="true"><path d="M125 0 C125 26 500 20 500 38 M375 0 C375 26 500 20 500 38 M625 0 C625 26 500 20 500 38 M875 0 C875 26 500 20 500 38 M500 38 V56" fill="none" stroke="#8fbf9f" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>
+      <div class="region">
+        <div class="k">Regional comparison layer</div>
+        <h3>Validated country judgements, side by side</h3>
+        <p>Only judgements that have passed each country's G6 are compared.</p>
+      </div>
+    </div>
+
+    <div class="notes3">
+      <div class="n3"><b>Checked afresh</b>Accession status, Chapter 2 context, documents, languages and evidence base are checked for each country. Nothing is assumed from another.</div>
+      <div class="n3"><b>Never stretched</b>Evidence is matched to a shared reform issue only where it genuinely fits. New issues are proposed for review.</div>
+      <div class="n3"><b>Learning carried forward</b>Lessons from each run are logged and confirmed at a gate before the method changes.</div>
+    </div>
+
+    <div class="split">
+      <div class="card"><h3><i class="sw data"></i>Shared across countries</h3><ul><li>Method, codebooks and procedures</li><li>Versioned extraction, classification and judgement rules</li><li>Reform issue taxonomy and theme list</li><li>Run template and page tooling</li></ul></div>
+      <div class="card"><h3><i class="sw in"></i>Specific to each country</h3><ul><li>Run record, scope deviations and limits</li><li>Sources and evidence items</li><li>Judgements and their reviews</li><li>Country page and outputs</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8 NOW / NEXT -->
+<section id="next">
+  <div class="wrap">
+    <span class="eyebrow"><i>8</i>Current alpha → potential applications</span>
+    <h2>Where it stands today, and where it could be used.</h2>
+
+    <div class="nowfut">
+      <div class="col-now">
+        <span class="k">● What exists today</span>
+        <h3>A tested method, ready to scale</h3>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>Method set out in seven codebooks, with step-by-step procedures</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>Versioned rules, one shared taxonomy and a theme list</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>North Macedonia alpha completed and closed, with a planned refresh</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>Moldova scaling run under way, paused for the 2026 Moldova report before G4</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>Rollout plan and run template for one run per country</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>Review, country and regional pages built from project files</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2"/></svg>Gate log, learning log and full version history</div>
+      </div>
+      <div class="col-fut">
+        <span class="k">○ Potential applications</span>
+        <h3>How the outputs could be used</h3>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>Briefing country teams and senior colleagues</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>Identifying emerging reform priorities</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>Supporting advisory and project origination discussions</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>Preparing for senior government engagements</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>Comparing reform progress across accession countries</div>
+        <div class="li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="2 2"/></svg>Identifying where TBI advisory capabilities may be relevant</div>
+        <p class="disclaim"><strong>Potential uses, not current functionality.</strong> These would draw on reviewed outputs through human analysis. The tool does not perform them automatically.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>EU Accession Reform Intelligence Tool · Method explainer. Content reflects the project's CLAUDE.md as of November 2026.</span>
+    <span>Live pages: <a href="index.html">Review page</a> · <a href="analysis.html">Regional analysis</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---------- Method map content ---------- */
+  var KIND = {in:"Input / evidence", ai:"AI processing", data:"Structured data", gate:"Human review gate", judg:"Analytical judgement", out:"Final output"};
+  var D = {
+    "p-sources":{k:"in",t:"Sources",what:"Relevant sources are identified against a list of source requirements and collected. Originals are kept untouched alongside converted text. Files that cannot be fetched can be added by hand.",who:"AI collects. The source requirements are a human decision. Paywalls and logins are never bypassed; inaccessible sources are recorded.",rec:"Original files, converted text and logged retrieval failures."},
+    "p-register":{k:"ai",t:"Registration",what:"Every document considered gets a permanent ID and a row in the source register, including excluded and superseded ones. Exact duplicates are detected.",who:"AI handles naming, IDs and duplicates (level 1). Clear-cut exclusions and source quality ratings are AI decisions surfaced for review (level 2).",rec:"Source register. IDs and rows are never changed, reused or deleted."},
+    "p-extract":{k:"ai",t:"Extraction",what:"Sources are broken into evidence items. Each quotes the source word for word, with page or section. No causes, lessons or dates are inferred at this stage.",who:"AI extracts once the extraction rules are approved. Quotes are verified automatically.",rec:"Evidence items, one file per source, recording the rule versions used."},
+    "p-classify":{k:"ai",t:"Classification and matching",what:"Evidence is tagged to shared reform issues, mechanisms and cross-cutting themes, and items are linked, including where sources contradict each other.",who:"AI tags clear-cut cases. Ambiguous classifications and any new reform issue are human decisions, proposed through a review queue.",rec:"Taxonomy tags, links, and unmatched or ambiguous queues."},
+    "p-assess":{k:"ai",t:"Assessment",what:"AI proposes judgements on each issue. Reviewers validate or override the substantive ones. Comparator issues are chosen at G6.",who:"Confidence, relevance and agreed implementation status are level 2. Gap, direction of travel, success, attribution, priority and tractability are human decisions.",rec:"Judgement records with versions used. Validated judgements are never overwritten."},
+    "p-compare":{k:"ai",t:"Comparator analysis",what:"For issues chosen at G6 only, evidence from comparator countries is gathered and assessed. Countries already in the project are used first.",who:"Comparator choices, comparator relevance and transferability are human decisions, with their own gates.",rec:"Comparator evidence items, links and lesson judgements."},
+    "p-outputs":{k:"out",t:"Outputs",what:"Pages and run outputs are built from the project files. Nothing appears that does not exist in them, and everything carries a status label.",who:"The country page becomes the product after G7. Lessons and proposed method changes are reviewed at G8.",rec:"Outputs citing evidence item IDs in an annex, plus the run's learning log."},
+    "ph1":{k:"gate",t:"Setup and sources gates",what:"Stages 0 to 4. A run starts from the template only when the analyst asks. Scope, evidence freeze date and any country deviation are set out in the run record.",who:"Reviewers named in the run record. The country is checked afresh at G0 and G1. Gates G0, G1 and G2 close the phase.",rec:"Gate log entry and a version-history commit at each decision."},
+    "ph2":{k:"gate",t:"Extraction and taxonomy gates",what:"Stages 5 to 8. Extraction rules and the reform issue taxonomy are reviewed before they are relied on.",who:"Reviewers named in the run record, at G3 and G4. Rule changes need approval and a new version.",rec:"Gate log, versioned rules and taxonomy."},
+    "ph3":{k:"gate",t:"Classification and assessment gates",what:"Stages 9 to 11. Classification is reviewed and judgements are validated or overridden. Issues for the comparator step are chosen at G6.",who:"Reviewers named in the run record, at G5 and G6.",rec:"Gate log; judgement review status. Regional comparison uses only judgements past G6."},
+    "ph4":{k:"gate",t:"Comparator step gates",what:"A smaller pass for the issues chosen at G6, with its own gates.",who:"Reviewers named in the run record, at G1b, G2b, G5b and G6b.",rec:"Gate log entries for the comparator step."},
+    "ph5":{k:"gate",t:"Outputs and close gates",what:"Stages 12 to 14. Outputs are reviewed and the run is closed. Lessons are confirmed before the method changes.",who:"Reviewers named in the run record, at G7 and G8.",rec:"Gate log, learning log and version history."},
+    "c1":{k:"in",t:"1 · EU requirement",what:"What EU assessments ask of the country, captured as stated evidence.",who:"AI extracts it as an exact quote.",rec:"Evidence item."},
+    "c2":{k:"data",t:"2 · Reform issue",what:"The shared reform issue the requirement belongs to, from one taxonomy used across countries.",who:"AI tags clear-cut matches. New issues and ambiguous cases are human decisions.",rec:"Taxonomy tag; unmatched queue for proposals."},
+    "c3":{k:"in",t:"3 · Country response",what:"What the country has done in response, as stated by sources.",who:"AI extracts it as an exact quote.",rec:"Evidence item."},
+    "c4":{k:"in",t:"4 · Implementation",what:"Whether the response is applied in practice.",who:"AI extracts evidence. Implementation status is an AI decision only where sources agree; otherwise it goes to a human.",rec:"Evidence items and an implementation status judgement."},
+    "c5":{k:"in",t:"5 · Outcome",what:"What changed as a result. Adoption is never treated as success.",who:"AI extracts evidence. Success and attribution are human decisions.",rec:"Evidence items and reviewed judgements."},
+    "c6":{k:"judg",t:"6 · Unresolved gap",what:"What remains outstanding, and the direction of travel.",who:"AI proposes. Humans decide.",rec:"Judgement record, never overwritten once validated."},
+    "c7":{k:"in",t:"7 · Comparator evidence",what:"How comparable countries handled the same issue, for issues chosen at G6 only.",who:"AI gathers and extracts. Comparator choice and relevance are human decisions.",rec:"Comparator evidence items and links."},
+    "c8":{k:"in",t:"8 · Lesson",what:"What can be learned from the comparator experience, and whether it could transfer.",who:"AI proposes. Transferability is a human decision.",rec:"Evidence and a transferability judgement."},
+    "c9":{k:"judg",t:"9 · Priority",what:"How important the issue is and how tractable progress looks.",who:"AI proposes. Priority and tractability are human decisions.",rec:"Judgement records."},
+    "c10":{k:"out",t:"10 · Policy option",what:"Practical options for the issue, where applicable.",who:"AI drafts. Reviewers decide.",rec:"Draft option in the run outputs, with evidence cited in an annex."},
+    "d-sources":{k:"in",t:"Sources",what:"One row per document ever considered, with its status.",who:"AI registers. Exclusions and quality ratings are reviewed.",rec:"Source register; originals and text versions."},
+    "d-evidence":{k:"data",t:"Evidence items",what:"One claim each, quoted exactly, with page or section.",who:"AI extracts under approved rules; quotes are checked automatically.",rec:"One file per source, with rule versions."},
+    "d-taxonomy":{k:"data",t:"Taxonomy",what:"Shared reform issues, mechanisms and cross-cutting themes, plus queues for unmatched and ambiguous cases.",who:"Changes are proposed by AI and decided by humans at a gate.",rec:"Versioned taxonomy and theme files."},
+    "d-links":{k:"data",t:"Links",what:"Connections between records along the chain, including where evidence contradicts.",who:"AI records links. Conflicts are reported, never resolved silently.",rec:"Links file."},
+    "d-judgements":{k:"judg",t:"Judgements",what:"Every conclusion, with its review status and the versions it used.",who:"Substantive judgements are human decisions. A re-review adds a new record.",rec:"Judgement files; validated or overridden judgements are never overwritten."},
+    "d-outputs":{k:"out",t:"Outputs",what:"Pages and run products, labelled by status.",who:"Built by the tool; the country page becomes the product after G7.",rec:"Outputs folder and generated pages."}
+  };
+  var LINKS = {
+    "p-sources":["d-sources"],
+    "p-register":["d-sources","ph1"],
+    "p-extract":["c1","c3","c4","c5","c7","c8","d-evidence","ph2"],
+    "p-classify":["c2","d-taxonomy","d-links","ph3"],
+    "p-assess":["c4","c5","c6","c9","d-judgements","ph3"],
+    "p-compare":["c7","c8","d-evidence","d-links","d-judgements","ph4"],
+    "p-outputs":["c10","d-outputs","ph5"],
+    "ph1":["p-sources","p-register"],
+    "ph2":["p-extract"],
+    "ph3":["p-classify","p-assess"],
+    "ph4":["p-compare"],
+    "ph5":["p-outputs"]
+  };
+  // build symmetric relations
+  var REL = {};
+  Object.keys(D).forEach(function(k){REL[k]={};});
+  Object.keys(LINKS).forEach(function(a){LINKS[a].forEach(function(b){REL[a][b]=1;REL[b][a]=1;});});
+  // chain nodes and data nodes inherit relations through processes
+  ["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","d-sources","d-evidence","d-taxonomy","d-links","d-judgements","d-outputs"].forEach(function(n){
+    Object.keys(REL[n]).forEach(function(p){ if(p.indexOf("p-")===0){ LINKS[p].forEach(function(x){ if(x.indexOf("ph")!==0 && x!==n && (x.charAt(0)!==n.charAt(0))) REL[n][x]=1; }); } });
+  });
+
+  var map = document.getElementById("theMap");
+  var detail = document.getElementById("detail");
+  var els = map.querySelectorAll("[data-id]");
+  var current = null;
+
+  function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+  function show(id){
+    var d = D[id]; if(!d) return;
+    current = id;
+    map.classList.add("focus");
+    els.forEach(function(e){
+      var i = e.getAttribute("data-id");
+      e.classList.toggle("on", i===id || !!REL[id][i]);
+    });
+    detail.innerHTML =
+      '<div><div class="dk">'+KIND[d.k]+'</div><h3>'+esc(d.t)+'</h3></div>'+
+      '<div class="col"><div class="dk">What happens</div><p>'+esc(d.what)+'</p></div>'+
+      '<div class="col"><div class="dk">Who decides</div><p>'+esc(d.who)+'</p></div>'+
+      '<div class="col"><div class="dk">What is recorded</div><p>'+esc(d.rec)+'</p></div>';
+  }
+  function clear(){
+    current = null;
+    map.classList.remove("focus");
+    els.forEach(function(e){e.classList.remove("on");});
+    detail.innerHTML = '<div class="hint">Select any element above to see what happens there, who decides, and what is recorded.</div>';
+  }
+  els.forEach(function(e){
+    e.addEventListener("click", function(){
+      var id = e.getAttribute("data-id");
+      if(current===id) clear(); else show(id);
+    });
+  });
+  document.getElementById("mapReset").addEventListener("click", clear);
+
+  var ht = document.getElementById("humanToggle");
+  ht.addEventListener("click", function(){
+    var on = ht.getAttribute("aria-pressed")!=="true";
+    ht.setAttribute("aria-pressed", on);
+    map.classList.toggle("human", on);
+    if(on) clear();
+  });
+  document.querySelectorAll(".seg button").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll(".seg button").forEach(function(x){x.setAttribute("aria-pressed","false");});
+      b.setAttribute("aria-pressed","true");
+      map.setAttribute("data-view", b.getAttribute("data-view"));
+    });
+  });
+
+  /* ---------- Chain step-through ---------- */
+  var S = [
+    {g:"What the EU asks",t:"EU requirement",d:"What EU assessments ask of the country.",ex:'An EU assessment recommends <span class="ph">a change</span> in <span class="ph">an in-scope area</span>.',n:["in","Stated"],w:"AI extracts",r:"Evidence item with exact quote"},
+    {g:"What the EU asks",t:"Reform issue",d:"The shared reform issue the requirement belongs to, used across all countries.",ex:'The recommendation is matched to <span class="ph">Reform issue X</span> in the shared taxonomy.',n:["data","Taxonomy"],w:"AI tags · humans approve new issues",r:"Taxonomy tag"},
+    {g:"What the country did",t:"Country response",d:"What the country has done in response.",ex:'A government source states that <span class="ph">a measure</span> has been adopted.',n:["in","Stated"],w:"AI extracts",r:"Evidence item with exact quote"},
+    {g:"What the country did",t:"Implementation",d:"Whether the response is applied in practice.",ex:'Sources describe whether <span class="ph">the measure</span> is being applied.',n:["judg","Stated + assessed"],w:"AI · human where sources differ",r:"Evidence and implementation status"},
+    {g:"What the country did",t:"Outcome",d:"What changed as a result. Adoption alone is never counted as success.",ex:'Sources report what has changed since <span class="ph">the measure</span> was introduced.',n:["judg","Stated + assessed"],w:"Humans judge success and attribution",r:"Evidence and reviewed judgements"},
+    {g:"What remains",t:"Unresolved gap",d:"What remains outstanding, and which way it is moving.",ex:'Reviewers judge how much of <span class="ph">Reform issue X</span> remains open.',n:["judg","Assessed"],w:"AI proposes · humans decide",r:"Judgement record"},
+    {g:"What others learned",t:"Comparator evidence",d:"How other countries handled the same issue, for issues chosen at G6.",ex:'If <span class="ph">Reform issue X</span> is chosen, evidence from <span class="ph">a comparator country</span> is gathered.',n:["in","Stated"],w:"Humans choose comparators · AI extracts",r:"Comparator evidence items"},
+    {g:"What others learned",t:"Lesson",d:"What can be learned, and whether it could transfer.",ex:'Reviewers judge whether the <span class="ph">comparator experience</span> could apply here.',n:["judg","Stated + assessed"],w:"Humans judge transferability",r:"Evidence and judgement"},
+    {g:"What to do",t:"Priority",d:"How important the issue is and how tractable progress looks.",ex:'Reviewers judge the priority and tractability of <span class="ph">Reform issue X</span>.',n:["judg","Assessed"],w:"AI proposes · humans decide",r:"Judgement records"},
+    {g:"What to do",t:"Policy option",d:"Practical options for the issue, where applicable.",ex:'Draft options for <span class="ph">Reform issue X</span> are proposed and decided by reviewers.',n:["out","Output"],w:"AI drafts · reviewers decide",r:"Draft option, evidence in annex"}
+  ];
+  var rail = document.getElementById("rail");
+  var lastG = "";
+  S.forEach(function(s,i){
+    if(s.g!==lastG){ var g=document.createElement("li"); g.className="grp"; g.textContent=s.g; rail.appendChild(g); lastG=s.g; }
+    var li=document.createElement("li");
+    li.innerHTML='<button data-i="'+i+'"><span class="dot">'+(i+1)+'</span><span class="t">'+s.t+'</span></button>';
+    rail.appendChild(li);
+  });
+  var idx=0;
+  function render(){
+    var s=S[idx];
+    document.getElementById("sGroup").textContent="Link "+(idx+1)+" of 10 · "+s.g;
+    document.getElementById("sTitle").textContent=s.t;
+    document.getElementById("sDef").textContent=s.d;
+    document.getElementById("sEx").innerHTML=s.ex;
+    document.getElementById("sNature").innerHTML='<i class="sw '+s.n[0]+'"></i>'+s.n[1];
+    document.getElementById("sWho").textContent=s.w;
+    document.getElementById("sRec").textContent=s.r;
+    document.getElementById("barFill").style.width=((idx+1)*10)+"%";
+    document.getElementById("prev").disabled=idx===0;
+    var nx=document.getElementById("next");
+    nx.disabled=idx===S.length-1;
+    rail.querySelectorAll("button").forEach(function(b){
+      var i=+b.getAttribute("data-i");
+      b.classList.toggle("cur",i===idx); b.classList.toggle("done",i<idx);
+      b.setAttribute("aria-current", i===idx ? "step" : "false");
+    });
+  }
+  rail.addEventListener("click",function(e){var b=e.target.closest("button");if(b){idx=+b.getAttribute("data-i");render();}});
+  document.getElementById("prev").addEventListener("click",function(){if(idx>0){idx--;render();}});
+  document.getElementById("next").addEventListener("click",function(){if(idx<S.length-1){idx++;render();}});
+  document.getElementById("stage").addEventListener("keydown",function(e){
+    if(e.key==="ArrowRight"&&idx<S.length-1){idx++;render();}
+    if(e.key==="ArrowLeft"&&idx>0){idx--;render();}
+  });
+  render();
+
+  /* ---------- Country cards ---------- */
+  document.querySelectorAll(".ctry").forEach(function(c){
+    c.addEventListener("click",function(){c.setAttribute("aria-expanded", c.getAttribute("aria-expanded")!=="true");});
+  });
+
+  /* ---------- Active nav ---------- */
+  var links={};
+  document.querySelectorAll(".nav a").forEach(function(a){links[a.getAttribute("href").slice(1)]=a;});
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          Object.keys(links).forEach(function(k){links[k].classList.remove("active");});
+          var a=links[en.target.id]; if(a){a.classList.add("active"); a.scrollIntoView({block:"nearest",inline:"nearest"});}
+        }
+      });
+    },{rootMargin:"-45% 0px -50% 0px"});
+    document.querySelectorAll("main section").forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+</body>
+</html>
