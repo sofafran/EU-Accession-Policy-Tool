@@ -193,3 +193,35 @@ def run_items(data, run_id):
     """Items created by this run's extraction of the source. Each item belongs to exactly one run."""
     e = run_extraction(data, run_id)
     return [it for it in data.get("items", []) if e and it["item_id"] in e["item_ids"]]
+
+
+def register_role(row, run_id, run_cc):
+    """A register row's role in one run, or None if the run did not use the source (E21). The first role listed belongs
+    to the run that registered the source (`added_in_run`); a later `target` role belongs to the later run whose target
+    country the source is about."""
+    roles = [x for x in row.get("role", "").split(";") if x]
+    if not roles:
+        return None
+    if row.get("added_in_run") == run_id:
+        return roles[0]
+    if (row.get("added_in_run") or "") < run_id and "target" in roles[1:] and row.get("country") == run_cc:
+        return "target"
+    return None
+
+
+def run_requirements(root, run_id, rows=None):
+    """Requirement lines of one run (E21): lines approved at one of the run's gates, plus unapproved lines about the run's
+    target country. The requirements table has no run column, so the gate that approved a line identifies its run."""
+    if rows is None:
+        rows = read_csv(Path(root) / "registers" / "source_requirements.csv")[1]
+    gates = {r["gate_decision_id"] for r in read_csv(Path(root) / "registers" / "gate_log.csv")[1] if r.get("run_id") == run_id}
+    cc = run_country(root, run_id)
+    return [r for r in rows if r.get("approved_at") in gates or (not r.get("approved_at") and r.get("country") == cc and r.get("role") == "target")]
+
+
+def run_sources(root, run_id, rows=None):
+    """Register rows of the sources one run used, with `role` set to the role in that run (see register_role)."""
+    if rows is None:
+        rows = read_csv(Path(root) / "registers" / "source_register.csv")[1]
+    cc = run_country(root, run_id)
+    return [{**r, "role": role} for r in rows for role in [register_role(r, run_id, cc)] if role]

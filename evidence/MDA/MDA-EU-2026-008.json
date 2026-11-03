@@ -1,0 +1,161 @@
+{
+  "source_id": "MDA-EU-2026-008",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
+    "status": "complete",
+    "pages_processed": "1 (the whole news item, both sections)",
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5). Keyword screen of the whole text: digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, online, ICT, IT, information society, roaming, internet, MConnect, MPass, MSign, MCloud, EVO, workers, EURES, social security, foreign, free movement, freedom of movement, labour, Chapter 2, EHIC, health insurance card, migration, diaspora. Hits: freedom of movement and workers in the list of internal market policies and chapters, and digital transformation in the list of cluster 3 chapters. Extracted: the opening of the two clusters and the setting of closing benchmarks. Not extracted: the descriptions of what clusters and chapters are and the chapter lists (background on the accession process, rules 0.5 section 5); the statement of the Irish minister (political comment with no claim in scope); the Background section and its links.",
+    "codebook_version": "1.3",
+    "themes_version": "1.3",
+    "run_country": "MDA",
+    "role": "target"
+  },
+  "classification": {
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
+  },
+  "items": [
+    {
+      "item_id": "MDA-EU-2026-008-0001",
+      "information_type": "intervention",
+      "stated_text": "Today, the EU and Moldova took another important step in the accession process by opening negotiations on the so-called ‘internal market’ and ‘ competitiveness and inclusive growth’ clusters.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "On 13 October 2026 the EU and Moldova opened negotiations on the internal market and competitiveness and inclusive growth clusters.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "EU and Moldova start negotiations on internal market, competitiveness and inclusive growth",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/EU/originals/MDA-EU-2026-008_EC-News-Clusters-2-3-opened-2026-10-13.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": null,
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-10-13",
+        "period_covered": null,
+        "event_date": "2026-10-13",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the EU",
+          "actor_id": "ACT-EU-0001"
+        },
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Opening of negotiations on the 'internal market' cluster (Cluster 2) and the 'competitiveness and inclusive growth' cluster",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "'Today' is the news item's date, 13 October 2026, printed at the top of the page. The page lists freedom of movement for workers (2) in the internal market cluster, so chapter scope applies; chapter left empty because the sentence names clusters, not chapters. Cluster 3 (with chapter 10, digital transformation and media) is opened too; cluster holds one value. Type flagged: an accession step, not a national measure.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2026-008-0002",
+      "information_type": "intervention",
+      "stated_text": "The EU has also set benchmarks for the future provisional closure of those chapters.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The EU has set benchmarks for the future provisional closure of the chapters of the two clusters.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "EU and Moldova start negotiations on internal market, competitiveness and inclusive growth",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/EU/originals/MDA-EU-2026-008_EC-News-Clusters-2-3-opened-2026-10-13.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": null,
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-10-13",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The EU",
+          "actor_id": "ACT-EU-0001"
+        },
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Closing benchmarks for the chapters of Clusters 2 and 3",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "'Those chapters' are the chapters of the two clusters opened, which include freedom of movement for workers (2). The benchmarks themselves are not stated; they are in the EU common positions, which are LIMITE and not used (LIM-0045). Type flagged: between intervention (an EU decision) and recommendation (EU expectations).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ]
+}

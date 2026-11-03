@@ -1,22 +1,47 @@
 {
   "source_id": "MKD-EU-2023-005",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-29",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
     "status": "complete",
-    "pages_processed": "1-31",
-    "codebook_version": "1.2",
+    "codebook_version": "1.3",
     "themes_version": "1.3",
-    "notes": "Whole document read. Nothing in scope: the North Macedonia paragraphs (39 to 45, pages 11-13) contain no Chapter 2 or technology content, and the horizontal paragraphs mention hybrid threats and disinformation without any cyber or digital content. 'Regional mobility agreements' (paragraph 79) concern Bosnia and Herzegovina. Items list left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-31",
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of Moldova passages only; the RUN-2026-01 record is unchanged in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration). Moldova paragraphs 105 to 116 (pages 27-29) and the horizontal mentions (pages 2, 3, 6) read in full. Nothing in scope: the paragraphs cover the candidate-status objectives, justice and anti-corruption, elections and foreign interference, hybrid actions, energy, the DCFTA and internal market in general terms, public administration and CFSP alignment, with no Chapter 2 or technology content. No items."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
-  "items": []
+  "items": [],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "target",
+      "item_ids": [],
+      "moved_on": "2026-11-03",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-29",
+        "status": "complete",
+        "pages_processed": "1-31",
+        "codebook_version": "1.2",
+        "themes_version": "1.3",
+        "notes": "Whole document read. Nothing in scope: the North Macedonia paragraphs (39 to 45, pages 11-13) contain no Chapter 2 or technology content, and the horizontal paragraphs mention hybrid threats and disinformation without any cyber or digital content. 'Regional mobility agreements' (paragraph 79) concern Bosnia and Herzegovina. Items list left empty. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
+      }
+    }
+  ]
 }

@@ -1,0 +1,90 @@
+{
+  "source_id": "MDA-EU-2026-007",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
+    "status": "complete",
+    "pages_processed": "1-25 (all pages keyword-screened; hits read in context on pages 4, 6-19 and 23-25)",
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5). Keyword screen of the whole text: digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, online, ICT, IT, information society, roaming, internet, MConnect, MPass, MSign, MCloud, EVO, workers, EURES, social security, foreign, free movement, freedom of movement, labour, Chapter 2, EHIC, health insurance card, migration, diaspora. The assessment concerns macro-fiscal policy and structural reform. One passing item is kept (page 19), flagged theme_doubtful. Not extracted: IT sector growth and IT services exports (pages 4, 6, 9), economic data naming no digital measure; social security contributions and the social security fund deficit (pages 11, 13, 16, 24), domestic social insurance; emigration, labour inspection, undeclared work including its online reporting platform (page 18), skills and labour participation (pages 7, 14-19, 23), general labour-market policy outside the Chapter 2 boundary.",
+    "codebook_version": "1.3",
+    "themes_version": "1.3",
+    "run_country": "MDA",
+    "role": "target"
+  },
+  "classification": {
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
+  },
+  "items": [
+    {
+      "item_id": "MDA-EU-2026-007-0001",
+      "information_type": "metric",
+      "stated_text": "Policies to enhance connectivity, particularly in telecommunications and digital infrastructure, are projected to provide a modest short -term boost to GDP growth of 0.01 to 0.02 pps., with more substantial effects materialising in the long run .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The ERP projects that telecommunications and digital infrastructure policies add 0.01 to 0.02 percentage points to short-term GDP growth.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "4. ADDRESSING STRUCTURAL CHALLENGES – THE REFORM AGENDA AND ITS IMPACT ON THE MACRO-FISCAL FRAMEWORK",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-04-01",
+        "period_covered": "2026/2028",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "the ERP",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Projected short-term contribution of connectivity policies (telecommunications and digital infrastructure) to GDP growth",
+        "value": "0.01 to 0.02",
+        "unit": "percentage points",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "The Commission reports the growth impacts presented in the ERP. Flagged because the subject is the macroeconomic effect rather than the digital measure itself.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ]
+}

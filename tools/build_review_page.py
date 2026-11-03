@@ -10,10 +10,10 @@ from html import escape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (country_name, review_page_name, run_extraction, run_items, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
+from common import (country_name, review_page_name, run_extraction, run_items, run_requirements, run_sources, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.5.0"
+__version__ = "1.6.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -307,8 +307,8 @@ class Page:
         return out
 
     def sources(self):
-        _, reg = read_csv(self.root / "registers" / "source_register.csv")
-        _, req = read_csv(self.root / "registers" / "source_requirements.csv")
+        reg = run_sources(self.root, self.run)  # this run's sources and requirement lines only (E21)
+        req = run_requirements(self.root, self.run)
         if not reg and not req:
             return "Sources " + label("Not started"), placeholder(
                 "Will show the source requirements and gaps, the source register by family, year, chapter and theme, exclusions and "

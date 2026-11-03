@@ -16,7 +16,8 @@ No change to the method is proposed unless a problem below says so. Each point s
 | S6 | The method has no rule on territorial coverage | Scope | Run deviation at G0 (G0-D03) |
 | S7 | Countries compared on different rule versions and within-country scales | Regional page | Check at Moldova's G6 |
 | S8 | Horizontal EU documents are registered under the first country that used them | Register | Reused by ID; change proposed for the Moldova review |
-| S9 | Restricted documents and a public repository | Sources | Kept out of git (LIM-0045); tool change proposed |
+| S9 | Restricted documents and a public repository | Sources | Kept out of git (LIM-0045); `acquire.py` 1.1.0 refuses marked documents |
+| S10 | Shared registers have no run column, so tools mixed runs | Tooling and data model | Fixed in the tools at stage 7; register change proposed for the Moldova review |
 
 ## S1. Tools and tests assumed one run
 
@@ -77,3 +78,11 @@ No change to the method is proposed unless a problem below says so. Each point s
 **Done:** both files are listed in `.gitignore`, registered `excluded`, and not used (LIM-0045).
 
 **Proposed:** `acquire.py` should check the first pages for "LIMITE" or similar markings and refuse to file the document. This is a small tool change, not a method change.
+
+## S10. Shared registers have no run column, so tools mixed runs
+
+**Found at stage 7:** the source requirements table has no run field, and the source register records only the run that first added a source. Several tools read every row, so the North Macedonia page would have counted Moldova's items and sources, its coverage report would have listed Moldova's requirement lines, and Moldova's G1 and G2 spreadsheets held every country's rows.
+
+**Done, no method change:** shared helpers in `tools/common.py` give each tool the run's own rows: requirement lines by the gate that approved them, register rows by `added_in_run` and the role list, and evidence by extraction record. North Macedonia's pages rebuild identical to the committed versions.
+
+**Proposed for the Moldova review:** add a `run_ids` column to the requirements table, and a `used_in_runs` column to the register, so that the run is stated rather than inferred. This is a data dictionary change for a gate.

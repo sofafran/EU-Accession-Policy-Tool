@@ -14,9 +14,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, run_record, runs_with_records, split_list  # noqa: E402
+from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, register_role, run_record, run_requirements, run_items, runs_with_records, split_list  # noqa: E402
 
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
@@ -89,11 +89,15 @@ def load(root, run):
     items = {}
     for f in evidence_files(root):
         d = read_json(f)
-        for it in d["items"]:
+        for it in run_items(d, run):  # this run's items only: a source may also hold other runs' items (E21)
             items[it["item_id"]] = {**it, "_source": d["source_id"]}
     js = read_csv(root / "judgements" / "judgements.csv")[1]
     links = read_csv(root / "links" / "links.csv")[1]
-    reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
+    reg = {}
+    for r in read_csv(root / "registers" / "source_register.csv")[1]:
+        role = register_role(r, run, cc)  # only the sources this run used, with their role in this run (E21)
+        if role:
+            reg[r["source_id"]] = {**r, "role": role}
     sq = {}
     for r in read_csv(root / "judgements" / "source_quality.csv")[1]:
         if r["review_status"] in ("validated", "overridden"):
@@ -259,7 +263,7 @@ def scope_overview(root, run, D):
 def coverage(root, run, D):
     import collections
     R, N = Refs(D["items"]), narrative(root, run, "coverage_and_limits")
-    req = read_csv(root / "registers" / "source_requirements.csv")[1]
+    req = run_requirements(root, run)  # this run's lines only (E21)
     lim = read_csv(root / "registers" / "limits_log.csv")[1]
     reg = [r for r in D["reg"].values() if r["role"] == "target"]
     out = [f"# Source coverage and limits report: {run}", "", DRAFT, "",

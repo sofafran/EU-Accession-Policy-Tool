@@ -1,22 +1,47 @@
 {
   "source_id": "MKD-EU-2024-003",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-29",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
     "status": "complete",
-    "pages_processed": "1-20",
-    "codebook_version": "1.2",
+    "codebook_version": "1.3",
     "themes_version": "1.3",
-    "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. All 20 pages read. Annex I (pages 2-4) is a table of third-party indices on democracy, governance and the rule of law (Freedom House Nations in Transit, EIU Democracy Index, RSF World Press Freedom Index, WJP Rule of Law Index, World Bank governance indicators, Transparency International Corruption Perceptions Index); Annex II (pages 5-20) is statistical tables on demography, labour market, education, national accounts, trade, finance and business. No row concerns Chapter 2 (as bounded in the run record) or the technology and AI theme: there are no indicators on digital services, connectivity, cybersecurity, data protection or worker mobility. No items extracted; the file is written with an empty items list. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-20",
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of Moldova passages only; the RUN-2026-01 record is unchanged in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration). All 20 pages read. Moldova appears only as a column in the third-party index table (page 2) and the statistical tables (pages 12-20) on demography, labour market, education, national accounts, trade, finance and business. No row concerns Chapter 2 as bounded in the run record or the technology and AI theme. No items."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
-  "items": []
+  "items": [],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "target",
+      "item_ids": [],
+      "moved_on": "2026-11-03",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-29",
+        "status": "complete",
+        "pages_processed": "1-20",
+        "codebook_version": "1.2",
+        "themes_version": "1.3",
+        "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. All 20 pages read. Annex I (pages 2-4) is a table of third-party indices on democracy, governance and the rule of law (Freedom House Nations in Transit, EIU Democracy Index, RSF World Press Freedom Index, WJP Rule of Law Index, World Bank governance indicators, Transparency International Corruption Perceptions Index); Annex II (pages 5-20) is statistical tables on demography, labour market, education, national accounts, trade, finance and business. No row concerns Chapter 2 (as bounded in the run record) or the technology and AI theme: there are no indicators on digital services, connectivity, cybersecurity, data protection or worker mobility. No items extracted; the file is written with an empty items list. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
+      }
+    }
+  ]
 }

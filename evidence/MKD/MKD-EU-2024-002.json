@@ -1,22 +1,20 @@
 {
   "source_id": "MKD-EU-2024-002",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-29",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
     "status": "complete",
-    "pages_processed": "1-28",
-    "codebook_version": "1.2",
+    "codebook_version": "1.3",
     "themes_version": "1.3",
-    "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. Multi-country Communication: only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, e-government, e-services, broadband, roaming, 5G, workers, social security, EURES, interoperability, electronic, data protection, connectivity, single market, technology) and full reading of every page with a hit, including the North Macedonia conclusions (paragraph 11, pages 23-24) and sections IV to VI. The annexes (third-party indicators and statistics) are listed at page 28 but are published separately (see MKD-EU-2024-003). Period covered left empty: the register gives none. Left out: digitalisation of the justice system and case management systems (page 9, back-office, R12); cybercrime (R21); general references to the green and digital transitions in the Growth Plan and Economic and Investment Plan. No North Macedonia-specific technology claim and no Chapter 2 material found in this document. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-28 (keyword screen of all pages; Moldova passages read in context on pages 2-4, 7-9, 11-14, 16-17, 19-21 and 26-27)",
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages only. The RUN-2026-01 items are unchanged and listed in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration); every Moldova hit was read in its paragraph. One Moldova claim is in scope: work towards access to the 'roam like at home' area (page 16). Not extracted: the Growth Plan and single-market passages (pages 7, 16, 27), which name no digital measure; organised crime including cyber-dependent crime (page 11, cybercrime rule); transport and energy connectivity (page 19); the Moldova conclusions (pages 26-27), which contain no Chapter 2 or technology content; horizontal Western Balkan measures (pages 14, 17-18), which do not name Moldova."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
   "items": [
     {
@@ -520,6 +518,109 @@
         ],
         "classification_status": "auto",
         "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2024-002-0008",
+      "information_type": "intervention",
+      "stated_text": "The country is also working towards an ACAA and possible access to the EU “roam like at home” area.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is working towards a conformity assessment agreement and possible access to the EU 'roam like at home' area.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "V. ECONOMIC AND SOCIAL CONVERGENCE AND ACCELERATED INTEGRATION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Access to the EU 'roam like at home' area",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "'The country' is Moldova, the subject of the preceding sentences on the EU-Moldova DCFTA. Only the roaming part is in scope. Roaming is tagged TECH-INFRA as in the earlier run's items, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv), which asks at G4 whether roaming fits a theme area.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "target",
+      "item_ids": [
+        "MKD-EU-2024-002-0001",
+        "MKD-EU-2024-002-0002",
+        "MKD-EU-2024-002-0003",
+        "MKD-EU-2024-002-0004",
+        "MKD-EU-2024-002-0005",
+        "MKD-EU-2024-002-0006",
+        "MKD-EU-2024-002-0007"
+      ],
+      "moved_on": "2026-11-03",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-29",
+        "status": "complete",
+        "pages_processed": "1-28",
+        "codebook_version": "1.2",
+        "themes_version": "1.3",
+        "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4. Multi-country Communication: only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, e-government, e-services, broadband, roaming, 5G, workers, social security, EURES, interoperability, electronic, data protection, connectivity, single market, technology) and full reading of every page with a hit, including the North Macedonia conclusions (paragraph 11, pages 23-24) and sections IV to VI. The annexes (third-party indicators and statistics) are listed at page 28 but are published separately (see MKD-EU-2024-003). Period covered left empty: the register gives none. Left out: digitalisation of the justice system and case management systems (page 9, back-office, R12); cybercrime (R21); general references to the green and digital transitions in the Growth Plan and Economic and Investment Plan. No North Macedonia-specific technology claim and no Chapter 2 material found in this document. Second-pass check done (G3 condition 2), see review/RUN-2026-01/second_pass/."
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

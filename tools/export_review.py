@@ -9,9 +9,9 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import lessons_path, run_items, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
+from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.13.1"
+__version__ = "1.14.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -138,6 +138,7 @@ def g0(root, run):
 
 def g1(root, run):
     header, rows = read_csv(root / "registers" / "source_requirements.csv")
+    rows = run_requirements(root, run, rows)  # this run's lines only (E21)
     return "G1_source_requirements.xlsx", [
         table_sheet("Requirements", header + ["reviewer_decision", "reviewer_comment"], rows, first=lambda r: not r.get("approved_at")),
         lessons_sheet(root, run),
@@ -149,6 +150,8 @@ def g2(root, run):
     reg_h, reg = read_csv(root / "registers" / "source_register.csv")
     req_h, req = read_csv(root / "registers" / "source_requirements.csv")
     sq_h, sq = read_csv(root / "judgements" / "source_quality.csv")
+    reg, req = run_sources(root, run, reg), run_requirements(root, run, req)  # this run's rows only (E21)
+    sq = [r for r in sq if r.get("run_id") == run]
     gaps = {"open", "not_found", "partly_found", "not_public"}
     excluded = [r for r in reg if r.get("status") != "available"]
     coverage = [["family", k, v] for k, v in sorted(Counter(r["source_family"] for r in reg if r.get("status") == "available").items())]
