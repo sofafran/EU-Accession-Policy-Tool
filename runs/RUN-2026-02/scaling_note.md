@@ -10,7 +10,7 @@ No change to the method is proposed unless a problem below says so. Each point s
 |---|---|---|---|
 | S1 | Tools and tests assumed one run | Tooling | Fixed at stage 0, no method change |
 | S2 | A source can hold only one run's extraction | Data model | Decision at G0 (G0-D02) |
-| S3 | Shared issues were all built from North Macedonia evidence | Taxonomy | Watch at G4 and G5; check proposed |
+| S3 | Shared issues were all built from North Macedonia evidence | Taxonomy | Draft mapping: 238 of 303 EU items fit; six awkward fits and five candidate issues for G4 |
 | S4 | Changes to a shared issue can alter how a closed run is shown | Taxonomy and pages | Rule proposed for G4 |
 | S5 | Earlier unmatched Moldova items were raised against North Macedonia issues | Taxonomy | Re-examined at G4 |
 | S6 | The method has no rule on territorial coverage | Scope | Run deviation at G0 (G0-D03) |
@@ -86,3 +86,7 @@ No change to the method is proposed unless a problem below says so. Each point s
 **Done, no method change:** shared helpers in `tools/common.py` give each tool the run's own rows: requirement lines by the gate that approved them, register rows by `added_in_run` and the role list, and evidence by extraction record. North Macedonia's pages rebuild identical to the committed versions.
 
 **Proposed for the Moldova review:** add a `run_ids` column to the requirements table, and a `used_in_runs` column to the register, so that the run is stated rather than inferred. This is a data dictionary change for a gate.
+
+## Update at stage 7 (draft mapping)
+
+S3: of 303 Moldova EU requirement items, 238 fit approved shared issues and 42 fit none. The shared taxonomy carries over well for technology and AI. The awkward fits are where Moldova's situation differs in kind, not degree: a public procurement system to be replaced rather than underused (candidate CI-01 instead of RI-TEC-006), EU citizens barred from all public posts (RI-FMW-003), no occupational pension scheme at all (RI-FMW-012), no open data authority (RI-TEC-016), no eHealth strategy (RI-TEC-009) and a cybersecurity centre still being set up (RI-TEC-023). Whether to keep these under the shared issues or split them is a G4 decision. S5: 8 of the 11 earlier unmatched Moldova rows now fit existing issues.
