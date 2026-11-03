@@ -1,5 +1,9 @@
 # Codebook change log
 
+## Data dictionary 1.6 and evidence schema 1.3, 3 November 2026
+
+Approved by Sofia at G0 of RUN-2026-02 (G0-D02, decision E21). A source can hold the extractions of several runs: the earlier run's records move unchanged to `earlier_extractions`, each traceable to its run, the run's country and the source's role, with the items it created. Items belong to one run only. The register `role` may list one role per run. No codebook or rules version changes; RUN-2026-01's records and items are unchanged. Tools: `start_extraction.py` 1.0.0 (new), `validate_data.py` 1.5.0, `build_review_page.py` 1.5.0, `export_review.py` 1.13.1.
+
 ## Version 1.3 (Codebooks 1 to 6) and 1.2 (Codebook 7), 2 November 2026
 
 The changes PC-01 to PC-17, approved by Sofia at G8 of RUN-2026-01 (GATE-0013), applied as new shared-core versions before RUN-2026-02, together with the multi-country rollout (decision E19, `runs/rollout_plan.md`). Full wording and reasons: `runs/RUN-2026-01/run_review.md`, section 5, and `review/RUN-2026-01/G8_proposed_changes.csv`. RUN-2026-01 keeps the versions recorded in its run record and evidence files; none of its evidence, judgements or outputs changed.

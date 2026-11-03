@@ -1,6 +1,6 @@
 # Data dictionary
 
-Version 1.5, 2 November 2026 (PC-13 and PC-14 from G8 of RUN-2026-01, GATE-0013, applied before RUN-2026-02 under decision E19: `reform_issue_ids` on interventions; the case fields on comparator cases; the learning log is `learning_log.csv` from RUN-2026-02, `alpha_learning_log.csv` in RUN-2026-01). Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.6, 3 November 2026 (G0-D02 of RUN-2026-02, decision E21: evidence schema 1.3, several runs' extractions in one evidence file; the register `role` may list more than one role, for example `comparator;target`). Version 1.5, 2 November 2026 (PC-13 and PC-14 from G8 of RUN-2026-01, GATE-0013, applied before RUN-2026-02 under decision E19: `reform_issue_ids` on interventions; the case fields on comparator cases; the learning log is `learning_log.csv` from RUN-2026-02, `alpha_learning_log.csv` in RUN-2026-01). Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
@@ -67,7 +67,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | title | Title as printed (English, or original with English in notes) |
 | document_type | As in the requirements list |
 | country | Country code of the country the document is about |
-| role | `target` or `comparator` |
+| role | `target` or `comparator`. A source used in more than one run lists each role in run order, semicolon-separated, for example `comparator;target` (E21); `added_in_run` stays the run that first registered it |
 | chapters_covered | Chapters, semicolon-separated |
 | themes_covered | Theme codes the source covers, semicolon-separated (blank if none) |
 | requirement_id | Requirement it satisfies (blank if found outside the list) |
@@ -329,3 +329,10 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 ## evidence/<country>/<source_id>.json
 
 One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules, including `scope_basis` (`chapter`, `theme`, `chain` or `exception`), `themes` (theme codes), `stated_status` (`proposed`, `adopted`, `implemented`, `in_practice`, `in_progress`, `reversed`, `unclear`) and `eu_scale.applies_to` (`chapter` or `sub_area`), and a `pass2` block filled in by classification. The file header records the theme list version used in `extraction.themes_version`.
+
+**Several runs per file (evidence schema 1.3, E21).** A source may be extracted by more than one run, for example first as a comparator and later as a target. The file then keeps:
+
+- `extraction` and `classification`: the records of the latest run to extract the source, with `run_country` (that run's target country) and `role` (the source's role in that run);
+- `earlier_extractions`: one entry per earlier run, oldest first, with `run_id`, `run_country`, `role`, `item_ids` (the items that run created), `moved_on`, and its `extraction` and `classification` records copied unchanged.
+
+Each item belongs to the one run that created it and is never moved, edited or reused by a later run. A later run that needs a passage the earlier run already quoted creates its own item, with a new ID continuing the numbering, so each run's classification stays its own. Tools take a run's items with `run_items` in `tools/common.py`; `tools/start_extraction.py` moves the records when a later run starts.

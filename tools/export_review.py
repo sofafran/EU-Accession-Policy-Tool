@@ -9,9 +9,9 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import lessons_path, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
+from common import lessons_path, run_items, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.13.0"
+__version__ = "1.13.1"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -338,9 +338,9 @@ def g3(root, run):
     items = []
     for f in evidence_files(root):
         data = read_json(f)
-        if data["extraction"]["status"] != "sample":
+        if data["extraction"]["status"] != "sample" or data["extraction"]["run_id"] != run:  # this run's sample only (E21)
             continue
-        for it in data["items"]:
+        for it in run_items(data, run):
             it["_source"] = data["source_id"]
             it["_passage"] = next((pid for pid, (p, t) in ptext.items() if p["source_id"] == data["source_id"]
                                    and it["location"].get("page") == int(p["page"]) and norm(it["stated_text"]) in norm(t)), "")

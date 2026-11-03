@@ -31,9 +31,9 @@ The order below is Sofia's. Points to check are starting points for each run's G
 | Run | Country | Code | Points to check at G0 and G1 |
 |---|---|---|---|
 | RUN-2026-01 | North Macedonia | MKD | Completed alpha (G8, GATE-0013). Baseline only; 2026 refresh pending (E18) |
-| RUN-2026-02 | Montenegro | MNE | Negotiating since 2012, all chapters open, several closed. The alpha found an EU common position on Chapter 2 (AD 26/26, restricted, LIM-0028): check whether the chapter is provisionally closed, in which case issues are about implementation and closing-benchmark follow-up. 17 sources already held from the comparator pilot. Languages: Montenegrin (no ISO 639-1 code; record as `cnr` in notes, `sr` in the field), Albanian |
-| RUN-2026-03 | Albania | ALB | Negotiating; check which clusters are open and the Chapter 2 benchmarks. Growth Plan Reform Agenda as for North Macedonia. 5 sources held. Language: Albanian (`sq`) |
-| RUN-2026-04 | Moldova | MDA | The Commission reported on 13 October 2026 that the internal market cluster, which contains Chapter 2, was opened: check its opening benchmarks and any closing benchmarks. Moldova Growth Plan and Reform Agenda. 13 sources held. Language: Romanian (`ro`) |
+| RUN-2026-02 | Moldova | MDA | Active: first scaling test (E20), started 3 November 2026. The Commission reported on 13 October 2026 that the internal market cluster, which contains Chapter 2, was opened: check its opening benchmarks and any closing benchmarks. Moldova Growth Plan and Reform Agenda. 13 sources held. Language: Romanian (`ro`) |
+| RUN-2026-03 | Montenegro | MNE | Held: starts only after Sofia reviews what RUN-2026-02 teaches (E20). Negotiating since 2012, all chapters open, several closed. The alpha found an EU common position on Chapter 2 (AD 26/26, restricted, LIM-0028): check whether the chapter is provisionally closed, in which case issues are about implementation and closing-benchmark follow-up. 17 sources already held from the comparator pilot. Languages: Montenegrin (no ISO 639-1 code; record as `cnr` in notes, `sr` in the field), Albanian |
+| RUN-2026-04 | Albania | ALB | Negotiating; check which clusters are open and the Chapter 2 benchmarks. Growth Plan Reform Agenda as for North Macedonia. 5 sources held. Language: Albanian (`sq`) |
 | RUN-2026-05 | Ukraine | UKR | Same cluster opened on 13 October 2026. The Ukraine Facility and Ukraine Plan replace a Reform Agenda. Wartime context limits some evidence. Language: Ukrainian (`uk`) |
 | RUN-2026-06 | Serbia | SRB | Negotiating; check whether the internal market cluster is open. 10 sources held. Language: Serbian (`sr`), Cyrillic and Latin scripts |
 | RUN-2026-07 | Bosnia and Herzegovina | BIH | Candidate; check the state of negotiations and of screening. Several levels of government hold competence for labour and digital matters. Languages: Bosnian, Croatian, Serbian (`bs`, `hr`, `sr`) |
@@ -41,7 +41,16 @@ The order below is Sofia's. Points to check are starting points for each run's G
 | RUN-2026-09 | Türkiye | TUR | Negotiations at a standstill since 2018; older negotiating framework. Check what the latest report says on Chapter 2. Language: Turkish (`tr`) |
 | RUN-2026-10 | Kosovo | XKX | Potential candidate under a Stabilisation and Association Agreement; no screening. Use the EU designation "Kosovo*" with its standard footnote in outputs. `XKX` is the code in common use, not an official ISO code. Languages: Albanian, Serbian (`sq`, `sr`) |
 
-Runs go one at a time, in this order. Each run's evidence freeze date is set by Sofia at its G0. It is set after the 2026 Enlargement Package (due 4 November 2026) where possible, so that each run includes its 2026 report.
+Runs go one at a time, in this order. The order was changed by decision E20 (3 November 2026): Moldova first, then Montenegro, with the other runs unscheduled until the scaling review below. Each run's evidence freeze date is set by Sofia at its G0. It is set after the 2026 Enlargement Package (due 4 November 2026) where possible, so that each run includes its 2026 report.
+
+## Controlled scaling (E20)
+
+Decision E20 (3 November 2026). Sofia moved the rollout into a controlled scaling phase:
+
+- **One test country first.** Moldova (RUN-2026-02) is the first scaling test of the shared architecture. Run IDs follow start order, so Moldova takes RUN-2026-02 and Montenegro RUN-2026-03; references in the shared core to "RUN-2026-02" (PC-11 at G4, the held-sources data-model point at G0) now apply to Moldova.
+- **Scaling review before the second test.** Montenegro does not start automatically. It starts only after Sofia has reviewed what the Moldova run teaches, using `runs/RUN-2026-02/scaling_note.md` and the run's learning log. The review is recorded in `decisions/decision_log.md`; it is not a new gate.
+- **Later runs unscheduled.** Albania onwards keep their place in the table for planning only. No run after Montenegro is scheduled until the Montenegro run has been reviewed in the same way.
+- **No redesign by default.** The method changes only where a genuine scaling problem requires it, through the normal gate route.
 
 ## Default scope of each run
 
@@ -58,7 +67,7 @@ The alpha's comparator pilot registered and partly extracted sources for Montene
 
 - **Registration:** these sources are not downloaded or registered again (IDs are permanent). At the new run's G1 they are matched to its requirement lines. At its G2 they are confirmed or excluded like any other source.
 - **Earlier items:** they were extracted for three issues only (LIM-0026). They are kept unchanged and stay valid for the alpha's comparator cases.
-- **Open point for RUN-2026-02 G0 (data model, tier 3):** an evidence file holds one extraction record per source, so a second run cannot yet record its own extraction of a source already held. Recommended option: add an optional `earlier_extractions` list to the evidence file (evidence schema 1.3). The main `extraction` record then describes the latest run, items keep their IDs, new items continue the numbering with `role` `target`, and the register `role` may hold `comparator;target`. This only affects the four countries above and is decided before their extraction starts.
+- **Settled at RUN-2026-02 G0 (decision E21, GATE-0014):** implemented as evidence schema 1.3 and data dictionary 1.6, with `tools/start_extraction.py`. Items belong to one run only, so a later run creates its own items rather than reusing earlier ones. The original open point read: an evidence file holds one extraction record per source, so a second run cannot yet record its own extraction of a source already held. Recommended option: add an optional `earlier_extractions` list to the evidence file (evidence schema 1.3). The main `extraction` record then describes the latest run, items keep their IDs, new items continue the numbering with `role` `target`, and the register `role` may hold `comparator;target`. This only affects the four countries above and is decided before their extraction starts.
 
 ## Comparator step in later runs
 

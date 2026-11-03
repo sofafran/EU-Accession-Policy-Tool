@@ -132,7 +132,7 @@ def main():
         want = f"LIM-{highest('registers/limits_log.csv', 'limit_id', 'LIM-') + 1:04d}"
         check("next_id.py", "next limit after the highest recorded", r.stdout.strip() == want, r.stdout)
         r = run(proj, "next_id.py", "lesson")
-        want = f"ALN-{highest('runs/RUN-2026-01/alpha_learning_log.csv', 'lesson_id', 'ALN-') + 1:04d}"
+        want = f"ALN-{max(highest(str(f.relative_to(proj)), 'lesson_id', 'ALN-') for f in proj.glob('runs/RUN-*/*learning_log.csv')) + 1:04d}"
         check("next_id.py", "next lesson after the highest recorded", r.stdout.strip() == want, r.stdout)
         reg_path = proj / "registers" / "source_register.csv"
         reg_path.write_text(reg_path.read_text(encoding="utf-8").splitlines()[0] + "\n", encoding="utf-8")
@@ -221,6 +221,37 @@ def main():
         r = run(proj, "convert_to_text.py", str(samples / "data.xlsx"), str(samples / "data.txt"))
         t = (samples / "data.txt").read_text(encoding="utf-8") if r.returncode == 0 else ""
         check("convert_to_text.py", "XLSX: one page per sheet", "=== PAGE 1 ===" in t and "=== SECTION: Permits ===" in t and "1520" in t, r.stderr[-300:])
+
+        # start_extraction and several runs per evidence file (evidence schema 1.3, E21)
+        mx = proj / "evidence" / "MDA" / "MDA-EU-2099-001.json"
+        mx.parent.mkdir(parents=True, exist_ok=True)
+        cmp_item = item("MDA-EU-2099-001-0001", "A comparator claim.", page=1)
+        cmp_item["country"], cmp_item["role"] = "MDA", "comparator"
+        mx.write_text(json.dumps(evidence("MDA-EU-2099-001", [cmp_item])), encoding="utf-8")
+        before = json.loads(mx.read_text(encoding="utf-8"))
+        r = run(proj, "start_extraction.py", "MDA-EU-2099-001", "--run", "RUN-2026-02", "--date", "2026-11-03")
+        after = json.loads(mx.read_text(encoding="utf-8")) if r.returncode == 0 else {}
+        e0 = (after.get("earlier_extractions") or [{}])[0]
+        check("start_extraction.py", "earlier run's records kept unchanged with run, country, role and items",
+              e0.get("extraction") == before["extraction"] and e0.get("classification") == before["classification"]
+              and e0.get("run_country") == "MKD" and e0.get("role") == "comparator" and e0.get("item_ids") == ["MDA-EU-2099-001-0001"]
+              and after["items"] == before["items"] and after["extraction"]["run_id"] == "RUN-2026-02" and after["extraction"]["run_country"] == "MDA",
+              r.stdout + r.stderr[-300:])
+        sys.path.insert(0, str(proj / "tools"))
+        import common as cm
+        new_item = item("MDA-EU-2099-001-0002", "A comparator claim.", page=1)
+        new_item["country"] = "MDA"
+        after["items"].append(new_item)
+        check("start_extraction.py", "each item belongs to one run",
+              [i["item_id"] for i in cm.run_items(after, "RUN-2026-01")] == ["MDA-EU-2099-001-0001"]
+              and [i["item_id"] for i in cm.run_items(after, "RUN-2026-02")] == ["MDA-EU-2099-001-0002"])
+        r = run(proj, "start_extraction.py", "MDA-EU-2099-001", "--run", "RUN-2026-02")
+        check("start_extraction.py", "refuses to start the same run twice", r.returncode != 0)
+        after["earlier_extractions"][0]["item_ids"].append("MDA-EU-2099-001-0009")
+        mx.write_text(json.dumps(after), encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "earlier extraction listing an unknown item is an error", "lists unknown item MDA-EU-2099-001-0009" in r.stdout + r.stderr)
+        mx.unlink()
 
         # verify_quotes
         ev = proj / "evidence" / "MKD" / f"{sid}.json"
@@ -347,7 +378,7 @@ def main():
         (r2 / "run_record.md").write_text("# Run record: RUN-2099-02 (test)\n", encoding="utf-8")
         (r2 / "learning_log.csv").write_text(alpha_ll[0] + "\n", encoding="utf-8")
         r = run(proj, "next_id.py", "lesson", "--run", "RUN-2099-02")
-        want = f"ALN-{highest('runs/RUN-2026-01/alpha_learning_log.csv', 'lesson_id', 'ALN-') + 1:04d}"
+        want = f"ALN-{max(highest(str(f.relative_to(proj)), 'lesson_id', 'ALN-') for f in proj.glob('runs/RUN-*/*learning_log.csv')) + 1:04d}"
         check("next_id.py", "next lesson in a new run continues after the highest in any run", r.stdout.strip() == want, r.stdout + r.stderr[-300:])
         r = run(proj, "validate_data.py")
         check("validate_data.py", "new run's learning_log.csv checked; template folder skipped",
@@ -392,7 +423,7 @@ def main():
 
         # export_review
         for gate, name in (("G0", "G0_run_setup.xlsx"), ("G1", "G1_source_requirements.xlsx"), ("G2", "G2_source_review.xlsx")):
-            r = run(proj, "export_review.py", gate)
+            r = run(proj, "export_review.py", gate, "--run", "RUN-2026-01")
             out = proj / "review" / "RUN-2026-01" / name
             ok = r.returncode == 0 and out.exists()
             if ok:
@@ -411,7 +442,7 @@ def main():
         (rv / "G3_sample.csv").write_text("source_id,pages,reason\nMKD-EU-2025-001,whole,test\n", encoding="utf-8")
         reg_lines = (proj / "registers" / "source_register.csv").read_text(encoding="utf-8").splitlines()
         (proj / "registers" / "source_register.csv").write_text(reg_lines[0] + "\nMKD-EU-2025-001,EU,European Commission,,Test report" + "," * 20 + "\n", encoding="utf-8")
-        r = run(proj, "export_review.py", "G3-handcoding")
+        r = run(proj, "export_review.py", "G3-handcoding", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G3_handcoding.xlsx").exists()
         if ok:
             wb = load_workbook(rv / "G3_handcoding.xlsx")
@@ -423,7 +454,7 @@ def main():
         earlier = json.loads(ev.read_text(encoding="utf-8"))
         earlier["items"].append(item(f"{sid}-0099", "A removed claim.", page=1))
         (rv / "sample_0.1" / f"{sid}.json").write_text(json.dumps(earlier), encoding="utf-8")
-        r = run(proj, "export_review.py", "G3")
+        r = run(proj, "export_review.py", "G3", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G3_sample_review.xlsx").exists()
         if ok:
             wbc = load_workbook(rv / "G3_sample_review.xlsx")
@@ -435,9 +466,9 @@ def main():
             comp = [row for row in wb["Hand-coding comparison"].iter_rows(min_row=2, values_only=True)]
             ok = f"{sid}-0001" not in shown and comp and comp[0][1] == "awaiting hand-coding"
         check("export_review.py", "G3: agent items in a passage are withheld until it is hand-coded", ok, r.stderr[-300:])
-        r = run(proj, "export_review.py", "G3-handcoding")
+        r = run(proj, "export_review.py", "G3-handcoding", "--run", "RUN-2026-01")
         check("export_review.py", "hand-coding workbook is not overwritten without --force", r.returncode != 0 and "--force" in r.stdout + r.stderr)
-        r = run(proj, "export_review.py", "G3-review-sample")
+        r = run(proj, "export_review.py", "G3-review-sample", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G3_review_sample.xlsx").exists()
         if ok:
             ws = load_workbook(rv / "G3_review_sample.xlsx")
@@ -451,7 +482,7 @@ def main():
         ws.cell(3, 3).value = "recommendation"
         ws.cell(3, 4).value = "The country should adopt a law on something not in the agent output."
         hw.save(rv / "G3_handcoding.xlsx")
-        r = run(proj, "export_review.py", "G3")
+        r = run(proj, "export_review.py", "G3", "--run", "RUN-2026-01")
         wb = load_workbook(rv / "G3_sample_review.xlsx")
         res = [row[1] for row in wb["Hand-coding comparison"].iter_rows(min_row=2, values_only=True)]
         shown = [c.value for c in wb["Sample items"]["A"][1:]]
@@ -462,7 +493,7 @@ def main():
         (rv / "G4_issue_mapping.csv").write_text(f"item_id,issue_ids,note\n{sid}-0001,RI-TST-001,\n{sid}-0006,,no issue fits\n", encoding="utf-8")
         with (proj / "taxonomy" / "reform_issues.csv").open("a", encoding="utf-8") as fh:
             fh.write("RI-TST-001,Test issue,A test definition.,2,02,,MEC-01,,,draft,,,RUN-2026-01,\n")
-        r = run(proj, "export_review.py", "G4")
+        r = run(proj, "export_review.py", "G4", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G4_taxonomy.xlsx").exists()
         if ok:
             wb4 = load_workbook(rv / "G4_taxonomy.xlsx")
@@ -470,14 +501,14 @@ def main():
         check("export_review.py", "G4 package: issues with item counts and items fitting no issue", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
         (rv / "G4_decisions.csv").write_text("decision_id,decision_needed\nG4-D01,Test decision\n", encoding="utf-8")
-        r = run(proj, "export_review.py", "G4")
+        r = run(proj, "export_review.py", "G4", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G4_taxonomy.xlsx").exists()
         if ok:
             wb4 = load_workbook(rv / "G4_taxonomy.xlsx")
             ok = wb4.sheetnames[:2] == ["Decisions needed", "Reform issues"] and wb4["Decisions needed"].cell(2, 1).value == "G4-D01"
         check("export_review.py", "G4 package: decisions needed come first when listed", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G4_decisions.csv").unlink()
-        r = run(proj, "export_review.py", "G5")
+        r = run(proj, "export_review.py", "G5", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G5_classification.xlsx").exists()
         if ok:
             wb5 = load_workbook(rv / "G5_classification.xlsx")
@@ -487,15 +518,15 @@ def main():
         ri = proj / "taxonomy" / "reform_issues.csv"
         drafted = ri.read_text(encoding="utf-8")
         ri.write_text(drafted.replace(",draft,", ",approved,"), encoding="utf-8")
-        r = run(proj, "export_review.py", "G1b")
+        r = run(proj, "export_review.py", "G1b", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and "Comparator source lines" in load_workbook(rv / "G1b_comparators.xlsx").sheetnames
         check("export_review.py", "G1b package: countries checked and comparator source lines", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G1b_comparators.xlsx").unlink(missing_ok=True)
-        r = run(proj, "export_review.py", "G6b")
+        r = run(proj, "export_review.py", "G6b", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and {"Cases", "Lessons and transferability", "Success and attribution", "Gaps in sources"} <= set(load_workbook(rv / "G6b_comparators.xlsx").sheetnames)
         check("export_review.py", "G6b package: cases, lessons, success and attribution, and gaps", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G6b_comparators.xlsx").unlink(missing_ok=True)
-        r = run(proj, "export_review.py", "G6")
+        r = run(proj, "export_review.py", "G6", "--run", "RUN-2026-01")
         ri.write_text(drafted, encoding="utf-8")
         ok = r.returncode == 0 and (rv / "G6_issue_dossiers.xlsx").exists()
         if ok:
@@ -509,7 +540,7 @@ def main():
 
         # build_review_page
         out_html = Path(tmp) / "index.html"
-        r = run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-10-29")
+        r = run(proj, "build_review_page.py", "--run", "RUN-2026-01", "--output", str(out_html), "--date", "2026-10-29")
         page = out_html.read_text(encoding="utf-8") if r.returncode == 0 else ""
         check("build_review_page.py", "page builds", bool(page), r.stderr[-300:])
         check("build_review_page.py", "G0 shown as pending review while its package awaits decision", ">G0</td>" in page and "Pending review" in page)
@@ -518,7 +549,7 @@ def main():
         check("build_review_page.py", "extraction section shows the sample", "Evidence items" in page)
         with (proj / "registers" / "gate_log.csv").open("a", encoding="utf-8") as fh:
             fh.write("GATE-0001,RUN-2026-01,G0,2026-11-10,Sofia,pass,,G0_run_setup.xlsx,,\n")
-        run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-11-10")
+        run(proj, "build_review_page.py", "--run", "RUN-2026-01", "--output", str(out_html), "--date", "2026-11-10")
         page = out_html.read_text(encoding="utf-8")
         check("build_review_page.py", "after a pass, G0 shown as validated", 'class="label validated">Validated</span> pass, 2026-11-10' in page)
         from html.parser import HTMLParser
@@ -546,7 +577,7 @@ def main():
         check("build_review_page.py", "country page (before G7) builds in analysis/, balanced, self-contained", bool(apage) and hp2.ok and not hp2.stack and "<script" not in apage and "<link" not in apage)
         check("build_review_page.py", "country page shows quotes with item IDs and placeholders for later sections",
               f"{sid}-0001" in apage and "Reform issues" in apage and "layout only" in apage)
-        check("build_review_page.py", "country page links back one folder up", 'href="../index.html"' in apage and 'href="../analysis.html"' in apage)
+        check("build_review_page.py", "country page links back one folder up, to its own run's review page", ('href="../index.html"' in apage or 'href="../review_RUN-2026-01.html"' in apage) and 'href="../analysis.html"' in apage)
         rpage = (Path(tmp) / "analysis.html").read_text(encoding="utf-8") if (Path(tmp) / "analysis.html").exists() else ""
         hp3 = P()
         hp3.feed(rpage)
@@ -555,7 +586,7 @@ def main():
               "Montenegro" in rpage and "Kosovo" in rpage and "Not started" in rpage and "Priority <b>" not in rpage)  # the sample project has no judgements
         with (rv / "G3_passages.csv").open("a", encoding="utf-8") as fh:
             fh.write("P2,MKD-EU-2025-001,2,In the coming year,,test\n")
-        run(proj, "build_review_page.py", "--output", str(out_html), "--date", "2026-11-10")
+        run(proj, "build_review_page.py", "--run", "RUN-2026-01", "--output", str(out_html), "--date", "2026-11-10")
         apage = cpath.read_text(encoding="utf-8")
         check("build_review_page.py", "country page leaves out items in a passage not yet hand-coded, keeps hand-coded ones",
               f"{sid}-0006" not in apage and f"{sid}-0001" in apage and "left out until the analyst has hand-coded them" in apage)

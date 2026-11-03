@@ -161,3 +161,35 @@ def gate_id(root, run_id, gate):
 def runs_with_records(root):
     """Run IDs that have a run record, in ID order (the template folder is skipped)."""
     return sorted(p.parent.name for p in (Path(root) / "runs").glob("RUN-*/run_record.md"))
+
+
+def review_page_name(root, run_id):
+    """File name of a run's review page: index.html for the active run, review_<run_id>.html for an earlier run (E19, E20)."""
+    runs = runs_with_records(root)
+    return "index.html" if runs and run_id == runs[-1] else f"review_{run_id}.html"
+
+
+# Several runs per evidence file (evidence schema 1.3, decision E21). The file's `extraction` is the latest run's;
+# earlier runs' records sit unchanged in `earlier_extractions`, each with the item IDs that run created.
+def extraction_runs(data):
+    """One entry per run that extracted this source, oldest first: run_id, run_country, role, item_ids (set), extraction, classification."""
+    out, earlier_ids = [], set()
+    for e in data.get("earlier_extractions", []):
+        out.append({**e, "item_ids": set(e["item_ids"])})
+        earlier_ids |= set(e["item_ids"])
+    ext = data.get("extraction", {})
+    own = {it["item_id"] for it in data.get("items", []) if it["item_id"] not in earlier_ids}
+    out.append({"run_id": ext.get("run_id"), "run_country": ext.get("run_country"), "role": ext.get("role"),
+                "item_ids": own, "extraction": ext, "classification": data.get("classification", {})})
+    return out
+
+
+def run_extraction(data, run_id):
+    """This run's entry from extraction_runs, or None if the run has not extracted the source."""
+    return next((e for e in extraction_runs(data) if e["run_id"] == run_id), None)
+
+
+def run_items(data, run_id):
+    """Items created by this run's extraction of the source. Each item belongs to exactly one run."""
+    e = run_extraction(data, run_id)
+    return [it for it in data.get("items", []) if e and it["item_id"] in e["item_ids"]]

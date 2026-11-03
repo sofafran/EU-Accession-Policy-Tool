@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (ITEM_ID_RE, SOURCE_ID_RE, dictionary_tables, evidence_files,  # noqa: E402
                     lessons_path, project_root, read_csv, read_json, runs_with_records, split_list)
 
-__version__ = "1.4.0"
+__version__ = "1.5.0"
 
 ID_COLUMNS = {
     "registers/source_requirements.csv": "requirement_id",
@@ -150,6 +150,19 @@ def check_evidence(root, schema_path, rep):
         if m and path.parent.name != m.group(1):
             rep.error(f"{path.name}: stored under evidence/{path.parent.name}/ but the source ID country is {m.group(1)}")
         files[sid] = data
+        # several runs per file (evidence schema 1.3, E21): earlier runs' item lists must point at real, unshared items
+        ids_here = {it.get("item_id") for it in data.get("items", [])}
+        runs_seen, claimed = [data.get("extraction", {}).get("run_id")], set()
+        for e in data.get("earlier_extractions", []):
+            if e.get("run_id") in runs_seen:
+                rep.error(f"{path.name}: run {e.get('run_id')} has more than one extraction record")
+            runs_seen.append(e.get("run_id"))
+            for iid in e.get("item_ids", []):
+                if iid not in ids_here:
+                    rep.error(f"{path.name}: earlier extraction {e.get('run_id')} lists unknown item {iid}")
+                if iid in claimed:
+                    rep.error(f"{path.name}: item {iid} is listed by more than one earlier extraction")
+                claimed.add(iid)
         for it in data.get("items", []):
             iid = it.get("item_id", "")
             mm = ITEM_ID_RE.match(iid)

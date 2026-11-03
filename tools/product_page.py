@@ -7,7 +7,7 @@ from collections import Counter
 from html import escape
 
 from build_outputs import COUNTRIES, issue_view, lesson_field, load, narrative, names_of
-from common import gate_passed, read_csv, split_list
+from common import gate_passed, read_csv, review_page_name, split_list
 
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 PRI = {"High": 0, "Medium": 1, "Low": 2}
@@ -623,7 +623,7 @@ class ProductPage:
 <div class="wrap" id="top">
 <header>
 <h1>Analysis: {escape(country)}</h1>
-<p class="sub">{escape(self.run)} · {escape(status)} · Page updated {escape(today)} · <a href="{self.up}analysis.html">All countries</a> · <a href="{self.up}index.html">Review page</a>{summ}</p>
+<p class="sub">{escape(self.run)} · {escape(status)} · Page updated {escape(today)} · <a href="{self.up}analysis.html">All countries</a> · <a href="{self.up}{review_page_name(self.root, self.run)}">Review page</a>{summ}</p>
 </header>
 <nav class="top" aria-label="Sections">{nav}</nav>
 {body}

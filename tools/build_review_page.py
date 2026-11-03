@@ -10,10 +10,10 @@ from html import escape
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (country_name, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
+from common import (country_name, review_page_name, run_extraction, run_items, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.4.0"
+__version__ = "1.5.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -153,6 +153,8 @@ class Page:
         self.rec, self.rec_text = run_record(root, run)
         self.decisions = gate_decisions(root, run)
         self.review_dir = root / "review" / run
+        self.alpha = run == "RUN-2026-01"  # the North Macedonia alpha keeps its own labels; later runs are country runs (E19, E20)
+        self.word = "alpha" if self.alpha else "run"
 
     def pending(self, gate):
         if gate in self.decisions:
@@ -184,6 +186,14 @@ class Page:
         review = self.root / "runs" / self.run / "run_review.md"
         link = f'<p><a href="{escape(review.relative_to(self.root).as_posix())}">Read the run review</a> for the gate history, error rates, approved changes and scaling readiness.</p>' if review.exists() else ""
         return ("Alpha completed " if self.run == "RUN-2026-01" else "Run completed ") + label("Validated"), facts(facts_) + link
+
+    def earlier_runs_link(self):
+        """Links to the review pages kept by earlier, closed runs (review_<run_id>.html), so the baseline stays one click away."""
+        kept = [r for r in runs_with_records(self.root) if r < self.run and (self.root / f"review_{r}.html").exists()]
+        if not kept:
+            return ""
+        links = " · ".join(f'<a href="review_{escape(r)}.html">{escape(r)} ({escape(country_name(run_country(self.root, r)))})</a>' for r in kept)
+        return f'<section class="notice" aria-label="Earlier runs"><p>Review pages of earlier runs, kept unchanged: {links}</p></section>'
 
     def summary_link(self):
         """Prominent link to the management summary of a completed alpha, if the page exists."""
@@ -236,11 +246,11 @@ class Page:
             ("Next gate", escape(nxt) if nxt else "All gates passed"),
             ("Evidence freeze date", md(self.rec.get("Evidence freeze date", ""))),
             ("Reviewers", md(self.rec.get("Reviewers", ""))),
-            ("Alpha reviewers", md(self.rec.get("Alpha reviewers", ""))),
+            ("Alpha reviewers" if self.alpha else "Other reviewers", md(self.rec.get("Alpha reviewers" if self.alpha else "Other reviewers", ""))),
         ])
 
     def purpose(self):
-        return "Purpose of the alpha", f"<p>{md(self.rec.get('Purpose', ''))}</p>"
+        return f"Purpose of the {self.word}", f"<p>{md(self.rec.get('Purpose', ''))}</p>"
 
     def scope(self):
         _, themes = read_csv(self.root / "taxonomy" / "themes.csv")
@@ -315,13 +325,13 @@ class Page:
         return "Sources " + label(self.status("G2", bool(reg))), body
 
     def extraction(self):
-        files = [read_json(p) for p in evidence_files(self.root)]
+        files = [(d, e) for d in (read_json(p) for p in evidence_files(self.root)) for e in [run_extraction(d, self.run)] if e]  # this run's extractions only (E21)
         if not files:
             return "Extraction " + label("Not started"), placeholder(
                 "Will show the extraction sample, the comparison with hand-coded passages, accuracy and error patterns, and the rules "
                 "version approved. Populated from stage 5; validated at G3.")
-        items = [i for f in files for i in f.get("items", [])]
-        by_status = Counter(f["extraction"]["status"] for f in files)
+        items = [i for d, e in files for i in d.get("items", []) if i["item_id"] in e["item_ids"]]
+        by_status = Counter(e["extraction"]["status"] for d, e in files)
         body = facts([
             ("Evidence files", escape(", ".join(f"{v} {k}" for k, v in sorted(by_status.items())))),
             ("Evidence items", str(len(items))),
@@ -350,7 +360,7 @@ class Page:
         return "Taxonomy " + label(self.status("G4", True)), table(["ID", "Issue", "Definition", "Chapters", "Themes", "Status"], rows)
 
     def classification(self):
-        items = [i for p in evidence_files(self.root) for i in read_json(p).get("items", [])]
+        items = [i for p in evidence_files(self.root) for i in run_items(read_json(p), self.run)]
         done = [i for i in items if i.get("pass2", {}).get("classification_status") != "not_classified"]
         if not done:
             return "Classification " + label("Not started"), placeholder(
@@ -431,7 +441,7 @@ class Page:
             body += "<h3>Run review " + label(self.status("G8", True)) + f'</h3><p><a href="{escape(review.relative_to(self.root).as_posix())}">run_review.md</a></p>'
         else:
             body += "<h3>Run review " + label("Not started") + "</h3>" + placeholder("The run review, with a section on readiness for scaling, appears here at G8.")
-        return "Alpha lessons", body
+        return ("Alpha lessons" if self.alpha else "Run lessons"), body
 
     def known_gaps(self):
         gaps = []
@@ -468,7 +478,7 @@ class Page:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accession Alpha Review</title>
+<title>{"Accession Alpha Review" if self.alpha else "Accession Run Review"}</title>
 <!-- Generated by tools/build_review_page.py {__version__} on {self.today}. Do not edit by hand: rebuild instead.
      This page is a review interface only. Gate decisions are recorded in registers/gate_log.csv. -->
 <style>{CSS}</style>
@@ -476,15 +486,16 @@ class Page:
 <body>
 <div class="wrap">
 <header>
-<h1>EU Accession Reform Intelligence Tool: alpha review</h1>
+<h1>EU Accession Reform Intelligence Tool: {self.word} review</h1>
 <p class="sub">{escape(self.run)} · {escape(country)} · Page updated {escape(self.today)}</p>
 <nav aria-label="Sections">{nav}</nav>
 </header>
 <section class="notice" aria-label="About this page">
-<p>This page lets reviewers follow how the alpha is developing. It is a review interface, not the place where decisions are made: gate decisions are taken on the review spreadsheets and recorded in the gate log. Nothing on this page is analysis unless it is labelled {label("Validated")}.</p>
+<p>This page lets reviewers follow how the {self.word} is developing. It is a review interface, not the place where decisions are made: gate decisions are taken on the review spreadsheets and recorded in the gate log. Nothing on this page is analysis unless it is labelled {label("Validated")}.</p>
 <div class="legend">{legend}</div>
 </section>
 {self.summary_link()}
+{self.earlier_runs_link()}
 {body}
 {self.analysis_link()}
 <footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Rebuilt when each gate package is prepared and after each gate decision.</p></footer>
@@ -521,15 +532,16 @@ class AnalysisPage(Page):
         items, withheld = [], 0
         for path in evidence_files(self.root):
             data = read_json(path)
-            for it in data.get("items", []):
+            ext = run_extraction(data, self.run)
+            for it in run_items(data, self.run):
                 if any(p["source_id"] == data["source_id"] and it["location"].get("page") == int(p["page"])
                        and norm(it["stated_text"]) in t for p, t in open_passages):
                     withheld += 1
                     continue
-                if it.get("country") != self.cc or it.get("role", "target") != "target":
+                if it.get("country") != self.cc or (ext.get("role") or it.get("role", "target")) != "target":
                     continue
                 it["_source"] = data["source_id"]
-                it["_status"] = data["extraction"]["status"]
+                it["_status"] = ext["extraction"]["status"]
                 items.append(it)
         return items, withheld
 
@@ -698,8 +710,8 @@ class AnalysisPage(Page):
         act = [r for r in limits if r["run_id"] == self.run and r["status"] == "active"]
         body = "<h3>Active limits</h3>" + table(["ID", "Type", "Limit"], [[escape(r["limit_id"]), escape(r["limit_type"]), escape(r["description"])] for r in act])
         _, lessons = read_csv(lessons_path(self.root, self.run))
-        body += "<h3>Alpha lessons</h3>" + table(["ID", "Lesson", "Status"], [[escape(r["lesson_id"]), escape(r["description"]), escape(r["status"])] for r in lessons])
-        return "Limits and alpha lessons", body
+        body += ("<h3>Alpha lessons</h3>" if self.alpha else "<h3>Run lessons</h3>") + table(["ID", "Lesson", "Status"], [[escape(r["lesson_id"]), escape(r["description"]), escape(r["status"])] for r in lessons])
+        return ("Limits and alpha lessons" if self.alpha else "Limits and run lessons"), body
 
     def render(self):
         sections = [("read", self.s_read()), ("base", self.s_base()), ("ch2", self.s_ch2_eu()), ("tech", self.s_tech_eu()),
@@ -723,11 +735,11 @@ class AnalysisPage(Page):
 <div class="wrap">
 <header>
 <h1>Analysis mock-up: {escape(self.rec.get("Target country", ""))}</h1>
-<p class="sub">{escape(self.run)} · Draft review aid · Page updated {escape(self.today)} · <a href="../analysis.html">All countries</a> · <a href="../index.html">Back to the review page</a></p>
+<p class="sub">{escape(self.run)} · Draft review aid · Page updated {escape(self.today)} · <a href="../analysis.html">All countries</a> · <a href="../{review_page_name(self.root, self.run)}">Back to the review page</a></p>
 </header>
 <nav class="sticky" aria-label="Sections">{nav}</nav>
 {body}
-<footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Quotes are shown word for word with their item IDs; translations from languages other than English are machine translations. <a href="../index.html">Back to the review page</a>.</p></footer>
+<footer><p>Generated from the project files of {escape(self.run)} by <code>tools/build_review_page.py</code> {__version__}. Quotes are shown word for word with their item IDs; translations from languages other than English are machine translations. <a href="../{review_page_name(self.root, self.run)}">Back to the review page</a>.</p></footer>
 </div>
 </body>
 </html>
