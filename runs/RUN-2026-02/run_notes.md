@@ -29,3 +29,9 @@ Notes are not curated and are not shown on the review page. When a note proves m
 - Acquisition log: a failed attempt for Law 200/2010 is logged under MDA-GOV-2026-002, an ID now used by another source. The log is a history of attempts; the register is authoritative.
 - MDA-GOV-2026-013 is an ARCOM home page saved by mistake during an access test; registered `excluded`.
 - SIGMA Monitoring Report 2023 (MDA-IO-2023-001) is a gov.md copy, because sigmaweb.org blocks automated access; to be checked at G2 as a faithful copy.
+
+## 2026-11-03, stage 5
+
+- Sofia asked (3 Nov) to complete all work that does not depend on the 2026 report. The G2 condition (1), drafted by the agent, said the 2026 report would be registered before the G3 sample was drawn. On this instruction the sample is drawn now from the held 2023 to 2025 reports; the 2026 report is extracted with the approved rules at stage 7, like any other EU source, and checked by the second pass. This does not weaken the rule test, which needs varied sources, not the latest one.
+- Missing laws recorded as an evidence gap (LIM-0047, replacing LIM-0046), not retrieved by hand.
+- start_extraction.py used for the first time on real data: MDA-EU-2024-001 (11 alpha items) and MDA-EU-2025-001 (12 alpha items) moved to earlier_extractions; validation passes.
