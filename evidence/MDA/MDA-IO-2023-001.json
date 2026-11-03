@@ -1,0 +1,4066 @@
+{
+  "source_id": "MDA-IO-2023-001",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
+    "status": "sample",
+    "pages_processed": "9, 96-109 (Service delivery, whole); keyword screen of the whole text",
+    "notes": "Sample extraction under rules 0.5. Covered: executive summary (page 9, service delivery paragraph) and the whole Service delivery area (pages 96-109: summary and recommendations, Principles 1 to 4). Keyword screen of the whole text: digital, digitalis, e-service, electronic, interoperab, MConnect, MSign, MPass, MPay, e-signature, eID, e-ID, identity card, register, data protection, personal data, cyber, artificial, foreign, migra, work permit, MTender. No material on foreign workers or Chapter 2 found (\"foreign\" hits are the Ministry of Foreign Affairs and foreign-currency debt). No artificial intelligence, personal data protection or cybersecurity claims found (ITCSS appears only as an agency name). Not covered in this sample and left for full extraction: the e-procurement portal MTender (executive summary page 9, PFM summary page 112, public procurement analysis pages 138-145), which meets the TECH-DGOV test as a portal used by bidders; HRMIS and the employee salary register (pages 55, 59) and the e-integrity system (page 79), which are back-office systems and probably out under the materiality test. Service delivery items on administrative simplification, quality management, the Administrative Code and accessibility for people with disabilities were not extracted (no digital subject). Website accessibility items are flagged theme_doubtful. Page numbers are the converted-text page markers (printed page = marker minus one).",
+    "codebook_version": "1.3",
+    "themes_version": "1.3",
+    "run_country": "MDA",
+    "role": "target"
+  },
+  "classification": {
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
+  },
+  "items": [
+    {
+      "item_id": "MDA-IO-2023-001-0001",
+      "information_type": "metric",
+      "stated_text": "The Government has mapped 718 services for businesses and citizens, of which 276 are digitally available.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government has mapped 718 services for businesses and citizens, of which 276 are available digitally.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "Executive summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Public services available digitally",
+        "value": 276,
+        "unit": "services, of 718 mapped",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0002",
+      "information_type": "intervention",
+      "stated_text": "The Public Administration Reform (PAR) Strategy 2023-2030 focuses on de-bureaucratisation, digitalisation and better service delivery through a network of one-stop shops, and the State Chancellery is the main policymaker in the service delivery area.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The PAR Strategy 2023-2030 focuses on de-bureaucratisation, digitalisation and service delivery through one-stop shops; the State Chancellery leads service delivery policy.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "State Chancellery",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Public Administration Reform (PAR) Strategy 2023-2030",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The passage describes the strategy without stating whether it is adopted or implemented; the executive summary (page 7) says the Government has enacted a new PAR strategy but not implemented it yet.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0003",
+      "information_type": "finding",
+      "stated_text": "The recently amalgamated (February 2023) Ministry of Economic Development and Digitalisation (MEDD), for which a detailed role is currently being defined, deals with wider aspects of the digital society and economy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Ministry of Economic Development and Digitalisation, merged in February 2023, handles the digital society and economy; its detailed role is still being defined.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": "2023-02",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Economic Development and Digitalisation (MEDD)",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0004",
+      "information_type": "finding",
+      "stated_text": "Three key executive agencies under the State Chancellery – the Public Services Agency (PSA), the Electronic Governance Agency (EGA) and the Information Techn ology and Cyber Security Service (ITCSS) – each have a clear role to play in service delivery modernisation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Public Services Agency, the Electronic Governance Agency and the IT and Cyber Security Service each have a clear role in modernising service delivery.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Public Services Agency (PSA)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Electronic Governance Agency (EGA)",
+          "actor_id": "ACT-MDA-0001"
+        },
+        {
+          "name_as_stated": "Information Techn ology and Cyber Security Service (ITCSS)",
+          "actor_id": "ACT-MDA-0012"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0005",
+      "information_type": "metric",
+      "stated_text": "Of the 714 services the Government has mapped for businesses and citizens (mid-August 2023), 283 are digitally available.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Of 714 services mapped by mid-August 2023, 283 are available digitally.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Public services available digitally",
+        "value": 283,
+        "unit": "services, of 714 mapped",
+        "reference_period": "mid-August 2023"
+      },
+      "flags": [],
+      "extraction_note": "The figures differ from the 718 and 276 given on pages 9 and 99.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0006",
+      "information_type": "metric",
+      "stated_text": "Regarding digital services, 52% of citizens and 60% of businesses are satisfied.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "52% of citizens and 60% of businesses are satisfied with digital services.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Satisfaction with digital public services (citizens; businesses)",
+        "value": "52; 60",
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0007",
+      "information_type": "finding",
+      "stated_text": "Base registers are connected through the technical interoperability solution MConnect",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Base registers are connected through the MConnect interoperability solution.",
+      "location": {
+        "page": 96,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The sentence continues on page 97 (\"the use of which is growing quickly .\") after a running footer (\"Service delivery\") that the quote check does not skip, so the quote stops at the end of the main clause on page 96; the growth claim is covered by the next item.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0008",
+      "information_type": "metric",
+      "stated_text": "In the year after  MConnect’s launch in 2019, about 18.5 million transactions were conducted, while in 2022 the number of transactions reached 665.7 million.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect handled about 18.5 million transactions in the year after its 2019 launch and 665.7 million in 2022.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Transactions over MConnect",
+        "value": 665.7,
+        "unit": "million transactions",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0009",
+      "information_type": "intervention",
+      "stated_text": "The Government is planning to bring more state bodies and private entities into the MConnect system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government plans to connect more state bodies and private entities to MConnect.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "extension of the MConnect system to more state bodies and private entities",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0010",
+      "information_type": "metric",
+      "stated_text": "E -signature is in place and there are 200 000 active users, mostly for businesses purposes, represent ing 9.8% of Moldova’s adult  population.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Electronic signature has 200 000 active users, mostly for business purposes, or 9.8% of the adult population.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Active electronic signature users",
+        "value": 200000,
+        "unit": "users (9.8% of adult population)",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0011",
+      "information_type": "intervention",
+      "stated_text": "A more user -friendly smart phone-based e- signature platform (MobiSign) is also being  prepared.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A more user-friendly smartphone-based e-signature platform, MobiSign, is being prepared.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MobiSign smartphone-based e-signature platform",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0012",
+      "information_type": "finding",
+      "stated_text": "The PSA has also begun  to provide a front-office function for other government service providers, with two portals in use: servicii.gov.md is a comprehensive administrative services portal, while e-services.md offers PSA services only and is therefore quite limited in coverage.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Two portals are in use: servicii.gov.md covers administrative services comprehensively, while e-services.md offers only Public Services Agency services.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0013",
+      "information_type": "finding",
+      "stated_text": "A lthough guidelines are in place,  Government websites comply poorly with intern ational accessibility standards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Despite guidelines, government websites comply poorly with international accessibility standards.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0014",
+      "information_type": "metric",
+      "stated_text": "When surveyed, 48% of respondents claimed to be  satisfied with public services across the territory, and 63% are satisfied with accessibility to public services via digital channels.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "48% are satisfied with public services across the territory and 63% with access to public services through digital channels.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Satisfaction with accessibility of public services via digital channels",
+        "value": 63,
+        "unit": "percent of respondents",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0015",
+      "information_type": "recommendation",
+      "stated_text": "2. The Government should establish a standard approach for service re- design and automation which is based on life events and identifying legal, technological and organisational barriers across agencies, and aims to redesign the services driven by user convenience.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Short-term: the Government should set a standard, life-event-based approach to redesigning and automating services, identifying legal, technological and organisational barriers.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations > Short-term recommendations (1-2 years)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Service redesign is mainly administrative simplification; automation and technological barriers make the digital element part of the subject, but it is not the only subject.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0016",
+      "information_type": "recommendation",
+      "stated_text": "3. The Government should integrate the individual PSA portal “e- services” to the comprehensive government portal “servicii.gov” to encompass all services of all central government services into a single portal.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Short-term: the Government should merge the Public Services Agency portal e-services into servicii.gov so all central government services are on one portal.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations > Short-term recommendations (1-2 years)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        },
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0017",
+      "information_type": "recommendation",
+      "stated_text": "4. The State Chancellery should categorise digital services according to their maturity level and keep account of the services accordingly.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Short-term: the State Chancellery should categorise digital services by maturity level and keep account of them accordingly.",
+      "location": {
+        "page": 97,
+        "page_end": null,
+        "section": "Service delivery > Summary and recommendations > Short-term recommendations (1-2 years)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "State Chancellery",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0018",
+      "information_type": "metric",
+      "stated_text": "2. Existence and extent of application of policy on digital service delivery  8/8 \n3. Central co-ordination for digital government projects  4/4",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "SIGMA scores Moldova 8 of 8 for its digital service delivery policy and 4 of 4 for central co-ordination of digital government projects.",
+      "location": {
+        "page": 98,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied. > Indicator 5.1.1. Citizen-oriented service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "SIGMA sub-indicator points: digital service delivery policy; central co-ordination for digital government projects",
+        "value": "8/8; 4/4",
+        "unit": "points",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0019",
+      "information_type": "intervention",
+      "stated_text": "Under the heading “De-bureaucratisation and the Development of Electronic Services”, it covers a general objective and three priority directions: 1) 100% modernised public services; 2) a well -established e-Government ecosystem; and 3) digit alised local public administration.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The PAR Strategy 2023-2030 includes a heading on electronic services with three directions: modernised services, an e-Government ecosystem and digitalised local administration.",
+      "location": {
+        "page": 98,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": "PAR Strategy 2023-2030, heading “De-bureaucratisation and the Development of Electronic Services”",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "“it” refers to the PAR Strategy 2023-2030 named in the preceding sentence. Status not stated in the passage.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0020",
+      "information_type": "intervention",
+      "stated_text": "In addition to the PAR Strategy 2023-2030, MEDD has prepared a Digital Transformation Strategy 2023- 2030 to develop a digital society and economy, but establishing an  intelligent and transparent digital state is also one of its  objectives.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Ministry of Economic Development and Digitalisation has prepared a Digital Transformation Strategy 2023-2030, which also aims at an intelligent, transparent digital state.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MEDD",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": "Digital Transformation Strategy 2023-2030",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Status proposed: the next sentence calls it a draft strategy.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0021",
+      "information_type": "finding",
+      "stated_text": "While the draft strategy emphasis es principles and technological solutions for digital governance, it also overlaps with the PAR Strategy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The draft Digital Transformation Strategy emphasises digital governance principles and solutions but overlaps with the PAR Strategy.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MEDD",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0022",
+      "information_type": "finding",
+      "stated_text": "Since February 2023, however, incorporation of the position of Deputy Prime Minister for Digitalisation into MEDD has required extra attention to ensure that digitalisation efforts remain aligned with broader PAR Strategy objectives, and that accountability for results is clear.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Since February 2023, moving the Deputy Prime Minister for Digitalisation into the ministry requires extra attention to keep digitalisation aligned with PAR and accountability clear.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": "2023-02",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Deputy Prime Minister for Digitalisation",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "MEDD",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0023",
+      "information_type": "recommendation",
+      "stated_text": "While the PSA and EGA work jointly on reeng ineering and digitalising services, constant political support is needed to introduce more radical legal and redesign solutions to  challenge existing practices by decisively eliminating unnecessary steps or entire services to make them more citizen- friendly.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Public Services Agency and e-Governance Agency jointly reengineer and digitalise services; constant political support is needed for more radical legal and redesign solutions.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "theme_doubtful"
+      ],
+      "extraction_note": "“is needed” could be read as a barrier (lack of political support) or a recommendation; recommendation chosen. The digital element is joint digitalisation work, but the subject is administrative simplification.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0024",
+      "information_type": "finding",
+      "stated_text": "For example, some services, such as applying for a construction permit in the city of Chisinau, have been digitalised but only partially, resulting in a double burden for applicants who have to print out materials from a designated information system to get approval signatures from various authorities, then scan and upload the documents into the system again.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Some services, such as Chisinau construction permits, are only partly digitalised, so applicants must print, sign, scan and re-upload documents.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the city of Chisinau",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0025",
+      "information_type": "metric",
+      "stated_text": "Approximately 38% of all services have been brought online.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 38% of all services have been brought online.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Share of services brought online",
+        "value": 38,
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0026",
+      "information_type": "metric",
+      "stated_text": "Of the 718 services currently listed in the register of public services,  276 e- services are available through the portal servicii.gov.md.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "276 of the 718 services in the register of public services are available as e-services through servicii.gov.md.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E-services available through servicii.gov.md",
+        "value": 276,
+        "unit": "services, of 718 registered",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0027",
+      "information_type": "metric",
+      "stated_text": "Moldova scored 0.72 out of 1 on the United Nations' 2022 E -Government Development Index , placing it 72nd out of 193 countries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova scored 0.72 on the UN 2022 E-Government Development Index, ranking 72nd of 193 countries.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "United Nations E-Government Development Index",
+        "value": 0.72,
+        "unit": "index score (0-1); rank 72 of 193",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0028",
+      "information_type": "finding",
+      "stated_text": "While Moldova has made progress in recent years, it has not managed to close the gap with the EU average, as the difference in the 2022 index (about 15 percentage points) is similar to the difference in 2018.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has not closed its e-government index gap with the EU average, about 15 points in 2022 as in 2018.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0029",
+      "information_type": "metric",
+      "stated_text": "The country finds it particularly difficult to provide high-quality services to its citizens: in 2022, the score for service delivery provision was just 0.69.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's 2022 e-government score for service delivery provision was 0.69.",
+      "location": {
+        "page": 99,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E-Government Development Index service delivery provision score",
+        "value": 0.69,
+        "unit": "index score (0-1)",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "The score is the online service component of the index named in the preceding sentence.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0030",
+      "information_type": "intervention",
+      "stated_text": "Also, the PSA has developed a draft law to amend Law No. 273/1994 regarding identity documents obtained from the national passport system, which was sent to the State Chancellery on 16 August 2023 for approval and promotion. The draft law aims to increase the security  of identity documents and promote digital public service use by putting into circulation a new national-level electronic identity card that largely meets the requirements of Regulation (EU) 2019/1157 as well as other European standards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Public Services Agency drafted a law introducing a new electronic identity card largely meeting Regulation (EU) 2019/1157, sent to the State Chancellery on 16 August 2023.",
+      "location": {
+        "page": 100,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": "2023-08-16",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "State Chancellery",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "draft law to amend Law No. 273/1994 regarding identity documents (new national electronic identity card)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0031",
+      "information_type": "finding",
+      "stated_text": "For both services, appointments at a PSA office can be booked through the e-service portal, but fees cannot be paid prior to an in- person visit to save time. A lthough a digital payment option is available, it is not integrated into the service process.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "For ID cards and vehicle registration, appointments can be booked online, but fees cannot be paid in advance; digital payment is not integrated.",
+      "location": {
+        "page": 100,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0032",
+      "information_type": "metric",
+      "stated_text": "In 2023, 60% of businesses and 52% of citizens claimed to be “mostly satisfied” or “completely satisfied” with digital public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In 2023, 60% of businesses and 52% of citizens were mostly or completely satisfied with digital public services.",
+      "location": {
+        "page": 101,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Satisfaction with digital public services (businesses; citizens)",
+        "value": "60; 52",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0033",
+      "information_type": "metric",
+      "stated_text": "Thus, f or the 2022 fiscal year, 81% of businesses declared corporate income taxes digitally , whereas only 10% of citizens oblig ated to file personal income tax declarations  submitted them electronically.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "For fiscal year 2022, 81% of businesses declared corporate income tax digitally, but only 10% of citizens filed personal income tax returns electronically.",
+      "location": {
+        "page": 101,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Share filing tax declarations electronically (businesses, corporate income tax; citizens, personal income tax)",
+        "value": "81; 10",
+        "unit": "percent",
+        "reference_period": "2022 fiscal year"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0034",
+      "information_type": "finding",
+      "stated_text": "While c itizens benefit from  partially pre- filled tax declarations (this was the case already during  the 2015 SIGMA assessment), the State Fiscal Service does not use all data available in state registers to free citizens completely from filing family status changes relevant for calculating tax benefits.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Tax declarations are partly pre-filled, but the State Fiscal Service does not use all state register data to spare citizens reporting family status changes.",
+      "location": {
+        "page": 101,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "State Fiscal Service",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Tax e-service (TECH-DGOV) is clear; TECH-DATA (reuse of state register data) is doubtful.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0035",
+      "information_type": "finding",
+      "stated_text": "However, greater  clarity is needed on MEDD’s role compared with that of  the State Chancellery , and service modernisation would benefit from a more rigorous approach to simplification.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The role of the Ministry of Economic Development and Digitalisation relative to the State Chancellery needs clarifying; modernisation needs more rigorous simplification.",
+      "location": {
+        "page": 102,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied. > Conclusion",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MEDD",
+          "actor_id": "ACT-MDA-0004"
+        },
+        {
+          "name_as_stated": "State Chancellery",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful",
+        "ambiguous_type"
+      ],
+      "extraction_note": "Governance of digitalisation is implied by the ministry's remit (page 99) but not stated here. “is needed” could be a recommendation; finding chosen as it sits in the conclusion.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0036",
+      "information_type": "metric",
+      "stated_text": "Overall, over 70% of citizens and around 45% of businesses are satisfied with the quality of public service delivery, while 52% of citizens and 60% of business are satisfied with digital public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Over 70% of citizens and 45% of businesses are satisfied with public services; 52% and 60% with digital public services.",
+      "location": {
+        "page": 102,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 1: Policy for citizen-oriented state administration is in place and applied. > Conclusion",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Satisfaction with digital public services (citizens; businesses)",
+        "value": "52; 60",
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0037",
+      "information_type": "intervention",
+      "stated_text": "The Law prioritises electronic service delivery (e-service by default) with simultaneous delivery through all other possible and reasonable channels, and it envisages secondary Government acts to organise and operate one-stop shops.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on Public Services sets e-service by default alongside other channels and provides for secondary acts on one-stop shops.",
+      "location": {
+        "page": 102,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 2: Good administration is a key policy objective underpinning the delivery of public service, enacted in legislation and applied consistently in practice.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law on Public Services (No. 234/2021)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "“The Law” is the Law on Public Services, adopted on 23 December 2021 per the preceding sentence.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0038",
+      "information_type": "finding",
+      "stated_text": "Interoperability infrastructure is solid, and the registers are interoperable far beyond the base registers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Interoperability infrastructure is solid and registers are interoperable well beyond the base registers.",
+      "location": {
+        "page": 104,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0039",
+      "information_type": "metric",
+      "stated_text": "2. Adequacy of interoperability infrastructure 2/3 \n3. Existence of common standards for public service delivery 1/3 \n4. Legal recognition and affordability of electronic signatures 1/3",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "SIGMA scores interoperability infrastructure 2 of 3, common service standards 1 of 3 and electronic signature recognition and affordability 1 of 3.",
+      "location": {
+        "page": 104,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place. > Indicator 5.3.1. Existence of enablers for public service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "SIGMA sub-indicator points: interoperability infrastructure; common service standards; electronic signatures",
+        "value": "2/3; 1/3; 1/3",
+        "unit": "points",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0040",
+      "information_type": "metric",
+      "stated_text": "7. Interoperability of basic registers 4/4",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "SIGMA scores interoperability of basic registers 4 of 4.",
+      "location": {
+        "page": 104,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place. > Indicator 5.3.1. Existence of enablers for public service delivery",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "SIGMA sub-indicator points: interoperability of basic registers",
+        "value": "4/4",
+        "unit": "points",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0041",
+      "information_type": "intervention",
+      "stated_text": "The register of public services , established in 2021  and covering roughly 718 public services, serves as an information repository, with the EGA recording  life events identified as necessary for connecting with associated  public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The register of public services, set up in 2021 with about 718 services, is an information repository in which the e-Governance Agency records life events.",
+      "location": {
+        "page": 104,
+        "page_end": 105,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": "2021",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "register of public services",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "It is not stated whether the register is electronic; TECH-DATA doubtful.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0042",
+      "information_type": "intervention",
+      "stated_text": "The Government has set up a well -functioning data exchange platform ( MConnect) for interoperability purposes.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government has set up a well-functioning data exchange platform, MConnect, for interoperability.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "MConnect data exchange platform",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0043",
+      "information_type": "intervention",
+      "stated_text": "Importantly, the Law on Data Exchange and Interoperability 211 obligates government agencies to exchange data through the digital interoperability solution only, and sanctions are possible for violation of this law.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on Data Exchange and Interoperability requires agencies to exchange data only through the interoperability solution, with sanctions for violations.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law on Data Exchange and Interoperability (Law No. 142/2018)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The quote keeps the footnote number 211 as printed in the text. Law number from footnote 211.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0044",
+      "information_type": "metric",
+      "stated_text": "Currently, 336 institutions ( public and private) exchange data over the platform.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "336 public and private institutions exchange data over MConnect.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Institutions exchanging data over MConnect",
+        "value": 336,
+        "unit": "institutions",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0045",
+      "information_type": "metric",
+      "stated_text": "W ithin a year of MConnect’s launch in 2019, 18.5 million transactions had been conducted, while in 2022 the number of transactions reached 665.7 million.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect handled 18.5 million transactions within a year of its 2019 launch and 665.7 million in 2022.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Transactions over MConnect",
+        "value": 665.7,
+        "unit": "million transactions",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "Same figures as page 97.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0046",
+      "information_type": "finding",
+      "stated_text": "While all base registers are available in digital format and exchange data over the MConnect platform, certain legacy problems remain. For example, three authorities – the PSA, local public authorities and diplomatic missions – register requests for civil status acts.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "All base registers are digital and exchange data over MConnect, but legacy problems remain: three authorities register civil status requests.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "local public authorities",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "diplomatic missions",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0047",
+      "information_type": "intervention",
+      "stated_text": "EGA and PSA jointl y launched a new development project to improve the \"Civil status documents\" (SI ASC) system's functionality.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The e-Governance Agency and the Public Services Agency launched a project to improve the civil status documents information system.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        },
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "development project for the \"Civil status documents\" (SI ASC) system",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "A civil status register system; whether this is a base-register data issue (TECH-DATA) or a back-office sector system is doubtful.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0048",
+      "information_type": "finding",
+      "stated_text": "Only the PSA registers the requests in the designated information system, while the other two record them on paper and send them over to the PSA for registration in the information system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Only the Public Services Agency registers civil status requests in the information system; the other two authorities use paper.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "local public authorities",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "diplomatic missions",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Same doubt as the SI ASC item.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0049",
+      "information_type": "intervention",
+      "stated_text": "The Government  has established clear rules 212 for information and communications  technology (ICT) procurement, whereby EGA co-ordinates the ICT procurement plans of government bodies and evaluates their budget proposals in relation to ICT.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Rules on ICT procurement give the e-Governance Agency the role of co-ordinating government bodies' ICT procurement plans and evaluating ICT budget proposals.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        },
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "rules for ICT procurement (Government Decision No. 544/2019)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Decision number from footnote 212. Digital transformation governance (control of ICT investment).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0050",
+      "information_type": "intervention",
+      "stated_text": "Furthermore, all state information resources and systems have been registered in the Register of State Information Resources and Systems213 to facilitate the reuse of existing technical solutions, increase the quality of information in state information systems, and help EGA channel investments into state information systems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "All state information resources and systems are registered in the Register of State Information Resources and Systems to aid reuse, data quality and investment.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "Register of State Information Resources and Systems",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The quote keeps the footnote number 213 attached to “Systems” as printed.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0051",
+      "information_type": "finding",
+      "stated_text": "EGA has a protocol for testing digital services prior to their launch, but no users are engaged in the d esign phase.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The e-Governance Agency tests digital services before launch but does not involve users in design.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0052",
+      "information_type": "finding",
+      "stated_text": "Certification authorities issue qualified, legally registered advanced digital certificates on secure technical devices (smart cards, USB tokens, e- ID cards).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Certification authorities issue qualified advanced digital certificates on smart cards, USB tokens and e-ID cards.",
+      "location": {
+        "page": 105,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Certification authorities",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0053",
+      "information_type": "intervention",
+      "stated_text": "An  electronic signature is  considered equivalent to a handwritten one215 and is available through the MSign platform, which has  200 000 active users, mostly businesses that are obligated to sign documents digitally for the State Fiscal Service.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Electronic signatures are equivalent to handwritten ones and available through the MSign platform.",
+      "location": {
+        "page": 105,
+        "page_end": 106,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MSign platform",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Shares its quote with the next item (metric). Footnote number 215 kept as printed.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0054",
+      "information_type": "metric",
+      "stated_text": "An  electronic signature is  considered equivalent to a handwritten one215 and is available through the MSign platform, which has  200 000 active users, mostly businesses that are obligated to sign documents digitally for the State Fiscal Service.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MSign has 200 000 active users, mostly businesses required to sign documents digitally for the State Fiscal Service.",
+      "location": {
+        "page": 105,
+        "page_end": 106,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Active MSign users",
+        "value": 200000,
+        "unit": "users",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Shares its quote with the previous item (intervention).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0055",
+      "information_type": "finding",
+      "stated_text": "Citizens have to pay for both the digital signature certificate (annual cost of at least MDL 130, equivalent to EUR 6.5216) and the token needed to carry it (a one-time fee of at least MDL 135, or EUR 6.7). In addition, the token can be obtained only from the ITCSS in person upon signing a contract.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Citizens pay at least MDL 130 a year for a signature certificate and MDL 135 for the token, obtainable only in person from ITCSS.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Citizens",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "ITCSS",
+          "actor_id": "ACT-MDA-0012"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Could be a barrier to uptake, but the passage does not itself say the costs prevent uptake; finding chosen. “EUR 6.5216” is EUR 6.5 followed by footnote 216, kept as printed.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0056",
+      "information_type": "intervention",
+      "stated_text": "However, EGA is currently devising a mobile phone- based electronic signature that  will be free for citizens , to boost its use.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The e-Governance Agency is developing a free mobile phone-based electronic signature for citizens to boost use.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "mobile phone-based electronic signature, free for citizens",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0057",
+      "information_type": "intervention",
+      "stated_text": "The Law on Electronic Identification and Trust Services partially transposes the EU eIDAS Regulation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on Electronic Identification and Trust Services partly transposes the EU eIDAS Regulation.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law on Electronic Identification and Trust Services (Law No. 124/2022)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Law number and entry into force (10 December 2022) from footnote 215. Partial transposition is the source's own judgement.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0058",
+      "information_type": "metric",
+      "stated_text": "Overall, while Moldova continues to make  promising service delivery transformation efforts, its ranking in  the United Nations’ E-Government Survey (although improved from 2016 to 2022 in absolute terms ) has dropped from 65th to 72nd position.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's UN E-Government Survey ranking dropped from 65th to 72nd between 2016 and 2022, despite an improved absolute score.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "United Nations E-Government Survey rank",
+        "value": 72,
+        "unit": "rank (from 65th)",
+        "reference_period": "2016 to 2022"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0059",
+      "information_type": "finding",
+      "stated_text": "As Moldova is not yet part of the EU e-Government Benchmark study, data on the user-centricity of its electronic services compared with EU Member States are not available.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is not in the EU e-Government Benchmark, so its e-services' user-centricity cannot be compared with Member States.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0060",
+      "information_type": "finding",
+      "stated_text": "The well-functioning interoperability platform MConnect supports service simplification and digitalisation, and a large number of users, both private and public organisations, benefit from data ex changes that allow for effective application of  the “once-only” principle.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect works well, supports simplification and digitalisation, and lets many organisations apply the once-only principle.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place. > Conclusion",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0061",
+      "information_type": "finding",
+      "stated_text": "Control mechanisms for managing ICT investments are in place and the digital signature system is functional, but its uptake among citizens is low.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Controls on ICT investment are in place and the digital signature system works, but citizen uptake is low.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place. > Conclusion",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0062",
+      "information_type": "finding",
+      "stated_text": "Online payment through the MPay technical solution is possible, but the service has not yet been integrated into digital service provision.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Online payment through MPay is possible but not yet integrated into digital service provision.",
+      "location": {
+        "page": 106,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 3: Mechanisms for ensuring the quality of public service are in place. > Conclusion",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MPay",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0063",
+      "information_type": "finding",
+      "stated_text": "Guidelines for government websites have also been established, but the compliance of tested government websites with the Web Content Accessibility Guidelines (WCAG) 2.0 standard is poor.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Guidelines for government websites exist, but tested websites comply poorly with the WCAG 2.0 accessibility standard.",
+      "location": {
+        "page": 107,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 4: The accessibility of public services is ensured.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0064",
+      "information_type": "finding",
+      "stated_text": "Its services can be accessed through its service portal e -services.md, while the overall government portal servicii.gov.md operates in parallel.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Public Services Agency services are accessible through e-services.md, while the government portal servicii.gov.md operates in parallel.",
+      "location": {
+        "page": 107,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 4: The accessibility of public services is ensured.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "PSA",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "“Its” refers to the PSA, named in the preceding sentences.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0065",
+      "information_type": "metric",
+      "stated_text": "On average, webpages have 45 errors and only one in the sample of 26 websites (servicii.gov.md) fared well (4 errors).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Tested government webpages average 45 accessibility errors; only servicii.gov.md of 26 sampled websites fared well.",
+      "location": {
+        "page": 108,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 4: The accessibility of public services is ensured.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Average WCAG 2.0 errors per government webpage",
+        "value": 45,
+        "unit": "errors",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2023-001-0066",
+      "information_type": "intervention",
+      "stated_text": "The State Chancellery intends to revise the requirements by introducing a unified interface for all government entities’ websites.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The State Chancellery plans a unified interface for all government websites.",
+      "location": {
+        "page": 108,
+        "page_end": null,
+        "section": "Service delivery > Analysis > Principle 4: The accessibility of public services is ensured.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "SIGMA",
+        "actor_id": "ACT-INT-0006"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "State Chancellery",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "unified interface for all government entities' websites",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    }
+  ]
+}

@@ -1,22 +1,20 @@
 {
   "source_id": "MDA-EU-2024-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
-    "status": "complete",
-    "pages_processed": "14, 26-27, 53, 55, 74 (keyword screen of the whole report; only these passages concern the two issues)",
-    "notes": "Same keyword screen as MDA-EU-2025-001. MConnect is not named anywhere in the report, and it has no sentence on asset declaration interoperability, unlike the 2025 report. Left out: customs, tax, health, IACS and EU wallet interoperability. Text-file page numbers are printed page numbers plus one. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-EU-2024-001.csv.",
-    "codebook_version": "1.2",
-    "themes_version": "1.3"
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
+    "extracted_at": "2026-11-03",
+    "status": "sample",
+    "codebook_version": "1.3",
+    "themes_version": "1.3",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "2-3, 4-21 (1.2 Main findings, read in full), 26-27, 29, 36, 53, 55, 61-64, 68-71, 74, 78, 90, 92 (keyword screen of the whole report)",
+    "notes": "RUN-2026-02 stage 5 sample; items -0012 onwards belong to this run. Items -0001 to -0011 belong to RUN-2026-01 (comparator, see earlier_extractions) and are unchanged; where that run quoted the same passage (for example pages 14, 26-27, 53, 55, 70 and 74) this run created its own item. Read the table of contents, the whole of 1.2 Main findings (Chapter 2 summary on page 11), the Cluster 2 introduction and the full Chapter 2 section (pages 62-63), and screened every other section with technology keywords. The Chapter 2 section itself carries no preparation or progress rating in this report; the rating is in the main findings. Text-file page numbers are printed page numbers plus one. Left out under the materiality test: cybercrime, online media and website blocking, digital finance, tax and customs IT upgrades not tied to EU systems or public e-services, the insolvency register, the cancer registry, the electronic registry of injuries in prisons, border e-permits, agriculture and food safety systems, digital skills and digital education (not linked to a technology recommendation), and the statistical annex (Annex II). Doubtful cases are flagged theme_doubtful."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
   "items": [
     {
@@ -728,6 +726,5611 @@
         ],
         "classification_status": "auto",
         "classification_note": "country_response: EVO, described by MDA-GOV-2026-001 as the single government portal; here described as a wallet."
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0012",
+      "information_type": "finding",
+      "stated_text": "There has been good progress in improving energy securit y, and digitalisation is slowly improving, but large gaps in quality infrastructure persist.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digitalisation is slowly improving, alongside good progress on energy security, but large quality infrastructure gaps persist.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Economic criteria (competitiveness)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The digitalisation clause is one of three claims in the sentence; extracted for it.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0013",
+      "information_type": "recommendation",
+      "stated_text": "prioritise investment in infrastructure, especially to further improve energy security and climate resilience, to overcome the rural-urban digital divide and facilitate international trade;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should prioritise infrastructure investment for energy security, climate resilience, closing the rural-urban digital divide and trade.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Economic criteria (competitiveness)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The digital divide is one of several purposes of a general infrastructure recommendation.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0014",
+      "information_type": "finding",
+      "stated_text": "Moldova is at an early stage of preparation in the area of freedom of movement of workers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is at an early stage of preparation on freedom of movement of workers.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": "at an early stage of preparation",
+        "progress_level": null,
+        "applies_to": "chapter"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0015",
+      "information_type": "finding",
+      "stated_text": "Limited progress was made during the reporting period on bilateral agreements on social security coordination with EU Member States and on starting the preparatory work to join the European Network of Employment Services (EURES).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Limited progress was made on social security agreements with EU Member States and on preparing to join EURES.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": "Limited progress",
+        "applies_to": "chapter"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0016",
+      "information_type": "finding",
+      "stated_text": "The Commission's recommendations from last year were partially implemented and remain valid.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Commission's previous Chapter 2 recommendations were partially implemented and remain valid.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The same sentence appears under several chapters on this page; this item is the Chapter 2 occurrence.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0017",
+      "information_type": "recommendation",
+      "stated_text": "continue to work on concluding additional agreements on social security coordination, in particular with EU Member States;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should keep concluding social security coordination agreements, in particular with EU Member States.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0018",
+      "information_type": "recommendation",
+      "stated_text": "continue the preparatory work for joining EURES upon accession.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should continue preparing to join EURES upon accession.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0019",
+      "information_type": "intervention",
+      "stated_text": "Limited progress was made during the reporting period, including amendments to national legislation on financial reporting and audit legislation and by the integration of electronic signature into the company's registration and filing processes to be more aligned with the EU acquis.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Electronic signature was integrated into company registration and filing processes, among limited progress in company law.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 6: Company law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Integration of electronic signature into company registration and filing processes",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The sentence also reports financial reporting and audit amendments, which are out of scope; the progress rating is not extracted because the chapter is not in scope.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0020",
+      "information_type": "recommendation",
+      "stated_text": "continue further alignment with the EU acquis on financial reporting and audit, takeovers, single-member companies’ provisions, shareholder rights (including the encouragement of long-term shareholder engagement), and on disclosure of company information, cross-border conversions, mergers and divisions, and on the use of digital tools and processes in company law;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should continue alignment on several company law areas, including the use of digital tools and processes in company law.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 6: Company law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Digital tools and processes are one of many areas listed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0021",
+      "information_type": "recommendation",
+      "stated_text": "improve the quality of healthcare by implementing the national health strategy effectively, including developing an integrated e-health system and ensuring interoperability between all information systems in the health sector;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should implement the health strategy, including an integrated e-health system and interoperability of all health information systems.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 2 > Chapter 28: Consumer and health protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Health sector systems; doubtful under R22. The Chapter 2 section links the missing integrated health information system to the absence of a national health insurance card.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0022",
+      "information_type": "finding",
+      "stated_text": "Moldova has some level of preparation in the area of digital transformation and media.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has some level of preparation in digital transformation and media.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": "some level of preparation",
+        "progress_level": null,
+        "applies_to": "chapter"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0023",
+      "information_type": "finding",
+      "stated_text": "Some progress was made during the reporting period as the government remained committed to implementing the Digital Transformation Strategy 2023-2030 (MDTS) and notable progress was made on the digitalisation of public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Some progress was made, with commitment to the Digital Transformation Strategy and notable progress on digitalising public services.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": "Some progress",
+        "applies_to": "chapter"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0024",
+      "information_type": "intervention",
+      "stated_text": "The Cybersecurity Agency was established in December 2023.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Cybersecurity Agency was established in December 2023.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023-12",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cybersecurity Agency",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0025",
+      "information_type": "finding",
+      "stated_text": "The Commission's recommendations from last year were partially implemented and remain valid.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Commission's previous Chapter 10 recommendations were partially implemented and remain valid.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Chapter 10 occurrence of a sentence repeated under several chapters on this page.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0026",
+      "information_type": "recommendation",
+      "stated_text": "align with and implement the EU Roaming acquis, including the European Electronic Communication Code to allow for the integration of Moldova into the EU “roam like at home” area;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should align with the EU roaming acquis and the Electronic Communications Code to join the roam-like-at-home area.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0027",
+      "information_type": "recommendation",
+      "stated_text": "ensure institutional capacity to implement the priority areas under the MDTS 2023–2030, in particular to align legislation with EU electronic identification requirements, data protection and cybersecurity, including EU’s Toolbox for 5G cybersecurity;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should build capacity to implement the digital strategy, aligning law on electronic identification, data protection and cybersecurity, including 5G.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-EID",
+        "TECH-DATA",
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0028",
+      "information_type": "recommendation",
+      "stated_text": "adopt and implement media and digital services legislation in line with the EU acquis, including the EU Media Freedom Act and the Digital Services Act.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should adopt and implement media and digital services legislation in line with the acquis, including the Media Freedom Act and Digital Services Act.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Combines media and digital services rules; kept for the Digital Services Act. No arrow is printed before this bullet in the converted text.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0029",
+      "information_type": "finding",
+      "stated_text": "There was progress on indirect and direct taxation and excise duties and improved the digitalisation of tax administration services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There was progress on taxation, and the digitalisation of tax administration services improved.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 16: Taxation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "16",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Tax services to taxpayers are online services, but the sentence mainly concerns tax policy.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0030",
+      "information_type": "recommendation",
+      "stated_text": "continue the reform of social assistance, including its digitalisation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should continue reforming social assistance, including its digitalisation.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 19: Social policy and employment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "19",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Digitalisation of a sector reform; doubtful under the materiality test.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0031",
+      "information_type": "recommendation",
+      "stated_text": "further reduce the regulatory and administrative burden by enacting proposals to simplify and digitalise processes;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should further reduce regulatory and administrative burden by enacting proposals to simplify and digitalise processes.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 20: Enterprise and industrial policy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "20",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Digitalisation is one means of cutting burden.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0032",
+      "information_type": "recommendation",
+      "stated_text": "approve (at government level) and start to implement the Customs Service IT strategy, including the work programme for the gradual development and deployment of digital solutions to enable a full paperless environment and interconnection and interoperability with EU electronic customs environment;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should approve and implement the Customs Service IT strategy, enabling paperless customs and interoperability with the EU electronic customs environment.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 29: Customs union",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "29",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0033",
+      "information_type": "recommendation",
+      "stated_text": "finalise the legal and technical preparations for the country to join the Common Transit Convention (CTC) and for full-fledged implementation and operations of the NCTS;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should finalise preparations to join the Common Transit Convention and fully operate the NCTS.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "1.2. Main findings of the report > Cluster 3 > Chapter 29: Customs union",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "29",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The NCTS is a transit IT system; the text does not say it connects to an EU system.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0034",
+      "information_type": "finding",
+      "stated_text": "The civil service management system remains fragmented and understaffed, with non-functional national HR systems and limited HR staff in ministries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Civil service management remains fragmented and understaffed, with non-functional national HR systems and few HR staff in ministries.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Public service and human resources management",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Internal HR systems; doubtful whether this meets the digital government test.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0035",
+      "information_type": "intervention",
+      "stated_text": "The new PAR strategy emphasises de -bureaucratisation, digitalisation and improved service delivery through one -stop shops, with the State Chancellery as the main policymaker.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The new public administration reform strategy emphasises de-bureaucratisation, digitalisation and one-stop-shop service delivery.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Public administration reform strategy",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0036",
+      "information_type": "finding",
+      "stated_text": "The Digital Transformation Strategy for 2023-2030 aligns with the PAR strategy objectives and measures.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Digital Transformation Strategy 2023-2030 aligns with the public administration reform strategy.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0037",
+      "information_type": "metric",
+      "stated_text": "Approximately 40% of the services mapped for businesses and citizens are available digitally, but service delivery conditions vary.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 40% of mapped services for businesses and citizens are available digitally.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Share of mapped services for businesses and citizens available digitally",
+        "value": "approximately 40%",
+        "unit": "percent of mapped services",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The same sentence gives a finding item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0038",
+      "information_type": "finding",
+      "stated_text": "Approximately 40% of the services mapped for businesses and citizens are available digitally, but service delivery conditions vary.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digital service delivery conditions vary.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same sentence as the preceding metric item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0039",
+      "information_type": "intervention",
+      "stated_text": "In 2023, 83 new Unified Public Service Centres (CUPS) were established, providing access to electronic public services for r ural citizens.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In 2023, 83 new Unified Public Service Centres were set up, giving rural citizens access to electronic public services.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Unified Public Service Centres (CUPS)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0040",
+      "information_type": "intervention",
+      "stated_text": "Fifteen online services were launched on the electronic services platform, including extracts from various state registers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Fifteen online services, including state register extracts, were launched on the electronic services platform.",
+      "location": {
+        "page": 26,
+        "page_end": 27,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Online services on the electronic services platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0041",
+      "information_type": "intervention",
+      "stated_text": "Administrative services mapping has been conducted via the public services register, aiding the process of service re- engineering.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Administrative services were mapped through the public services register, aiding service re-engineering.",
+      "location": {
+        "page": 27,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Public services register (administrative services mapping)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0042",
+      "information_type": "metric",
+      "stated_text": "E-signature usage is active with 200 000 users, representing 9.8% of Moldova’s adult population.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "E-signature has 200 000 active users, 9.8% of the adult population.",
+      "location": {
+        "page": 27,
+        "page_end": null,
+        "section": "2.1.2 Public administration reform > Service delivery to citizens and business",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E-signature users",
+        "value": "200 000 (9.8% of the adult population)",
+        "unit": "users",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0043",
+      "information_type": "recommendation",
+      "stated_text": "Digitalisation of the justice system needs to be improved.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digitalisation of the justice system needs to be improved.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "2.2.1. Chapter 23 > Judiciary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Justice digitalisation may be a back-office sector system (court case management is out under the test); flagged for the analyst.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0044",
+      "information_type": "intervention",
+      "stated_text": "The draft law on the protection of personal data was adopted by Parliament on 25 July 2024. The law aims at aligning national legislation with the EU General Data Protection Regulation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Parliament adopted the law on personal data protection on 25 July 2024, aiming to align with the GDPR.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "2.2.1. Chapter 23 > Fundamental rights > Protection of personal data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-07-25",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Parliament",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law on the protection of personal data",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Text sits in a narrow column beside a chart; two sentences of one claim.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0045",
+      "information_type": "finding",
+      "stated_text": "The current legal framework is not yet aligned with the EU Directive on law enforcement.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The legal framework is not yet aligned with the EU Law Enforcement Directive.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "2.2.1. Chapter 23 > Fundamental rights > Protection of personal data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0046",
+      "information_type": "finding",
+      "stated_text": "The National Center for Personal Data Protection examined a growing number of complaints and issued penalties.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The data protection authority examined a growing number of complaints and issued penalties.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "2.2.1. Chapter 23 > Fundamental rights > Protection of personal data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Center for Personal Data Protection",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0047",
+      "information_type": "recommendation",
+      "stated_text": "The capacity of the Center should be increased, especially in terms of staffing.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The data protection authority's capacity should be increased, especially its staffing.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "2.2.1. Chapter 23 > Fundamental rights > Protection of personal data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "1",
+      "chapter": "23",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Center",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0048",
+      "information_type": "finding",
+      "stated_text": "In addition, to advance deregulation, administrative barriers for companies have been reduced and several digital platforms were set up to allow businesses and individuals better access public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Administrative barriers for companies were reduced and several digital platforms set up to improve access to public services.",
+      "location": {
+        "page": 53,
+        "page_end": null,
+        "section": "2.3.1. The existence of a functioning market economy > Functioning of product markets",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0049",
+      "information_type": "intervention",
+      "stated_text": "Online business registration for foreign investors and remote identification of customers in the financial sector has been introduced.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Online business registration for foreign investors and remote identification of financial sector customers were introduced.",
+      "location": {
+        "page": 53,
+        "page_end": null,
+        "section": "2.3.1. The existence of a functioning market economy > Functioning of product markets",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Online business registration for foreign investors; remote identification of customers in the financial sector",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Online registration is a public e-service; remote identification in the financial sector may be digital finance (out under R22).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0050",
+      "information_type": "finding",
+      "stated_text": "Digitalisation is slowly picking up thanks to a growing emphasis on e-government, digital skills and the ICT sector.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digitalisation is slowly picking up thanks to more emphasis on e-government, digital skills and the ICT sector.",
+      "location": {
+        "page": 55,
+        "page_end": null,
+        "section": "2.3.2. The capacity to cope with competitive pressure and market forces within the EU",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0051",
+      "information_type": "intervention",
+      "stated_text": "In 2023, a National Digital Transformation Strategy was adopted to support technology start-ups, the ICT sector, and the digitalisation of traditional sectors.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A National Digital Transformation Strategy was adopted in 2023 to support start-ups, the ICT sector and digitalisation of traditional sectors.",
+      "location": {
+        "page": 55,
+        "page_end": null,
+        "section": "2.3.2. The capacity to cope with competitive pressure and market forces within the EU",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "National Digital Transformation Strategy",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0052",
+      "information_type": "intervention",
+      "stated_text": "In January 2024, further amendments to the law on the regime of foreigners entered into force, modifying the access to the labour market. They allow EU citizens (and a number of other countries) to work in Moldova without a work permit.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Amendments to the law on the regime of foreigners in force since January 2024 let EU and some other citizens work without a work permit.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-01",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Amendments to the law on the regime of foreigners",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences describing the same amendments.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0053",
+      "information_type": "finding",
+      "stated_text": "Third -country nationals are required to obtain the right of temporary residence from the competent authority to carry out any activity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Third-country nationals must obtain temporary residence from the competent authority to carry out any activity.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same wording as the 2023 report.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0054",
+      "information_type": "finding",
+      "stated_text": "EU citizens still have no access to posts in public administration bodies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "EU citizens still have no access to posts in public administration bodies.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same wording as the 2023 report.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0055",
+      "information_type": "metric",
+      "stated_text": "A total of 2 991 residence permits for work were issued in 2023; the biggest number of work permits were provided to citizens of Ukraine (496), Türkiye (451), Russia (226) and Nepal (189).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "2 991 residence permits for work were issued in 2023, most to citizens of Ukraine, Türkiye, Russia and Nepal.",
+      "location": {
+        "page": 62,
+        "page_end": 63,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Residence permits for work issued (largest groups by citizenship)",
+        "value": "2 991 (Ukraine 496, Türkiye 451, Russia 226, Nepal 189)",
+        "unit": "permits",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0056",
+      "information_type": "metric",
+      "stated_text": "In 2023, 319 residence permits for work purposes were granted to EU citizens.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In 2023, 319 residence permits for work were granted to EU citizens.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Residence permits for work granted to EU citizens",
+        "value": 319,
+        "unit": "permits",
+        "reference_period": "2023"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0057",
+      "information_type": "intervention",
+      "stated_text": "On EURES, Moldova has drafted an action plan on joining EURES and designated the National Employment Agency as coordination body.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova drafted an action plan on joining EURES and designated the National Employment Agency as coordination body.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "National Employment Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Action plan on joining EURES",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The action plan is drafted (proposed); the designation is part of the same claim.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0058",
+      "information_type": "recommendation",
+      "stated_text": "Preparatory work to access the EURES needs to continue.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Preparatory work to access EURES needs to continue.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0059",
+      "information_type": "finding",
+      "stated_text": "Moldova does not have an occupational pension scheme (voluntary private pension schemes supplement public pensions).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has no occupational pension scheme; voluntary private schemes supplement public pensions.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same wording as the 2023 report.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0060",
+      "information_type": "finding",
+      "stated_text": "EU rules on supplementary pension rights of mobile workers are not incorporated into Moldovan law.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "EU rules on supplementary pension rights of mobile workers are not incorporated into Moldovan law.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0061",
+      "information_type": "intervention",
+      "stated_text": "On coordination of social security systems, bilateral agreements with Spain and Latvia entered into force in June and July 2024.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Social security agreements with Spain and Latvia entered into force in June and July 2024.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Bilateral social security agreements with Spain and Latvia",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two agreements in one sentence; event dates June and July 2024, recorded at year precision.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0062",
+      "information_type": "intervention",
+      "stated_text": "Negotiations of agreements with other Member States have been initiated and should continue.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Negotiations on social security agreements with other Member States have started.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Negotiations of social security agreements with other Member States",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The same sentence gives a recommendation item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0063",
+      "information_type": "recommendation",
+      "stated_text": "Negotiations of agreements with other Member States have been initiated and should continue.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Negotiations on social security agreements with other Member States should continue.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same sentence as the preceding intervention item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0064",
+      "information_type": "intervention",
+      "stated_text": "Moldova further proposed to upgrade the existing agreement with Italy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova proposed upgrading its existing social security agreement with Italy.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Upgrade of the social security agreement with Italy",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0065",
+      "information_type": "finding",
+      "stated_text": "No national health insurance card exists due to the absence of an integrated health information system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There is no national health insurance card.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same wording as the 2023 report. The same sentence gives a barrier item.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0066",
+      "information_type": "barrier",
+      "stated_text": "No national health insurance card exists due to the absence of an integrated health information system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The absence of an integrated health information system is why no national health insurance card exists.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same sentence as the preceding finding.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0067",
+      "information_type": "finding",
+      "stated_text": "The implementation of the European Health Insurance Card might therefore be challenging.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Implementing the European Health Insurance Card might therefore be challenging.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "4. Cluster 2 > Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0068",
+      "information_type": "barrier",
+      "stated_text": "In the area of company law and corporate governance, state registration of legal bodies and individual entrepreneurs is carried out by the Public Services Agency, which continues to suffer from limited administrative capacity and available digitalisation resources.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Public Services Agency, which registers companies, suffers from limited administrative capacity and digitalisation resources.",
+      "location": {
+        "page": 64,
+        "page_end": null,
+        "section": "Chapter 6: Company law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Public Services Agency",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful",
+        "ambiguous_type"
+      ],
+      "extraction_note": "Could be read as a finding; the digital element is one of two constraints.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0069",
+      "information_type": "intervention",
+      "stated_text": "Progress was also made on the digital tools and processes with introduction a qualified electronic signature for filing documents with the business register.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A qualified electronic signature was introduced for filing documents with the business register.",
+      "location": {
+        "page": 64,
+        "page_end": null,
+        "section": "Chapter 6: Company law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Qualified electronic signature for filing documents with the business register",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0070",
+      "information_type": "intervention",
+      "stated_text": "The paper archive was digitalised between August 2023 and August 2024.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The business register's paper archive was digitalised between August 2023 and August 2024.",
+      "location": {
+        "page": 64,
+        "page_end": null,
+        "section": "Chapter 6: Company law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "06",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-08",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Digitalisation of the paper archive",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0071",
+      "information_type": "finding",
+      "stated_text": "On e-health, an integrated health information system is not yet in place, though an electronic prescription system became operational since 1 April 2024 covering reimbursed medicinal products and medical devices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "An integrated health information system is not yet in place.",
+      "location": {
+        "page": 68,
+        "page_end": null,
+        "section": "Chapter 28: Consumer and health protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The same sentence gives an intervention item. The Chapter 2 section (page 63) links the missing integrated health information system to the absence of a health insurance card.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0072",
+      "information_type": "intervention",
+      "stated_text": "On e-health, an integrated health information system is not yet in place, though an electronic prescription system became operational since 1 April 2024 covering reimbursed medicinal products and medical devices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "An electronic prescription system has operated since 1 April 2024 for reimbursed medicines and devices.",
+      "location": {
+        "page": 68,
+        "page_end": null,
+        "section": "Chapter 28: Consumer and health protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "28",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-04-01",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Electronic prescription system",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "eHealth service; doubtful whether used directly by the public. Same sentence as the preceding finding.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0073",
+      "information_type": "intervention",
+      "stated_text": "With regard to its Digital Transformation Strategy, Moldova has established a National Council for Digital Transformation in November 2023, which is tasked to coordinate the implementation of the Moldova Digital Transformation Strategy 2023-2030.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A National Council for Digital Transformation was set up in November 2023 to coordinate implementation of the strategy 2023-2030.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023-11",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "National Council for Digital Transformation",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0074",
+      "information_type": "intervention",
+      "stated_text": "Moldova has started the development of the implementation programmes.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has started developing the strategy's implementation programmes.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Implementation programmes of the Digital Transformation Strategy 2023-2030",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0075",
+      "information_type": "finding",
+      "stated_text": "Regarding electronic communications , alignment with the EU Roaming acquis, including the European Electronic Communications Code has started.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Alignment with the EU roaming acquis and the Electronic Communications Code has started.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0076",
+      "information_type": "intervention",
+      "stated_text": "National Regulatory Agency for Electronic Communications and Information Technology (ANRCETI) has absorbed the technical management functions of civil radio frequencies from the National Radio Frequency Management Service in the Ministry of Economic Development and Digitalisation, consequently making ANRCETI empowered to directly establish payments for the use of civil radio frequencies, as well as to provide conformity assessment and certification services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The electronic communications regulator took over technical management of civil radio frequencies from the ministry's radio frequency service.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Regulatory Agency for Electronic Communications and Information Technology (ANRCETI)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Transfer of civil radio frequency management to ANRCETI",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0077",
+      "information_type": "intervention",
+      "stated_text": "In May 2024, the Moldovan Parliament has ratified the association agreement to the Digital Europe programme. This opens opportunities for applying to calls for projects in the fields of high-performance calculation, artificial intelligence, advanced digital skills as well as to progress on the interoperability with EU digital solutions such as with the EU Digital Identity Wallet.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Parliament ratified association to Digital Europe in May 2024, opening calls in computing, AI and digital skills and work on EU wallet interoperability.",
+      "location": {
+        "page": 69,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-AI",
+        "TECH-INTEROP",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-05",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Moldovan Parliament",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Association agreement to the Digital Europe programme",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences: the ratification and what it opens.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0078",
+      "information_type": "finding",
+      "stated_text": "On digital services, no authority currently has responsibility for open data policies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "No authority is currently responsible for open data policies.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital services",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same wording as the 2023 report.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0079",
+      "information_type": "finding",
+      "stated_text": "There is broad alignment with the Directive on e- commerce.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There is broad alignment with the e-commerce Directive.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital services",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "No theme code fits e-commerce rules exactly.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0080",
+      "information_type": "finding",
+      "stated_text": "Moldova is not aligned with the EU acquis on geo-blocking and platform -to-business relations (P2B), nor with the Digital Services Act (DSA) and Digital Markets Act (DMA).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is not aligned with EU rules on geo-blocking, platform-to-business relations, the DSA or the DMA.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital services",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Digital market regulation; no theme code fits exactly.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0081",
+      "information_type": "intervention",
+      "stated_text": "On digital trust and cybersecurity, in June 2024, Moldova launched its national digital identity wallet (EVO App), developed by the Moldovan e-Governance Academy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova launched its national digital identity wallet, the EVO App, in June 2024.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital trust and cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-06",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Moldovan e-Governance Academy",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "National digital identity wallet (EVO App)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The text says the e-Governance Academy developed it; whether this is the e-Governance Agency is for pass 2.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0082",
+      "information_type": "recommendation",
+      "stated_text": "Further work is needed to ensure interoperability with the European Digital Identity Wallets.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further work is needed to make the wallet interoperable with European Digital Identity Wallets.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital trust and cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0083",
+      "information_type": "intervention",
+      "stated_text": "A normative framework for the implementation of the cybersecurity law was approved through several Government Decisions with the objective to ensure alignment with the NIS 2 Directive.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Government decisions approved a framework implementing the cybersecurity law, aiming at NIS 2 alignment.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital trust and cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Normative framework implementing the cybersecurity law (Government Decisions)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0084",
+      "information_type": "intervention",
+      "stated_text": "The Cybersecurity Agency was established in December 2023, as required by the new National Security Strategy, with the mission of implementing the state policy in the field of cybersecurity and to ensure high level of security of networks and IT systems of service providers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Cybersecurity Agency, set up in December 2023 under the National Security Strategy, implements cybersecurity policy and network security.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital trust and cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2023-12",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cybersecurity Agency",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0085",
+      "information_type": "recommendation",
+      "stated_text": "Further effort is needed to make ensure operational capacity of the newly set National Competent Cybersecurity Authority.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further effort is needed to make the new National Competent Cybersecurity Authority operational.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital trust and cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0086",
+      "information_type": "finding",
+      "stated_text": "There was no progress on aligning with the EU toolbox for 5G security.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There was no progress on aligning with the EU 5G security toolbox.",
+      "location": {
+        "page": 70,
+        "page_end": null,
+        "section": "Chapter 10: Digital transformation and media > Digital trust and cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0087",
+      "information_type": "finding",
+      "stated_text": "On operational capacity and digitalisation , the tax administration has improved its electronic services meeting taxpayers’ demand and promoted voluntary compliance further by increasing tax consultancy visits and simplifications for tax obligations.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The tax administration improved its electronic services and promoted voluntary compliance.",
+      "location": {
+        "page": 71,
+        "page_end": null,
+        "section": "Chapter 16: Taxation > Operational capacity and digitalisation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "16",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Tax e-services; the compliance part is outside the theme.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0088",
+      "information_type": "finding",
+      "stated_text": "An IT development strategy to prepare the tax administration for interconnectivity and interoperability with EU IT systems is still missing.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The tax administration still lacks an IT strategy for interoperability with EU IT systems.",
+      "location": {
+        "page": 71,
+        "page_end": null,
+        "section": "Chapter 16: Taxation > Operational capacity and digitalisation",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "16",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0089",
+      "information_type": "finding",
+      "stated_text": "Currently, the Ministry of Labour and Social Protection and its subordinate institutions operate 14 fragmented automated information systems, leading to interoperability and data management challenges, hindering evidence- based policymaking, and leading to inadvertent exclusion of beneficiaries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The labour ministry runs 14 fragmented information systems, causing interoperability and data problems, hindering policy and excluding beneficiaries.",
+      "location": {
+        "page": 74,
+        "page_end": null,
+        "section": "Chapter 19: Social policy and employment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "19",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Labour and Social Protection",
+          "actor_id": "ACT-MDA-0010"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Sector information systems; doubtful under R22 although interoperability and data management are the subject.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0090",
+      "information_type": "intervention",
+      "stated_text": "Moldova reduced the regulatory and administrative burden for business through the adoption of a series of packages on business facilitation and limited liability companies, and through digitalisation of process and services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova cut business burden through facilitation packages, limited liability company rules and digitalisation of processes and services.",
+      "location": {
+        "page": 74,
+        "page_end": null,
+        "section": "Chapter 20: Enterprise and industrial policy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "20",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Business facilitation packages; digitalisation of processes and services",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Digitalisation is one of three means named.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0091",
+      "information_type": "intervention",
+      "stated_text": "The procedure for requesting and obtaining the status of AEO has been digitalised and simplified through an IT solution.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The procedure for obtaining Authorised Economic Operator status was digitalised and simplified through an IT solution.",
+      "location": {
+        "page": 78,
+        "page_end": null,
+        "section": "Chapter 29: Customs union",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "29",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "IT solution for the AEO status procedure",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Customs procedure used by businesses; doubtful whether it is a public online service or a customs IT upgrade.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0092",
+      "information_type": "intervention",
+      "stated_text": "It has started the implementation of Customs Decision System (a national digital platform of interaction between the customs authority and business for all types of authorisations).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Customs started implementing the Customs Decision System, a digital platform for businesses' authorisation requests.",
+      "location": {
+        "page": 78,
+        "page_end": null,
+        "section": "Chapter 29: Customs union > Administrative and operational capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "29",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Customs Decision System",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Platform used by businesses, treated as a customs e-service.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0093",
+      "information_type": "intervention",
+      "stated_text": "A draft IT Strategy for the Customs Service 2024- 2027 (and its roadmap) was developed, pending approval by government. It sets out the gradual alignment of IT business processes to the provisions of Union Customs Code (e.g. Work Programme 2023), ensuring a full digital environment and interconnection and interoperability with EU IT systems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A draft Customs IT Strategy 2024-2027 awaits government approval; it aims at a digital environment and interoperability with EU IT systems.",
+      "location": {
+        "page": 78,
+        "page_end": null,
+        "section": "Chapter 29: Customs union > Administrative and operational capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "29",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "IT Strategy for the Customs Service 2024-2027",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences describing the same draft strategy.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0094",
+      "information_type": "intervention",
+      "stated_text": "In February 2024, Moldova launched the National Agency for Cyber Security and National Institute for Cyber Security.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In February 2024 Moldova launched the National Agency for Cyber Security and National Institute for Cyber Security.",
+      "location": {
+        "page": 90,
+        "page_end": null,
+        "section": "Chapter 31: Foreign, security and defence policy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "6",
+      "chapter": "31",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": "2024-02",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "National Agency for Cyber Security; National Institute for Cyber Security",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Chapter 10 (pages 14 and 70) dates the Cybersecurity Agency to December 2023; the dates differ as stated.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-EU-2024-001-0095",
+      "information_type": "intervention",
+      "stated_text": "To strenthen the digital sector and to enhance access to EU initiatives and funds, Moldova is participating as an observer in two pilot projects under the Technical Support Instrument.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "To strengthen the digital sector, Moldova is an observer in two Technical Support Instrument pilot projects.",
+      "location": {
+        "page": 92,
+        "page_end": null,
+        "section": "Annex I – Relations between the EU and Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2023-06-15/2024-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Technical Support Instrument pilot projects (observer)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "MDA-EU-2024-001-0001",
+        "MDA-EU-2024-001-0002",
+        "MDA-EU-2024-001-0003",
+        "MDA-EU-2024-001-0004",
+        "MDA-EU-2024-001-0005",
+        "MDA-EU-2024-001-0006",
+        "MDA-EU-2024-001-0007",
+        "MDA-EU-2024-001-0008",
+        "MDA-EU-2024-001-0009",
+        "MDA-EU-2024-001-0010",
+        "MDA-EU-2024-001-0011"
+      ],
+      "moved_on": "2026-11-03",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "14, 26-27, 53, 55, 74 (keyword screen of the whole report; only these passages concern the two issues)",
+        "notes": "Same keyword screen as MDA-EU-2025-001. MConnect is not named anywhere in the report, and it has no sentence on asset declaration interoperability, unlike the 2025 report. Left out: customs, tax, health, IACS and EU wallet interoperability. Text-file page numbers are printed page numbers plus one. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-EU-2024-001.csv.",
+        "codebook_version": "1.2",
+        "themes_version": "1.3"
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]
