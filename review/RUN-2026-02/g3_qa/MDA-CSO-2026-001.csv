@@ -1,0 +1,90 @@
+item_id,verdict,detail,routine_fix,judgement_call,fixed
+MDA-CSO-2026-001-0001,should_not_extract,"From the executive summary table of key developments (page 12), which only restates claims extracted at pages 60 and 62 (-0024, -0033). Rule 5 (R16): summary tables that only restate are not extracted again.","Remove the item and add ""also at page 12"" to -0033. Not done: CLAUDE.md rule 7 forbids deleting IDs and the evidence schema has no item-level exclusion status; the analyst should decide how to retire it (for example out_of_scope in pass 2).",yes,no
+MDA-CSO-2026-001-0002,should_not_extract,From the executive summary table (page 12); only restates -0038 and -0055 (pages 84-85). Rule 5 (R16).,"Remove the item and add ""also at page 12"" to -0055. Not done, for the same reason as -0001.",yes,no
+MDA-CSO-2026-001-0003,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0004,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0005,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0006,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0007,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0008,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0009,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0010,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0011,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0012,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0013,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0014,wrong_type,"A named system (State Register of Legal Entities) stated not yet implemented; rule 3 (systems that do not work) makes it an intervention with status unclear, as the extractor did for the same claim in -0009.","Changed to intervention, stated_status unclear, intervention_as_stated filled.",no,yes
+MDA-CSO-2026-001-0015,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0016,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0017,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0018,quote_boundary,"Quote started after ""In June 202 5 ,"" so it did not start at the claim's first word (rule 3, cut to the claim); the garbled date can be kept with its converted spacing, as elsewhere in this file.","Quote extended to start ""In June 202 5 , the Government launched...""; possible_misread added; quote verified.",no,yes
+MDA-CSO-2026-001-0019,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0020,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0021,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0022,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0023,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0024,correct,"""In May"" with the year 2025 taken from the same event on page 62 (-0033); acceptable.",,no,no
+MDA-CSO-2026-001-0025,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0026,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0027,correct,"Flagged theme_doubtful. My reading: intelligence-service surveillance and interception powers are a privacy and security matter, not data protection or governance; lean out of TECH-DATA. Analyst to decide.",,yes,no
+MDA-CSO-2026-001-0028,correct,Flagged theme_doubtful; same reading as -0027 (lean out).,,yes,no
+MDA-CSO-2026-001-0029,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0030,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0031,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0032,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0033,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0034,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0035,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0036,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0037,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0038,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0039,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0040,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0041,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0042,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0043,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0044,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0045,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0046,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0047,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0048,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0049,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0050,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0051,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0052,correct,"Describes a named institution's mandate. Rule 3 says a named institution is an intervention, but a mandate description with no change or measure reads as a finding. Rule ambiguity across sources (also IO-2023-001-0004, CSO-0052, -0057, -0073, -0074); analyst to settle at G3.",,yes,no
+MDA-CSO-2026-001-0053,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0054,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0055,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0056,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0057,correct,"Describes a named institution's mandate. Rule 3 says a named institution is an intervention, but a mandate description with no change or measure reads as a finding. Rule ambiguity across sources (also IO-2023-001-0004, CSO-0052, -0057, -0073, -0074); analyst to settle at G3.",,yes,no
+MDA-CSO-2026-001-0058,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0059,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0060,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0061,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0062,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0063,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0064,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0065,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0066,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0067,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0068,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0069,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0070,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0071,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0072,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0073,correct,"Describes a named institution's mandate. Rule 3 says a named institution is an intervention, but a mandate description with no change or measure reads as a finding. Rule ambiguity across sources (also IO-2023-001-0004, CSO-0052, -0057, -0073, -0074); analyst to settle at G3.",,yes,no
+MDA-CSO-2026-001-0074,correct,"Describes a named institution's mandate. Rule 3 says a named institution is an intervention, but a mandate description with no change or measure reads as a finding. Rule ambiguity across sources (also IO-2023-001-0004, CSO-0052, -0057, -0073, -0074); analyst to settle at G3.",,yes,no
+MDA-CSO-2026-001-0075,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0076,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0077,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0078,quote_boundary,"Quote starts at ""inconsistencies"" because the sentence begins on page 88 (""Nevertheless, there are"") before a footnote block that verify_quotes does not skip; I confirmed the full sentence with page_end 89 fails the check. Meaning is kept but the quote is not cut at the claim's first word.",Extend the quote once verify_quotes skips this footnote block; not possible with the current tool.,no,no
+MDA-CSO-2026-001-0079,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0080,correct,"Flagged theme_doubtful. My reading: actions against ""threats related to the digital environment"" in a public order programme are closer to cybercrime and online threats, which rule 4 puts out of scope; lean should_not_extract. Analyst to decide.",,yes,no
+MDA-CSO-2026-001-0081,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0082,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0083,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0084,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0085,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0086,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0087,correct,"Flagged theme_doubtful. The law on digital content contracts is consumer law; the DSA claim is recorded as stated (it looks inaccurate, which is for pass 2). Lean out of TECH-DIGI.",,yes,no
+MDA-CSO-2026-001-0088,correct,Checked against the cited page and the rules; no issue.,,no,no
+MDA-CSO-2026-001-0089,correct,Checked against the cited page and the rules; no issue.,,no,no

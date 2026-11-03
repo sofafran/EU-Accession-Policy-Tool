@@ -813,7 +813,7 @@
     },
     {
       "item_id": "MDA-CSO-2026-001-0014",
-      "information_type": "finding",
+      "information_type": "intervention",
       "stated_text": "The State Register of Legal Entities has not yet been implemented by the ASP. At the time the report was drafted, the data migration process to the new register had not been completed.",
       "quote_language": "en",
       "translation_en": null,
@@ -853,8 +853,8 @@
           "actor_id": null
         }
       ],
-      "intervention_as_stated": null,
-      "stated_status": null,
+      "intervention_as_stated": "State Register of Legal Entities",
+      "stated_status": "unclear",
       "eu_scale": {
         "preparation_level": null,
         "progress_level": null,
@@ -867,7 +867,7 @@
         "reference_period": null
       },
       "flags": [],
-      "extraction_note": "\"State Register of Legal Entities\" as printed; elsewhere the report calls it the State Register of Legal Units.",
+      "extraction_note": "\"State Register of Legal Entities\" as printed; elsewhere the report calls it the State Register of Legal Units. Type changed from finding to intervention at the G3 check: a named system stated not yet to be implemented (rule 3, systems that do not work: unclear), as for -0009.",
       "pass2": {
         "classification_status": "not_classified"
       }
@@ -1060,7 +1060,7 @@
     {
       "item_id": "MDA-CSO-2026-001-0018",
       "information_type": "intervention",
-      "stated_text": "the Government launched the platform for supporting participatory democracy ( e - Democrație ) , 155 which includes three modules : (i) collective and individual petitions and requests for access to information ; (ii) evaluation of public services ; and (iii) online surveys.",
+      "stated_text": "In June 202 5 , the Government launched the platform for supporting participatory democracy ( e - Democrație ) , 155 which includes three modules : (i) collective and individual petitions and requests for access to information ; (ii) evaluation of public services ; and (iii) online surveys.",
       "quote_language": "en",
       "translation_en": null,
       "machine_translated": false,
@@ -1112,8 +1112,10 @@
         "unit": null,
         "reference_period": null
       },
-      "flags": [],
-      "extraction_note": "Quote starts after \"In June 202 5 ,\" because of the garbled date; the month is in the preceding words.",
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "Quote extended at the G3 check to start at the claim's first word, keeping the converted spacing of the date (\"202 5\").",
       "pass2": {
         "classification_status": "not_classified"
       }
@@ -5393,6 +5395,1513 @@
         "theme_doubtful"
       ],
       "extraction_note": "Same doubt as particip.gov.md.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0090",
+      "information_type": "finding",
+      "stated_text": "CSOs must submit online periodic reports , includ ing on income tax withholding , health and social insurance contributions (monthly) , consumables and expenditures (quarterly), their financial situation (annually) and, if applicable, on the us age of percentage designation funds and of the volunteer host .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "CSOs must submit periodic reports online, including tax, social insurance, expenditure and financial reports.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "III. Findings > 3.1 Freedom of Association > Standard V",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSOs",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. Same claim as -0005 (page 16, area summary), in the detailed section; outside the pages read by the extractor.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0091",
+      "information_type": "recommendation",
+      "stated_text": "The register should also include filters and functionality features that allow access to other public interest information on CSOs (such as membership, public benefit status, and percentage designation mechanism);",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The State Register of Legal Units should include filters giving access to other public interest information on CSOs.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "III. Findings > 3.1 Freedom of Association > Specific recommendations",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ASP",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. Continues the recommendation in -0011 on the State Register of Legal Units.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0092",
+      "information_type": "finding",
+      "stated_text": "Meanwhile, businesses benefit from a faster, automated system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Businesses benefit from a faster, automated registration system than CSOs.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "III. Findings > 3.2 Equal Treatment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "businesses",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0093",
+      "information_type": "finding",
+      "stated_text": "The r egistration of commercial entities is supported by an automated registration system that provides data and an overall quicker registration procedure.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Commercial entity registration is supported by an automated system giving data and quicker registration.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "III. Findings > 3.2 Equal Treatment > Standard I",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "commercial entities",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0094",
+      "information_type": "barrier",
+      "stated_text": "This slow s down the registration procedure for CSOs .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The outdated, non-interoperable register of non-commercial organisations slows CSO registration.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "III. Findings > 3.2 Equal Treatment > Standard I",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSOs",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. \"This\" is the outdated and non-interoperable State Register of Non-Commercial Organisations in the preceding sentence (-0015).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0095",
+      "information_type": "finding",
+      "stated_text": "The 2024 Law on Access to Information of Public Interest aligns with EU standards, improving proactive publication and open data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The 2024 Law on Access to Information of Public Interest aligns with EU standards and improves proactive publication and open data.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "III. Findings > 3.5 Right to Participation in Decision-Making",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. Open data is within TECH-DATA; the access-to-information subject is otherwise out of scope.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0096",
+      "information_type": "intervention",
+      "stated_text": "In June, the Government launched the platform to support participatory democracy ( https://edemocratie.gov.md/ ), which includes a petitions module designed to gradually centrali s e the petitions collected by APC.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In June 2025 the Government launched the e-Democracy platform with a petitions module to centralise petitions.",
+      "location": {
+        "page": 45,
+        "page_end": null,
+        "section": "III. Findings > 3.5 Right to Participation in Decision-Making > Standard I",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": "2025-06",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "platform to support participatory democracy (e-Democracy)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. Same event as -0018 (page 50). Year from page 50 and footnote 114 (Government Decision 564/2024 on the concept).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0097",
+      "information_type": "intervention",
+      "stated_text": "In May 2025, Parliament adopted a new law aimed at establis hing uniform minimum rules on open data and the reuse of information from the public sector, 147 compl e mented in September by methodological norms for the application of the law. 148 The law partially transposes Directive (EU) 2019/1024 149 on open data and the reuse of public sector information.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In May 2025 Parliament adopted a law on open data and public sector information reuse, partly transposing Directive (EU) 2019/1024.",
+      "location": {
+        "page": 49,
+        "page_end": null,
+        "section": "III. Findings > 3.5 Right to Participation in Decision-Making > Standard III",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": "2025-05",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Parliament",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law No. 109/2025 on Open Data and the Reuse of Public Sector Information",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. Law number from footnote 147; methodological norms are Government Decision No. 563/2025 (footnote 148). Footnote numbers 147 to 149 kept as printed. Also in the executive summary table (page 12), not extracted again (rule 5).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0098",
+      "information_type": "intervention",
+      "stated_text": "The Government plans to connect all CPAs to the platform by the end of 2025 and to transfer the record - keeping registers to it, ensuring real - time tracking of all requests.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government plans to connect all central authorities to e-Democracy by end-2025 and move record-keeping registers onto it.",
+      "location": {
+        "page": 50,
+        "page_end": null,
+        "section": "III. Findings > 3.5 Right to Participation in Decision-Making > Standard III",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The Government",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "connection of all central public authorities to the e-Democracy platform",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. \"The platform\" is e-Democracy (-0018).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0099",
+      "information_type": "metric",
+      "stated_text": "By the time the report was prepared, the platform registered and submitted 24 petitions, 12 surveys, and seven information requests .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "e-Democracy had registered 24 petitions, 12 surveys and seven information requests when the report was prepared.",
+      "location": {
+        "page": 50,
+        "page_end": null,
+        "section": "III. Findings > 3.5 Right to Participation in Decision-Making > Standard III",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Items registered on the e-Democracy platform (petitions; surveys; information requests)",
+        "value": "24; 12; 7",
+        "unit": "items",
+        "reference_period": "2025, to the time of the report"
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0100",
+      "information_type": "finding",
+      "stated_text": "CSOs are entitled to handle personal data and are subject to the same o bligations and requirements as other legal persons.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "CSOs may handle personal data and have the same obligations as other legal persons.",
+      "location": {
+        "page": 60,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSOs",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0101",
+      "information_type": "finding",
+      "stated_text": "P ersonal data is protected under a dedicated law , 199 which regulates the processing, storing and us e of personal data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Personal data is protected by a dedicated law regulating its processing, storage and use.",
+      "location": {
+        "page": 61,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard I. Everyone enjoys the right to privacy and data protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Same claim as -0019 (page 60). Footnote number 199 kept as printed (Law 133/2011).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0102",
+      "information_type": "finding",
+      "stated_text": "T he number of citizens approaching the CNPDCP regarding violations related to the processing of personal data has continuously increased in recent years.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The number of people complaining to the data protection authority about data processing has risen continuously.",
+      "location": {
+        "page": 61,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard I. Everyone enjoys the right to privacy and data protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CNPDCP",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Same claim as -0021 (page 60).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0103",
+      "information_type": "finding",
+      "stated_text": "These trends indicate a grow th in public awareness of personal data protection s and a corresponding increase in reported violations.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The trends indicate growing public awareness of data protection and more reported violations.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard I. Everyone enjoys the right to privacy and data protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0104",
+      "information_type": "finding",
+      "stated_text": "The Law provides benefits such as easier access to personal data, a new right to data portability, a clearer ‘ right to be forgotten ’ , a comprehensive set of rules regarding the violation of personal data security, more clear ly defined responsibilit ies for data controllers and clearer obligations for data processors, techniques favourable to confidentiality (pseudonymisation), and a modern set of tools for international data transfers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The new data protection law brings benefits: data portability, right to be forgotten, security rules and clearer controller duties.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard I. Everyone enjoys the right to privacy and data protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. \"The Law\" is the Law on Personal Data Protection No. 195/2024 (-0032).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0105",
+      "information_type": "metric",
+      "stated_text": "This marks a reversal of the trend observed in previous years, particularly compared to the previous year, which had seen an increase of 20 million accesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The 2024 fall in accesses reverses earlier growth; the previous year had seen 20 million more accesses.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard I. Everyone enjoys the right to privacy and data protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Annual change in accesses to personal data by national institutions, previous year",
+        "value": 20,
+        "unit": "million additional accesses",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Follows -0034.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0106",
+      "information_type": "metric",
+      "stated_text": "The main institutions that process personal data stored in the key automated state information resources , were the Ministry of Internal Affairs (over 28 million accesses ) , the St ate Fiscal Service (over 21 million accesses), the SIS (over 128 ,000 accesses), the National Anticorruption Centre (over 26 ,000 accesses), and the General Prosecutor's Office (over 1 ,000 accesses – half the number from 2022 ).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Main processors of state personal data: Internal Affairs (28 million accesses), Fiscal Service (21 million), SIS, Anticorruption Centre, Prosecutor.",
+      "location": {
+        "page": 62,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard I. Everyone enjoys the right to privacy and data protection",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Internal Affairs",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "State Fiscal Service",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "SIS",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "National Anticorruption Centre",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "General Prosecutor's Office",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Accesses to personal data in key automated state information resources, by institution (Ministry of Internal Affairs)",
+        "value": 28,
+        "unit": "million accesses (over)",
+        "reference_period": "2024"
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Other values in the quote: State Fiscal Service over 21 million, SIS over 128,000, National Anticorruption Centre over 26,000, General Prosecutor's Office over 1,000.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0107",
+      "information_type": "finding",
+      "stated_text": "The state provides protect ion for private data held by legal persons . Personal data stored and processed by CSOs is subject to specific legal procedures .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The state protects private data held by legal persons; CSO personal data is subject to specific legal procedures.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard II. The state protects the right to privacy of CSOs and associated individuals",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0108",
+      "information_type": "finding",
+      "stated_text": "R eports submitted by CS O s are compliant with personal data protection legislation and they do not affect the privacy of members, donors, board members and employees , or the confidentiality of their personal assets.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "CSO reports comply with data protection law and do not affect the privacy of members, donors, board members or staff.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard II. The state protects the right to privacy of CSOs and associated individuals",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSOs",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0109",
+      "information_type": "finding",
+      "stated_text": "It is not clear to what extent the legal mechanisms to protect against illegal or disproportionate collection, processing and storage of personal information work in practice, except in cases brought to public attention by media investigations, as has been the case in previous years .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "It is unclear how well protections against illegal or disproportionate processing of personal information work in practice.",
+      "location": {
+        "page": 63,
+        "page_end": null,
+        "section": "III. Findings > 3.7 Right to Privacy > Standard II. The state protects the right to privacy of CSOs and associated individuals",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged",
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Same claim as -0026 (page 60).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0110",
+      "information_type": "finding",
+      "stated_text": "The access of any natural or legal person to publicly accessible electronic communications services is guaranteed throughout the territory of the country , under non - discriminatory and confidential conditions .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Access to public electronic communications services is guaranteed nationwide on non-discriminatory and confidential terms.",
+      "location": {
+        "page": 84,
+        "page_end": 85,
+        "section": "III. Findings > 3.11 Digital rights > Standard I. Digital rights are protected, and digital technologies are compliant with human rights standards",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. The converted text of pages 84-85 splits words across lines; the quote keeps the converted spacing. Footnote 311 cites Law No. 241/2007 on Electronic Communications.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0111",
+      "information_type": "finding",
+      "stated_text": "The access of any natural or legal person to electronic communications services accessible to the public is guaranteed throughout the territory of the country , under non - discriminatory and confidential conditions .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Access to public electronic communications services is guaranteed nationwide on non-discriminatory and confidential terms.",
+      "location": {
+        "page": 87,
+        "page_end": null,
+        "section": "III. Findings > 3.11 Digital rights > Standard II. The state creates conditions for the enjoyment of digital rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Same claim as -0110 (pages 84-85, Standard I).",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0112",
+      "information_type": "intervention",
+      "stated_text": "The new Electronic Communications Law, 331 which will enter into force on 1 January 2026, explicitly provides for the right of access to the internet and implicitly guarantees the right to internet neutrality.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The new Electronic Communications Law, in force from January 2026, provides for the right of internet access and net neutrality.",
+      "location": {
+        "page": 87,
+        "page_end": 88,
+        "section": "III. Findings > 3.11 Digital rights > Standard II. The state creates conditions for the enjoyment of digital rights",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law No. 72/2025 on Electronic Communications",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass. Same law as -0055. Footnote number 331 kept as printed; law number from footnote 331.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0113",
+      "information_type": "outcome",
+      "stated_text": "Proactive access to information has been strengthened through the adoption of the Law on Open Data and Reuse of Information from the Public Se ctor, and through continued government efforts to implement the law via training and improvements to the particip.gov.md platform.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Adoption of the open data law and training and particip.gov.md improvements have strengthened proactive access to information.",
+      "location": {
+        "page": 92,
+        "page_end": null,
+        "section": "IV. Key priorities",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "added at the second pass. Names the Law on Open Data and Reuse of Information from the Public Sector (Law No. 109/2025). The particip.gov.md element carries the same theme doubt as -0016.",
+      "pass2": {
+        "classification_status": "not_classified"
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2026-001-0114",
+      "information_type": "finding",
+      "stated_text": "The digital rights sector will benefit from the new Law in Electronic Communications (effective from 2026), which transposes multiple EU directives and explicitly reconfirms the right to internet access and, implicitly, the right to internet neutrality.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The new Electronic Communications Law, effective 2026, will benefit digital rights by confirming internet access and net neutrality.",
+      "location": {
+        "page": 92,
+        "page_end": null,
+        "section": "IV. Key priorities",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": "January to November 2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Promo-LEX Association (CSO Meter)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "added at the second pass.",
       "pass2": {
         "classification_status": "not_classified"
       }
