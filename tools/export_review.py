@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.14.0"
+__version__ = "1.14.1"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -436,7 +436,7 @@ def g4(root, run):
     items = {}
     for f in evidence_files(root):
         d = read_json(f)
-        for it in d["items"]:
+        for it in run_items(d, run):  # this run's items only (E21)
             items[it["item_id"]] = {**it, "_source": d["source_id"]}
     by_issue = {}
     for m in mapping:
