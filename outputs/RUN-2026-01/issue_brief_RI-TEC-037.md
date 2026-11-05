@@ -1,6 +1,6 @@
 # Issue brief: Sector and local online public services limited
 
-RI-TEC-037 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-037 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** Online public services run by sector bodies or municipalities, outside the national portal, are limited in range, use or quality. **Problem mechanisms:** Weak administrative capacity (MEC-03); Insufficient resources (MEC-09); Low uptake of systems already in place (MEC-11).
 
@@ -34,6 +34,7 @@ The Commission's requirement here is general: it states that ongoing digitalisat
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
+Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -69,6 +70,7 @@ Implementation status is a validated judgement (G6); adoption is never treated a
 | Mobile one-stop shops | other | proposed | The country told the Commission in 2023 that it is discussing this option. No later source mentions it. |
 | Two e-portals for requesters and holders of public information | other | implemented | The public administration strategy says the Agency implemented the two portals and will promote them. This is government reporting alone, with no usage data. |
 | Digital Agenda Observatory (proposed) | other | proposed | A civil society group proposed this to the Government, and no item shows the Government taking it up. |
+| Digitalised procedure for nostrification of foreign educational diplomas | it_system | implemented (proposed) | The Commission reports that the Ministry of Education and Science fully digitalised the procedure for nostrification of foreign diplomas. No item reports its use. |
 
 ## Outcomes
 
@@ -114,7 +116,7 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 ## Coverage and limits
 
-This brief rests on 89 in-scope evidence items from 22 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 67 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 93 in-scope evidence items from 23 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 67 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 

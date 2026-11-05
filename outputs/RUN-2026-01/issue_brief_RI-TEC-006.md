@@ -1,6 +1,6 @@
 # Issue brief: Electronic public procurement tools underused
 
-RI-TEC-006 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-006 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** The electronic public procurement system works, but some of its modules, such as the e-marketplace for low-value contracts and e-catalogues, are incomplete or little used by contracting authorities, and its data are not yet used for red-flag analysis. **Problem mechanisms:** Weak administrative capacity (MEC-03); Poor transparency or unreliable data (MEC-07).
 
@@ -17,7 +17,7 @@ The Commission asks North Macedonia to complete its e-procurement platform, buil
 | Priority | Medium |
 | Tractability | High |
 
-**What remains.** The system is working and the e-market and red-flag modules are proposed as in practice, with the low-value bylaw at insufficient evidence; these statuses are themselves proposals. What remains is raising e-market use from 350 to the required 800 awards in 2026, wider take-up of e-catalogues, and the data analysis the Commission asked for in 2023.
+**What remains.** The electronic procurement system operates efficiently and covers all transactions, and e-market use rose to 647 contracts in 2025 from 325 in 2024; the 2025 report gave 350 small-value transactions for 2024, a different measure, so the two 2024 figures are not compared. Against the Reform and Growth Facility, e-auctions fell to 22% of contract notices against a 40% target, and the e-market count remains below the 800 awards required in 2026. What remains is reaching the e-market target, raising e-auction use to the agreed share, wider take-up of e-catalogues and the data analysis the Commission asked for in 2023.
 
 **Direction of travel.** The e-market moved from development in 2021 to launch in 2022, and awards rose from 70 in 2022 to 258 in 2023 (259 in the Reform Agenda, a minor difference of count), with 350 small-value transactions in 2024, though that item does not name the e-market. The Commission's finding of poor use in 2023 is not repeated later, and no later item shows change on e-catalogues or red-flag analysis. The Chapter 5 'Limited progress' wording of 2022 and 2025 is context only and was not decisive.
 
@@ -70,33 +70,36 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [11] | 2024 | MKD-EU-2024-007 | EU requirement | Payment condition: the e-market system is to be used to award at least 800 tender procedures in fiscal year 2026. | High | High | High |  |
-| [21] | 2025 | MKD-EU-2025-001 | Implementation | In 2024 the electronic procurement system handled 350 small-value procurement transactions. | High | High | High |  |
+| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The electronic public procurement system operates efficiently and covers all transactions. | High | High (proposed) | High (proposed) |  |
+| [22] | 2026 | MKD-EU-2026-007 | Implementation | 647 contracts were concluded on the e-market for low-value procurement in 2025, up from 325 in 2024. | High | High (proposed) | High (proposed) |  |
+| [23] | 2026 | MKD-EU-2026-007 | Implementation | E-auctions fell to 22% of contract notices, well below the 40% Reform and Growth Facility target. | High | High (proposed) | High (proposed) |  |
+| [24] | 2025 | MKD-EU-2025-001 | Implementation | In 2024 the electronic procurement system handled 350 small-value procurement transactions. | High | High | High |  |
 | [5] | 2025 | MKD-EU-2025-001 | EU requirement | The electronic procurement system continues to work efficiently. | High | High | High |  |
+| [11] | 2024 | MKD-EU-2024-007 | EU requirement | Payment condition: the e-market system is to be used to award at least 800 tender procedures in fiscal year 2026. | High | High | High |  |
 | [12] | 2023 | MKD-EU-2023-003 | EU requirement | The use of electronic catalogues in procurement is only just starting. | High | Medium | High |  |
 | [3] | 2023 | MKD-EU-2023-003 | EU requirement | North Macedonia should develop the ESPP red flag system and strengthen data analysis to report on possible corruption or bid-rigging. | High | High | High |  |
-| [22] | 2021 | MKD-EU-2021-001 | Country response | Development of an e-marketplace and e-catalogue platform and improvement of the State Appeals Commission processing system are ongoing. | High | High | High |  |
+| [25] | 2021 | MKD-EU-2021-001 | Country response | Development of an e-marketplace and e-catalogue platform and improvement of the State Appeals Commission processing system are ongoing. | High | High | High |  |
 | [7] | 2022 | MKD-EU-2022-001 | Country response | A new e-market system for low value procurement was launched, alongside the new Public Procurement Strategy 2022-2025. | High | High | High |  |
 | [15] | 2023 | MKD-EU-2023-001 | EU requirement | Despite an e-marketplace platform and e-catalogues, procuring entities showed little interest in using the system. | High | High | High |  |
 | [8] | 2023 | MKD-EU-2023-001 | Implementation | In 2022, 70 small-value procurements were concluded through the e-market. | High | High | High |  |
 | [2] | 2023 | MKD-EU-2023-003 | EU requirement | The Commission finds poor use of the e-market system for low value contracts, alongside a high cancellation rate. | High | High | High |  |
 | [9] | 2024 | MKD-EU-2024-001 | Implementation | In 2023 the e-market system was used to award 258 small-value procurements. | High | High | High |  |
-| [23] | 2024 | MKD-GOV-2024-001 | Implementation | In 2023, 259 contracts were awarded through the e-marketplace system. | High | High | High |  |
-| [24] | 2025 | MKD-EU-2025-001 | EU requirement | The Commission found limited progress on public procurement, achieved with the updated electronic public procurement system. | High | High | High |  |
-| [25] | 2024 | MKD-GOV-2024-002 | Country response | Payment of EUR 6,422,435.55 is tied to the e-market system awarding at least 800 tender procedures in fiscal year 2026, from 259 (2023). | High | High | High |  |
-| [26] | 2023 | MKD-EU-2023-003 | EU requirement | The Commission says contracting authorities' capacities and confidence need strengthening, given poor use of the e-market system. | High | High | High |  |
+| [26] | 2024 | MKD-GOV-2024-001 | Implementation | In 2023, 259 contracts were awarded through the e-marketplace system. | High | High | High |  |
+| [27] | 2025 | MKD-EU-2025-001 | EU requirement | The Commission found limited progress on public procurement, achieved with the updated electronic public procurement system. | High | High | High |  |
+| [28] | 2024 | MKD-GOV-2024-002 | Country response | Payment of EUR 6,422,435.55 is tied to the e-market system awarding at least 800 tender procedures in fiscal year 2026, from 259 (2023). | High | High | High |  |
+| [29] | 2023 | MKD-EU-2023-003 | EU requirement | The Commission says contracting authorities' capacities and confidence need strengthening, given poor use of the e-market system. | High | High | High |  |
 | [6] | 2023 | MKD-EU-2023-003 | Country response | The ESPP covers planning, publication, submission, award and appeals electronically, and all contracting authorities must use it. | High | Medium | High |  |
 
 ## Open questions (agent synthesis)
 
 - The Commission's 2020 report says the e-appeals section was still being developed, while North Macedonia reports it fully operational from 1 April 2019, and this confirmed conflict remains unresolved pending a dated record from the Bureau or the State Appeals Commission [19][20].
-- The 2024 figure of 350 small-value transactions does not name the e-market, so e-market award data for 2024 to 2026 would be needed to judge progress towards the 800 target [21].
-- Whether the bylaw on the low-value e-marketplace was ever adopted is insufficient_evidence, and the official gazette or a Bureau statement would settle it [27].
-- No evidence after 2023 shows how e-catalogues or the red flag system are used, and usage figures or Commission findings on data analysis would be needed [28][12].
+- The 2024 figure of 350 small-value transactions does not name the e-market, so e-market award data for 2024 to 2026 would be needed to judge progress towards the 800 target [24].
+- Whether the bylaw on the low-value e-marketplace was ever adopted is insufficient_evidence, and the official gazette or a Bureau statement would settle it [30].
+- No evidence after 2023 shows how e-catalogues or the red flag system are used, and usage figures or Commission findings on data analysis would be needed [31][12].
 
 ## Coverage and limits
 
-This brief rests on 53 in-scope evidence items from 14 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 0 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 56 in-scope evidence items from 15 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 0 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 
@@ -142,18 +145,24 @@ Each item is quoted word for word from its source. Machine-translated items show
 
 [20] **MKD-EU-2023-003-0115**. European Commission, *Screening report North Macedonia, Cluster 1 - Fundamentals (external version)* (2023-07-24), p. 111. "North Macedonia reports that the e-appeals function of the ESPP became fully operational on 1 April 2019."
 
-[21] **MKD-EU-2025-001-0091**. European Commission, *North Macedonia 2025 Report, SWD(2025) 753 final* (2025-11-04), p. 62. "In 2024, the electronic procurement system facilitated 350 small -value procurement transactions."
+[21] **MKD-EU-2026-007-0062**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 63. "The electronic for public procurement system operates efficiently, covering all transactions."
 
-[22] **MKD-EU-2021-001-0048**. European Commission, *North Macedonia 2021 Report, SWD(2021) 294 final* (2021-10-19), p. 58. "The development of a platform for e -marketplace, e -catalogues and further improvement of the SAC processing system is ongoing."
+[22] **MKD-EU-2026-007-0060**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 63. "In 2025, 647 contracts were concluded using the e- market for low value procurement, an increase from 325 contracts in 2024."
 
-[23] **MKD-GOV-2024-001-0041**. Government of North Macedonia, *Annex VI - Reform Agenda of North Macedonia 2024-2027* (2024-10-23), p. 28. "Baseline (2023) is number of 259 contracts awarded by using the e-marketplace system."
+[23] **MKD-EU-2026-007-0061**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 63. "The use of e -auctions decreased to 22% of the published contract notices, well below the 40% target agreed in the Reform and Growth Facility."
 
-[24] **MKD-EU-2025-001-0009**. European Commission, *North Macedonia 2025 Report, SWD(2025) 753 final* (2025-11-04), p. 10. "Limited progress was made since the last reporting period with the updated version of the electronic public procurement system."
+[24] **MKD-EU-2025-001-0091**. European Commission, *North Macedonia 2025 Report, SWD(2025) 753 final* (2025-11-04), p. 62. "In 2024, the electronic procurement system facilitated 350 small -value procurement transactions."
 
-[25] **MKD-GOV-2024-002-0002**. Government of North Macedonia, *Annex VI - Reform Agenda North Macedonia - annex 1* (2024-10-23), p. 2. "259 (2023) - - - - E-market system is used to award at least 800 Tender procedures in Fiscal Year 2026 - Payment provisions per step(s) achieved n.a. n.a. n.a. n.a. 6.422.435,55 € n.a. n.a."
+[25] **MKD-EU-2021-001-0048**. European Commission, *North Macedonia 2021 Report, SWD(2021) 294 final* (2021-10-19), p. 58. "The development of a platform for e -marketplace, e -catalogues and further improvement of the SAC processing system is ongoing."
 
-[26] **MKD-EU-2023-003-0138**. European Commission, *Screening report North Macedonia, Cluster 1 - Fundamentals (external version)* (2023-07-24), p. 110. "The high cancellation rate and the poor use of the e-market system for low value contracts demonstrates the need to further strengthen the capacities and build the confidence of the contracting authorities."
+[26] **MKD-GOV-2024-001-0041**. Government of North Macedonia, *Annex VI - Reform Agenda of North Macedonia 2024-2027* (2024-10-23), p. 28. "Baseline (2023) is number of 259 contracts awarded by using the e-marketplace system."
 
-[27] **MKD-EU-2021-001-0046**. European Commission, *North Macedonia 2021 Report, SWD(2021) 294 final* (2021-10-19), p. 58. "The adoption of the bylaw on low - value e -marketplace is s till pending and the strategy for the development of the public procurement system not finalised."
+[27] **MKD-EU-2025-001-0009**. European Commission, *North Macedonia 2025 Report, SWD(2025) 753 final* (2025-11-04), p. 10. "Limited progress was made since the last reporting period with the updated version of the electronic public procurement system."
 
-[28] **MKD-EU-2023-003-0122**. European Commission, *Screening report North Macedonia, Cluster 1 - Fundamentals (external version)* (2023-07-24), p. 113. "The ESPP includes a “red flag” system to facilitate detection of high-risk tenders."
+[28] **MKD-GOV-2024-002-0002**. Government of North Macedonia, *Annex VI - Reform Agenda North Macedonia - annex 1* (2024-10-23), p. 2. "259 (2023) - - - - E-market system is used to award at least 800 Tender procedures in Fiscal Year 2026 - Payment provisions per step(s) achieved n.a. n.a. n.a. n.a. 6.422.435,55 € n.a. n.a."
+
+[29] **MKD-EU-2023-003-0138**. European Commission, *Screening report North Macedonia, Cluster 1 - Fundamentals (external version)* (2023-07-24), p. 110. "The high cancellation rate and the poor use of the e-market system for low value contracts demonstrates the need to further strengthen the capacities and build the confidence of the contracting authorities."
+
+[30] **MKD-EU-2021-001-0046**. European Commission, *North Macedonia 2021 Report, SWD(2021) 294 final* (2021-10-19), p. 58. "The adoption of the bylaw on low - value e -marketplace is s till pending and the strategy for the development of the public procurement system not finalised."
+
+[31] **MKD-EU-2023-003-0122**. European Commission, *Screening report North Macedonia, Cluster 1 - Fundamentals (external version)* (2023-07-24), p. 113. "The ESPP includes a “red flag” system to facilitate detection of high-risk tenders."

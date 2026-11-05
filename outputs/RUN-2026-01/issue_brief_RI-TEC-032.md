@@ -1,6 +1,6 @@
 # Issue brief: Not ready to connect to other EU sectoral information systems
 
-RI-TEC-032 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-032 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** Systems in other sectors are not yet ready to interconnect with EU information systems, such as the business registers interconnection system, the Internal Market Information System, the civil protection system, EU taxation systems and the own resources reporting system. **Problem mechanisms:** Weak administrative capacity (MEC-03); Legal or regulatory gap (MEC-01).
 
@@ -98,7 +98,7 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 ## Coverage and limits
 
-This brief rests on 53 in-scope evidence items from 13 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 0 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 57 in-scope evidence items from 14 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 0 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 

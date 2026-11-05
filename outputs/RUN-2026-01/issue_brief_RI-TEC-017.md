@@ -1,6 +1,6 @@
 # Issue brief: Personal data protection law not aligned with EU rules
 
-RI-TEC-017 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-017 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** The personal data protection framework is not fully aligned with the General Data Protection Regulation, the Law Enforcement Directive and the ePrivacy Directive, rules on international transfers are missing, and sector laws are not harmonised. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Missing implementing rules (MEC-02).
 
@@ -34,6 +34,7 @@ The Commission asks North Macedonia to align fully with the General Data Protect
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
+Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -48,9 +49,9 @@ Implementation status is a validated judgement (G6); adoption is never treated a
 | Law transposing the EU Law Enforcement Directive (planned) | law | proposed | The Agency's 2024 strategy calls for this law by early 2026, but its 2026 report says transposition had still not started during 2025. No source reports a law being adopted. |
 | Strategy for the Implementation of the Right to Personal Data Protection 2025-2030 | strategy | implemented | The Agency reports the strategy was adopted in 2024 and implementation began in 2025. The Commission's finding that budget and consultation problems negatively affected implementation is preferred to the Agency's account on how far it has gone, but it also treats implementation as under way. |
 | Law on Electronic Communications (Official Gazette 39/14) | law | reversed | The Law on Electronic Communications 2025 (Law on Electronic Communications 2025) says this law ceases to be in force on the day the new law starts to apply, which is 1 June 2026. This is read from the legal text; no source confirms the date was not moved. |
-| Law on Electronic Communications 2025 | law | adopted | The law was adopted on 27 June 2025 and amended on 29 December 2025; it entered into force on the eighth day after publication on 4 July 2025 and was due to apply from 1 June 2026, but no later item confirms application or reports measures under it, and the security supervision reported for 2025 rests on the earlier law. By-laws were due within 15 months (October 2026) and operators have 18 months to align (January 2027), so that deadline has not yet passed. The Commission's May 2026 finding that the step is not achieved, with a grace period to 30 June 2026 whose outcome is not in the evidence, concerns alignment, and 'draft' or 'proposal' wording in GOV-2025-004-0172 and GOV-2026-002-0100 is historic rather than a conflict. |
+| Law on Electronic Communications 2025 | law | adopted (proposed) | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
 | Law on the Use of Public Sector Data | law | adopted | An international report and the screening report treat the law as in force, and the screening report calls it partially aligned with the EU directive. No source reports how it is applied. |
-| Law on Security of Network and Information Systems 2025 | law | adopted | The law was adopted on 27 June 2025, published on 4 July 2025, entered into force on the eighth day and applies from 1 January 2026, except that entities in Art. 4(2) points 8 to 16 are covered only from EU accession. No item shows the measures it requires, such as the by-laws (due within six months), the entity lists, or the government team and network (due within twelve months, so by July 2026), and MKD-CIRT predates the law; the regulator's 'applies' statement gives the legal status only. 'Proposal' in GOV-2026-002-0097 comes from an annex of 2025 opinions, so it is historic rather than a conflict, and the Commission's finding that alignment is incomplete concerns content, not status. |
+| Law on Security of Network and Information Systems 2025 | law | adopted (proposed) | The Commission confirms the law in force from January 2026 and aligned with NIS2, though the Personal Data Protection Agency's opinion on it was disregarded. The Commission records a government computer security incident response team and a National Cybersecurity Council, but attributes them to the cybersecurity strategy and does not say they are the bodies the law requires; no item reports the by-laws or the lists of entities. |
 | Law on Free Access to Public Information | law | adopted | The source names the law as an enabler of digital government, which shows it exists. Its application is not covered. |
 | Law on financial companies | law | adopted | The Commission says recent changes to the law led to more complaints, which shows the changes exist. It gives no detail of measures put in place, so I do not go beyond adopted. |
 | Article 18 of the Constitution (protection of personal data) | law | adopted | The country presentation in the screening report says Article 18 guarantees data protection. This shows a constitutional provision in force, and nothing on its application is mapped here. |
@@ -128,7 +129,7 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 ## Coverage and limits
 
-This brief rests on 226 in-scope evidence items from 25 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 88 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 230 in-scope evidence items from 26 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 88 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 

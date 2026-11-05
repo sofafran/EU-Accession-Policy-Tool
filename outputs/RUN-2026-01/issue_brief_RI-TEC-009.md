@@ -1,6 +1,6 @@
 # Issue brief: eHealth systems not interoperable or aligned with EU rules
 
-RI-TEC-009 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-009 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** Electronic health systems are not interoperable with health insurance data, referrals remain on paper, and the legislation is not aligned with the EU acquis on eHealth. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak administrative capacity (MEC-03).
 
@@ -17,7 +17,7 @@ The Commission asks North Macedonia to make eHealth data interoperable with Heal
 | Priority | Medium |
 | Tractability | Medium |
 
-**What remains.** The 2025 report still asks for interoperability, and the responding steps are proposed (population register and wallet connections) or at insufficient evidence (platform for traceability), none naming Health Insurance Fund data; these statuses are themselves proposals and the plan items are machine translated, capped at Medium confidence. The paper-referral finding and the screening's account of a tool holding referrals are a noted difference, not a conflict, since storing data and issuing on paper can both be true, but practice needs checking. What remains is interoperability with Health Insurance Fund data, an end to paper referrals, and alignment with the eHealth acquis.
+**What remains.** The Commission still asks for interoperability and improvements to the appointment system, and the 2026 report adds that the national e-health system collects data only from public healthcare, so patients' files lack data from private facilities. The responding steps (population register and wallet connections and a platform for traceability) do not name Health Insurance Fund data, and the plan items are machine translated and capped at Medium; the paper-referral finding and the screening's account of a tool holding referrals are a noted difference, not a conflict, but practice needs checking. What remains is interoperability with Health Insurance Fund data and with private facilities, an end to paper referrals, a better appointment system and alignment with the eHealth acquis.
 
 **Direction of travel.** Commission wording on extending Moj Termin is the same in 2022 and 2023, and non-interoperability with Health Insurance Fund data recurs in 2024 and 2025, with non-alignment of legislation added in the 2025 screening. Functional upgrades in 2023 and 2025 are real but have not changed the stated shortfall. The default for three unchanged reports is not strictly triggered, and no Chapter 28 scale rating was decisive.
 
@@ -65,6 +65,9 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
+| [17] | 2026 | MKD-EU-2026-007 | EU requirement | The national e-health system holds data only from public healthcare, so patient files lack private facilities' data. | High | High (proposed) | High (proposed) |  |
+| [18] | 2026 | MKD-EU-2026-007 | EU requirement | The e-health application is functional. | High | High (proposed) | High (proposed) |  |
+| [19] | 2026 | MKD-EU-2026-007 | EU requirement | The e-health appointment system needs improvement. | High | High (proposed) | High (proposed) |  |
 | [1] | 2025 | MKD-EU-2025-001 | EU requirement | The country should make eHealth data interoperable with Health Insurance Fund data and increase health funding, awareness and staff, especially for cancer detection. | High | High | High |  |
 | [8] | 2025 | MKD-EU-2025-001 | EU requirement | The eHealth appointment system is not yet interoperable with Health Insurance Fund data. | High | High | High |  |
 | [7] | 2024 | MKD-EU-2024-001 | EU requirement | Despite an e-health application, referrals are still on paper and the application is not interoperable with Health Insurance Fund data. | High | High | High |  |
@@ -72,25 +75,25 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 | [3] | 2025 | MKD-EU-2025-003 | EU requirement | North Macedonia is not aligned with the EU acquis on eHealth, medical devices or in vitro diagnostic medical devices. | High | High | High |  |
 | [9] | 2025 | MKD-GOV-2025-004 | Country response | MojTermin is to be connected with the national population register. | High | Medium | High | machine translated |
 | [10] | 2025 | MKD-GOV-2025-004 | Country response | MojTermin is to be connected with the citizen digital wallet. | High | Medium | High | machine translated |
-| [17] | 2023 | MKD-EU-2023-006 | Country response | A platform is to be developed to facilitate health appointments and ensure traceability of health data. | High | High | High |  |
+| [20] | 2023 | MKD-EU-2023-006 | Country response | A platform is to be developed to facilitate health appointments and ensure traceability of health data. | High | High | High |  |
 | [11] | 2022 | MKD-EU-2022-006 | EU requirement | The Moj Termin eHealth system should be extended to primary care doctors. | High | High | High |  |
 | [12] | 2023 | MKD-EU-2023-006 | EU requirement | The Moj Termin eHealth system should be extended to primary care doctors. | High | High | High |  |
 | [5] | 2023 | MKD-EU-2023-001 | Country response | The e-health application gained new functions and modules, and the MyHealth mobile app was launched, giving patients access to their health records. | High | High | High |  |
-| [18] | 2024 | MKD-EU-2024-007 | EU requirement | Payment condition: increase the offer of e-services by 50 per cent, for example fiscal and health services. | High | High |  |  |
-| [19] | 2025 | MKD-EU-2025-003 | Country response | The Ministry of Health is the body responsible for eHealth. | High | Medium | High |  |
-| [20] | 2025 | MKD-GOV-2025-004 | Unresolved gap | MojTermin needs upgrading to deliver results for citizens and connecting with other systems. | High | Medium | High | machine translated |
-| [21] | 2024 | MKD-IO-2024-001 | Unresolved gap | Ensuring digital literacy among patients and providers would strengthen uptake of the Moj Termin reforms. | High | High | High |  |
+| [21] | 2024 | MKD-EU-2024-007 | EU requirement | Payment condition: increase the offer of e-services by 50 per cent, for example fiscal and health services. | High | High |  |  |
+| [22] | 2025 | MKD-EU-2025-003 | Country response | The Ministry of Health is the body responsible for eHealth. | High | Medium | High |  |
+| [23] | 2025 | MKD-GOV-2025-004 | Unresolved gap | MojTermin needs upgrading to deliver results for citizens and connecting with other systems. | High | Medium | High | machine translated |
+| [24] | 2024 | MKD-IO-2024-001 | Unresolved gap | Ensuring digital literacy among patients and providers would strengthen uptake of the Moj Termin reforms. | High | High | High |  |
 
 ## Open questions (agent synthesis)
 
 - The Commission's 2024 finding that referrals are on paper sits beside the screening report's account of a central tool that stores referrals; this is a noted difference rather than a confirmed conflict, and evidence on how referrals are issued in practice would settle it [7][14].
-- The platform for appointments and traceability of health data is rated insufficient_evidence because no item after 2023 says what became of it, so a later government or Commission account would settle its status [22][17].
+- The platform for appointments and traceability of health data is rated insufficient_evidence because no item after 2023 says what became of it, so a later government or Commission account would settle its status [25][20].
 - The reported reduction in waiting times rests on Commission statements with no figures, and ITU's statement on improved patient management is flagged as a possible misread, so waiting-time data from the health system would settle the size of the effect [4][15].
-- The planned connections of Moj Termin to other systems come from a machine-translated national strategy capped at Medium confidence, and none names Health Insurance Fund data, so a plan or report covering that link would settle whether the core requirement is being addressed [9][10][20].
+- The planned connections of Moj Termin to other systems come from a machine-translated national strategy capped at Medium confidence, and none names Health Insurance Fund data, so a plan or report covering that link would settle whether the core requirement is being addressed [9][10][23].
 
 ## Coverage and limits
 
-This brief rests on 33 in-scope evidence items from 10 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 4 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 36 in-scope evidence items from 11 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 4 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 
@@ -128,14 +131,20 @@ Each item is quoted word for word from its source. Machine-translated items show
 
 [16] **MKD-EU-2023-006-0039**. European Commission, *Economic reform programme of North Macedonia (2023-2025) - Commission assessment, SWD(2023) 109 final* (2023-04-18), p. 45. "The ‘Moj Termin’ eHealth system that was introduced in 2013 helped to significantly reduce waiting times and should be extended to primary care doctors."
 
-[17] **MKD-EU-2023-006-0041**. European Commission, *Economic reform programme of North Macedonia (2023-2025) - Commission assessment, SWD(2023) 109 final* (2023-04-18), p. 45. "The development of a platform is expected to facilitate appointments and ensure the traceability of health data."
+[17] **MKD-EU-2026-007-0094**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 75. "The national e -health system collects data only from the public healthcare, with missing data from private health facilities to complete patients’ files."
 
-[18] **MKD-EU-2024-007-0015**. European Commission, *Annex I to C(2024) 7375 - Requirements of Article 15(2)-(3) of Regulation 2024/1449* (2024-10-23), p. 44. "Increase the offer of e-services by 50% (better public services, i.e. fiscal, health sector)"
+[18] **MKD-EU-2026-007-0095**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 75. "The e -health application is functional, though improvements in the appointment system are needed."
 
-[19] **MKD-EU-2025-003-0194**. European Commission, *Screening report North Macedonia, Cluster 2 - Internal Market* (2025-02-04), p. 99. "The responsible body in this area is the Ministry of Health."
+[19] **MKD-EU-2026-007-0096**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 75. "The e -health application is functional, though improvements in the appointment system are needed."
 
-[20] **MKD-GOV-2025-004-0156**. Ministry of Digital Transformation, *Стратегија за развој на ИКТ СМАРТ/МК 2030 (ICT Development Strategy SMART/MK 2030)* (2025-10-20), p. 46. "„МојТермин“ како платформа се покажа како соодветна основа за дигитална трансформација на секторот здравство, но неопходна е негова надградба за испорачување на допирливи резултати за граѓаните и негово поврзување со другите системи ." Machine translation: ""MojTermin" as a platform has proved a suitable basis for digital transformation of the health sector, but it needs upgrading to deliver tangible results for citizens and connecting with other systems."
+[20] **MKD-EU-2023-006-0041**. European Commission, *Economic reform programme of North Macedonia (2023-2025) - Commission assessment, SWD(2023) 109 final* (2023-04-18), p. 45. "The development of a platform is expected to facilitate appointments and ensure the traceability of health data."
 
-[21] **MKD-IO-2024-001-0089**. World Bank Group, *North Macedonia Policy Notes* (2024-09), p. 42. "Ensuring digital literacy among patients and providers would strengthen the uptake of such reforms."
+[21] **MKD-EU-2024-007-0015**. European Commission, *Annex I to C(2024) 7375 - Requirements of Article 15(2)-(3) of Regulation 2024/1449* (2024-10-23), p. 44. "Increase the offer of e-services by 50% (better public services, i.e. fiscal, health sector)"
 
-[22] **MKD-EU-2022-006-0043**. European Commission, *Economic reform programme of North Macedonia (2022-2024) - Commission assessment, SWD(2022) 123 final* (2022-04-20), p. 46. "The development of a platform is expected to facilitate appointments and ensure the traceability of health data."
+[22] **MKD-EU-2025-003-0194**. European Commission, *Screening report North Macedonia, Cluster 2 - Internal Market* (2025-02-04), p. 99. "The responsible body in this area is the Ministry of Health."
+
+[23] **MKD-GOV-2025-004-0156**. Ministry of Digital Transformation, *Стратегија за развој на ИКТ СМАРТ/МК 2030 (ICT Development Strategy SMART/MK 2030)* (2025-10-20), p. 46. "„МојТермин“ како платформа се покажа како соодветна основа за дигитална трансформација на секторот здравство, но неопходна е негова надградба за испорачување на допирливи резултати за граѓаните и негово поврзување со другите системи ." Machine translation: ""MojTermin" as a platform has proved a suitable basis for digital transformation of the health sector, but it needs upgrading to deliver tangible results for citizens and connecting with other systems."
+
+[24] **MKD-IO-2024-001-0089**. World Bank Group, *North Macedonia Policy Notes* (2024-09), p. 42. "Ensuring digital literacy among patients and providers would strengthen the uptake of such reforms."
+
+[25] **MKD-EU-2022-006-0043**. European Commission, *Economic reform programme of North Macedonia (2022-2024) - Commission assessment, SWD(2022) 123 final* (2022-04-20), p. 46. "The development of a platform is expected to facilitate appointments and ensure the traceability of health data."

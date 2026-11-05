@@ -6,6 +6,10 @@ coverage_and_limits_report.md and, for run 1b, one comparator_brief_<issue_id>.m
 Facts and judgements come only from the registers, evidence files, entities, links and judgements.
 Narrative sections are read from review/<run_id>/stage12/narrative/<name>.md, written by the agent and
 labelled as such; any evidence item ID they cite is moved to the annex and replaced by a number.
+With --issues (and --coverage), rebuilds only the named issue briefs (and the coverage and limits report), as after a
+refresh (E18): other outputs are left as signed off. A validated judgement superseded by a later validated row is not
+used, and tier 2 ratings still proposed (evidence confidence, relevance, implementation status) are shown marked
+"(proposed)". A brief that uses evidence or judgements added after the last G7 pass reads as a draft for the next G7.
 With --factpacks, writes one plain fact pack per issue to review/<run_id>/stage12/factpacks/ instead,
 as the input for writing the narrative sections."""
 import argparse
@@ -16,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, register_role, run_record, run_requirements, run_items, runs_with_records, split_list  # noqa: E402
 
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
@@ -25,6 +29,8 @@ CHAIN = {"eu_requirement": "EU requirement", "country_response": "Country respon
 DRAFT = ("**Status: {status}.** It uses only judgements validated at G6 ({g6}) "
          "and, for comparator material, G6b ({g6b}). Sections marked *Agent synthesis* are written by the tool from that "
          "material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.")
+TIER2 = ("evidence_confidence", "relevance", "implementation_status")
+P = " (proposed)"
 
 
 MISSED = {"RUN-2026-01": "about one in eight in-scope claims in EU sources may have been missed (LIM-0025)"}
@@ -106,6 +112,11 @@ def load(root, run):
     mech = {r["mechanism_id"]: r["label"] for r in read_csv(root / "taxonomy" / "mechanisms.csv")[1]}
     ints = {r["intervention_id"]: r for r in read_csv(root / "entities" / "interventions.csv")[1]}
     ok = [j for j in js if j["review_status"] in ("validated", "overridden")]
+    gone = {j["supersedes"] for j in ok if j.get("supersedes")}
+    ok = [j for j in ok if j["judgement_id"] not in gone]  # a superseded row stays validated in the file but is no longer used
+    done = {(j["judgement_type"], j["object_id"], j["context_id"]) for j in ok}
+    prop = [j for j in js if j["review_status"] == "proposed" and j["run_id"] == run and j["judgement_type"] in TIER2
+            and (j["judgement_type"], j["object_id"], j["context_id"]) not in done]
     dups = {l["from_id"] for l in links if l["link_type"] == "same_as_earlier" and reg.get(l["from_id"].rsplit("-", 1)[0], {}).get("version_of")}
     by = {}
     for k, i in items.items():
@@ -114,7 +125,12 @@ def load(root, run):
         for x in i["pass2"]["reform_issue_ids"]:
             by.setdefault(x, []).append(k)
     fields = run_record(root, run)[0]
-    return dict(items=items, js=ok, links=links, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
+    gates = [r for r in read_csv(root / "registers" / "gate_log.csv")[1] if r["run_id"] == run and r["decision"] in ("pass", "pass_with_conditions")]
+    g7 = [r for r in gates if r["gate"] == "G7"]
+    g7date = g7[-1]["date"] if g7 else ""
+    g6 = [r["gate_decision_id"] for r in gates if r["gate"] == "G6"]
+    g6_at_g7 = [r["gate_decision_id"] for r in gates if r["gate"] == "G6" and (not g7date or r["date"] <= g7date)]
+    return dict(items=items, js=ok, prop=prop, links=links, g7=g7[-1]["gate_decision_id"] if g7 else "", g7date=g7date, g6=g6, g6_at_g7=g6_at_g7, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
                 start=fields.get("Time window", "")[:4], freeze=fields.get("Evidence freeze date", "")[:10])
 
 
@@ -131,13 +147,16 @@ def issue_view(D, issue):
     x, oid = issue["issue_id"], issue["issue_id"] + "@" + D["cc"]
     J = {j["judgement_type"]: j for j in D["js"] if j["object_id"] == oid}
     mine = set(D["by"].get(x, []))
-    conf = {j["object_id"]: j["value"] for j in D["js"] if j["judgement_type"] == "evidence_confidence"}
-    rel = {j["object_id"]: j["value"] for j in D["js"] if j["judgement_type"] == "relevance" and j["context_id"] == x}
+    conf = {j["object_id"]: j["value"] + P for j in D["prop"] if j["judgement_type"] == "evidence_confidence"}
+    conf.update({j["object_id"]: j["value"] for j in D["js"] if j["judgement_type"] == "evidence_confidence"})
+    rel = {j["object_id"]: j["value"] + P for j in D["prop"] if j["judgement_type"] == "relevance" and j["context_id"] == x}
+    rel.update({j["object_id"]: j["value"] for j in D["js"] if j["judgement_type"] == "relevance" and j["context_id"] == x})
     iids = sorted({n for k in mine for n in D["items"][k]["pass2"]["intervention_ids"] if n.startswith(f"INT-{D['cc']}")})
     status = {}
-    for j in D["js"]:
+    for j in D["js"] + [{**j, "value": j["value"] + P} for j in D["prop"]]:
         if j["judgement_type"] == "implementation_status" and j["object_id"] in iids:
-            if j["object_id"] not in status or j["context_id"] >= status[j["object_id"]]["context_id"]:
+            if j["object_id"] not in status or j["context_id"] > status[j["object_id"]]["context_id"] or (
+                    j["context_id"] == status[j["object_id"]]["context_id"] and not status[j["object_id"]]["value"].endswith(P)):
                 status[j["object_id"]] = j
     outc = []
     for l in D["links"]:
@@ -155,7 +174,27 @@ def issue_view(D, issue):
                   key=lambda k: (D["items"][k]["dates"].get("publication_date") or "", k))
     mt = sum(1 for k in mine if D["items"][k].get("machine_translated"))
     srcs = {D["items"][k]["_source"] for k in mine}
-    return dict(J=J, mine=mine, conf=conf, rel=rel, iids=iids, status=status, outc=outc, conflicts=conflicts, key=key, reqs=reqs, mt=mt, srcs=srcs)
+    d7 = D["g7date"]
+    shown = [*(conf.get(k, "") for k in key), *(rel.get(k, "") for k in key), *(j["value"] for j in status.values())]
+    new = bool(d7) and (any(j.get("review_date", "") > d7 for j in J.values())
+                        or any(D["reg"].get(D["items"][k]["_source"], {}).get("retrieval_date", "") > d7 for k in mine)
+                        or any(v.endswith(P) for v in shown))
+    return dict(J=J, mine=mine, conf=conf, rel=rel, iids=iids, status=status, outc=outc, conflicts=conflicts, key=key, reqs=reqs, mt=mt, srcs=srcs, new=new)
+
+
+def status_line(D, new):
+    """The status paragraph of an output: validated at the last G7, a draft before G7, or a draft rebuilt after it (E18)."""
+    if D["g7"] and not new:
+        s, g6 = f"Validated at G7 ({D['g7']}), internal output", (D["g6_at_g7"] or [""])[-1]
+    elif D["g7"]:
+        s, g6 = f"Draft, rebuilt after G7 ({D['g7']}) with evidence or judgements added since, for sign-off at the next G7", " and ".join(D["g6"])
+    else:
+        s, g6 = "Draft, prepared at stage 12 for sign-off at G7", (D["g6"] or [""])[-1]
+    out = DRAFT.format(status=s, g6=g6, g6b=D["g6b"] or "not held")
+    if D["g7"] and new:
+        out += (" Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; "
+                "values marked (proposed) are tier 2 ratings still to be reviewed.")
+    return out
 
 
 def narrative(root, run, name):
@@ -187,7 +226,7 @@ def issue_brief(root, run, D, issue):
     N = narrative(root, run, x)
     syn = lambda s: N.get(s) or "*Not yet written.*"
     mechs = "; ".join(f"{D['mech'].get(m, m)} ({m})" for m in split_list(issue["mechanism_ids"]))
-    out = [f"# Issue brief: {issue['label']}", "", f"{x} · {D['cname']} · {DRAFT}", "",
+    out = [f"# Issue brief: {issue['label']}", "", f"{x} · {D['cname']} · {status_line(D, V['new'])}", "",
            f"**Issue definition.** {issue['definition']} **Problem mechanisms:** {mechs}.", "",
            "## In brief (agent synthesis)", "", R.sub(syn("In brief"), names), "",
            "## Assessment (validated at G6)", ""]
@@ -207,6 +246,8 @@ def issue_brief(root, run, D, issue):
             j = V["status"].get(n, {})
             rows.append([names.get(n, n), D["ints"].get(n, {}).get("intervention_type", ""), j.get("value", "not judged"), R.sub(j.get("reason", ""), names)])
         out += ["Implementation status is a validated judgement (G6); adoption is never treated as success.", ""]
+        if any(r[2].endswith(P) for r in rows):
+            out[-1:-1] = ["Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7."]
         out += table(["Intervention", "Type", "Implementation status", "Reason"], rows)
     else:
         out += ["No country intervention is linked to this issue in the evidence.", ""]
@@ -241,7 +282,7 @@ def issue_brief(root, run, D, issue):
 
 def scope_overview(root, run, D):
     R, N = Refs(D["items"]), narrative(root, run, "scope_overview")
-    out = [f"# Scope overview: {D['cname']}, {run}", "", DRAFT, "",
+    out = [f"# Scope overview: {D['cname']}, {run}", "", status_line(D, any(issue_view(D, r)["new"] for r in D["issues"])), "",
            "## Summary (agent synthesis)", "", R.sub(N.get("Summary", "*Not yet written.*")), ""]
     groups = {}
     for r in D["issues"]:
@@ -266,7 +307,8 @@ def coverage(root, run, D):
     req = run_requirements(root, run)  # this run's lines only (E21)
     lim = read_csv(root / "registers" / "limits_log.csv")[1]
     reg = [r for r in D["reg"].values() if r["role"] == "target"]
-    out = [f"# Source coverage and limits report: {run}", "", DRAFT, "",
+    newer = bool(D["g7date"]) and any(r.get("retrieval_date", "") > D["g7date"] for r in D["reg"].values())
+    out = [f"# Source coverage and limits report: {run}", "", status_line(D, newer), "",
            "## Summary (agent synthesis)", "", R.sub(N.get("Summary", "*Not yet written.*")), "",
            "## Source requirements", ""]
     c = collections.Counter(r["status"] for r in req if r["role"] != "comparator")
@@ -298,7 +340,7 @@ def comparator_brief(root, run, D, issue):
     cases = {r["case_id"]: r for r in read_csv(root / "review" / run / "run1b" / "cases" / f"cases_{x}.csv")[1]}
     J = {(j["object_id"], j["judgement_type"]): j for j in D["js"]}
     V = issue_view(D, issue)
-    out = [f"# Comparator brief: {issue['label']}", "", f"{x} · {D['cname']} · {DRAFT} "
+    out = [f"# Comparator brief: {issue['label']}", "", f"{x} · {D['cname']} · {status_line(D, V['new'])} "
            "**Draft policy options at the end are internal drafts** and stay so after sign-off at G7 until a separate decision adapts them for an external audience.", "",
            f"## The issue in {D['cname']} (validated at G6)", "",
            f"**Unresolved gap ({V['J']['unresolved_gap']['value']}).** {R.sub(V['J']['unresolved_gap']['reason'], names)}", "",
@@ -349,14 +391,14 @@ def main(argv=None):
     ap.add_argument("--root")
     ap.add_argument("--run", help="run ID (default: the active run, the latest run with a run record)")
     ap.add_argument("--factpacks", action="store_true", help="write fact packs for the narrative sections instead of the outputs")
+    ap.add_argument("--issues", help="comma-separated issue IDs: rebuild only these issue briefs (refresh, E18); other outputs are left as they are")
+    ap.add_argument("--coverage", action="store_true", help="with --issues, or alone: also (or only) rebuild the coverage and limits report")
     ap.add_argument("--version", action="version", version=VERSION)
     a = ap.parse_args(argv)
     root = project_root(a.root)
     a.run = a.run or runs_with_records(root)[-1]
     D = load(root, a.run)
-    global DRAFT
-    g7 = [r for r in read_csv(root / "registers" / "gate_log.csv")[1] if r["run_id"] == a.run and r["gate"] == "G7" and r["decision"] in ("pass", "pass_with_conditions")]
-    DRAFT = DRAFT.format(g6=gate_id(root, a.run, "G6"), g6b=gate_id(root, a.run, "G6b") or "not held", status=f"Validated at G7 ({g7[-1]['gate_decision_id']}), internal output" if g7 else "Draft, prepared at stage 12 for sign-off at G7")
+    D["g6b"] = gate_id(root, a.run, "G6b")
     write = lambda p, lines: (p.parent.mkdir(parents=True, exist_ok=True), p.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8"))
     if a.factpacks:
         for r in D["issues"]:
@@ -364,8 +406,23 @@ def main(argv=None):
         print(f"wrote {len(D['issues'])} fact packs")
         return 0
     od = root / "outputs" / a.run
+    if a.issues or a.coverage:
+        want = [x.strip() for x in (a.issues or "").split(",") if x.strip()]
+        known = {r["issue_id"]: r for r in D["issues"]}
+        bad = [x for x in want if x not in known]
+        if bad:
+            print(f"unknown or unapproved issues: {', '.join(bad)}", file=sys.stderr)
+            return 2
+        for x in want:
+            write(od / f"issue_brief_{x}.md", issue_brief(root, a.run, D, known[x]))
+        if a.coverage:
+            write(od / "coverage_and_limits_report.md", coverage(root, a.run, D))
+        print(f"wrote {len(want)} issue briefs{' and the coverage report' if a.coverage else ''} to {od}")
+        return 0
     write(od / "scope_overview.md", scope_overview(root, a.run, D))
     for r in D["issues"]:
+        if r.get("created_in_run") not in ("", a.run) and r["issue_id"] not in D["by"]:
+            continue  # a shared issue added by a later run, with no evidence in this run (E19)
         write(od / f"issue_brief_{r['issue_id']}.md", issue_brief(root, a.run, D, r))
     write(od / "coverage_and_limits_report.md", coverage(root, a.run, D))
     for f in sorted((root / "review" / a.run / "run1b" / "cases").glob("cases_*.csv")):

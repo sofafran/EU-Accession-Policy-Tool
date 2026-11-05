@@ -1,6 +1,6 @@
 # Issue brief: Broadband planning and investment framework incomplete
 
-RI-TEC-014 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-014 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** National broadband targets, plans and investment are not aligned with EU Digital Decade targets, and EU funding instruments, State aid rules and backhaul studies are not used or in place. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Insufficient resources (MEC-09); Coordination failure (MEC-08).
 
@@ -34,12 +34,13 @@ The Commission asks North Macedonia to align its national broadband targets with
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
+Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
-| Law on Electronic Communications 2025 | law | adopted | The law was adopted on 27 June 2025 and amended on 29 December 2025; it entered into force on the eighth day after publication on 4 July 2025 and was due to apply from 1 June 2026, but no later item confirms application or reports measures under it, and the security supervision reported for 2025 rests on the earlier law. By-laws were due within 15 months (October 2026) and operators have 18 months to align (January 2027), so that deadline has not yet passed. The Commission's May 2026 finding that the step is not achieved, with a grace period to 30 June 2026 whose outcome is not in the evidence, concerns alignment, and 'draft' or 'proposal' wording in GOV-2025-004-0172 and GOV-2026-002-0100 is historic rather than a conflict. |
+| Law on Electronic Communications 2025 | law | adopted (proposed) | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
 | National long-term ICT Strategy (unadopted drafts) | strategy | insufficient_evidence | The drafts themselves were never adopted, but the Commission reported in November 2025 that a long-term ICT strategy and action plan had been adopted, recorded under SMART/MK: 2030 (ICT Development Strategy SMART/MK: 2030). No source says whether these drafts became that strategy or were withdrawn, so the analyst should decide whether to merge the entities. |
-| ICT Development Strategy SMART/MK: 2030 | strategy | adopted | The Commission reports in November 2025 that the country adopted a long-term ICT strategy and action plan, and the strategy text says some activities began before formal adoption. The goals in the text are targets, so they do not show delivery. The link between the Commission's sentence and SMART/MK is inferred from timing and is for the analyst to confirm. |
+| ICT Development Strategy SMART/MK: 2030 | strategy | implemented (proposed) | The Commission reports that, in line with the long-term ICT strategy and its action plan, the Ministry of Digital Transformation widened participation in data exchange and integrated Single Sign-On across service providers. This shows measures under the strategy being delivered, but no item measures delivery against its targets, and the link between the Commission's 'long-term ICT strategy' and SMART/MK rests on timing. |
 | National Cybersecurity Strategy 2018-2022 | strategy | reversed | The strategy ran out at the end of 2022 and its successor is the Cyber Security Strategy 2025-2028 (Cyber Security Strategy 2025-2028). No source says it was repealed, so reversed is used by analogy with a replaced law because the scale has no value for expiry. The Government's later strategy says implementation was not fully achieved. |
 | National Operational Broadband Plan 2019-2029 | strategy | implemented | The plan remains valid, and measures have been carried out in part: the Commission records 5G expanding to Skopje and biannual Broadband Competence Office reports. Commission reports for 2021 and 2022 record delay, and the Office's own report finds most 5G goals met but none of the three measures on 100 Mbps subscriptions implemented. These sources describe different parts of the plan, so they do not conflict. |
 | National Broadband Competence Office | institutional_change | in_practice | The office was set up in 2019, and the Commission says it publishes biannual reports on broadband development, which is specific evidence of it working. |
@@ -106,7 +107,7 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 ## Coverage and limits
 
-This brief rests on 84 in-scope evidence items from 24 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 22 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 86 in-scope evidence items from 25 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 22 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 

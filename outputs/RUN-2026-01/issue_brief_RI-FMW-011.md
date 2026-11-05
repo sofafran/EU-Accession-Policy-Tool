@@ -1,6 +1,6 @@
 # Issue brief: Access to healthcare for EU citizens through the European Health Insurance Card
 
-RI-FMW-011 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-FMW-011 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
 
 **Issue definition.** EU citizens can use the European Health Insurance Card or access medical services only where a bilateral arrangement exists, so access is not yet available to citizens of all Member States. **Problem mechanisms:** Legal or regulatory gap (MEC-01).
 
@@ -19,7 +19,7 @@ The Commission reports each year that citizens of only some Member States can us
 
 **What remains.** What remains is access through EHIC for citizens of the other Member States. Use with nine Member States is proposed as in practice (a status that is itself a proposal), and the Commission finds technical alignment satisfactory, but the card's use rests on separate arrangements and not on general entitlement.
 
-**Direction of travel.** The chapter scale was context only. Nine agreements or nine Member States are recorded in each report from 2020 to 2024, and no development in 2024 and 2025. The 14 Member States in the 2025 report is a noted difference of scope, not growth, because the five added have agreements that do not include EHIC.
+**Direction of travel.** The chapter scale is context only. Nine agreements or nine Member States are recorded in each report from 2020 to 2024, the 2026 report again says that nine Member States continue to have access to medical services, and the 2024, 2025 and 2026 reports record no development on the European Health Insurance Card. The 2025 report's fourteen Member States conflicts with the 2026 figure of nine, and both are cited; the earlier reading that the five extra states have agreements without the card would explain the difference, but the 2026 report does not say so, so the conflict is reported and not resolved.
 
 **Priority.** This is a repeated finding across six reports, but the EHIC is not named in the key recommendation, which refers only to healthcare insurance agreements. The Commission treats technical alignment as satisfactory and it overlaps with RI-FMW-008.
 
@@ -48,7 +48,7 @@ Implementation status is a validated judgement (G6); adoption is never treated a
 
 ## Conflicting evidence
 
-No confirmed conflict between sources under this issue.
+- The 2025 report names fourteen Member States with access; this report says nine 'continue' to have access. Reported for the analyst, not resolved. [11][9]
 
 ## Key evidence
 
@@ -57,7 +57,7 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
 | [1] | 2024 | MKD-EU-2024-001 | EU requirement | No development on the EHIC: citizens of only nine EU Member States can access medical services in the country. | High | High | High |  |
-| [11] | 2025 | MKD-EU-2025-003 | Country response | The EHIC is used unilaterally with nine EU Member States, and agreements could soon be reached with three more. | High | Medium | High |  |
+| [12] | 2025 | MKD-EU-2025-003 | Country response | The EHIC is used unilaterally with nine EU Member States, and agreements could soon be reached with three more. | High | Medium | High |  |
 | [7] | 2025 | MKD-EU-2025-003 | EU requirement | Alignment with EHIC technical needs is satisfactory, with bilateral agreements allowing EU citizens to use the EHIC. | High | High | High |  |
 | [2] | 2025 | MKD-EU-2025-001 | EU requirement | There was no development on the European Health Insurance Card. | High | High | High |  |
 | [3] | 2020 | MKD-EU-2020-001 | Implementation | There are still nine agreements between North Macedonia and EU Member States on using the European Health Insurance Card. | High | High | High |  |
@@ -66,18 +66,20 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 | [6] | 2023 | MKD-EU-2023-001 | Country response | Citizens of nine EU Member States can use the European Health Insurance Card at contracted healthcare institutions in the country. | High | High | High |  |
 | [9] | 2025 | MKD-EU-2025-001 | EU requirement | Citizens of fourteen named Member States have access to medical services in public and some private healthcare institutions in the country. | High | High | High |  |
 | [10] | 2025 | MKD-EU-2025-003 | Country response | Social security agreements with nine Member States include EHIC use; agreements with six others, and with Sweden and Denmark, do not cover it. | High | Medium | High |  |
-| [12] | 2025 | MKD-EU-2025-001 | EU requirement | The country should conclude social security and healthcare agreements with Member States and prepare administratively for accession and electronic exchange of social security data. | High | High |  |  |
+| [13] | 2026 | MKD-EU-2026-007 | EU requirement | There have been no developments on the European Health Insurance Card. | High | High (proposed) | High (proposed) |  |
+| [11] | 2026 | MKD-EU-2026-007 | EU requirement | Nine EU Member States continue to have access to medical services in North Macedonia for their citizens. | High | Medium (proposed) | High (proposed) |  |
+| [14] | 2025 | MKD-EU-2025-001 | EU requirement | The country should conclude social security and healthcare agreements with Member States and prepare administratively for accession and electronic exchange of social security data. | High | High |  |  |
 
 ## Open questions (agent synthesis)
 
-- The sources describe the basis for EHIC use differently, with the country stating unilateral use and the Commission stating bilateral agreements, and the agreement texts or a Health Insurance Fund statement would be needed to settle which applies [11][7].
-- The country reports that agreements could soon be reached with Hungary, Romania and Croatia, but no source records a new agreement, so later Commission reports or ministry lists would show whether this has happened [11].
+- The sources describe the basis for EHIC use differently, with the country stating unilateral use and the Commission stating bilateral agreements, and the agreement texts or a Health Insurance Fund statement would be needed to settle which applies [12][7].
+- The country reports that agreements could soon be reached with Hungary, Romania and Croatia, but no source records a new agreement, so later Commission reports or ministry lists would show whether this has happened [12].
 - The status of the bilateral agreements rests on government reporting alone, and independent confirmation of how they are applied, such as data on EHIC claims handled by healthcare institutions, would strengthen the assessment.
 - No outcome data show how many EU citizens actually use the card in the country, and usage or reimbursement figures from the Health Insurance Fund would help to judge results.
 
 ## Coverage and limits
 
-This brief rests on 11 in-scope evidence items from 7 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 0 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
+This brief rests on 13 in-scope evidence items from 8 sources dated from 2020 to the evidence freeze of 29 October 2026, of which 0 are machine translated. It covers North Macedonia only and the scope of RUN-2026-01; about one in eight in-scope claims in EU sources may have been missed (LIM-0025). Full limits are in the coverage and limits report.
 
 ## Annex: evidence items
 
@@ -103,6 +105,10 @@ Each item is quoted word for word from its source. Machine-translated items show
 
 [10] **MKD-EU-2025-003-0198**. European Commission, *Screening report North Macedonia, Cluster 2 - Internal Market* (2025-02-04), p. 103. "North Macedonia has social security agreements in place that include the use of the European Health Insurance card (EHIC) with Slovenia, Czechia, Germany, Bulgaria, Luxembourg the Netherlands, Belgium, Austria, and Slovakia. It has social care agreements that do not include EHIC use with France, Hungary, Italy, Croatia, Romania, and Poland, similar agreements with Sweden and Denmark do not cover health care."
 
-[11] **MKD-EU-2025-003-0100**. European Commission, *Screening report North Macedonia, Cluster 2 - Internal Market* (2025-02-04), p. 29. "The European Health Insurance card (EHIC) is used on unilateral basis with 9 EU Member states (Slovenia, Czechia, Germany, Bulgaria, The Netherlands, Belgium, Austria, Slovakia, and Luxembourg , and agreements could soon be reached with Hungary, Romania and Croatia)."
+[11] **MKD-EU-2026-007-0084**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 71. "Nine EU Member States continue to have access to medical services in public and some private healthcare institutions in North Macedonia."
 
-[12] **MKD-EU-2025-001-0014**. European Commission, *North Macedonia 2025 Report, SWD(2025) 753 final* (2025-11-04), p. 11. "continue to negotiate and conclude bilateral agreements on social security coordination and healthcare insurance with EU Member States and put in place administrative measures to prepare for accession and for electronic exchange of social security data."
+[12] **MKD-EU-2025-003-0100**. European Commission, *Screening report North Macedonia, Cluster 2 - Internal Market* (2025-02-04), p. 29. "The European Health Insurance card (EHIC) is used on unilateral basis with 9 EU Member states (Slovenia, Czechia, Germany, Bulgaria, The Netherlands, Belgium, Austria, Slovakia, and Luxembourg , and agreements could soon be reached with Hungary, Romania and Croatia)."
+
+[13] **MKD-EU-2026-007-0083**. European Commission, *North Macedonia 2026 Report, SWD(2026) 693 final* (2026-11-04), p. 71. "There have been no developments on the European Health Insurance Card"
+
+[14] **MKD-EU-2025-001-0014**. European Commission, *North Macedonia 2025 Report, SWD(2025) 753 final* (2025-11-04), p. 11. "continue to negotiate and conclude bilateral agreements on social security coordination and healthcare insurance with EU Member States and put in place administrative measures to prepare for accession and for electronic exchange of social security data."

@@ -528,6 +528,33 @@ def main():
             ok = {"Ambiguous queue", "Unmatched queue", "Spot check", "Contradictions", "Out of scope"} <= set(wb5.sheetnames)
         check("export_review.py", "G5 package: queues, spot check, contradictions and out-of-scope items", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G5_classification.xlsx").unlink(missing_ok=True)
+        # G5 lists are scoped to the run (1.17.0, scaling note S10): another run's out-of-scope item and queue row stay out
+        mdx = proj / "evidence" / "MDA" / "MDA-EU-2098-001.json"
+        mdx.parent.mkdir(parents=True, exist_ok=True)
+        md_item = item("MDA-EU-2098-001-0001", "Another run's claim.", page=1)
+        md_item["country"] = "MDA"
+        md_item["pass2"]["classification_status"] = "out_of_scope"
+        md_ev = evidence("MDA-EU-2098-001", [md_item])
+        md_ev["extraction"].update({"run_id": "RUN-2026-02", "run_country": "MDA", "role": "target"})
+        mdx.write_text(json.dumps(md_ev), encoding="utf-8")
+        uqp = proj / "taxonomy" / "unmatched_queue.csv"
+        uq_before = uqp.read_text(encoding="utf-8")
+        uqp.write_text(uq_before.rstrip("\n") + "\n9001,MDA-EU-2098-001-0001,Test label,Test definition.,,open,,\n", encoding="utf-8")
+        (rv.parent / "RUN-2026-02").mkdir(exist_ok=True)
+        r1 = run(proj, "export_review.py", "G5", "--run", "RUN-2026-01")
+        r2 = run(proj, "export_review.py", "G5", "--run", "RUN-2026-02")
+        ok = r1.returncode == 0 and r2.returncode == 0
+        if ok:
+            w1, w2 = load_workbook(rv / "G5_classification.xlsx"), load_workbook(rv.parent / "RUN-2026-02" / "G5_classification.xlsx")
+            ids = lambda wb, sh: [row[0] for row in wb[sh].iter_rows(min_row=2, values_only=True)]
+            ok = ("MDA-EU-2098-001-0001" not in ids(w1, "Out of scope") and 9001 not in ids(w1, "Unmatched queue") and "9001" not in ids(w1, "Unmatched queue")
+                  and ids(w2, "Out of scope") == ["MDA-EU-2098-001-0001"] and [str(x) for x in ids(w2, "Unmatched queue")] == ["9001"]
+                  and "Second-pass yield" in w2.sheetnames and "Classification summary" in w2.sheetnames)
+        check("export_review.py", "G5 package lists only the run's items, queue rows and links (1.17.0)", ok, r1.stderr[-300:] + r2.stderr[-300:])
+        uqp.write_text(uq_before, encoding="utf-8")
+        mdx.unlink()
+        (rv / "G5_classification.xlsx").unlink(missing_ok=True)
+        (rv.parent / "RUN-2026-02" / "G5_classification.xlsx").unlink(missing_ok=True)
         ri = proj / "taxonomy" / "reform_issues.csv"
         drafted = ri.read_text(encoding="utf-8")
         ri.write_text(drafted.replace(",draft,", ",approved,"), encoding="utf-8")
@@ -564,6 +591,38 @@ def main():
             ok = (wbr.sheetnames[:2] == ["Decisions needed", "Judgement changes"] and ch and ch[0][2:7] == ("JDG-900001", "persistent", "JDG-900002", "improving", "value")
                   and lk and lk[0][5] == "contradicts")
         check("export_review.py", "G6-refresh package: decisions first, old against new judgement, contradictions first (1.16.0)", ok, r.stderr[-300:] + r.stdout[-300:])
+        # G7-refresh (1.18.0): outputs with their state and flags, proposed statuses beside the previous ones, ratings by exception
+        jp.write_text(j_before.rstrip("\n") + "\n"
+                      "JDG-900003,implementation_status,intervention,INT-TST-0001,2026-10-29,adopted,Old status.,,agent,validated,,Sofia,2026-10-30,,,1.2,0.4,1.1,RUN-2026-01\n"
+                      "JDG-900004,implementation_status,intervention,INT-TST-0001,2026-11-05,implemented,New status.,,agent,proposed,,,,,,1.2,0.4,1.1,RUN-2026-01\n"
+                      f"JDG-900005,evidence_confidence,item,{sid}-0001,,High,Rule.,{sid}-0001,agent,proposed,,,,,,1.2,0.4,1.1,RUN-2026-01\n"
+                      f"JDG-900006,evidence_confidence,item,{sid}-0002,,Medium,Contested.,{sid}-0002,agent,proposed,,,,,JDG-900003,1.2,0.4,1.1,RUN-2026-01\n", encoding="utf-8")
+        (rv / "G7_refresh_decisions.csv").write_text("decision_id,decision_needed,kind,what_the_files_show,agent_recommendation,what_changes\nG7R-D01,Test?,safe,x,y,z\n", encoding="utf-8")
+        (rv / "refresh").mkdir(parents=True, exist_ok=True)
+        (rv / "refresh" / "output_flags.csv").write_text("output,flag\ncomparator_brief_RI-TST-001.md,Review at G7\n", encoding="utf-8")
+        od = proj / "outputs" / "RUN-2026-01"
+        had_outputs = (proj / "outputs").exists()
+        od.mkdir(parents=True, exist_ok=True)
+        (od / "issue_brief_RI-TST-001.md").write_text("**Status: Draft, rebuilt after G7 (GATE-0012).** High (proposed)\n", encoding="utf-8")
+        (od / "comparator_brief_RI-TST-001.md").write_text("**Status: Validated at G7 (GATE-0012), internal output.**\n", encoding="utf-8")
+        r = run(proj, "export_review.py", "G7-refresh", "--run", "RUN-2026-01")
+        ok = r.returncode == 0 and (rv / "G7_refresh.xlsx").exists()
+        if ok:
+            wb7 = load_workbook(rv / "G7_refresh.xlsx")
+            outs = [row for row in wb7["Outputs"].iter_rows(min_row=2, values_only=True)]
+            imp7 = [row for row in wb7["Implementation status"].iter_rows(min_row=2, values_only=True)]
+            rat7 = [row for row in wb7["Confidence and relevance"].iter_rows(min_row=2, values_only=True)]
+            ok = (wb7.sheetnames[0] == "Decisions needed" and outs and outs[0][0] == "comparator_brief_RI-TST-001.md" and outs[0][5] == "Review at G7"
+                  and any(o[0] == "issue_brief_RI-TST-001.md" and o[2] == "rebuilt (Draft)" and o[3] == "1" for o in outs)
+                  and imp7 and imp7[0][2] == "JDG-900003" and imp7[0][7] == "implemented" and imp7[0][8] == "changed"
+                  and rat7 and rat7[0][0] == "JDG-900006")
+        check("export_review.py", "G7-refresh package: flagged outputs first, proposed status beside the previous one, superseding ratings first (1.18.0)", ok, r.stderr[-300:] + r.stdout[-300:])
+        for name in ("G7_refresh.xlsx", "G7_refresh_decisions.csv", "refresh/output_flags.csv"):
+            (rv / name).unlink(missing_ok=True)
+        for name in ("issue_brief_RI-TST-001.md", "comparator_brief_RI-TST-001.md"):
+            (od / name).unlink(missing_ok=True)
+        if not had_outputs:
+            shutil.rmtree(proj / "outputs", ignore_errors=True)  # later tests read the absence of outputs as "before G7"
         jp.write_text(j_before, encoding="utf-8")
         lp.write_text(l_before, encoding="utf-8")
         for name in ("G6_refresh.xlsx", "G6_refresh_decisions.csv"):
@@ -717,10 +776,22 @@ def main():
         r = subprocess.run([sys.executable, str(bo / "tools" / "build_outputs.py"), "--run", "RUN-2026-01", "--root", str(bo)], capture_output=True, text=True)
         built, ref = bo / "outputs" / "RUN-2026-01", ROOT / "outputs" / "RUN-2026-01"
         # The coverage report lists the limits as they now stand (the log grew after G7), so it is compared by structure only.
+        # After the refresh (E18) the committed outputs are the 41 briefs rebuilt for the refresh G7 and the rest as signed off at G7.
+        # A file still signed off at G7 that a full rebuild would now mark "rebuilt after G7" is awaiting the refresh G7
+        # (scope overview, comparator briefs and two briefs whose interventions have new statuses: review/RUN-2026-01/refresh/output_flags.csv),
+        # so it is listed and skipped; every other file must rebuild byte for byte.
         same = sorted(f.name for f in ref.glob("*.md") if f.name != "coverage_and_limits_report.md")
-        diff = [n for n in same if not (built / n).exists() or (built / n).read_bytes() != (ref / n).read_bytes()]
-        check("build_outputs.py", "rebuilds the G7 issue, scope and comparator briefs byte for byte", r.returncode == 0 and same and not diff,
+        pending = [n for n in same if (built / n).exists() and "Validated at G7" in (ref / n).read_text(encoding="utf-8").split("\n\n", 2)[1][:400]
+                   and "rebuilt after G7" in (built / n).read_text(encoding="utf-8")[:600]]
+        flagged = {row["output"] for row in csv.DictReader((ROOT / "review" / "RUN-2026-01" / "refresh" / "output_flags.csv").open(encoding="utf-8"))} \
+            if (ROOT / "review" / "RUN-2026-01" / "refresh" / "output_flags.csv").exists() else set()
+        diff = [n for n in same if n not in pending and (not (built / n).exists() or (built / n).read_bytes() != (ref / n).read_bytes())]
+        check("build_outputs.py", "rebuilds the G7 and refresh issue, scope and comparator briefs byte for byte", r.returncode == 0 and same and not diff,
               (r.stderr[-300:] or "") + f" differ: {diff[:5]}")
+        check("build_outputs.py", "every output awaiting the refresh G7 is flagged for review", set(pending) <= flagged, f"not flagged: {sorted(set(pending) - flagged)}")
+        r2 = subprocess.run([sys.executable, str(bo / "tools" / "build_outputs.py"), "--run", "RUN-2026-01", "--root", str(bo), "--issues", "RI-TEC-036"], capture_output=True, text=True)
+        check("build_outputs.py", "--issues rebuilds only the named brief (1.3.0)", r2.returncode == 0 and "wrote 1 issue briefs" in r2.stdout
+              and (built / "issue_brief_RI-TEC-036.md").read_bytes() == (ref / "issue_brief_RI-TEC-036.md").read_bytes(), r2.stdout + r2.stderr[-300:])
         cov = (built / "coverage_and_limits_report.md").read_text(encoding="utf-8") if (built / "coverage_and_limits_report.md").exists() else ""
         check("build_outputs.py", "coverage and limits report builds with its sections", all(h in cov for h in ("## Source requirements", "## Reliance on machine translation", "## Active limits")))
         import re as _re
