@@ -1,0 +1,1150 @@
+{
+  "source_id": "MKD-EU-2026-009",
+  "extraction": {
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.4",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "pages_processed": "1-62",
+    "codebook_version": "1.2",
+    "themes_version": "1.3",
+    "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4 and themes 1.3 (RUN-2026-01 refresh, E18), following MKD-EU-2025-002. Multi-country Communication covering ten enlargement countries, with Annexes 1 to 6 (pages 31-62): only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, artificial intelligence, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, roaming, wallet, identification, trust services, online, ICT, internet, workers, social security, EURES, EHIC, labour, connectivity, technology) and full reading of sections I.2 security and resilience (pages 9-10), II (pages 11-19), III, IV and V (pages 19-30) including the North Macedonia paragraph (page 28). Annexes 1 to 4 (roadmaps for Montenegro, Albania, Moldova and Ukraine) do not concern North Macedonia; Annexes 5 and 6 have no in-scope indicators (the 'basic digital skills' rows are not linked to an in-scope recommendation, R2). Period covered left empty: the register gives none. Text-file page numbers are printed page numbers plus one in the Communication and plus two in the annexes. Left out: cybercrime and misuse of new technologies by criminals (pages 8-9, R21); the Roam Like at Home extension to Ukraine and Moldova (page 14) and other passages only on Ukraine, Moldova, Georgia, Serbia, Bosnia and Herzegovina or Türkiye; SEPA (digital finance); the Common Regional Market's 'digitalising procedures' and general references to the green and digital transitions in the Growth Plan and IPA (incidental); digital skills (page 17). The North Macedonia paragraph in the conclusions (page 28) has no Chapter 2 or technology claim. Roam Like at Home (refresh plan, LIM-0037): the Communication says only that 'Work is advancing on extending the scheme to the Western Balkans' (item -0004); it does not repeat the Council's June 2026 authorisation of negotiations. The country report adds the Commission's February 2026 proposal (MKD-EU-2026-007, page 66). Second-pass check by a different agent (G3 condition 2 of GATE-0004): 2 items added (-0015, a general sentence split from -0011, and -0016, the horizontal passage on cybersecurity and interconnected networks, page 10), both theme_doubtful and out of scope; -0011 trimmed to one sentence; 14 first-pass items, yield 14 per hundred. See review/RUN-2026-01/second_pass/MKD-EU-2026-009.csv."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-01",
+    "rules_version": "0.3",
+    "taxonomy_version": "1.1",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MKD-EU-2026-009-0001",
+      "information_type": "finding",
+      "stated_text": "Foreign information manipulation and interference, cyberattacks and other hybrid threats are increasingly targeting democratic institutions, elections, public trust and the accession process itself.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Foreign interference, cyberattacks and other hybrid threats increasingly target democratic institutions, elections, public trust and the accession process.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "I. PROTECTING EUROPE – DEMOCRACY, SECURITY AND RESILIENCE > 2. Internal security, borders and migration > Security and resilience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "democratic institutions, elections, public trust and the accession process",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal. Cyberattacks are one element of hybrid threats; the passage does not focus on the security of networks and information systems, hence theme_doubtful, as for MKD-EU-2025-002-0003.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Hybrid threats in general; no approved issue fits, as for MKD-EU-2025-002-0003."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0002",
+      "information_type": "intervention",
+      "stated_text": "The EU rolled out WiFi4WB, preparing the installation of free Wi -Fi hotspots in around 500 municipalities across the region to foster digital connectivity and inclusion.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The EU rolled out WiFi4WB, preparing free Wi-Fi hotspots in about 500 municipalities in the region.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 1. Accelerating economic and social convergence through reforms and investment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "European Union",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "municipalities across the region",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "WiFi4WB",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Regional; no breakdown by country. Same sentence as the next item (metric).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-EU-0036"
+        ],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0003",
+      "information_type": "metric",
+      "stated_text": "The EU rolled out WiFi4WB, preparing the installation of free Wi -Fi hotspots in around 500 municipalities across the region to foster digital connectivity and inclusion.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Free Wi-Fi hotspots are being prepared in around 500 municipalities across the region.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 1. Accelerating economic and social convergence through reforms and investment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "municipalities across the region",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Municipalities across the region where WiFi4WB hotspots are being prepared",
+        "value": 500,
+        "unit": "municipalities (around)",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Regional figure. Same sentence as the previous item.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-EU-0036"
+        ],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0004",
+      "information_type": "finding",
+      "stated_text": "Progress during the reporting period was particularly visible in telecommunications, payments, customs, taxation, digital services, energy and industrial products.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Gradual integration progress was most visible in telecommunications, payments, customs, taxation, digital services, energy and industrial products.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 2. Integrating into the single market before accession",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal. Telecommunications and digital services are two of seven areas of gradual integration listed.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0005",
+      "information_type": "intervention",
+      "stated_text": "Work is advancing on extending the scheme to the Western Balkans.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Work is advancing on extending the EU's Roam Like at Home area to the Western Balkans.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 2. Integrating into the single market before accession",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Western Balkans",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Extension of the EU's Roam Like at Home area to the Western Balkans",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'The scheme' is the EU's Roam Like at Home area (previous sentence, on Ukraine and Moldova, not extracted). The communication does not mention the Council's June 2026 authorisation of negotiations (LIM-0037).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-EU-0043"
+        ],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0006",
+      "information_type": "recommendation",
+      "stated_text": "Further digitalisation and interoperability of customs systems will be essential for accession preparedness.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further digitalisation and interoperability of customs systems will be essential for accession preparedness.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 2. Integrating into the single market before accession",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal. Customs IT systems are out unless the claim concerns connection to EU electronic systems (rules 0.4, R22); interoperability may mean with EU customs systems, but the text does not say so, hence theme_doubtful, as for MKD-EU-2025-002-0010.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0007",
+      "information_type": "finding",
+      "stated_text": "Enlargement countries continue to develop digital public services and digital identity frameworks aligned with EU standards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries continue to develop digital public services and digital identity frameworks aligned with EU standards.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 3. Connecting Europe",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0008",
+      "information_type": "intervention",
+      "stated_text": "European Digital Innovation Hubs and cooperation on high- performance computing and AI are helping businesses and public administrations develop the capabilities needed for the digital transition.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digital Innovation Hubs and cooperation on high-performance computing and AI help businesses and administrations build digital capabilities.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 3. Connecting Europe",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "businesses and public administrations",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "European Digital Innovation Hubs; cooperation on high-performance computing and AI",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033",
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-EU-0006"
+        ],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0009",
+      "information_type": "recommendation",
+      "stated_text": "Further investment will be required to close infrastructure gaps, improve cross -border connections and ensure that transport, energy and digital networks are resilient, secure and interoperable with those of the Union.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "More investment is needed so that transport, energy and digital networks are resilient, secure and interoperable with the EU's.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 3. Connecting Europe",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-CYBER",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal. Digital networks are one of three network types named.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0010",
+      "information_type": "finding",
+      "stated_text": "Enlargement countries are gradually aligning with the EU digital acquis and developing digital infrastructure, public services and innovation ecosystems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries are gradually aligning with the EU digital acquis and developing digital infrastructure, services and innovation ecosystems.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 5. Investing in the green and digital transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal; the digital transition is described only in general terms, hence theme_doubtful, as for MKD-EU-2025-002-0004.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement on the digital transition; no single approved issue fits, as for MKD-EU-2025-002-0004."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0011",
+      "information_type": "intervention",
+      "stated_text": "This is the case with the greater AI capacity available following the set -up of three AI factory antennas in Moldova, North Macedonia and Serbia.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Three AI factory antennas, in Moldova, North Macedonia and Serbia, have increased AI capacity.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 5. Investing in the green and digital transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": "ACT-INT-0023"
+        },
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": "ACT-MKD-0001"
+        },
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": "AI factory antennas",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'This is the case' refers to the previous sentence on cooperation on AI, high-performance computing, digital identity and cybersecurity (item -0015). Trimmed to one sentence at the second pass (two claims of different types).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001",
+          "RI-TEC-033"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MKD-0350"
+        ],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0012",
+      "information_type": "finding",
+      "stated_text": "Further opportunities exist in the areas of digital identity, transport, public procurement, industrial goods, energy, and emerging technologies, where appropriate.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further gradual integration opportunities exist in digital identity, transport, public procurement, industrial goods, energy and emerging technologies.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > A common framework for gradual integration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement partners",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal. Digital identity is named only in a list of possible areas of gradual integration, hence theme_doubtful, as for MKD-EU-2025-002-0006.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital identity named only in a list of future gradual integration areas; as for MKD-EU-2025-002-0006."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0013",
+      "information_type": "recommendation",
+      "stated_text": "Enlargement countries need to strengthen foreign investment screening, export controls, cybersecurity, the protection of critical infrastructure and measures against sanctions circumvention and economic coercion, gradually aligning with the Union’s economic security framework.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries must strengthen investment screening, export controls, cybersecurity and critical infrastructure protection, aligning with EU economic security.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > A common framework for gradual integration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal. Only the cybersecurity element is in scope.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0014",
+      "information_type": "recommendation",
+      "stated_text": "In addition, enlargement countries should progressively strengthen their alignment and cooperation with the Union on hybrid threats, economic security, cybersecurity, critical infrastructure, border management and preparedness.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries should progressively strengthen alignment and cooperation with the EU on hybrid threats, cybersecurity and related areas.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "V. CONCLUSIONS AND RECOMMENDATIONS > I.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal. Only the cybersecurity element is in scope.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0015",
+      "information_type": "finding",
+      "stated_text": "Cooperation on AI, high -performance computing, digital identity and cybersecurity can accelerate productivity growth and contribute to Europe’s technological capacity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cooperation on AI, high-performance computing, digital identity and cybersecurity can raise productivity and Europe's technological capacity.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 5. Investing in the green and digital transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-EID",
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal general statement on what cooperation can achieve. Added at the second pass (G3 condition 2 of GATE-0004).",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement; no single approved issue fits, as for MKD-EU-2025-002-0004."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0016",
+      "information_type": "finding",
+      "stated_text": "Cybersecurity, the protection of critical infrastructure, civil protection and preparedness are equally important. European energy, transport, digital and communications networks are increasingly interconnected, meaning vulnerabilities outside the Union can have direct cross - border consequences.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cybersecurity and critical infrastructure matter because interconnected digital and other networks carry cross-border vulnerabilities.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "I. PROTECTING EUROPE – DEMOCRACY, SECURITY AND RESILIENCE > 2. Internal security, borders and migration > Security and resilience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MKD",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal. Cybersecurity is one element of a mixed list (critical infrastructure, civil protection). One claim over two sentences. Added at the second pass (G3 condition 2 of GATE-0004).",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement on interconnected networks; no single approved issue fits."
+      }
+    }
+  ]
+}

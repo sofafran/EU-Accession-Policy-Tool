@@ -43,6 +43,25 @@ The order below is Sofia's. Points to check are starting points for each run's G
 
 Runs go one at a time, in this order. The order was changed by decision E20 (3 November 2026): Moldova first, then Montenegro, with the other runs unscheduled until the scaling review below. Each run's evidence freeze date is set by Sofia at its G0. It is set after the 2026 Enlargement Package (due 4 November 2026) where possible, so that each run includes its 2026 report.
 
+## 2026 Enlargement Package: availability for future runs
+
+Checked on 5 November 2026 on the Commission's strategy and reports page. The package was adopted on 4 November 2026: the 2026 Communication on EU enlargement policy, COM(2026) 690 final (registered as MKD-EU-2026-009, horizontal, used by RUN-2026-01 and RUN-2026-02), and a report and factsheet for each of the ten countries. Only the North Macedonia and Moldova documents are downloaded and registered. For the other countries nothing is downloaded, registered or analysed: each run finds and registers its own report at stage 2 and confirms its G0 and G1 points from it. Report page URLs (the PDF link is on each page):
+
+| Country | Run | 2026 report | Status |
+|---|---|---|---|
+| North Macedonia | RUN-2026-01 | enlargement.ec.europa.eu/north-macedonia-report-2026_en (SWD(2026) 693 final) | Registered, MKD-EU-2026-007; factsheet MKD-EU-2026-008 |
+| Moldova | RUN-2026-02 | enlargement.ec.europa.eu/moldova-report-2026_en (SWD(2026) 698 final) | Registered, MDA-EU-2026-012; factsheet MDA-EU-2026-013 |
+| Montenegro | RUN-2026-03 (next, held under E20) | enlargement.ec.europa.eu/montenegro-report-2026_en | Published; not downloaded |
+| Albania | RUN-2026-04 | enlargement.ec.europa.eu/albania-report-2026_en | Published; not downloaded |
+| Ukraine | RUN-2026-05 | enlargement.ec.europa.eu/ukraine-report-2026_en | Published; not downloaded |
+| Serbia | RUN-2026-06 | enlargement.ec.europa.eu/serbia-report-2026_en | Published; not downloaded |
+| Bosnia and Herzegovina | RUN-2026-07 | enlargement.ec.europa.eu/bosnia-and-herzegovina-report-2026_en | Published; not downloaded |
+| Georgia | RUN-2026-08 | enlargement.ec.europa.eu/georgia-report-2026_en | Published; not downloaded |
+| Türkiye | RUN-2026-09 | enlargement.ec.europa.eu/turkiye-report-2026_en | Published; not downloaded |
+| Kosovo | RUN-2026-10 | enlargement.ec.europa.eu/kosovo-report-2026_en | Published; not downloaded |
+
+Each country also has a 2026 factsheet (`eu-and-<country>-factsheet-enlargement-package-2026_en`). The package also includes pages on gradual integration strands, the state of play of negotiations per country and the accession process step by step; the state-of-play page is a useful starting point for each run's G0 check of open clusters. The Commission said before publication that the package would include indicative roadmaps for Montenegro, Albania, Moldova and Ukraine: check at each run's stage 2 whether they were issued as separate documents.
+
 ## Controlled scaling (E20)
 
 Decision E20 (3 November 2026). Sofia moved the rollout into a controlled scaling phase:

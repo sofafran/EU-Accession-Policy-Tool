@@ -5,13 +5,13 @@ Status: **closed: completed North Macedonia alpha (G8 passed, GATE-0013, 2 Novem
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-01 |
-| Current stage | Refresh R0: prepared, awaiting the 2026 Enlargement Package (E18, `runs/RUN-2026-01/refresh_plan.md`); closed after stage 13 (G8 passed 2026-11-02; no new run started; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
+| Current stage | Refresh R1 extraction and classification (P2 stage 8 and P3 stage 9, started 2026-11-05; refresh sources registered the same day; E18, `runs/RUN-2026-01/refresh_plan.md`); closed after stage 13 (G8 passed 2026-11-02; no new run started; update at the start of every stage, for example `9 Classify and link` or `1b step 3`) |
 | Purpose | Alpha product and methodology test. Run 1 produces a North Macedonia diagnostic (run 1a) and a comparator pilot (run 1b), and tests the end-to-end workflow, source collection and processing, extraction and classification, taxonomy and matching, the human review gates, assessment and judgement, outputs, and the usefulness of the review page. Lessons are recorded in the alpha learning log to inform scaling to further chapters, clusters and countries |
 | Target country | North Macedonia (MKD) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
 | Comparator scope | Run 1b only: RI-FMW-001, RI-TEC-028 and RI-TEC-036, selected at G6 (GATE-0007), with two or three comparator countries each, approved at G1b |
 | Time window | 2020-01-01 to the evidence freeze date; earlier material only by logged exception where needed to understand the origin or evolution of an in-scope issue |
-| Evidence freeze date | 2026-10-29 (set by Sofia at G0) |
+| Evidence freeze date | 2026-10-29 (set by Sofia at G0). Refresh evidence freeze (E18): 2026-11-05, the day the 2026 Enlargement Package documents were retrieved |
 | Language | English primary; Macedonian or Albanian only for core relevant sources with no suitable English version, each recorded in the register; machine translation flagged and capped at Medium confidence |
 | Reviewers | Formal gate approver: Sofia (all gates), sole decision-maker for the alpha (decision E13, 30 Oct 2026) |
 | Alpha reviewers | George and others review the developing product and the review page as external input, outside the formal gates. Their feedback reaches Sofia, who decides what to do with it; material points are recorded in the alpha learning log |

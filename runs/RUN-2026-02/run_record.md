@@ -5,13 +5,13 @@ Status: **G3 passed with conditions (GATE-0017), stage 7 in progress: paused awa
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-02 |
-| Current stage | 7 EU extraction and taxonomy (paused: waiting for the 2026 Moldova report; see when_2026_report_published.md) |
+| Current stage | 7 EU extraction and taxonomy (resumed 2026-11-05: 2026 Moldova report MDA-EU-2026-012 registered; see when_2026_report_published.md) |
 | Purpose | First country run of the controlled scaling phase (decisions E19 and E20, `runs/rollout_plan.md`). It applies the method validated in the North Macedonia alpha (RUN-2026-01) to Moldova, as a diagnostic covering the chain from EU requirement to priority, with a comparator step for the issues chosen at G6. It is also the first test of the shared multi-country architecture: what it teaches is reviewed before Montenegro (RUN-2026-03) starts |
 | Target country | Moldova (MDA) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
 | Comparator scope | Chosen at G6 (procedure P4): two or three issues, comparators drawn first from countries already in the project, starting with North Macedonia's validated judgements |
 | Time window | 2020-01-01 to the evidence freeze date; earlier material only by logged exception where needed to understand the origin or evolution of an in-scope issue |
-| Evidence freeze date | 2026-11-06. If the 2026 Moldova report is published before then, the run proceeds as soon as it is available (G0-D01) |
+| Evidence freeze date | 2026-11-04, the publication date of the 2026 Moldova report (G0-D01 set 2026-11-06, or earlier once the report was out; documents retrieved 2026-11-05) |
 | Language | English primary; Romanian (`ro`) only for core relevant sources with no suitable English version, each recorded in the register; machine translation flagged and capped at Medium confidence unless a reviewer who reads Romanian is named. Russian-language material is not used unless approved as a deviation |
 | Reviewers | Formal gate approver: Sofia (all gates), analyst and sole decision-maker for this run (G0-D04, decision E13). Independent agent checks are used for QA where useful; they are not reviewers and decide nothing |
 | Other reviewers | None (G0-D04) |
