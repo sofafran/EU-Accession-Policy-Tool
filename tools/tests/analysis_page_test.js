@@ -37,7 +37,7 @@ t('cards: definition with EU requirement count, four badges, status chip', [...d
   /EU requirement/.test(c.querySelector('.req').textContent) && c.querySelectorAll(':scope > .badges .bd').length === 4 && c.querySelector(':scope > .top .sc')));
 t('card assessment is the priority reason', [...d.querySelectorAll('.issue')].every(c => c.querySelector(':scope > .assess p').textContent.length > 40));
 t('re-review note separate from status', ['RI-FMW-003', 'RI-TEC-017', 'RI-TEC-033'].every(x => /Validated/.test(d.querySelector('#' + x + ' > .top .sc').textContent) &&
-  /Flagged for re-review/.test(d.querySelector('#' + x + ' > .top').textContent)) && d.querySelectorAll('.issue > .top .tag').length === 3);
+  /Flagged for re-review/.test(d.querySelector('#' + x + ' > .top').textContent)) && d.querySelectorAll('.issue > .top .tag').length === 21);
 set('f-pri', 'High'); t('priority High -> 19', vis() === 19 && cnt() === 'Showing 19 of 48 reform issues');
 t('filter chip shown', /Priority: High/.test(d.getElementById('f-chips').textContent));
 set('f-strand', 'fmw'); t('High + Chapter 2 -> 4', vis() === 4);
@@ -52,7 +52,7 @@ t('search portal finds RI-TEC-036', !d.getElementById('RI-TEC-036').classList.co
 q.value = 'zzzz'; q.dispatchEvent(new w.Event('input')); t('no match -> 0', vis() === 0); reset();
 d.querySelector('nav.top a[data-strand="tec"]').click(); t('nav Technology and AI preset -> 34', vis() === 34);
 d.querySelector('nav.top a[data-strand="fmw"]').click(); t('nav Chapter 2 -> 14', vis() === 14); reset();
-set('f-u26', 'held'); t('2026 filter: evidence held -> 13', vis() === 13); reset();
+set('f-u26', 'held'); t('2026 filter: evidence held -> 15', vis() === 15); reset();
 t('filter values use display labels', [...d.querySelectorAll('#f-gap option')].map(o => o.textContent).join('|') === 'All|Open|Partly addressed|Largely closed|Insufficient evidence');
 // Issue panel and chain
 ({ d, w, errors } = load('#RI-TEC-028'));

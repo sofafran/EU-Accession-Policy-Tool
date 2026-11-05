@@ -1,22 +1,20 @@
 {
   "source_id": "MKD-EU-2026-009",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.5",
     "extracted_at": "2026-11-05",
     "status": "complete",
-    "pages_processed": "1-62",
-    "codebook_version": "1.2",
+    "codebook_version": "1.3",
     "themes_version": "1.3",
-    "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4 and themes 1.3 (RUN-2026-01 refresh, E18), following MKD-EU-2025-002. Multi-country Communication covering ten enlargement countries, with Annexes 1 to 6 (pages 31-62): only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, artificial intelligence, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, roaming, wallet, identification, trust services, online, ICT, internet, workers, social security, EURES, EHIC, labour, connectivity, technology) and full reading of sections I.2 security and resilience (pages 9-10), II (pages 11-19), III, IV and V (pages 19-30) including the North Macedonia paragraph (page 28). Annexes 1 to 4 (roadmaps for Montenegro, Albania, Moldova and Ukraine) do not concern North Macedonia; Annexes 5 and 6 have no in-scope indicators (the 'basic digital skills' rows are not linked to an in-scope recommendation, R2). Period covered left empty: the register gives none. Text-file page numbers are printed page numbers plus one in the Communication and plus two in the annexes. Left out: cybercrime and misuse of new technologies by criminals (pages 8-9, R21); the Roam Like at Home extension to Ukraine and Moldova (page 14) and other passages only on Ukraine, Moldova, Georgia, Serbia, Bosnia and Herzegovina or Türkiye; SEPA (digital finance); the Common Regional Market's 'digitalising procedures' and general references to the green and digital transitions in the Growth Plan and IPA (incidental); digital skills (page 17). The North Macedonia paragraph in the conclusions (page 28) has no Chapter 2 or technology claim. Roam Like at Home (refresh plan, LIM-0037): the Communication says only that 'Work is advancing on extending the scheme to the Western Balkans' (item -0004); it does not repeat the Council's June 2026 authorisation of negotiations. The country report adds the Commission's February 2026 proposal (MKD-EU-2026-007, page 66). Second-pass check by a different agent (G3 condition 2 of GATE-0004): 2 items added (-0015, a general sentence split from -0011, and -0016, the horizontal passage on cybersecurity and interconnected networks, page 10), both theme_doubtful and out of scope; -0011 trimmed to one sentence; 14 first-pass items, yield 14 per hundred. See review/RUN-2026-01/second_pass/MKD-EU-2026-009.csv."
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-62 (keyword screen of all pages; Moldova passages read in context on pages 2-3, 9-10, 13-18, 21, 24-26 and the Moldova roadmap, Annex III, pages 37-38; Annexes V and VI checked)",
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages and the in-scope horizontal passages addressed to all enlargement countries, following MKD-EU-2025-002 (E21). The RUN-2026-01 items (-0001 to -0016) are unchanged and listed in earlier_extractions; the twelve horizontal passages it extracted that also concern Moldova are quoted again as this run's own items (-0025 to -0036), and the AI factory antenna sentence as -0022. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, enlargement countries, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, connectivity, identity, wallet, online, ICT, internet, technology, roaming, workers, EURES, social security, EHIC, labour, migration). Extracted: the opening of cluster 2 (pages 3 and 26), Roam Like at Home (pages 14 and 26, theme_doubtful pending M4), Moldova's resilience approaches including cybersecurity (page 10), the AI factory antenna (page 17) and the Annex III priority schedule for provisional closure of Chapters 10 and 2 (page 38). Not extracted: passages only on the Western Balkans (WiFi4WB, pages 13; extension of Roam Like at Home to the Western Balkans, page 14; Common Regional Market, page 13), which do not cover Moldova; the Growth Plan and Reform and Growth Facility paragraphs (pages 13-14), which name digitalisation only in a list of reform areas; SEPA (digital finance) and the Common Transit Convention; labour migration and secondary movements (pages 9-10), irregular migration outside the Chapter 2 boundary; misuse of new technologies by criminals and online radicalisation (page 8, cybercrime rule); EIT Community Hubs to open in Moldova (page 16), innovation, not a theme area; skills and labour shortages (page 17), not linked to an in-scope recommendation; 'Ukraine and Moldova opened four clusters each' (page 21), which names no cluster; the general call to work on closing benchmarks for all chapters (page 38); the Annex III gradual integration paragraph (page 38), which names digital connectivity in a list; Annexes V and VI, whose only digital rows are basic digital skills. Difference from MKD-EU-2025-002: that file left out horizontal passages that do not name Moldova; this file includes those addressed to all enlargement countries, as the task set for stage 7 asked. Listed for G4. Text-file page numbers are printed page numbers plus one in the Communication and plus two in the annexes. Second pass (PC-05): a keyword check of every page by the lead agent, against the RUN-2026-01 second pass, added 2 items for 20 first-pass items (10 per hundred) (-0037, page 4; -0038, page 18), both theme_doubtful; see review/RUN-2026-02/second_pass/MKD-EU-2026-009.csv."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-11-05",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
   "items": [
     {
@@ -1144,6 +1142,1553 @@
         "intervention_ids": [],
         "classification_status": "out_of_scope",
         "classification_note": "General statement on interconnected networks; no single approved issue fits."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0017",
+      "information_type": "intervention",
+      "stated_text": "Clusters 1, 2, 3 and 6 were formally opened.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Accession negotiation clusters 1, 2, 3 and 6 have been formally opened for Moldova.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "INTRODUCTION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": null,
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Opening of accession negotiations on clusters 1, 2, 3 and 6",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Cluster 2 (internal market) contains Chapter 2. The sentence continues the paragraph on Moldova that starts on page 2. Same event as MDA-EU-2026-012-0001 and MDA-EU-2026-013-0001; also stated on page 26 (next Moldova item).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0018",
+      "information_type": "intervention",
+      "stated_text": "Moldova’s accession negotiations gained momentum in 2026, with the opening of clusters 1– fundamentals, 6 – external relations, as well as 2 – internal market and 3 – competitiveness and inclusive growth in June, July and October respectively.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In 2026 Moldova's accession negotiations opened clusters 1, 6, 2 (internal market) and 3, in June, July and October.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "V. CONCLUSIONS AND RECOMMENDATIONS > II.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": null,
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": "2026",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Opening of accession negotiations on clusters 1, 6, 2 and 3",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Cluster 2 contains Chapter 2. The months are given for three dates and four clusters; the 2026 report (MDA-EU-2026-012-0001) dates the cluster 2 and 3 opening to October, so only the year is recorded. ambiguous_type: an EU statement of a step in the negotiations, recorded as an intervention as for MDA-EU-2026-013-0001.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0019",
+      "information_type": "finding",
+      "stated_text": "Preparedness remains uneven across the enlargement region. Moldova and Ukraine have developed increasingly comprehensive approaches to fighting foreign interference, strategic communication, cybersecurity and electoral resilience in response to sustained h ostile activity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Preparedness is uneven; Moldova and Ukraine have developed comprehensive approaches to foreign interference, strategic communication, cybersecurity and electoral resilience.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "I. PROTECTING EUROPE – DEMOCRACY, SECURITY AND RESILIENCE > 2. Internal security, borders and migration > Security and resilience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Ukraine",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Cybersecurity is one of four elements of resilience to hostile activity; the passage is mainly about foreign interference, hence theme_doubtful, as for MKD-EU-2025-002-0018. 'h ostile' is as converted. One claim over two sentences.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0020",
+      "information_type": "outcome",
+      "stated_text": "The extension of the EU’s Roam Like at Home area to Ukraine and Moldova since January 2026 has removed roaming charges and brought immediate benefits to citizens and businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Extending Roam Like at Home to Ukraine and Moldova from January 2026 removed roaming charges, benefiting citizens and businesses.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 2. Integrating into the single market before accession",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": "2026-01",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukraine",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "citizens and businesses",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Roaming tagged TECH-INFRA as in MKD-EU-2025-002-0016, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv). Outcome of the named intervention (the extension), as stated. Left out by RUN-2026-01 as not about North Macedonia.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0021",
+      "information_type": "intervention",
+      "stated_text": "Moldova also joined key gradual integration initiatives such as the Single European Payments Area, Roam Like Home, and the Common Transit Convention.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova joined gradual integration initiatives including the Single Euro Payments Area, Roam Like at Home and the Common Transit Convention.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "V. CONCLUSIONS AND RECOMMENDATIONS > II.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Participation in Roam Like at Home (with SEPA and the Common Transit Convention)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Only Roam Like at Home is a possible theme area (M4, theme_doubtful); SEPA is digital finance and the Common Transit Convention customs, both out by default under rules 0.5 section 4. 'Roam Like Home' and 'Single European Payments Area' are as printed. Same claim as page 14 (previous item) in another section.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0022",
+      "information_type": "intervention",
+      "stated_text": "This is the case with the greater AI capacity available following the set -up of three AI factory antennas in Moldova, North Macedonia and Serbia.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Three AI factory antennas, in Moldova, North Macedonia and Serbia, have been set up, giving greater AI capacity.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 5. Investing in the green and digital transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "North Macedonia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Set-up of an AI factory antenna in Moldova",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as the RUN-2026-01 item MKD-EU-2026-009-0011. 'This is the case' refers to the previous sentence on cooperation on AI (horizontal item -0033).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0023",
+      "information_type": "recommendation",
+      "stated_text": "Priority schedule for the first semester of 2027: science and research; education and culture; free movement of capital; intellectual property law; digital transformation and media; Customs Union; fisheries and acquaculture; external relations; foreign, security and defence policy",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Commission's initial schedule envisages provisional closure of nine chapters, including digital transformation and media, in the first half of 2027.",
+      "location": {
+        "page": 38,
+        "page_end": null,
+        "section": "ANNEX III A roadmap for the accession negotiations with Moldova > II. Outlook for the year ahead > 3. Initial priority schedule for provisional closure of chapters",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "3",
+      "chapter": "10",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": "2027",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Indicative schedule introduced as one that 'could be envisaged' (lead-in on the same page, not extracted). Chapter 10 is named as a whole chapter, covering media as well as the digital areas, hence theme_doubtful. 'acquaculture' as printed. Annex III, the Moldova roadmap for 2027.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0024",
+      "information_type": "recommendation",
+      "stated_text": "Priority schedule for the second semester of 2027: right of establishment and freedom to provide services; economic and monetary policy; social policy and employment; free movement of goods; freedom of movement of workers; company law; competition policy; financial services; consumer and health protection; taxation; enterprise and industrial policy; transport; Trans-European networks; energy; environment and climate change; food safety, veterinary and phytosanitary policy",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Commission's initial schedule envisages provisional closure of sixteen chapters, including freedom of movement of workers, in the second half of 2027.",
+      "location": {
+        "page": 38,
+        "page_end": null,
+        "section": "ANNEX III A roadmap for the accession negotiations with Moldova > II. Outlook for the year ahead > 3. Initial priority schedule for provisional closure of chapters",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": "2027",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Indicative schedule introduced as one that 'could be envisaged' (lead-in on the same page, not extracted). Chapter 2 is one of sixteen chapters listed. Annex III, the Moldova roadmap for 2027. The same page also says work on closing benchmarks for all chapters should continue without delay; not extracted, as it names no chapter.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0025",
+      "information_type": "finding",
+      "stated_text": "Foreign information manipulation and interference, cyberattacks and other hybrid threats are increasingly targeting democratic institutions, elections, public trust and the accession process itself.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Foreign interference, cyberattacks and other hybrid threats increasingly target democratic institutions, elections, public trust and the accession process.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "I. PROTECTING EUROPE – DEMOCRACY, SECURITY AND RESILIENCE > 2. Internal security, borders and migration > Security and resilience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "democratic institutions, elections, public trust and the accession process",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0001, quoted again as this run's own item (E21). Cyberattacks are one element of hybrid threats, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0026",
+      "information_type": "finding",
+      "stated_text": "Cybersecurity, the protection of critical infrastructure, civil protection and preparedness are equally important. European energy, transport, digital and communications networks are increasingly interconnected, meaning vulnerabilities outside the Union can have direct cross - border consequences.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cybersecurity and critical infrastructure matter because interconnected digital and other networks carry cross-border vulnerabilities.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "I. PROTECTING EUROPE – DEMOCRACY, SECURITY AND RESILIENCE > 2. Internal security, borders and migration > Security and resilience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0016, quoted again as this run's own item (E21). Cybersecurity is one element of a mixed list; one claim over two sentences, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0027",
+      "information_type": "finding",
+      "stated_text": "Progress during the reporting period was particularly visible in telecommunications, payments, customs, taxation, digital services, energy and industrial products.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Gradual integration progress was most visible in telecommunications, payments, customs, taxation, digital services, energy and industrial products.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 2. Integrating into the single market before accession",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0004, quoted again as this run's own item (E21). Telecommunications and digital services are two of seven areas listed, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0028",
+      "information_type": "recommendation",
+      "stated_text": "Further digitalisation and interoperability of customs systems will be essential for accession preparedness.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further digitalisation and interoperability of customs systems will be essential for accession preparedness.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 2. Integrating into the single market before accession",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0006, quoted again as this run's own item (E21). Customs IT is out unless the claim concerns connection to EU electronic systems (rules 0.5 section 4); the text does not say so, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0029",
+      "information_type": "finding",
+      "stated_text": "Enlargement countries continue to develop digital public services and digital identity frameworks aligned with EU standards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries continue to develop digital public services and digital identity frameworks aligned with EU standards.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 3. Connecting Europe",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0007, quoted again as this run's own item (E21).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0030",
+      "information_type": "intervention",
+      "stated_text": "European Digital Innovation Hubs and cooperation on high- performance computing and AI are helping businesses and public administrations develop the capabilities needed for the digital transition.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digital Innovation Hubs and cooperation on high-performance computing and AI help businesses and administrations build digital capabilities.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 3. Connecting Europe",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "businesses and public administrations",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "European Digital Innovation Hubs; cooperation on high-performance computing and AI",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0008, quoted again as this run's own item (E21).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0031",
+      "information_type": "recommendation",
+      "stated_text": "Further investment will be required to close infrastructure gaps, improve cross -border connections and ensure that transport, energy and digital networks are resilient, secure and interoperable with those of the Union.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "More investment is needed so that transport, energy and digital networks are resilient, secure and interoperable with the EU's.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 3. Connecting Europe",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-CYBER",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0009, quoted again as this run's own item (E21). Digital networks are one of three network types named, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0032",
+      "information_type": "finding",
+      "stated_text": "Enlargement countries are gradually aligning with the EU digital acquis and developing digital infrastructure, public services and innovation ecosystems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries are gradually aligning with the EU digital acquis and developing digital infrastructure, services and innovation ecosystems.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 5. Investing in the green and digital transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0010, quoted again as this run's own item (E21). The digital transition is described only in general terms, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0033",
+      "information_type": "finding",
+      "stated_text": "Cooperation on AI, high -performance computing, digital identity and cybersecurity can accelerate productivity growth and contribute to Europe’s technological capacity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cooperation on AI, high-performance computing, digital identity and cybersecurity can raise productivity and Europe's technological capacity.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > 5. Investing in the green and digital transitions",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-EID",
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0015, quoted again as this run's own item (E21). A general statement of what cooperation can achieve, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0034",
+      "information_type": "finding",
+      "stated_text": "Further opportunities exist in the areas of digital identity, transport, public procurement, industrial goods, energy, and emerging technologies, where appropriate.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Further gradual integration opportunities exist in digital identity, transport, public procurement, industrial goods, energy and emerging technologies.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > A common framework for gradual integration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement partners",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0012, quoted again as this run's own item (E21). Digital identity is one of six possible areas of gradual integration, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0035",
+      "information_type": "recommendation",
+      "stated_text": "Enlargement countries need to strengthen foreign investment screening, export controls, cybersecurity, the protection of critical infrastructure and measures against sanctions circumvention and economic coercion, gradually aligning with the Union’s economic security framework.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries must strengthen investment screening, export controls, cybersecurity and critical infrastructure protection, aligning with EU economic security.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > A common framework for gradual integration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0013, quoted again as this run's own item (E21). Only the cybersecurity element is in scope.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0036",
+      "information_type": "recommendation",
+      "stated_text": "In addition, enlargement countries should progressively strengthen their alignment and cooperation with the Union on hybrid threats, economic security, cybersecurity, critical infrastructure, border management and preparedness.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries should progressively strengthen alignment and cooperation with the EU on hybrid threats, cybersecurity and related areas.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "V. CONCLUSIONS AND RECOMMENDATIONS > I.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0014, quoted again as this run's own item (E21). Only the cybersecurity element is in scope.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0037",
+      "information_type": "finding",
+      "stated_text": "Enlargement countries are increasingly contributing to addressing these common challenges. Cooperation with the EU has intensified in areas such as foreign and security policy, defence, border management, the fight against organised crime, cybersecurity, hybrid threats, energy security, critical infrastructure, crisis preparedness and management, and civil protection.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries increasingly contribute to common security challenges; cooperation with the EU has intensified in areas including cybersecurity and hybrid threats.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I. PROTECTING EUROPE – DEMOCRACY, SECURITY AND RESILIENCE",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them. Cybersecurity is one of eleven areas of cooperation listed, hence theme_doubtful. Added at the second pass (keyword check, 2026-11-05); not extracted by RUN-2026-01.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MKD-EU-2026-009-0038",
+      "information_type": "recommendation",
+      "stated_text": "Therefore, access to gradual integration should be subject to strategic alignment which is part of the EU acquis in chapter 31 “Common Foreign and Security Policy”, and economic security requirements above, which are part of the EU acquis in chapter 30 “‘External relations”’, chapter 10 “Digital transformation and media” and chapter 15 “Energy”.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Access to gradual integration should depend on strategic alignment and on economic security requirements, including those in the Chapter 10 acquis.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "II. GROWING EUROPE – COMPETITIVENESS, INVESTMENT AND OPPORTUNITY > A common framework for gradual integration",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them. 'Economic security requirements above' refers to the previous sentence (item -0035), which includes cybersecurity; Chapter 10 is named among three chapters, but chapter is left empty because the claim concerns access to gradual integration as a whole. theme_doubtful because cybersecurity is implied, not named. Added at the second pass (keyword check, 2026-11-05).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "target",
+      "item_ids": [
+        "MKD-EU-2026-009-0001",
+        "MKD-EU-2026-009-0002",
+        "MKD-EU-2026-009-0003",
+        "MKD-EU-2026-009-0004",
+        "MKD-EU-2026-009-0005",
+        "MKD-EU-2026-009-0006",
+        "MKD-EU-2026-009-0007",
+        "MKD-EU-2026-009-0008",
+        "MKD-EU-2026-009-0009",
+        "MKD-EU-2026-009-0010",
+        "MKD-EU-2026-009-0011",
+        "MKD-EU-2026-009-0012",
+        "MKD-EU-2026-009-0013",
+        "MKD-EU-2026-009-0014",
+        "MKD-EU-2026-009-0015",
+        "MKD-EU-2026-009-0016"
+      ],
+      "moved_on": "2026-11-05",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-11-05",
+        "status": "complete",
+        "pages_processed": "1-62",
+        "codebook_version": "1.2",
+        "themes_version": "1.3",
+        "notes": "Pass 1 full extraction from the converted text file under extraction rules 0.4 and themes 1.3 (RUN-2026-01 refresh, E18), following MKD-EU-2025-002. Multi-country Communication covering ten enlargement countries, with Annexes 1 to 6 (pages 31-62): only passages about North Macedonia and horizontal passages addressed to all Western Balkan or enlargement partners within Chapter 2 (as bounded in the run record) or the technology and AI theme were extracted. Method: keyword search over the whole file (country name, digital, cyber, AI, artificial intelligence, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, roaming, wallet, identification, trust services, online, ICT, internet, workers, social security, EURES, EHIC, labour, connectivity, technology) and full reading of sections I.2 security and resilience (pages 9-10), II (pages 11-19), III, IV and V (pages 19-30) including the North Macedonia paragraph (page 28). Annexes 1 to 4 (roadmaps for Montenegro, Albania, Moldova and Ukraine) do not concern North Macedonia; Annexes 5 and 6 have no in-scope indicators (the 'basic digital skills' rows are not linked to an in-scope recommendation, R2). Period covered left empty: the register gives none. Text-file page numbers are printed page numbers plus one in the Communication and plus two in the annexes. Left out: cybercrime and misuse of new technologies by criminals (pages 8-9, R21); the Roam Like at Home extension to Ukraine and Moldova (page 14) and other passages only on Ukraine, Moldova, Georgia, Serbia, Bosnia and Herzegovina or Türkiye; SEPA (digital finance); the Common Regional Market's 'digitalising procedures' and general references to the green and digital transitions in the Growth Plan and IPA (incidental); digital skills (page 17). The North Macedonia paragraph in the conclusions (page 28) has no Chapter 2 or technology claim. Roam Like at Home (refresh plan, LIM-0037): the Communication says only that 'Work is advancing on extending the scheme to the Western Balkans' (item -0004); it does not repeat the Council's June 2026 authorisation of negotiations. The country report adds the Commission's February 2026 proposal (MKD-EU-2026-007, page 66). Second-pass check by a different agent (G3 condition 2 of GATE-0004): 2 items added (-0015, a general sentence split from -0011, and -0016, the horizontal passage on cybersecurity and interconnected networks, page 10), both theme_doubtful and out of scope; -0011 trimmed to one sentence; 14 first-pass items, yield 14 per hundred. See review/RUN-2026-01/second_pass/MKD-EU-2026-009.csv."
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-11-05",
+        "mechanisms_version": "1.0"
       }
     }
   ]

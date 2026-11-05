@@ -507,6 +507,19 @@ def main():
             wb4 = load_workbook(rv / "G4_taxonomy.xlsx")
             ok = wb4.sheetnames[:2] == ["Decisions needed", "Reform issues"] and wb4["Decisions needed"].cell(2, 1).value == "G4-D01"
         check("export_review.py", "G4 package: decisions needed come first when listed", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "second_pass").mkdir(exist_ok=True)
+        (rv / "second_pass" / f"{sid}.csv").write_text(f"item_id,action,detail\n{sid}-0006,added,x\n{sid}-0001,added_missed,y\n", encoding="utf-8")
+        (rv / "stage7").mkdir(exist_ok=True)
+        (rv / "stage7" / "candidate_issues.csv").write_text("candidate_id,label\nCI-01,Test candidate\n", encoding="utf-8")
+        r = run(proj, "export_review.py", "G4", "--run", "RUN-2026-01")
+        ok = r.returncode == 0
+        if ok:
+            wb4 = load_workbook(rv / "G4_taxonomy.xlsx")
+            sp_rows = {row[0]: row[1] for row in wb4["Second-pass check"].iter_rows(min_row=2, values_only=True)}
+            ok = "Candidate new issues" in wb4.sheetnames and wb4["Candidate new issues"].cell(2, 1).value == "CI-01" and str(sp_rows.get(sid)) == "2"
+        check("export_review.py", "G4 package: candidate issues sheet; second pass counts added and added_missed (1.15.0)", ok, r.stderr[-300:] + r.stdout[-300:])
+        (rv / "second_pass" / f"{sid}.csv").unlink()
+        (rv / "stage7" / "candidate_issues.csv").unlink()
         (rv / "G4_decisions.csv").unlink()
         r = run(proj, "export_review.py", "G5", "--run", "RUN-2026-01")
         ok = r.returncode == 0 and (rv / "G5_classification.xlsx").exists()
@@ -534,6 +547,27 @@ def main():
             ok = {"Issue index", "Tier 3 judgements", "Tier 2 by exception", "RI-TST-001"} <= set(wb6.sheetnames)
         check("export_review.py", "G6 package: one dossier per issue, tier 3 and tier 2 sheets", ok, r.stderr[-300:] + r.stdout[-300:])
         (rv / "G6_issue_dossiers.xlsx").unlink(missing_ok=True)
+        # G6-refresh (1.16.0): a proposed row superseding a validated one, a link from a refresh item, decisions first
+        jp, lp = proj / "judgements" / "judgements.csv", proj / "links" / "links.csv"
+        j_before, l_before = jp.read_text(encoding="utf-8"), lp.read_text(encoding="utf-8")
+        jp.write_text(j_before.rstrip("\n") + "\n"
+                      f"JDG-900001,direction_of_travel,issue_country,RI-TST-001@MKD,,persistent,Old reason.,{sid}-0001,agent,validated,yes,Sofia,2026-10-30,,,1.2,0.4,1.1,RUN-2026-01\n"
+                      f"JDG-900002,direction_of_travel,issue_country,RI-TST-001@MKD,,improving,New reason.,{sid}-0001;{sid}-0002,agent,proposed,,,,,JDG-900001,1.2,0.4,1.1,RUN-2026-01\n", encoding="utf-8")
+        lp.write_text(l_before.rstrip("\n") + f"\nLNK-900001,{sid}-0002,{sid}-0001,contradicts,Test basis.,agent,proposed,RUN-2026-01,0.3\n", encoding="utf-8")
+        (rv / "G6_refresh_decisions.csv").write_text("decision_id,decision_needed,kind,what_the_files_show,agent_recommendation,what_changes\nG6R-D01,Test?,safe,x,y,z\n", encoding="utf-8")
+        r = run(proj, "export_review.py", "G6-refresh", "--run", "RUN-2026-01", "--sources", sid)
+        ok = r.returncode == 0 and (rv / "G6_refresh.xlsx").exists()
+        if ok:
+            wbr = load_workbook(rv / "G6_refresh.xlsx")
+            ch = [row for row in wbr["Judgement changes"].iter_rows(min_row=2, values_only=True)]
+            lk = [row for row in wbr["Links new confirmed contradicts"].iter_rows(min_row=2, values_only=True)]
+            ok = (wbr.sheetnames[:2] == ["Decisions needed", "Judgement changes"] and ch and ch[0][2:7] == ("JDG-900001", "persistent", "JDG-900002", "improving", "value")
+                  and lk and lk[0][5] == "contradicts")
+        check("export_review.py", "G6-refresh package: decisions first, old against new judgement, contradictions first (1.16.0)", ok, r.stderr[-300:] + r.stdout[-300:])
+        jp.write_text(j_before, encoding="utf-8")
+        lp.write_text(l_before, encoding="utf-8")
+        for name in ("G6_refresh.xlsx", "G6_refresh_decisions.csv"):
+            (rv / name).unlink(missing_ok=True)
         (rv / "G4_taxonomy.xlsx").unlink(missing_ok=True)
         lines = (proj / "taxonomy" / "reform_issues.csv").read_text(encoding="utf-8").splitlines()
         (proj / "taxonomy" / "reform_issues.csv").write_text("\n".join(lines[:-1]) + "\n", encoding="utf-8")

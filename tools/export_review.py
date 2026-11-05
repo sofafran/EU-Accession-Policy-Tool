@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.14.1"
+__version__ = "1.16.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -463,9 +463,21 @@ def g4(root, run):
     spdir = root / "review" / run / "second_pass"
     for f in sorted(spdir.glob("*.csv")) if spdir.exists() else []:
         c = Counter(r["action"] for r in read_csv(f)[1])
-        sp.append([f.stem, c.get("added_missed", 0), c.get("split", 0)])
+        # RUN-2026-01 wrote added_missed; RUN-2026-02 writes added (and added_non_EU): count all of them (1.15.0)
+        sp.append([f.stem, sum(c.get(a, 0) for a in ("added_missed", "added", "added_non_EU")), c.get("split", 0)])
     dec_path = root / "review" / run / "G4_decisions.csv"
     dec_h, decisions = read_csv(dec_path) if dec_path.exists() else ([], [])
+    # Later runs (1.15.0): candidate new shared issues, rule issues carried from G3 and the run's own unmatched queue rows
+    extra = []
+    for title, rel in [("Proposed new issues", "G4_proposed_issues.csv"), ("Candidate new issues", "stage7/candidate_issues.csv"), ("Rule issues from G3", "G3_rule_issues.csv"),
+                       ("Earlier unmatched rows", "stage7/earlier_unmatched_review.csv")]:
+        h, r = read_csv(root / "review" / run / rel)
+        if r:
+            extra.append((title, h + ["reviewer_decision", "reviewer_comment"], [[x.get(k, "") for k in h] + ["", ""] for x in r]))
+    uq_h, uq = read_csv(root / "taxonomy" / "unmatched_queue.csv")
+    run_uq = [q for q in uq if q.get("item_id") in items and q.get("status") == "open"]
+    if run_uq:
+        extra.append(("Unmatched queue (run)", uq_h, [[q[k] for k in uq_h] for q in run_uq]))
     return "G4_taxonomy.xlsx", [
         *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
         ("Reform issues", is_h + ["EU requirement items", "recommendations", "recommendations not theme_doubtful", "reviewer_decision", "reviewer_comment"], issue_rows),
@@ -474,6 +486,7 @@ def g4(root, run):
         ("Mechanisms", me_h + ["reviewer_decision", "reviewer_comment"], [[m[h] for h in me_h] + ["", ""] for m in mechs]),
         *[("Mechanism proposals", h + ["reviewer_decision", "reviewer_comment"], [[x[k] for k in h] + ["", ""] for x in r])
           for h, r in [read_csv(root / "review" / run / "G4_mechanism_proposals.csv")] if r],
+        *extra,
         ("Theme doubtful items", ["item_id", "type", "quote", "themes", "note"], doubtful),
         ("Second-pass check", ["source_id", "items added", "items split"], sp),
         lessons_sheet(root, run),
@@ -770,6 +783,122 @@ def g8(root, run):
 BUILDERS["G8"] = g8
 
 
+def g6_refresh(root, run, sources=None):
+    """Refresh G6 package (E18, 1.16.0): decisions first, then the proposed judgement changes (old against new), the affected
+    issues, the links saying what is new, confirmed or contradicted, the new sources and their ratings, candidate new issues,
+    out-of-scope items, new intervention records, the run's refresh limits and the gate rows to confirm. `sources` lists the
+    refresh source IDs; by default those in review/<run>/refresh/refresh_delta.csv."""
+    from common import evidence_files, read_json
+    rv = root / "review" / run
+    delta_h, delta = read_csv(rv / "refresh" / "refresh_delta.csv")
+    sources = list(sources or dict.fromkeys(r["source_id"] for r in delta))
+    items, new = {}, {}
+    for f in evidence_files(root):
+        d = read_json(f)
+        mine = {i["item_id"] for i in run_items(d, run)} if d["source_id"] in sources else set()
+        for it in d["items"]:
+            items[it["item_id"]] = it
+            if it["item_id"] in mine:
+                new[it["item_id"]] = it
+
+    def text(k):
+        i = items.get(k, {})
+        return i.get("translation_en") or i.get("stated_text", "")
+    review = ["decision", "new_value", "override_reason"]
+    dec_h, decisions = read_csv(rv / "G6_refresh_decisions.csv")
+    jh, js = read_csv(root / "judgements" / "judgements.csv")
+    by_id = {j["judgement_id"]: j for j in js}
+    proposed = [j for j in js if j["run_id"] == run and j["review_status"] == "proposed" and j["supersedes"] in by_id]
+    changes = []
+    for j in proposed:
+        o = by_id[j["supersedes"]]
+        cited = ";".join(e for e in split_list(j["evidence_item_ids"]) if e in new)
+        changes.append([j["object_id"].split("@")[0], j["judgement_type"], o["judgement_id"], o["value"], j["judgement_id"], j["value"],
+                        "value" if o["value"] != j["value"] else "reasoning only", j["reason"], o["reason"], cited, j["evidence_item_ids"], "", "", ""])
+    changes.sort(key=lambda r: (r[6] != "value", r[0], r[1]))
+    # Affected issues: every issue an in-scope new item touches, with what happens to each tier 3 judgement.
+    links = read_csv(root / "links" / "links.csv")[1]
+    out_link = {}
+    for l in links:
+        if l["from_id"] in new:
+            out_link.setdefault(l["from_id"], []).append(l)
+    touched = {}
+    for k, i in new.items():
+        if i["pass2"]["classification_status"] != "out_of_scope":
+            for x in i["pass2"]["reform_issue_ids"]:
+                touched.setdefault(x, []).append(k)
+    labels = {r["issue_id"]: r["label"] for r in read_csv(root / "taxonomy" / "reform_issues.csv")[1]}
+    superseded = {j["supersedes"]: j for j in proposed}
+    current = {}
+    for j in js:
+        if j["run_id"] == run and j["object_type"] == "issue_country" and j["review_status"] in ("validated", "overridden"):
+            current[(j["object_id"].split("@")[0], j["judgement_type"])] = j
+    tier3 = ("direction_of_travel", "unresolved_gap", "priority", "tractability")
+    affected = []
+    for x in sorted(touched):
+        ks = touched[x]
+        kinds = Counter(l["link_type"] for k in ks for l in out_link.get(k, [])) + Counter("new (no link)" for k in ks if k not in out_link)
+        row = [x, labels.get(x, ""), str(len(ks)), "; ".join(f"{t} {n}" for t, n in sorted(kinds.items()))]
+        flags = []
+        for t in tier3:
+            o = current.get((x, t))
+            if not o:
+                row.append("")
+                continue
+            s = superseded.get(o["judgement_id"])
+            row.append(f"{o['value']} -> {s['value']} ({s['judgement_id']})" if s and s["value"] != o["value"]
+                       else f"{o['value']}, reason updated ({s['judgement_id']})" if s else f"{o['value']}, kept")
+            if o["rereview_flag"] == "yes" and not s:
+                flags.append(o["judgement_id"])
+        affected.append(row + [";".join(flags), "", ""])
+    order = {"contradicts": 0, "amends": 1, "replaces": 1, "new (no link)": 2, "corroborates": 3, "same_as_earlier": 4}
+    link_rows = []
+    for k, i in new.items():
+        if i["pass2"]["classification_status"] == "out_of_scope":
+            continue
+        base = [k, ";".join(i["pass2"]["reform_issue_ids"]) or "(no issue)", i["pass2"]["chain_link"] or "", text(k)]
+        for l in out_link.get(k) or [{"link_id": "", "link_type": "new (no link)", "to_id": "", "basis": "", "review_status": ""}]:
+            link_rows.append(base + [l["link_id"], l["link_type"], l["to_id"], text(l["to_id"]) if l["to_id"] else "", l["basis"], l["review_status"], "", ""])
+    link_rows.sort(key=lambda r: (order.get(r[5], 5), r[0]))
+    rg_h, reg = read_csv(root / "registers" / "source_register.csv")
+    src_cols = ["source_id", "title", "document_type", "publication_date", "requirement_id", "status", "retrieval_date", "content_hash"]
+    count = Counter(k.rsplit("-", 1)[0] for k in new)
+    src_rows = [[r.get(c, "") for c in src_cols] + [str(count.get(r["source_id"], 0)), "", ""] for r in reg if r["source_id"] in sources]
+    sq_h, sq = read_csv(root / "judgements" / "source_quality.csv")
+    sq_rows = [[r[h] for h in sq_h] + ["", "", ""] for r in sq if r["source_id"] in sources]
+    uq_h, uq = read_csv(root / "taxonomy" / "unmatched_queue.csv")
+    uq_rows = [[r[h] for h in uq_h] + ["", ""] for r in uq if r.get("item_id") in new]
+    oos = [[k, i["information_type"], text(k), ";".join(i["themes"]), ";".join(i["flags"]), i["pass2"]["classification_note"] or "", i.get("extraction_note") or "", "", ""]
+           for k, i in new.items() if i["pass2"]["classification_status"] == "out_of_scope"]
+    in_h, ints = read_csv(root / "entities" / "interventions.csv")
+    int_rows = [[r[h] for h in in_h] + ["", ""] for r in ints
+                if r.get("first_item_id") in new or any(s in (r.get("notes") or "") for s in sources)]
+    lim_h, lim = read_csv(root / "registers" / "limits_log.csv")
+    lim_rows = [[r[h] for h in lim_h] + ["", ""] for r in lim if r["run_id"] == run and r["status"] == "active" and "refresh" in " ".join(r.values()).lower()]
+    gl_h, gl = read_csv(root / "registers" / "gate_log.csv")
+    gate_rows = [[r[h] for h in gl_h] + ["", ""] for r in gl if r["run_id"] == run and "refresh g6" in (r.get("conditions") or "").lower()]
+    return "G6_refresh.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Judgement changes", ["issue", "judgement_type", "old_id", "old_value", "new_id", "new_value", "change", "new_reason", "old_reason",
+                               "refresh_items_cited", "all_items_cited", *review], changes),
+        ("Affected issues", ["issue", "label", "refresh_items", "links", *tier3, "earlier_rereview_flags_kept", "reviewer_decision", "reviewer_comment"], affected),
+        ("Links new confirmed contradicts", ["item_id", "issues", "chain_link", "text", "link_id", "link_type", "earlier_item", "earlier_text", "basis",
+                                             "link_status", "reviewer_decision", "reviewer_comment"], link_rows),
+        ("New sources", src_cols + ["items_extracted", "reviewer_decision", "reviewer_comment"], src_rows),
+        ("Source quality", sq_h + ["decision", "new_value", "override_reason"], sq_rows),
+        ("Candidate new issues", uq_h + ["reviewer_decision", "reviewer_comment"], uq_rows),
+        ("Out of scope items", ["item_id", "type", "text", "themes", "flags", "classification_note", "extraction_note", "reviewer_decision", "reviewer_comment"], oos),
+        ("New interventions", in_h + ["reviewer_decision", "reviewer_comment"], int_rows),
+        ("Refresh limits", lim_h + ["reviewer_decision", "reviewer_comment"], lim_rows),
+        ("Gates to confirm", gl_h + ["reviewer_decision", "reviewer_comment"], gate_rows),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS["G6-refresh"] = g6_refresh
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(
         description="Build the review spreadsheet for a gate in review/<run_id>/, with the items needing a decision first, "
@@ -779,11 +908,12 @@ def main(argv=None):
     p.add_argument("--run", help="run ID (default: the active run, the latest run with a run record)")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--force", action="store_true", help="overwrite a workbook the analyst fills in (hand-coding, review sample)")
+    p.add_argument("--sources", help="G6-refresh only: comma-separated refresh source IDs (default: those in review/<run>/refresh/refresh_delta.csv)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
     root = project_root(a.root)
     a.run = a.run or runs_with_records(root)[-1]
-    built = BUILDERS[a.gate](root, a.run)
+    built = BUILDERS[a.gate](root, a.run, sources=a.sources.split(",") if a.sources else None) if a.gate == "G6-refresh" else BUILDERS[a.gate](root, a.run)
     name, sheets, dropdowns = built if len(built) == 3 else (*built, None)
     out = root / "review" / a.run / name
     if name in PROTECTED and out.exists() and not a.force:
