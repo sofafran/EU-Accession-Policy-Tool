@@ -31,7 +31,7 @@ The order below is Sofia's. Points to check are starting points for each run's G
 | Run | Country | Code | Points to check at G0 and G1 |
 |---|---|---|---|
 | RUN-2026-01 | North Macedonia | MKD | Completed alpha (G8, GATE-0013). Baseline only; 2026 refresh pending (E18) |
-| RUN-2026-02 | Moldova | MDA | Active: first scaling test (E20), started 3 November 2026. The Commission reported on 13 October 2026 that the internal market cluster, which contains Chapter 2, was opened: check its opening benchmarks and any closing benchmarks. Moldova Growth Plan and Reform Agenda. 13 sources held. Language: Romanian (`ro`) |
+| RUN-2026-02 | Moldova | MDA | Closed: G8 passed 6 November 2026 (GATE-0030). 53 issues judged, 56 outputs signed off at G7 (GATE-0029), comparator step on RI-FMW-015, RI-TEC-038 and RI-TEC-036. Approved changes PC-18 to PC-32 to be applied before RUN-2026-03. Language: Romanian (`ro`) |
 | RUN-2026-03 | Montenegro | MNE | Held: starts only after Sofia reviews what RUN-2026-02 teaches (E20). Negotiating since 2012, all chapters open, several closed. The alpha found an EU common position on Chapter 2 (AD 26/26, restricted, LIM-0028): check whether the chapter is provisionally closed, in which case issues are about implementation and closing-benchmark follow-up. 17 sources already held from the comparator pilot. Languages: Montenegrin (no ISO 639-1 code; record as `cnr` in notes, `sr` in the field), Albanian |
 | RUN-2026-04 | Albania | ALB | Negotiating; check which clusters are open and the Chapter 2 benchmarks. Growth Plan Reform Agenda as for North Macedonia. 5 sources held. Language: Albanian (`sq`) |
 | RUN-2026-05 | Ukraine | UKR | Same cluster opened on 13 October 2026. The Ukraine Facility and Ukraine Plan replace a Reform Agenda. Wartime context limits some evidence. Language: Ukrainian (`uk`) |
@@ -51,7 +51,7 @@ Checked on 5 November 2026 on the Commission's strategy and reports page. The pa
 |---|---|---|---|
 | North Macedonia | RUN-2026-01 | enlargement.ec.europa.eu/north-macedonia-report-2026_en (SWD(2026) 693 final) | Registered, MKD-EU-2026-007; factsheet MKD-EU-2026-008 |
 | Moldova | RUN-2026-02 | enlargement.ec.europa.eu/moldova-report-2026_en (SWD(2026) 698 final) | Registered, MDA-EU-2026-012; factsheet MDA-EU-2026-013 |
-| Montenegro | RUN-2026-03 (next, held under E20) | enlargement.ec.europa.eu/montenegro-report-2026_en | Published; not downloaded |
+| Montenegro | RUN-2026-03 (next, held under E20) | enlargement.ec.europa.eu/montenegro-report-2026_en | Registered by RUN-2026-02 as a comparator source, MNE-EU-2026-003; RUN-2026-03 confirms it at its G1 |
 | Albania | RUN-2026-04 | enlargement.ec.europa.eu/albania-report-2026_en | Published; not downloaded |
 | Ukraine | RUN-2026-05 | enlargement.ec.europa.eu/ukraine-report-2026_en | Published; not downloaded |
 | Serbia | RUN-2026-06 | enlargement.ec.europa.eu/serbia-report-2026_en | Published; not downloaded |
