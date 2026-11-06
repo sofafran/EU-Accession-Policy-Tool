@@ -1,5 +1,11 @@
 # Codebook change log
 
+## Taxonomy 1.3, 6 November 2026
+
+Approved by Sofia at G5 of RUN-2026-02 (GATE-0023, `review/RUN-2026-02/G5_decisions.csv`, G5-D01 to G5-D11 accepted). Additive only (scaling note S4): no existing issue changed.
+
+- **Taxonomy 1.3 (`taxonomy/reform_issues.csv`):** RI-FMW-016 Host-language tuition for EU workers and their children added (G5-D01), the first shared issue approved under PC-12 as not raised in EU material; the problem is recorded by the Moldovan Government under Directive 77/486/EEC. Proposals on national data governance, broadband affordability and the protection of rights online not added (G5-D02, G5-D03); their items are listed in the outputs.
+
 ## Taxonomy 1.2, theme list 1.4 and extraction rules 0.6, 5 November 2026
 
 Approved by Sofia at G4 of RUN-2026-02 (GATE-0021, `review/RUN-2026-02/G4_decisions.csv`, G4-D01 to G4-D10 accepted). Shared changes are additive only (G4-D08, scaling note S4): no approved issue is reworded, merged, split or retired, and RUN-2026-01 judgements keep taxonomy 1.1. No codebook, data dictionary or schema version changes.

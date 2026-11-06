@@ -1,6 +1,6 @@
 # Issue brief: Digital communication with courts and justice system connections incomplete
 
-RI-TEC-010 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-010 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Digital communication with courts is incomplete, or justice system IT does not connect between institutions. **Problem mechanisms:** Insufficient resources (MEC-09); Weak administrative capacity (MEC-03).
 
@@ -34,13 +34,12 @@ The Commission has asked North Macedonia to digitalise its justice system, inclu
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
 | Digital interconnection between the Administrative Court, the Higher Administrative Court and other public bodies | it_system | implemented | The Commission's 2026 Rule of Law report describes the interconnection as a key advancement that enables electronic exchange. It is one statement and gives no usage data. |
 | Luris software | it_system | insufficient_evidence | The only evidence is a 2023 statement in the country's presentation that the software needs connecting between two bodies. It does not say whether the software is working or whether the connection was made. |
-| Administrative Court e-platform for digital submission and exchange of documents | it_system | adopted (proposed) | The Commission reports that the Administrative Court concluded memoranda of understanding with several institutions for digital submission and exchange of documents through a dedicated e-platform. No item shows the platform in use. |
+| Administrative Court e-platform for digital submission and exchange of documents | it_system | adopted | The Commission reports that the Administrative Court concluded memoranda of understanding with several institutions for digital submission and exchange of documents through a dedicated e-platform. No item shows the platform in use. |
 
 ## Outcomes
 

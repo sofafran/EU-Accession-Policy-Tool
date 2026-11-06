@@ -1,6 +1,6 @@
 # Issue brief: Work permits, quotas and residence conditions applied to EU workers
 
-RI-FMW-002 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-FMW-002 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** EU workers and their family members are subject to work permits, annual quotas, residence permits or unspecified conditions (for example for seasonal work) that must be lifted or settled by accession. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Missing implementing rules (MEC-02).
 
@@ -34,7 +34,6 @@ The Commission requires that, by accession, EU citizens can access North Macedon
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -46,7 +45,7 @@ Statuses marked (proposed) rest on evidence added after G7 and are tier 2 propos
 | 2019 amendments to the Law on Foreigners | law | implemented | The Commission reports that the amendments entered into force in May 2019 and simplified the single application for work permits. This describes the process in law and does not show how it is used, so I do not use the stated in_practice. |
 | Single application procedure for work permits | other | implemented | The Commission says permits may be acquired through a single application to a single authority, last in 2021. This describes the procedure as available, not evidence of how it is used, so the stated in_practice is not adopted. |
 | Annual quota of work permits for foreigners | other | in_practice | The Commission states the country sets maximum quotas each year and that the Agency issues permits following them. The Agency's 2021 report adds counts of opinions based on quota use. |
-| Law on the Work Engagement of Individuals | law | adopted (proposed) | The Commission reports the Law on seasonal workers adopted and in force from 1 January 2026, and states that the conditions for EU citizens are still to be specified in implementing legislation. No item reports how the law has been applied to EU citizens. |
+| Law on the Work Engagement of Individuals | law | adopted | The Commission reports the Law on seasonal workers adopted and in force from 1 January 2026, and states that the conditions for EU citizens are still to be specified in implementing legislation. No item reports how the law has been applied to EU citizens. |
 | secondary legislation under the 2021 amending law | secondary_legislation | insufficient_evidence | The stated adopted is misleading, because the item is only the law's clause saying the secondary legislation will be adopted within 30 days. No item shows that it was. |
 
 ## Outcomes
@@ -72,14 +71,14 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 | [18] | 2025 | MKD-EU-2025-003 | Country response | The law on employment and work of foreigners sets work permit quotas, which do not apply to EU citizens under a reciprocity agreement. | High | Medium | High |  |
 | [20] | 2015 | MKD-GOV-2015-001 | Country response | The quota excludes foreigners given equality with nationals under a reciprocity agreement with the European Union. | not rated | Medium | High | machine translated |
 | [10] | 2025 | MKD-EU-2025-001 | EU requirement | EU citizens may access seasonal work, but the conditions still need to be set in implementing legislation. | High | High | High |  |
-| [21] | 2026 | MKD-EU-2026-007 | EU requirement | Limited progress was made on freedom of movement for workers, through the adoption of the Law on seasonal workers. | High | High (proposed) |  |  |
+| [21] | 2026 | MKD-EU-2026-007 | EU requirement | Limited progress was made on freedom of movement for workers, through the adoption of the Law on seasonal workers. | High | High |  |  |
 | [22] | 2025 | MKD-EU-2025-001 | EU requirement | The Commission found North Macedonia at an early stage of preparation on freedom of movement for workers, with no progress. | High | High |  |  |
-| [23] | 2026 | MKD-EU-2026-007 | Country response | The Law on seasonal workers came into force on 1 January 2026. | High | High (proposed) | High (proposed) |  |
-| [24] | 2026 | MKD-EU-2026-007 | Country response | The Law on seasonal workers was adopted. | High | High (proposed) | High (proposed) |  |
-| [25] | 2026 | MKD-EU-2026-007 | Implementation | The annual work permit quota is 10 000 for 2026. | High | High (proposed) | High (proposed) |  |
-| [26] | 2026 | MKD-EU-2026-007 | EU requirement | Work permits are subject to an annual quota and family reunification is allowed. | High | High (proposed) | High (proposed) |  |
-| [27] | 2026 | MKD-EU-2026-007 | EU requirement | EU citizens may do seasonal work but the conditions are still to be set in implementing legislation. | High | High (proposed) | High (proposed) |  |
-| [28] | 2026 | MKD-EU-2026-007 | Implementation | North Macedonia issued 8 119 work permits to foreign workers in 2025. | High | High (proposed) | High (proposed) |  |
+| [23] | 2026 | MKD-EU-2026-007 | Country response | The Law on seasonal workers came into force on 1 January 2026. | High | High | High |  |
+| [24] | 2026 | MKD-EU-2026-007 | Country response | The Law on seasonal workers was adopted. | High | High | High |  |
+| [25] | 2026 | MKD-EU-2026-007 | Implementation | The annual work permit quota is 10 000 for 2026. | High | High | High |  |
+| [26] | 2026 | MKD-EU-2026-007 | EU requirement | Work permits are subject to an annual quota and family reunification is allowed. | High | High | High |  |
+| [27] | 2026 | MKD-EU-2026-007 | EU requirement | EU citizens may do seasonal work but the conditions are still to be set in implementing legislation. | High | High | High |  |
+| [28] | 2026 | MKD-EU-2026-007 | Implementation | North Macedonia issued 8 119 work permits to foreign workers in 2025. | High | High | High |  |
 | [8] | 2025 | MKD-EU-2025-001 | EU requirement | Work permits are subject to an annual quota and family reunification is allowed. | High | High | High |  |
 | [14] | 2024 | MKD-EU-2024-001 | EU requirement | Work permit quotas are set annually, and family reunification is allowed. | High | High | High |  |
 | [7] | 2023 | MKD-EU-2023-001 | Country response | The Employment Agency issues several types of work permits for foreign workers in line with annual quotas under the Law on employment of foreigners. | High | High | High |  |

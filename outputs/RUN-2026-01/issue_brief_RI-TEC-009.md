@@ -1,6 +1,6 @@
 # Issue brief: eHealth systems not interoperable or aligned with EU rules
 
-RI-TEC-009 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-009 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Electronic health systems are not interoperable with health insurance data, referrals remain on paper, and the legislation is not aligned with the EU acquis on eHealth. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak administrative capacity (MEC-03).
 
@@ -65,9 +65,9 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [17] | 2026 | MKD-EU-2026-007 | EU requirement | The national e-health system holds data only from public healthcare, so patient files lack private facilities' data. | High | High (proposed) | High (proposed) |  |
-| [18] | 2026 | MKD-EU-2026-007 | EU requirement | The e-health application is functional. | High | High (proposed) | High (proposed) |  |
-| [19] | 2026 | MKD-EU-2026-007 | EU requirement | The e-health appointment system needs improvement. | High | High (proposed) | High (proposed) |  |
+| [17] | 2026 | MKD-EU-2026-007 | EU requirement | The national e-health system holds data only from public healthcare, so patient files lack private facilities' data. | High | High | High |  |
+| [18] | 2026 | MKD-EU-2026-007 | EU requirement | The e-health application is functional. | High | High | High |  |
+| [19] | 2026 | MKD-EU-2026-007 | EU requirement | The e-health appointment system needs improvement. | High | High | High |  |
 | [1] | 2025 | MKD-EU-2025-001 | EU requirement | The country should make eHealth data interoperable with Health Insurance Fund data and increase health funding, awareness and staff, especially for cancer detection. | High | High | High |  |
 | [8] | 2025 | MKD-EU-2025-001 | EU requirement | The eHealth appointment system is not yet interoperable with Health Insurance Fund data. | High | High | High |  |
 | [7] | 2024 | MKD-EU-2024-001 | EU requirement | Despite an e-health application, referrals are still on paper and the application is not interoperable with Health Insurance Fund data. | High | High | High |  |

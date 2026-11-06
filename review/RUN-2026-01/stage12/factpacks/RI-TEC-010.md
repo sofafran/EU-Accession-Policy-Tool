@@ -13,6 +13,7 @@ Digital communication with courts is incomplete, or justice system IT does not c
 
 - INT-MKD-0274 Digital interconnection between the Administrative Court, the Higher Administrative Court and other public bodies: implemented. The Commission's 2026 Rule of Law report describes the interconnection as a key advancement that enables electronic exchange. It is one statement and gives no usage data.
 - INT-MKD-0293 Luris software: insufficient_evidence. The only evidence is a 2023 statement in the country's presentation that the software needs connecting between two bodies. It does not say whether the software is working or whether the connection was made.
+- INT-MKD-0549 Administrative Court e-platform for digital submission and exchange of documents: adopted. The Commission reports that the Administrative Court concluded memoranda of understanding with several institutions for digital submission and exchange of documents through a dedicated e-platform. No item shows the platform in use.
 
 ## Outcomes
 
@@ -27,8 +28,9 @@ Digital communication with courts is incomplete, or justice system IT does not c
 - MKD-EU-2023-003-0130 | 2023-07 | recommendation | North Macedonia says the Luris software needs to be connected between the Ministry of Justice and the Public Prosecutor's Office.
 - MKD-EU-2024-001-0035 | 2024-10 | recommendation | More efforts are needed to digitalise the justice system, especially communication with courts and videoconferencing for hearings.
 - MKD-EU-2025-001-0058 | 2025-11 | recommendation | More effort is needed to digitalise the justice system, particularly communication with courts and videoconferencing for hearings.
+- MKD-EU-2026-007-0031 | 2026-11 | recommendation | Digitalise the entire justice system, especially communication with courts and videoconferencing for hearings.
 
-## Items relied on by the validated judgements (summary, then quote); 8 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 10 in-scope items in all
 
 - MKD-EU-2020-001-0030 | eu_requirement | 2020-10 | conf High | rel High | IT connections should be prioritised, including full digitalisation of cases and summoning, with training for judges and staff. | "Additionally, IT connections need to be prioritised, including full digitalisation of cases and summoning, ensuring training for judges and judicial staff."
 - MKD-EU-2023-003-0089 | eu_requirement | 2023-07 | conf High | rel High | Digitalisation, including interoperability between IT systems, and coordination between judicial cooperation authorities need to improve. | "Di gitalisation (including interoperability between the IT systems) and coordination between the relevant authorities need to improve."
@@ -36,3 +38,4 @@ Digital communication with courts is incomplete, or justice system IT does not c
 - MKD-EU-2024-001-0035 | eu_requirement | 2024-10 | conf High | rel High | More efforts are needed to digitalise the justice system, especially communication with courts and videoconferencing for hearings. | "More efforts are necessary to digitalise the justice system, in particular in relation to communication with courts and the use of videoconferencing for court hearings."
 - MKD-EU-2025-001-0058 | eu_requirement | 2025-11 | conf High | rel High | More effort is needed to digitalise the justice system, particularly communication with courts and videoconferencing for hearings. | "More efforts are necessary to digitalise the justice system, in particular in relation to communication with courts and the use of videoconferencing for court hearings."
 - MKD-EU-2026-006-0002 | country_response | 2026-07 | conf High | rel High | The Administrative Court, Higher Administrative Court and other public bodies were digitally interconnected, enabling secure electronic exchange of data and documents. | "A key advancement in the digitalisation efforts was the digital interconnection between the Administrative Court, the Higher Administrative Court and other public bodies, enabling fast and secure electronic exchange of data and documents, improving coordination and reducing costs."
+- MKD-EU-2026-007-0030 | country_response | 2026-11 | conf High | rel High | The Administrative Court agreed with other institutions to submit and exchange documents digitally via a dedicated e-platform. | "The Administrative Court concluded memoranda of understanding with several judicial and other institutions for the digital submission and exchange of documents via a dedicated e-platform."

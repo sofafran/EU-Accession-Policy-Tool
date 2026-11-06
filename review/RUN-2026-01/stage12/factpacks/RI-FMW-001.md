@@ -53,8 +53,12 @@ The law governing access to the labour market does not give EU workers equal tre
 - MKD-EU-2025-001-0013 | 2025-11 | recommendation | The country should continue aligning labour market access law with EU rules, particularly on non-discrimination against EU workers by nationality.
 - MKD-EU-2025-001-0096 | 2025-11 | finding | There were no legislative developments on access to the labour market in the reporting period.
 - MKD-EU-2025-001-0101 | 2025-11 | finding | Some private sector posts are reserved for citizens of North Macedonia.
+- MKD-EU-2026-007-0009 | 2026-11 | recommendation | Continue aligning with the EU free movement of workers acquis, including labour market access and non-discrimination of EU workers on nationality.
+- MKD-EU-2026-007-0070 | 2026-11 | finding | There were no legislative developments on access to the labour market.
+- MKD-EU-2026-007-0075 | 2026-11 | finding | Some private sector posts are reserved for citizens of North Macedonia.
+- MKD-EU-2026-007-0145 | 2026-11 | finding | The Law on work and employment of foreigners and family reunification legislation are not fully aligned with the EU acquis.
 
-## Items relied on by the validated judgements (summary, then quote); 41 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 46 in-scope items in all
 
 - MKD-EU-2020-001-0076 | eu_requirement | 2020-10 | conf High | rel High | The country should keep adapting its labour market access law to the acquis, notably on nationality non-discrimination against EU workers. | "continue to adapt the legal framework in line with the EU acquis on access to the labour market, in particular regarding non -discrimination on grounds of nationality against EU workers;"
 - MKD-EU-2020-001-0079 | eu_requirement | 2020-10 | conf High | rel High | There was no progress in aligning national legislation with the EU acquis. | "There was no progress in aligning national legislation wi th the EU acquis."

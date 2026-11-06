@@ -1,6 +1,6 @@
 # Issue brief: Security of 5G networks not ensured
 
-RI-TEC-024 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-024 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The EU 5G Cybersecurity Toolbox, including supplier risk assessment and restrictions on high-risk suppliers, is not fully transposed or applied when 5G networks are deployed. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak enforcement or oversight (MEC-04).
 
@@ -34,13 +34,12 @@ The Commission asks North Macedonia to implement the EU 5G Cybersecurity Toolbox
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
 | Amendments to the Law on Electronic Communications (April 2021) | law | reversed | The 2025 Law on Electronic Communications (Law on Electronic Communications 2025) repeals the earlier law, listing Official Gazette 92/21 among its amendments, from the day it starts to apply, 1 June 2026. The successor is therefore in application at the freeze date. |
 | By-laws implementing the April 2021 amendments to the Law on Electronic Communications | secondary_legislation | adopted | The Commission reports the regulator adopted the by-laws. Their parent law ceased to apply on 1 June 2026, new by-laws are due, and no item says what happened to these, so the reviewer should note that. |
-| Law on Electronic Communications 2025 | law | adopted (proposed) | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
+| Law on Electronic Communications 2025 | law | adopted | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
 | Reform 2.2.2.1 Secure Digital infrastructures roll-out | programme | proposed | The reform as a whole is a Reform Agenda plan for infrastructure, 5G and related law. A new Law on Electronic Communications was adopted in June 2025 as one part, but no item shows the secure infrastructure rolled out. |
 | 5G spectrum assignment | other | in_practice | The Commission reports that approvals for 5G frequencies were granted and that 5G coverage keeps expanding, and the State Audit Office reports 96.99% population coverage. One frequency remained to be tendered in 2024, and that tender is rated separately as Public tender for radio frequency bands 700 MHz, 1800 MHz and 3.x GHz. |
 | 5G roll-out | programme | in_practice | The input items are Reform Agenda plans, but the Commission records 5G reaching Skopje and coverage continuing to expand, and the State Audit Office reports 96.99% population coverage. The Reform Agenda step also covers the security toolbox and one remaining frequency, which are separate and not shown complete. |

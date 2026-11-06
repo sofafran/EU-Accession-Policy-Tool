@@ -41,8 +41,9 @@ The public employment service lacks trained staff or adequate IT and data system
 - MKD-EU-2025-003-0069 | 2025-02 | finding | North Macedonia has a good level of alignment on EURES at both IT and structural levels.
 - MKD-EU-2025-003-0070 | 2025-02 | recommendation | North Macedonia will have to ensure private employment agencies are adequately connected.
 - MKD-EU-2025-001-0012 | 2025-11 | recommendation | The country should strengthen the Employment Service Agency through training and align legislation and good practice exchange with EURES and ELA regulations.
+- MKD-EU-2026-007-0008 | 2026-11 | recommendation | Strengthen the Employment Service Agency through training and align legislation and practice with the EURES and European Labour Authority regulations.
 
-## Items relied on by the validated judgements (summary, then quote); 21 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 22 in-scope items in all
 
 - MKD-EU-2023-001-0089 | eu_requirement | 2023-11 | conf High | rel High | Strengthen the Employment Service Agency through training, and further align legislation and exchange good practice in line with EURES and ELA rules. | "strengthen the capacity of the Employment Service Agency, by continuing training activities, and further align legislation and exchange of good practices , in line with EURES and ELA regulations;"
 - MKD-EU-2024-001-0007 | eu_requirement | 2024-10 | conf High | rel High | North Macedonia should strengthen the Employment Service Agency through training and further align legislation and good practice with EURES and ELA regulations. | "strengthen the capacity of the Employment Service Agency, by continuing to organise training activities, and further align legislation and the exchange of good practices, in line with EURES and ELA regulations;"

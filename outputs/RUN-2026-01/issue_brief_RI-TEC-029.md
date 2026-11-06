@@ -1,6 +1,6 @@
 # Issue brief: Customs IT systems not aligned with EU electronic customs
 
-RI-TEC-029 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-029 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** National customs IT systems are not yet aligned with the EU electronic customs strategic plan, and upgrades such as the New Computerised Transit System phases, export and import control systems are delayed or understaffed. **Problem mechanisms:** Weak administrative capacity (MEC-03); Legal or regulatory gap (MEC-01).
 
@@ -34,7 +34,6 @@ The Commission asks North Macedonia to keep consolidating and upgrading its cust
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -52,10 +51,10 @@ Statuses marked (proposed) rest on evidence added after G7 and are tier 2 propos
 | Automated Export System | it_system | proposed | The new export system is a Reform Agenda step with a June 2027 target. No item reports it implemented. |
 | Import Control System 2 (ICS2) | it_system | proposed | ICS2 appears only as a Reform Agenda step with a December 2027 target and is described in the future tense. No source reports that work is finished. |
 | Customs Declarations and Excises processing system | it_system | proposed | The Reform Agenda says the customs administration still has to establish this system, and no item shows it built or in development. |
-| Economic Operator Registration and Identification (EORI) system | it_system | implemented (proposed) | The Commission reports that the pilot phase of the system was launched. A pilot in operation is partial roll-out, and no item reports its use. |
+| Economic Operator Registration and Identification (EORI) system | it_system | implemented | The Commission reports that the pilot phase of the system was launched. A pilot in operation is partial roll-out, and no item reports its use. |
 | Integrated Tariff Environment (ITE) | it_system | implemented | The Commission reports that maintenance and further development of the system were secured in 2025. It gives no usage evidence. |
 | National Single Window | it_system | proposed | In 2024 the World Bank was still recommending adoption of the draft law needed to allow the new system. No item shows the law adopted or the system built. |
-| Uniform User Management and Digital Signature (UUM&DS) system | it_system | implemented (proposed) | The Commission reports that the pilot phase of the system was launched. A pilot in operation is partial roll-out, and no item reports its use. |
+| Uniform User Management and Digital Signature (UUM&DS) system | it_system | implemented | The Commission reports that the pilot phase of the system was launched. A pilot in operation is partial roll-out, and no item reports its use. |
 | Upgrade of the national module of the IT system for management of economic operators (MEOS) | it_system | proposed | The screening report gives an upgrade planned for 2024 and full alignment in 2028 to 2030. No item confirms the 2024 upgrade took place. |
 | Recruitment of 15 additional IT experts for the e-customs group | programme | proposed | The Commission reports it as a plan to employ 15 more experts. No item shows the recruitment done. |
 | Customs IT development milestones 2024-2026 (NCTS phase five, Single Window System, Integrated Tariff Environment, Control and Investigation Management System) | other | proposed | The screening report records these as planned milestones. Phase 5 was later delivered in January 2025, but the other milestones are not reported as met. |

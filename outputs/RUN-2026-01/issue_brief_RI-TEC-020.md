@@ -1,6 +1,6 @@
 # Issue brief: Weak compliance with data protection rules
 
-RI-TEC-020 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-020 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Data controllers, including public bodies, do not apply data protection law in practice, breaches are frequent and not always reported, awareness is low, and sanctions are rare. **Problem mechanisms:** Weak enforcement or oversight (MEC-04); Weak administrative capacity (MEC-03).
 
@@ -78,11 +78,11 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [3] | 2025 | MKD-EU-2025-001 | EU requirement | Data breaches are becoming more frequent and some are not reported as the law requires. | High | High | High |  |
+| [3] | 2025 | MKD-EU-2025-001 | EU requirement | Data breaches are becoming more frequent and some are not reported as the law requires. | High | Medium | High |  |
 | [4] | 2025 | MKD-EU-2025-001 | EU requirement | State administrative bodies still show low awareness of data protection and insufficient IT protection of personal data. | High | High | High |  |
-| [20] | 2026 | MKD-EU-2026-007 | EU requirement | Reported data breach incidents are declining. | High | Medium (proposed) | High (proposed) |  |
-| [21] | 2026 | MKD-EU-2026-007 | Unresolved gap | The Agency estimates severe under-reporting of data breaches because of fear of consequences and low public awareness. | High | Medium (proposed) | High (proposed) |  |
-| [22] | 2026 | MKD-EU-2026-007 | EU requirement | Digital safeguards in state administrative bodies are insufficient. | High | High (proposed) | High (proposed) |  |
+| [20] | 2026 | MKD-EU-2026-007 | EU requirement | Reported data breach incidents are declining. | High | Medium | High |  |
+| [21] | 2026 | MKD-EU-2026-007 | Unresolved gap | The Agency estimates severe under-reporting of data breaches because of fear of consequences and low public awareness. | High | Medium | High |  |
+| [22] | 2026 | MKD-EU-2026-007 | EU requirement | Digital safeguards in state administrative bodies are insufficient. | High | High | High |  |
 | [23] | 2026 | MKD-GOV-2026-002 | Country response | The Rulebook on security of personal data processing has applied since 1 July 2025; controllers and processors must align their processes. | Medium | Medium | Medium | machine translated |
 | [9] | 2024 | MKD-GOV-2024-006 | Country response | Indicator: establishment of the data protection officer network, with the time frame 2026. | High | High | High |  |
 | [24] | 2024 | MKD-GOV-2024-006 | Country response | Indicator: adopted changes to sectoral misdemeanour legislation, with the time frame last quarter 2025 to first quarter 2026. | High | High |  |  |

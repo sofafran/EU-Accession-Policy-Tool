@@ -49,8 +49,12 @@ Systems in other sectors are not yet ready to interconnect with EU information s
 - MKD-EU-2025-005-0019 | 2025-07 | recommendation | The Commission says North Macedonia still needs to link its national emergency communication system to CECIS.
 - MKD-EU-2025-001-0026 | 2025-11 | recommendation | The country should develop a new integrated IT tax system and prepare for interconnection and interoperability with EU taxation IT systems.
 - MKD-EU-2025-001-0177 | 2025-11 | finding | The national emergency communication system is not yet connected to the Commission's Common Emergency Communication and Information System.
+- MKD-EU-2026-007-0016 | 2026-11 | recommendation | Develop an integrated IT tax system and prepare interconnection and interoperability with the common EU taxation IT systems.
+- MKD-EU-2026-007-0136 | 2026-11 | finding | The national emergency communication system is still not connected to CECIS, although TESTA is in place.
+- MKD-EU-2026-007-0137 | 2026-11 | recommendation | Meanwhile, North Macedonia should connect to CECIS LITE for civil protection communication.
+- MKD-EU-2026-007-0138 | 2026-11 | finding | The IT system for A and B accounts and access to the EU OWNRES system remain pending.
 
-## Items relied on by the validated judgements (summary, then quote); 53 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 57 in-scope items in all
 
 - MKD-EU-2023-001-0109 | eu_requirement | 2023-11 | conf High | rel High | The national business register should be technically ready to interconnect with the EU Business Registers Interconnection System. | "In the future, the national business register should be technically ready to interconnect with the EU Business Registers Interconnection System."
 - MKD-EU-2023-001-0181 | eu_requirement | 2023-11 | conf High | rel High | No progress was made in linking the national emergency communication system to the EU's CECIS or in defining the national coordinator's role. | "Despite its longstanding participation in the system, no progress has been made in linking the national emergency communication system to the European Commission's Common, Emergency, Communication and Information System (CECIS) or in better defining the role of the national coordinator for the N ational Platform on Disaster Risk Reduction."

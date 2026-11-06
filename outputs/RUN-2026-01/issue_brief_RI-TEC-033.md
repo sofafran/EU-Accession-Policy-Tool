@@ -1,6 +1,6 @@
 # Issue brief: Low digital adoption by businesses
 
-RI-TEC-033 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-033 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Digitalisation of the economy and adoption of digital technologies by small businesses remain low compared with the EU and undermine competitiveness, and EU programmes and digital innovation hubs are little used. **Problem mechanisms:** Insufficient resources (MEC-09).
 
@@ -34,17 +34,16 @@ The Commission finds that digitalisation of the economy remains low and restrain
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
-| ICT Development Strategy SMART/MK: 2030 | strategy | implemented (proposed) | The Commission reports that, in line with the long-term ICT strategy and its action plan, the Ministry of Digital Transformation widened participation in data exchange and integrated Single Sign-On across service providers. This shows measures under the strategy being delivered, but no item measures delivery against its targets, and the link between the Commission's 'long-term ICT strategy' and SMART/MK rests on timing. |
+| ICT Development Strategy SMART/MK: 2030 | strategy | implemented | The Commission reports that, in line with the long-term ICT strategy and its action plan, the Ministry of Digital Transformation widened participation in data exchange and integrated Single Sign-On across service providers. This shows measures under the strategy being delivered, but no item measures delivery against its targets, and the link between the Commission's 'long-term ICT strategy' and SMART/MK rests on timing. |
 | Smart Specialisation Strategy S3-MK 2024-2027 | strategy | adopted | The Commission reports adoption of the strategy and its action plan in December 2023. Later items only cite the strategy or restate plans, so no source shows measures carried out. |
 | Association Agreement to the Digital Europe Programme | other | adopted | The agreement was signed on 30 June 2023 and the country joined the programme. No item shows actual participation in calls, and in January 2025 the Commission was still urging active participation. |
 | Digital Innovation Hubs (national) | programme | proposed | The Reform Agenda says two hubs are in early development, and the 2025 strategy still speaks of forming hubs in the future. No source shows a hub operating. |
 | Support and subsidy system for digital transformation of agriculture | programme | proposed | The strategy calls for analysis and development of this system. No source reports it being set up. |
 | Action Plan of the Industrial Strategy 2022-2023 (programme for digital and green transitions) | action_plan | adopted | The action plan exists with 34 measures, and a budget allocation for 2023 is reported by the country itself. An allocation does not show that measures were carried out, and the plan's period has ended. |
-| AI Factory Antenna Vezilka (Grant Agreement) | programme | implemented (proposed) | The Commission reports the grant agreement signed in April 2026 and the national AI Factory Antenna established and connected to the European network of AI Factories through a partnership with the Pharos AI Factory in Greece. No item reports activity or users of the antenna, and its positioning of the country is a stated outcome. |
+| AI Factory Antenna Vezilka (Grant Agreement) | programme | implemented | The Commission reports the grant agreement signed in April 2026 and the national AI Factory Antenna established and connected to the European network of AI Factories through a partnership with the Pharos AI Factory in Greece. No item reports activity or users of the antenna, and its positioning of the country is a stated outcome. |
 | Competitiveness for Jobs and Economic Transformation (C-JET) grant | programme | insufficient_evidence | The grant appears once, in a list of World Bank engagement, with no status, dates or results. That is too thin to say whether the assessment was done. |
 | Financial support and grant mechanism for digital transformation | programme | proposed | The strategy provides for this mechanism, with no evidence it has been set up. |
 | Digital service vouchers for SMEs (A 4.1.1.2) | other | proposed | This is an action plan row in the digital strategy. |

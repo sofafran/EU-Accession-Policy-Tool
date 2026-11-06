@@ -50,8 +50,10 @@ The point of single contact does not give service providers full online informat
 - MKD-EU-2025-001-0113 | 2025-11 | recommendation | The point of single contact portal should offer more e-services and information, especially on licences and procedures for businesses.
 - MKD-EU-2025-001-0206 | 2025-11 | recommendation | North Macedonia should align with the professional qualifications directive and set up a transparent electronic register of all regulated professions.
 - MKD-EU-2025-001-0212 | 2025-11 | finding | Applications to the point of single contact portal may already be submitted electronically.
+- MKD-EU-2026-007-0087 | 2026-11 | recommendation | The portal needs more e-services and information to serve as the single point of contact for services.
+- MKD-EU-2026-007-0089 | 2026-11 | recommendation | Align with the professional qualifications directive and set up a transparent electronic register of regulated professions.
 
-## Items relied on by the validated judgements (summary, then quote); 31 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 34 in-scope items in all
 
 - MKD-EU-2020-001-0171 | eu_requirement | 2020-10 | conf High | rel High | Data validation of the professional qualifications electronic register still needs finalising, and accredited qualifications need including. | "The data validation of the professional qualifications electronic register still needs to be finalised and the accredited professional qualifications included ."
 - MKD-EU-2021-001-0124 | eu_requirement | 2021-10 | conf High | rel High | North Macedonia should establish a Point of Single Contact, including for company registration, in line with the Services Directive. | "establish a Point of Single Contact, including for company registration, in line with the Services Directive;"

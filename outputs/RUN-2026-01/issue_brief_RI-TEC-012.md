@@ -1,6 +1,6 @@
 # Issue brief: Electronic communications regulator independence and market oversight weak
 
-RI-TEC-012 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-012 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The electronic communications regulator lacks guaranteed independence in appointments and funding and sufficient capacity, and competitive safeguards in a concentrated telecom market are not applied. **Problem mechanisms:** Lack of institutional independence (MEC-05); Weak enforcement or oversight (MEC-04); Political economy and vested interests (MEC-10).
 
@@ -34,11 +34,10 @@ The Commission asks North Macedonia to strengthen the independence and capacity 
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
-| Law on Electronic Communications 2025 | law | adopted (proposed) | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
+| Law on Electronic Communications 2025 | law | adopted | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
 | 5G spectrum assignment | other | in_practice | The Commission reports that approvals for 5G frequencies were granted and that 5G coverage keeps expanding, and the State Audit Office reports 96.99% population coverage. One frequency remained to be tendered in 2024, and that tender is rated separately as Public tender for radio frequency bands 700 MHz, 1800 MHz and 3.x GHz. |
 | Public tender for radio frequency bands 700 MHz, 1800 MHz and 3.x GHz | other | proposed | The regulator published the tender in 2025 and received one compliant bid, but the decision was postponed and the deadline moved to 12 January 2026. No source gives the outcome, so the assignment is treated as work under way and not concluded. |
 | Third mobile network operator | other | proposed | The strategy says an obligation to introduce a third operator will be set, and no item shows it done. |
@@ -59,8 +58,8 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The Agency for Electronic Communications should further increase its independence. | High | High (proposed) | High (proposed) |  |
-| [22] | 2026 | MKD-EU-2026-007 | EU requirement | In January 2026 a new operator was licensed as North Macedonia's third mobile network operator. | High | High (proposed) | High (proposed) |  |
+| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The Agency for Electronic Communications should further increase its independence. | High | High | High |  |
+| [22] | 2026 | MKD-EU-2026-007 | EU requirement | In January 2026 a new operator was licensed as North Macedonia's third mobile network operator. | High | High | High |  |
 | [1] | 2025 | MKD-EU-2025-001 | EU requirement | The country should strengthen the independence and capacity of the media regulator, the public service broadcaster and the electronic communications regulator. | High | High | High |  |
 | [2] | 2025 | MKD-EU-2025-001 | EU requirement | The Agency for Electronic Communications should strengthen its independence. | High | High | High |  |
 | [5] | 2025 | MKD-EU-2025-014 | EU requirement | The Commission stressed that the new law aligning with the EU telecoms code must ensure the regulator's independence. | Medium | Medium | High |  |

@@ -1,6 +1,6 @@
 # Issue brief: Base registers incomplete, unreliable or not digitalised
 
-RI-TEC-015 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-015 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Key registers, above all the population register, hold data of poor quality or are little used, and many institutional, property and intellectual property registers are not yet digitalised or kept up to date. **Problem mechanisms:** Poor transparency or unreliable data (MEC-07); Weak administrative capacity (MEC-03).
 
@@ -34,7 +34,6 @@ The Commission asks North Macedonia to complete the digitalisation of institutio
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -56,7 +55,7 @@ Statuses marked (proposed) rest on evidence added after G7 and are tier 2 propos
 | National Real Estate Register (digitalised central database) | it_system | implemented | The only evidence is the country's own account in the screening report that the register is digitalised and professional users are connected. That is not independent evidence of use, so the stated in_practice is lowered. |
 | New digital services of the Cadastre Office | it_system | implemented | The Commission says the Cadastre Office launched new digital services and reduced unresolved cases by 20%. It does not measure use of the services directly, so I stop at implemented, and the fall in cases is not assessed here as a result of them. |
 | Unique Electronic Number as primary identifier (A 3.1.5.4) | it_system | proposed | This is a SMART/MK action plan row on changing the legal framework, with no evidence of delivery. |
-| Digitalisation of the State Office for Industrial Property database and online services | programme | implemented (proposed) | The Commission reports that the State Office for Industrial Property fully digitalised its database for patents and trademarks. No item reports use of its online services. |
+| Digitalisation of the State Office for Industrial Property database and online services | programme | implemented | The Commission reports that the State Office for Industrial Property fully digitalised its database for patents and trademarks. No item reports use of its online services. |
 | M 4.2.2 Increasing the number of e-services | programme | proposed | This is a measure in the public administration strategy, worded as an expected effect, and no item reports delivery. |
 | Central Population Register upgrade analysis (A 3.1.5.2) | other | proposed | This is an action plan row in the digital strategy. |
 | Data standards and data governance (A 3.1.4.5) | other | proposed | This is a SMART/MK action plan row, with no evidence of delivery. |
@@ -80,10 +79,10 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 | [1] | 2025 | MKD-EU-2025-001 | EU requirement | The country should fully implement the general administrative procedures law by completing register digitalisation and data exchange and simplifying electronic procedures. | High | High | High |  |
 | [6] | 2024 | MKD-EU-2024-001 | EU requirement | The use of the population register is still limited. | High | High | High |  |
 | [3] | 2025 | MKD-EU-2025-003 | EU requirement | Further digitalisation and transparency of the IPR registration procedure is needed. | High | High | High |  |
-| [22] | 2026 | MKD-EU-2026-007 | Country response | The State Office for Industrial Property fully digitalised its patents and trademarks database. | High | High (proposed) | High (proposed) |  |
-| [23] | 2026 | MKD-EU-2026-007 | Country response | The Agency for Real Estate Cadastre provides a fully digital database that users can easily access. | High | High (proposed) | High (proposed) |  |
-| [24] | 2026 | MKD-EU-2026-007 | Country response | The Cadastre Office continued its digitalisation. | High | High (proposed) | Medium (proposed) |  |
-| [25] | 2026 | MKD-EU-2026-007 | Unresolved gap | People struggle at municipal level because property registers are outdated and kept in analogue format. | High | High (proposed) | High (proposed) |  |
+| [22] | 2026 | MKD-EU-2026-007 | Country response | The State Office for Industrial Property fully digitalised its patents and trademarks database. | High | High | High |  |
+| [23] | 2026 | MKD-EU-2026-007 | Country response | The Agency for Real Estate Cadastre provides a fully digital database that users can easily access. | High | High | High |  |
+| [24] | 2026 | MKD-EU-2026-007 | Country response | The Cadastre Office continued its digitalisation. | High | High | Medium |  |
+| [25] | 2026 | MKD-EU-2026-007 | Unresolved gap | People struggle at municipal level because property registers are outdated and kept in analogue format. | High | High | High |  |
 | [26] | 2023 | MKD-GOV-2023-002 | Country response | The population register underpins the electronic identification trust service and citizens' digital identity. | High | Medium | High | machine translated |
 | [27] | 2023 | MKD-GOV-2023-002 | Country response | A register digitalisation platform will be developed. | High | Medium | High | machine translated |
 | [10] | 2025 | MKD-GOV-2025-004 | Country response | A full list of registers and the metadata needed for a Register of Registers will be determined. | High | Medium | High | machine translated |

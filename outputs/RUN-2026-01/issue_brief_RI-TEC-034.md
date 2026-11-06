@@ -1,6 +1,6 @@
 # Issue brief: Digital single market rules not aligned
 
-RI-TEC-034 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-034 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Legislation is not aligned with EU rules on online platforms and services, such as the Digital Services Act, the Digital Markets Act, the platform-to-business and geo-blocking regulations, and e-commerce is developing slowly. **Problem mechanisms:** Legal or regulatory gap (MEC-01).
 
@@ -63,10 +63,10 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [17] | 2026 | MKD-EU-2026-007 | EU requirement | North Macedonia is partially aligned with the EU acquis on digital services. | High | High (proposed) | High (proposed) |  |
-| [18] | 2026 | MKD-EU-2026-007 | EU requirement | Strengthen regulation of online platforms, consumer protection and fair competition in line with the DSA and DMA. | High | High (proposed) | High (proposed) |  |
-| [19] | 2026 | MKD-EU-2026-007 | EU requirement | Build capacity and a legal basis to enforce the DSA and DMA from accession, as outlined at 2026 TAIEX workshops. | High | High (proposed) | High (proposed) |  |
-| [20] | 2026 | MKD-EU-2026-007 | EU requirement | Further align with EU rules on digital services, cybersecurity and digital trust, and implement the 5G cybersecurity toolbox. | High | High (proposed) | High (proposed) |  |
+| [17] | 2026 | MKD-EU-2026-007 | EU requirement | North Macedonia is partially aligned with the EU acquis on digital services. | High | High | High |  |
+| [18] | 2026 | MKD-EU-2026-007 | EU requirement | Strengthen regulation of online platforms, consumer protection and fair competition in line with the DSA and DMA. | High | High | High |  |
+| [19] | 2026 | MKD-EU-2026-007 | EU requirement | Build capacity and a legal basis to enforce the DSA and DMA from accession, as outlined at 2026 TAIEX workshops. | High | High | High |  |
+| [20] | 2026 | MKD-EU-2026-007 | EU requirement | Further align with EU rules on digital services, cybersecurity and digital trust, and implement the 5G cybersecurity toolbox. | High | High | High |  |
 | [1] | 2025 | MKD-EU-2025-001 | EU requirement | The country still needs to align with the Digital Services Act and Digital Markets Act to strengthen regulation of online platforms. | High | High | High |  |
 | [2] | 2025 | MKD-EU-2025-004 | EU requirement | North Macedonia needs to fully align with electronic commerce rules and the Geo-blocking Regulation. | High | High | High |  |
 | [21] | 2025 | MKD-EU-2025-004 | Country response | The country plans to align with the Digital Services Act, aiming to adopt the alignment by 2028. | High | Medium | High |  |

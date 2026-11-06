@@ -38,8 +38,10 @@ The country has not set up the legal and organisational arrangements needed to j
 - MKD-EU-2025-003-0070 | 2025-02 | recommendation | North Macedonia will have to ensure private employment agencies are adequately connected.
 - MKD-EU-2025-001-0012 | 2025-11 | recommendation | The country should strengthen the Employment Service Agency through training and align legislation and good practice exchange with EURES and ELA regulations.
 - MKD-EU-2025-001-0106 | 2025-11 | finding | There were no developments on EURES in the reporting period.
+- MKD-EU-2026-007-0008 | 2026-11 | recommendation | Strengthen the Employment Service Agency through training and align legislation and practice with the EURES and European Labour Authority regulations.
+- MKD-EU-2026-007-0079 | 2026-11 | finding | There were no developments on preparations for EURES.
 
-## Items relied on by the validated judgements (summary, then quote); 17 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 19 in-scope items in all
 
 - MKD-EU-2020-001-0083 | eu_requirement | 2020-10 | conf High | rel High | No measures were taken to prepare for joining the European network of employment services (EURES) upon accession. | "No measures were taken to prepare for joining the European network of employment services (EURES) upon accession."
 - MKD-EU-2021-001-0067 | eu_requirement | 2021-10 | conf High | rel High | There were still no steps to prepare for joining EURES on accession. | "There were still no developments to prepare for joining the European network of employment services (EURES) upon accession."

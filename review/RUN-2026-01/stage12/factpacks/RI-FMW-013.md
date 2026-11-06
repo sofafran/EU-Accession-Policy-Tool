@@ -33,8 +33,9 @@ The bodies administering free movement of workers, notably the employment servic
 - MKD-EU-2025-003-0118 | 2025-02 | recommendation | Anti-corruption laws and strategies need to be implemented in free movement of workers, including adequate institutional controls.
 - MKD-EU-2025-003-0195 | 2025-02 | recommendation | The Employment Agency still needs to nominate a person to implement the Integrity Policy.
 - MKD-EU-2025-001-0110 | 2025-11 | finding | The Employment Agency applies the civil servants' code but has no integrity policy to strengthen anti-corruption efforts.
+- MKD-EU-2026-007-0085 | 2026-11 | finding | The Employment Agency has still not adopted an integrity policy against corruption.
 
-## Items relied on by the validated judgements (summary, then quote); 13 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 14 in-scope items in all
 
 - MKD-EU-2023-001-0101 | eu_requirement | 2023-11 | conf High | rel High | The Employment Service Agency needs to adopt an integrity policy document to strengthen anti-corruption efforts. | "The Employment Service Agency needs to adopt an integrity policy document strengthening the efforts to fight corruption."
 - MKD-EU-2024-001-0069 | eu_requirement | 2024-10 | conf High | rel High | The specific framework for preventing corruption in free movement of workers remains weak. | "The specific framework for prevention of corruption in the domain of free movement of workers remains weak."

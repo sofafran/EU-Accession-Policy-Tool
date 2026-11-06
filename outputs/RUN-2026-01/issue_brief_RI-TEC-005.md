@@ -1,6 +1,6 @@
 # Issue brief: Limited taxpayer e-services
 
-RI-TEC-005 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-005 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The tax administration offers a limited range of electronic services to taxpayers. **Problem mechanisms:** Weak administrative capacity (MEC-03); Insufficient resources (MEC-09).
 
@@ -34,7 +34,6 @@ The Commission has asked every year from 2020 to 2026 for the Public Revenue Off
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -45,7 +44,7 @@ Statuses marked (proposed) rest on evidence added after G7 and are tier 2 propos
 | Electronic personal tax platform (pre-filled annual tax returns) | it_system | in_practice | The Commission states in reports from 2020 to 2025 that the Public Revenue Office issues pre-filled returns through the platform. This is a specific and repeated description of current use by an independent source, although no usage figures are given. |
 | Open Finance Portal | it_system | implemented | The Commission reports that the portal went live and gives the public transaction data, and the ITU profile lists it. No item measures use, and the last evidence is from 2022. |
 | National open data portal (data.gov.mk) | it_system | unclear | The country's presentation to the Commission in February 2025 describes the portal as in line with best practice, but the State Audit Office says it has not functioned since the beginning of 2025 because of procurement problems. The audit is given more weight because it is specific and independent. No later source says it was restored. Sources conflict: tier 3 for the reviewers. |
-| E-Invoice system | it_system | implemented (proposed) | The Commission reports that the Public Revenue Office launched an e-invoice pilot phase, enabling non-cash transactions to be registered in real time. A pilot in operation is partial roll-out, and no item reports its use. |
+| E-Invoice system | it_system | implemented | The Commission reports that the Public Revenue Office launched an e-invoice pilot phase, enabling non-cash transactions to be registered in real time. A pilot in operation is partial roll-out, and no item reports its use. |
 | IT strategy 2019-2022 of the Public Revenue Office | strategy | adopted | The screening report, from the country's presentation, describes the strategy's priorities. Its period ended in 2022 and no item shows what was delivered under it. |
 | Upgrade of e-tax services | it_system | implemented | The Commission reports the upgrading of e-tax services in 2021. It gives no separate evidence of use of the upgrade. |
 | e-VAT mobile application | it_system | in_practice | The Commission cites the application as a working service that individual taxpayers can use to file VAT returns. This is its own assessment, in two successive years, though the latest is 2023. |

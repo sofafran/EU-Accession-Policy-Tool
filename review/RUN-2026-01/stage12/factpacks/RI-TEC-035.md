@@ -38,8 +38,9 @@ Company law is not fully aligned with EU rules on the use of digital tools and p
 - MKD-EU-2025-003-0188 | 2025-02 | finding | Financial statements submitted on paper are converted into machine-readable digital form (XML files).
 - MKD-EU-2025-001-0015 | 2025-11 | recommendation | The country should align its legislation with EU directives on cross-border conversions, mergers and divisions and on digital tools in company law.
 - MKD-EU-2025-001-0116 | 2025-11 | recommendation | Further alignment with EU law is needed, including on digital tools and processes in company law.
+- MKD-EU-2026-007-0092 | 2026-11 | recommendation | Further align company law, including on digital tools and processes, with the EU acquis.
 
-## Items relied on by the validated judgements (summary, then quote); 21 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 23 in-scope items in all
 
 - MKD-EU-2021-001-0075 | eu_requirement | 2021-10 | conf High | rel High | Further alignment is needed with the 2019 EU acquis on digital tools and cross-border operations in company law, and with shareholder engagement rules. | "Further alignment is necessary with the 2019 EU acquis on use of digital tools and cross-border operations, as well as with the rules on the encouragement of long-term shareholder engagement."
 - MKD-EU-2022-001-0078 | eu_requirement | 2022-10 | conf High | rel High | Further alignment is needed with the 2019 EU acquis on the use of digital tools in company law and cross-border operations. | "Further alignment is necessary with the 2019 EU acquis on the use of digital tools, cross -border operations, as well as with the rules on the encouragement of long-term shareholder engagement."

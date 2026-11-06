@@ -1,6 +1,6 @@
 # Issue brief: Access to healthcare for EU citizens through the European Health Insurance Card
 
-RI-FMW-011 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-FMW-011 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** EU citizens can use the European Health Insurance Card or access medical services only where a bilateral arrangement exists, so access is not yet available to citizens of all Member States. **Problem mechanisms:** Legal or regulatory gap (MEC-01).
 
@@ -64,10 +64,10 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 | [4] | 2021 | MKD-EU-2021-001 | Implementation | Nine agreements with EU Member States allow use of the European Health Insurance Card. | High | High | High |  |
 | [5] | 2022 | MKD-EU-2022-001 | Country response | The citizens may use the European Health Insurance Card in nine EU Member States. | High | High | High |  |
 | [6] | 2023 | MKD-EU-2023-001 | Country response | Citizens of nine EU Member States can use the European Health Insurance Card at contracted healthcare institutions in the country. | High | High | High |  |
-| [9] | 2025 | MKD-EU-2025-001 | EU requirement | Citizens of fourteen named Member States have access to medical services in public and some private healthcare institutions in the country. | High | High | High |  |
+| [9] | 2025 | MKD-EU-2025-001 | EU requirement | Citizens of fourteen named Member States have access to medical services in public and some private healthcare institutions in the country. | High | Medium | High |  |
 | [10] | 2025 | MKD-EU-2025-003 | Country response | Social security agreements with nine Member States include EHIC use; agreements with six others, and with Sweden and Denmark, do not cover it. | High | Medium | High |  |
-| [13] | 2026 | MKD-EU-2026-007 | EU requirement | There have been no developments on the European Health Insurance Card. | High | High (proposed) | High (proposed) |  |
-| [11] | 2026 | MKD-EU-2026-007 | EU requirement | Nine EU Member States continue to have access to medical services in North Macedonia for their citizens. | High | Medium (proposed) | High (proposed) |  |
+| [13] | 2026 | MKD-EU-2026-007 | EU requirement | There have been no developments on the European Health Insurance Card. | High | High | High |  |
+| [11] | 2026 | MKD-EU-2026-007 | EU requirement | Nine EU Member States continue to have access to medical services in North Macedonia for their citizens. | High | Medium | High |  |
 | [14] | 2025 | MKD-EU-2025-001 | EU requirement | The country should conclude social security and healthcare agreements with Member States and prepare administratively for accession and electronic exchange of social security data. | High | High |  |  |
 
 ## Open questions (agent synthesis)

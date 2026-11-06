@@ -1,11 +1,11 @@
 # Run record: RUN-2026-02
 
-Status: **G4 passed (GATE-0021), stage 9: G5 package prepared (6 November 2026), awaiting Sofia's decisions**
+Status: **G5 passed (GATE-0023), stage 10: first-cut assessment (started 6 November 2026)**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-02 |
-| Current stage | 9 Classify and link: G5 package prepared 2026-11-06 (`review/RUN-2026-02/G5_classification.xlsx`, `G5_decisions.csv`), awaiting Sofia's decisions |
+| Current stage | 10 First-cut assessment (started 2026-11-06 after G5, GATE-0023; judgement rules 0.5, codebook 1.3, taxonomy 1.3) |
 | Purpose | First country run of the controlled scaling phase (decisions E19 and E20, `runs/rollout_plan.md`). It applies the method validated in the North Macedonia alpha (RUN-2026-01) to Moldova, as a diagnostic covering the chain from EU requirement to priority, with a comparator step for the issues chosen at G6. It is also the first test of the shared multi-country architecture: what it teaches is reviewed before Montenegro (RUN-2026-03) starts |
 | Target country | Moldova (MDA) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -22,7 +22,7 @@ Status: **G4 passed (GATE-0021), stage 9: G5 package prepared (6 November 2026),
 | Classification rules version | 0.4 |
 | Judgement rules version | 0.5 |
 | Theme list version | 1.4 |
-| Taxonomy version | 1.2 |
+| Taxonomy version | 1.3 (from G5, GATE-0023; RI-FMW-016 added) |
 | Mechanism list version | 1.0 |
 | Data dictionary version | 1.6 (G0-D02, E21) |
 | Evidence schema version | 1.3 (G0-D02, E21: several runs' extractions per evidence file) |
@@ -63,3 +63,4 @@ Approved at G0 (GATE-0014):
 - 2026-11-03: Run started at Sofia's request (decision E20). Moldova takes RUN-2026-02 and Montenegro RUN-2026-03, which starts only after Sofia has reviewed what this run teaches. The scaling note is `runs/RUN-2026-02/scaling_note.md`.
 - 2026-11-03: G0 passed (GATE-0014). Sofia set the freeze date, approved the multi-run evidence model and the Transnistria limit, kept the rule versions and named no other reviewer.
 - 2026-11-05: G4 passed (GATE-0021). Sofia accepted G4-D01 to G4-D10: taxonomy 1.2, theme list 1.4, extraction rules 0.6; G1 to G3 confirmed. Stage 8 started. Versions from stage 8: extraction rules 0.6 and theme list 1.4 (items extracted before stage 8 keep 0.5 and 1.3 in their evidence files); taxonomy 1.2 (shared; RI-TEC-038, RI-FMW-015, RI-TEC-039 and RI-TEC-040 added and MEC-04 on RI-TEC-028, additive only under S4).
+- 2026-11-06: G5 passed (GATE-0023). Sofia accepted G5-D01 to G5-D11: taxonomy 1.3 (RI-FMW-016), three proposals not raised in EU material declined, the Court of Accounts cluster kept under RI-TEC-002, 8 contradicts links kept. Stage 10 started.

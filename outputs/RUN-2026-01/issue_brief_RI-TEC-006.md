@@ -1,6 +1,6 @@
 # Issue brief: Electronic public procurement tools underused
 
-RI-TEC-006 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-006 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The electronic public procurement system works, but some of its modules, such as the e-marketplace for low-value contracts and e-catalogues, are incomplete or little used by contracting authorities, and its data are not yet used for red-flag analysis. **Problem mechanisms:** Weak administrative capacity (MEC-03); Poor transparency or unreliable data (MEC-07).
 
@@ -70,9 +70,9 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The electronic public procurement system operates efficiently and covers all transactions. | High | High (proposed) | High (proposed) |  |
-| [22] | 2026 | MKD-EU-2026-007 | Implementation | 647 contracts were concluded on the e-market for low-value procurement in 2025, up from 325 in 2024. | High | High (proposed) | High (proposed) |  |
-| [23] | 2026 | MKD-EU-2026-007 | Implementation | E-auctions fell to 22% of contract notices, well below the 40% Reform and Growth Facility target. | High | High (proposed) | High (proposed) |  |
+| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The electronic public procurement system operates efficiently and covers all transactions. | High | High | High |  |
+| [22] | 2026 | MKD-EU-2026-007 | Implementation | 647 contracts were concluded on the e-market for low-value procurement in 2025, up from 325 in 2024. | High | High | High |  |
+| [23] | 2026 | MKD-EU-2026-007 | Implementation | E-auctions fell to 22% of contract notices, well below the 40% Reform and Growth Facility target. | High | High | High |  |
 | [24] | 2025 | MKD-EU-2025-001 | Implementation | In 2024 the electronic procurement system handled 350 small-value procurement transactions. | High | High | High |  |
 | [5] | 2025 | MKD-EU-2025-001 | EU requirement | The electronic procurement system continues to work efficiently. | High | High | High |  |
 | [11] | 2024 | MKD-EU-2024-007 | EU requirement | Payment condition: the e-market system is to be used to award at least 800 tender procedures in fiscal year 2026. | High | High | High |  |

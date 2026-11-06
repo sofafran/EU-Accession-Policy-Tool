@@ -1,6 +1,6 @@
 # Issue brief: Broadband and high-capacity network coverage uneven
 
-RI-TEC-013 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-013 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Small businesses and rural or non-urban areas face obstacles to fixed broadband, and high-capacity and 5G networks are still being rolled out. **Problem mechanisms:** Insufficient resources (MEC-09).
 
@@ -34,12 +34,11 @@ The Commission has repeatedly called for wider broadband access, and the Reform 
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
-| Law on Electronic Communications 2025 | law | adopted (proposed) | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
-| ICT Development Strategy SMART/MK: 2030 | strategy | implemented (proposed) | The Commission reports that, in line with the long-term ICT strategy and its action plan, the Ministry of Digital Transformation widened participation in data exchange and integrated Single Sign-On across service providers. This shows measures under the strategy being delivered, but no item measures delivery against its targets, and the link between the Commission's 'long-term ICT strategy' and SMART/MK rests on timing. |
+| Law on Electronic Communications 2025 | law | adopted | The Commission reports that the new law became fully applicable in June 2026, which settles the date of application. No item reports by-laws or measures taken under it, and the Commission's statement that it strengthens consumer protection and competition is a stated outcome, not evidence of application in practice. |
+| ICT Development Strategy SMART/MK: 2030 | strategy | implemented | The Commission reports that, in line with the long-term ICT strategy and its action plan, the Ministry of Digital Transformation widened participation in data exchange and integrated Single Sign-On across service providers. This shows measures under the strategy being delivered, but no item measures delivery against its targets, and the link between the Commission's 'long-term ICT strategy' and SMART/MK rests on timing. |
 | National Operational Broadband Plan 2019-2029 | strategy | implemented | The plan remains valid, and measures have been carried out in part: the Commission records 5G expanding to Skopje and biannual Broadband Competence Office reports. Commission reports for 2021 and 2022 record delay, and the Office's own report finds most 5G goals met but none of the three measures on 100 Mbps subscriptions implemented. These sources describe different parts of the plan, so they do not conflict. |
 | Reform 2.2.2.1 Secure Digital infrastructures roll-out | programme | proposed | The reform as a whole is a Reform Agenda plan for infrastructure, 5G and related law. A new Law on Electronic Communications was adopted in June 2025 as one part, but no item shows the secure infrastructure rolled out. |
 | National broadband infrastructure deployment | programme | proposed | The items describe a planned investment and project. A feasibility study had only started by October 2025, and no item shows the network built. |
@@ -76,14 +75,14 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [19] | 2026 | MKD-EU-2026-007 | EU requirement | Connectivity bottlenecks persist in rural areas and for small businesses. | High | High (proposed) | High (proposed) |  |
-| [20] | 2026 | MKD-EU-2026-007 | EU requirement | The public broadcasting enterprise must strengthen capacity to build optical infrastructure and broadband in areas lacking commercial investment. | High | High (proposed) | Medium (proposed) |  |
-| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The mobile 5G network continued to expand. | High | High (proposed) | High (proposed) |  |
-| [17] | 2026 | MKD-EU-2026-007 | Implementation | The Broadband Competence Office reports fixed fast broadband coverage of 75% in 2025. | High | Medium (proposed) | High (proposed) |  |
+| [19] | 2026 | MKD-EU-2026-007 | EU requirement | Connectivity bottlenecks persist in rural areas and for small businesses. | High | High | High |  |
+| [20] | 2026 | MKD-EU-2026-007 | EU requirement | The public broadcasting enterprise must strengthen capacity to build optical infrastructure and broadband in areas lacking commercial investment. | High | High | Medium |  |
+| [21] | 2026 | MKD-EU-2026-007 | EU requirement | The mobile 5G network continued to expand. | High | High | High |  |
+| [17] | 2026 | MKD-EU-2026-007 | Implementation | The Broadband Competence Office reports fixed fast broadband coverage of 75% in 2025. | High | Medium | High |  |
 | [18] | 2025 | MKD-EU-2025-001 | Implementation | According to the Broadband Competence Office, fast fixed broadband coverage was 87.29% in 2024. | High | Medium | High |  |
-| [22] | 2026 | MKD-EU-2026-007 | Implementation | Internet connections reached 92% of households in late 2025, up from 83.7% in 2021. | High | High (proposed) | High (proposed) |  |
-| [23] | 2026 | MKD-EU-2026-007 | Implementation | 91.2% of households had internet access at home in 2025 (statistical annex). | High | High (proposed) | High (proposed) |  |
-| [24] | 2026 | MKD-EU-2026-009 | Country response | The EU rolled out WiFi4WB, preparing free Wi-Fi hotspots in about 500 municipalities in the region. | High | High (proposed) | High (proposed) |  |
+| [22] | 2026 | MKD-EU-2026-007 | Implementation | Internet connections reached 92% of households in late 2025, up from 83.7% in 2021. | High | High | High |  |
+| [23] | 2026 | MKD-EU-2026-007 | Implementation | 91.2% of households had internet access at home in 2025 (statistical annex). | High | High | High |  |
+| [24] | 2026 | MKD-EU-2026-009 | Country response | The EU rolled out WiFi4WB, preparing free Wi-Fi hotspots in about 500 municipalities in the region. | High | High | High |  |
 | [6] | 2025 | MKD-EU-2025-001 | EU requirement | Smaller companies and rural areas still face significant obstacles to broadband access. | High | High | High |  |
 | [12] | 2026 | MKD-EU-2026-003 | EU requirement | Smaller companies still face obstacles to fixed broadband internet connection. | High | High | High |  |
 | [25] | 2024 | MKD-EU-2024-009 | Implementation | In April 2023, 15.3% of households in underserved rural areas had high-speed broadband, against 69.8% in well-served areas. | High | High | High |  |

@@ -1,6 +1,6 @@
 # Issue brief: National social security law not aligned with the coordination regulations
 
-RI-FMW-009 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-FMW-009 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** National pension, health and other social security laws are only partly aligned with the EU coordination regulations, for example through citizenship conditions, and the administrative measures for applying them at accession are not identified or in place. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak administrative capacity (MEC-03).
 
@@ -34,7 +34,6 @@ The Commission asks North Macedonia to put in place administrative measures to p
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -43,7 +42,7 @@ Statuses marked (proposed) rest on evidence added after G7 and are tier 2 propos
 | Law on Health Insurance | law | adopted | The Commission describes the law as in place and says its citizenship conditions will need amending. The only description of how it works comes from the country presentation, so there is no specific evidence on its application. |
 | Law on Pension and Disability Insurance | law | adopted | The Commission treats the law as in force, with citizenship conditions that will need amending. The items concern only that legal gap, so they say nothing about how it is carried out. |
 | Preparations for EESSI access points | other | proposed | The country plans to define the access points within the coming five years. The Commission still asks in 2025 for measures to be put in place for electronic exchange. |
-| Agreement on the regular exchange of information between the Pension and Disability Insurance Fund and the Austrian pension insurance authority | other | adopted (proposed) | The Commission reports that the agreement was signed in June 2026. No item reports information exchanged under it. |
+| Agreement on the regular exchange of information between the Pension and Disability Insurance Fund and the Austrian pension insurance authority | other | adopted | The Commission reports that the agreement was signed in June 2026. No item reports information exchanged under it. |
 
 ## Outcomes
 

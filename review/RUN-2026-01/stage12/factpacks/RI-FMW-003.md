@@ -32,8 +32,9 @@ EU citizens are barred from public sector posts other than a short list of exemp
 - MKD-EU-2025-003-0027 | 2025-02 | recommendation | North Macedonia needs to examine which civil service categories could be reserved for nationals, considering CJEU case law.
 - MKD-EU-2025-003-0035 | 2025-02 | recommendation | By accession, restrictions on access to the public sector should be in line with CJEU case law.
 - MKD-EU-2025-001-0100 | 2025-11 | finding | EU citizens are barred from public administration posts except a short list of healthcare and higher education positions.
+- MKD-EU-2026-007-0074 | 2026-11 | finding | EU citizens cannot access public administration posts except a short list in healthcare and higher education.
 
-## Items relied on by the validated judgements (summary, then quote); 12 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 13 in-scope items in all
 
 - MKD-EU-2020-001-0080 | eu_requirement | 2020-10 | conf High | rel Medium | Domestic law does not distinguish EU citizens from other foreigners, and EU citizens cannot access public administration posts. | "No distinction is made between a foreigner and an EU citizen in the domestic legal framework and EU citizens do not have access to public administration posts."
 - MKD-EU-2021-001-0064 | eu_requirement | 2021-10 | conf High | rel High | EU citizens have no special status and no access to public administration posts, except some health and education positions. | "EU citizens do not have a special status or access to public administration posts, except some public positions in the areas of health and education."

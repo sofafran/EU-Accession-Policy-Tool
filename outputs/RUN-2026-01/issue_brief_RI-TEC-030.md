@@ -1,6 +1,6 @@
 # Issue brief: Not ready for EU justice, home affairs and border information systems
 
-RI-TEC-030 · North Macedonia · **Status: Validated at G7 (GATE-0012), internal output.** It uses only judgements validated at G6 (GATE-0007) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-030 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The country lacks the systems, technical adaptations and funding to connect to EU justice and home affairs systems such as ECRIS, the Visa Information System and Eurodac. **Problem mechanisms:** Weak administrative capacity (MEC-03); Insufficient resources (MEC-09).
 

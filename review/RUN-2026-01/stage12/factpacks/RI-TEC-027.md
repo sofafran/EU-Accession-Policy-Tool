@@ -35,8 +35,10 @@ The national interoperability framework is not aligned with the latest European 
 - MKD-EU-2025-004-0008 | 2025-02 | recommendation | North Macedonia should pay attention to the Digital Decade objectives on resilience and interoperability.
 - MKD-EU-2025-001-0049 | 2025-11 | recommendation | The country should continue aligning with the European Interoperability Framework and the Interoperable Europe Act.
 - MKD-EU-2025-001-0137 | 2025-11 | recommendation | North Macedonia should continue aligning with the European Interoperability Framework and the Interoperable Europe Act.
+- MKD-EU-2026-007-0026 | 2026-11 | recommendation | Continue aligning with the European Interoperability Framework and the Interoperable Europe Act, and apply eIDAS 2.0 rules.
+- MKD-EU-2026-007-0101 | 2026-11 | recommendation | Continue aligning with the European Interoperability Framework and the Interoperable Europe Act.
 
-## Items relied on by the validated judgements (summary, then quote); 23 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 25 in-scope items in all
 
 - MKD-EU-2023-003-0012 | eu_requirement | 2023-07 | conf High | rel High | The national interoperability framework has been aligned with European Interoperability Framework 2.0. | "The national interoperability fr amework has been aligned with the European interoperability framework 2.0."
 - MKD-EU-2023-003-0013 | eu_requirement | 2023-07 | conf High | rel High | The country should align with the latest European Interoperability Framework. | "The country should ensure alignment with the latest version of the interoperability framework."

@@ -1,6 +1,6 @@
 # Issue brief: Data protection authority not consulted and its advice not followed
 
-RI-TEC-019 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-TEC-019 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The data protection authority is not systematically consulted on sector and implementing laws, its recommendations are often not implemented, and parliament does not follow up its reports. **Problem mechanisms:** Coordination failure (MEC-08); Weak enforcement or oversight (MEC-04).
 
@@ -34,13 +34,12 @@ In every report from 2020 to 2025 the Commission finds that the Personal Data Pr
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
 | Law on Personal Data Protection (amendment on transfers to NATO countries) | law | adopted | The Commission and the Agency's report both state that the Assembly amended the law to allow transfers to NATO countries without prior consultation. No item shows transfers made under it. |
 | Strategy for the Implementation of the Right to Personal Data Protection 2025-2030 | strategy | implemented | The Agency reports the strategy was adopted in 2024 and implementation began in 2025. The Commission's finding that budget and consultation problems negatively affected implementation is preferred to the Agency's account on how far it has gone, but it also treats implementation as under way. |
-| Law on Security of Network and Information Systems 2025 | law | adopted (proposed) | The Commission confirms the law in force from January 2026 and aligned with NIS2, though the Personal Data Protection Agency's opinion on it was disregarded. The Commission records a government computer security incident response team and a National Cybersecurity Council, but attributes them to the cybersecurity strategy and does not say they are the bodies the law requires; no item reports the by-laws or the lists of entities. |
+| Law on Security of Network and Information Systems 2025 | law | adopted | The Commission confirms the law in force from January 2026 and aligned with NIS2, though the Personal Data Protection Agency's opinion on it was disregarded. The Commission records a government computer security incident response team and a National Cybersecurity Council, but attributes them to the cybersecurity strategy and does not say they are the bodies the law requires; no item reports the by-laws or the lists of entities. |
 | Amendments to the Electoral Code on biometric voter identification | law | adopted | The amendments were adopted in April 2021, and the Commission notes that the Personal Data Protection Agency was not consulted beforehand. No item shows biometric identification being used at an election. |
 | 'StopKorona' contact tracing application | it_system | insufficient_evidence | The only item says the Agency was consulted on preparing the application in 2020. It does not show the application was launched or used, so the recorded status of implemented is not supported. |
 | Removal of the PDPA from the mandatory consultation list | other | implemented | The Commission reports that the government removed the Agency from the mandatory consultation list, and the Agency's 2026 report repeats this. |

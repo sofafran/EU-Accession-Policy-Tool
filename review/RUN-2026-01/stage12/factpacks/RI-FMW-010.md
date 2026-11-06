@@ -28,8 +28,9 @@ The institutions lack the IT and human capacity to exchange social security info
 - MKD-EU-2025-003-0103 | 2025-02 | recommendation | North Macedonia will need to increase its capacity to use EHIC data electronically to be ready at accession.
 - MKD-EU-2025-003-0108 | 2025-02 | recommendation | North Macedonia will need to step up efforts on EESSI and focus on capacity to use EHIC data electronically.
 - MKD-EU-2025-001-0014 | 2025-11 | recommendation | The country should conclude social security and healthcare agreements with Member States and prepare administratively for accession and electronic exchange of social security data.
+- MKD-EU-2026-007-0010 | 2026-11 | recommendation | Conclude bilateral social security and healthcare agreements with Member States and prepare administrative measures and electronic exchange of social security data.
 
-## Items relied on by the validated judgements (summary, then quote); 9 in-scope items in all
+## Items relied on by the validated judgements (summary, then quote); 10 in-scope items in all
 
 - MKD-EU-2025-003-0092 | eu_requirement | 2025-02 | conf High | rel High | North Macedonia should develop human capacities and upgrade IT capacities to strengthen digital data exchange. | "It should develop its human capacities as well as upgrade its IT capacities in order to strengthen the exchange of digital data."
 - MKD-EU-2025-003-0098 | eu_requirement | 2025-02 | conf High | rel High | North Macedonia is at an early stage regarding the electronic exchange of social security information. | "North Macedonia is still at an early stage regarding EESSI and needs to step up its alignment."

@@ -1,6 +1,6 @@
 # Issue brief: Gaps in bilateral social security and healthcare agreements
 
-RI-FMW-008 · North Macedonia · **Status: Draft, rebuilt after G7 (GATE-0012) with evidence or judgements added since, for sign-off at the next G7.** It uses only judgements validated at G6 (GATE-0007 and GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end. Agent synthesis sections written for the version signed off at G7 may not reflect what was added since, unless they say so; values marked (proposed) are tier 2 ratings still to be reviewed.
+RI-FMW-008 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal output.** It uses only judgements validated at G6 (GATE-0020) and, for comparator material, G6b (GATE-0011). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Bilateral social security coordination and healthcare agreements do not yet cover all EU Member States or all branches, so workers moving before accession lack coordinated protection. **Problem mechanisms:** Legal or regulatory gap (MEC-01).
 
@@ -34,7 +34,6 @@ The Commission asks North Macedonia to negotiate and conclude bilateral social s
 ## Country response and implementation
 
 Implementation status is a validated judgement (G6); adoption is never treated as success.
-Statuses marked (proposed) rest on evidence added after G7 and are tier 2 proposals for the next G7.
 
 | Intervention | Type | Implementation status | Reason |
 |---|---|---|---|
@@ -71,8 +70,8 @@ Statuses marked (proposed) rest on evidence added after G7 and are tier 2 propos
 | Social security convention with the United Kingdom | other | implemented | The ministry's list says the convention is in force from 1 September 1958 and applied. This is government reporting alone, so I do not use the stated in_practice. |
 | Social security conventions taken over from the former SFRY | other | implemented | A government list records conventions taken over from the former SFRY. This is government reporting alone and does not show their use. |
 | Bilateral social security agreement with Ukraine | other | proposed | The country plans to start negotiations, and the Commission's 2025 report says no new agreements were signed in the period. |
-| Bilateral agreement between Italy and North Macedonia on social insurance (2014) | other | adopted (proposed) | The Commission reports that the agreement with Italy, signed in 2014, came into force in December 2025. No item reports that it is applied or used. |
-| Agreement on the regular exchange of information between the Pension and Disability Insurance Fund and the Austrian pension insurance authority | other | adopted (proposed) | The Commission reports that the agreement was signed in June 2026. No item reports information exchanged under it. |
+| Bilateral agreement between Italy and North Macedonia on social insurance (2014) | other | adopted | The Commission reports that the agreement with Italy, signed in 2014, came into force in December 2025. No item reports that it is applied or used. |
+| Agreement on the regular exchange of information between the Pension and Disability Insurance Fund and the Austrian pension insurance authority | other | adopted | The Commission reports that the agreement was signed in June 2026. No item reports information exchanged under it. |
 
 ## Outcomes
 
@@ -91,9 +90,9 @@ The items relied on for the assessment above. Source quality, evidence confidenc
 
 | Ref | Year | Source | Chain link | What the source says (summary) | Source quality | Evidence confidence | Relevance | Notes |
 |---|---|---|---|---|---|---|---|---|
-| [21] | 2026 | MKD-EU-2026-007 | EU requirement | Conclude bilateral social security and healthcare agreements with Member States and prepare administrative measures and electronic exchange of social security data. | High | High (proposed) | High (proposed) |  |
-| [22] | 2026 | MKD-EU-2026-007 | Country response | The 2014 social insurance agreement between Italy and North Macedonia came into force in December 2025. | High | High (proposed) | High (proposed) |  |
-| [23] | 2026 | MKD-EU-2026-007 | Country response | In June 2026 the Pension and Disability Insurance Fund signed an information exchange agreement with the Austrian pension insurance authority. | High | High (proposed) | High (proposed) |  |
+| [21] | 2026 | MKD-EU-2026-007 | EU requirement | Conclude bilateral social security and healthcare agreements with Member States and prepare administrative measures and electronic exchange of social security data. | High | High | High |  |
+| [22] | 2026 | MKD-EU-2026-007 | Country response | The 2014 social insurance agreement between Italy and North Macedonia came into force in December 2025. | High | High | High |  |
+| [23] | 2026 | MKD-EU-2026-007 | Country response | In June 2026 the Pension and Disability Insurance Fund signed an information exchange agreement with the Austrian pension insurance authority. | High | High | High |  |
 | [3] | 2025 | MKD-EU-2025-001 | EU requirement | The country should conclude social security and healthcare agreements with Member States and prepare administratively for accession and electronic exchange of social security data. | High | High | High |  |
 | [15] | 2025 | MKD-EU-2025-003 | EU requirement | Further social security agreements need to be signed, particularly with EU Member States. | High | High | High |  |
 | [5] | 2025 | MKD-EU-2025-003 | Implementation | North Macedonia has signed 22 bilateral social security agreements, 13 of them with EU Member States. | High | Medium | High |  |
