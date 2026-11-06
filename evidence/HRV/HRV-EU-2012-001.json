@@ -1,21 +1,23 @@
 {
   "source_id": "HRV-EU-2012-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-06",
     "status": "complete",
-    "pages_processed": "15",
-    "notes": "Chapter 2 section (page 15) read in full; rest screened by keyword as for HRV-EU-2011-001. Text-file page numbers are PDF page numbers. Only claims on access to employment for EU workers in Croatia were extracted (RI-FMW-001, LIM-0026). Pass 1 does not assign issues. Hosted on the Austrian Parliament document site, not the Commission site. EURES, social security and EHIC passages left out. Aliens Act mentions on page 29 (posting of workers) and pages 37-38 (legal migration of third-country nationals, visas) left out as not about EU workers’ access. Quotes keep the stray spaces of the converted text.",
-    "codebook_version": "1.2",
-    "themes_version": "1.3"
+    "pages_processed": "15, 21",
+    "notes": "RUN-2026-02 comparator step (LIM-0048), RI-FMW-015 only, under LIM-0049. Chapter 2 section (page 15) read in full; rest screened for health insurance, EHIC, health card, e-health and health information. Three items added (EHIC preparation, EHIC Regulation, e-health in Chapter 10). The pending estimate of health care costs (page 15) does not name the card and was left out.",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "comparator"
   },
   "classification": {
     "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.3",
+    "classified_at": "2026-11-06",
     "mechanisms_version": "1.0"
   },
   "items": [
@@ -294,6 +296,250 @@
         "period_covered": null,
         "event_date": null,
         "event_date_precision": null
+      }
+    },
+    {
+      "item_id": "HRV-EU-2012-001-0005",
+      "information_type": "intervention",
+      "stated_text": "Preparations in relation to the European Health Insurance Card (EHIC) are reaching completion.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Croatia's preparations for the European Health Insurance Card are reaching completion.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "4.2. Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": "02",
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2012-10-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Croatia",
+          "actor_id": "ACT-INT-0046"
+        }
+      ],
+      "intervention_as_stated": "Preparations in relation to the European Health Insurance Card (EHIC)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window",
+        "ambiguous_type"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Pre-accession. Could also read as a Commission finding on the state of preparation; typed as an intervention as in HRV-EU-2011-001-0004.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: EHIC preparation before accession, nine months before accession. Follows HRV-EU-2011-001-0004 (link same_as_earlier is not apt: the wording and stage differ)."
+      }
+    },
+    {
+      "item_id": "HRV-EU-2012-001-0006",
+      "information_type": "intervention",
+      "stated_text": "A Regulation on EHIC was adopted in December 2011 determining the period of validity of the card (one year for all insured persons, if necessary l onger for posted workers and their family members), the form of the card (i t will be issued as a separate card), and all other necessary details needed for its issuance.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A Regulation on the EHIC, adopted in December 2011, set the card's validity, its separate form and other details for issuing it.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "4.2. Chapter 2: Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": "02",
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2012-10-10",
+        "period_covered": null,
+        "event_date": "2011-12",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Croatia",
+          "actor_id": "ACT-INT-0046"
+        }
+      ],
+      "intervention_as_stated": "A Regulation on EHIC",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Validity one year for all insured persons, longer if necessary for posted workers and their families; issued as a separate card. The issuing body is not named.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0013"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: Secondary rules for issuing the EHIC adopted about 18 months before accession. Adoption only; no statement on issuance in practice in this source."
+      }
+    },
+    {
+      "item_id": "HRV-EU-2012-001-0007",
+      "information_type": "finding",
+      "stated_text": "Croatia is advanced in the area of e-health.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Croatia is advanced in the area of e-health.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "4.10. Chapter 10: Information society and media",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": "10",
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2012-10-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Croatia",
+          "actor_id": "ACT-INT-0046"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Sits under Chapter 10; kept because RI-FMW-015 covers the integrated health information system that underpins the card. The text does not link e-health to the card. TECH-DGOV doubtful: e-health is not described further.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "eu_requirement: Sub-area judgement on e-health in Chapter 10. Weak fit: context for the health information system precondition only; the Commission does not connect it to the EHIC."
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "HRV-EU-2012-001-0001",
+        "HRV-EU-2012-001-0002",
+        "HRV-EU-2012-001-0003",
+        "HRV-EU-2012-001-0004"
+      ],
+      "moved_on": "2026-11-06",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "15",
+        "notes": "Chapter 2 section (page 15) read in full; rest screened by keyword as for HRV-EU-2011-001. Text-file page numbers are PDF page numbers. Only claims on access to employment for EU workers in Croatia were extracted (RI-FMW-001, LIM-0026). Pass 1 does not assign issues. Hosted on the Austrian Parliament document site, not the Commission site. EURES, social security and EHIC passages left out. Aliens Act mentions on page 29 (posting of workers) and pages 37-38 (legal migration of third-country nationals, visas) left out as not about EU workers’ access. Quotes keep the stray spaces of the converted text.",
+        "codebook_version": "1.2",
+        "themes_version": "1.3"
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

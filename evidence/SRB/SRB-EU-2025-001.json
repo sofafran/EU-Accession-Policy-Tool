@@ -1,21 +1,23 @@
 {
   "source_id": "SRB-EU-2025-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-06",
     "status": "complete",
-    "pages_processed": "12, 29, 76 (keyword search of the whole text for interoperability, service bus, once-only, eZUP, data exchange and foreigners)",
-    "codebook_version": "1.2",
-    "themes_version": "1.3",
-    "notes": "Run 1b comparator extraction limited to RI-FMW-001 and RI-TEC-028 (LIM-0026): the Chapter 2 passages and the service delivery passage only. The service delivery passage has no figure on connected databases, no count of use and no statement on document resubmission. Chapter 2 passages on social security, EHIC, EURES and the European Labour Authority are outside the named issues and were not extracted."
+    "pages_processed": "12, 76, 81",
+    "notes": "RUN-2026-02 comparator step (LIM-0048), RI-FMW-015 only. Chapter 2 summary (page 12) and section (page 76) read in full; rest screened for EHIC, health insurance, health card, eHealth and health information. Three items added. The Chapter 28 eHealth sentence (page 81) left out as in 2024.",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "comparator"
   },
   "classification": {
     "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.3",
+    "classified_at": "2026-11-06",
     "mechanisms_version": "1.0"
   },
   "items": [
@@ -836,6 +838,249 @@
         ],
         "classification_status": "queued_unmatched",
         "classification_note": "country_response: About simplifying administrative procedures; the passage does not mention data sharing. Fits no approved issue open to Serbia."
+      }
+    },
+    {
+      "item_id": "SRB-EU-2025-001-0013",
+      "information_type": "recommendation",
+      "stated_text": "continue to work on concluding additional agreements on social security coordination with EU Member States and develop IT infrastructures for the European Health Insurance Card (EHIC) and Electronic Exchange of Social Security Information (EESSI) purposes, as well as administrative capacities in view of joining the future EESSI Network;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Serbia should conclude more social security agreements, develop IT infrastructure for the EHIC and EESSI, and build capacity to join EESSI.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "1.2 MAIN FINDINGS OF THE REPORTS > Chapter 2 - Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter",
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Key recommendation; not among the 2024 Chapter 2 recommendations (SRB-EU-2024-001, page 11). Same wording as Moldova's 2025 key recommendation (MDA-EU-2025-001-0021).",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "eu_requirement: Only the EHIC IT infrastructure part bears on RI-FMW-015; the agreements part would go to RI-FMW-008 and the EESSI part to RI-FMW-010 for its own country (outside LIM-0048). MEC-03 for the missing IT infrastructure and administrative capacity."
+      }
+    },
+    {
+      "item_id": "SRB-EU-2025-001-0014",
+      "information_type": "finding",
+      "stated_text": "There were no developments on the European Health Insurance Card (EHIC).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There were no developments on the European Health Insurance Card in Serbia.",
+      "location": {
+        "page": 76,
+        "page_end": null,
+        "section": "5. ABILITY TO ASSUME THE OBLIGATIONS OF MEMBERSHIP > Chapter 2 - Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "eu_requirement: Same wording as SRB-EU-2024-001-0014 (same_as_earlier)."
+      }
+    },
+    {
+      "item_id": "SRB-EU-2025-001-0015",
+      "information_type": "metric",
+      "stated_text": "Serbia currently applies agreements on the use of EHIC with nine EU Member States.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Serbia applies agreements on the use of the EHIC with nine EU Member States.",
+      "location": {
+        "page": 76,
+        "page_end": null,
+        "section": "5. ABILITY TO ASSUME THE OBLIGATIONS OF MEMBERSHIP > Chapter 2 - Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "SRB",
+      "role": "comparator",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": "2024-09-01/2025-09-01",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Serbia",
+          "actor_id": "ACT-INT-0025"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "EU Member States with which agreements on the use of the EHIC are applied",
+        "value": "9",
+        "unit": "Member States",
+        "reference_period": "2024-09-01/2025-09-01"
+      },
+      "flags": [],
+      "extraction_note": "The Member States are not named.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Own link: implementation. EHIC-use agreements with Member States fit RI-FMW-011 (access through agreements), not RI-FMW-015 (domestic preconditions); outside the comparator scope of LIM-0048, so not used for the case. Lead agent correction of a stretched fit."
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "SRB-EU-2025-001-0001",
+        "SRB-EU-2025-001-0002",
+        "SRB-EU-2025-001-0003",
+        "SRB-EU-2025-001-0004",
+        "SRB-EU-2025-001-0005",
+        "SRB-EU-2025-001-0006",
+        "SRB-EU-2025-001-0007",
+        "SRB-EU-2025-001-0008",
+        "SRB-EU-2025-001-0009",
+        "SRB-EU-2025-001-0010",
+        "SRB-EU-2025-001-0011",
+        "SRB-EU-2025-001-0012"
+      ],
+      "moved_on": "2026-11-06",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "12, 29, 76 (keyword search of the whole text for interoperability, service bus, once-only, eZUP, data exchange and foreigners)",
+        "codebook_version": "1.2",
+        "themes_version": "1.3",
+        "notes": "Run 1b comparator extraction limited to RI-FMW-001 and RI-TEC-028 (LIM-0026): the Chapter 2 passages and the service delivery passage only. The service delivery passage has no figure on connected databases, no count of use and no statement on document resubmission. Chapter 2 passages on social security, EHIC, EURES and the European Labour Authority are outside the named issues and were not extracted."
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

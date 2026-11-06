@@ -1,21 +1,23 @@
 {
   "source_id": "MNE-EU-2024-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-06",
     "status": "complete",
-    "pages_processed": "9-11, 25, 59-60 and keyword hits",
-    "codebook_version": "1.2",
-    "themes_version": "1.3",
-    "notes": "Keyword and section screen, not a full read: Chapter 2 sections (pages 10-11, 59-60) and keyword hits on digital government, interoperability, once only and the portal. Only claims on the three named issues extracted. EURES, social security and EHIC material left out as outside them. The text at page 25 places the cyber-attack in 2022; the 2025 report says 2023. Page 91 was read by text recognition and contains nothing used here."
+    "pages_processed": "9-11, 54-55, 59-60 and keyword screen",
+    "notes": "RUN-2026-02 comparator step (P4 step 4, LIM-0048), Moldova issues RI-FMW-015 and RI-TEC-038 only. Read the Chapter 5 and Chapter 2 main findings (pages 9-11) and the detailed Chapter 5 and Chapter 2 sections (pages 54-55, 59-60); screened the whole text for electronic procurement, e-procurement, MAPS, EHIC, health insurance card, health information and Health Insurance Fund (also with spaces removed, since the converted text splits words). Not extracted: 'No new agreement on the use of the card was signed with EU Member States' (page 60: bilateral access, RI-FMW-011); the Health Insurance Fund's hiring of three senior advisers for international health insurance (page 60: not stated to concern the EHIC); the chapter-level Chapter 5 rating (page 9); RI-TEC-036 material (not in this step for the 2024 report). Earlier RUN-2026-01 items -0001 to -0014 untouched.",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "comparator"
   },
   "classification": {
     "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.3",
+    "classified_at": "2026-11-06",
     "mechanisms_version": "1.0"
   },
   "items": [
@@ -980,6 +982,479 @@
         "intervention_ids": [],
         "classification_status": "auto",
         "classification_note": "Added after the G6b independent check; for the analyst to accept at G6b."
+      }
+    },
+    {
+      "item_id": "MNE-EU-2024-001-0015",
+      "information_type": "finding",
+      "stated_text": "Some progress was achieved in 2023 in further improving the functioning of the electronic procurement system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Commission finds some progress in 2023 in further improving how the electronic procurement system functions.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "1.2 Main findings > Chapter 5 - Public procurement",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2024 reporting period",
+        "event_date": "2023",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": "some progress",
+        "applies_to": "sub_area"
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Sub-area rating: functioning of the electronic procurement system.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0024"
+        ],
+        "classification_status": "auto",
+        "classification_note": "eu_requirement: sub-area rating of the e-procurement system (EU finding)."
+      }
+    },
+    {
+      "item_id": "MNE-EU-2024-001-0016",
+      "information_type": "intervention",
+      "stated_text": "In December 2023, the World Bank Methodology for the Assessment of the Procurement System (MAPS) project ended with a comprehensive evaluation of the pub lic procurement system in Montenegro, with a special focus on electronic public procureme nt.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A World Bank MAPS project ended in December 2023 with a full evaluation of Montenegro's procurement system, focused on e-procurement.",
+      "location": {
+        "page": 54,
+        "page_end": null,
+        "section": "2.4 Public procurement, statistics, financial control > Chapter 5 - Public procurement > Institutional set-up and legal alignment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2024 reporting period",
+        "event_date": "2023-12",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "World Bank",
+          "actor_id": "ACT-INT-0010"
+        },
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "World Bank Methodology for the Assessment of the Procurement System (MAPS) project",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "Converted text splits some words ('Assessment  of', 'pub lic', 'procureme nt'); quote keeps that form.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: assessment of the e-procurement system; intervention proposed in interventions_proposed_MA.csv (MAPS assessment)."
+      }
+    },
+    {
+      "item_id": "MNE-EU-2024-001-0017",
+      "information_type": "intervention",
+      "stated_text": "The results will serve as a basis for further improvements in the fields of contract management, introduction of green and sustainable public procurement and enhancement of the electronic public pro curement system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The MAPS results are to serve as a basis for improvements including enhancement of the electronic public procurement system.",
+      "location": {
+        "page": 54,
+        "page_end": null,
+        "section": "2.4 Public procurement, statistics, financial control > Chapter 5 - Public procurement > Institutional set-up and legal alignment",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2024 reporting period",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "Enhancement of the electronic public procurement system (on the basis of the MAPS results)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "Planned use of the MAPS results. Only the enhancement of the electronic public procurement system is in scope; contract management and green procurement are not. 'pro curement' split in the converted text.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0024"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: planned enhancement of the system; proposed intervention 'Electronic public procurement system (Montenegro)'."
+      }
+    },
+    {
+      "item_id": "MNE-EU-2024-001-0018",
+      "information_type": "intervention",
+      "stated_text": "Continuous improvements to the e lectronic public procurement sy stem, implemented in 2023 -2024, facilitate the exchange of data between the public institutions and are aimed at detecting and limiting possible irregularities and corrupt practices in the public procurement.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Improvements to the e-procurement system in 2023-2024 ease data exchange between institutions and aim to detect irregularities and corruption.",
+      "location": {
+        "page": 54,
+        "page_end": null,
+        "section": "2.4 Public procurement, statistics, financial control > Chapter 5 - Public procurement > Implementation and enforcement capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2024 reporting period",
+        "event_date": "2023/2024",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "Continuous improvements to the electronic public procurement system",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "'e lectronic', 'sy stem', 'pub lic', '2023 -2024' as converted.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0024"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: system developed further after its replacement; proposed intervention 'Electronic public procurement system (Montenegro)'."
+      }
+    },
+    {
+      "item_id": "MNE-EU-2024-001-0019",
+      "information_type": "outcome",
+      "stated_text": "Improved functionalities of the system facilitate the monitoring of contract award and implementation and appeals.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The system's improved functions make it easier to monitor contract award, implementation and appeals.",
+      "location": {
+        "page": 54,
+        "page_end": null,
+        "section": "2.4 Public procurement, statistics, financial control > Chapter 5 - Public procurement > Implementation and enforcement capacity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": "1",
+      "chapter": "05",
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2024 reporting period",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Outcome of the improvements in the previous sentence; could also be read as a finding on what the system does.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0024"
+        ],
+        "classification_status": "auto",
+        "classification_note": "outcome: stated effect of the improvements; no measure given."
+      }
+    },
+    {
+      "item_id": "MNE-EU-2024-001-0020",
+      "information_type": "intervention",
+      "stated_text": "The European Health Insurance Card (EHIC) is recognised under the Law on compulsory health insurance but will only be introduced after EU accession.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The EHIC is recognised in the Law on compulsory health insurance but will be introduced only after accession.",
+      "location": {
+        "page": 60,
+        "page_end": null,
+        "section": "Cluster 2: Internal market > Chapter 2 - Freedom of movement for workers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MNE",
+      "role": "comparator",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": "2024 reporting period",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Montenegro",
+          "actor_id": "ACT-INT-0024"
+        }
+      ],
+      "intervention_as_stated": "Law on compulsory health insurance (recognition of the EHIC)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Introduction of the card itself is stated as after accession. The next sentence (no new agreement with Member States on use of the card) concerns bilateral access (RI-FMW-011) and is not extracted.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-MNE-0026"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: legal recognition of the card, introduction deferred to accession; proposed intervention 'Law on compulsory health insurance'."
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "MNE-EU-2024-001-0001",
+        "MNE-EU-2024-001-0002",
+        "MNE-EU-2024-001-0003",
+        "MNE-EU-2024-001-0004",
+        "MNE-EU-2024-001-0005",
+        "MNE-EU-2024-001-0006",
+        "MNE-EU-2024-001-0007",
+        "MNE-EU-2024-001-0008",
+        "MNE-EU-2024-001-0009",
+        "MNE-EU-2024-001-0010",
+        "MNE-EU-2024-001-0011",
+        "MNE-EU-2024-001-0012",
+        "MNE-EU-2024-001-0013",
+        "MNE-EU-2024-001-0014"
+      ],
+      "moved_on": "2026-11-06",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "9-11, 25, 59-60 and keyword hits",
+        "codebook_version": "1.2",
+        "themes_version": "1.3",
+        "notes": "Keyword and section screen, not a full read: Chapter 2 sections (pages 10-11, 59-60) and keyword hits on digital government, interoperability, once only and the portal. Only claims on the three named issues extracted. EURES, social security and EHIC material left out as outside them. The text at page 25 places the cyber-attack in 2022; the 2025 report says 2023. Page 91 was read by text recognition and contains nothing used here."
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

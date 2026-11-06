@@ -1,0 +1,667 @@
+{
+  "source_id": "HRV-GOV-2014-001",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-06",
+    "status": "complete",
+    "pages_processed": "7-8, 17, 38-39, 43, 78-79, 51",
+    "notes": "RUN-2026-02 comparator step (LIM-0048), RI-FMW-015 only, under LIM-0049; Croatian passages machine translated (LIM-0050), English used where the report has an English version (pages 8 and 79). Screened in full for kartic, iskaznic, EKZO, certifikat, European Health Insurance, card, CEZIH and pristupanje. Six items: readiness at accession, regional EHIC issuing figures (Rijeka, Split; no national total found), the issuing arrangement for foreign and defence ministry officials, the HZZO service that issues national and European cards, and EHIC use by EU visitors after accession. The new health insurance laws in force from accession (page 38) do not name the card and were left out. Page numbers are PDF pages (two printed pages per PDF page).",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "comparator"
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.3",
+    "classified_at": "2026-11-06",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "HRV-GOV-2014-001-0001",
+      "information_type": "finding",
+      "stated_text": "The first is the official accession of Croatia to the European Union on 1 July 2013, which we, thanks to intense preparations, were fully ready for, and HZZO soon became an integral and indispensable part of the European Union’s healthcare system.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "HZZO says that, thanks to intense preparations, it was fully ready for accession on 1 July 2013 and soon became part of the EU healthcare system.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "Introductory remarks",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). English version of the director's foreword (Croatian at page 7, not extracted again). Self-assessment by the issuing body; the card is not named.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "implementation: HZZO's own statement that it was ready at accession. General: it does not name the EHIC, so it supports the case only as the issuer's self-assessment."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0002",
+      "information_type": "metric",
+      "stated_text": "regionalni je ured obradio 35.124 zahtjeva za izdavanjem europskih kartica, 5.320 zahtjeva za izdavanjem certifikata te je likvidirano 18.490 računa za H osiguranike.",
+      "quote_language": "hr",
+      "translation_en": "the regional office processed 35,124 requests for the issuing of European cards, 5,320 requests for the issuing of certificates, and settled 18,490 invoices for H insured persons.",
+      "machine_translated": true,
+      "summary": "In 2013 the Rijeka regional office processed 35,124 requests for European cards and 5,320 for certificates, and settled 18,490 invoices.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Regionalni ured Rijeka",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Regionalni ured Rijeka",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Requests processed for the issuing of European cards; requests for the issuing of certificates (Rijeka regional office)",
+        "value": "35124; 5320",
+        "unit": "requests",
+        "reference_period": "2013"
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Machine translated (LIM-0050); confidence capped at Medium. The quote starts after the lead-in 'Na po - dručju međunarodne suradnje' (in the area of international cooperation). 'European cards' is read as the European Health Insurance Card and 'certificates' as the provisional replacement certificate, but the text does not spell either out. The invoice figure is not in scope. Regional, not national, figure.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "outcome: Issuing activity in the first (partly post-accession) year, one regional office only. Shows the card being issued; no national total in the source."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0003",
+      "information_type": "metric",
+      "stated_text": "Izdano je 8.781 EKZO i Certifikata",
+      "quote_language": "hr",
+      "translation_en": "8,781 EHICs and certificates were issued",
+      "machine_translated": true,
+      "summary": "The Split regional office issued 8,781 European Health Insurance Cards and certificates in 2013.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Regionalni ured Split",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Regionalni ured Split",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "European Health Insurance Cards (EKZO) and certificates issued (Split regional office)",
+        "value": "8781",
+        "unit": "cards and certificates",
+        "reference_period": "2013"
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Machine translated (LIM-0050); confidence capped at Medium. EKZO is the Croatian abbreviation of Europska kartica zdravstvenog osiguranja. The quote is cut to the in-scope clause; the sentence goes on with other counts. Regional figure.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "outcome: Issuing activity in 2013, one regional office only; cards and certificates are not separated."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0004",
+      "information_type": "intervention",
+      "stated_text": "Održano je više sastanaka s predstavnicima Ministarstva vanjskih i europskih poslova te Ministarstva obrane na kojima je dogovoreno postupanje u svezi izdavanja Europskih kartica zdravstvenog osiguranja za njihove službenike.",
+      "quote_language": "hr",
+      "translation_en": "Several meetings were held with representatives of the Ministry of Foreign and European Affairs and the Ministry of Defence, at which the procedure for issuing European Health Insurance Cards to their officials was agreed.",
+      "machine_translated": true,
+      "summary": "HZZO met the foreign and defence ministries and agreed how European Health Insurance Cards would be issued to their officials.",
+      "location": {
+        "page": 39,
+        "page_end": null,
+        "section": "Služba za međunarodnu suradnju",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Ministarstvo vanjskih i europskih poslova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Ministarstvo obrane",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "postupanje u svezi izdavanja Europskih kartica zdravstvenog osiguranja za njihove službenike",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Machine translated (LIM-0050); confidence capped at Medium. Reported among the 2013 work of the international cooperation service; whether the meetings were before or after accession is not stated.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0017"
+        ],
+        "classification_status": "auto",
+        "classification_note": "country_response: Organisational arrangement for issuing the card to a specific group of insured persons. Date relative to accession not stated."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0005",
+      "information_type": "finding",
+      "stated_text": "Služba također obavlja zadatke vezane uz poslove upravljanja infrastrukturom javnog ključa, što je osnovica za korištenje centralnog zdravstvenog informacijskog sustava (CEZIH), kao i na poslovi - ma izdavanja i personalizacije „pametnih“ karti - ca, te zdravstvenih iskaznica i Europskih kartica zdravstvenog osiguranja.",
+      "quote_language": "hr",
+      "translation_en": "The Service also carries out tasks relating to managing the public key infrastructure, which is the basis for using the central health information system (CEZIH), as well as the issuing and personalisation of \"smart\" cards, health insurance cards and European Health Insurance Cards.",
+      "machine_translated": true,
+      "summary": "An HZZO IT service manages the public key infrastructure for CEZIH and issues and personalises smart cards, health insurance cards and EHICs.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "Služba za razvoj i upravljanje tehničkim sustavima, komunikacijskim i internim tehničkim sustavima",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). Machine translated (LIM-0050); confidence capped at Medium. What an institution does is a finding (rule M2). The converted text splits 'poslovima' and 'kartica' with a spaced hyphen, kept as printed. TECH-EID doubtful: public key infrastructure for system access is mentioned, not as an e-identity scheme for the public.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0014",
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "implementation: Shows that one HZZO service issues the national health insurance card and the EHIC alongside the PKI for the central health information system: the national card, the card issuer and the system sit together. Status in 2013."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0006",
+      "information_type": "outcome",
+      "stated_text": "At the same time, a vast number of EU insurants have been guaranteed health care services during their stay in Croatia by using the European Health Insurance Card (EHIC).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "After accession, a vast number of EU insured persons received health care in Croatia using the European Health Insurance Card.",
+      "location": {
+        "page": 79,
+        "page_end": null,
+        "section": "About the Croatian health care system",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "the European Health Insurance Card (EHIC)",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Allowed by logged exception LIM-0049 (Croatian documents from 2011 onwards on RI-FMW-015 only). English version; the Croatian text of the same claim is at page 78 and is not extracted again. 'A vast number' is not quantified.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "outcome: Post-accession acceptance of the card for visitors in 2013, stated by the insurer. Unquantified; no independent source."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0007",
+      "information_type": "finding",
+      "stated_text": "HZZO je nakon višegodišnjih napornih priprema za prilagodbu europskoj legislativi na svim organizacijskim razi - nama uspješno dočekao ulazak u EU, te je bez većih prepreka počeo funkcionirati kao ravnopravni član svih europskih tijela u području koordinacije sustava socijalne sigurnosti.",
+      "quote_language": "hr",
+      "translation_en": "After many years of hard preparation to adapt to European legislation at all organisational levels, HZZO successfully met EU accession and began to function without major obstacles as an equal member of all European bodies in the field of social security coordination.",
+      "machine_translated": true,
+      "summary": "HZZO says that after years of preparation it met accession successfully and began working without major obstacles in EU social security coordination bodies.",
+      "location": {
+        "page": 51,
+        "page_end": null,
+        "section": "Što je HZZO od zadanih ciljeva postigao u 2013.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window",
+        "reported_view"
+      ],
+      "extraction_note": "Added after the G5b spot check (page 51 had not been processed). Allowed by LIM-0049; machine translated, capped at Medium (LIM-0050). HZZO's own account; the passage does not name the card.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Own link: implementation. Readiness for coordination at accession; HZZO self-report, not independent."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0008",
+      "information_type": "barrier",
+      "stated_text": "U obzir treba uzeti i činjenicu da smo država članica EU postali u sa - mom jeku turističke sezone, što je predstavljalo dodatni izazov zbog iznimno velikog broja turista iz država članica EU na području Hrvatske.",
+      "quote_language": "hr",
+      "translation_en": "It should also be taken into account that we became an EU Member State at the very height of the tourist season, which was an additional challenge because of the exceptionally large number of tourists from EU Member States in Croatia.",
+      "machine_translated": true,
+      "summary": "Accession at the height of the tourist season was an added challenge because of the large number of EU tourists in Croatia.",
+      "location": {
+        "page": 51,
+        "page_end": null,
+        "section": "Što je HZZO od zadanih ciljeva postigao u 2013.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window"
+      ],
+      "extraction_note": "Added after the G5b spot check (page 51 had not been processed). Allowed by LIM-0049; machine translated, capped at Medium (LIM-0050). HZZO's own account; the passage does not name the card.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Own link: unresolved_gap. Readiness for coordination at accession; HZZO self-report, not independent."
+      }
+    },
+    {
+      "item_id": "HRV-GOV-2014-001-0009",
+      "information_type": "outcome",
+      "stated_text": "Unatoč tomu, HZZO je uspješno osigurao prilagodbu svih ugovornih partnera i njihovih djelatnika na terenu, te je stoga svim državljanima EU, koji su za vrije - me odmora u Hrvatskoj zatrebali zdravstvene usluge, bila pružena adekvatna zdravstvena zaštita, u skladu sa svim normama EU.",
+      "quote_language": "hr",
+      "translation_en": "Nevertheless, HZZO successfully ensured the adaptation of all contracted partners and their staff in the field, so that all EU citizens who needed health services while on holiday in Croatia were provided with adequate health care, in line with all EU norms.",
+      "machine_translated": true,
+      "summary": "HZZO says it adapted all contracted health providers, so EU citizens on holiday in Croatia received adequate health care in line with EU norms.",
+      "location": {
+        "page": 51,
+        "page_end": null,
+        "section": "Što je HZZO od zadanih ciljeva postigao u 2013.",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "HRV",
+      "role": "comparator",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "exception"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2014-05",
+        "period_covered": "2013",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Hrvatski zavod za zdravstveno osiguranje (HZZO)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "out_of_window",
+        "reported_view"
+      ],
+      "extraction_note": "Added after the G5b spot check (page 51 had not been processed). Allowed by LIM-0049; machine translated, capped at Medium (LIM-0050). HZZO's own account; the passage does not name the card.",
+      "pass2": {
+        "chain_link": "comparator_evidence",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [
+          "INT-HRV-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Own link: outcome. Readiness for coordination at accession; HZZO self-report, not independent."
+      }
+    }
+  ]
+}
