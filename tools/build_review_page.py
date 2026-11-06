@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (country_name, review_page_name, run_extraction, run_items, run_requirements, run_sources, evidence_files, gate_decisions, gate_passed, lessons_path, project_root, run_country, runs_with_records,  # noqa: E402
                     read_csv, read_json, run_record)
 
-__version__ = "1.7.0"
+__version__ = "1.8.0"
 
 LABELS = {
     "Validated": ("validated", "Passed its gate and recorded in the gate log."),
@@ -166,7 +166,7 @@ class Page:
         """A closing summary once G8 has passed, drawn only from the run record, gate log, judgements and outputs."""
         if not gate_passed(self.decisions, "G8"):
             return None
-        _, js = read_csv(self.root / "judgements" / "judgements.csv")
+        js = self.run_rows("judgements/judgements.csv")
         iss = [j for j in js if j["object_type"] == "issue_country" and j["object_id"].endswith("@" + run_country(self.root, self.run))]
         cnt = lambda t, v: sum(1 for j in iss if j["judgement_type"] == t and j["value"] == v)
         n = len({j["object_id"] for j in iss})
@@ -342,8 +342,24 @@ class Page:
         ])
         return "Extraction " + label(self.status("G3", True)), body
 
+    def run_rows(self, rel):
+        """Rows of a judgements or links file that belong to this run (1.8.0, PC-31): a later run's rows never change this run's pages."""
+        return [r for r in read_csv(self.root / rel)[1] if r.get("run_id") == self.run]
+
+    def run_issues(self):
+        """Shared reform issues as this run saw them: those first drafted in this run or an earlier one (1.8.0, PC-31)."""
+        return [r for r in read_csv(self.root / "taxonomy" / "reform_issues.csv")[1] if (r.get("created_in_run") or "") <= self.run]
+
+    def run_cases(self):
+        """Comparator cases of this run (1.8.0, PC-31): those in its case files (review/<run>/run1b/cases/cases_*.csv), which also
+        name cases reused from an earlier run, plus any selected at one of its gates."""
+        d = self.root / "review" / self.run / "run1b" / "cases"
+        ids = {r["case_id"] for f in (sorted(d.glob("cases_*.csv")) if d.exists() else []) for r in read_csv(f)[1]}
+        gates = {r["gate_decision_id"] for r in read_csv(self.root / "registers" / "gate_log.csv")[1] if r.get("run_id") == self.run}
+        return [c for c in read_csv(self.root / "entities" / "comparator_cases.csv")[1] if c["case_id"] in ids or c.get("selected_at") in gates]
+
     def taxonomy(self):
-        _, issues = read_csv(self.root / "taxonomy" / "reform_issues.csv")
+        issues = self.run_issues()
         if not issues:
             return "Taxonomy " + label("Not started"), placeholder(
                 "Will show the reform issues for the in-scope chapters and themes, the problem mechanisms, and items that fit no issue. "
@@ -367,13 +383,13 @@ class Page:
                 "Will show classification coverage, resolved queues, interventions and actors, conflicting evidence and items found to "
                 "be out of scope. Populated from stage 9; validated at G5.")
         cnt = Counter(i["pass2"]["classification_status"] for i in items)
-        _, links = read_csv(self.root / "links" / "links.csv")
+        links = self.run_rows("links/links.csv")
         body = table(["Classification status", "Items"], [[escape(k), str(v)] for k, v in sorted(cnt.items())])
         body += facts([("Contradicts links", str(sum(l["link_type"] == "contradicts" for l in links)))])
         return "Classification " + label(self.status("G5", True)), body
 
     def assessment(self):
-        _, js = read_csv(self.root / "judgements" / "judgements.csv")
+        js = self.run_rows("judgements/judgements.csv")
         if not js:
             return "Assessment " + label("Not started"), placeholder(
                 "Will show one dossier per reform issue: the chain from EU requirement to unresolved gap, direction of travel, priority "
@@ -396,7 +412,7 @@ class Page:
         return "Assessment " + label(self.status("G6", True)), body
 
     def comparators(self):
-        _, cases = read_csv(self.root / "entities" / "comparator_cases.csv")
+        cases = self.run_cases()
         if not cases:
             return "Comparator pilot (run 1b) " + label("Not started"), placeholder(
                 "Will show the issues chosen for the pilot, comparator countries and cases, lessons and transferability. Populated after "
@@ -659,8 +675,7 @@ class AnalysisPage(Page):
         return "Implementation and outcomes (stated) " + self.evidence_label(), body
 
     def s_issues(self):
-        _, issues = read_csv(self.root / "taxonomy" / "reform_issues.csv")
-        if issues:
+        if self.run_issues():
             title, body = self.taxonomy()
             return "Reform issues " + label(self.status("G4", True)), body
         card = ('<div class="card"><h3>Issue card (layout only)</h3>' + facts([
@@ -671,8 +686,7 @@ class AnalysisPage(Page):
             "Reform issues are drafted from the EU requirement items and approved by the analyst at gate G4. This section will then list each issue with its evidence.") + card
 
     def s_assessment(self):
-        _, js = read_csv(self.root / "judgements" / "judgements.csv")
-        if any(j["object_type"] == "issue_country" for j in js):
+        if any(j["object_type"] == "issue_country" for j in self.run_rows("judgements/judgements.csv")):
             title, body = self.assessment()
             return title, body
         card = ('<div class="card"><h3>Assessment card (layout only)</h3>' + facts([

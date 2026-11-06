@@ -319,7 +319,7 @@ class ProductPage:
         self.themes = {r["theme_code"]: r["label"] for r in read_csv(self.root / "taxonomy" / "themes.csv")[1]}
         self.mechs = {r["mechanism_id"]: r["label"] for r in read_csv(self.root / "taxonomy" / "mechanisms.csv")[1]}
         # 2025 -> 2026 comparison (decision E18). The annual country report of each year is the anchor; everything else stays as judged.
-        self.alljs = read_csv(self.root / "judgements" / "judgements.csv")[1]
+        self.alljs = [j for j in read_csv(self.root / "judgements" / "judgements.csv")[1] if j.get("run_id") == self.run]  # PC-31: this run's rows only
         rep_year = lambda y: {sid for sid, r in self.D["reg"].items() if sid.startswith(f"{self.cc}-EU-") and r["document_type"] == "annual report"
                               and r["publication_date"].startswith(y) and r["status"] == "available"}
         self.rep25, self.rep26 = rep_year("2025"), rep_year("2026")
@@ -520,7 +520,7 @@ class ProductPage:
 
     def impl_counts(self, x):
         c = Counter(j.get("value", "") for j in self.views[x]["status"].values())
-        order = ("proposed", "adopted", "implemented", "in_practice", "reversed", "unclear", "insufficient_evidence")
+        order = ("proposed", "adopted", "implemented", "in_practice", "replaced", "reversed", "unclear", "insufficient_evidence")
         return " · ".join(f"{c[v]} {display('implementation_status', v)[0].lower()}" for v in order if c[v])
 
     def impl_gap(self, x):

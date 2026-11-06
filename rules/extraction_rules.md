@@ -1,6 +1,6 @@
 # Extraction rules (pass 1)
 
-Version 0.6, 5 November 2026. Status: approved at G4 of RUN-2026-02 (GATE-0021, G4-D09): clarifications M1 to M3 from the G3 checks of that run, applied from stage 8; items already extracted are not re-extracted. Version 0.5 was approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17 and applied on 2 November 2026 before RUN-2026-02 (decision E19). Changes create a new version and are listed in the change log at the end of this file. Version 0.4 was approved at G3 of RUN-2026-01 (GATE-0004) after two sample rounds and an independent review (rule issues R1 to R23).
+Version 0.7, 6 November 2026. Status: approved at G8 of RUN-2026-02 (GATE-0030) as part of PC-18 to PC-32 (PC-24), applied on 6 November 2026 before RUN-2026-03. Version 0.6 was approved at G4 of RUN-2026-02 (GATE-0021, G4-D09): clarifications M1 to M3 from the G3 checks of that run, applied from stage 8; items already extracted are not re-extracted. Version 0.5 was approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17 and applied on 2 November 2026 before RUN-2026-02 (decision E19). Changes create a new version and are listed in the change log at the end of this file. Version 0.4 was approved at G3 of RUN-2026-01 (GATE-0004) after two sample rounds and an independent review (rule issues R1 to R23).
 
 These rules tell the agent how to turn a converted source text into evidence items. They implement Codebook 4. Pass 1 stays close to the text: it records what a source says, not what it means for the analysis. Classification (reform issue, mechanism, links) happens in pass 2 and must not be attempted here.
 
@@ -43,6 +43,8 @@ When a passage is genuinely ambiguous between two types, choose the closer one a
 - **Intervention or finding:** a named law, strategy, action plan, programme, institution or system is an `intervention`. A description of the legal or institutional situation that names no measure is a `finding`.
 - **Objectives in national plans (M1):** where a national plan, programme or activity report lists objectives, record each stated objective as an `intervention` with stated status `proposed`, unless the text says it was carried out (then use the status the wording supports). Split an objective that mixes in-scope and out-of-scope aims, and extract only the in-scope part.
 - **Institutions (M2):** the creation, designation or membership of a named institution is an `intervention`; a statement of what an institution does, or of what it lacks (staff, powers, budget), is a `finding`.
+- **Mandates (PC-24, settling the case M2 left open):** a statement of an institution's mandate (what it is responsible for or empowered to do) is a `finding`, unless the text names the law, decision or other measure that confers or changes the mandate; it is then an `intervention` for that measure, as for any named measure. Do not flag such items `ambiguous_type`.
+- **EU steps in the accession process (PC-24):** the opening of a cluster or chapter, the setting or meeting of benchmarks, the release of a payment under a Reform Agenda or Growth Plan facility and similar EU decisions are not interventions of the country. Where the step states the position of an in-scope chapter, theme or issue (for example a cluster opened, or a payment released against an in-scope condition), extract it as a `finding` with the EU institution as speaker and the country as subject. A step that only describes the process is background and is not extracted (section 5). Do not flag such items `ambiguous_type`.
 - **EU standard scale** (EU findings only): if a Commission report uses its standard wording, record it exactly: `preparation_level` (for example "some level of preparation", "moderately prepared") and `progress_level` (for example "limited progress", "some progress"). These fields drive the later direction-of-travel judgement, so they must be copied exactly as printed. Set `applies_to` to `chapter` when the wording rates the whole chapter, and to `sub_area` when it rates only part of it (for example "some progress was made in the e-government area"), and name the sub-area in `extraction_note`.
 - **Metric details** (metrics only): indicator, value, unit and reference period, as stated.
 - **Structural tags:** country, role (target or comparator), cluster and chapter (two-digit code, for example `02`), taken from the heading or subject of the passage itself, not from how the whole source is registered. Where neither the document nor the register gives a chapter (for example a national digital strategy), leave `cluster` and `chapter` empty rather than infer them. Pass 1 never assigns reform issues or mechanisms.
@@ -105,9 +107,13 @@ Use these flags only. Each must be explained in `extraction_note` where it is no
 
 After extracting a source, the agent runs the quote verification tool. For PDFs and documents with pages, it checks the cited page; for webpages, which have no pages, it checks the cited section of the text file. Every item whose quote is not found word for word at the cited location is set to `quote_verified: false` and must be corrected or removed before the source counts as extracted. No item with `quote_verified: false` may reach a review sheet as final.
 
+### Long sources (PC-24)
+
+In a long source, such as a full Commission report, a national programme for adopting the acquis or an annual activity report, the extractor first screens the whole text for in-scope passages, using the run scope and the theme definitions, and lists the pages it will extract before extracting any of them. Pages are never chosen from the table of contents or the section headings alone. The second-pass check below checks the page list as well as the items.
+
 ### Second-pass check (PC-05)
 
-After the first pass on a source, a different agent reads the source again against these rules and lists in-scope claims the first pass missed. Its additions are extracted under the same rules and quote-checked like any other item. At G3 and G5 the agent reports the second pass's yield (items added per hundred first-pass items) by source family; any family whose yield is well below the others is resampled, because a low yield there may mean the check itself was weak.
+After the first pass on a source, a different agent reads the source again against these rules, including the page list for a long source, and lists in-scope claims the first pass missed. Its additions are extracted under the same rules and quote-checked like any other item. At G3 and G5 the agent reports the second pass's yield (items added per hundred first-pass items) by source family; any family whose yield is well below the others is resampled, because a low yield there may mean the check itself was weak.
 
 ## 9. Illustrative examples
 
@@ -133,6 +139,8 @@ The passages below are invented for illustration only. They show the expected sp
 | none |  | "publish the annual report … on its website" |  |  | Not extracted: the reference to a website is incidental |
 
 ## Change log
+
+- 0.7 (6 Nov 2026): PC-24 approved at G8 of RUN-2026-02 (GATE-0030, G8-D01), applied before RUN-2026-03; no re-extraction of earlier runs' items. In long sources the whole text is screened and the pages listed before extraction, and the second pass checks the list (new subsection in section 8); statements of an institution's mandate are findings unless they name the measure that confers the mandate; EU steps in the accession process are findings, not country interventions, or background when they only describe the process.
 
 - 0.6 (5 Nov 2026): approved at G4 of RUN-2026-02 (GATE-0021, G4-D09; rule issues M1 to M3, review/RUN-2026-02/G3_rule_issues.csv). Objectives listed in national plans are interventions with stated status `proposed` unless carried out, split where they mix in-scope and out-of-scope aims (M1); an institution's creation, designation or membership is an intervention, what it does or lacks is a finding (M2); in long documents a repeated claim is extracted again only where its wording or reference period differs (M3). Applied from stage 8 of RUN-2026-02; no re-extraction of earlier items.
 

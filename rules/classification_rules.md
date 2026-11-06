@@ -1,6 +1,6 @@
 # Classification rules (pass 2)
 
-Version 0.4, 2 November 2026. Status: approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17, applied on 2 November 2026 before RUN-2026-02 (decision E19). Changes create a new version and are listed in the change log at the end of this file. Version 0.3 was approved at G5 of RUN-2026-01 (GATE-0006).
+Version 0.5, 6 November 2026. Status: approved at G8 of RUN-2026-02 (GATE-0030) as part of PC-18 to PC-32, applied on 6 November 2026 before RUN-2026-03. Changes create a new version and are listed in the change log at the end of this file. Version 0.4 was approved at G8 of RUN-2026-01 (GATE-0013) as part of PC-01 to PC-17 and applied before RUN-2026-02 (decision E19). Version 0.3 was approved at G5 of RUN-2026-01 (GATE-0006).
 
 Pass 2 adds the interpretive layer to evidence items that have passed pass 1. It implements Codebook 5. It never changes the pass 1 fields (quote, type, location, dates, stated status). If a pass 1 error is found, it is recorded in the review queue for correction under the extraction rules rather than silently fixed.
 
@@ -61,7 +61,7 @@ Create links in `links/links.csv` only where the connection is clear from the ev
 | Link type | From | To | Create when |
 |---|---|---|---|
 | `corroborates` | item | item | Two independent sources state the same fact or judgement |
-| `contradicts` | item | item | Two sources make claims that cannot both be true |
+| `contradicts` | item | item | Two sources make claims about the same measure, on the same basis and at the same reference date that cannot both be true (see below) |
 | `responds_to` | intervention | EU requirement item or reform issue | The source states, or the dates and content clearly show, that the intervention addresses the requirement |
 | `leads_to` | intervention | outcome item | A source links the outcome to the intervention |
 | `explains` | barrier item | reform issue | The barrier is given as a reason for the issue persisting |
@@ -70,6 +70,14 @@ Create links in `links/links.csv` only where the connection is clear from the ev
 | `same_as_earlier` | item | item | The same EU wording repeats from an earlier report, or the same claim appears in two places in one document (extraction rules 0.2) |
 
 Two items from the same source never corroborate each other. A government source and a government statistic do not count as independent of each other.
+
+**Contradictions and other differences (PC-18).**
+
+- Propose a `contradicts` link only when the two claims concern the same measure, on the same basis (the same definition, unit and coverage) and at the same reference date, and cannot both be true.
+- Differences between sources that do not meet this test, such as different measures, definitions, bases or dates, are recorded in `review/<run_id>/stage9/noted_differences.csv` (source IDs, item IDs and what differs), not as links.
+- Differences within one source are recorded in `review/<run_id>/stage9/internal_inconsistencies.csv` in the same way, not as links.
+- Both files go into the G5 package with the `contradicts` links, so that the analyst sees every difference once.
+- When an implementation status, or the reason of any judgement, records that sources disagree, propose the `contradicts` link at that point if the test above is met; otherwise reword the reason as a noted difference (judgement rules, PC-08).
 
 ## 7. Queues for the analyst
 
@@ -88,12 +96,20 @@ Every item starts with `classification_status` `not_classified` (set in pass 1) 
 - **Versions of one report:** two versions of the same document are one source. Record `version_of` in the register and link their items with `same_as_earlier`. They never corroborate each other.
 - **Regional evidence:** a claim about a whole region that does not name the target country may be kept, marked as regional in `extraction_note`. It may support an issue but cannot alone support a finding about the country.
 - **Military and classified systems:** out of scope. **Digital education:** out of scope under R2. **Government-wide inspection systems framed as digital government:** in scope.
-- **Same-sentence check (PC-06):** before G5, list identical sentences that are classified differently, and resolve each or record the reason.
+- **Same-sentence check (PC-06, narrowed by PC-18):** before G5, list identical sentences that are classified differently, and resolve each or record the reason. Leave out groups of items that pass 1 split from one sentence because it makes claims of different types (extraction rules, section 1): their different classifications are expected.
 - **Country statements in screening reports (PC-06):** in screening reports and similar documents where the country presents its own position, the country's statements are classified as `country_response`, not `eu_requirement`. Only the Commission's assessment and recommendations are EU requirements.
 - **Parallel taxonomy drafts (PC-07):** when more than one agent drafts parts of the taxonomy, list the items mapped to issues in more than one part and resolve each overlap (merge, split or exclusion note) before the gate.
 - **Problems the EU material does not raise (PC-12):** items describing a problem raised only by national or independent sources go to the unmatched queue, with a `proposed_definition` that starts "Not raised in EU material:". The analyst may approve such a problem as an issue at G4 or G5 (Codebook 5). Until then it creates no issue and is listed in the outputs.
 
+## 9. The shared taxonomy across runs (PC-25)
+
+- **Changes are additive (standing rule, from scaling note S4 and G4-D08 of RUN-2026-02):** a run may propose new shared issues, and additions to an existing issue that leave its definition unchanged (for example a usual mechanism). It never rewords, merges, splits or retires an approved issue to suit a new country.
+- **Issues cited by a closed run:** any change to an issue that a closed run's judgements or outputs cite comes to a gate as its own proposal, with its effect on that run stated. The closed run keeps the taxonomy version it used (Codebook 5).
+- **G4 check of shared definitions:** at each run's G4, list for every shared issue the run uses the elements of its definition that the new country's evidence does not show (for example a named institution, system or stage of reform), with the items checked. The list informs the analyst and the classification notes; it changes no definition. Where an element should move into the notes or examples, propose that as a taxonomy change under the two rules above.
+
 ## Change log
+
+- 0.5 (6 Nov 2026): PC-18 and PC-25 approved at G8 of RUN-2026-02 (GATE-0030, G8-D01), applied before RUN-2026-03. `contradicts` only for the same measure, basis and reference date; other differences in a noted-differences file and differences within one source in an internal-inconsistencies file, neither as links; the link proposed where a judgement records that sources disagree; the same-sentence check leaves out sentences split at pass 1 (PC-18). Section 9: the S4 rule on additive shared taxonomy changes made standing, and a G4 check of the elements of shared definitions that the new country's evidence does not show (PC-25).
 
 - 0.4 (2 Nov 2026): PC-06, PC-07 and PC-12 (GATE-0013), applied before RUN-2026-02 (E19). Country statements in screening reports are country responses; same-sentence check before G5; overlap check after parallel taxonomy drafting; route for problems raised only by national or independent sources; the taxonomy is shared across countries and never stretched.
 

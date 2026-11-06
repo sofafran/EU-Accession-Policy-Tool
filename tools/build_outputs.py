@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, register_role, run_record, run_requirements, run_items, runs_with_records, split_list  # noqa: E402
 
-VERSION = "1.3.3"
+VERSION = "1.4.0"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
@@ -35,6 +35,22 @@ P = " (proposed)"
 
 MISSED = {"RUN-2026-01": "about one in eight in-scope claims in EU sources may have been missed (LIM-0025)"}
 MISSED_DEFAULT = "the share of in-scope claims that may have been missed, measured at the second-pass check, is given in the coverage and limits report"
+
+
+def vkey(v):
+    """Version string as a sortable tuple: '1.10' after '1.9'."""
+    return tuple(int(x) if x.isdigit() else 0 for x in re.split(r"[.]", v or "0"))
+
+
+def taxonomy_note(D, issue):
+    """1.4.0 (PC-31, ALN-0041): a brief reads the shared taxonomy as it now stands. If this issue's row changed after the
+    taxonomy version recorded on the run's judgements, say so in the brief rather than silently showing the newer wording."""
+    v, run_v = issue.get("taxonomy_version", ""), D["taxonomy_version"]
+    if not v or not run_v or vkey(v) <= vkey(run_v):
+        return []
+    return [f"*Taxonomy note: this issue's entry in the shared taxonomy last changed at version {v}, after version {run_v} recorded on this "
+            f"run's judgements. The definition and mechanisms above are read from the current taxonomy and may differ from those the "
+            f"judgements were made against.*", ""]
 
 
 def long_date(d):
@@ -111,8 +127,9 @@ def load(root, run):
         if role:  # 1.3.2: also sources registered by another run but extracted by this one (held comparators, horizontal passages)
             reg[r["source_id"]] = {**r, "role": role}
     sq = {}
-    for r in read_csv(root / "judgements" / "source_quality.csv")[1]:
-        if r["review_status"] in ("validated", "overridden"):
+    # 1.4.0 (PC-31): this run's rating of a source, else an earlier run's (a source held from an earlier run); never a later run's
+    for r in sorted(read_csv(root / "judgements" / "source_quality.csv")[1], key=lambda r: r.get("run_id") == run):
+        if r["review_status"] in ("validated", "overridden") and (r.get("run_id") or "") <= run:
             sq.setdefault(r["source_id"], {})[r["topic"]] = r["overall"]
     issues = [r for r in read_csv(root / "taxonomy" / "reform_issues.csv")[1] if r["status"] == "approved"]
     mech = {r["mechanism_id"]: r["label"] for r in read_csv(root / "taxonomy" / "mechanisms.csv")[1]}
@@ -130,6 +147,9 @@ def load(root, run):
             continue
         for x in i["pass2"]["reform_issue_ids"]:
             by.setdefault(x, []).append(k)
+    # 1.4.0 (PC-31): a shared issue first drafted by another run, with no evidence in this run, is not part of this run's outputs
+    # or pages (it appeared as an empty row in a closed run's scope overview and country page once a later run added it).
+    issues = [r for r in issues if r.get("created_in_run") in ("", run) or r["issue_id"] in by]
     fields = run_record(root, run)[0]
     gates = [r for r in read_csv(root / "registers" / "gate_log.csv")[1] if r["run_id"] == run and r["decision"] in ("pass", "pass_with_conditions")]
     g7 = [r for r in gates if r["gate"] == "G7"]
@@ -137,7 +157,8 @@ def load(root, run):
     g6 = [r["gate_decision_id"] for r in gates if r["gate"] == "G6"]
     g6_at_g7 = [r["gate_decision_id"] for r in gates if r["gate"] == "G6" and (not g7date or r["date"] <= g7date)]
     reg_all = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
-    return dict(items=items, all_items=all_items, reg_all=reg_all, js=ok, prop=prop, links=links, g7=g7[-1]["gate_decision_id"] if g7 else "", g7date=g7date, g6=g6, g6_at_g7=g6_at_g7, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
+    tax_v = max((j.get("taxonomy_version", "") for j in ok if j.get("taxonomy_version")), key=vkey, default="")
+    return dict(taxonomy_version=tax_v, items=items, all_items=all_items, reg_all=reg_all, js=ok, prop=prop, links=links, g7=g7[-1]["gate_decision_id"] if g7 else "", g7date=g7date, g6=g6, g6_at_g7=g6_at_g7, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
                 start=fields.get("Time window", "")[:4], freeze=fields.get("Evidence freeze date", "")[:10])
 
 
@@ -235,6 +256,7 @@ def issue_brief(root, run, D, issue):
     mechs = "; ".join(f"{D['mech'].get(m, m)} ({m})" for m in split_list(issue["mechanism_ids"]))
     out = [f"# Issue brief: {issue['label']}", "", f"{x} · {D['cname']} · {status_line(D, V['new'])}", "",
            f"**Issue definition.** {issue['definition']} **Problem mechanisms:** {mechs}.", "",
+           *taxonomy_note(D, issue),
            "## In brief (agent synthesis)", "", R.sub(syn("In brief"), names), "",
            "## Assessment (validated at G6)", ""]
     out += table(["Judgement", "Value"], [[t.replace("_", " ").capitalize(), J.get(t, {}).get("value", "not judged")]
@@ -427,10 +449,12 @@ def main(argv=None):
             write(od / "coverage_and_limits_report.md", coverage(root, a.run, D))
         print(f"wrote {len(want)} issue briefs{' and the coverage report' if a.coverage else ''} to {od}")
         return 0
+    newer = [r["issue_id"] for r in D["issues"] if taxonomy_note(D, r)]
+    if newer:
+        print(f"note: the shared taxonomy entries of {', '.join(newer)} changed after taxonomy {D['taxonomy_version']} recorded on {a.run}'s "
+              "judgements; their briefs carry a taxonomy note")
     write(od / "scope_overview.md", scope_overview(root, a.run, D))
-    for r in D["issues"]:
-        if r.get("created_in_run") not in ("", a.run) and r["issue_id"] not in D["by"]:
-            continue  # a shared issue added by a later run, with no evidence in this run (E19)
+    for r in D["issues"]:  # D["issues"] leaves out shared issues added by another run with no evidence in this run (E19, 1.4.0)
         write(od / f"issue_brief_{r['issue_id']}.md", issue_brief(root, a.run, D, r))
     write(od / "coverage_and_limits_report.md", coverage(root, a.run, D))
     for f in sorted((root / "review" / a.run / "run1b" / "cases").glob("cases_*.csv")):

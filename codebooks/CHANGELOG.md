@@ -1,5 +1,26 @@
 # Codebook change log
 
+## Version 1.4 (Codebooks 1 to 6), extraction rules 0.7, classification rules 0.5, judgement rules 0.6 and data dictionary 1.7, 6 November 2026
+
+The text changes PC-18 to PC-29, approved by Sofia at G8 of RUN-2026-02 (GATE-0030, G8-D01), applied as new shared-core versions before RUN-2026-03. Full wording and reasons: `runs/RUN-2026-02/run_review.md`, section 5, and `review/RUN-2026-02/G8_proposed_changes.csv`. RUN-2026-01 and RUN-2026-02 keep the versions recorded in their run records and evidence files; none of their evidence, judgements or outputs changed.
+
+- **Codebook 1:** no change in substance; version aligned.
+- **Codebook 2:** no change in substance; version aligned. The register records horizontal documents and the runs that use each source through the data dictionary.
+- **Codebook 3:** a general rule on territorial coverage, drafted from LIM-0044: evidence on territory outside the government's effective control is recorded as stated, and implementation is not judged there unless a source assesses it directly (PC-29). It applies from the first run that needs it, expected to be Ukraine (RUN-2026-05), and is confirmed at that run's G0; Montenegro does not need it.
+- **Codebook 4:** no change in substance; version aligned.
+- **Codebook 5:** the S4 rule made standing: shared taxonomy changes are additive, and a change to an issue cited by a closed run comes to a gate with its effect stated; each run's taxonomy gate lists the elements of shared definitions its country's evidence does not show (PC-25).
+- **Codebook 6:** implementation status `replaced` (PC-22); a horizontal passage is not evidence about the same country and is rated at most Medium for relevance (PC-23).
+- **Codebook 7:** stays at 1.2.
+- **Extraction rules 0.7:** long sources screened in full and their pages listed before extraction, with the list checked by the second pass; statements of an institution's mandate are findings unless they name the measure that confers it; EU steps in the accession process are findings, not country interventions (PC-24).
+- **Classification rules 0.5:** `contradicts` only for the same measure, basis and reference date, with other differences and differences within one source recorded in files rather than links, and the link proposed where a judgement records that sources disagree; the same-sentence check leaves out sentences split at pass 1 (PC-18); the standing S4 rule and the G4 check of shared definitions (PC-25).
+- **Judgement rules 0.6:** links from parallel batches merged before success and attribution are judged once per link (PC-19); one standard search scope for claims of absence, computed by a tool (PC-20); in the priority test, a fulfilled Reform Agenda condition not repeated in the latest report does not alone make an issue High, and the three-report tests are stated for countries with fewer than three standard reports (PC-21); implementation status `replaced` (PC-22); relevance of horizontal passages (PC-23).
+- **Data dictionary 1.7:** `replaced` in the implementation status scale, with pass 1 `stated_status` unchanged (PC-22); the register `country` may read `multi` for horizontal EU documents, which keep their IDs (PC-26); `run_ids` on source requirements and `used_in_runs` on the source register (PC-27); `successor_id` on interventions and actors (PC-28). The new columns are added to the CSV files, with existing rows filled, as a data step before RUN-2026-03.
+- **Evidence schema:** stays at 1.3. No field it defines changes: `country` is free text and `stated_status` keeps its values.
+- **Procedures:** P1 records `run_ids` and `used_in_runs` and screens horizontal documents for horizontal passages as well as country passages (PC-26, PC-27); P2 screens long sources in full (PC-24) and adds the G4 check of shared definitions (PC-25); P3 records noted differences and internal inconsistencies (PC-18), merges batch links before success and attribution (PC-19), computes the standard search scope (PC-20) and resolves possible duplicate interventions before G6 (PC-28).
+- **Taxonomy:** stays at 1.3. **Pending:** taxonomy 1.4, moving the country-specific elements of the RI-TEC-018 and RI-TEC-021 definitions into notes or examples with the effect on North Macedonia stated (PC-25), comes to a later gate and is not applied here.
+- **Theme list and mechanism list:** stay at 1.4 and 1.0.
+- **Tools:** PC-30 to PC-32 (word-boundary quote check, two-run test fixture and run scoping, row-loss and validated-status checks) are applied separately in `tools/`, with their versions recorded in `tools/README.md`. PC-31 is needed before RUN-2026-03 starts.
+
 ## Taxonomy 1.3, 6 November 2026
 
 Approved by Sofia at G5 of RUN-2026-02 (GATE-0023, `review/RUN-2026-02/G5_decisions.csv`, G5-D01 to G5-D11 accepted). Additive only (scaling note S4): no existing issue changed.

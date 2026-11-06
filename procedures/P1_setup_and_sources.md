@@ -37,10 +37,10 @@ The review page is never the place where a decision is made. If George's feedbac
 **Goal:** list every type of document the analysis expects to exist, before searching.
 
 1. Draft `registers/source_requirements.csv` from Codebook 2, for the target country, chapters, themes and time window set in the run record.
-2. Cover all five families. For each line, state the issuing institution, years, chapters or theme codes, core or supporting, and search hints (official website and likely title, including the original-language title if relevant).
+2. Cover all five families. For each line, state the issuing institution, years, chapters or theme codes, core or supporting, and search hints (official website and likely title, including the original-language title if relevant). Set `run_ids` to the run; a line reused from an earlier run keeps its ID and `approved_at` and adds the run to `run_ids` (PC-27).
 3. Group repeating documents into one line (for example one line for all Commission annual reports in the time window).
 4. Start from the source requirement hints in the run record. Typical lines include:
-   - EU: Commission annual reports on the target country; screening reports for the in-scope chapters if public; opening, interim or closing benchmarks where negotiations have reached that point; Council conclusions and EU common positions where public; Reform Agenda and Growth Plan documents that cover the scope. For a cross-cutting theme, the whole annual report is a source, not only the in-scope chapter sections.
+   - EU: Commission annual reports on the target country; screening reports for the in-scope chapters if public; opening, interim or closing benchmarks where negotiations have reached that point; Council conclusions and EU common positions where public; Reform Agenda and Growth Plan documents that cover the scope. For a cross-cutting theme, the whole annual report is a source, not only the in-scope chapter sections. Horizontal EU documents (enlargement Communications, Council conclusions on enlargement) get lines that cover both the passages on the target country and the horizontal passages on the in-scope chapters and themes; the run screens them for both, whichever run registered them (PC-26).
    - GOV: the laws, strategies, action plans and implementation reports that govern the in-scope chapters and theme areas; annual reports of the responsible institutions; audit reports; the national programme for adopting the acquis.
    - IO: monitoring reports and assessments by international organisations with a mandate for the chapters or theme areas.
    - RES: evaluations and academic or think tank analyses of reform in the target country in the scope.
@@ -63,7 +63,8 @@ For each requirement line:
 4. Assign the next source ID (`<country code>-<family>-<publication year>-<sequence>`) and file the original as `sources/<country code>/<family>/originals/<source_id>_<short-label>.<ext>`. The short label uses hyphens, no spaces, for example `CCC-EU-2025-001_EC_Country-Report-2025.pdf`, where `CCC` is the country code. The run record gives the code and an example for the run.
 5. Convert it to text at `sources/<country code>/<family>/text/<source_id>.txt`, with a marker line `=== PAGE n ===` before each page. For webpages, save the HTML snapshot as the original and the readable text as the text file, with section headings kept.
 6. If the text is unreadable or the PDF is scanned, run text recognition in the languages listed in the run record and note `ocr` in the register notes.
-7. Record the language of the document. If it is not English, note in the register why no suitable English version was used. Then add a register row with all fields, `status` `available` and `added_in_run` set to the run ID.
+7. Record the language of the document. If it is not English, note in the register why no suitable English version was used. Then add a register row with all fields, `status` `available`, and `added_in_run` and `used_in_runs` set to the run ID. A horizontal EU document takes `country` `multi` (PC-26).
+8. A source the project already holds is not registered again: add the run to its `used_in_runs` and its role for the run to `role`, in the same order (PC-27).
 
 When a document cannot be obtained:
 

@@ -133,6 +133,17 @@ COUNTRIES = {
 }
 
 
+MULTI = "multi"  # register country of a horizontal EU document that covers several enlargement countries (PC-26)
+
+# Optional columns added by data dictionary 1.7 (PC-27, PC-28). Tools read them when present and work without them.
+OPTIONAL_COLUMNS = {
+    "registers/source_requirements.csv": ("run_ids",),
+    "registers/source_register.csv": ("used_in_runs",),
+    "entities/actors.csv": ("successor_id",),
+    "entities/interventions.csv": ("successor_id",),
+}
+
+
 def run_country(root, run_id):
     """Country code of a run, from the `Target country` field of its run record, written as `Name (CCC)`."""
     fields, _ = run_record(root, run_id)
@@ -198,25 +209,38 @@ def run_items(data, run_id):
 def register_role(row, run_id, run_cc):
     """A register row's role in one run, or None if the run did not use the source (E21). The first role listed belongs
     to the run that registered the source (`added_in_run`); a later `target` role belongs to the later run whose target
-    country the source is about."""
+    country the source is about, or to any later run for a horizontal document (country `multi`, PC-26). Where `used_in_runs`
+    is filled in (data dictionary 1.7, PC-27), it decides instead: the run's role is the one at the same position in `role`."""
     roles = [x for x in row.get("role", "").split(";") if x]
     if not roles:
         return None
+    used = split_list(row.get("used_in_runs"))
+    if used:  # data dictionary 1.7 (PC-27): the run is stated, with roles in the same order
+        if run_id not in used:
+            return None
+        k = used.index(run_id)
+        return roles[k] if k < len(roles) else roles[-1]
     if row.get("added_in_run") == run_id:
         return roles[0]
-    if (row.get("added_in_run") or "") < run_id and "target" in roles[1:] and row.get("country") == run_cc:
+    if (row.get("added_in_run") or "") < run_id and "target" in roles[1:] and row.get("country") in (run_cc, MULTI):
         return "target"
     return None
 
 
 def run_requirements(root, run_id, rows=None):
     """Requirement lines of one run (E21): lines approved at one of the run's gates, plus unapproved lines about the run's
-    target country. The requirements table has no run column, so the gate that approved a line identifies its run."""
+    target country. Where `run_ids` is filled in (data dictionary 1.7, PC-27) it decides instead; until then the gate that
+    approved a line identifies its run."""
     if rows is None:
         rows = read_csv(Path(root) / "registers" / "source_requirements.csv")[1]
     gates = {r["gate_decision_id"] for r in read_csv(Path(root) / "registers" / "gate_log.csv")[1] if r.get("run_id") == run_id}
     cc = run_country(root, run_id)
-    return [r for r in rows if r.get("approved_at") in gates or (not r.get("approved_at") and r.get("country") == cc and r.get("role") == "target")]
+
+    def mine(r):
+        if split_list(r.get("run_ids")):  # data dictionary 1.7 (PC-27): the run is stated
+            return run_id in split_list(r.get("run_ids"))
+        return r.get("approved_at") in gates or (not r.get("approved_at") and r.get("country") == cc and r.get("role") == "target")
+    return [r for r in rows if mine(r)]
 
 
 def run_sources(root, run_id, rows=None):

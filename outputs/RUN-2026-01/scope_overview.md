@@ -24,8 +24,6 @@ This overview lists the 48 reform issues identified for North Macedonia in RUN-2
 | RI-FMW-007 | Information and support for mobile workers on their rights | 02 |  | Low | insufficient_evidence | open | High | 5 items, 2 sources, 0 MT |
 | RI-FMW-012 | Supplementary pension rights of mobile workers | 02 |  | Low | insufficient_evidence | open | Medium | 11 items, 1 sources, 0 MT |
 | RI-FMW-014 | Access and rights of third-country workers | 02 |  | Low | insufficient_evidence | insufficient_evidence | Medium | 31 items, 3 sources, 0 MT |
-| RI-FMW-015 | Domestic preconditions for the European Health Insurance Card not in place | 02 |  |  |  |  |  | 0 items, 0 sources, 0 MT |
-| RI-FMW-016 | Host-language tuition for EU workers and their children | 02 |  |  |  |  |  | 0 items, 0 sources, 0 MT |
 
 ## Technology and AI (cross-cutting theme)
 
@@ -65,9 +63,6 @@ This overview lists the 48 reform issues identified for North Macedonia in RUN-2
 | RI-TEC-035 | Digital tools in company law not fully aligned | 06 | TECH-DIGI | Medium | persistent | partly_addressed | High | 23 items, 8 sources, 0 MT |
 | RI-TEC-021 | Personal data protection in electoral processes weak | 23 | TECH-DATA | Low | insufficient_evidence | open | Medium | 14 items, 5 sources, 0 MT |
 | RI-TEC-037 | Sector and local online public services limited | 10, 20 | TECH-DGOV | Low | insufficient_evidence | partly_addressed | Medium | 93 items, 23 sources, 67 MT |
-| RI-TEC-038 | Electronic public procurement system outdated and in need of replacement | 05 | TECH-DGOV |  |  |  |  | 0 items, 0 sources, 0 MT |
-| RI-TEC-039 | Public sector websites and apps not accessible to persons with disabilities | 10, 19, 23 | TECH-DGOV |  |  |  |  | 0 items, 0 sources, 0 MT |
-| RI-TEC-040 | Semiconductor acquis not aligned | 10 | TECH-DIGI |  |  |  |  | 0 items, 0 sources, 0 MT |
 
 ## Notes on evidence coverage (agent synthesis)
 

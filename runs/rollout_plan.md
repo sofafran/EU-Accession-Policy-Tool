@@ -24,6 +24,18 @@ The taxonomy stays at version 1.1. PC-12 is applied through Codebook 5 and the c
 
 The details are in `codebooks/CHANGELOG.md`. RUN-2026-01 keeps the versions recorded in its run record and evidence files.
 
+## Shared-core versions for RUN-2026-03 onwards
+
+The text changes PC-18 to PC-29, approved at G8 of RUN-2026-02 (GATE-0030, G8-D01), were applied on 6 November 2026 as new shared-core versions:
+
+- Codebooks 1.4 (Codebooks 1 to 6) and 1.2 (Codebook 7); the Codebook 3 rule on territorial coverage (PC-29) applies from the first run that needs it, expected to be Ukraine (RUN-2026-05);
+- extraction rules 0.7, classification rules 0.5, judgement rules 0.6;
+- data dictionary 1.7 (its new columns are added to the CSV files before RUN-2026-03 starts); evidence schema stays at 1.3;
+- procedures P1, P2 and P3 updated for these changes;
+- taxonomy 1.3, theme list 1.4 and mechanism list 1.0, unchanged. Taxonomy 1.4 (the RI-TEC-018 and RI-TEC-021 definitions, PC-25) is pending and comes to a later gate with its effect on North Macedonia stated.
+
+The tool changes PC-30 to PC-32 are applied separately in `tools/`; PC-31 (the two-run test fixture and run scoping) is needed before RUN-2026-03 starts. The details are in `codebooks/CHANGELOG.md`. RUN-2026-01 and RUN-2026-02 keep the versions recorded in their run records and evidence files.
+
 ## Runs
 
 The order below is Sofia's. Points to check are starting points for each run's G0 and G1, not facts: each is confirmed from authoritative EU sources at stage 1.
@@ -31,7 +43,7 @@ The order below is Sofia's. Points to check are starting points for each run's G
 | Run | Country | Code | Points to check at G0 and G1 |
 |---|---|---|---|
 | RUN-2026-01 | North Macedonia | MKD | Completed alpha (G8, GATE-0013). Baseline only; 2026 refresh pending (E18) |
-| RUN-2026-02 | Moldova | MDA | Closed: G8 passed 6 November 2026 (GATE-0030). 53 issues judged, 56 outputs signed off at G7 (GATE-0029), comparator step on RI-FMW-015, RI-TEC-038 and RI-TEC-036. Approved changes PC-18 to PC-32 to be applied before RUN-2026-03. Language: Romanian (`ro`) |
+| RUN-2026-02 | Moldova | MDA | Closed: G8 passed 6 November 2026 (GATE-0030). 53 issues judged, 56 outputs signed off at G7 (GATE-0029), comparator step on RI-FMW-015, RI-TEC-038 and RI-TEC-036. Approved changes PC-18 to PC-32: the text changes PC-18 to PC-29 applied on 6 November 2026 (see above); the tool changes PC-30 to PC-32 applied in `tools/` before RUN-2026-03. Language: Romanian (`ro`) |
 | RUN-2026-03 | Montenegro | MNE | Held: starts only after Sofia reviews what RUN-2026-02 teaches (E20). Negotiating since 2012, all chapters open, several closed. The alpha found an EU common position on Chapter 2 (AD 26/26, restricted, LIM-0028): check whether the chapter is provisionally closed, in which case issues are about implementation and closing-benchmark follow-up. 17 sources already held from the comparator pilot. Languages: Montenegrin (no ISO 639-1 code; record as `cnr` in notes, `sr` in the field), Albanian |
 | RUN-2026-04 | Albania | ALB | Negotiating; check which clusters are open and the Chapter 2 benchmarks. Growth Plan Reform Agenda as for North Macedonia. 5 sources held. Language: Albanian (`sq`) |
 | RUN-2026-05 | Ukraine | UKR | Same cluster opened on 13 October 2026. The Ukraine Facility and Ukraine Plan replace a Reform Agenda. Wartime context limits some evidence. Language: Ukrainian (`uk`) |

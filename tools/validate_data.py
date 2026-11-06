@@ -10,10 +10,10 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import (ITEM_ID_RE, SOURCE_ID_RE, dictionary_tables, evidence_files,  # noqa: E402
-                    lessons_path, project_root, read_csv, read_json, runs_with_records, split_list)
+from common import (COUNTRIES, ITEM_ID_RE, MULTI, OPTIONAL_COLUMNS, SOURCE_ID_RE, dictionary_tables,  # noqa: E402
+                    evidence_files, lessons_path, project_root, read_csv, read_json, runs_with_records, split_list)
 
-__version__ = "1.5.0"
+__version__ = "1.6.0"
 
 ID_COLUMNS = {
     "registers/source_requirements.csv": "requirement_id",
@@ -49,6 +49,32 @@ ENUMS = {
 }
 
 
+# Allowed judgement values by type (judgement rules; data dictionary 1.7 adds implementation status `replaced`, PC-22).
+# `insufficient_evidence` is allowed for every type.
+JUDGEMENT_VALUES = {
+    "evidence_confidence": {"High", "Medium", "Low"},
+    "relevance": {"High", "Medium", "Low"},
+    "implementation_status": {"proposed", "adopted", "implemented", "in_practice", "replaced", "reversed", "unclear"},
+    "direction_of_travel": {"new", "worsening", "persistent", "improving", "largely_resolved"},
+    "unresolved_gap": {"open", "partly_addressed", "largely_closed"},
+    "success": {"worked", "mixed", "failed", "too_early"},
+    "attribution": {"High", "Medium", "Low"},
+    "comparator_relevance": {"High", "Medium", "Low"},
+    "transferability": {"likely", "conditional", "unlikely"},
+    "priority": {"High", "Medium", "Low"},
+    "tractability": {"High", "Medium", "Low"},
+}
+
+# Files that may only grow (PC-32): rows are never deleted (CLAUDE.md rule 7), so a row present at the last commit must
+# still be there. Learning logs are added per run; the decision log is checked separately.
+GROWING = ["registers/source_requirements.csv", "registers/source_register.csv", "registers/limits_log.csv", "registers/gate_log.csv",
+           "judgements/judgements.csv", "judgements/source_quality.csv", "links/links.csv",
+           "entities/actors.csv", "entities/interventions.csv", "entities/comparator_cases.csv",
+           "taxonomy/reform_issues.csv", "taxonomy/mechanisms.csv", "taxonomy/themes.csv", "taxonomy/unmatched_queue.csv",
+           "taxonomy/ambiguous_queue.csv"]
+DECISION_LOG = "decisions/decision_log.md"
+
+
 class Report:
     def __init__(self):
         self.errors, self.warnings = [], []
@@ -82,9 +108,11 @@ def check_headers(root, tables, rep):
         if key not in expected:
             rep.warn(f"{rel}: not described in the data dictionary")
             continue
+        opt = OPTIONAL_COLUMNS.get(rel, ())
         if not header:
             rep.error(f"{rel}: file missing or empty")
-        elif header != expected[key]:
+        elif header != expected[key] and [h for h in header if h not in opt] != [h for h in expected[key] if h not in opt]:
+            # 1.6.0: the optional columns of data dictionary 1.7 (PC-27, PC-28) may be present or not, in any position
             rep.error(f"{rel}: header does not match the data dictionary\n    expected {expected[key]}\n    found    {header}")
     for key in expected:
         if "<" not in key and key not in tables:
@@ -123,6 +151,21 @@ def check_enums(tables, rep):
             for r in rows:
                 if r.get(col, "") and r[col] not in allowed:
                     rep.error(f"{rel}: {r.get(ID_COLUMNS.get(rel, 'lesson_id'))} has {col} '{r[col]}', not one of {sorted(allowed)}")
+
+
+def check_values(tables, rep):
+    """Country codes (register `multi` for horizontal documents, PC-26) and judgement values by type (PC-22)."""
+    known = set(COUNTRIES)
+    for rel, col, extra in (("registers/source_register.csv", "source_id", {MULTI}), ("registers/source_requirements.csv", "requirement_id", {MULTI}),
+                            ("entities/interventions.csv", "intervention_id", {"EU", "INT"}), ("entities/actors.csv", "actor_id", {"EU", "INT"})):
+        for r in tables[rel][1]:
+            for c in split_list(r.get("country")):
+                if c not in known | extra:
+                    rep.error(f"{rel}: {r.get(col)} has country '{c}', not a known country code{' or multi' if MULTI in extra else ''}")
+    for r in tables["judgements/judgements.csv"][1]:
+        allowed = JUDGEMENT_VALUES.get(r.get("judgement_type"))
+        if allowed is not None and r.get("value") not in allowed | {"insufficient_evidence"}:
+            rep.error(f"judgements.csv: {r['judgement_id']} has {r['judgement_type']} value '{r.get('value')}', not one of {sorted(allowed | {'insufficient_evidence'})}")
 
 
 def check_evidence(root, schema_path, rep):
@@ -219,6 +262,21 @@ def check_references(tables, ids, items, files, rep):
     refs("entities/interventions.csv", "responsible_actor_ids", actors, "actor")
     refs("entities/interventions.csv", "first_item_id", set(items), "item", multi=False)
     refs("entities/actors.csv", "parent_actor_id", actors, "actor", multi=False)
+    refs("entities/actors.csv", "successor_id", actors, "actor", multi=False)  # optional column (PC-28)
+    refs("entities/interventions.csv", "successor_id", ints, "intervention", multi=False)
+    run_ids = {r.get("run_id") for r in tables["registers/gate_log.csv"][1]} | {Path(rel).parent.name for rel in tables if is_lessons(rel)}
+    refs("registers/source_requirements.csv", "run_ids", run_ids, "run")  # optional column (PC-27)
+    refs("registers/source_register.csv", "used_in_runs", run_ids, "run")
+    for r in tables["registers/source_register.csv"][1]:
+        used = split_list(r.get("used_in_runs"))
+        if used and r.get("added_in_run") and used[0] != r["added_in_run"]:
+            rep.error(f"registers/source_register.csv: {r['source_id']} used_in_runs must start with added_in_run {r['added_in_run']}")
+        if used and len(split_list(r.get("role"))) not in (1, len(used)):
+            rep.error(f"registers/source_register.csv: {r['source_id']} lists {len(used)} run(s) in used_in_runs but {len(split_list(r.get('role')))} roles")
+    for rel, key in (("entities/actors.csv", "actor_id"), ("entities/interventions.csv", "intervention_id")):
+        for r in tables[rel][1]:
+            if r.get("successor_id") and r["successor_id"] == r[key]:
+                rep.error(f"{rel}: {r[key]} names itself as its successor")
     refs("entities/comparator_cases.csv", "reform_issue_id", issues, "issue", multi=False)
     refs("entities/comparator_cases.csv", "intervention_ids", ints, "intervention")
     refs("entities/comparator_cases.csv", "selected_at", gates, "gate decision", multi=False)
@@ -321,11 +379,103 @@ def check_protected_judgements(root, rep):
                     rep.warn(f"{rel}: {jid} is {o['review_status']} but its {col} has changed; restore it and propose a new row instead")
 
 
+def committed(root, rel):
+    """The file as at the last commit, or None if git is unavailable or the file is not committed."""
+    try:
+        return subprocess.run(["git", "-C", str(root), "show", f"HEAD:{rel}"], capture_output=True, text=True, check=True).stdout
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
+
+
+def decision_log_entries(text):
+    """Decision register IDs and change-history entries of the decision log."""
+    ids, history, in_hist = set(), [], False
+    for line in text.splitlines():
+        if line.startswith("## "):
+            in_hist = line.strip() == "## Change history"
+        m = re.match(r"^\|\s*([A-Z]\d+)\s*\|", line)
+        if m:
+            ids.add(m.group(1))
+        elif in_hist and line.startswith("- "):
+            history.append(line)
+    return ids, history
+
+
+def check_no_lost_rows(root, tables, rep):
+    """PC-32: registers, judgements, links, entities, taxonomy, learning logs and the decision log never lose rows compared
+    with the last commit (CLAUDE.md rule 7). Skipped, with a warning, if git is unavailable."""
+    if committed(root, "registers/gate_log.csv") is None:
+        rep.warn("no committed version to compare with (git unavailable or nothing committed); lost-row check skipped")
+        return
+    for rel in GROWING + [r for r in tables if is_lessons(r)]:
+        old = committed(root, rel)
+        if old is None:
+            continue
+        col = ID_COLUMNS.get(rel, "lesson_id")
+        old_rows = [r for r in csv.DictReader(io.StringIO(old)) if any((v or "").strip() for v in r.values())]
+        now = {r.get(col) for r in tables[rel][1]} if rel in tables else {r.get(col) for r in read_csv(Path(root) / rel)[1]}
+        lost = [r.get(col) for r in old_rows if r.get(col) not in now]
+        if lost:
+            rep.error(f"{rel}: {len(lost)} row(s) present at the last commit are missing ({', '.join(map(str, lost[:5]))}{', ...' if len(lost) > 5 else ''}); rows are never deleted")
+        elif len(tables.get(rel, ([], []))[1]) < len(old_rows) and rel in tables:
+            rep.error(f"{rel}: has {len(tables[rel][1])} rows, fewer than the {len(old_rows)} at the last commit")
+    old = committed(root, DECISION_LOG)
+    path = Path(root) / DECISION_LOG
+    if old is not None:
+        new = path.read_text(encoding="utf-8") if path.exists() else ""
+        (oid, ohist), (nid, nhist) = decision_log_entries(old), decision_log_entries(new)
+        if oid - nid:
+            rep.error(f"{DECISION_LOG}: decision(s) {', '.join(sorted(oid - nid))} present at the last commit are missing from the register")
+        if len(nhist) < len(ohist):
+            rep.error(f"{DECISION_LOG}: change history has {len(nhist)} entries, fewer than the {len(ohist)} at the last commit")
+        if len(new.splitlines()) < len(old.splitlines()) // 2:
+            rep.error(f"{DECISION_LOG}: less than half as long as at the last commit; check it has not been truncated")
+
+
+ID_RANGE = re.compile(r"\b(SQ|LNK|JDG)-(\d+)(?:\s+to\s+(?:\1-)?(\d+))?")
+
+
+def check_validated(tables, rep):
+    """PC-32: a judgement or source quality rating with a reviewer and review date is validated or overridden, and a validated
+    one has both. Records that a gate log row names as validated (single IDs and `X to Y` ranges of SQ, LNK and JDG in a
+    `linked_changes` clause that says validated) are checked as warnings: the wording of that column is free text."""
+    for rel, key in (("judgements/judgements.csv", "judgement_id"), ("judgements/source_quality.csv", "sq_id")):
+        for r in tables[rel][1]:
+            reviewed = bool(r.get("reviewer")) and bool(r.get("review_date"))
+            if reviewed and r.get("review_status") not in ("validated", "overridden"):
+                rep.error(f"{rel}: {r[key]} has reviewer and review date but review_status '{r.get('review_status')}'; set it to validated or overridden")
+            elif not reviewed and r.get("review_status") in ("validated", "overridden"):
+                rep.warn(f"{rel}: {r[key]} is {r['review_status']} but has no reviewer or review date")
+    status = {}
+    for rel, key, ok in (("judgements/judgements.csv", "judgement_id", ("validated", "overridden")),
+                         ("judgements/source_quality.csv", "sq_id", ("validated", "overridden")), ("links/links.csv", "link_id", ("validated",))):
+        for r in tables[rel][1]:
+            status[r[key]] = (r.get("review_status"), ok)
+    width = {"SQ": 5, "LNK": 6, "JDG": 6}
+    for g in tables["registers/gate_log.csv"][1]:
+        if g.get("decision") not in ("pass", "pass_with_conditions"):
+            continue
+        for clause in re.split(r";", g.get("linked_changes") or ""):
+            if "validated" not in clause or re.search(r"\b(not validated|rejected|proposed)\b", clause):
+                continue
+            for m in ID_RANGE.finditer(clause):
+                lo = int(m.group(2))
+                hi = int(m.group(3)) if m.group(3) else lo
+                if hi - lo > 5000:
+                    continue
+                for n in range(lo, hi + 1):
+                    rid = f"{m.group(1)}-{n:0{width[m.group(1)]}d}"
+                    st = status.get(rid)
+                    if st and st[0] not in st[1]:
+                        rep.warn(f"gate_log.csv: {g['gate_decision_id']} names {rid} as validated, but its review_status is '{st[0]}'")
+
+
 def main(argv=None):
     p = argparse.ArgumentParser(
         description="Check evidence files against the JSON schema, CSV headers against the data dictionary, that IDs are unique and that "
-                    "every ID referred to exists (including theme codes), that every draft or approved theme issue has an in-scope recommendation, and warn if a validated or overridden judgement has changed "
-                    "since the last commit. Exits with status 1 if any error is found.")
+                    "every ID referred to exists (including theme codes), that every draft or approved theme issue has an in-scope recommendation, that country codes and judgement values are allowed, "
+                    "that no register, judgement, link, entity, taxonomy, learning log or decision log row present at the last commit is lost, that "
+                    "reviewed judgements are validated or overridden, and warn if a validated or overridden judgement has changed since the last commit. Exits with status 1 if any error is found.")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--version", action="version", version=__version__)
     a = p.parse_args(argv)
@@ -336,10 +486,13 @@ def main(argv=None):
     check_headers(root, tables, rep)
     ids = check_ids_unique(tables, rep)
     check_enums(tables, rep)
+    check_values(tables, rep)
     items, files = check_evidence(root, root / "schemas" / "evidence_item.schema.json", rep)
     check_references(tables, ids, items, files, rep)
     check_theme_issues(tables, items, rep)
     check_protected_judgements(root, rep)
+    check_no_lost_rows(root, tables, rep)
+    check_validated(tables, rep)
     print(f"validate_data {__version__}: {len(files)} evidence file(s), {len(items)} item(s), {sum(len(t[1]) for t in tables.values())} CSV row(s)")
     for w in rep.warnings:
         print(f"warning: {w}")

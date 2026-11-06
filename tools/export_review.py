@@ -9,9 +9,9 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
+from common import extraction_runs, lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.20.0"
+__version__ = "1.21.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -504,9 +504,10 @@ def g5(root, run):
     rv = root / "review" / run
     qa = rv / "g5_qa"
     cc = run_country(root, run)
-    items, own, fam = {}, {}, {}
+    items, own, fam, run_of = {}, {}, {}, {}
     for f in evidence_files(root):
         d = read_json(f)
+        run_of.update({k: e["run_id"] or "" for e in extraction_runs(d) for k in e["item_ids"]})
         for it in d["items"]:
             items[it["item_id"]] = it
         for it in run_items(d, run):  # this run's items only (E21)
@@ -544,9 +545,16 @@ def g5(root, run):
     in_h, ints = read_csv(root / "entities" / "interventions.csv")
     ac_h, acts = read_csv(root / "entities" / "actors.csv")
     used_ints = {x for i in own.values() for x in p2(i, "intervention_ids", [])}
-    ints = [r for r in ints if r.get("country") == cc or r["intervention_id"] in used_ints]
+    # 1.21.0 (PC-31): a country record first found by a later run's items stays out (entities have no run column, so the run of
+    # an intervention is that of its first item, and the run of an actor that of the earliest run whose items name it)
+    ints = [r for r in ints if r["intervention_id"] in used_ints or (r.get("country") == cc and run_of.get(r.get("first_item_id"), "") <= run)]
+    first_run = {}
+    for k, i in items.items():
+        for a in [i.get("speaker") or {}, *(i.get("subjects") or [])]:
+            if a.get("actor_id"):
+                first_run[a["actor_id"]] = min(first_run.get(a["actor_id"], run_of.get(k, "")), run_of.get(k, ""))
     used_acts = {a.get("actor_id") for i in own.values() for a in [i.get("speaker") or {}, *(i.get("subjects") or [])] if a.get("actor_id")}
-    acts = [r for r in acts if r.get("country") == cc or r["actor_id"] in used_acts]
+    acts = [r for r in acts if r["actor_id"] in used_acts or (r.get("country") == cc and first_run.get(r["actor_id"], "") <= run)]
     links = [l for l in read_csv(root / "links" / "links.csv")[1] if l.get("run_id") == run]
     cvd = {}
     if (qa / "contradiction_verdicts.csv").exists():
@@ -696,7 +704,9 @@ def g1b(root, run):
         countries += [[f.stem.split("_")[0]] + [r[k] for k in h] for r in rows]
     header, rows = read_csv(root / "registers" / "source_requirements.csv")
     lines = [r for r in rows if r.get("role") == "comparator"]
-    if any(run in (r.get("notes") or "") for r in lines):  # 1.19.1 (S10): this run's comparator lines when they name it
+    if any(split_list(r.get("run_ids")) for r in lines):  # 1.21.0 (PC-27): the run is stated
+        lines = [r for r in lines if run in split_list(r.get("run_ids"))]
+    elif any(run in (r.get("notes") or "") for r in lines):  # 1.19.1 (S10): this run's comparator lines when they name it
         lines = [r for r in lines if run in (r.get("notes") or "")]
     return "G1b_comparators.xlsx", [
         *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
@@ -867,7 +877,7 @@ def g6_refresh(root, run, sources=None):
                         "value" if o["value"] != j["value"] else "reasoning only", j["reason"], o["reason"], cited, j["evidence_item_ids"], "", "", ""])
     changes.sort(key=lambda r: (r[6] != "value", r[0], r[1]))
     # Affected issues: every issue an in-scope new item touches, with what happens to each tier 3 judgement.
-    links = read_csv(root / "links" / "links.csv")[1]
+    links = [l for l in read_csv(root / "links" / "links.csv")[1] if l.get("run_id") == run]  # 1.21.0 (PC-31): this run's links only
     out_link = {}
     for l in links:
         if l["from_id"] in new:
@@ -915,14 +925,16 @@ def g6_refresh(root, run, sources=None):
     count = Counter(k.rsplit("-", 1)[0] for k in new)
     src_rows = [[r.get(c, "") for c in src_cols] + [str(count.get(r["source_id"], 0)), "", ""] for r in reg if r["source_id"] in sources]
     sq_h, sq = read_csv(root / "judgements" / "source_quality.csv")
-    sq_rows = [[r[h] for h in sq_h] + ["", "", ""] for r in sq if r["source_id"] in sources]
+    sq_rows = [[r[h] for h in sq_h] + ["", "", ""] for r in sq if r["source_id"] in sources and r.get("run_id") == run]
     uq_h, uq = read_csv(root / "taxonomy" / "unmatched_queue.csv")
     uq_rows = [[r[h] for h in uq_h] + ["", ""] for r in uq if r.get("item_id") in new]
     oos = [[k, i["information_type"], text(k), ";".join(i["themes"]), ";".join(i["flags"]), i["pass2"]["classification_note"] or "", i.get("extraction_note") or "", "", ""]
            for k, i in new.items() if i["pass2"]["classification_status"] == "out_of_scope"]
     in_h, ints = read_csv(root / "entities" / "interventions.csv")
+    own_ids = {k for f in evidence_files(root) for k in (i["item_id"] for i in run_items(read_json(f), run))}
     int_rows = [[r[h] for h in in_h] + ["", ""] for r in ints
-                if r.get("first_item_id") in new or any(s in (r.get("notes") or "") for s in sources)]
+                if r.get("first_item_id") in new or (any(s in (r.get("notes") or "") for s in sources)
+                                                     and (r.get("first_item_id") in own_ids or r.get("first_item_id") not in items))]
     lim_h, lim = read_csv(root / "registers" / "limits_log.csv")
     lim_rows = [[r[h] for h in lim_h] + ["", ""] for r in lim if r["run_id"] == run and r["status"] == "active" and "refresh" in " ".join(r.values()).lower()]
     gl_h, gl = read_csv(root / "registers" / "gate_log.csv")
@@ -971,7 +983,7 @@ def g7_refresh(root, run):
     idx.sort(key=lambda r: (not r[5], r[2] != "rebuilt (Draft)", r[0]))
     js = read_csv(root / "judgements" / "judgements.csv")[1]
     by_id = {j["judgement_id"]: j for j in js}
-    gone = {j["supersedes"] for j in js if j.get("supersedes")}
+    gone = {j["supersedes"] for j in js if j.get("supersedes") and j["run_id"] == run}  # 1.21.0 (PC-31)
     prop = [j for j in js if j["run_id"] == run and j["review_status"] == "proposed"
             and j["judgement_type"] in ("evidence_confidence", "relevance", "implementation_status")]
     ints = {r["intervention_id"]: r for r in read_csv(root / "entities" / "interventions.csv")[1]}

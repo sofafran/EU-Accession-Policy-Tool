@@ -1,13 +1,13 @@
 # Data dictionary
 
-Version 1.6, 3 November 2026 (G0-D02 of RUN-2026-02, decision E21: evidence schema 1.3, several runs' extractions in one evidence file; the register `role` may list more than one role, for example `comparator;target`). Version 1.5, 2 November 2026 (PC-13 and PC-14 from G8 of RUN-2026-01, GATE-0013, applied before RUN-2026-02 under decision E19: `reform_issue_ids` on interventions; the case fields on comparator cases; the learning log is `learning_log.csv` from RUN-2026-02, `alpha_learning_log.csv` in RUN-2026-01). Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
+Version 1.7, 6 November 2026 (PC-22 and PC-26 to PC-28 from G8 of RUN-2026-02, GATE-0030, applied before RUN-2026-03: implementation status `replaced`; the register `country` may read `multi` for horizontal EU documents; `run_ids` on source requirements and `used_in_runs` on the source register; `successor_id` on interventions and actors). Version 1.6, 3 November 2026 (G0-D02 of RUN-2026-02, decision E21: evidence schema 1.3, several runs' extractions in one evidence file; the register `role` may list more than one role, for example `comparator;target`). Version 1.5, 2 November 2026 (PC-13 and PC-14 from G8 of RUN-2026-01, GATE-0013, applied before RUN-2026-02 under decision E19: `reform_issue_ids` on interventions; the case fields on comparator cases; the learning log is `learning_log.csv` from RUN-2026-02, `alpha_learning_log.csv` in RUN-2026-01). Version 1.4, 2 November 2026 (G6b-D05: a `transferability` judgement may attach to a comparator case, with `object_type` `issue_comparator`; the lesson it judges is agent synthesis). Version 1.3, 30 October 2026 (G4-D11: a blank `cluster` on a reform issue means it spans clusters; a blank `chapters` means no chapter is stated). Version 1.2, 29 October 2026 (extraction rules 0.2: `eu_scale.applies_to` and stated status `in_progress` in the evidence schema). Version 1.1 added the theme fields, scope basis and country-neutral examples (decision D6). This file defines every table and field in the project. The CSV templates in the project contain exactly these columns, in this order. Changing a column is a codebook change and must be approved at a gate.
 
 General rules:
 
 - CSV files are UTF-8, comma-separated, with a header row. Lists inside a cell are separated by a semicolon and no space, for example `ACT-MKD-0001;ACT-MKD-0004`.
 - Dates use `YYYY-MM-DD`, or `YYYY-MM` or `YYYY` when only that precision is known. A period is written as `start/end`, for example `2024-06/2025-06`.
 - Chapters are written as two-digit codes in quotes in JSON and as plain two-digit codes in CSV, for example `02`, `10`, `23`. Lists of chapters are semicolon-separated. Where a source or item has no chapter, the field is left empty.
-- Country codes use three letters: `MKD`, `MNE`, `ALB`, `MDA`, `UKR`, `SRB`, `BIH`, `GEO`, `TUR` and `XKX` for the rollout countries (`XKX` is the code in common use for Kosovo, not an official ISO code), and the ISO code for any other country, for example `HRV`. The list is kept in `tools/common.py`. EU institutions use `EU`. The ID examples below use `MKD` only as an illustration.
+- Country codes use three letters: `MKD`, `MNE`, `ALB`, `MDA`, `UKR`, `SRB`, `BIH`, `GEO`, `TUR` and `XKX` for the rollout countries (`XKX` is the code in common use for Kosovo, not an official ISO code), and the ISO code for any other country, for example `HRV`. The list is kept in `tools/common.py`. EU institutions use `EU`. In the source register, `multi` marks a horizontal EU document (version 1.7). The ID examples below use `MKD` only as an illustration.
 - Theme codes come from `taxonomy/themes.csv`, for example `TECH-AI`. Lists of themes are semicolon-separated.
 - Language codes use ISO 639-1, for example `en`, `mk`, `sq`.
 - IDs are permanent. They are never changed, reused or deleted, even if the record is later excluded or retired.
@@ -54,6 +54,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | status | `open`, `found`, `partly_found`, `not_found`, `not_public` |
 | matched_source_ids | Sources that satisfy this requirement |
 | approved_at | Gate decision ID that approved the line |
+| run_ids | Runs whose scope the line serves, semicolon-separated in run order, for example `RUN-2026-01;RUN-2026-02` (version 1.7, PC-27). A later run that reuses a line adds its run ID here and keeps `approved_at` |
 | notes | Free text |
 
 ## registers/source_register.csv
@@ -66,8 +67,8 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | author | Named author, if any |
 | title | Title as printed (English, or original with English in notes) |
 | document_type | As in the requirements list |
-| country | Country code of the country the document is about |
-| role | `target` or `comparator`. A source used in more than one run lists each role in run order, semicolon-separated, for example `comparator;target` (E21); `added_in_run` stays the run that first registered it |
+| country | Country code of the country the document is about, or `multi` for a horizontal EU document that covers all or several enlargement countries, such as an enlargement Communication or Council conclusions on enlargement (version 1.7, PC-26). A horizontal document keeps its existing ID and file location, which carry the code of the run that first registered it; tools count it for every run in `used_in_runs` |
+| role | `target` or `comparator`. A source used in more than one run lists each role in run order, semicolon-separated, for example `comparator;target` (E21), in the same order as `used_in_runs`; `added_in_run` stays the run that first registered it |
 | chapters_covered | Chapters, semicolon-separated |
 | themes_covered | Theme codes the source covers, semicolon-separated (blank if none) |
 | requirement_id | Requirement it satisfies (blank if found outside the list) |
@@ -84,6 +85,7 @@ Family codes: `EU`, `GOV`, `IO`, `RES`, `CSO`. Area codes for reform issues are 
 | status_reason | Reason, using the Codebook 3 categories where possible |
 | version_of | Source ID of the earlier version this one updates |
 | added_in_run | Run ID |
+| used_in_runs | Every run that uses the source, semicolon-separated in run order, starting with `added_in_run` (version 1.7, PC-27). Tools take a run's sources from this field rather than inferring them from gate IDs, roles or `added_in_run` |
 | notes | Free text |
 
 ## registers/limits_log.csv
@@ -227,6 +229,7 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 | reform_issue_ids | Reform issues the intervention responds to, semicolon-separated; set at classification and reviewed at G5. Blank for interventions recorded before data dictionary 1.5 (RUN-2026-01) |
 | stated_adoption_date | Adoption date as stated by a source |
 | first_item_id | First evidence item that mentions it |
+| successor_id | Intervention that this record was found to duplicate, or was merged into (version 1.7, PC-28). Set only by a superseding note under the rule that IDs are permanent: the row is kept, the note gives the date and gate decision, and tools follow the successor. Legal succession between measures stays a `replaces` or `amends` link. Blank otherwise |
 | notes | Free text |
 
 ## entities/actors.csv
@@ -241,6 +244,7 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 | country | Country code, `EU` or `INT` |
 | actor_type | `eu_institution`, `government`, `independent_body`, `parliament`, `judiciary`, `international_org`, `cso`, `research`, `private`, `other` |
 | parent_actor_id | Parent body, if any |
+| successor_id | Actor that this record was found to duplicate, or that the body was merged into or renamed as when a separate record already exists (version 1.7, PC-28). Set only by a superseding note: the row is kept, the note gives the date and gate decision, and tools follow the successor. A simple renaming is recorded in `former_names` instead. Blank otherwise |
 | notes | Free text |
 
 ## entities/comparator_cases.csv
@@ -311,7 +315,7 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 | object_type | `item`, `intervention`, `issue_country`, `link`, `issue_comparator` |
 | object_id | ID of the object: an item, intervention or link ID; for `issue_country`, the issue and country written as `RI-FMW-007@MKD`; for `issue_comparator`, the comparator case ID (`CMP-NNNN`), which already names the target-country issue; used for comparator relevance and, from version 1.4, for a case-level transferability judgement |
 | context_id | Extra context, for example the reform issue for a relevance judgement, or the date for implementation status |
-| value | Value from the allowed scale in the judgement rules, or `insufficient_evidence` |
+| value | Value from the allowed scale in the judgement rules, or `insufficient_evidence`. For `implementation_status`: `proposed`, `adopted`, `implemented`, `in_practice`, `replaced`, `reversed` or `unclear`; `replaced` (from version 1.7, PC-22) means repealed and replaced by a named successor, with a `replaces` link from the successor, and `reversed` means withdrawn, suspended or repealed without a successor |
 | reason | One to three sentences |
 | evidence_item_ids | Items relied on, semicolon-separated |
 | made_by | `agent` or a name |
@@ -328,7 +332,7 @@ Controlled list of cross-cutting themes. Rows are approved by the analyst; the a
 
 ## evidence/<country>/<source_id>.json
 
-One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules, including `scope_basis` (`chapter`, `theme`, `chain` or `exception`), `themes` (theme codes), `stated_status` (`proposed`, `adopted`, `implemented`, `in_practice`, `in_progress`, `reversed`, `unclear`) and `eu_scale.applies_to` (`chapter` or `sub_area`), and a `pass2` block filled in by classification. The file header records the theme list version used in `extraction.themes_version`.
+One file per source. The structure is defined in `schemas/evidence_item.schema.json`. In plain terms, each file has a header describing the source and how it was processed, followed by a list of evidence items. Each item holds the pass 1 fields described in the extraction rules, including `scope_basis` (`chapter`, `theme`, `chain` or `exception`), `themes` (theme codes), `stated_status` (`proposed`, `adopted`, `implemented`, `in_practice`, `in_progress`, `reversed`, `unclear`; it records the source's wording and has no `replaced` value, which is a judgement) and `eu_scale.applies_to` (`chapter` or `sub_area`), and a `pass2` block filled in by classification. The file header records the theme list version used in `extraction.themes_version`.
 
 **Several runs per file (evidence schema 1.3, E21).** A source may be extracted by more than one run, for example first as a comparator and later as a target. The file then keeps:
 

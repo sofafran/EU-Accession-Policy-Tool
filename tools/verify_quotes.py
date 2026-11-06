@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (PAGE_RE, SECTION_RE, nfc, project_root, read_json,  # noqa: E402
                     text_path_for, write_json)
 
-__version__ = "1.2.3"
+__version__ = "1.3.0"
 
 
 def split_pages(text):
@@ -102,6 +102,38 @@ def variants(block):
     return squash(removed), squash(kept)
 
 
+def bounded_at(quote, text):
+    """Where the quote occurs in the text: 'ok' if at least one occurrence starts and ends on a word boundary, 'start' or 'end'
+    if every occurrence is cut mid-word there (PC-30, ALN-0038), None if the quote does not occur. A boundary is checked only
+    where the quote itself begins or ends with a letter or digit; one to three digits running on are read as a footnote mark."""
+    cut, pos = None, text.find(quote)
+    while pos != -1:
+        end = pos + len(quote)
+        before = re.search(r"\w*$", text[:pos]).group(0)
+        after = re.match(r"\w*", text[end:]).group(0)
+        # One to three digits run on to a word are read as a footnote mark ("in place27", "April 20228"), not as a cut.
+        bad_start = quote[0].isalnum() and before and not (quote[0].isalpha() and re.fullmatch(r"\d{1,3}", before))
+        bad_end = quote[-1].isalnum() and after and not re.fullmatch(r"\d{1,3}", after)
+        if not bad_start and not bad_end:
+            return "ok"
+        cut = cut or ("start" if bad_start else "end")
+        pos = text.find(quote, pos + 1)
+    return cut
+
+
+def find(quote, block):
+    """Best result over both readings of a block: 'ok', 'start', 'end' or None."""
+    res = [bounded_at(quote, v) for v in variants(block)]
+    return "ok" if "ok" in res else next((r for r in res if r), None)
+
+
+MIDWORD = "quote cut mid-word at its {0} (the text continues the {1} word); extend or trim the quote to whole words"
+
+
+def midword(cut, where):
+    return MIDWORD.format(cut, "first" if cut == "start" else "last") + f", at {where}"
+
+
 def check_item(item, pages):
     loc = item.get("location") or {}
     page, page_end, section = loc.get("page"), loc.get("page_end"), loc.get("section")
@@ -122,8 +154,12 @@ def check_item(item, pages):
                 # Second reading: footnotes at the foot of every page but the last are skipped as well.
                 alt += strip_boundaries(drop_footnotes(part), recurring, top=False, bottom=True) if k < len(wanted) - 1 else part
             quote = squash(item.get("stated_text", ""))
-            if quote and any(quote in v for v in variants(alt)) and not any(quote in v for v in variants(block)):
-                return True, f"found at page {page}-{page_end} (footnotes between the pages skipped)"
+            if quote and find(quote, block) != "ok":
+                got = find(quote, alt)
+                if got == "ok":
+                    return True, f"found at page {page}-{page_end} (footnotes between the pages skipped)"
+                if got and not find(quote, block):
+                    return False, midword(got, f"page {page}-{page_end} (footnotes between the pages skipped)")
         where = f"page {page}" + (f"-{page_end}" if page_end else "")
     elif section:
         block = section_text([l for n in sorted(pages) for l in pages[n]], section)
@@ -135,8 +171,11 @@ def check_item(item, pages):
     quote = squash(item.get("stated_text", ""))
     if not quote:
         return False, "empty stated_text"
-    if any(quote in v for v in variants(block)):
+    got = find(quote, block)
+    if got == "ok":
         return True, f"found at {where}"
+    if got:
+        return False, midword(got, where)
     return False, f"not found at {where}"
 
 
@@ -144,7 +183,7 @@ def main(argv=None):
     p = argparse.ArgumentParser(
         description="Check every stated_text in an evidence file against the converted text of its source: the cited page(s) for paged "
                     "documents, the cited section for webpages. Ignores only whitespace, line-break hyphenation, Unicode normalisation "
-                    "(NFC) and, for quotes that run over a page break (page_end), the page numbers, running headers or footers and footnotes between the pages; Latin and Cyrillic look-alike letters are never treated as equal. Sets quote_verified on each item and writes a CSV report.")
+                    "(NFC) and, for quotes that run over a page break (page_end), the page numbers, running headers or footers and footnotes between the pages; Latin and Cyrillic look-alike letters are never treated as equal. A quote must start and end on a word boundary: a quote cut mid-word fails (1.3.0, PC-30). Sets quote_verified on each item and writes a CSV report.")
     p.add_argument("evidence_files", nargs="+", help="evidence JSON files")
     p.add_argument("--root", help="project root (default: the folder above tools/)")
     p.add_argument("--report-dir", help="folder for reports (default review/<run_id>/quote_checks/)")

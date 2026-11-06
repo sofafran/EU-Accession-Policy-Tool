@@ -4,6 +4,8 @@ RI-TEC-028 · North Macedonia · **Status: Validated at G7 (GATE-0022), internal
 
 **Issue definition.** Institutions do not use the national interoperability platform regularly, so administrative data are not shared ex officio between institutions, including for checks such as asset declarations and inspections. **Problem mechanisms:** Coordination failure (MEC-08); Insufficient resources (MEC-09); Weak enforcement or oversight (MEC-04).
 
+*Taxonomy note: this issue's entry in the shared taxonomy last changed at version 1.2, after version 1.1 recorded on this run's judgements. The definition and mechanisms above are read from the current taxonomy and may differ from those the judgements were made against.*
+
 ## In brief (agent synthesis)
 
 The Commission asks North Macedonia to fully implement the law on general administrative procedures by completing data exchange, and a Reform Agenda payment condition asks for more data exchange between institutions and documents obtained ex officio [1][2][3]. The interoperability platform is in practice, and the Commission reports that customs exchanges data regularly through it [4]. Government figures, machine translated, show connections rising from 39 institutions in 2021 to 58 or 63 in 2025 and transactions reaching 8 million in 2024, with the Commission noting more connections and transactions [5][6][7][8][9]. The Commission still finds only a few institutions using it, and the government's 2021 conclusions on connecting about 1,300 institutions are assessed as failed, with Low attribution, after the audit found only six new requests [10][11]. The planned upgrade remains proposed [12]. The gap is partly_addressed, the direction of travel is persistent, the priority is High and tractability is Medium.

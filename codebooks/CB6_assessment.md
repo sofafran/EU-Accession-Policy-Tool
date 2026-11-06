@@ -1,6 +1,6 @@
 # EU Accession Reform Intelligence Tool | Assessment
 
-Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19): transferability of a comparator case (PC-01). Version 1.2, 29 October 2026. Made country-neutral when the pilot was reconfigured before gate G0 (decision F2). Version 1.1 followed the architecture review (decisions B1, B3, C4 and E2).
+Version 1.4, 6 November 2026. Approved changes PC-22 and PC-23 from G8 of RUN-2026-02 (GATE-0030): implementation status `replaced`, and the relevance of horizontal passages. Version 1.3, 2 November 2026. Approved changes PC-01 to PC-17 from G8 of RUN-2026-01 (GATE-0013) applied before RUN-2026-02, with the multi-country rollout (decision E19): transferability of a comparator case (PC-01). Version 1.2, 29 October 2026. Made country-neutral when the pilot was reconfigured before gate G0 (decision F2). Version 1.1 followed the architecture review (decisions B1, B3, C4 and E2).
 
 This codebook defines the kinds of **judgement** the tool should eventually be able to make about the information it has extracted and connected.
 
@@ -15,7 +15,7 @@ The main judgements, what each is attached to, and the scale each uses are:
 - **Source quality:** how credible and authoritative is the source for this particular topic? Attached to a source, for a given chapter or theme. Rated High, Medium or Low.
 - **Evidence confidence:** how strongly does the available evidence support the specific claim? Attached to an evidence item. Rated High, Medium or Low.
 - **Relevance:** how applicable is this evidence to a specific reform issue in the target country? Attached to an evidence item for a given reform issue. Rated High, Medium or Low.
-- **Implementation status:** has an action been proposed, adopted, implemented or actually used in practice? Attached to an intervention at a given date. Rated proposed, adopted, implemented, in practice, reversed or unclear.
+- **Implementation status:** has an action been proposed, adopted, implemented or actually used in practice? Attached to an intervention at a given date. Rated proposed, adopted, implemented, in practice, replaced, reversed or unclear. Replaced means repealed and replaced by a named successor, which is judged in its own right; reversed means withdrawn or repealed without a successor.
 - **Direction of travel:** is the issue new, worsening, persistent, improving or largely resolved? Attached to a reform issue in a country over time.
 - **Unresolved gap:** what does the EU still require that has not been achieved? Attached to a reform issue in a country. Rated open, partly addressed or largely closed, with a short description of what remains.
 - **Success or result:** did the intervention appear to work, fail, produce mixed results or remain too early to judge? Attached to the link between an intervention and an outcome.
@@ -32,7 +32,7 @@ A specialist organisation may therefore be highly authoritative for one topic an
 
 Evidence confidence is High when a claim is stated directly and specifically and is either corroborated by independent evidence or uncontested. It is Medium when the claim is stated directly but is general, uncorroborated, comes from a weaker source or relies on machine translation. It is Low when the claim is inferred rather than stated, is vague, or is contradicted by stronger evidence. Source quality is one input but does not decide confidence on its own.
 
-Relevance is High when the evidence concerns the same country and the same reform issue. It is Medium when it concerns the same issue in a comparable country, or an adjacent issue in the same country. It is Low when the connection is only general.
+Relevance is High when the evidence concerns the same country and the same reform issue. It is Medium when it concerns the same issue in a comparable country, or an adjacent issue in the same country. It is Low when the connection is only general. A horizontal passage addressed to all enlargement countries, or to several of them, without naming the target country, is not evidence about the same country and is rated at most Medium.
 
 These judgements should be applied to the **object they actually describe**, not only to whole documents. A single report may contain a strong factual finding, a weaker explanation and a lesson that is only partly relevant to the target country.
 

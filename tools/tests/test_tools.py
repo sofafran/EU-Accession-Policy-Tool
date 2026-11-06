@@ -8,6 +8,7 @@ Never touches the real project data: everything runs in a temporary folder.
 import argparse
 import csv
 import hashlib
+import io
 import json
 import shutil
 import subprocess
@@ -271,6 +272,20 @@ def main():
         check("verify_quotes.py", "quote on the wrong page fails", res.get("0004") is False)
         check("verify_quotes.py", "Cyrillic look-alike letter is not accepted", res.get("0005") is False)
         check("verify_quotes.py", "quote spanning a line break passes", res.get("0006") is True)
+        # A quote must start and end on a word boundary (1.3.0, PC-30, ALN-0038); a footnote mark running on is not a cut.
+        mw = proj / "evidence" / "MKD" / "MKD-EU-2023-001.json"
+        (text_dir / "MKD-EU-2023-001.txt").write_text("=== PAGE 1 ===\nThe country has some level of preparation in this area27. More\ntext follows here.\n", encoding="utf-8")
+        mw.write_text(json.dumps(evidence("MKD-EU-2023-001", [
+            item("MKD-EU-2023-001-0001", "he country has some level", page=1), item("MKD-EU-2023-001-0002", "The country has some lev", page=1),
+            item("MKD-EU-2023-001-0003", "The country has some level of preparation in this area", page=1),
+            item("MKD-EU-2023-001-0004", "More text follows here.", page=1)])), encoding="utf-8")
+        r = run(proj, "verify_quotes.py", str(mw))
+        mres = [i["quote_verified"] for i in json.loads(mw.read_text(encoding="utf-8"))["items"]]
+        mrep = (proj / "review" / "RUN-2026-01" / "quote_checks" / "MKD-EU-2023-001.csv").read_text(encoding="utf-8")
+        check("verify_quotes.py", "quote cut mid-word at its start or end fails with a clear message; footnote mark after the last word passes (1.3.0)",
+              mres == [False, False, True, True] and "cut mid-word at its start" in mrep and "cut mid-word at its end" in mrep, str(mres) + mrep)
+        mw.unlink()
+        (proj / "review" / "RUN-2026-01" / "quote_checks" / "MKD-EU-2023-001.csv").unlink()
         # Quote over a page break with a printed page number and running header in between (rules 0.2, R4).
         pb_sid = "MKD-EU-2024-001"
         pb_lines = "\n".join(f"=== PAGE {n} ===\nReport header\n{n}\nFiller text on page {n}." for n in range(1, 4))
@@ -350,8 +365,60 @@ def main():
         jpath.write_text(hdr + "\n" + row.replace(",High,", ",Low,") + "\n", encoding="utf-8")
         r = run(proj, "validate_data.py")
         check("validate_data.py", "change to a validated judgement is flagged", "JDG-000001 is validated but its value has changed" in r.stdout, r.stdout[-500:])
+        # 1.6.0: judgement values by type (PC-22 adds 'replaced'), reviewed rows must be validated, no row lost since the last commit (PC-32)
+        jrows = [row.replace(",evidence_confidence,item,", ",implementation_status,item,").replace(",High,", ",replaced,"),
+                 row.replace("JDG-000001", "JDG-000002").replace(",High,", ",Vanished,"), row.replace("JDG-000001", "JDG-000003").replace(",validated,", ",proposed,")]
+        jpath.write_text(hdr + "\n" + "\n".join(jrows) + "\n", encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "implementation status 'replaced' accepted, unknown judgement value rejected (1.6.0, PC-22)",
+              "JDG-000001 has implementation_status value" not in r.stdout and "JDG-000002 has evidence_confidence value 'Vanished'" in r.stdout, r.stdout[-500:])
+        check("validate_data.py", "judgement with reviewer and review date but still proposed is an error (1.6.0, PC-32)",
+              "JDG-000003 has reviewer and review date but review_status 'proposed'" in r.stdout, r.stdout[-500:])
         jpath.write_text(hdr + "\n", encoding="utf-8")
         subprocess.run(["git", "-C", str(proj), "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qam", "reset judgements"], check=True)
+        lim_path, dl_path = proj / "registers" / "limits_log.csv", proj / "decisions" / "decision_log.md"
+        lim_before, dl_before = lim_path.read_text(encoding="utf-8"), dl_path.read_text(encoding="utf-8")
+        lim_lines = lim_before.splitlines(keepends=True)
+        lim_path.write_text("".join(lim_lines[:2] + lim_lines[3:]), encoding="utf-8")
+        dl_path.write_text(dl_before.split("## Change history")[0], encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "a register row or decision log entry lost since the last commit is an error (1.6.0, PC-32)",
+              "limits_log.csv: 1 row(s) present at the last commit are missing" in r.stdout and "decision_log.md: change history has 0 entries" in r.stdout and r.returncode == 1,
+              " | ".join(l for l in r.stdout.splitlines() if l.startswith("error"))[-600:])
+        lim_path.write_text(lim_before, encoding="utf-8")
+        dl_path.write_text(dl_before, encoding="utf-8")
+        # Register country 'multi' (PC-26) and the optional run columns (PC-27): accepted, and read by the run helpers
+        reg_p = proj / "registers" / "source_register.csv"
+        reg_before = reg_p.read_text(encoding="utf-8")
+        reg_cols = reg_before.splitlines()[0].split(",")
+        mrow = {"source_id": "MKD-EU-2098-001", "source_family": "EU", "country": "multi", "role": "target", "added_in_run": "RUN-2026-01", "used_in_runs": "RUN-2026-01;RUN-2026-02"}
+        reg_p.write_text(reg_before + ",".join(mrow.get(c, "") for c in reg_cols) + "\n", encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        ok_multi = "MKD-EU-2098-001" not in r.stdout
+        reg_p.write_text(reg_before + ",".join({**mrow, "used_in_runs": "RUN-2026-02;RUN-2099-09"}.get(c, "") for c in reg_cols) + "\n", encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "register country 'multi' and used_in_runs accepted; unknown run or a list not starting with added_in_run is an error (1.6.0)",
+              ok_multi and "unknown run RUN-2099-09 in used_in_runs" in r.stdout and "used_in_runs must start with added_in_run" in r.stdout, r.stdout[-500:])
+        reg_p.write_text(reg_before, encoding="utf-8")
+        check("common.py", "register_role follows used_in_runs when filled, and counts a horizontal ('multi') document for a later run",
+              cm.register_role({"role": "comparator;target", "used_in_runs": "RUN-2026-01;RUN-2026-02", "added_in_run": "RUN-2026-01"}, "RUN-2026-02", "MDA") == "target"
+              and cm.register_role({"role": "target", "used_in_runs": "RUN-2026-01", "added_in_run": "RUN-2026-01"}, "RUN-2026-02", "MDA") is None
+              and cm.register_role({"role": "comparator;target", "country": "multi", "added_in_run": "RUN-2026-01"}, "RUN-2026-02", "MDA") == "target")
+        check("common.py", "run_requirements follows run_ids when filled",
+              [x["requirement_id"] for x in cm.run_requirements(proj, "RUN-2026-02", [{"requirement_id": "REQ-1", "run_ids": "RUN-2026-01;RUN-2026-02"},
+                                                                                     {"requirement_id": "REQ-2", "run_ids": "RUN-2026-01", "country": "MDA", "role": "target"}])] == ["REQ-1"])
+        # The optional columns may be absent: a header without run_ids still matches the data dictionary
+        rq_p = proj / "registers" / "source_requirements.csv"
+        rq_before = rq_p.read_text(encoding="utf-8")
+        rq_rows = list(csv.reader(io.StringIO(rq_before)))
+        k_run = rq_rows[0].index("run_ids") if "run_ids" in rq_rows[0] else None
+        if k_run is not None:
+            buf = io.StringIO()
+            csv.writer(buf, lineterminator="\n").writerows([r_[:k_run] + r_[k_run + 1:] for r_ in rq_rows])
+            rq_p.write_text(buf.getvalue(), encoding="utf-8")
+        r = run(proj, "validate_data.py")
+        check("validate_data.py", "registers without the optional run columns still match the data dictionary (1.6.0)", "source_requirements.csv: header" not in r.stdout, r.stdout[-400:])
+        rq_p.write_text(rq_before, encoding="utf-8")
         ri_path = proj / "taxonomy" / "reform_issues.csv"
         ri_before = ri_path.read_text(encoding="utf-8")
         ri_path.write_text(ri_before + "RI-TST-002,Test theme issue,A test definition.,,,TECH-AI,,,,draft,,,RUN-2026-01,\n", encoding="utf-8")
@@ -785,7 +852,23 @@ def main():
                    and "rebuilt after G7" in (built / n).read_text(encoding="utf-8")[:600]]
         flagged = {row["output"] for row in csv.DictReader((ROOT / "review" / "RUN-2026-01" / "refresh" / "output_flags.csv").open(encoding="utf-8"))} \
             if (ROOT / "review" / "RUN-2026-01" / "refresh" / "output_flags.csv").exists() else set()
-        diff = [n for n in same if n not in pending and (not (built / n).exists() or (built / n).read_bytes() != (ref / n).read_bytes())]
+        # build_outputs 1.4.0 (PC-31): a brief whose shared issue changed after the run's taxonomy version carries a taxonomy note, and
+        # issues added by a later run with no evidence in this run (empty rows in the signed-off scope overview) are left out.
+        later_issues = {r["issue_id"] for r in csv.DictReader((bo / "taxonomy" / "reform_issues.csv").open(encoding="utf-8")) if r["created_in_run"] > "RUN-2026-01"}
+
+        def norm_built(t):
+            return "".join(l for l in t.splitlines(keepends=True) if not l.startswith("*Taxonomy note:")).replace("\n\n\n", "\n\n")
+
+        def norm_ref(t):
+            return "".join(l for l in t.splitlines(keepends=True) if not (l.startswith("| RI-") and l.split(" | ")[0][2:] in later_issues and "| 0 items, 0 sources" in l))
+        diff = [n for n in same if n not in pending and (not (built / n).exists() or norm_built((built / n).read_text(encoding="utf-8")) != norm_ref((ref / n).read_text(encoding="utf-8")))]
+        import build_outputs as bo_mod
+        run_tv = max((r["taxonomy_version"] for r in csv.DictReader((bo / "judgements" / "judgements.csv").open(encoding="utf-8")) if r["run_id"] == "RUN-2026-01"), key=bo_mod.vkey)
+        newer_issues = [r["issue_id"] for r in csv.DictReader((bo / "taxonomy" / "reform_issues.csv").open(encoding="utf-8"))
+                        if (built / f"issue_brief_{r['issue_id']}.md").exists() and bo_mod.vkey(r["taxonomy_version"]) > bo_mod.vkey(run_tv)]
+        noted = sorted(f.name for f in built.glob("issue_brief_*.md") if "*Taxonomy note:" in f.read_text(encoding="utf-8"))
+        check("build_outputs.py", "taxonomy note only in briefs whose shared issue changed after the run's taxonomy version (1.4.0)",
+              noted == sorted(f"issue_brief_{x}.md" for x in newer_issues), str(noted))
         check("build_outputs.py", "rebuilds the G7 and refresh issue, scope and comparator briefs byte for byte", r.returncode == 0 and same and not diff,
               (r.stderr[-300:] or "") + f" differ: {diff[:5]}")
         check("build_outputs.py", "every output awaiting the refresh G7 is flagged for review", set(pending) <= flagged, f"not flagged: {sorted(set(pending) - flagged)}")
@@ -817,9 +900,127 @@ def main():
               r.returncode == 0 and anyb is not None and "Draft, prepared at stage 12 for sign-off at G7" in anyb.read_text(encoding="utf-8"), r.stderr[-300:])
         shutil.rmtree(bo / "review" / "RUN-2026-01" / "stage12" / "factpacks", ignore_errors=True)
         r = subprocess.run([sys.executable, str(bo / "tools" / "build_outputs.py"), "--run", "RUN-2026-01", "--root", str(bo), "--factpacks"], capture_output=True, text=True)
-        n_issues = sum(1 for row in csv.DictReader((bo / "taxonomy" / "reform_issues.csv").open(encoding="utf-8")) if row["status"] == "approved")
+        n_issues = len(list(built.glob("issue_brief_*.md")))
         packs = list((bo / "review" / "RUN-2026-01" / "stage12" / "factpacks").glob("*.md"))
-        check("build_outputs.py", "one fact pack per approved issue", r.returncode == 0 and len(packs) == n_issues, f"{len(packs)} packs, {n_issues} issues")
+        check("build_outputs.py", "one fact pack per issue brief of the run (1.4.0: issues added by a later run without evidence are left out)", r.returncode == 0 and len(packs) == n_issues, f"{len(packs)} packs, {n_issues} issues")
+
+        # Two-run fixture (PC-31, ALN-0035, ALN-0043, G7-D04): rebuild the closed runs' outputs, pages and gate packages, let a later
+        # run add records on their shared entities, rebuild, and check nothing the closed runs show has changed. The later run
+        # gets no run record, so the active run (and with it index.html) stays the same: only the effect of its records is tested.
+        tr = Path(tmp) / "tr"
+        for name in ("evidence", "registers", "taxonomy", "entities", "links", "judgements", "runs", "tools", "schemas", "decisions"):
+            shutil.copytree(ROOT / name, tr / name)
+        for rn in ("RUN-2026-01", "RUN-2026-02"):
+            for name in ("stage12", "run1b"):
+                if (ROOT / "review" / rn / name).exists():
+                    shutil.copytree(ROOT / "review" / rn / name, tr / "review" / rn / name)
+        for name in ("alpha_summary.html",):
+            if (ROOT / name).exists():
+                shutil.copy2(ROOT / name, tr / name)
+
+        def tr_run(tool, *args):
+            return subprocess.run([sys.executable, str(tr / "tools" / tool), *args, "--root", str(tr)], capture_output=True, text=True)
+
+        def tr_build(tag):
+            """Outputs and pages of both closed runs, and three gate packages of the alpha, copied to tr/<tag>/."""
+            errs = []
+            snap = tr / tag
+            for rn in ("RUN-2026-01", "RUN-2026-02"):
+                r = tr_run("build_outputs.py", "--run", rn)
+                errs += [r.stderr[-300:]] if r.returncode else []
+                shutil.copytree(tr / "outputs" / rn, snap / "outputs" / rn)
+                pg = snap / "pages" / rn
+                pg.mkdir(parents=True, exist_ok=True)
+                r = tr_run("build_review_page.py", "--run", rn, "--date", "2026-11-06", "--output", str(pg / "review.html"),
+                           "--analysis-output", str(pg / "country.html"), "--regional-output", str(pg / "regional.html"))
+                errs += [r.stderr[-300:]] if r.returncode else []
+            for gate, name in (("G5", "G5_classification.xlsx"), ("G6", "G6_issue_dossiers.xlsx"), ("G6b", "G6b_comparators.xlsx")):
+                r = tr_run("export_review.py", gate, "--run", "RUN-2026-01")
+                errs += [r.stderr[-300:]] if r.returncode else []
+                wb = load_workbook(tr / "review" / "RUN-2026-01" / name) if r.returncode == 0 else None
+                sheets = {ws.title: [list(row) for row in ws.iter_rows(values_only=True)] for ws in wb.worksheets if ws.title != "Validation"} if wb else {}
+                (snap / "packages").mkdir(parents=True, exist_ok=True)
+                (snap / "packages" / f"{gate}.json").write_text(json.dumps(sheets, default=str, ensure_ascii=False), encoding="utf-8")
+            return errs
+        errs = tr_build("before")
+        # The later run's records, on the closed runs' entities: a Montenegro run that uses North Macedonia as a comparator.
+        later, gate1, gate2 = "RUN-2099-03", "GATE-9001", "GATE-9002"
+        alpha_items = [i for f in sorted((tr / "evidence" / "MKD").glob("MKD-*.json")) for i in cm.run_items(json.loads(f.read_text(encoding="utf-8")), "RUN-2026-01")]
+        mkd_case = next(r for r in csv.DictReader((tr / "entities" / "comparator_cases.csv").open(encoding="utf-8"))
+                        if r["country"] == "MKD" and any(r["reform_issue_id"] in i["pass2"]["reform_issue_ids"] for i in alpha_items))
+        mkd_int = cm.split_list(mkd_case["intervention_ids"])[0]
+        mkd_item = next(i["item_id"] for i in alpha_items if mkd_case["reform_issue_id"] in i["pass2"]["reform_issue_ids"])
+        mkd_actor = next(r["actor_id"] for r in csv.DictReader((tr / "entities" / "actors.csv").open(encoding="utf-8")) if r["country"] == "MKD")
+        nsid = "MNE-EU-2099-001"
+        it1 = item(f"{nsid}-0001", "Montenegro adopted the law on foreigners.", page=1)
+        it1.update(country="MNE")
+        it1["pass2"].update(reform_issue_ids=["RI-FMW-001", "RI-TST-901"], classification_status="auto", chain_link="country_response")
+        it2 = item(f"{nsid}-0002", "North Macedonia's e-services portal serves most users.", page=1)
+        it2.update(country="MKD", role="comparator")
+        it2["speaker"] = {"name_as_stated": "Government", "actor_id": mkd_actor}
+        it2["subjects"] = [{"name_as_stated": "Later run body", "actor_id": "ACT-MKD-9001"}]
+        it2["pass2"].update(reform_issue_ids=[mkd_case["reform_issue_id"]], intervention_ids=[mkd_int, "INT-MKD-9001"], classification_status="auto", chain_link="outcome")
+        ev3 = evidence(nsid, [it1, it2])
+        ev3["extraction"].update(run_id=later, run_country="MNE", role="target")
+        (tr / "evidence" / "MNE").mkdir(parents=True, exist_ok=True)
+        (tr / "evidence" / "MNE" / f"{nsid}.json").write_text(json.dumps(ev3, ensure_ascii=False), encoding="utf-8")
+
+        def append(rel, values):
+            path = tr / rel
+            hdr = next(csv.reader(path.open(encoding="utf-8", newline="")))
+            nl = "\r\n" if path.read_bytes().splitlines(keepends=True)[0].endswith(b"\r\n") else "\n"
+            buf = io.StringIO()
+            csv.writer(buf, lineterminator=nl).writerow([values.get(h, "") for h in hdr])
+            with path.open("a", encoding="utf-8", newline="") as fh:
+                fh.write(buf.getvalue())
+        append("registers/gate_log.csv", {"gate_decision_id": gate1, "run_id": later, "gate": "G0", "date": "2099-01-01", "reviewers": "Sofia", "decision": "pass"})
+        append("registers/gate_log.csv", {"gate_decision_id": gate2, "run_id": later, "gate": "G1b", "date": "2099-01-02", "reviewers": "Sofia", "decision": "pass"})
+        append("registers/source_register.csv", {"source_id": nsid, "source_family": "EU", "title": "Later run report", "country": "MNE", "role": "target",
+                                                 "status": "available", "added_in_run": later, "used_in_runs": later})
+        append("registers/source_register.csv", {"source_id": "MKD-EU-2099-001", "source_family": "EU", "title": "Horizontal document", "country": "multi",
+                                                 "role": "target", "status": "available", "added_in_run": later, "used_in_runs": later})
+        append("registers/source_requirements.csv", {"requirement_id": "REQ-9001", "country": "MKD", "role": "comparator", "status": "open", "run_ids": later})
+        append("registers/limits_log.csv", {"limit_id": "LIM-9001", "run_id": later, "limit_type": "evidence", "description": "Later run limit", "status": "active"})
+        append("taxonomy/reform_issues.csv", {"issue_id": "RI-TST-901", "label": "Later run issue", "definition": "Added by a later run.", "chapters": "02",
+                                              "status": "approved", "taxonomy_version": "9.9", "created_in_run": later})
+        append("taxonomy/unmatched_queue.csv", {"queue_id": "9901", "item_id": f"{nsid}-0002", "proposed_label": "Later", "status": "open"})
+        append("entities/interventions.csv", {"intervention_id": "INT-MKD-9001", "country": "MKD", "name": "Later run measure", "first_item_id": f"{nsid}-0002"})
+        append("entities/actors.csv", {"actor_id": "ACT-MKD-9001", "country": "MKD", "name": "Later run body", "actor_type": "government"})
+        append("entities/comparator_cases.csv", {"case_id": "CMP-9001", "country": "MKD", "reform_issue_id": mkd_case["reform_issue_id"], "intervention_ids": mkd_int,
+                                                 "description": "Later run case.", "selected_at": gate2})
+        lk = {"created_by": "agent", "review_status": "validated", "run_id": later, "rules_version": "0.6"}
+        append("links/links.csv", {"link_id": "LNK-900001", "from_id": mkd_int, "to_id": f"{nsid}-0002", "link_type": "leads_to", "basis": "Later run link.", **lk})
+        append("links/links.csv", {"link_id": "LNK-900002", "from_id": f"{nsid}-0002", "to_id": mkd_item, "link_type": "contradicts", "basis": "Later run conflict.", **lk})
+        jd = {"made_by": "agent", "review_status": "validated", "reviewer": "Sofia", "review_date": "2099-01-03", "codebook_version": "9", "rules_version": "9",
+              "taxonomy_version": "9.9", "run_id": later, "reason": "Later run.", "evidence_item_ids": f"{nsid}-0002"}
+        for n, (t, ot, oid, ctx, v) in enumerate([
+                ("implementation_status", "intervention", mkd_int, "2099-01-01", "replaced"), ("success", "link", "LNK-900001", "", "worked"),
+                ("attribution", "link", "LNK-900001", "", "High"), ("priority", "issue_country", "RI-FMW-001@MNE", "", "High"),
+                ("comparator_relevance", "issue_comparator", "CMP-9001", "", "High"), ("evidence_confidence", "item", f"{nsid}-0002", "", "Low"),
+                ("relevance", "item", f"{nsid}-0002", mkd_case["reform_issue_id"], "Low"), ("evidence_confidence", "item", mkd_item, "", "Low")], start=1):
+            append("judgements/judgements.csv", {"judgement_id": f"JDG-9{n:05d}", "judgement_type": t, "object_type": ot, "object_id": oid, "context_id": ctx, "value": v, **jd})
+        for n, sid_ in enumerate(sorted({mkd_item.rsplit("-", 1)[0], nsid}), start=1):
+            append("judgements/source_quality.csv", {"sq_id": f"SQ-9{n:04d}", "source_id": sid_, "topic": "02", "overall": "Low", "reason": "Later run.",
+                                                     "made_by": "agent", "review_status": "validated", "reviewer": "Sofia", "review_date": "2099-01-03", "run_id": later})
+        errs += tr_build("after")
+        changed = []
+        for f in sorted((tr / "before").rglob("*")):
+            if f.is_file():
+                g = tr / "after" / f.relative_to(tr / "before")
+                if f.name == "regional.html":
+                    continue  # the regional page is shared by all runs and lists every shared issue by design (E19); checked below
+                if not g.exists() or g.read_bytes() != f.read_bytes():
+                    changed.append(str(f.relative_to(tr / "before")))
+        n_files = sum(1 for f in (tr / "before").rglob("*") if f.is_file())
+        check("two-run fixture", "closed runs' outputs, pages and G5, G6 and G6b packages unchanged after a later run adds records on their entities (PC-31)",
+              not errs and n_files > 100 and not changed, f"{n_files} files; changed: {changed[:6]}; errors: {errs[:2]}")
+        reg_b, reg_a = [(tr / t / "pages" / "RUN-2026-02" / "regional.html").read_text(encoding="utf-8") for t in ("before", "after")]
+        check("two-run fixture", "regional page: the later run's shared issue is added as not assessed, nothing else changes",
+              "RI-TST-901" in reg_a and "RI-TST-901" not in reg_b and reg_a.count("Not assessed") == reg_b.count("Not assessed") + 2)
+        r = tr_run("validate_data.py")
+        check("two-run fixture", "later run's records (multi country, used_in_runs, run_ids, replaced status) pass validate_data",
+              not [l for l in r.stdout.splitlines() if l.startswith("error") and ("9001" in l or "9002" in l or "multi" in l or "replaced" in l or "RUN-2099" in l)],
+              " | ".join(l for l in r.stdout.splitlines() if l.startswith("error"))[-600:])
 
     passed = sum(r[2] == "pass" for r in results)
     print(f"\n{passed}/{len(results)} tests passed")

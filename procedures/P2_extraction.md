@@ -15,7 +15,7 @@ Read this file and `rules/extraction_rules.md` before starting any of stages 5 t
    - at least one difficult format (scanned PDF, very long document or webpage), which may overlap with the above.
 2. The analyst confirms the sample.
 3. **Hand-coding first.** Prepare `review/<run_id>/G3_handcoding.xlsx` containing three short passages chosen with the analyst (for example an in-scope chapter section of one Commission report, one section of the same or another report that contains theme recommendations, and one page of a government report) with empty item rows. Wait until the analyst has filled it in before showing any agent output for those passages.
-4. Extract the sample following the extraction rules. Set the evidence file `extraction.status` to `sample`.
+4. Extract the sample following the extraction rules, screening the whole text of a long source and listing its pages before extraction (extraction rules, PC-24). Set the evidence file `extraction.status` to `sample`.
 5. Run quote verification and fix or remove every failure.
 6. Run the second-pass check on each sample source (extraction rules, section 8), and report its yield by source family in the G3 package.
 
@@ -56,13 +56,14 @@ Read this file and `rules/extraction_rules.md` before starting any of stages 5 t
    - record the chapters and theme codes of each issue; an issue from a cross-cutting theme must be supported by at least one in-scope recommendation that meets the materiality test;
    - set every new issue to `draft`.
 4. If more than one agent drafted the taxonomy, list items mapped to issues in more than one draft and resolve each overlap (classification rules, PC-07).
-5. Review the draft mechanism list in `taxonomy/mechanisms.csv` against the EU items and propose changes.
-6. Export `review/<run_id>/G4_taxonomy.xlsx`: issues with definitions and item counts, items that fit no issue, the mechanism list, a sample of items under each issue, and every item flagged `theme_doubtful`.
+5. **Runs after the alpha:** for every shared issue the run uses, list the elements of its definition that the new country's evidence does not show, with the items checked (classification rules, section 9, PC-25). Shared taxonomy changes are additive; a change to an issue that a closed run cites is proposed separately, with its effect on that run stated.
+6. Review the draft mechanism list in `taxonomy/mechanisms.csv` against the EU items and propose changes.
+7. Export `review/<run_id>/G4_taxonomy.xlsx`: issues with definitions and item counts, items that fit no issue, the mechanism list, a sample of items under each issue, every item flagged `theme_doubtful`, and the list of definition elements from step 5.
 
 **G4 decision (analyst):** edit, merge, split and approve the issues and mechanisms. Set approved rows to `approved` and record the taxonomy version (1.0 in the alpha; the next minor version when a later run adds or changes issues).
 
 ## Stage 8: Full extraction
 
-1. Extract all remaining approved sources with the approved rules, including the non-EU sample sources, which are re-extracted in the same way.
+1. Extract all remaining approved sources with the approved rules, including the non-EU sample sources, which are re-extracted in the same way. Screen the whole text of each long source and list its pages before extraction (extraction rules, PC-24), and screen horizontal EU documents for horizontal passages as well as passages on the target country (PC-26).
 2. Verify quotes for every source, and run the second-pass check, reporting its yield by source family; resample any family whose yield is well below the others (PC-05).
 3. Prepare a spot-check sheet for G5: a random 5 per cent of items plus every flagged item.

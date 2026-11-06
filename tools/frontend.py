@@ -6,7 +6,7 @@ from html import escape
 
 from common import gate_passed
 
-# Display mapping (spec 10.3). Values are those in rules/judgement_rules.md 0.5 and schemas/data_dictionary.md 1.6; every scale
+# Display mapping (spec 10.3). Values are those in rules/judgement_rules.md 0.5 and schemas/data_dictionary.md 1.7 (implementation status `replaced`, PC-22); every scale
 # also allows insufficient_evidence. Each entry: stored value -> (display label, icon, tone).
 HML = {"High": ("High", "▲", "hi"), "Medium": ("Medium", "◆", "med"), "Low": ("Low", "▽", "lo")}
 VALUES = {
@@ -16,7 +16,8 @@ VALUES = {
     "priority": HML, "tractability": HML, "attribution": HML, "comparator_relevance": HML,
     "evidence_confidence": HML, "relevance": HML, "source_quality": HML,
     "implementation_status": {"proposed": ("Proposed", "○", "flat"), "adopted": ("Adopted", "◐", "med"), "implemented": ("Implemented", "◕", "med"),
-                              "in_practice": ("In practice", "●", "good"), "reversed": ("Reversed", "↺", "bad"), "unclear": ("Unclear", "?", "flat")},
+                              "in_practice": ("In practice", "●", "good"), "replaced": ("Replaced", "⇄", "med"),
+                              "reversed": ("Reversed", "↺", "bad"), "unclear": ("Unclear", "?", "flat")},
     "success": {"worked": ("Worked", "✓", "good"), "failed": ("Failed", "✗", "bad"), "mixed": ("Mixed", "◐", "med"), "too_early": ("Too early to tell", "…", "flat")},
     "transferability": {"likely": ("Likely", "▲", "hi"), "conditional": ("Conditional", "◆", "med"), "unlikely": ("Unlikely", "▽", "lo")},
 }
