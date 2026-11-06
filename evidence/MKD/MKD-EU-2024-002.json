@@ -10,11 +10,15 @@
     "run_country": "MDA",
     "role": "target",
     "pages_processed": "1-28 (keyword screen of all pages; Moldova passages read in context on pages 2-4, 7-9, 11-14, 16-17, 19-21 and 26-27)",
-    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages only. The RUN-2026-01 items are unchanged and listed in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration); every Moldova hit was read in its paragraph. One Moldova claim is in scope: work towards access to the 'roam like at home' area (page 16). Not extracted: the Growth Plan and single-market passages (pages 7, 16, 27), which name no digital measure; organised crime including cyber-dependent crime (page 11, cybercrime rule); transport and energy connectivity (page 19); the Moldova conclusions (pages 26-27), which contain no Chapter 2 or technology content; horizontal Western Balkan measures (pages 14, 17-18), which do not name Moldova."
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages only. The RUN-2026-01 items are unchanged and listed in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration); every Moldova hit was read in its paragraph. One Moldova claim is in scope: work towards access to the 'roam like at home' area (page 16). Not extracted: the Growth Plan and single-market passages (pages 7, 16, 27), which name no digital measure; organised crime including cyber-dependent crime (page 11, cybercrime rule); transport and energy connectivity (page 19); the Moldova conclusions (pages 26-27), which contain no Chapter 2 or technology content; horizontal Western Balkan measures (pages 14, 17-18), which do not name Moldova. Stage 8 (2026-11-05, decision G4-D15, extraction rules 0.6, theme list 1.4): REQ-076 also covers horizontal passages addressed to all enlargement countries, so the two horizontal in-scope passages RUN-2026-01 extracted that are addressed to all enlargement countries, Moldova among them (data protection gaps, page 10; hybrid threats, page 11), are quoted again as this run's own items (-0009, -0010), and one horizontal passage RUN-2026-01 did not extract is added (-0011: economic policies to support the green and digital transition, page 14, theme_doubtful, as MKD-EU-2025-002-0004 for 2025). Items -0009 to -0011; the RUN-2026-01 items and earlier_extractions are unchanged. Alpha items -0003 to -0007 (Growth Plan for the Western Balkans, Common Regional Market, regional roaming and digital identity wallets) concern the Western Balkans only and are not quoted again. Also left out at the rescreen: digitalisation of the justice system (page 9, case management systems inside a sector reform), access to databases in anti-money laundering work (page 11), cyber-dependent crime (page 11), the Eastern Partnership investment paragraph (page 16, digital named only in general terms) and Türkiye. Second-pass check (PC-05) by checker-EU8 on 5 November 2026: 0 items added (review/RUN-2026-02/second_pass/MKD-EU-2024-002.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -580,12 +584,220 @@
       ],
       "extraction_note": "'The country' is Moldova, the subject of the preceding sentences on the EU-Moldova DCFTA. Only the roaming part is in scope. Roaming is tagged TECH-INFRA as in the earlier run's items, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv), which asks at G4 whether roaming fits a theme area.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful cleared"
+      }
+    },
+    {
+      "item_id": "MKD-EU-2024-002-0009",
+      "information_type": "finding",
+      "stated_text": "Alignment gaps remain, particularly on freedom of expression, gender equality, non-discrimination, hate crime and hate speech, data protection, procedural rights for suspects and accused persons in criminal proceedings, and rights of victims of crime.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Across the enlargement region, alignment gaps on fundamental rights remain, including on data protection.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "IV. THE FUNDAMENTALS OF THE EU ACCESSION PROCESS",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement region",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2024-002-0001, quoted again as this run's own item. Throughout the enlargement region. Data protection is one of several areas listed; only that element is in scope.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Horizontal; regional (Moldova not named); mirrors RUN-2026-01 item MKD-EU-2024-002-0001; only the data protection element applies."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2024-002-0010",
+      "information_type": "finding",
+      "stated_text": "Hybrid threats remain a political and security challenge for the enlargement countries, in particular for those in electoral cycles. These threats include foreign information manipulation and interference and physical and cyber- attacks, in particular against critical infrastructure.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Hybrid threats, including foreign information manipulation and physical and cyber-attacks on critical infrastructure, remain a challenge for the enlargement countries.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "IV. THE FUNDAMENTALS OF THE EU ACCESSION PROCESS",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2024-002-0002, quoted again as this run's own item. Cyber-attacks are one element of hybrid threats; the passage does not focus on the security of networks and information systems, hence theme_doubtful. Two sentences, one claim.",
+      "pass2": {
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "As RUN-2026-01 MKD-EU-2024-002-0002: materiality not met; hybrid threats with cyber-attacks one element, no claim on network security. Horizontal; regional."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2024-002-0011",
+      "information_type": "recommendation",
+      "stated_text": "Economic policies should also support ambitious goals under the green and digital transition.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Economic policies in the enlargement countries should support ambitious green and digital transition goals.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "IV. THE FUNDAMENTALS OF THE EU ACCESSION PROCESS > Economy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-10-30",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "all 10 enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them ('all 10 enlargement countries', page 13). Not extracted by RUN-2026-01; the same sentence in the 2025 Communication is MKD-EU-2025-002-0004. The digital transition is named only in general terms, hence theme_doubtful. Added at stage 8 under G4-D15.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "As RUN-2026-01 MKD-EU-2025-002-0004 (same sentence in 2025): theme_doubtful, materiality not met; digital transition named only in general terms, no issue fits. Horizontal; regional."
       }
     }
   ],

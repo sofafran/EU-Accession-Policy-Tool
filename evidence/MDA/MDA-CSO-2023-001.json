@@ -1,21 +1,23 @@
 {
   "source_id": "MDA-CSO-2023-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
     "status": "complete",
-    "pages_processed": "3-9 (whole brief read; pages 1, 2 and 10 hold no claims)",
-    "notes": "Read in full. Figures come from AGE and MDED data obtained by IPRE on information requests, so they are government data analysed by a civil society author. Recommendations 2, 3 and 6 to 9 are left out as proposals and not results; causes are given in the author's own words without measurement. Text-file page numbers are printed page numbers plus one. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-CSO-2023-001.csv.",
-    "codebook_version": "1.2",
-    "themes_version": "1.3"
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-10 read in full (pages 1, 2 and 10 hold no claims)",
+    "notes": "Read in full (pages 1-10). This run's items are MDA-CSO-2023-001-0040 to MDA-CSO-2023-001-0097 (58 items); MDA-CSO-2023-001-0001 to -0039 belong to RUN-2026-01 (comparator, in earlier_extractions) and are unchanged. Passages the alpha quoted are re-extracted as new items of this run where in scope (each such item says which alpha item it repeats); claims the alpha did not quote are added: MDED's institutional status, the three institution categories, the fully digital services and unique signature-user figures, the performance and rural infrastructure barriers, the simplification of signature procedures, the MobiSign roll-out and audit, user consultation, the multifunctional centres, digital skills of public staff, the cybersecurity recommendation (recommendation 7) and recommendation 9 on internet coverage. Speaker is IPRE unless figures are attributed to AGE, MDED or STISC (flagged reported_view). Text-file page numbers are printed page numbers plus one. No chapter structure: cluster and chapter left empty; no passage concerns Chapter 2. Left out: the 2010 creation of the AGE (before the window); the description of the Strategy's contents (covered by MDA-GOV-2023-001); the lead-in sentences to lists; explanatory elaboration of causes 3 to 8 beyond the cited sentences; the Estonian SmartID example (another country); the list of other institutions for the 'educational process' and recommendation 8 on digital education programmes (digital skills not linked to an in-scope recommendation). Doubtful for the analyst (theme_doubtful, 3 items): online payments as a barrier (digital finance or part of the online service), user consultation on health and education solutions, and digital skills of public sector staff under recommendation 6. Second-pass check (PC-05) by checker-CSO8 on 5 November 2026: 5 items added (review/RUN-2026-02/second_pass/MDA-CSO-2023-001.csv)."
   },
   "classification": {
     "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
     "mechanisms_version": "1.0"
   },
   "items": [
@@ -2549,6 +2551,4183 @@
         "intervention_ids": [],
         "classification_status": "auto",
         "classification_note": "unresolved_gap: recommendation answering the information security barrier."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0040",
+      "information_type": "finding",
+      "stated_text": "The current government oversees the Ministry of Economic Development and Digitalization (MDED), with the minister holds holding the status of a deputy prime minister, thus aknowledging the cross-cutting and interinstitutional nature of digital transformation-related issues.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MDED's minister holds deputy prime minister status, reflecting the cross-cutting nature of digital transformation.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "INTRODUCTION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Economic Development and Digitalization (MDED)",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "possible_misread"
+      ],
+      "extraction_note": "Finding or intervention (M2): the passage describes an institutional arrangement without stating a decision. The text has 'holds holding' and 'aknowledging' as printed.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Governance arrangement for the ministry leading digital transformation; positive context. Pass 1 already flags finding or intervention (M2)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0041",
+      "information_type": "intervention",
+      "stated_text": "On September 14th, 2023, the Government has approved the National Digital Transformation Strategy 2023-2030, which includes, among its performance indicators, a clause that by the end of 2024 - 75% of all public services will be digitized, and by 2030 - all public services will be digital.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "On 14 September 2023 the Government approved the Digital Transformation Strategy 2023-2030, targeting 75% of public services digitised by 2024 and all by 2030.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "INTRODUCTION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": "2023-09-14",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "National Digital Transformation Strategy 2023-2030",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0001 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Strategy with targets for digitising public services."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0042",
+      "information_type": "metric",
+      "stated_text": "According to data provided by AGE, on the government portal of public services, there has been placed information on 714 available public services (out of which 283 or 39% are e-Services).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "AGE data: the government services portal lists 714 public services, of which 283 (39%) are e-Services.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "AGE",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E-Services among services listed on the government portal",
+        "value": "283 of 714; 39%",
+        "unit": "services; percent",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0002 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Range of e-services listed on the national portal (39% of services listed)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0043",
+      "information_type": "finding",
+      "stated_text": "This category of \"e-Services\" includes both fully automated electronic public services that allow for electronic self-service (services for which providers ensure the complete formalization and scheduling of the service delivery process) and partially automated electronic public services, which means services for which the physical interaction between service providers and beneficiaries is inevitable.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "E-Services include fully automated self-service services and partially automated services that still require physical interaction.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0003 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Definition of the e-services category used in the portal figures; context for -0042."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0044",
+      "information_type": "metric",
+      "stated_text": "Out of the 283 e-Services, 126 are related to the issuance of permissive documents and 157 are services for citizens and businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Of 283 e-Services, 126 concern permissive documents and 157 are services for citizens and businesses.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "E-Services by category",
+        "value": "126 (permissive documents); 157 (citizens and businesses)",
+        "unit": "services",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0026 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0045",
+      "information_type": "metric",
+      "stated_text": "Out of the 157 public services that could be requested online, 36 (22.92%) are provided in digital format (services for which providers ensure the complete formalization and scheduling of the service delivery process).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Of 157 services that can be requested online, 36 (22.92%) are delivered fully in digital format.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Online-requestable public services provided fully in digital format",
+        "value": "36 of 157; 22.92%",
+        "unit": "services; percent",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0004 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Few services requestable online are delivered fully digitally."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0046",
+      "information_type": "metric",
+      "stated_text": "These include 12 cadastral services and 19 services for issuing civil status documents, apostilles, extracts from the state register of legal entities, proof of no debts to the state budget, personal social insurance account status, criminal records, detailed criminal records, and contravention records available in digital format, including the option for apostille and home delivery.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Fully digital services include 12 cadastral services and 19 services for civil status documents, extracts, records and similar documents.",
+      "location": {
+        "page": 3,
+        "page_end": 4,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Fully digital public services by type",
+        "value": "12 (cadastral); 19 (civil status documents, apostilles, extracts and records)",
+        "unit": "services",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Fully digital services of sector bodies (cadastre, civil status, registers); positive."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0047",
+      "information_type": "intervention",
+      "stated_text": "Recently, MDED has developed an interactive platform aimed at monitoring and informing the general public about public services for entrepreneurs in the Republic of Moldova. The platform indicates how many of these services are digitalized and their level of utilization.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MDED developed an interactive platform showing how many public services for entrepreneurs are digitalised and how much they are used.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MDED",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": "MDED interactive platform on public services for entrepreneurs",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0027 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Monitoring tool for the digitalisation and use of services for entrepreneurs; fits the monitoring part of RI-TEC-002."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0048",
+      "information_type": "metric",
+      "stated_text": "According to MDED data, there are 523 public services in Moldova offered by 42 public institutions (ministries, agencies, inspectorates, specialized services, etc.), with 226 of them already digitalized, representing 43.2% of the total number.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MDED data: 523 public services offered by 42 institutions, of which 226 (43.2%) are digitalised.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "MDED",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Digitalised public services",
+        "value": "226 of 523; 43.2%",
+        "unit": "services; percent",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0005 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Share of services digitised across 42 institutions. The source does not say whether these services run through the national portal; institution-level services read as sector services first."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0049",
+      "information_type": "finding",
+      "stated_text": "In this context, we can highlight three distinct categories of institutions based on the number of digitized services within their competence area, with a noticeable variation in the approach to digitalization processes from one institution to another:",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The approach to digitalisation varies noticeably between institutions, which fall into three categories by share of services digitised.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0028 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Uneven digitalisation across institutions. The source does not say whether these services run through the national portal; institution-level services read as sector services first."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0050",
+      "information_type": "finding",
+      "stated_text": "1. Institutions that have digitized all or most of the services provided (rate of 75% or more): National Road Transport Agency, National Agency for the Regulation of Nuclear and Radiological Activities, Environmental Protection Agency, National Bureau of Statistics, Land Relations and Cadastre Agency, and the Public Property Agency.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Six institutions, including the Road Transport Agency, Statistics Bureau and Cadastre Agency, have digitised 75% or more of their services.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: institutions with 75% or more digitised. The source does not say whether these services run through the national portal; institution-level services read as sector services first."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0051",
+      "information_type": "finding",
+      "stated_text": "2. Institutions that have partially digitized their services (rate of 25-75%): Public Services Agency, Agency of Medicines and Medical Devices, Civil Aeronautics Authority, National Regulatory Authority for Electronic Communications and Information Technology, State Agency for Intellectual Property, State Fiscal Service, State Inspectorate of Public Security, Ministry of Economic Development and Digitalization (MDED), Information Technology Service of the Ministry of Internal Affairs, National Institute of Metrology, Chamber of Commerce and Industry, National Accreditation Center and National Health Insurance Company.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Thirteen institutions, including the Public Services Agency, State Fiscal Service and MDED, have digitised 25-75% of their services.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The source does not say whether these services run through the national portal; institution-level services read as sector services first."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0052",
+      "information_type": "finding",
+      "stated_text": "3. Institutions that have digitized only a few public services (rate of 25% or less) or have not digitized any services: Naval Agency, National Agency for Food Safety, National Public Health Agency, National Technical Surveillance Inspectorate, National Radio Frequency Management Service, Customs Service, Ministry of Infrastructure and Regional Development, State Marking Supervision Authority.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Eight institutions, including the Food Safety Agency, Customs Service and Infrastructure Ministry, have digitised 25% or fewer of their services.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The source does not say whether these services run through the national portal; institution-level services read as sector services first."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0053",
+      "information_type": "finding",
+      "stated_text": "At the same time, several important public institutions have not digitized any services in their portfolio, including the Ministry of Education and Research, Ministry of Justice, Ministry of Culture, Ministry of Labor and Social Protection, Geological and Mineral Resources Agency, Investment and Payments Agency for Agriculture, Transplant Agency, National Archives Agency, Agency for Energy Efficiency, National Agency for Quality Assurance in Education and Research, and the National Health Insurance House.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Several important institutions, including the Ministries of Education, Justice, Culture and Labour, have digitised no services.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Labor and Social Protection",
+          "actor_id": "ACT-MDA-0010"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0006 (RUN-2026-01 comparator item), re-extracted for this run. The Ministry of Labor and Social Protection appears in the list; the passage is not about Chapter 2 issues, so scope is theme only.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Institutions with no digitised services; the Ministry of Labour is named but no Chapter 2 link is made. The source does not say whether these services run through the national portal; institution-level services read as sector services first."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0054",
+      "information_type": "finding",
+      "stated_text": "The development of digital solutions by responsible institutions is an ongoing process that requires continuous improvements, including the increase of penetration and usage by citizens.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Developing digital solutions is an ongoing process needing continuous improvement, including wider use by citizens.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0055",
+      "information_type": "lesson",
+      "stated_text": "The launch of a digital public service does not necessarily lead to its widespread use by beneficiaries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Launching a digital public service does not necessarily lead to its widespread use.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0007 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "lesson",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Launch of a service does not ensure use."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0056",
+      "information_type": "finding",
+      "stated_text": "1. Digitized public services that are massively and predominantly used compared to the option offered at the institution's physical offices (50% or more of total service requests). These services are largely offered only in an online format or are easily accessible digital services with a very high penetration rate: authorization for the import of medicines, drug registration certificate (Agency of Medicines and Medical Devices), authorization for road transport of goods/INTERBUS carnet (National Road Transport Agency), partial radiological authorization (National Agency for the Regulation of Nuclear and Radiological Activities), waste management authorization (Environmental Protection Agency), statistical/financial reporting (National Bureau of Statistics), registration of taxable objects/standardized forms for special regime primary documents (State Fiscal Service), customs warehouse authorization (Customs Service), provision of topogeodetic materials (Land Relations and Cadastre Agency), initiation/termination of employment relationships (National Health Insurance Company), criminal record for individuals and legal entities (Information Technology Service of the Ministry of Internal Affairs).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Some digitised services, mostly online-only or easily accessible, account for 50% or more of requests, such as medicine import authorisations and criminal records.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0008 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: services with high digital usage."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0057",
+      "information_type": "finding",
+      "stated_text": "2. Public services that are offered both in digital format and through requests at physical offices with a medium level of digital option usage (25-50%): coordination of dangerous goods transport route (National Road Transport Agency), certificate of property value/extract from the state register of legal entities (Public Services Agency), emission permit for pollutants/authorization for forestry clear-cutting (Environmental Protection Agency).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A few services offered online and at offices have medium digital usage (25-50%), such as property value certificates.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0009 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Medium digital usage."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0058",
+      "information_type": "finding",
+      "stated_text": "3. Digitized public services with low usage rates of 1-25%: non-scheduled flight authorization (Civil Aeronautics Authority), sanitary-veterinary authorization for means of transport (National Agency for Food Safety), operational sanitary permit for facilities (National Public Health Agency), non-preferential origin certificate for goods (Chamber of Commerce and Industry), nuclear/radiological security certificate (National Agency for the Regulation of Nuclear and Radiological Activities).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Some digitised services have low usage (1-25%), such as flight and sanitary authorisations.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0010 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Low digital usage."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0059",
+      "information_type": "finding",
+      "stated_text": "4. Digitized public services with negligible or non-existent usage rates (less than 1%): manufacturing authorization for medicines (Agency of Medicines and Medical Devices), individual permit for export/import of strategic goods, information about the property belonging to an individual/legal entity (Public Services Agency), authorization for the installation and operation of radio transmitters (Civil Aeronautics Authority), phytosanitary certificate for export/re-export (National Agency for Food Safety), environmental impact assessment/notification of cross -border waste transport (Environmental Protection Agency), presentation of aggregated data (National Bureau of Statistics), certificate of no arrears to the budget/tax code assignment/online registration of taxpayers (State Fiscal Service), provisional firearm permit/special category vehicle permit (State Inspectorate of Public Security), technical-professional qualification certificate for construction (Ministry of Infrastructure and Regional Development), detailed criminal record/contravention record (Information Technology Service of the Ministry of Internal Affairs), all services of the National Institute of Metrology.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Many digitised services have negligible or no usage (under 1%), including online taxpayer registration and detailed criminal records.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0011 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Negligible usage, including tax e-services (online taxpayer registration), which also bear on RI-TEC-005."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0060",
+      "information_type": "metric",
+      "stated_text": "A distinct category among these services consists of digital solutions reported to MDED as developed and functional but with zero users during the reporting period (2022). The total number of such services is 128, accounting for 56.63% of all reported digital services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "128 digital services (56.63%) reported to MDED as functional had zero users in 2022.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Digital services reported as functional with zero users",
+        "value": "128; 56.63%",
+        "unit": "services; percent of reported digital services",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0012 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Functional digital services with zero users in 2022."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0061",
+      "information_type": "metric",
+      "stated_text": "Therefore, according to the analysis, out of the 226 digital services reported to MDED, 77 services (34.07%), for which requests can be made both digitally and at the institutions' physical offices, had no digital requests in 2022 but had requests at the physical offices with a physical presence.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Of 226 digital services, 77 (34.07%) had no digital requests in 2022 but had requests at physical offices.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Digital services with no digital requests but office requests",
+        "value": "77 of 226; 34.07%",
+        "unit": "services; percent",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0013 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0062",
+      "information_type": "metric",
+      "stated_text": "Additionally, another 51 digital public services (22.56%) have been reported by public institutions to MDED as having zero requests, both online and at the institutions' physical offices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Another 51 digital public services (22.56%) were reported as having zero requests online or at offices.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Digital public services with zero requests online and at offices",
+        "value": "51; 22.56%",
+        "unit": "services; percent",
+        "reference_period": "2022"
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0014 (RUN-2026-01 comparator item), re-extracted for this run. Reference period 2022 from the preceding sentences.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0063",
+      "information_type": "barrier",
+      "stated_text": "1. The low number of users of qualified advanced electronic signatures, which represents the fundamental interface for accessing digital services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Few people use qualified advanced electronic signatures, the main interface for accessing digital services.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0015 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Low use of qualified electronic signatures as a barrier to e-services."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0064",
+      "information_type": "metric",
+      "stated_text": "According to STISC data from September 2022, there were 129,384 active certificates of the public key for qualified advanced electronic signatures, of which 97,633 (75.45% of the total) were USB tokens: 18,400 were Mobile ID certificates issued by Orange Moldova, 17,725 were Mobile ID certificates issued by Moldcell, and 66 were eID cards issued by the Public Services Agency.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "STISC, September 2022: 129,384 active qualified e-signature certificates, 97,633 of them USB tokens; Mobile ID and eID card counts given.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "STISC",
+        "actor_id": "ACT-MDA-0012"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Active qualified advanced electronic signature certificates",
+        "value": "129,384 (97,633 USB tokens; 18,400 Orange Mobile ID; 17,725 Moldcell Mobile ID; 66 eID cards)",
+        "unit": "certificates",
+        "reference_period": "September 2022"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0023 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Active qualified signature certificates by type."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0065",
+      "information_type": "metric",
+      "stated_text": "It should be noted that although 97,633 STISC certificates were issued, the number of unique users was much lower - 45,870, as many citizens possessed two (13,086), three (1,631) or more (345) certificates, even though holding multiple certificates is not necessary.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Although 97,633 STISC certificates were issued, there were only 45,870 unique users, as many held several certificates.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Unique users of STISC electronic signature certificates",
+        "value": 45870,
+        "unit": "users",
+        "reference_period": "September 2022"
+      },
+      "flags": [],
+      "extraction_note": "Reference period from the preceding sentence.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Unique users far below certificates issued."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0066",
+      "information_type": "barrier",
+      "stated_text": "2. Insufficient information provided to users and beneficiaries about the existence of developed digital solutions, their functionalities, advantages, and benefits.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Users get insufficient information about existing digital solutions, their functions and benefits.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0016 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Users poorly informed about existing digital services."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0067",
+      "information_type": "barrier",
+      "stated_text": "Many functional digital services are poorly known to end users, with no clear and accessible communication channels for users to obtain additional information about their use or technical assistance, if needed.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Many functional digital services are little known, with no clear channels for information or technical help.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0029 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0068",
+      "information_type": "barrier",
+      "stated_text": "3. The complexity, lack of clarity, and non-intuitive interface of digital solutions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Digital solutions are complex, unclear and non-intuitive.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0017 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Quality of e-services (complex, non-intuitive interfaces)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0069",
+      "information_type": "barrier",
+      "stated_text": "Additionally, some electronic public services might face performance issues, such as slow page loading, response delays, or frequent errors.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Some electronic public services may suffer slow loading, delays or frequent errors.",
+      "location": {
+        "page": 6,
+        "page_end": 7,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Quality of e-services (performance); hedged."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0070",
+      "information_type": "barrier",
+      "stated_text": "4. People's resistance to change and preference for adherence to traditional methods.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "People resist change and prefer traditional methods.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0018 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0071",
+      "information_type": "barrier",
+      "stated_text": "5. Negative previous experiences with the use of digital services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Negative previous experiences with digital services deter their use.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0019 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0072",
+      "information_type": "barrier",
+      "stated_text": "6. Limited access to technology and internet connectivity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Limited access to technology and internet connectivity hinders use of digital services.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0020 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Access to connectivity as a barrier to e-service use; access to devices fits no issue."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0073",
+      "information_type": "barrier",
+      "stated_text": "In rural areas, internet infrastructure might be underdeveloped or even nonexistent, making access to digital services practically impossible.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In rural areas internet infrastructure may be underdeveloped or absent, making digital services practically inaccessible.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Rural infrastructure gap; hedged."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0074",
+      "information_type": "barrier",
+      "stated_text": "7. Insufficient information security.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Insufficient information security deters use of digital services.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0021 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: insufficient information security of digital public services given as a barrier to use, not a stated staffing or CERT gap; nearest fit, weak."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0075",
+      "information_type": "barrier",
+      "stated_text": "8. Relatively low usage of online payments and e-commerce.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Relatively low use of online payments and e-commerce limits use of digital services.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0022 (RUN-2026-01 comparator item), re-extracted for this run. theme_doubtful: online payments are digital finance (out under rules section 4) unless treated as part of the online public service; the brief ties them to completing digital services.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved: the source lists low use of online payments as a cause of low use of digital public services, so the claim is about the public e-service (R22 digital finance not engaged). The e-commerce element alone would be RI-TEC-034; not assigned, as the claim is about e-service uptake."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0076",
+      "information_type": "recommendation",
+      "stated_text": "It is essential for public service providers to be responsive to the suggestions of public service beneficiaries and continuously improve their electronic public services to meet the needs and expectations of citizens and the business environment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Public service providers should respond to users' suggestions and keep improving electronic public services.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0030 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0077",
+      "information_type": "recommendation",
+      "stated_text": "1. Increasing the number of users of digital signature certificates available in Moldova, including by organizing campaigns to inform users about the functionalities of digital signatures, the advantages they offer as access keys for all existing and prospective digital services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Increase the number of digital signature users, including through information campaigns on their functions and advantages.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0031 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Recommendation to raise uptake of digital signatures through information campaigns."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0078",
+      "information_type": "recommendation",
+      "stated_text": "Actions are needed to simplify the procedures for obtaining digital signatures and renewing the respective certificates.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Simplify procedures for obtaining digital signatures and renewing certificates.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Cumbersome procedures for obtaining and renewing signatures."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0079",
+      "information_type": "barrier",
+      "stated_text": "2. Monetizing the use of digital signatures is a factor that hinders their widespread use.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Charging for digital signatures hinders their widespread use.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0032 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Cost of the digital signature (as MDA-CSO-2026-001-0076)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0080",
+      "information_type": "recommendation",
+      "stated_text": "Identifying possibilities to minimize the costs of obtaining and renewing digital signature certificates is necessary, as well as the use of digital signatures, including the removal of clauses limiting the number of digital signatures a citizen can apply.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Minimise the cost of obtaining, renewing and using digital signatures and remove limits on the number a citizen can apply.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0033 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Cost and limits on the number of signatures."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0081",
+      "information_type": "recommendation",
+      "stated_text": "3. Developing digital signature certificates based on the MobiSign smartphone application, which is in the process of implementation and launch, can serve as a significant catalyst for the widespread use of digital services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Developing MobiSign smartphone-based signature certificates could strongly boost use of digital services.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0034 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0082",
+      "information_type": "intervention",
+      "stated_text": "3. Developing digital signature certificates based on the MobiSign smartphone application, which is in the process of implementation and launch, can serve as a significant catalyst for the widespread use of digital services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The MobiSign smartphone signature application is being implemented and launched.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MobiSign smartphone application",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second claim of the same sentence: 'in the process of implementation and launch'.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0083",
+      "information_type": "recommendation",
+      "stated_text": "The completion of audit procedures and the launch of MobiSign, accompanied by an extensive information campaign on how the solution works and how the security of processes and data is ensured, are necessary.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Complete MobiSign audits and launch it with a wide information campaign on how it works and how security is ensured.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0084",
+      "information_type": "lesson",
+      "stated_text": "4. Developing digital solutions without considering the opinions of direct beneficiaries is a misguided perspective that directly affects the penetration and use of these solutions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Developing digital solutions without consulting beneficiaries directly harms their uptake and use.",
+      "location": {
+        "page": 8,
+        "page_end": 9,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0024 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "lesson",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "User involvement in design and its effect on uptake."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0085",
+      "information_type": "recommendation",
+      "stated_text": "By analogy, patients should be consulted in the case of digital solutions in the healthcare system, and students and parents should be consulted in the case of solutions in the field of education.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Patients should be consulted on healthcare digital solutions, and students and parents on education solutions.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: user consultation on sector digital solutions (health, education); not stated whether these are public-facing services or back-office systems.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: consultation of users on sector digital solutions in health and education; education is out under R2, and the health part fits neither RI-TEC-009 (interoperability and EU alignment) nor RI-TEC-037, as the text does not say the solutions are public-facing services."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0086",
+      "information_type": "recommendation",
+      "stated_text": "5. Increasing the number of digital ambassadors who provide relevant information to any citizen is vital.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Increase the number of digital ambassadors informing citizens.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0035 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Assisted access and information for citizens on e-services."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0087",
+      "information_type": "intervention",
+      "stated_text": "From this perspective, the establishment of 100 unique service delivery centers (CUPS) in rural regions of the Republic of Moldova by the end of 2023, in cooperation with local authorities, by the Agency for e-Government, is commendable.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Agency for e-Government is establishing 100 one-stop service centres (CUPS) in rural areas by end 2023.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agency for e-Government",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "100 unique service delivery centres (CUPS) in rural regions",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0025 (RUN-2026-01 comparator item), re-extracted for this run. Status follows the alpha item: completion by end 2023 is a target in the wording.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Assisted access points for digital services in rural areas (as MDA-CSO-2026-001-0082). Target date end 2023."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0088",
+      "information_type": "recommendation",
+      "stated_text": "It is crucial for CUPS specialists to prioritize informing citizens about digital solutions and how they can be used.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "CUPS specialists should prioritise informing citizens about digital solutions.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0036 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0089",
+      "information_type": "recommendation",
+      "stated_text": "In larger cities, specialists from the Multifunctional Centers of the Public Services Agency can play a fundamental role in this regard.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In larger cities, Public Services Agency multifunctional centre staff can play a key role in informing citizens.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0090",
+      "information_type": "barrier",
+      "stated_text": "6. Promoting digital leadership. Specialists from a ministry, agency, municipality, or regional council will not use digital solutions if the administration of these entities refuses or boycotts their use.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Staff will not use digital solutions if their administration refuses or boycotts them.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0037 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Use of digital solutions by staff inside ministries, agencies and local bodies (internal tools), blocked by management; nearest fit is the little-used shared systems part of RI-TEC-004. MEC-10 considered but the source does not name vested interests."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0091",
+      "information_type": "recommendation",
+      "stated_text": "Clearer administrative protocols are necessary to limit the ability of decision-makers to halt or boycott the widespread implementation of digital solutions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Clearer administrative protocols are needed to stop decision-makers halting or boycotting digital solutions.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0038 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "As -0090."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0092",
+      "information_type": "recommendation",
+      "stated_text": "At the same time, improving the digital skills of public sector employees and local authorities is necessary, including addressing the digital divide between urban and rural areas.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Improve digital skills of public sector staff and local authorities, and address the urban-rural digital divide.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: digital skills, extracted because the text links them to recommendation 6 on adopting digital solutions in administration (rules section 4).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: digital skills of public sector staff and the urban-rural digital divide; digital skills are outside scope (run record) and the linked recommendation is a civil society one, not an in-scope requirement (as MDA-CSO-2026-001-0040)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0093",
+      "information_type": "recommendation",
+      "stated_text": "7. Informing citizens about the security of their personal data used in the development of digital solutions, who accesses their data and why, and what limitations exist, is essential.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Inform citizens about the security of their personal data in digital solutions, who accesses it and why.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as MDA-CSO-2023-001-0039 (RUN-2026-01 comparator item), re-extracted for this run.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Low awareness of personal data processing in digital solutions; fits the awareness part of RI-TEC-020."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0094",
+      "information_type": "recommendation",
+      "stated_text": "The objective of cybersecurity should be not only the direct responsibility of the specialized national institution (STISC), but also of basic cybersecurity programs within all state and educational institutions in the country.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cybersecurity should be the responsibility not only of STISC but also of basic programmes in all state and educational institutions.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "STISC",
+          "actor_id": "ACT-MDA-0012"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Cybersecurity capacity across state institutions beyond STISC; the educational institutions part is outside scope (R2)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0095",
+      "information_type": "recommendation",
+      "stated_text": "9. Increasing nationwide internet coverage.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Increase nationwide internet coverage.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0096",
+      "information_type": "finding",
+      "stated_text": "Despite having a solid internet connectivity network, internet accessibility remains a current issue, especially in rural regions, those far from major infrastructure and road networks, or those with lower incomes.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Despite a solid network, internet accessibility remains an issue in rural, remote and lower-income areas.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Rural and remote access gap; the lower-income element belongs with the unmatched label \"Broadband affordability for households\"."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0097",
+      "information_type": "recommendation",
+      "stated_text": "Increasing accessibility to fast internet access, developing free internet access points following the European Union's \"WiFi4EU\" model, and making connectivity devices accessible in public places (schools, libraries, municipalities) can minimize the exclusion of certain categories of citizens from the benefits of digital solutions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Wider fast internet access, free WiFi4EU-style access points and devices in public places can reduce exclusion from digital solutions.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013",
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Public access points modelled on WiFi4EU (an EU instrument, RI-TEC-014 second); connectivity in schools is digital education and out (R2)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0098",
+      "information_type": "finding",
+      "stated_text": "The Republic of Moldova has placed the digitalization of public services among its development priorities.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has made the digitalisation of public services one of its development priorities.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "INTRODUCTION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive context: digitalisation of public services is a national priority."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0099",
+      "information_type": "barrier",
+      "stated_text": "For individuals with limited financial resources, purchasing electronic devices or subscribing to internet services could be financially difficult.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "For people with limited financial resources, buying devices or subscribing to internet services could be financially difficult.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": "Cause 6; affordability barrier, distinct from the rural infrastructure barrier in MDA-CSO-2023-001-0073. hedged: 'could be'.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Household affordability of devices and internet subscriptions; no approved issue covers cost (RI-TEC-013 is coverage). PC-12 route; hedged."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0100",
+      "information_type": "barrier",
+      "stated_text": "Many functional digital services also require different procedures for making electronic payments. If these procedures are not coherent, the full provision of the digital service might not be possible.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Many digital services need separate electronic payment procedures; if these are not coherent, the service might not be fully provided.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Cause 8, elaborating MDA-CSO-2023-001-0075. hedged: 'might not be possible'. theme_doubtful: as for -0075, electronic payments are digital finance unless treated as part of the online public service; here the text ties them to completing the service.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved: incoherent payment procedures within digital public services prevent full provision of the service, so the claim is about the public e-service, not digital finance (R22). Hedged."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0101",
+      "information_type": "barrier",
+      "stated_text": "Another related cause is the lack of trust or fear associated with making online payments, which could lead to reluctance or abandonment of the usage of a digital service.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Lack of trust in or fear of online payments could lead people to avoid or abandon a digital service.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "CAUSES OF THE REDUCED DEGREE OF USE OF DIGITAL SERVICES",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Cause 8. hedged: 'could lead'. theme_doubtful: same doubt as MDA-CSO-2023-001-0075 on online payments.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved: distrust of online payments leads users to abandon digital public services; about uptake of the public e-service, not digital finance (R22). Hedged."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2023-001-0102",
+      "information_type": "recommendation",
+      "stated_text": "Ultimately, developers of digital solutions need to understand that these solutions are not intended only for narrowly specialized professionals. They are intended for all users and should, to the possible extent, be developed in a simple and intuitive manner.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Developers should recognise digital solutions are for all users and build them, as far as possible, to be simple and intuitive.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECOMMENDATIONS FOR INCREASING THE USE OF DIGITAL SERVICES IN MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023",
+        "period_covered": "2022 to 2023",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Institute for European Policies and Reforms (IPRE)",
+        "actor_id": "ACT-MDA-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Introductory paragraph of the recommendations section; a claim of its own, not repeated in the numbered recommendations.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "User-friendly design of e-services."
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "MDA-CSO-2023-001-0001",
+        "MDA-CSO-2023-001-0002",
+        "MDA-CSO-2023-001-0003",
+        "MDA-CSO-2023-001-0004",
+        "MDA-CSO-2023-001-0005",
+        "MDA-CSO-2023-001-0006",
+        "MDA-CSO-2023-001-0007",
+        "MDA-CSO-2023-001-0008",
+        "MDA-CSO-2023-001-0009",
+        "MDA-CSO-2023-001-0010",
+        "MDA-CSO-2023-001-0011",
+        "MDA-CSO-2023-001-0012",
+        "MDA-CSO-2023-001-0013",
+        "MDA-CSO-2023-001-0014",
+        "MDA-CSO-2023-001-0015",
+        "MDA-CSO-2023-001-0016",
+        "MDA-CSO-2023-001-0017",
+        "MDA-CSO-2023-001-0018",
+        "MDA-CSO-2023-001-0019",
+        "MDA-CSO-2023-001-0020",
+        "MDA-CSO-2023-001-0021",
+        "MDA-CSO-2023-001-0022",
+        "MDA-CSO-2023-001-0023",
+        "MDA-CSO-2023-001-0024",
+        "MDA-CSO-2023-001-0025",
+        "MDA-CSO-2023-001-0026",
+        "MDA-CSO-2023-001-0027",
+        "MDA-CSO-2023-001-0028",
+        "MDA-CSO-2023-001-0029",
+        "MDA-CSO-2023-001-0030",
+        "MDA-CSO-2023-001-0031",
+        "MDA-CSO-2023-001-0032",
+        "MDA-CSO-2023-001-0033",
+        "MDA-CSO-2023-001-0034",
+        "MDA-CSO-2023-001-0035",
+        "MDA-CSO-2023-001-0036",
+        "MDA-CSO-2023-001-0037",
+        "MDA-CSO-2023-001-0038",
+        "MDA-CSO-2023-001-0039"
+      ],
+      "moved_on": "2026-11-05",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "3-9 (whole brief read; pages 1, 2 and 10 hold no claims)",
+        "notes": "Read in full. Figures come from AGE and MDED data obtained by IPRE on information requests, so they are government data analysed by a civil society author. Recommendations 2, 3 and 6 to 9 are left out as proposals and not results; causes are given in the author's own words without measurement. Text-file page numbers are printed page numbers plus one. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-CSO-2023-001.csv.",
+        "codebook_version": "1.2",
+        "themes_version": "1.3"
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

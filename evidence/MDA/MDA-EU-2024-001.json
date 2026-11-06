@@ -13,8 +13,12 @@
     "notes": "RUN-2026-02 stage 5 sample; items -0012 onwards belong to this run. Items -0001 to -0011 belong to RUN-2026-01 (comparator, see earlier_extractions) and are unchanged; where that run quoted the same passage (for example pages 14, 26-27, 53, 55, 70 and 74) this run created its own item. Read the table of contents, the whole of 1.2 Main findings (Chapter 2 summary on page 11), the Cluster 2 introduction and the full Chapter 2 section (pages 62-63), and screened every other section with technology keywords. The Chapter 2 section itself carries no preparation or progress rating in this report; the rating is in the main findings. Text-file page numbers are printed page numbers plus one. Left out under the materiality test: cybercrime, online media and website blocking, digital finance, tax and customs IT upgrades not tied to EU systems or public e-services, the insolvency register, the cancer registry, the electronic registry of injuries in prisons, border e-permits, agriculture and food safety systems, digital skills and digital education (not linked to a technology recommendation), and the statistical annex (Annex II). Doubtful cases are flagged theme_doubtful. Stage 7 (2026-11-03): status set from sample to complete; extraction rules 0.5 unchanged at G3 (GATE-0017), so no re-extraction was needed; second pass done at G3 (review/RUN-2026-02/second_pass/)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -786,12 +790,14 @@
       "flags": [],
       "extraction_note": "The digitalisation clause is one of three claims in the sentence; extracted for it.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Broad economy-wide digitalisation clause; G4 mapping kept."
       }
     },
     {
@@ -854,12 +860,15 @@
       ],
       "extraction_note": "The digital divide is one of several purposes of a general infrastructure recommendation.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-014",
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Digital divide is one of several purposes of a general infrastructure investment recommendation; G4 mapping kept; theme_doubtful resolved as in scope."
       }
     },
     {
@@ -918,12 +927,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -982,12 +991,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-008",
+          "RI-FMW-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Sub-area ratings for bilateral agreements and EURES preparation."
       }
     },
     {
@@ -1046,12 +1058,12 @@
       "flags": [],
       "extraction_note": "The same sentence appears under several chapters on this page; this item is the Chapter 2 occurrence.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "general statement that previous recommendations remain valid; fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -1110,11 +1122,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1174,11 +1190,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1241,12 +1259,15 @@
       "flags": [],
       "extraction_note": "The sentence also reports financial reporting and audit amendments, which are out of scope; the progress rating is not extracted because the chapter is not in scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-035",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Electronic filing in company registration; financial reporting and audit amendments are outside the theme."
       }
     },
     {
@@ -1309,12 +1330,16 @@
       ],
       "extraction_note": "Digital tools and processes are one of many areas listed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-035"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Only the digital tools and processes clause is in the theme; theme_doubtful resolved as in scope for that clause."
       }
     },
     {
@@ -1378,12 +1403,15 @@
       ],
       "extraction_note": "Health sector systems; doubtful under R22. The Chapter 2 section links the missing integrated health information system to the absence of a national health insurance card.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-009",
+          "RI-FMW-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: Moldova has no integrated eHealth system at all, rather than systems not interoperable with insurance data. RI-FMW-015 added because the Chapter 2 section ties the missing integrated health information system to the absent health insurance card."
       }
     },
     {
@@ -1444,12 +1472,12 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "chapter-level rating; fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -1511,12 +1539,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Chapter progress rating with stated reasons; G4 mapping kept for the reasons given."
       }
     },
     {
@@ -1577,12 +1609,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit for RI-TEC-023: a newly created agency rather than an established centre lacking staff."
       }
     },
     {
@@ -1643,12 +1678,12 @@
       "flags": [],
       "extraction_note": "Chapter 10 occurrence of a sentence repeated under several chapters on this page.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "general statement that previous recommendations remain valid; fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -1709,12 +1744,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Roaming under RI-TEC-011 (G4-D11)."
       }
     },
     {
@@ -1778,12 +1817,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-025",
+          "RI-TEC-024"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Data protection (RI-TEC-017) and cybersecurity law (RI-TEC-022) also named; limited to three issues as mapped at G4."
       }
     },
     {
@@ -1846,12 +1892,16 @@
       ],
       "extraction_note": "Combines media and digital services rules; kept for the Digital Services Act. No arrow is printed before this bullet in the converted text.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Kept for the Digital Services Act (G4-D11); media rules outside the theme."
       }
     },
     {
@@ -1914,12 +1964,14 @@
       ],
       "extraction_note": "Tax services to taxpayers are online services, but the sentence mainly concerns tax policy.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Kept for digitalisation of tax services; tax policy outside the theme."
       }
     },
     {
@@ -1982,12 +2034,12 @@
       ],
       "extraction_note": "Digitalisation of a sector reform; doubtful under the materiality test.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: digitalisation of one ministry's social assistance systems is a back-office sector system (R22; CI-05 rejected, G4-D04); fits no approved issue."
       }
     },
     {
@@ -2050,12 +2102,14 @@
       ],
       "extraction_note": "Digitalisation is one means of cutting burden.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 mapping kept; digitalisation is one means of cutting administrative burden; doubtful fit."
       }
     },
     {
@@ -2116,11 +2170,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2184,12 +2240,14 @@
       ],
       "extraction_note": "The NCTS is a transit IT system; the text does not say it connects to an EU system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "NCTS is the EU transit system, so connection to it is in scope (R22); theme_doubtful resolved as in scope."
       }
     },
     {
@@ -2252,12 +2310,16 @@
       ],
       "extraction_note": "Internal HR systems; doubtful whether this meets the digital government test.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government-wide HR systems read as shared administrative information systems (G4 mapping); doubtful fit, flagged for the analyst."
       }
     },
     {
@@ -2318,12 +2380,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Strategic frame for digitalisation of service delivery; one-stop shops are not digital in themselves."
       }
     },
     {
@@ -2384,12 +2448,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Positive finding."
       }
     },
     {
@@ -2450,11 +2516,14 @@
       "flags": [],
       "extraction_note": "The same sentence gives a finding item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2516,12 +2585,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the preceding metric item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as the metric -0037."
       }
     },
     {
@@ -2582,12 +2654,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Assisted access to e-services for rural users."
       }
     },
     {
@@ -2648,11 +2722,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2714,11 +2790,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2780,11 +2859,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2848,12 +2929,14 @@
       ],
       "extraction_note": "Justice digitalisation may be a back-office sector system (court case management is out under the test); flagged for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-010"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Generic recommendation; issue narrowed to communication with courts and system connections (G5-D09); back-office court IT out (R22). Doubtful fit."
       }
     },
     {
@@ -2914,11 +2997,13 @@
       "flags": [],
       "extraction_note": "Text sits in a narrow column beside a chart; two sentences of one claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2980,11 +3065,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3046,12 +3135,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Positive finding on enforcement."
       }
     },
     {
@@ -3112,11 +3203,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3178,12 +3273,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Deregulation part outside the theme."
       }
     },
     {
@@ -3247,12 +3345,14 @@
       ],
       "extraction_note": "Online registration is a public e-service; remote identification in the financial sector may be digital finance (out under R22).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-035"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Online business registration as online formation; remote identification of financial sector customers is digital finance, out under R22."
       }
     },
     {
@@ -3314,11 +3414,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3380,11 +3482,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3444,11 +3549,14 @@
       "flags": [],
       "extraction_note": "Two sentences describing the same amendments.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-001"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3508,12 +3616,16 @@
       "flags": [],
       "extraction_note": "Same wording as the 2023 report.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 mapping kept: Moldovan law treats EU citizens as third-country nationals, so the residence condition applies to them."
       }
     },
     {
@@ -3572,12 +3684,16 @@
       "flags": [],
       "extraction_note": "Same wording as the 2023 report.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-003"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: EU citizens are barred from all public administration posts, not only beyond a short list of exemptions."
       }
     },
     {
@@ -3636,12 +3752,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Context metric on residence permits for work for all foreigners."
       }
     },
     {
@@ -3700,11 +3819,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3768,11 +3889,13 @@
       "flags": [],
       "extraction_note": "The action plan is drafted (proposed); the designation is part of the same claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3832,11 +3955,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3896,12 +4021,14 @@
       "flags": [],
       "extraction_note": "Same wording as the 2023 report.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-012"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: Moldova has no occupational pension scheme, so the gap is absence of schemes as much as non-alignment of rights."
       }
     },
     {
@@ -3960,12 +4087,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-012"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: no occupational pension scheme exists (see -0059)."
       }
     },
     {
@@ -4024,11 +4155,13 @@
       "flags": [],
       "extraction_note": "Two agreements in one sentence; event dates June and July 2024, recorded at year precision.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4088,12 +4221,14 @@
       "flags": [],
       "extraction_note": "The same sentence gives a recommendation item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as recommendation -0063."
       }
     },
     {
@@ -4152,12 +4287,16 @@
       "flags": [],
       "extraction_note": "Same sentence as the preceding intervention item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as intervention -0062."
       }
     },
     {
@@ -4216,11 +4355,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4280,12 +4421,16 @@
       "flags": [],
       "extraction_note": "Same wording as the 2023 report. The same sentence gives a barrier item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as barrier -0066."
       }
     },
     {
@@ -4344,12 +4489,16 @@
       "flags": [],
       "extraction_note": "Same sentence as the preceding finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as finding -0065."
       }
     },
     {
@@ -4410,12 +4559,14 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-FMW-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Hedged in the source."
       }
     },
     {
@@ -4479,12 +4630,17 @@
       ],
       "extraction_note": "Could be read as a finding; the digital element is one of two constraints.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-09"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 mapping kept: digitalisation resources for state registration of legal entities; doubtful fit, the digital element is one of two constraints."
       }
     },
     {
@@ -4546,11 +4702,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-035",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4612,12 +4771,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Business register paper archive (Chapter 6 context); digitalisation of a register."
       }
     },
     {
@@ -4680,12 +4841,15 @@
       ],
       "extraction_note": "The same sentence gives an intervention item. The Chapter 2 section (page 63) links the missing integrated health information system to the absence of a health insurance card.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-009",
+          "RI-FMW-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: no integrated health information system exists, rather than systems not interoperable. RI-FMW-015 added as the Chapter 2 section ties the same gap to the absent health insurance card. Same sentence as -0072."
       }
     },
     {
@@ -4748,12 +4912,14 @@
       ],
       "extraction_note": "eHealth service; doubtful whether used directly by the public. Same sentence as the preceding finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "eHealth service in operation; theme_doubtful resolved as in scope under RI-TEC-009. Same sentence as -0071."
       }
     },
     {
@@ -4814,11 +4980,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4880,11 +5048,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4946,11 +5116,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5012,12 +5184,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-012",
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Strengthens the regulator's spectrum functions."
       }
     },
     {
@@ -5081,12 +5256,16 @@
       "flags": [],
       "extraction_note": "Two sentences: the ratification and what it opens.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033",
+          "RI-TEC-001",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Opens access to EU programme calls (AI, digital skills) and EUDI wallet interoperability; digital skills part only as linked."
       }
     },
     {
@@ -5147,12 +5326,16 @@
       "flags": [],
       "extraction_note": "Same wording as the 2023 report.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: the gap is the absence of any authority for open data policy, not only irregular publishing."
       }
     },
     {
@@ -5215,12 +5398,14 @@
       ],
       "extraction_note": "No theme code fits e-commerce rules exactly.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Positive finding; e-commerce under RI-TEC-034 (G4-D11); theme_doubtful resolved as in scope."
       }
     },
     {
@@ -5283,12 +5468,16 @@
       ],
       "extraction_note": "Digital market regulation; no theme code fits exactly.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful resolved as in scope."
       }
     },
     {
@@ -5353,12 +5542,15 @@
       "flags": [],
       "extraction_note": "The text says the e-Governance Academy developed it; whether this is the e-Governance Agency is for pass 2.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Developer named as the e-Governance Academy in the source; identity with the e-Governance Agency to be checked in the actor list."
       }
     },
     {
@@ -5420,11 +5612,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5486,11 +5681,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5552,12 +5749,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same agency as -0024."
       }
     },
     {
@@ -5618,12 +5818,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: capacity of a newly established authority rather than an established centre."
       }
     },
     {
@@ -5685,12 +5889,16 @@
       "flags": [],
       "extraction_note": "Sub-area: alignment with the EU toolbox for 5G security (eu_scale added at the G3 check).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-024"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Sub-area rating."
       }
     },
     {
@@ -5751,12 +5959,14 @@
       "flags": [],
       "extraction_note": "Tax e-services; the compliance part is outside the theme.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Positive finding; compliance measures outside the theme."
       }
     },
     {
@@ -5817,11 +6027,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5886,12 +6098,12 @@
       ],
       "extraction_note": "Sector information systems; doubtful under R22 although interoperability and data management are the subject.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: one ministry's fragmented sector information systems (rejected candidate CI-05, G4-D04; R22)."
       }
     },
     {
@@ -5954,12 +6166,14 @@
       ],
       "extraction_note": "Digitalisation is one of three means named.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Treated as the response to recommendation -0031 (RI-TEC-037); digitalisation is one of three means named; doubtful fit."
       }
     },
     {
@@ -6022,12 +6236,15 @@
       ],
       "extraction_note": "Customs procedure used by businesses; doubtful whether it is a public online service or a customs IT upgrade.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Customs procedure under the EU AEO concept, used by businesses; nearest fit customs IT, with sector online services second. Doubtful."
       }
     },
     {
@@ -6088,12 +6305,14 @@
       "flags": [],
       "extraction_note": "Platform used by businesses, treated as a customs e-service.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "CDS is named in the customs IT recommendation (MDA-EU-2025-001-0035)."
       }
     },
     {
@@ -6154,11 +6373,13 @@
       "flags": [],
       "extraction_note": "Two sentences describing the same draft strategy.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -6220,12 +6441,15 @@
       "flags": [],
       "extraction_note": "Chapter 10 (pages 14 and 70) dates the Cybersecurity Agency to December 2023; the dates differ as stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Date differs from -0024 and -0084 (December 2023) as stated; possible contradicts link for review."
       }
     },
     {
@@ -6286,12 +6510,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Access to EU initiatives and funds for the digital sector; weak fit."
       }
     },
     {
@@ -6354,12 +6580,16 @@
       ],
       "extraction_note": "added at the second pass. VIES is an EU electronic exchange system; doubtful because the claim also covers administrative cooperation generally.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "VIES is an EU electronic exchange system; theme_doubtful resolved as in scope for that part."
       }
     },
     {
@@ -6422,12 +6652,14 @@
       ],
       "extraction_note": "added at the second pass. Digitalisation of services for taxpayers is a tax e-service; risk management automation is a back-office tax IT matter, hence doubtful. A commitment, so proposed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Taxpayer services part only; automation of risk management is back-office tax IT, out under R22."
       }
     }
   ],

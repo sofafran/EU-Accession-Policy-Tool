@@ -13,8 +13,12 @@
     "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages and the in-scope horizontal passages addressed to all enlargement countries, following MKD-EU-2025-002 (E21). The RUN-2026-01 items (-0001 to -0016) are unchanged and listed in earlier_extractions; the twelve horizontal passages it extracted that also concern Moldova are quoted again as this run's own items (-0025 to -0036), and the AI factory antenna sentence as -0022. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, enlargement countries, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, connectivity, identity, wallet, online, ICT, internet, technology, roaming, workers, EURES, social security, EHIC, labour, migration). Extracted: the opening of cluster 2 (pages 3 and 26), Roam Like at Home (pages 14 and 26, theme_doubtful pending M4), Moldova's resilience approaches including cybersecurity (page 10), the AI factory antenna (page 17) and the Annex III priority schedule for provisional closure of Chapters 10 and 2 (page 38). Not extracted: passages only on the Western Balkans (WiFi4WB, pages 13; extension of Roam Like at Home to the Western Balkans, page 14; Common Regional Market, page 13), which do not cover Moldova; the Growth Plan and Reform and Growth Facility paragraphs (pages 13-14), which name digitalisation only in a list of reform areas; SEPA (digital finance) and the Common Transit Convention; labour migration and secondary movements (pages 9-10), irregular migration outside the Chapter 2 boundary; misuse of new technologies by criminals and online radicalisation (page 8, cybercrime rule); EIT Community Hubs to open in Moldova (page 16), innovation, not a theme area; skills and labour shortages (page 17), not linked to an in-scope recommendation; 'Ukraine and Moldova opened four clusters each' (page 21), which names no cluster; the general call to work on closing benchmarks for all chapters (page 38); the Annex III gradual integration paragraph (page 38), which names digital connectivity in a list; Annexes V and VI, whose only digital rows are basic digital skills. Difference from MKD-EU-2025-002: that file left out horizontal passages that do not name Moldova; this file includes those addressed to all enlargement countries, as the task set for stage 7 asked. Listed for G4. Text-file page numbers are printed page numbers plus one in the Communication and plus two in the annexes. Second pass (PC-05): a keyword check of every page by the lead agent, against the RUN-2026-01 second pass, added 2 items for 20 first-pass items (10 per hundred) (-0037, page 4; -0038, page 18), both theme_doubtful; see review/RUN-2026-02/second_pass/MKD-EU-2026-009.csv."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -1200,12 +1204,12 @@
       "flags": [],
       "extraction_note": "Cluster 2 (internal market) contains Chapter 2. The sentence continues the paragraph on Moldova that starts on page 2. Same event as MDA-EU-2026-012-0001 and MDA-EU-2026-013-0001; also stated on page 26 (next Moldova item).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cluster-level negotiation milestone; fits no single issue (G5-D14 of RUN-2026-01). Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1266,12 +1270,12 @@
       ],
       "extraction_note": "Cluster 2 contains Chapter 2. The months are given for three dates and four clusters; the 2026 report (MDA-EU-2026-012-0001) dates the cluster 2 and 3 opening to October, so only the year is recorded. ambiguous_type: an EU statement of a step in the negotiations, recorded as an intervention as for MDA-EU-2026-013-0001.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cluster-level negotiation milestone; fits no single issue (G5-D14 of RUN-2026-01). Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1338,12 +1342,14 @@
       ],
       "extraction_note": "Cybersecurity is one of four elements of resilience to hostile activity; the passage is mainly about foreign interference, hence theme_doubtful, as for MKD-EU-2025-002-0018. 'h ostile' is as converted. One claim over two sentences.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Names Moldova; cybersecurity is one of several resilience areas; positive. Read as in scope as the approach to cybersecurity is the subject, unlike the general hybrid-threat passages"
       }
     },
     {
@@ -1414,12 +1420,14 @@
       ],
       "extraction_note": "Roaming tagged TECH-INFRA as in MKD-EU-2025-002-0016, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv). Outcome of the named intervention (the extension), as stated. Left out by RUN-2026-01 as not about North Macedonia.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful cleared"
       }
     },
     {
@@ -1482,12 +1490,14 @@
       ],
       "extraction_note": "Only Roam Like at Home is a possible theme area (M4, theme_doubtful); SEPA is digital finance and the Common Transit Convention customs, both out by default under rules 0.5 section 4. 'Roam Like Home' and 'Single European Payments Area' are as printed. Same claim as page 14 (previous item) in another section.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful cleared; SEPA and the Common Transit Convention are out of the theme"
       }
     },
     {
@@ -1556,12 +1566,15 @@
       "flags": [],
       "extraction_note": "Same passage as the RUN-2026-01 item MKD-EU-2026-009-0011. 'This is the case' refers to the previous sentence on cooperation on AI (horizontal item -0033).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-001",
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "As MKD-EU-2026-009-0011 in RUN-2026-01. Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1624,12 +1637,12 @@
       ],
       "extraction_note": "Indicative schedule introduced as one that 'could be envisaged' (lead-in on the same page, not extracted). Chapter 10 is named as a whole chapter, covering media as well as the digital areas, hence theme_doubtful. 'acquaculture' as printed. Annex III, the Moldova roadmap for 2027.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Chapter-level schedule; fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -1688,12 +1701,12 @@
       "flags": [],
       "extraction_note": "Indicative schedule introduced as one that 'could be envisaged' (lead-in on the same page, not extracted). Chapter 2 is one of sixteen chapters listed. Annex III, the Moldova roadmap for 2027. The same page also says work on closing benchmarks for all chapters should continue without delay; not extracted, as it names no chapter.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Chapter-level schedule; fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -1756,12 +1769,12 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0001, quoted again as this run's own item (E21). Cyberattacks are one element of hybrid threats, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Hybrid threats in general; no approved issue fits, as for MKD-EU-2026-009-0001"
       }
     },
     {
@@ -1824,12 +1837,12 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0016, quoted again as this run's own item (E21). Cybersecurity is one element of a mixed list; one claim over two sentences, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement on interconnected networks; no single approved issue fits, as for MKD-EU-2026-009-0016"
       }
     },
     {
@@ -1893,12 +1906,15 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0004, quoted again as this run's own item (E21). Telecommunications and digital services are two of seven areas listed, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; as MKD-EU-2026-009-0004; theme_doubtful cleared (G4-D11)"
       }
     },
     {
@@ -1961,12 +1977,14 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0006, quoted again as this run's own item (E21). Customs IT is out unless the claim concerns connection to EU electronic systems (rules 0.5 section 4); the text does not say so, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; regional, as MKD-EU-2026-009-0006"
       }
     },
     {
@@ -2028,12 +2046,15 @@
       "flags": [],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0007, quoted again as this run's own item (E21).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; regional, as MKD-EU-2026-009-0007"
       }
     },
     {
@@ -2095,12 +2116,15 @@
       "flags": [],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0008, quoted again as this run's own item (E21).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-033",
+          "RI-TEC-001"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "As MKD-EU-2026-009-0008. Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -2165,12 +2189,14 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0009, quoted again as this run's own item (E21). Digital networks are one of three network types named, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; regional, as MKD-EU-2026-009-0009"
       }
     },
     {
@@ -2233,12 +2259,12 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0010, quoted again as this run's own item (E21). The digital transition is described only in general terms, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement on the digital transition; no single approved issue fits, as for MKD-EU-2026-009-0010"
       }
     },
     {
@@ -2303,12 +2329,12 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0015, quoted again as this run's own item (E21). A general statement of what cooperation can achieve, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General statement; no single approved issue fits, as for MKD-EU-2026-009-0015"
       }
     },
     {
@@ -2371,12 +2397,12 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0012, quoted again as this run's own item (E21). Digital identity is one of six possible areas of gradual integration, hence theme_doubtful.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital identity named only in a list of future gradual integration areas; as for MKD-EU-2026-009-0012"
       }
     },
     {
@@ -2437,12 +2463,14 @@
       "flags": [],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0013, quoted again as this run's own item (E21). Only the cybersecurity element is in scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; regional, as MKD-EU-2026-009-0013"
       }
     },
     {
@@ -2503,12 +2531,14 @@
       "flags": [],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2026-009-0014, quoted again as this run's own item (E21). Only the cybersecurity element is in scope.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; regional, as MKD-EU-2026-009-0014"
       }
     },
     {
@@ -2571,12 +2601,12 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them. Cybersecurity is one of eleven areas of cooperation listed, hence theme_doubtful. Added at the second pass (keyword check, 2026-11-05); not extracted by RUN-2026-01.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Cybersecurity named only in a list of areas of cooperation; general statement, no single approved issue fits"
       }
     },
     {
@@ -2639,12 +2669,14 @@
       ],
       "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them. 'Economic security requirements above' refers to the previous sentence (item -0035), which includes cybersecurity; Chapter 10 is named among three chapters, but chapter is left empty because the claim concerns access to gradual integration as a whole. theme_doubtful because cybersecurity is implied, not named. Added at the second pass (keyword check, 2026-11-05).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 seed kept; regional; cybersecurity is one of the economic security requirements under Chapter 10; theme_doubtful cleared on the G4 mapping"
       }
     }
   ],

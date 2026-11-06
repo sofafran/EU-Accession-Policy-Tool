@@ -1,22 +1,20 @@
 {
   "source_id": "MDA-GOV-2020-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
     "status": "complete",
-    "pages_processed": "1-21 (all slides read; slides 10 and 14 are images read by text recognition and hold no extracted claims)",
-    "notes": "Slides hosted by the World Bank; the URL path says April 2022 but the title slide is dated 6 July 2020. Self-reported by the agency and made before the January 2021 legal changes in MDA-GOV-2021-002. Slides describing the design of the platform and its benefits in general terms are left out as making no claim on use. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-GOV-2020-001.csv.",
-    "codebook_version": "1.2",
-    "themes_version": "1.3"
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-21 (all slides read; slides 10 and 14 are images read by text recognition)",
+    "notes": "All 21 slides read. Slides 10 and 14 are images read by text recognition and are garbled; they hold no claim that could be quoted reliably (slide 14 is a screenshot of date.gov.md). Slides 8 and 9 (a diagram of institutions before and after MConnect), 17 (a technical diagram naming MPass and MConnect) and 18 to 20 (the title \"GDP case study: Notary Chamber\" only) carry no extractable claim. This run's items: MDA-GOV-2020-001-0012 to MDA-GOV-2020-001-0035 (24 items, all theme; TECH-INTEROP mainly, with TECH-DATA, TECH-DGOV and one TECH-CYBER). Alpha items 0001 to 0011 are unchanged; their passages are quoted again here. Left out: slide 2 (the chain \"Data -> Informations -> ...\", a lead-in to three strategic dimensions of data use, and \"Acceleraring the use of digital tools and solutions\": general, no claim of its own); slide 6 (the five data exchange pillars as single words, set out in full in MDA-GOV-2024-003); slide 11 (benefits as single words); slide 12 (a list of access channels under the heading \"Needs for a single data portal\"); the further bullets of slides 15 and 16. Self-reported by the agency, 6 July 2020; slides hosted by the World Bank do not make them World Bank findings. Doubtful for the analyst: the MConnect security feature (theme_doubtful). No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 3 items added (review/RUN-2026-02/second_pass/MDA-GOV-2020-001.csv)."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
   "items": [
     {
@@ -736,6 +734,1740 @@
         "intervention_ids": [],
         "classification_status": "auto",
         "classification_note": "unresolved_gap: stated effect of the lack of interoperability, July 2020, before the January 2021 legal changes."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0012",
+      "information_type": "finding",
+      "stated_text": "Inefficiency of the public service provision process",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Lack of interoperability causes inefficient public service provision, according to the agency.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Problems caused by lack of interoperability",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0009.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0013",
+      "information_type": "finding",
+      "stated_text": "Low quality of the decision-making process",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Lack of interoperability causes low-quality decision-making, according to the agency.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Problems caused by lack of interoperability",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0010.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0014",
+      "information_type": "finding",
+      "stated_text": "Low administrative performance",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Lack of interoperability causes low administrative performance, according to the agency.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Problems caused by lack of interoperability",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0011.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0015",
+      "information_type": "barrier",
+      "stated_text": "Resistance from data owners – reduced data vailability",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Data owners resist sharing, reducing data availability, which makes interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Spelling as printed. Same passage as alpha item MDA-GOV-2020-001-0001.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0016",
+      "information_type": "barrier",
+      "stated_text": "Data inconsistency and incoherence",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Inconsistent and incoherent data make interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0002.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0017",
+      "information_type": "barrier",
+      "stated_text": "Redundancy of collected data",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Redundant data collection makes interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0003.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0018",
+      "information_type": "barrier",
+      "stated_text": "Technical incompatibility of IS – low connectivity",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Technically incompatible information systems with low connectivity make interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0004.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0019",
+      "information_type": "barrier",
+      "stated_text": "Bilateral technical dependencies",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Bilateral technical dependencies between systems make interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0005.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0020",
+      "information_type": "barrier",
+      "stated_text": "Lack of standards for ensuring data protection",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A lack of data protection standards makes interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0006.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0021",
+      "information_type": "barrier",
+      "stated_text": "Rigid legal framework",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A rigid legal framework makes interoperability ineffective.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Ineffective interoperability, why?",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0007.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0022",
+      "information_type": "intervention",
+      "stated_text": "Ensuring IT systems interoperability in the public sector",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Objective of the Interoperability Framework: ensure interoperability of public sector IT systems.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Main objectives of the Interoperability Framework",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Interoperability Framework Program (GD 656, 05.09.2012 )",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Objective listed on the slide; proposed under M1 (the slide does not say it was achieved). The programme itself is named on slide 5 as Government Decision 656 of 5 September 2012; its adoption is before the time window and is not extracted as an item. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0023",
+      "information_type": "intervention",
+      "stated_text": "Ensuring the quality and celerity of the desion-making process",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Objective of the Interoperability Framework: ensure quality and speed of decision-making.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Main objectives of the Interoperability Framework",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Interoperability Framework Program (GD 656, 05.09.2012 )",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Objective listed on the slide; proposed under M1 (the slide does not say it was achieved). The programme itself is named on slide 5 as Government Decision 656 of 5 September 2012; its adoption is before the time window and is not extracted as an item. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0024",
+      "information_type": "intervention",
+      "stated_text": "Creating a propitious framework for modernization of public services",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Objective of the Interoperability Framework: create a favourable framework for modernising public services.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Main objectives of the Interoperability Framework",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Interoperability Framework Program (GD 656, 05.09.2012 )",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Objective listed on the slide; proposed under M1 (the slide does not say it was achieved). The programme itself is named on slide 5 as Government Decision 656 of 5 September 2012; its adoption is before the time window and is not extracted as an item. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0025",
+      "information_type": "intervention",
+      "stated_text": "Enables real time data exchange: providing and consuming data from more tahan 1 IS at a time;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect enables real-time data exchange, providing and consuming data from more than one information system at a time.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Interoperability – data in electronic format",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "MConnect® - Governmental interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0026",
+      "information_type": "intervention",
+      "stated_text": "Agnostic platform – ensures conectivity of all IS, all existent technologies;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect is technology-agnostic and connects all information systems and existing technologies.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Interoperability – data in electronic format",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "MConnect® - Governmental interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0027",
+      "information_type": "intervention",
+      "stated_text": "Reuses exitent SI conectivity capabilities – no need to modify IS;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect reuses existing system connectivity, so information systems need not be modified.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Interoperability – data in electronic format",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "MConnect® - Governmental interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0028",
+      "information_type": "intervention",
+      "stated_text": "Single entry/exit point for beneficiaries",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect is a single entry and exit point for beneficiaries.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Interoperability – data in electronic format",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "MConnect® - Governmental interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0029",
+      "information_type": "intervention",
+      "stated_text": "No dependencies between beneficiaries’ IS;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect removes dependencies between beneficiaries' information systems.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Interoperability – data in electronic format",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "MConnect® - Governmental interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0030",
+      "information_type": "intervention",
+      "stated_text": "High confidentiality, security and monitoring;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MConnect provides high confidentiality, security and monitoring.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "Interoperability – data in electronic format",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "MConnect® - Governmental interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed. TECH-CYBER doubtful: a one-line claim of security with no detail on how systems are secured.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0031",
+      "information_type": "intervention",
+      "stated_text": "New www.date.gov.md – as a single governmental data portal",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A new date.gov.md is presented as the single governmental data portal.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "New www.date.gov.md – as a single governmental data portal",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "www.date.gov.md",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "www.date.gov.md",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Slide title that carries a claim of its own; the rest of the slide is a screenshot.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0032",
+      "information_type": "intervention",
+      "stated_text": "Advanced intelligent search mechanism regarding public data about the companies",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "date.gov.md offers an advanced search of public data about companies.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "Search in public data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Search in public data (date.gov.md)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The slide goes on to describe the search as free of charge, with unlimited access and regularly updated information; not extracted separately.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0033",
+      "information_type": "intervention",
+      "stated_text": "Designed for data exchange participants who do not have IS",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Authorised data access is designed for data exchange participants that have no information system of their own.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Authorized data access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Authorised data access through date.gov.md and MConnect",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The slide describes the design; it does not say how far the route is in use. Same passage as alpha item MDA-GOV-2020-001-0008.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0034",
+      "information_type": "intervention",
+      "stated_text": "Access is configured after complying with L142/2018, GD211/2019",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Authorised data access is configured only after compliance with Law 142/2018 and Government Decision 211/2019.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Authorized data access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Authorised data access through date.gov.md and MConnect",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Legal condition for access as stated; GD 211/2019 is not described further.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0035",
+      "information_type": "intervention",
+      "stated_text": "MConnect Interface for access, view and download of data",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "An MConnect interface lets authorised participants access, view and download data.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Authorized data access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Authorised data access through date.gov.md and MConnect",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Design description; not evidence of use.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0036",
+      "information_type": "intervention",
+      "stated_text": "Free of charges, unlimited access",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The date.gov.md search of public data about companies is free of charge with unlimited access.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "Search in public data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Search in public data on date.gov.md",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added by the second-pass check (PC-05). A slide bullet describing the company data search; the slide does not say how far it is in use, so status unclear as for the other slide features.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0037",
+      "information_type": "intervention",
+      "stated_text": "Regularly updated information",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The date.gov.md company data search offers regularly updated information.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "Search in public data",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Search in public data on date.gov.md",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added by the second-pass check (PC-05). A slide bullet describing the company data search; status unclear as for the other slide features.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2020-001-0038",
+      "information_type": "intervention",
+      "stated_text": "Access to real time data from IS, PR, in accordance with the legal provisions",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Authorised data access gives real-time access to data from information systems and \"PR\", in line with the law.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Authorized data access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2020-07-06",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Olga Tumuruc, Moldova e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Authorised data access through date.gov.md and MConnect",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Added by the second-pass check (PC-05). The third bullet of the slide, between items 0034 and 0035; \"PR\" is not expanded on the slide (read here as public registers, for the analyst). Status unclear as for the other bullets.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "MDA-GOV-2020-001-0001",
+        "MDA-GOV-2020-001-0002",
+        "MDA-GOV-2020-001-0003",
+        "MDA-GOV-2020-001-0004",
+        "MDA-GOV-2020-001-0005",
+        "MDA-GOV-2020-001-0006",
+        "MDA-GOV-2020-001-0007",
+        "MDA-GOV-2020-001-0008",
+        "MDA-GOV-2020-001-0009",
+        "MDA-GOV-2020-001-0010",
+        "MDA-GOV-2020-001-0011"
+      ],
+      "moved_on": "2026-11-05",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "1-21 (all slides read; slides 10 and 14 are images read by text recognition and hold no extracted claims)",
+        "notes": "Slides hosted by the World Bank; the URL path says April 2022 but the title slide is dated 6 July 2020. Self-reported by the agency and made before the January 2021 legal changes in MDA-GOV-2021-002. Slides describing the design of the platform and its benefits in general terms are left out as making no claim on use. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-GOV-2020-001.csv.",
+        "codebook_version": "1.2",
+        "themes_version": "1.3"
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

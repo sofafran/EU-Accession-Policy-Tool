@@ -1,0 +1,3887 @@
+{
+  "source_id": "MDA-GOV-2024-005",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-24 and 40-45 read in full; 25-39 keyword-screened",
+    "notes": "Consultation version in English (particip.gov.md, February 2024), not the final version. Text-file page numbers are one higher than the printed page numbers (text page 5 is printed page 4). Read in full: contents, executive summary, methodology, the recommendations R1 to R12, context and problem, vision, scope, the opening of the compliance section (text pages 1-24) and the national priorities section and conclusions (text pages 40-45). Text pages 25-39 (EU, Council of Europe, OECD, UNESCO and other international frameworks) were keyword-screened for Moldova, national, government, MCloud, MConnect, law, propose and recommend, and the Brief's keyword list; only two passages about Moldova itself were found and extracted (Council of Europe AI convention negotiations and the UNESCO Recommendation, text page 33). No Chapter 2 content: screened for foreign workers, labour market, EURES, social security, migration and diaspora; the only hits concern AI and the labour market in general or the diaspora as expertise, which are out of scope. Speaker is the ministry as issuing body; passages reporting the Global Data Barometer, the Government AI Readiness Index, the OECD AI Policy Observatory and the OECD digital skills review are flagged reported_view. Type choice for the analyst: the White Book's own recommendations R1 to R12 (and the similar 'it is desirable' passage on text page 40) are worded as recommendations but are the ministry's proposals in its own white paper, addressed to the Moldovan government; following the brief they are recorded as interventions with stated status proposed (M1), each flagged ambiguous_type. The general objectives 2 to 4 and the nine AI requirements are likewise proposed interventions. Repetitions (M3): the executive summary vision and objectives are repeated on text page 18, the 'first iteration' finding on page 23, R2, R3 and R6 to R10 are restated in the context section (pages 13-17) and the public-private data sharing framework and AI readiness are restated in the conclusions (page 45); each is extracted once and the other locations are listed in extraction_note, except where the wording adds a distinct claim. Left out: general objective 1 and the education and training role (education, research and skills, not linked to an in-scope recommendation); general descriptions of AI, its benefits and global data growth (pages 11-13, 20-21); vision and principles statements except R12; the methodology list of international organisations' generic recommendations; descriptions of EU and international frameworks (pages 23-40) as context only, including the EU AI Act, Data Strategy, Digital Decade and Security Union Strategy; other countries' experience (Romania's three AI policy documents, early AI strategies elsewhere) as context; the OECD digital skills review findings and recommendations on digital skills, skills intelligence and SME skills training (pages 42-43) as digital skills not linked to an in-scope recommendation, except the stated barrier about the previous national digital strategy, the related recommendation on the DTS and the SME digitalisation programme; the research and innovation programme 2024-2027 (digitalisation only as a heading of a research priority); descriptive explanations of how MConnect and the Semantic Catalogue work. The source cites Directive (EU) '2028/1972' and '2026/1148' in the cybersecurity law passage (presumably 2018/1972 and 2016/1148); quoted as printed. Second-pass check (PC-05) by checker-GOV8b on 5 November 2026: 4 items added (review/RUN-2026-02/second_pass/MDA-GOV-2024-005.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-GOV-2024-005-0001",
+      "information_type": "intervention",
+      "stated_text": "Development of a resilient infrastructure and usable and reusable datasets (integrated data ecosystem);",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "General objective 2 of the White Book: a resilient infrastructure and usable, reusable datasets forming an integrated data ecosystem.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, general objective 2",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeated with slightly different wording in the Vision section, text page 18 (M3). General objective 1 (education, research and skills) not extracted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Reusable datasets read as re-use of public sector data; the resilient infrastructure part (data centres) fits no issue: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0002",
+      "information_type": "intervention",
+      "stated_text": "Supporting measures to encourage the adoption of AI in society;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "General objective 3 of the White Book: measures to encourage the adoption of AI in society.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, general objective 3",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeated in the Vision section, text page 18 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Uptake of AI in society: wider capacity and trustworthy uptake under RI-TEC-001"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0003",
+      "information_type": "intervention",
+      "stated_text": "Establishing an appropriate data governance and AI and regulatory environment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "General objective 4 of the White Book: an appropriate data governance and AI regulatory environment.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, general objective 4",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeated in the Vision section, text page 18, as 'Establishing a governance system and an adequate AI and data regulatory environment' (M3: same substance).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "AI regulatory environment to RI-TEC-001; the data governance part would fit the proposed issue \"National data governance strategy and institutions missing\""
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0004",
+      "information_type": "intervention",
+      "stated_text": "The White Book represents the preliminary instrument through which the actions of government institutions will align, connect and intensify to produce results, later outlined in a national policy document, action plan and governance framework assumed at the political level.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The White Book is a preliminary instrument, to be followed by a national policy document, action plan and governance framework on data and AI.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "National policy document, action plan and governance framework on data governance and AI",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Also at text pages 20 and 45 (the White Book as a frame of reference for the future national policy framework), same substance (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Future national policy, action plan and governance framework on AI read as structures for RI-TEC-001; data governance part as for -0003"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0005",
+      "information_type": "finding",
+      "stated_text": "The Republic of Moldova is currently at the first iteration for the development of the strategic framework in the field of data governance and AI, although this has been a topic on the public agenda for several years, which concerns all env ironments, from the governmental level to local public administrations, from the academic environment to business.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is at the first iteration of developing a strategic framework for data governance and AI, though the topic has been discussed for years.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeated word for word at text page 23 (M3).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "No strategic framework yet for AI (first iteration); loose fit under structures and wider capacity, not AI Act alignment"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0006",
+      "information_type": "intervention",
+      "stated_text": "Proactive strategic management of the impact of AI in today's economic, social and technological context. The proactive approach aims to carefully evaluate the benefits and risks associated with AI, with the aim of positively influencing the quality of life, as well as the conditions of security, safety, health and ethics.  The development of a proactive and cu stomized policy framework, in line with specific needs, is an essential foundation for a proper integration of technology at the national level.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R1: manage the impact of AI proactively, weighing benefits and risks, through a customised national AI policy framework.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R1",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 13 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0007",
+      "information_type": "intervention",
+      "stated_text": "In the context of the prospect of joining the European Union, it is recommended to quickly adapt our regulations and governance regimes to keep up with the rapid changes in the field of data governance and AI.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R2: with a view to EU accession, quickly adapt Moldova's regulations and governance regimes to changes in data governance and AI.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R2",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 13 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Adapting AI rules in the accession context; data governance part as for -0003"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0008",
+      "information_type": "intervention",
+      "stated_text": "Regulation and Oversight - it is recommended to establish rules and regulations to ensure the ethical and responsible development, design, use and deployment of AI. This should include protecting personal data, preventing abuse and ensuring transparency in AI -based decisions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: establish rules ensuring ethical and responsible AI, including personal data protection, abuse prevention and transparency of AI decisions.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (regulation and oversight)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. R3 lists eight government roles; the government roles are restated at text page 13 (M3). The education and training role is not extracted (skills).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0009",
+      "information_type": "intervention",
+      "stated_text": "Investments in Research and Development  - it is recommended to allocate financial resources for research in the field of AI, thus supporting innovation and the development of new technologies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: allocate public funding to AI research to support innovation and new technologies.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (research and development)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Loose fit: AI research funding read as wider capacity for trustworthy uptake"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0010",
+      "information_type": "intervention",
+      "stated_text": "Promoting Ethics in AI - it is recommended to establish committees or bodies to debate and establish ethical standards in the development, design, use and deployment of AI.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: set up committees or bodies to establish ethical standards for AI.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (ethics in AI)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0011",
+      "information_type": "intervention",
+      "stated_text": "Public-Private Partnerships  - collaboration between the public and private sectors is suggested to promote the development, design, use and deployment of AI solutions, thus leveraging the expertise and resources of both parties.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: public-private collaboration to promote the development and use of AI solutions.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (public-private partnerships)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Loose fit: public-private partnerships for AI read as wider capacity for uptake"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0012",
+      "information_type": "intervention",
+      "stated_text": "Infrastructure - the development of appropriate infrastructure, including fast data networks and data centers, to support AI-based operations is supported.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: develop infrastructure, including fast data networks and data centres, to support AI operations.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (infrastructure)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. At text page 13 the infrastructure role is worded as extending MCloud to run AI models locally; that wording is covered by the R8 item on MCloud.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Data centres and fast networks for AI are data hosting infrastructure; government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076); not a broadband coverage or planning gap (RI-TEC-013, RI-TEC-014)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0013",
+      "information_type": "intervention",
+      "stated_text": "Public Awareness - it is recommended to launch information campaigns to educate the general public about the benefits and risks associated with AI.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: run public information campaigns on the benefits and risks of AI.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (public awareness)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Loose fit: public awareness of AI benefits and risks read as support for trustworthy uptake"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0014",
+      "information_type": "intervention",
+      "stated_text": "Economic Policies - it is recommended to create policies that encourage investments in start-ups and companies that develop AI technologies, thus supporting economic growth.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R3: policies encouraging investment in start-ups and companies developing AI technologies.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R3 (economic policies)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001",
+          "RI-TEC-033"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Investment policy for AI companies; RI-TEC-033 second for business adoption"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0015",
+      "information_type": "intervention",
+      "stated_text": "Given the rapid development of AI, it is recommended to pay more attention to the integration of these technologies in various fields, from scientific research and innovative digital products with global impact, to the improvement of digital public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R4: give more attention to integrating data-driven AI in research, digital products and the improvement of digital public services.",
+      "location": {
+        "page": 8,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R4",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R4",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text pages 13-14 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0016",
+      "information_type": "intervention",
+      "stated_text": "Facilitating data access and sharing is recommended to be prioritized as key to accelerating AI adoption. In order to stimulate the adoption of AI, it is recommended to strengthen open data access policies and strategies, thereby strengthening efforts to facilitate data access and sharing for the benefit of AI technology development.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R5: prioritise data access and sharing and strengthen open data policies to accelerate AI adoption.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R5",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R5",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 14 as a description of other countries' practice (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016",
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Open data access policies to support AI"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0017",
+      "information_type": "intervention",
+      "stated_text": "It is recommended to improve the existing regulatory and policy framework to ensure greater clarity on the scope, governance  and technical safeguards for data sharing between the public and private sectors.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R6: improve the regulatory and policy framework on the scope, governance and safeguards for public-private data sharing.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R6",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R6",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 14 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: rules and safeguards for public-private data sharing rather than publication on the open data portal; related EU data rules as for MDA-EU-2024-002-0016"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0018",
+      "information_type": "intervention",
+      "stated_text": "It is recommended to identify organizations that can act as trusted data intermediaries, thereby facilitating efficient data fusion and distribution.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R7: identify organisations to act as trusted data intermediaries.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R7",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R7",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 15 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: trusted data intermediaries (a Data Governance Act concept) for access to data, rather than publication on the portal; read with -0057"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0019",
+      "information_type": "intervention",
+      "stated_text": "It is recommended to develop and promote common data standards to ensure effective data interoperability.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R8: develop and promote common data standards for data interoperability.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R8",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R8",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 15 with the example of health records (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Common data standards across institutions: no approved issue covers data standards (RI-TEC-027 is alignment with the European Interoperability Framework, RI-TEC-028 platform use); grouped with the World Bank data governance items; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0020",
+      "information_type": "intervention",
+      "stated_text": "Thus, it is suggested to extend the capabilities  of MCloud to run AI models locally, and at the same time to adjust national legislation to international standards, to enable cross-border transmission of data for the use of AI services outside the country (such as access to API subscriptions of OpenAI).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R8: extend MCloud to run AI models locally and adjust legislation to allow cross-border data transfers for foreign AI services.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R8",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R8 (MCloud and cross-border data transmission)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Repeated word for word at text page 15 (M3); the MCloud infrastructure role at text page 13 is the same proposal.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001",
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Loose fit: cross-border transmission of data for AI services read under rules on international transfers (RI-TEC-017); running AI models on MCloud is government cloud: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0021",
+      "information_type": "intervention",
+      "stated_text": "It is recommended to establish a system for monitoring and publishing a meta-data catalog that includes the public-private datasets essential for the implementation of national AI projects. In this sense, it is suggested to expand the existing semant ic catalog in the Republic of Moldova to include AI-related indexes, at the same time facilitating the access of companies and researchers to these critical data sets for the progress of AI projects.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R9: monitor and publish a metadata catalogue of datasets for national AI projects by expanding the existing semantic catalogue.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R9",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-AI",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R9",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 15 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016",
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Metadata catalogue of datasets for AI projects, expanding the Semantic Catalogue"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0022",
+      "information_type": "intervention",
+      "stated_text": "Given its recent candidate country status, Moldova  is recommended to step up efforts to mainstream its data -driven development, thereby supporting key economic sectors and strengthening sound governance of data and emerging technologies such as AI.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R10: as a candidate country, Moldova should step up data-driven development and strengthen governance of data and AI.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R10",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R10",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 17 ('Moldova should make further efforts', same substance, M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Governance of AI to RI-TEC-001; data-driven development part as for -0003"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0023",
+      "information_type": "intervention",
+      "stated_text": "The White Book encourages the alignment of future policy documents on data governance and AI with the EU, OECD and UNESCO guidelines, which should govern the development, design, use, deployment and adoption of AI in various business sectors and across society, to create a principles-level reference framew ork and fundamental requirements that are grounded solidly and comprehensively.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R11: align future data governance and AI policy documents with EU, OECD and UNESCO guidelines.",
+      "location": {
+        "page": 9,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R11",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R11",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. Restated at text page 21 with EU and OECD guidelines only (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Alignment of future AI policy with EU, OECD and UNESCO guidelines"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0024",
+      "information_type": "intervention",
+      "stated_text": "The following principles are encouraged that underlie the design, development, use and deployment of AI-based technologies and the adoption of these solutions in society, such as: - Respect for human rights and democratic values; - Human-centered, inclusive, non-discriminatory and unbiased AI; - Diversity, equal opportunities and gender; - Partnership and international cooperation; - Respecting the rights of the child.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "R12: AI design and use should follow principles of human rights, human-centred unbiased AI, diversity, partnership and children's rights.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "RECCOMMENDATIONS",
+        "paragraph": "R12",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, recommendation R12",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Labelled a recommendation of the White Book and worded 'it is recommended', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. The principles are also listed in the executive summary (text pages 5-6), the Vision (pages 18-19) and pages 21-22 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0025",
+      "information_type": "metric",
+      "stated_text": "According to the Global Data Barometer , the Republic of Moldova ranks 47th in the data governance module, out of the 109 countries evaluated.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova ranks 47th of 109 countries in the Global Data Barometer data governance module.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "CONTEXT AND PROBLEM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Global Data Barometer, data governance module rank",
+        "value": "47th of 109",
+        "unit": "rank",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Reported from the Global Data Barometer; no reference year stated.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Global Data Barometer data governance rank; fits the proposed data governance issue, not open data alone (RI-TEC-016); problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0026",
+      "information_type": "intervention",
+      "stated_text": "The private sector data sharing framework will guide companies in establishing data sharing partnerships with each other. The framework will articulate th e key legal and technical considerations and safeguards that every organization should consider and provides example legal clauses and templates for drafting data sharing agreements.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A planned private sector data sharing framework will guide companies on legal and technical safeguards and model data sharing agreements.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "CONTEXT AND PROBLEM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Private sector data sharing framework",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Data sharing between companies is not re-use of public sector information (RI-TEC-016) and no approved issue covers it; grouped with the proposed data governance issue; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0027",
+      "information_type": "intervention",
+      "stated_text": "The public-private data sharing framework will facilitate the sharing of government data with non-governmental entities and key private partners by defining the scope, type, granularity and safeguards (people, processes and technical) of government data that can be shared with the private sector. For this, the normative framework is to be developed in accordance with the European Data Strategy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A planned public-private data sharing framework will define what government data can be shared with private partners, aligned with the European Data Strategy.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "CONTEXT AND PROBLEM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Public-private data sharing framework",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Restated in the Conclusions, text page 45 (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Sharing government data with private partners under a normative framework aligned with the European Data Strategy: related EU data rules, as for MDA-EU-2024-002-0016"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0028",
+      "information_type": "metric",
+      "stated_text": "According to the Government AI Readiness Index 2022, the Republic of Moldova ranks 83 out of the 181 countries evaluated, compared to the 86th place, occupied in 2021, with the score for the country vision for AI being set to zero in both 2021 and 2022.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova ranked 83rd of 181 in the Government AI Readiness Index 2022, up from 86th in 2021, with a zero score for AI vision.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "CONTEXT AND PROBLEM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Government AI Readiness Index rank; country vision for AI score",
+        "value": "83 of 181 (2022); 86th (2021); vision score 0 (2021 and 2022)",
+        "unit": "rank; score",
+        "reference_period": "2021 and 2022"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "One sentence with two values of the same type, kept as one item. Rank restated at text page 45 (M3).",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Government AI Readiness Index rank and zero score for national AI vision"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0029",
+      "information_type": "finding",
+      "stated_text": "The OECD AI Policy Observatory does not identify any sectoral policy documents for the Republic of Moldova, compared to Romania, for which 3 are identified, and the horizontal nature of policies in the field of AI requires the involvement of a number of institutions, as well as the investment of public funds and mobilizing private investment for its development and widespread use.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The OECD AI Policy Observatory lists no sectoral AI policy documents for Moldova; AI policy needs several institutions and public and private investment.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "CONTEXT AND PROBLEM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Reported from the OECD AI Policy Observatory; Romania is mentioned as comparison only. Restated at text page 45 as a need for 'more substantial development of sectoral policies' (M3).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "No sectoral AI policy documents; the Romania comparison is context only"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0030",
+      "information_type": "intervention",
+      "stated_text": "Human agency: There must be mechanisms to allow human intervention in case the AI system generates unwanted or erroneous decisions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: mechanisms allowing human intervention when an AI system makes unwanted or erroneous decisions.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (human agency)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "One of the key requirements 'in the approach promoted by the White Book'; the text announces seven but lists nine.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0031",
+      "information_type": "intervention",
+      "stated_text": "Transparency and explainability: AI systems must be able to explain their decisions and actions in terms that humans can understand.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI systems must explain their decisions in understandable terms.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (transparency and explainability)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0032",
+      "information_type": "intervention",
+      "stated_text": "Safety and Security: AI systems must operate in a secure manner and be protected against cyber threats.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI systems must operate securely and be protected against cyber threats.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (safety and security)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Requirement for AI systems; the cybersecurity element is incidental"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0033",
+      "information_type": "intervention",
+      "stated_text": "Adaptability: AI systems should be able to learn and adapt to changes in the environment and feedback received.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI systems should learn and adapt to change and feedback.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (adaptability)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0034",
+      "information_type": "intervention",
+      "stated_text": "Accountability: AI developers and operators should be responsible for the correct and ethical operation of their systems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: developers and operators are responsible for the correct and ethical operation of AI systems.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (accountability)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0035",
+      "information_type": "intervention",
+      "stated_text": "Accessibility: AI should be accessible and useful to all users, regardless of their technical skills or knowledge.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI should be accessible and useful to all users.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (accessibility)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Accessibility of AI to all users, not accessibility of public websites (RI-TEC-039)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0036",
+      "information_type": "intervention",
+      "stated_text": "Sustainability: AI systems should be developed and operated in a way that respects the principles of sustainable development and has a minimal impact on the environment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI systems should respect sustainable development and minimise environmental impact.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (sustainability)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0037",
+      "information_type": "intervention",
+      "stated_text": "Data privacy: AI systems should protect the data they work with, ensuring that personal information is kept safe and used ethically.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI systems should protect data and keep personal information safe.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (data privacy)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data privacy as a requirement for AI systems, not a gap in data protection law"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0038",
+      "information_type": "intervention",
+      "stated_text": "Interoperability: AI systems should be able to interact and collaborate effectively with other systems and technologies, ensuring seamless integration into various applications and environments.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proposed AI requirement: AI systems should interoperate with other systems and technologies.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "SCOPE OF THE DOCUMENT",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, key requirements for AI (interoperability)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0039",
+      "information_type": "intervention",
+      "stated_text": "The Republic of Moldova is represented in this committee and participates directly in the negotiations and the drafting of the text of the Framework Convention.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is represented in the Council of Europe Committee on AI and takes part in negotiating the AI Framework Convention.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "5.  Council of Europe Framework Convention on Artificial Intelligence, Human Rights, Democracy and the Rule of Law",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Republic of Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Participation in the Council of Europe Committee on Artificial Intelligence (CAI) and negotiation of the Framework Convention on AI",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'This committee' is the Council of Europe Committee on Artificial Intelligence (CAI), named on text page 32. Membership is recorded as an intervention (M2).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Participation in Council of Europe AI negotiations read as wider capacity under RI-TEC-001"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0040",
+      "information_type": "intervention",
+      "stated_text": "UNESCO produced the first global standard on AI ethics – “Recommendation on the Ethics of Artificial Intelligence” in November 2021. This framework has been adopted and supported by all 193 member states, including the Republic of Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is among the 193 UNESCO member states that adopted the November 2021 Recommendation on the Ethics of AI.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "7. UNESCO Reccommendation on the ethics of artificial intelligence",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": "2021-11",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Republic of Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "UNESCO Recommendation on the Ethics of Artificial Intelligence",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Section heading as printed (misspelt). The event date is the month the Recommendation was produced, as stated.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0041",
+      "information_type": "intervention",
+      "stated_text": "In the context of the EU's ambitions to become a world leader in the field, it is desirable for the Republic of Moldova to align itself with the trends, to create a regulatory framework, to draw a path for the adoption of technologies that are in agreement with the national context and to capitalize on the resources of expertise in sciences, technological innova tion, investments, by involving the academic environment, business, research -innovation, public administration and expertise from the diaspora.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should create an AI regulatory framework and a path for adopting technologies suited to the national context, drawing on wide expertise.",
+      "location": {
+        "page": 40,
+        "page_end": null,
+        "section": "Identifying national priorities, policies and strategies",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "White Book on Data Governance and Artificial Intelligence, national AI regulatory framework",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Worded 'it is desirable', but addressed by the ministry to the Moldovan government and authorities as a proposal of its own white paper; recorded as the ministry's proposed intervention (M1), flagged for the analyst. The diaspora is mentioned only as a source of expertise (not Chapter 2).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Diaspora expertise mentioned only as a resource; no Chapter 2 link"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0042",
+      "information_type": "intervention",
+      "stated_text": "Adopted by the Government of the Republic of Moldova on September 6, 2023, the Digital Transformation Strategy of the Republic of Moldova for the years 2023 -2030 (DTSM) will focus on six general objectives that will guide the activities within the strategy:",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government adopted the Digital Transformation Strategy 2023-2030 on 6 September 2023, with six general objectives.",
+      "location": {
+        "page": 40,
+        "page_end": null,
+        "section": "1. The Digital Transformation Strategy of the Republic of Moldova for the years 2023-2030",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": "2023-09-06",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Government of the Republic of Moldova",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "Digital Transformation Strategy of the Republic of Moldova for the years 2023-2030 (DTSM)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The sentence introduces the list of objectives but states the adoption as its own claim; the six objectives (text page 40) are not extracted here, as the strategy is held as its own source (MDA-GOV-2023-001).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0043",
+      "information_type": "lesson",
+      "stated_text": "The experience of previous strategies has shown that th e involvement of only a few interested parties in the implementation and the exclusion of the others inevitably leads to the development of solutions that operate in isolation, trying to solve complex problems from the perspective of narrow institutional interests.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Previous strategies showed that involving only a few parties in implementation leads to isolated solutions serving narrow institutional interests.",
+      "location": {
+        "page": 41,
+        "page_end": null,
+        "section": "1. The Digital Transformation Strategy of the Republic of Moldova for the years 2023-2030",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Stated lesson about previous digital strategies, presented as part of the DTSM principles (reported from the DTSM).",
+      "pass2": {
+        "chain_link": "lesson",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Lesson from earlier digital strategies, as for MDA-GOV-2023-001-0038"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0044",
+      "information_type": "intervention",
+      "stated_text": "The creation of the common digital space between the Republic of Moldova and Romania is an excellent test in this sense, to ensure compliance with the standards and regulations of the European Union, considering the strong cultural and social affinities between the two countries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Creating a common digital space between Moldova and Romania is described as a test of compliance with EU standards and regulations.",
+      "location": {
+        "page": 41,
+        "page_end": null,
+        "section": "1. The Digital Transformation Strategy of the Republic of Moldova for the years 2023-2030",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Romania",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Common digital space between the Republic of Moldova and Romania",
+      "stated_status": "unclear",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Status unclear: the text does not say whether the common digital space has been created or is planned. Theme doubtful: the content of the digital space is not described; TECH-INTEROP is tagged as closest if it concerns system connection.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Common digital space with Romania fits no approved issue, as for MDA-GOV-2023-001-0098; content not described"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0045",
+      "information_type": "barrier",
+      "stated_text": "The previous NDS reportedly suffered from implementatio n gaps due to a lack of project implementation capacity, economic and political instability, and insufficient budget allocations.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The previous national digital strategy reportedly had implementation gaps due to weak implementation capacity, instability and insufficient budgets.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "3. Promoting digital business skills in the Republic of Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Digital Strategy (NDS) Digital Moldova 2020",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "hedged",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Reported from the OECD digital skills review. Theme doubtful: the passage sits in a digital skills section, but the barrier concerns implementation of the national digital strategy as a whole.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-09"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Barriers to the previous national digital strategy, as for MDA-GOV-2023-001-0004; theme_doubtful resolved as in scope (strategy implementation, not digital skills)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0046",
+      "information_type": "recommendation",
+      "stated_text": "The new Digital Transformation Strategy 2023-2030 should therefore be more comprehensive and set clear policy objectives, associated with measurable targets and budgets, to improve both implementation and monitoring.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The OECD recommended that the Digital Transformation Strategy 2023-2030 set clear objectives with measurable targets and budgets.",
+      "location": {
+        "page": 42,
+        "page_end": null,
+        "section": "3. Promoting digital business skills in the Republic of Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "OECD",
+        "actor_id": "ACT-INT-0005"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "An OECD recommendation reported by the ministry, addressed to Moldova; recommendation type because it is addressed by another party. Theme doubtful: in a digital skills section, but the recommendation concerns the design of the digital transformation strategy itself.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "OECD recommendation on the design of the strategy; theme_doubtful resolved as in scope"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0047",
+      "information_type": "intervention",
+      "stated_text": "Moldova’s SME agency ODA (formerly ODIMM) has been developing programmes to support SME digitalisation, which included training and mentoring components, and plans to incorporate digitalisation as a crosscutting component in existing trainings.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The SME agency ODA has been developing SME digitalisation programmes with training and mentoring, and plans to add digitalisation across its trainings.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "3. Promoting digital business skills in the Republic of Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ODA (formerly ODIMM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "ODA programmes to support SME digitalisation",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Reported from the OECD review. Theme doubtful: SME digitalisation is a material example of TECH-DIGI, but the programmes are described mainly through training (digital skills).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "SME digitalisation programmes; theme_doubtful resolved as in scope, the training component is incidental"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0048",
+      "information_type": "intervention",
+      "stated_text": "The Law no. 48/2023  regulates the normative, organizational and cooperation framework in the field of cybersecurity, establishes the competence of public authorities and institutions in the field of cybersecurity, determines the general national crisis management framework in the field of cybersecurity, establishes requirements, measures and mechanisms to ensure network security and IT systems, which are essential for the functioning of society, and the management of cyber incidents.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Law no. 48/2023 on cybersecurity sets the framework, competences, crisis management and network and IT system security requirements.",
+      "location": {
+        "page": 43,
+        "page_end": 44,
+        "section": "5. Law no. 48 of 16.03.2023 on cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": "2023-03-16",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law no. 48 of 16.03.2023 on cybersecurity",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Law described as in force (adopted); the date is from the section heading.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0049",
+      "information_type": "intervention",
+      "stated_text": "The main objective of this normative act is the primary and partial transposition into national legislation of Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity in the Union, amending the Regulation ( EU) no. 910/2014 and Directive (EU) 2028/1972 and repealing Directive (EU) 2026/1148 (NIS Directive 2).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Law no. 48/2023 primarily and partially transposes the NIS 2 Directive (EU) 2022/2555.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "5. Law no. 48 of 16.03.2023 on cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law no. 48 of 16.03.2023 on cybersecurity (partial transposition of the NIS 2 Directive)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Directive numbers '2028/1972' and '2026/1148' are as printed in the source (presumably 2018/1972 and 2016/1148).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Partial transposition of the NIS 2 Directive"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0050",
+      "information_type": "intervention",
+      "stated_text": "The purpose of this law is to facilitate and streamline data exchange and interoperability within the public sector, as well as between the public and private sectors, i n order to increase the quality of public services provided, to create new electronic public services and to ensure information security.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Law no. 142/2018 aims to streamline data exchange and interoperability in and beyond the public sector and create new electronic public services.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "6. Law no. 142/2018 on data exchange and the Government Decision no. 211/2019 on the interoperability platform (MConnect)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law no. 142/2018 on data exchange and interoperability",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-027"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0051",
+      "information_type": "intervention",
+      "stated_text": "The Government of the Republic of Moldova has developed the interoperability platform (MConnect), which according to a rt. 3 of Law no. 142/2018, constitutes an information system, owned by the state, intended to ensure the exchange of data between the information systems owned by the participants in the data exchange.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government has developed the state-owned MConnect interoperability platform for data exchange between information systems.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "6. Law no. 142/2018 on data exchange and the Government Decision no. 211/2019 on the interoperability platform (MConnect)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Government of the Republic of Moldova",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "Interoperability platform (MConnect)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0052",
+      "information_type": "intervention",
+      "stated_text": "Owner and holder of the interoperability platform (MConnect), is designated  Electronic Governance Agency (EGA).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Electronic Governance Agency is designated owner and holder of the MConnect platform.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "6. Law no. 142/2018 on data exchange and the Government Decision no. 211/2019 on the interoperability platform (MConnect)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Electronic Governance Agency (EGA)",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "Designation of the Electronic Governance Agency as owner and holder of MConnect",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Designation of an institution recorded as an intervention (M2).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0053",
+      "information_type": "intervention",
+      "stated_text": "At the same time, potential data consumers, who do not have information systems capable of consuming data in an automated mode, can access the respective data using the \"Data with Authorized Access\" Module on the Governmental Data Portal (https://date.gov.md/).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Data consumers without automated systems can access data through the 'Data with Authorized Access' module of the Governmental Data Portal.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "6. Law no. 142/2018 on data exchange and the Government Decision no. 211/2019 on the interoperability platform (MConnect)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "\"Data with Authorized Access\" Module on the Governmental Data Portal",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Authorised access to administrative data for consumers without automated systems; not open data"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0054",
+      "information_type": "intervention",
+      "stated_text": "The concept of the \"Semantic Catalogue\" information system and the Reg ulation on how to keep the Register formed by the \"Semantic Catalogue\" information system were approved by HG323/2021.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The concept and register regulation of the Semantic Catalogue information system were approved by Government Decision 323/2021.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "7. Semantic Catalogue",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "\"Semantic Catalogue\" information system (HG323/2021)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Event date not recorded: only the decision number with its year is given.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Semantic Catalogue supports data exchange and the open data portal (see MDA-IO-2024-003-0012)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0055",
+      "information_type": "finding",
+      "stated_text": "The Republic of Moldova ranks modestly in terms of AI readiness, ranking 83rd in the AI Readiness Index 2022.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova ranks modestly in AI readiness, 83rd in the AI Readiness Index 2022.",
+      "location": {
+        "page": 45,
+        "page_end": null,
+        "section": "CONCLUSIONS",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The ministry's own judgement ('ranks modestly'); the rank itself is extracted as a metric at text page 15.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0056",
+      "information_type": "finding",
+      "stated_text": "There are all the necessary premises for the development of an ecosystem of data governance and AI in the Republic of Moldova that would alig n with the actions of the member states of the European Union and represent a vector of economic growth.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has all the necessary premises to develop a data governance and AI ecosystem aligned with EU member states' actions.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "EXECUTIVE SUMMARY",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Republic of Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). Follows the 'first iteration' finding (item 0005) as a separate claim. Repeated word for word at text page 23 (M3). 'alig n' is a conversion split, quoted as printed.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive general finding on the premises for an AI and data ecosystem"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0057",
+      "information_type": "intervention",
+      "stated_text": "It will also work with trusted data intermediaries to defin e the common data standard and technical safeguards to anonymize, secure and provide companies and researchers with access to this data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government will work with trusted data intermediaries to define common data standards and safeguards to anonymise and secure data for access.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "CONTEXT AND PROBLEM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "Government work with trusted data intermediaries to define the common data standard and technical safeguards for anonymised, secure access to data",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). 'It' is the Government (subject of the preceding sentences). A planned action in the White Book (M1: proposed); it adds to R7 and R8 (items 0018 and 0019) the joint definition of standards and anonymisation safeguards, so it is not a pure restatement (M3). 'defin e' is a conversion split, quoted as printed.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: safeguarded access to government data for companies and researchers through data intermediaries, rather than portal publication; read with -0018"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0058",
+      "information_type": "intervention",
+      "stated_text": "In the context of the aforementioned, public institutions, as well as private institutions, can use the interoperability platform to consume data, in an automated way, guided by the principle of legality of data exchange, i.e. starting from the underlying legal basis and legal purpose followed.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Public and private institutions can use the MConnect interoperability platform to consume data automatically, on a legal basis and purpose.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "6. Law no. 142/2018 on data exchange and the Government Decision no. 211/2019 on the interoperability platform (MConnect)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "public institutions, as well as private institutions",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Use of the MConnect interoperability platform by public and private institutions for automated data consumption",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). The sentence directly before item 0053 (the 'Data with Authorized Access' module, recorded as implemented); the same status is used here for consistency.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2024-005-0059",
+      "information_type": "intervention",
+      "stated_text": "The activity program  of the Government of the Republic of Moldova, which identifies digital transformation as one of the most important policy objectives for the next four years, is in line with the Association Agreement with the European Union and the UN 2030 Agenda for Sustainable Development.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government's activity programme identifies digital transformation as one of its most important policy objectives for the next four years.",
+      "location": {
+        "page": 41,
+        "page_end": 42,
+        "section": "2. Activity program of the Government of the Republic of Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-02",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Ministry of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the Government of the Republic of Moldova",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "Activity programme of the Government of the Republic of Moldova (digital transformation as a main policy objective)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). The programme is described as existing and is not named by date; 'adopted' from the wording 'identifies'. The quote runs over the page break; the printed page number is left out.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    }
+  ]
+}

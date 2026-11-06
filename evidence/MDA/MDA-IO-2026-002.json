@@ -1,0 +1,2237 @@
+{
+  "source_id": "MDA-IO-2026-002",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-5 read in full",
+    "notes": "Read in full (pages 1-5). English original. The brief has no chapter structure; all items concern foreign nationals' (beneficiaries of temporary protection) access to Moldova's labour market and are tagged Chapter 2 (cluster 2, chapter 02), following the convention of the G3 sample files. No theme items. The brief is dated November 2025 on its pages; the register records March 2026 from the PDF metadata (to confirm); period_covered is left empty as in the register, and the survey data are the SERHC 2024 (methodology, page 4), given as the reference period of metrics. Page headers and footers (\"Policy Brief #1 Republic of Moldova\", \"November 2025\", photo credits) and the section labels are interleaved with the text in the conversion; quotes avoid them. Section names are taken from the nearest printed label; the opening summary on page 1 has no heading. Short document: claims repeated between the opening summary and the detailed pages are extracted at each place (rules section 5; M3 applies to long documents). Left out: the count of Ukrainians who sought refuge (page 1), humanitarian context; household income bands and access to credit (page 2) and the recommendations to expand childcare services and microfinance (page 4), as general integration and financial inclusion rather than labour-market access; the methodology, acknowledgements and contacts (pages 4-5). Internal inconsistencies for pass 2, recorded as printed: paid work since arrival 29 percent (pages 1, 2, 3) against 34 percent (page 3); job seekers citing language 36 percent (pages 1, 2) against \"nearly half\" (page 2); experience and education 80 and 77 percent (page 2) against 81 and 76 percent (page 3). For the analyst: the childcare and wages barriers (-0016, -0017) are kept as stated barriers to employment; the analyst may treat them as outside the Chapter 2 boundary. Second-pass check (PC-05) by checker-GOV8c on 5 November 2026: 2 items added (review/RUN-2026-02/second_pass/MDA-IO-2026-002.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-IO-2026-002-0001",
+      "information_type": "finding",
+      "stated_text": "Over 130,000 Ukrainian refugees in Moldova, primarily skilled women, represent an untapped economic asset.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The brief says over 130,000 Ukrainian refugees in Moldova, mostly skilled women, are an untapped economic asset.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Opening summary (untitled)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0002",
+      "information_type": "metric",
+      "stated_text": "Despite documented labour shortages, only 29 percent of working-age refugees are in paid work.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Only 29 percent of working-age refugees are in paid work despite labour shortages.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Opening summary (untitled)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Working-age refugees in paid work",
+        "value": "29",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "The reference period is the SERHC 2024 survey on which the brief draws (page 4); the brief also gives 34 percent for paid work since arrival at page 3 (item -0024), and 29 percent at page 3 (item -0026).",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; employment rate of refugees"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0003",
+      "information_type": "barrier",
+      "stated_text": "Survey findings point to systemic barriers: language gaps (36 percent of job seekers), skills mismatch and non-recognition of diplomas (13 percent), and scarce, affordable childcare.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Survey findings point to language gaps, skills mismatch and non-recognition of diplomas, and scarce affordable childcare as barriers.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Opening summary (untitled)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Summary statement; the barriers are detailed at page 2.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; language, recognition of diplomas and childcare as barriers to employment"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0004",
+      "information_type": "finding",
+      "stated_text": "While Temporary Protection (TP) grants the right to work, these obstacles drive underemployment and reliance on social assistance.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Temporary protection grants refugees the right to work, but the obstacles drive underemployment and reliance on social assistance.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Opening summary (untitled)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "States the legal position (temporary protection grants the right to work) and that the barriers cause underemployment; recorded as a finding, though the second half could be read as a barrier.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "How temporary protection works in practice: the legal right to work exists but barriers drive underemployment"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0005",
+      "information_type": "recommendation",
+      "stated_text": "Recommended measures include sector-specific Romanian language programmes, fast-track credential recognition, expansion of subsidized childcare, micro-grants for entrepreneurship, and employer-focused job-matching through the Agenția Națională pentru Ocuparea Forței de Muncă (ANOFM)—Moldovan National Employment Agency.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Recommended: sector-specific Romanian courses, fast-track credential recognition, more subsidised childcare, entrepreneurship micro-grants and employer-focused job matching through ANOFM.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Opening summary (untitled)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Agenția Națională pentru Ocuparea Forței de Muncă (ANOFM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Summary of the recommendations set out at page 4.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; employer-focused job-matching through ANOFM"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0006",
+      "information_type": "barrier",
+      "stated_text": "Refugees seeking employment often encounter Romanian-language requirements, unclear regulations, informal hiring practices, scarce childcare, and limited access to credit, training, and information.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Refugees seeking jobs often face Romanian-language requirements, unclear regulations, informal hiring, scarce childcare and limited access to credit, training and information.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Context and Opportunity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0007",
+      "information_type": "finding",
+      "stated_text": "Testimonies reveal a large share of people who are unemployed, in precarious jobs, and experiencing rising psychological stress, even though labour shortages persist in agriculture, hospitality, social care, construction, and IT.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Testimonies show many refugees unemployed or in precarious jobs, although labour shortages persist in several sectors.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Context and Opportunity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0008",
+      "information_type": "finding",
+      "stated_text": "Temporary protection status formally grants unrestricted access to work, yet in practice, many refugees accept low-skilled positions because vacancies in their own professions are rare, and employers often require different skill sets.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Temporary protection formally gives unrestricted access to work, but many refugees take low-skilled jobs as vacancies in their professions are rare.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Context and Opportunity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "States the legal position and a cause of underemployment in one sentence; recorded as a finding, though the cause could be read as a barrier.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "How temporary protection works in practice: formal access to work but underemployment"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0009",
+      "information_type": "barrier",
+      "stated_text": "Fragmented, underfunded support services further blunt integration efforts.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Fragmented and underfunded support services weaken integration efforts.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Context and Opportunity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "\"Integration\" here follows the paragraph on refugees' access to work and employment.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-08",
+          "MEC-09"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; fragmented and underfunded support services"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0010",
+      "information_type": "metric",
+      "stated_text": "The potential is substantial as more than 80 percent of working-age refugee respondents (18–64 years) report having professional experience, 77 percent hold vocational or higher qualifications, and 63 percent are keen to join self-employment programmes.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Over 80 percent of working-age refugee respondents report professional experience, 77 percent vocational or higher qualifications, and 63 percent want self-employment programmes.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Human Capital",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Working-age refugee respondents (18-64) with professional experience; with vocational or higher qualifications; keen to join self-employment programmes",
+        "value": "more than 80; 77; 63",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "Page 3 gives 81 percent with experience and 76 percent with at least vocational or tertiary education (item -0024).",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; figures differ slightly from -0024"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0011",
+      "information_type": "metric",
+      "stated_text": "Only 29 percent, however, have found paid work, over half of households rely mainly on social assistance, and nearly half of job seekers cite insufficient Romanian language as their primary barrier to employment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Only 29 percent found paid work; over half of households rely on social assistance; nearly half of jobseekers cite Romanian as the main barrier.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Human Capital",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Refugees who have found paid work; households relying mainly on social assistance; job seekers citing insufficient Romanian as primary barrier",
+        "value": "29; over half; nearly half",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "\"Nearly half\" of job seekers citing language differs from the 36 percent given at page 1 and page 2 (items -0003 and -0013); recorded as printed.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; language figure differs from -0003 and -0013"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0012",
+      "information_type": "recommendation",
+      "stated_text": "Targeted language courses, affordable childcare, streamlined recognition of qualifications, and coordinated funding could unlock the potential of this workforce and benefit Moldova’s economy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Targeted language courses, affordable childcare, streamlined recognition of qualifications and coordinated funding could unlock this workforce's potential.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Human Capital",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": "Phrased as what could unlock the potential (\"could\"), read as a recommendation.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0013",
+      "information_type": "barrier",
+      "stated_text": "Limited Romanian language skills are the most frequently cited obstacle for adult refugees. Approximately 36 percent of refugees report this as a significant barrier to employment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Limited Romanian is the obstacle adult refugees cite most; about 36 percent call it a significant barrier to employment.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Obstacles to Economic Participation – Language Barriers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one claim; the figure could also be a metric.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0014",
+      "information_type": "barrier",
+      "stated_text": "Around 13 percent of refugees cannot find job openings relevant to their professional background or education level. This leads to underemployment or engaging in time-bound/seasonal employment, as many highly skilled individuals are offered low-skilled jobs or jobs outside their expertise.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 13 percent of refugees find no jobs matching their background, leading to underemployment or seasonal work.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Obstacles to Economic Participation – Mismatch of Skills and Jobs",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one claim.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0015",
+      "information_type": "barrier",
+      "stated_text": "Barriers to the recognition of foreign credentials also persist.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Barriers to recognising foreign credentials persist.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Obstacles to Economic Participation – Mismatch of Skills and Jobs",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; recognition of foreign credentials"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0016",
+      "information_type": "barrier",
+      "stated_text": "A lack of affordable childcare is a major constraint, especially since most refugees are women and often sole caregivers. While this issue is common for both refugees and host community members, 11 percent of refugee households cited limited access to childcare as a barrier to employment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Lack of affordable childcare is a major constraint for refugee women; 11 percent of refugee households cite it as a barrier to employment.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Obstacles to Economic Participation – Limited Childcare Options",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one claim. Extracted because the brief states childcare as a barrier to employment; childcare policy itself is outside Chapter 2.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; childcare as a stated barrier to employment; childcare policy itself is outside Chapter 2"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0017",
+      "information_type": "barrier",
+      "stated_text": "Around 10 percent of refugees perceive that salaries in Moldova are too low compared to what they earned in Ukraine. The income gap, combined with rising inflation and living costs, can discourage skilled refugees from accepting offers of employment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 10 percent of refugees find Moldovan salaries too low, which can discourage skilled refugees from accepting jobs.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Obstacles to Economic Participation – Lower Wages & Limited Access to Credit",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one claim. The following paragraph on household income and access to credit is not extracted (poverty and financial inclusion).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; wage gap as a stated barrier to accepting employment"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0018",
+      "information_type": "metric",
+      "stated_text": "Around 2 percent of refugees lack information on how and where to look for jobs in Moldova. For 39 percent, support with identification and job matching is the most preferred form of assistance to secure employment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 2 percent of refugees lack information on job searching; 39 percent most prefer support with job identification and matching.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Information Gaps & Limited Uptake of ANOFM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Refugees lacking information on how and where to look for jobs; refugees preferring job identification and matching support",
+        "value": "2; 39",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "Two sentences, one metric item.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0019",
+      "information_type": "finding",
+      "stated_text": "Formal employment services, like ANOFM, remain underutilized.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Formal employment services such as ANOFM remain underused by refugees.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Information Gaps & Limited Uptake of ANOFM",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Agenția Națională pentru Ocuparea Forței de Muncă (ANOFM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Use of the public employment service by refugees"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0020",
+      "information_type": "finding",
+      "stated_text": "While the legal framework is not the primary barrier, administrative challenges can still slow down labour market integration.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The legal framework is not the main barrier, but administrative challenges can slow refugees' labour market integration.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Employer Reluctance",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; administrative challenges rather than the legal framework"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0021",
+      "information_type": "barrier",
+      "stated_text": "Some employers are reluctant to hire refugees due to assumed legal complexities or limited awareness of candidates’ skills and qualifications.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Some employers are reluctant to hire refugees because of assumed legal complexity or limited awareness of their skills.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Employer Reluctance",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "employers",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0022",
+      "information_type": "barrier",
+      "stated_text": "Although language proficiency is the most frequently cited individual barrier, a broader analysis suggests that structural weaknesses in Moldova’s labour market—such as skills mismatches, low wages, and limited job availability—represent the main constraints to employment. Taken together, these systemic factors outweigh specific integration challenges such as language or childcare needs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The brief's analysis suggests structural labour market weaknesses, not language or childcare, are the main constraints on refugees' employment.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Employer Reluctance",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": "Two sentences on one claim. The sentence that follows (need for longer-term reforms) is extracted separately as item -0023.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; source judges general labour market weaknesses to be the main constraints, which matters for the gap judgement"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0023",
+      "information_type": "recommendation",
+      "stated_text": "This indicates that many of the key impediments are structural and affect both refugees and the host population, pointing to the need for longer-term labour market and economic reforms rather than short-term programmatic interventions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The brief says the impediments are structural and call for longer-term labour market and economic reforms rather than short-term programmes.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Employer Reluctance",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Could be read as a lesson (what matters and why) or as a recommendation (the need for longer-term reforms); recorded as a recommendation. It concerns the labour market generally, affecting refugees and the host population.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Recommends general labour market and economic reforms affecting refugees and the host population alike; general labour-market policy is outside the Chapter 2 boundary (run record)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0024",
+      "information_type": "metric",
+      "stated_text": "76 percent of adult refugees have at least vocational or tertiary education, and 81 percent report having previous professional work experience. However, only 34 percent have engaged in paid work since arriving in Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "76 percent of adult refugees have vocational or tertiary education and 81 percent work experience, but only 34 percent have had paid work in Moldova.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Key Prospects and Opportunities – Strong Skills and Experience",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Adult refugees with at least vocational or tertiary education; with previous work experience; engaged in paid work since arrival",
+        "value": "76; 81; 34",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "The 34 percent differs from the 29 percent given for paid work since arrival a few lines below (item -0026) and at pages 1 and 2; recorded as printed. Quote starts after the label \"Strong Skills and Experience:\".",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; 34 percent conflicts with 29 percent at -0026 (for the contradiction review)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0025",
+      "information_type": "metric",
+      "stated_text": "Refugees demonstrate strong motivation to become self-reliant, with 22 percent actively looking for work in the four weeks before the survey. Notably, 63 percent expressed interest in a self-employment support programme.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "22 percent of refugees were actively seeking work in the four weeks before the survey; 63 percent want a self-employment programme.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Key Prospects and Opportunities – Willingness to Work and Adapt",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Refugees actively looking for work in the four weeks before the survey; interested in a self-employment support programme",
+        "value": "22; 63",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "Quote starts after the label \"Willingness to Work and Adapt:\".",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0026",
+      "information_type": "metric",
+      "stated_text": "Despite the challenges, around 29 percent of refugees have engaged in paid work since arriving in Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 29 percent of refugees have had paid work since arriving in Moldova.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Key Prospects and Opportunities – Partial Employment Gains",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Refugees engaged in paid work since arrival",
+        "value": "around 29",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": "Conflicts with 34 percent for the same indicator in item -0024; recorded as printed.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; 29 percent conflicts with 34 percent at -0024 (for the contradiction review)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0027",
+      "information_type": "metric",
+      "stated_text": "Most employed refugees (around 61 percent) found jobs through friends or acquaintances, highlighting the role of informal networks and community connections in facilitating employment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "About 61 percent of employed refugees found jobs through friends or acquaintances.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Key Prospects and Opportunities – Supportive Social Networks",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Employed refugees who found jobs through friends or acquaintances",
+        "value": "around 61",
+        "unit": "percent",
+        "reference_period": "SERHC 2024 survey"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0028",
+      "information_type": "recommendation",
+      "stated_text": "Expand employment-focused Romanian language courses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Expand employment-focused Romanian language courses for refugees.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Recommendations – Human Capital",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0029",
+      "information_type": "recommendation",
+      "stated_text": "Implement fast-track diploma recognition programmes and organize refugee employment fairs, complemented by increased outreach and strengthened assistance through ANOFM.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Introduce fast-track diploma recognition and refugee job fairs, with more outreach and assistance through ANOFM.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Recommendations – Human Capital",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Agenția Națională pentru Ocuparea Forței de Muncă (ANOFM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0030",
+      "information_type": "recommendation",
+      "stated_text": "Simplify procedures for registering self-employment and/or establishing an individual legal entity and provide micro-grants alongside mentorship to support refugee entrepreneurship.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Simplify registration of self-employment or an individual legal entity and give refugees micro-grants with mentoring.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Recommendations – Care and Finance",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Extracted as access of foreign nationals to self-employment; the other Care and Finance recommendations (childcare services, microfinance) are not extracted.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; access of foreign nationals to self-employment"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0031",
+      "information_type": "recommendation",
+      "stated_text": "Continue providing legal work permits and actively promote employment opportunities to both refugees and local businesses.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Continue providing legal work permits and promote employment opportunities to refugees and local businesses.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "Recommendations – Information and Administrative",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0032",
+      "information_type": "recommendation",
+      "stated_text": "Implemented through clear lead agencies and partner coordination, these measures can accelerate inclusion and reduce fiscal pressure.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The recommended measures should be implemented through clear lead agencies and partner coordination, which can speed inclusion and reduce fiscal pressure.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "(opening summary, no heading)",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged",
+        "ambiguous_type"
+      ],
+      "extraction_note": "Second-pass addition (PC-05). Refers to the measures listed in the preceding sentence (item -0005). Read as a recommendation on how to implement them; it could also be read as a finding on their likely effect (\"can\"), hence ambiguous_type and hedged.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014; how to implement the measures at -0005"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2026-002-0033",
+      "information_type": "finding",
+      "stated_text": "The Ukrainian refugee population in Moldova presents a significant talent pool that could be leveraged better in the labour market",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Ukrainian refugees in Moldova are a significant talent pool that could be better used in the labour market.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Key Prospects and Opportunities",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-03",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "UNHCR",
+        "actor_id": "ACT-INT-0011"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ukrainian refugees in Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": "Second-pass addition (PC-05). Lead statement of the section, a claim of its own (rules section 5); the converted text has no full stop. Similar in substance to the opening claim on page 1 (item -0001) but worded differently; short document, so extracted at each place (pass 2 may link with same_as_earlier).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ukrainian refugees with temporary protection are third-country workers: RI-FMW-014"
+      }
+    }
+  ]
+}

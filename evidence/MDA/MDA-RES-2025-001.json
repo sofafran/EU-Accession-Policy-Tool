@@ -4,17 +4,21 @@
     "run_id": "RUN-2026-02",
     "rules_version": "0.5",
     "extracted_at": "2026-11-03",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "84-85, 89, 103-105, 108, 149-157; keyword screen of the whole text",
-    "notes": "Sample extraction under rules 0.5. Romanian source; all quotes in ro with agent machine translation (confidence capped at Medium). Read in full: Chapter II conclusions (pages 103-105), Chapter III conclusions (pages 149-150), general conclusions and recommendations (pages 151-157); read in context: de lege ferenda proposals and keyword hits in Chapters II and III (pages 82-85, 88-89, 108). Keyword screen of the whole text: lege ferenda, propunem, propunere, lacun, deficien, birocra, Ghișeu/Ghișul unic, ANOFM, ANMFO, digital, electronic, portal, Transnistr, EURES, Directiv, securității sociale, asigurări sociale, discrimin, ilegal, Inspec. Not extracted: general doctrine and literature review (Chapter I, sections 1.1-1.4, and conclusions 1-6, 9 and 14-15 on doctrine); descriptions of Romanian and Austrian law; the action plan under Government Decision No. 736/2016 and the strategy's point 25 on illegal migration (page 47, before the time window and described, not assessed); ANOFM salary data of 11.09.2018 (pages 42-43, before the window); the e-visa portal and biometric data collection (pages 66-67, 83, visa procedure described from the law); the recommendation on research grants (page 156, recommendation 1) and on sector policies for agriculture, medicine and other fields (page 157, recommendation 6), both outside the Chapter 2 boundary; recruitment methods and LinkedIn (pages 99-105). No mention of Transnistria, EURES, social security coordination or EU workers' rights in Moldova was found. The thesis is inconsistent on Law No. 180/2008 (presented as the main law on pages 84-85, 103 and 149-150, stated to be repealed on page 156); items -0003, -0014 and -0026 note this for pass 2.",
+    "notes": "Sample extraction under rules 0.5. Romanian source; all quotes in ro with agent machine translation (confidence capped at Medium). Read in full: Chapter II conclusions (pages 103-105), Chapter III conclusions (pages 149-150), general conclusions and recommendations (pages 151-157); read in context: de lege ferenda proposals and keyword hits in Chapters II and III (pages 82-85, 88-89, 108). Keyword screen of the whole text: lege ferenda, propunem, propunere, lacun, deficien, birocra, Ghișeu/Ghișul unic, ANOFM, ANMFO, digital, electronic, portal, Transnistr, EURES, Directiv, securității sociale, asigurări sociale, discrimin, ilegal, Inspec. Not extracted: general doctrine and literature review (Chapter I, sections 1.1-1.4, and conclusions 1-6, 9 and 14-15 on doctrine); descriptions of Romanian and Austrian law; the action plan under Government Decision No. 736/2016 and the strategy's point 25 on illegal migration (page 47, before the time window and described, not assessed); ANOFM salary data of 11.09.2018 (pages 42-43, before the window); the e-visa portal and biometric data collection (pages 66-67, 83, visa procedure described from the law); the recommendation on research grants (page 156, recommendation 1) and on sector policies for agriculture, medicine and other fields (page 157, recommendation 6), both outside the Chapter 2 boundary; recruitment methods and LinkedIn (pages 99-105). No mention of Transnistria, EURES, social security coordination or EU workers' rights in Moldova was found. The thesis is inconsistent on Law No. 180/2008 (presented as the main law on pages 84-85, 103 and 149-150, stated to be repealed on page 156); items -0003, -0014 and -0026 note this for pass 2. Stage 8 (2026-11-05): status set from sample to complete; extracted in full at the G3 sample under rules 0.5 with its second pass (review/RUN-2026-02/second_pass/), so not re-extracted (G4-D09: rules 0.6 apply without re-extraction).",
     "codebook_version": "1.3",
     "themes_version": "1.3",
     "run_country": "MDA",
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -73,7 +77,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same conclusion repeated at -0019 (same_as_earlier)"
       }
     },
     {
@@ -132,7 +143,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The acts referred to are Government Decision No. 736/2016 (action plan 2016-2020) and No. 115/2018 (list of priority occupations), named in the preceding sentence. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -186,7 +204,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The thesis is internally inconsistent on Law No. 180/2008: here it is presented as the main law in force, while general recommendation 2 (page 156) states that it was repealed and merged into Law No. 200/2010. Recorded as stated; pass 2 to link with a contradicts link.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Source treats Law No. 180/2008 both as the main law in force (-0003, -0008) and as repealed and merged into Law No. 200/2010 (-0025, -0026); not resolved here, for the contradiction review"
       }
     },
     {
@@ -240,7 +265,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -294,7 +326,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -348,7 +387,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same claim at -0022 (same_as_earlier)"
       }
     },
     {
@@ -402,7 +448,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). \"exhaustivă\" may mean either complete (closed list) or extensive; the translation keeps the literal word. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -461,7 +514,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Bracketed footnote references kept as printed. The sentence is ambiguous on whether Law No. 452/2023 introduced the employer-pays rule or only amended it. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -522,7 +582,16 @@
       ],
       "extraction_note": "Translation by the extraction agent (machine translation). The provision is Art. 7(1)(a) of Law No. 180/2008 (copy of the job advertisement published in the press). Could also be read as a recommendation (\"must be replaced\"); finding chosen because the main claim is the assessment. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Job-advertisement requirement of Law No. 180/2008 judged ineffective for applicants abroad"
       }
     },
     {
@@ -586,7 +655,16 @@
       ],
       "extraction_note": "Translation by the extraction agent (machine translation). Online publication of vacancies, including on government platforms: unclear whether the online channel is the subject or incidental to the advertising requirement. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The digital form is a tool within the Chapter 2 measure; not assigned to a TEC issue (incidental IT tool within another reform); theme_doubtful (TECH-DGOV) not confirmed for a TEC issue"
       }
     },
     {
@@ -640,7 +718,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -694,7 +781,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Shares its quote with the next item (recommendation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0013 (recommendation); same classification"
       }
     },
     {
@@ -748,7 +844,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Shares its quote with the previous item (finding). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0012 (finding)"
       }
     },
     {
@@ -802,7 +907,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The thesis is internally inconsistent on Law No. 180/2008: here it is presented as the main law in force, while general recommendation 2 (page 156) states that it was repealed and merged into Law No. 200/2010. Recorded as stated; pass 2 to link with a contradicts link.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Source treats Law No. 180/2008 both as the main law in force (-0003, -0008) and as repealed and merged into Law No. 200/2010 (-0025, -0026); not resolved here, for the contradiction review"
       }
     },
     {
@@ -856,7 +968,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -912,7 +1031,14 @@
       ],
       "extraction_note": "Translation by the extraction agent (machine translation). A doctrinal classification phrased normatively (\"trebuie\"); recommendation chosen, finding also possible. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -966,7 +1092,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same claim at -0052 (same_as_earlier)"
       }
     },
     {
@@ -1020,7 +1155,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Information technology appears here as a sector of employment, not a technology issue; no theme tag. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1079,7 +1221,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Same claim as in the Chapter II conclusions (page 103). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same conclusion as -0001 (same_as_earlier)"
       }
     },
     {
@@ -1138,7 +1287,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Same claim as page 103. \"constăm\" printed for \"constatăm\". The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Close restatement of -0002 (same_as_earlier)"
       }
     },
     {
@@ -1197,7 +1353,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Event date is the approval of the 2022-2025 programme. Law No. 180/2008, named as the main law on page 103, is not listed here. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1251,7 +1414,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Same claim as page 104. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same claim as -0006 (same_as_earlier)"
       }
     },
     {
@@ -1305,7 +1475,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Page 84 places the same list in Art. 7(1) of Law No. 180/2008. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same claim as -0007, attributed to Law No. 200/2010"
       }
     },
     {
@@ -1359,7 +1536,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1413,7 +1599,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Source treats Law No. 180/2008 both as the main law in force (-0003, -0008) and as repealed and merged into Law No. 200/2010 (-0025, -0026); not resolved here, for the contradiction review"
       }
     },
     {
@@ -1472,7 +1667,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Status reversed: the law is stated to be repealed; no repeal date is given. The thesis is internally inconsistent on Law No. 180/2008: here (general recommendation 2, page 156) it is stated to be repealed and merged into Law No. 200/2010, while pages 84-85, 103 and 149-150 present it as the main law in force. Recorded as stated; pass 2 to link with a contradicts link. The author's own view (doctoral thesis). Note corrected at the G3 check: it previously said that this passage presents the law as in force.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Source treats Law No. 180/2008 both as the main law in force (-0003, -0008) and as repealed and merged into Law No. 200/2010 (-0025, -0026); not resolved here, for the contradiction review"
       }
     },
     {
@@ -1526,7 +1728,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Procedure judged bureaucratic"
       }
     },
     {
@@ -1589,7 +1798,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). \"ANMFO\" as printed, probably the National Employment Agency (ANOFM); \"Ghișul unic\" as printed, the One-Stop Shop for documenting foreigners. Quote crosses a line-break hyphen in \"angaja-torul\". The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Barrier persists despite the One-Stop Shop"
       }
     },
     {
@@ -1651,7 +1867,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). Clear-cut TECH-DGOV: an online form used directly by employers for a public procedure. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The digital form is a tool within the Chapter 2 measure; not assigned to a TEC issue (incidental IT tool within another reform)"
       }
     },
     {
@@ -1705,7 +1928,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Wage condition for foreign employees"
       }
     },
     {
@@ -1759,7 +1991,16 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1818,7 +2059,14 @@
       "flags": [],
       "extraction_note": "Translation by the extraction agent (machine translation). The list is the List of priority occupations (Government Decision No. 115/2018), named elsewhere in the thesis. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "List of priority occupations (Government Decision No. 115/2018) judged too general"
       }
     },
     {
@@ -1882,7 +2130,14 @@
       ],
       "extraction_note": "Translation by the extraction agent (machine translation). The digital form is the means; the subject is identifying labour needs for the occupations list. TECH-DGOV doubtful. The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The digital form is a tool within the Chapter 2 measure; not assigned to a TEC issue (incidental IT tool within another reform); theme_doubtful (TECH-DGOV) not confirmed for a TEC issue"
       }
     },
     {
@@ -1941,7 +2196,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). \"This document\" is the Programme on managing migration flows, asylum and integration of foreigners for 2022-2025 (Government Decision No. 808/2022), named in the preceding sentence.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "On the 2022-2025 migration programme"
       }
     },
     {
@@ -1995,7 +2257,12 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Harmonisation with the EU migration and asylum acquis is Chapter 24 (as G4-D03)"
       }
     },
     {
@@ -2058,7 +2325,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). Bracketed reference numbers kept as printed. The electronic submission option is incidental; no theme tag.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014"
       }
     },
     {
@@ -2112,7 +2386,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). The claim describes the current institutional set-up; the 2010 decision date is the event stated, so no out_of_window flag (rule 7).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2176,7 +2457,14 @@
       ],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). TECH-DATA doubtful: the database is the One-Stop Shop for documenting foreigners, a sector service; the claim is mainly about service provision to foreigners.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Database of the One-Stop Shop for foreigners; TECH-DATA tag incidental, theme_doubtful not confirmed for a TEC issue"
       }
     },
     {
@@ -2230,7 +2518,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2284,7 +2579,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2343,7 +2645,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2397,7 +2706,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). Shares its quote with the next item (recommendation). The thesis is internally inconsistent on Law No. 180/2008 (presented as in force here, stated to be repealed on page 156; see -0003 and -0026).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0043 (recommendation)"
       }
     },
     {
@@ -2456,7 +2774,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). Shares its quote with the previous item (finding).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0042 (finding)"
       }
     },
     {
@@ -2510,7 +2837,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). The provision is Art. 7(2) of Law No. 180/2008, quoted in the preceding paragraph.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Labour market test (domestic candidates proposed first)"
       }
     },
     {
@@ -2564,7 +2898,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). The quote starts at the claim; the sentence opens with a reference to the principle of good faith. Related to -0011.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2618,7 +2961,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Close restatement at -0051 (same_as_earlier)"
       }
     },
     {
@@ -2677,7 +3027,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). The definition is Art. 45 of the Labour Code, quoted in the preceding paragraph.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2734,7 +3091,15 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). The preceding sentence says foreign citizens can check on servicii.gov.md whether an employer exists as a legal person. Outside the sample pages read by the extractor; found by keyword screen (portal).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "National public services portal, with English option, as used by foreign workers"
       }
     },
     {
@@ -2793,7 +3158,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). The law mentioned is Law No. 180/2008, named in the preceding sentence. The thesis is internally inconsistent on Law No. 180/2008 (presented as in force here, stated to be repealed on page 156; see -0003 and -0026).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Annex 1 to Law No. 180/2008"
       }
     },
     {
@@ -2847,7 +3219,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). Same claim as -0004 (page 104), in the general conclusions.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same conclusion as -0004 (same_as_earlier)"
       }
     },
     {
@@ -2901,7 +3280,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). Same claim as -0046 (page 104).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Close restatement of -0046 (same_as_earlier)"
       }
     },
     {
@@ -2955,7 +3341,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Translation by the extraction agent (machine translation). The author's own view (doctoral thesis). Same claim as -0017 (page 150), in the general conclusions (conclusion 15).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same claim as -0017 (same_as_earlier)"
       }
     }
   ]

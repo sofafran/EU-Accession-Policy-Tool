@@ -4,17 +4,21 @@
     "run_id": "RUN-2026-02",
     "rules_version": "0.5",
     "extracted_at": "2026-11-03",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "9, 96-109 (Service delivery, whole); keyword screen of the whole text",
-    "notes": "Sample extraction under rules 0.5. Covered: executive summary (page 9, service delivery paragraph) and the whole Service delivery area (pages 96-109: summary and recommendations, Principles 1 to 4). Keyword screen of the whole text: digital, digitalis, e-service, electronic, interoperab, MConnect, MSign, MPass, MPay, e-signature, eID, e-ID, identity card, register, data protection, personal data, cyber, artificial, foreign, migra, work permit, MTender. No material on foreign workers or Chapter 2 found (\"foreign\" hits are the Ministry of Foreign Affairs and foreign-currency debt). No artificial intelligence, personal data protection or cybersecurity claims found (ITCSS appears only as an agency name). Not covered in this sample and left for full extraction: the e-procurement portal MTender (executive summary page 9, PFM summary page 112, public procurement analysis pages 138-145), which meets the TECH-DGOV test as a portal used by bidders; HRMIS and the employee salary register (pages 55, 59) and the e-integrity system (page 79), which are back-office systems and probably out under the materiality test. Service delivery items on administrative simplification, quality management, the Administrative Code and accessibility for people with disabilities were not extracted (no digital subject). Website accessibility items are flagged theme_doubtful. Page numbers are the converted-text page markers (printed page = marker minus one).",
+    "notes": "Sample extraction under rules 0.5. Covered: executive summary (page 9, service delivery paragraph) and the whole Service delivery area (pages 96-109: summary and recommendations, Principles 1 to 4). Keyword screen of the whole text: digital, digitalis, e-service, electronic, interoperab, MConnect, MSign, MPass, MPay, e-signature, eID, e-ID, identity card, register, data protection, personal data, cyber, artificial, foreign, migra, work permit, MTender. No material on foreign workers or Chapter 2 found (\"foreign\" hits are the Ministry of Foreign Affairs and foreign-currency debt). No artificial intelligence, personal data protection or cybersecurity claims found (ITCSS appears only as an agency name). Not covered in this sample and left for full extraction: the e-procurement portal MTender (executive summary page 9, PFM summary page 112, public procurement analysis pages 138-145), which meets the TECH-DGOV test as a portal used by bidders; HRMIS and the employee salary register (pages 55, 59) and the e-integrity system (page 79), which are back-office systems and probably out under the materiality test. Service delivery items on administrative simplification, quality management, the Administrative Code and accessibility for people with disabilities were not extracted (no digital subject). Website accessibility items are flagged theme_doubtful. Page numbers are the converted-text page markers (printed page = marker minus one). Stage 8 (2026-11-05): status set from sample to complete; extracted in full at the G3 sample under rules 0.5 with its second pass (review/RUN-2026-02/second_pass/), so not re-extracted (G4-D09: rules 0.6 apply without re-extraction).",
     "codebook_version": "1.3",
     "themes_version": "1.3",
     "run_country": "MDA",
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -75,7 +79,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -136,7 +147,15 @@
       "flags": [],
       "extraction_note": "The passage describes the strategy without stating whether it is adopted or implemented; the executive summary (page 7) says the Government has enacted a new PAR strategy but not implemented it yet.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -197,7 +216,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Role of the newly merged ministry still being defined"
       }
     },
     {
@@ -266,7 +292,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Institutional set-up for service modernisation (positive)"
       }
     },
     {
@@ -327,7 +360,14 @@
       "flags": [],
       "extraction_note": "The figures differ from the 718 and 276 given on pages 9 and 99.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -383,7 +423,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -444,7 +491,14 @@
       "flags": [],
       "extraction_note": "The sentence continues on page 97 (\"the use of which is growing quickly .\") after a running footer (\"Service delivery\") that the quote check does not skip, so the quote stops at the end of the main clause on page 96; the growth claim is covered by the next item.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -505,7 +559,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -566,7 +627,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -627,7 +695,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -683,7 +758,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -744,7 +826,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Two parallel portals, one of limited coverage"
       }
     },
     {
@@ -807,7 +896,16 @@
       ],
       "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-039"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "G4-D05: accessibility of government websites; guidelines in place but not complied with; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -863,7 +961,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -927,7 +1032,15 @@
       ],
       "extraction_note": "Service redesign is mainly administrative simplification; automation and technological barriers make the digital element part of the subject, but it is not the only subject.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Life-event service redesign and automation; theme_doubtful resolved as in scope since the redesign is for digital delivery"
       }
     },
     {
@@ -992,7 +1105,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1053,7 +1173,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1117,7 +1244,15 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "SIGMA indicator scores on digital service policy and central coordination"
       }
     },
     {
@@ -1174,7 +1309,15 @@
       "flags": [],
       "extraction_note": "“it” refers to the PAR Strategy 2023-2030 named in the preceding sentence. Status not stated in the passage.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Includes digitalised local public administration (RI-TEC-037)"
       }
     },
     {
@@ -1236,7 +1379,14 @@
       "flags": [],
       "extraction_note": "Status proposed: the next sentence calls it a draft strategy.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1297,7 +1447,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Overlap between the draft digital strategy and the PAR Strategy"
       }
     },
     {
@@ -1362,7 +1521,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Accountability for digitalisation after the merger into the ministry"
       }
     },
     {
@@ -1430,7 +1598,14 @@
       ],
       "extraction_note": "“is needed” could be read as a barrier (lack of political support) or a recommendation; recommendation chosen. The digital element is joint digitalisation work, but the subject is administrative simplification.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Political support for radical service redesign; theme_doubtful resolved as in scope since the redesign is for digitalised services"
       }
     },
     {
@@ -1491,7 +1666,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Partially digitalised municipal construction permit service"
       }
     },
     {
@@ -1552,7 +1734,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1608,7 +1797,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1669,7 +1865,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1730,7 +1933,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1791,7 +2001,14 @@
       "flags": [],
       "extraction_note": "The score is the online service component of the index named in the preceding sentence.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1856,7 +2073,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "New electronic identity card to promote digital service use; Regulation (EU) 2019/1157 on identity card security is context only"
       }
     },
     {
@@ -1917,7 +2142,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Digital payment exists but is not integrated in the service process"
       }
     },
     {
@@ -1973,7 +2206,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2029,7 +2269,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Citizens' low electronic filing of personal income tax contrasts with businesses; the issue is framed on the range of services, so this is a use rather than range fit"
       }
     },
     {
@@ -2093,7 +2340,15 @@
       ],
       "extraction_note": "Tax e-service (TECH-DGOV) is clear; TECH-DATA (reuse of state register data) is doubtful.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Register data not fully used by the tax service to spare citizens filings (once-only)"
       }
     },
     {
@@ -2161,7 +2416,16 @@
       ],
       "extraction_note": "Governance of digitalisation is implied by the ministry's remit (page 99) but not stated here. “is needed” could be a recommendation; finding chosen as it sits in the conclusion.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Unclear division of roles between the ministry and the State Chancellery; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -2217,7 +2481,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2273,7 +2544,14 @@
       "flags": [],
       "extraction_note": "“The Law” is the Law on Public Services, adopted on 23 December 2021 per the preceding sentence.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2334,7 +2612,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Interoperability infrastructure (MConnect)"
       }
     },
     {
@@ -2398,7 +2683,16 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "SIGMA indicator scores: interoperability, common service standards, e-signature recognition and affordability"
       }
     },
     {
@@ -2461,7 +2755,14 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2525,7 +2826,14 @@
       ],
       "extraction_note": "It is not stated whether the register is electronic; TECH-DATA doubtful.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Register of public services and life events; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -2586,7 +2894,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2642,7 +2957,15 @@
       "flags": [],
       "extraction_note": "The quote keeps the footnote number 211 as printed in the text. Law number from footnote 211.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-027"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Legal obligation to exchange data only through the interoperability solution, with sanctions"
       }
     },
     {
@@ -2698,7 +3021,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2754,7 +3084,14 @@
       "flags": [],
       "extraction_note": "Same figures as page 97.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same claim as MDA-IO-2023-001-0008 (same_as_earlier)"
       }
     },
     {
@@ -2824,7 +3161,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Civil status requests registered by three authorities: legacy problem with base registers"
       }
     },
     {
@@ -2891,7 +3236,14 @@
       ],
       "extraction_note": "A civil status register system; whether this is a base-register data issue (TECH-DATA) or a back-office sector system is doubtful.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Civil status register system is a base register; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -2963,7 +3315,16 @@
       ],
       "extraction_note": "Same doubt as the SI ASC item.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Two of three authorities record on paper although the system exists; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -3028,7 +3389,14 @@
       "flags": [],
       "extraction_note": "Decision number from footnote 212. Digital transformation governance (control of ICT investment).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Coordination of ICT procurement plans and budgets by the e-Governance Agency"
       }
     },
     {
@@ -3090,7 +3458,15 @@
       "flags": [],
       "extraction_note": "The quote keeps the footnote number 213 attached to “Systems” as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3151,7 +3527,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "No user involvement in service design"
       }
     },
     {
@@ -3212,7 +3595,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3268,7 +3658,14 @@
       "flags": [],
       "extraction_note": "Shares its quote with the next item (metric). Footnote number 215 kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3324,7 +3721,14 @@
       "flags": [],
       "extraction_note": "Shares its quote with the previous item (intervention).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0053, extracted as metric"
       }
     },
     {
@@ -3391,7 +3795,14 @@
       ],
       "extraction_note": "Could be a barrier to uptake, but the passage does not itself say the costs prevent uptake; finding chosen. “EUR 6.5216” is EUR 6.5 followed by footnote 216, kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Cost and in-person token collection make e-signature cumbersome for citizens"
       }
     },
     {
@@ -3452,7 +3863,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3508,7 +3926,16 @@
       "flags": [],
       "extraction_note": "Law number and entry into force (10 December 2022) from footnote 215. Partial transposition is the source's own judgement.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Partial transposition of eIDAS stated"
       }
     },
     {
@@ -3569,7 +3996,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3630,7 +4064,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "No comparative data on user-centricity as Moldova is not in the eGovernment Benchmark"
       }
     },
     {
@@ -3691,7 +4134,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3753,7 +4203,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Digital signature system functional but little used by citizens"
       }
     },
     {
@@ -3814,7 +4274,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Shared payment solution not integrated into digital services"
       }
     },
     {
@@ -3877,7 +4347,16 @@
       ],
       "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-039"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "G4-D05: accessibility of government websites to WCAG 2.0; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -3938,7 +4417,14 @@
       "flags": [],
       "extraction_note": "“Its” refers to the PSA, named in the preceding sentences. Type changed from finding to intervention at the G3 check: the sentence describes named portals in operation and makes no judgement (rule 3, named system).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3996,7 +4482,14 @@
       ],
       "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself). Reference period removed at the G3 check: no period is stated in the quote.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-039"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Accessibility errors on government websites (G4-D05); theme_doubtful resolved as in scope"
       }
     },
     {
@@ -4059,7 +4552,14 @@
       ],
       "extraction_note": "Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government (online channel accessibility rather than a digital service itself).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-039"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "In the passage on website accessibility (Principle 4); a unified interface may also serve general web design, so the fit is moderate"
       }
     },
     {
@@ -4120,7 +4620,15 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Low scores for individual services, some run by sector bodies"
       }
     },
     {
@@ -4182,7 +4690,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Footnote number 205 kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4243,7 +4758,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Shares its quote with -0029 (metric): the sentence makes a finding and gives a metric (rule 1, two types in one sentence).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0029, extracted there as metric (PC-06 same-sentence check: same issue)"
       }
     },
     {
@@ -4299,7 +4821,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Footnote number 208 kept as printed; footnote 208 says legal entities must file electronically since 1 January 2023.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4357,7 +4886,14 @@
       ],
       "extraction_note": "added at the second pass. \"suggest\" is the source's own hedge.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4413,7 +4949,14 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4469,7 +5012,14 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "No common service standards for physical or digital services"
       }
     },
     {
@@ -4525,7 +5075,14 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Accessibility here means ease of access, not disability access (RI-TEC-039)"
       }
     },
     {
@@ -4588,7 +5145,14 @@
       ],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Accessibility here means ease of access through digital channels, not disability access (RI-TEC-039)"
       }
     },
     {
@@ -4651,7 +5215,16 @@
       ],
       "extraction_note": "added at the second pass. Same claim as -0063 (page 107), in the conclusion. Accessibility of government websites to WCAG standards: unclear whether this meets the materiality test for digital government, as for -0063.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-039"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "G4-D05; same claim as -0063 in the summary; theme_doubtful resolved as in scope"
       }
     }
   ]

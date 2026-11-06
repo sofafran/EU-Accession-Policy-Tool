@@ -1,22 +1,20 @@
 {
   "source_id": "MDA-GOV-2021-002",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
     "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
     "pages_processed": "1 (whole notice)",
-    "notes": "Whole notice read. It states what the law provides; it says nothing on whether the fines or the ban on asking for documents have been applied.",
-    "codebook_version": "1.2",
-    "themes_version": "1.3"
+    "notes": "Whole notice read (page 1, section \"New provisions on data exchange and interoperability in the new year\"); site navigation, the latest news headlines and footer are not claims. This run's items: MDA-GOV-2021-002-0007 to MDA-GOV-2021-002-0012 (6 items, all theme, TECH-INTEROP with TECH-DATA, and TECH-DGOV for the once-only service obligation). The alpha items 0001 to 0006 quoted the same passages for a North Macedonia comparator issue and are unchanged; this run quotes them again as its own items. The notice states what the law provides; it says nothing on whether the obligation, the fines or the disqualification have been applied. No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 0 items added (review/RUN-2026-02/second_pass/MDA-GOV-2021-002.csv)."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
   "items": [
     {
@@ -414,6 +412,445 @@
         ],
         "classification_status": "auto",
         "classification_note": "country_response: the platform as described by its operator."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2021-002-0007",
+      "information_type": "intervention",
+      "stated_text": "Public authorities are required by law to provide services without requesting documents from individuals/legal entities if the data contained in such documents are available in the information resources and can be consumed or provided through the MConnect interoperability platform.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "By law, public authorities must provide services without asking people or firms for documents whose data are available through MConnect.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "New provisions on data exchange and interoperability in the new year",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2021-002_AGE_New-provisions-data-exchange-interoperability.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2021-01-05",
+        "period_covered": null,
+        "event_date": "2021-01-18",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Public authorities",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law no.142/2018 on data exchange and interoperability",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The \"once only\" obligation as stated; effective date from a later sentence of the same notice. Says nothing on application in practice. Same passage as alpha item MDA-GOV-2021-002-0001.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2021-002-0008",
+      "information_type": "intervention",
+      "stated_text": "The obligation was expressly laid down in the Law no.142/2018 on data exchange and interoperability, by completing Article 6 - Connecting to the interoperability platform and participating in data exchange.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The obligation was added to Article 6 of Law 142/2018 on data exchange and interoperability.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "New provisions on data exchange and interoperability in the new year",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2021-002_AGE_New-provisions-data-exchange-interoperability.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2021-01-05",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Law no.142/2018 on data exchange and interoperability",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law no.142/2018 on data exchange and interoperability",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Same passage as alpha item MDA-GOV-2021-002-0002.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2021-002-0009",
+      "information_type": "intervention",
+      "stated_text": "In the same context, the Code of Contraventions of the Republic of Moldova was also amended, by establishing the administrative liability for violating the data exchange and interoperability legislation. The new provisions are contained in Article 250 1 of the Code and stipulate sanctions in the form of a fine ranging between 36 and 60 conventional units applied to the person in charge and a fine between 120 and 240 conventional units applied to the legal entity in case of deviations from the regulatory framework in force.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Code of Contraventions was amended (Article 250 1) to fine officials and legal entities for breaching data exchange and interoperability law.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "New provisions on data exchange and interoperability in the new year",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2021-002_AGE_New-provisions-data-exchange-interoperability.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2021-01-05",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Code of Contraventions of the Republic of Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Code of Contraventions of the Republic of Moldova, Article 250 1",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "\"250 1\" is Article 250¹ as converted. Same passage as alpha item MDA-GOV-2021-002-0003. Two sentences on one claim.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2021-002-0010",
+      "information_type": "intervention",
+      "stated_text": "In addition, the unjustified refusal of the data provider to ensure the availability of data and to provide data through the interoperability platform or the unjustified refusal to provide a public service by motivating the refusal by the applicant’s failure to submit required documents, if the public service provider can access the data contained in these documents via the interoperability platform, is sanctioned by a fine ranging between 30 and 90 conventional units and deprivation of the right to hold a certain position or the right to carry out a certain activity for a period of 3 months - 1 year.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Unjustified refusal to provide data through the platform, or to provide a service for lack of documents available through it, is sanctioned.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "New provisions on data exchange and interoperability in the new year",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2021-002_AGE_New-provisions-data-exchange-interoperability.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2021-01-05",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "data provider",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "public service provider",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Code of Contraventions of the Republic of Moldova, Article 250 1",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "States the sanction; says nothing on whether it has been applied. Same passage as alpha item MDA-GOV-2021-002-0004.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2021-002-0011",
+      "information_type": "intervention",
+      "stated_text": "The new legislative amendments become effective on January 18, 2021.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The amendments take effect on 18 January 2021.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "New provisions on data exchange and interoperability in the new year",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2021-002_AGE_New-provisions-data-exchange-interoperability.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2021-01-05",
+        "period_covered": null,
+        "event_date": "2021-01-18",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Amendments to Law no.142/2018 and the Code of Contraventions",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Entry into force of the amendments in the items above. Same passage as alpha item MDA-GOV-2021-002-0005.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2021-002-0012",
+      "information_type": "intervention",
+      "stated_text": "The MConnect interoperability platform was developed and is managed by the e-Governance Agency to facilitate the electronic exchange of data, in real time, between public administration authorities, thus increasing the efficiency and the quality of public service provision, without requesting data from citizens and businesses in the form of certificates, reports, etc.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The e-Governance Agency developed and manages MConnect for real-time electronic data exchange between public authorities.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "New provisions on data exchange and interoperability in the new year",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2021-002_AGE_New-provisions-data-exchange-interoperability.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2021-01-05",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "MConnect interoperability platform",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "e-Governance Agency",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "MConnect interoperability platform",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Efficiency and quality are stated as the platform's purpose, not as a measured result. Same passage as alpha item MDA-GOV-2021-002-0006.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "MDA-GOV-2021-002-0001",
+        "MDA-GOV-2021-002-0002",
+        "MDA-GOV-2021-002-0003",
+        "MDA-GOV-2021-002-0004",
+        "MDA-GOV-2021-002-0005",
+        "MDA-GOV-2021-002-0006"
+      ],
+      "moved_on": "2026-11-05",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "1 (whole notice)",
+        "notes": "Whole notice read. It states what the law provides; it says nothing on whether the fines or the ban on asking for documents have been applied.",
+        "codebook_version": "1.2",
+        "themes_version": "1.3"
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]

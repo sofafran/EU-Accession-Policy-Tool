@@ -1,0 +1,1974 @@
+{
+  "source_id": "MDA-GOV-2026-005",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-45 (pages 2, 9-10, 18-28, 31-37 and 42-45 read in full; other pages read through and keyword-screened)",
+    "notes": "Pages 1-45: pages 2, 9-10 (sections II and 7.1), 18-28 (section 8.1, admission and residence), 31-37 (temporary protection, integration and supervision of the residence regime) and 42-45 (sections IX to XII) read in full; the rest (human resources, logistics, finance, policy monitoring, risk analysis, communication campaigns, projects in section 7.3, asylum procedure, accommodation centre, custody, readmission, penitentiaries and the Transnistrian segment) read through and keyword-screened (digit*, electronic, online, portal, platform*, interoperab*, sistem informațional, MPass, MConnect, date cu caracter personal, munc*, angaj*, lucr*, ANOFM, CNAS, EURES, securitate socială, cetățeni UE, stat membru UE, Capitolul 2, permis, migra*). Romanian only: stated_text is the Romanian text as converted, translation_en is a machine translation by the extracting agent, machine_translated is true, and evidence confidence is capped at Medium. Several charts are reduced to loose numbers in the converted text; table quotes are flagged table. Chapter 2 items (cluster 2, chapter 02): residence for work and EU citizens' residence (temporary residence and extensions by purpose, invitations and long-stay visas for work, posted workers, Romanian citizens' extensions), Law 200/2025 on free movement and residence of EU citizens, the draft law on admission, stay and supervision of foreigners and the delay in its approval, the planned transposition of Directive 2016/801, the VIE programme with France, the Twinning mission on the labour migration acquis, referrals of foreigners to ANOFM, controls of undeclared work and work-related revocations, returns and entry bans, and IGM's involvement in Chapter 2 work. Theme items: the Migration Information System (priority, project, 2026 objective), interoperability with EU systems (eu-LISA) and the EURODAC alignment of the fingerprint register (theme_doubtful). Left out: asylum procedure, statelessness, accommodation centre, custody, removal, readmission, tolerance and undesirable persons (not about the right to work); visa consultations other than the long-stay work row; invitations and residence decisions not broken down by work; the 375 leave permits for asylum seekers in the accommodation centre \"for work and/or other purposes\" (page 31), as the count does not separate work; integration counselling, sessions and partnerships (pages 32-33), general integration; the IOM, UNHCR, CoE, World Bank, CR4A, EU4LEM and gender projects (general integration, health, law enforcement); temporary protection figures (pages 7 and 31) and the GD 93/2025 amendment of the temporary protection decision (page 43), which do not mention work; the National Programme for the integration of foreigners (GD 285/2025); identity document decisions (GD 583/2025, GD 452/2025, residence card); the 2026 Programme on migration and asylum; logistics digitalisation, MTender and MPass reporting, e-Cancelaria, online English courses and the HELP and e-learning platforms (internal or incidental); the UNHCR support to temporary protection information systems (page 11), a back-office system; the EUISP campaign videos on the E-filling platform and the Earlyone app campaigns (page 9), because the subject is a communication campaign; the Twinning evaluation of IT systems (page 14). For the analyst: whether the draft law on admission, stay and supervision of foreigners (-0023, -0027) and Directive 2016/801 (-0024) sit inside the Chapter 2 boundary when the passage does not mention work; whether the EURODAC item (-0026) and the 2026 objective (-0028) meet the materiality test. Internal inconsistencies, recorded as printed: posted workers 310 registrations (tables) against 215 declarations for 312 foreigners (text); invitations for employment in 2024 shown as 204 (15.7%). IGM has no actor record; actor_id is null. Second-pass check (PC-05) by checker-GOV8c on 5 November 2026: 2 items added (review/RUN-2026-02/second_pass/MDA-GOV-2026-005.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-GOV-2026-005-0001",
+      "information_type": "intervention",
+      "stated_text": "Implementarea Sistemului Informațional „Migrație”, în scopul valorificării potențialului de creștere digitală a serviciilor prestate beneficiarului",
+      "quote_language": "ro",
+      "translation_en": "Implementation of the \"Migration\" Information System, in order to realise the potential for digital growth of the services provided to the beneficiary",
+      "machine_translated": true,
+      "summary": "An IGM priority: implement the Migration Information System to develop the digital potential of services provided to beneficiaries.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "II. TEMEIUL ȘI PRIORITĂȚILE STABILITE",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Sistemul Informațional „Migrație”",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "One of seven IGM priorities, recorded as proposed (M1). The text frames the system as the digital growth of services to beneficiaries, so it is tagged as digital government rather than a back-office sector system.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "\"Migration\" information system framed as the digital growth of services to beneficiaries; not a back-office system (R22)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0002",
+      "information_type": "intervention",
+      "stated_text": "Participarea la ședințele de lucru privind interoperabilitatea sistemelor informatice naționale cu cele ale UE (Eu -LISA), în domeniile prevenirii criminalității, controlului frontierelor și gestionării fluxului migrațional",
+      "quote_language": "ro",
+      "translation_en": "Participation in working meetings on the interoperability of national information systems with those of the EU (eu-LISA), in the areas of crime prevention, border control and management of the migration flow",
+      "machine_translated": true,
+      "summary": "IGM took part in working meetings on interoperability of national information systems with EU systems (eu-LISA) for crime, borders and migration.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "7.1 Activități în contextul implementării cerințelor de aderare a Republicii Moldova la UE",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "eu-LISA",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "interoperabilitatea sistemelor informatice naționale cu cele ale UE (eu-LISA)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Listed among IGM's accession activities in 2025. The claim concerns connection of national systems to EU electronic systems, which meets the materiality test even though the sector is justice and home affairs (rules section 4). The activity reported is participation in meetings; no system change is stated.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-030"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Connection of national systems to EU large-scale systems (eu-LISA) is in scope through RI-TEC-030 (rules section 4), although the sector is home affairs; only meetings are reported"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0003",
+      "information_type": "intervention",
+      "stated_text": "Implicarea în activitățile transversale p e capitolele 2, 18, 19, 23 și 24, pentru asigurarea unei abordări integrate și coerente a procesului de aderare.",
+      "quote_language": "ro",
+      "translation_en": "Involvement in cross-cutting activities on chapters 2, 18, 19, 23 and 24, to ensure an integrated and coherent approach to the accession process.",
+      "machine_translated": true,
+      "summary": "IGM is involved in cross-cutting accession work on chapters 2, 18, 19, 23 and 24.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "7.1 Activități în contextul implementării cerințelor de aderare a Republicii Moldova la UE",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "activitățile transversale pe capitolele 2, 18, 19, 23 și 24",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Tagged Chapter 2 because the passage names it; it also names chapters 18, 19, 23 and 24 and does not say what IGM does under Chapter 2. \"p e\" is kept as converted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "General statement of involvement in several chapters; does not say what IGM does under Chapter 2, so fits no single issue (as chapter-level statements, G5-D14 of RUN-2026-01)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0004",
+      "information_type": "intervention",
+      "stated_text": "Ambasada Franței – în contextul întrevederii din 26.02.2025 cu reprezentanții Ambasadei Franței, au fost abordate aspecte ce țin de condițiile pentru a obține un drept de ședere pe teritoriul Republicii Moldova pentru un termen de până la 24 luni, pentru cetățenii francezi care fac parte din programul de Voluntariat Corporativ Internațional, «volontariat international en entreprise» (VIE), un serviciu civic, stagiu ce permite tinerilor absolvenți să dobândească o primă experiență profesională în străinătate, în principal în cadrul filialelor companiilor franceze.",
+      "quote_language": "ro",
+      "translation_en": "French Embassy: at the meeting of 26.02.2025 with representatives of the French Embassy, issues were discussed concerning the conditions for obtaining a right of residence in the Republic of Moldova for up to 24 months for French citizens taking part in the International Corporate Volunteering programme, \"volontariat international en entreprise\" (VIE), a civic service and placement that allows young graduates to gain first professional experience abroad, mainly in subsidiaries of French companies.",
+      "machine_translated": true,
+      "summary": "On 26 February 2025 IGM and the French Embassy discussed residence of up to 24 months for French VIE professional placement participants.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "7.2 Colaborarea la nivel internațional",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": "2025-02-26",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Ambasada Franței",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "drept de ședere pentru participanții la programul VIE",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Tagged chapter as residence for professional placements of EU (French) citizens in Moldova. The status reflects a discussion; the agreement signed on 20.11.2025 is extracted separately.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Residence conditions for EU (French) citizens on professional placements"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0005",
+      "information_type": "intervention",
+      "stated_text": "La 20.11.2025 a fost semnat Acordul întocmit prin schimb de note, dintre Guvernul Republicii Moldova și Guvernul Republicii Franceze privind Programul de voluntariat internațional în întreprindere.",
+      "quote_language": "ro",
+      "translation_en": "On 20.11.2025 the Agreement drawn up by exchange of notes between the Government of the Republic of Moldova and the Government of the French Republic on the International Volunteering in Enterprise Programme was signed.",
+      "machine_translated": true,
+      "summary": "On 20 November 2025 Moldova and France signed an agreement by exchange of notes on the International Volunteering in Enterprise programme.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "7.2 Colaborarea la nivel internațional",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": "2025-11-20",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Guvernul Republicii Moldova",
+          "actor_id": "ACT-MDA-0002"
+        },
+        {
+          "name_as_stated": "Guvernul Republicii Franceze",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Acordul prin schimb de note între Guvernul Republicii Moldova și Guvernul Republicii Franceze privind Programul de voluntariat internațional în întreprindere",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The programme is described in the preceding passage (item -0004) as a professional placement of young French graduates, for whom a right of residence of up to 24 months was discussed. The text does not state the agreement's content.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Agreement on professional placements of French citizens, for whom a right of residence was discussed (-0004); the text does not state its content"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0006",
+      "information_type": "intervention",
+      "stated_text": "Până în prezent au fost realizate 12 misiuni de experți, un workshop și o vizită de studiu în România, fiecare având obiective specifice, după cum urmează: e valuarea mecanismului de implementare a acquis-ului UE în domeniul migrației forței de muncă (2 –6 iunie 2025);",
+      "quote_language": "ro",
+      "translation_en": "To date, 12 expert missions, one workshop and one study visit to Romania have been carried out, each with specific objectives, as follows: evaluation of the mechanism for implementing the EU acquis in the field of labour migration (2-6 June 2025);",
+      "machine_translated": true,
+      "summary": "Under the IGM Twinning project, an expert mission on 2 to 6 June 2025 assessed how the EU labour migration acquis is implemented.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "7.3 Activitatea privind monitorizarea și implementarea proiectelor de asistență",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": "2025-06-02",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Proiect Twinning „Consolidarea capacităților Inspectoratului General pentru Migrație pentru punerea în aplicare a legislației privind gestionarea migrației și azilul în conformitate cu acquis-ul Uniunii Europene”",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote cut after the labour migration mission; the other missions (asylum, IT systems, reception, students, temporary protection and others) are not in scope. The project is stated to serve Chapter 24 in particular. The event date is the first day of the mission (2-6 June 2025).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Implementation of the EU legal migration acquis is Chapter 24 (G4-D03); the project is stated to serve Chapter 24 and the passage states no barrier or right after admission"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0007",
+      "information_type": "intervention",
+      "stated_text": "Dezvoltarea soluției software SI ,,Migrație” al IGM are ca obiectiv dezvoltarea noului sistem informațional ce va fi utilizat pentru digitizarea serviciilor publice prestate și a activită ților sale operaționale. Durată estimată de realizare a lucrărilor de proiectare, dezvoltare și implementare de 15 luni, până la finalizarea proiectului în iunie 2026.",
+      "quote_language": "ro",
+      "translation_en": "The development of the IGM's \"Migration\" IS software solution aims to develop the new information system that will be used to digitise the public services provided and its operational activities. The estimated duration of design, development and implementation works is 15 months, until the end of the project in June 2026.",
+      "machine_translated": true,
+      "summary": "IGM is developing the Migration Information System to digitise its public services and operations, over 15 months to June 2026.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "7.3 Activitatea privind monitorizarea și implementarea proiectelor de asistență",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Organizația Internațională pentru Migrație (OIM)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "ALFA SOFT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Proiectul – Crearea și dezvoltarea Sistemului informațional „Migrație”",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one claim. The preceding sentences state that development is supported by IOM through an EU-funded project and that ALFA SOFT was selected as developer.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated to digitise the public services IGM provides as well as its operational activities"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0008",
+      "information_type": "metric",
+      "stated_text": "Înregistrarea muncitorilor detașați la muncă până la 90 de zile 310 272 477 621 1044",
+      "quote_language": "ro",
+      "translation_en": "Registration of workers posted for work for up to 90 days 310 272 477 621 1044",
+      "machine_translated": true,
+      "summary": "Requests to register posted workers (up to 90 days): 310 in 2025, 272 in 2024, 477 in 2023, 621 in 2022, 1,044 in 2021.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Requests received for registration of workers posted for work for up to 90 days",
+        "value": "310 (2025); 272 (2024); 477 (2023); 621 (2022); 1044 (2021)",
+        "unit": "requests",
+        "reference_period": "2021 to 2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row 13 of the table of requests received by type; the column years (2025 to 2021) are in the table header. The same figures appear in the table of acts issued (page 20) and the count of 310 requests in the list of one-stop-shop requests (page 22), not extracted again. Differs from the 215 declarations for 312 foreigners in the running text at page 24 (item -0016).",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Volume of registrations for foreign workers posted for up to 90 days; admission route context, no barrier stated"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0009",
+      "information_type": "metric",
+      "stated_text": "Angajare la muncă 1063 (56,5%) 204 (15,7%)",
+      "quote_language": "ro",
+      "translation_en": "Employment 1063 (56.5%) 204 (15.7%)",
+      "machine_translated": true,
+      "summary": "Invitations issued for employment: 1,063 (56.5%) in 2025 against 204 (15.7%) in 2024.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Invitațiile",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Invitations issued for the purpose of employment",
+        "value": "1063 (56.5% of 1882) in 2025; 204 (15.7%) in 2024",
+        "unit": "invitations",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row 1 of the table of invitations by purpose (columns 2025 and 2024). The running text on the same page gives the 2025 figure (\"angajări la muncă – 1063 (56,5%)\"). The 2024 figure of 204 is as printed.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Invitations issued for employment of foreigners"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0010",
+      "information_type": "metric",
+      "stated_text": "După scopul imigrării străinilor deciziile de acordare a dreptului de ședere provizorie au fost divizate după cum urmează: 4063 –  pentru imigrare la muncă, 1893 –  pentru reîntregirea familiei, 563 – pentru studii, 229 – activități religioase, umanitare şi de voluntariat (ARUV), 79 –  pentru investitorii străini, străin din stat membru UE – 11 și 229 – alte scopuri /cazuri.",
+      "quote_language": "ro",
+      "translation_en": "By purpose of immigration, the decisions granting the right of temporary residence were divided as follows: 4,063 for immigration for work, 1,893 for family reunification, 563 for studies, 229 for religious, humanitarian and volunteering activities (ARUV), 79 for foreign investors, foreigner from an EU member state 11, and 229 for other purposes/cases.",
+      "machine_translated": true,
+      "summary": "Of temporary residence decisions in 2025, 4,063 were for work and 11 for nationals of EU member states.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Dreptul de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Decisions granting temporary residence, by purpose",
+        "value": "work 4063; EU member state national 11; total 7043",
+        "unit": "decisions",
+        "reference_period": "2025"
+      },
+      "flags": [],
+      "extraction_note": "The total of 7,043 decisions is in the preceding sentence. The table that follows gives \"Alte cazuri 205\" where this sentence gives 229 for other purposes.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014",
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Residence decisions for work, with EU citizens as a separate category (11): RI-FMW-002"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0011",
+      "information_type": "metric",
+      "stated_text": "Angajare la muncă 4063 Angajare la muncă 3002",
+      "quote_language": "ro",
+      "translation_en": "Employment 4063 Employment 3002",
+      "machine_translated": true,
+      "summary": "Temporary residence decisions for work: 4,063 in 2025 against 3,002 in 2024.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Dreptul de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Decisions granting temporary residence for employment",
+        "value": "4063 (2025); 3002 (2024)",
+        "unit": "decisions",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row of the table comparing 2025 and 2024 by purpose; extracted for the 2024 figure, which the running text does not give.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Temporary residence decisions for work"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0012",
+      "information_type": "metric",
+      "stated_text": "Străin din stat UE 11 Străin din stat UE 16",
+      "quote_language": "ro",
+      "translation_en": "Foreigner from an EU state 11 Foreigner from an EU state 16",
+      "machine_translated": true,
+      "summary": "Temporary residence decisions for nationals of EU states: 11 in 2025 against 16 in 2024.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Dreptul de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Decisions granting temporary residence to nationals of EU states",
+        "value": "11 (2025); 16 (2024)",
+        "unit": "decisions",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row of the same table, continued on page 23; extracted for the 2024 figure.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Residence decisions for EU citizens as a category; the text does not say they are for work"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0013",
+      "information_type": "metric",
+      "stated_text": "Angajare la muncă 1644 Angajare la muncă 1433",
+      "quote_language": "ro",
+      "translation_en": "Employment 1644 Employment 1433",
+      "machine_translated": true,
+      "summary": "Extensions of temporary residence for work: 1,644 in 2025 against 1,433 in 2024.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Prelungirea dreptului de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Extensions of temporary residence for employment",
+        "value": "1644 (2025); 1433 (2024); all purposes 3525 (2025)",
+        "unit": "decisions",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row of the table of extensions by purpose (2025 and 2024). The running text gives 3,525 extensions in total.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Extensions of temporary residence for employment"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0014",
+      "information_type": "metric",
+      "stated_text": "Străin din Stat membru UE 0 Străin din Stat membru UE 0",
+      "quote_language": "ro",
+      "translation_en": "Foreigner from an EU member state 0 Foreigner from an EU member state 0",
+      "machine_translated": true,
+      "summary": "No extensions of temporary residence were recorded for nationals of EU member states in 2025 or 2024.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Prelungirea dreptului de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Extensions of temporary residence for nationals of EU member states",
+        "value": "0 (2025); 0 (2024)",
+        "unit": "decisions",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row of the table of extensions by purpose. Romanian citizens appear among the top countries for extensions (item -0015), so this category does not cover all EU nationals; the text does not explain the difference.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Category of residence extensions for EU citizens; Romanian citizens appear elsewhere under other purposes (-0015), so the category does not cover all EU citizens"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0015",
+      "information_type": "metric",
+      "stated_text": "5. România – 194, (reîntregirea familiei – 84, în scop de muncă – 81, activ. religioase, umanitare și de voluntariat – 19, investiții străine – 8, studii – 2, alte cazuri – 2).",
+      "quote_language": "ro",
+      "translation_en": "5. Romania: 194 (family reunification 84, for work 81, religious, humanitarian and volunteering activities 19, foreign investment 8, studies 2, other cases 2).",
+      "machine_translated": true,
+      "summary": "Romanian citizens had 194 temporary residence extensions in 2025, 81 of them for work.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Prelungirea dreptului de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Extensions of temporary residence for citizens of Romania, by purpose",
+        "value": "194 (work 81)",
+        "unit": "persons",
+        "reference_period": "2025"
+      },
+      "flags": [],
+      "extraction_note": "Fifth of the top countries for extensions of temporary residence. Romania is an EU member state; the text records these extensions under purposes such as work, not under \"foreigner from an EU member state\".",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-002",
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Romanian (EU) citizens' residence extensions recorded under purposes such as work, so EU workers are still subject to residence for work: RI-FMW-002"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0016",
+      "information_type": "metric",
+      "stated_text": "Pe parcursul perioadei de raport, au fost înregistrate 215 de declarații pe proprie răspundere cu privire la străinii detașați la muncă pentru o perioadă de până la 90 de zile. Declarațiile pentru detașarea la muncă au fost depuse pentru 312 de cetățeni străini.",
+      "quote_language": "ro",
+      "translation_en": "During the reporting period, 215 self-declarations concerning foreigners posted for work for a period of up to 90 days were registered. The declarations for posting to work were submitted for 312 foreign citizens.",
+      "machine_translated": true,
+      "summary": "In 2025, 215 self-declarations on foreigners posted to work for up to 90 days were registered, covering 312 foreign citizens.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Înregistrarea străinilor detașați la muncă pentru o perioadă de până la 90 de zile",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Self-declarations on foreigners posted for work for up to 90 days; foreigners covered",
+        "value": "215 declarations; 312 foreign citizens",
+        "unit": "declarations; persons",
+        "reference_period": "2025"
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one metric. The tables at pages 19 and 20 give 310 registrations for 2025 (item -0008).",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Self-declarations for foreigners posted for up to 90 days; differs from the 310 registrations at -0008"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0017",
+      "information_type": "metric",
+      "stated_text": "Angajare la muncă 749 8",
+      "quote_language": "ro",
+      "translation_en": "Employment 749 8",
+      "machine_translated": true,
+      "summary": "Long-stay visa applications for employment consulted by IGM in 2025: 749 positive and 8 negative opinions.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Consultarea vizelor",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Long-stay visa applications for employment consulted by IGM, by opinion",
+        "value": "749 positive; 8 negative",
+        "unit": "visa applications",
+        "reference_period": "2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row 9 of the table of consulted visa applications by purpose, under long-stay visas (columns: positive, negative opinion, 2025). Visa matters are out of scope except where directly about the right to work; this row concerns entry for employment.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Long-stay visa applications for employment: an admission route for foreign workers; other visa matters are out"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0018",
+      "information_type": "metric",
+      "stated_text": "Persoane direcționate pentru consiliere către ANOFM 31 16 + 15",
+      "quote_language": "ro",
+      "translation_en": "Persons referred to ANOFM for counselling 31 16 +15",
+      "machine_translated": true,
+      "summary": "Foreigners referred by IGM integration services to ANOFM for counselling: 31 in 2025 against 16 in 2024.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "8.4 INTEGRAREA STRĂINILOR PE TERITORIUL REPUBLICII MOLDOVA",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Foreigners referred to ANOFM for counselling",
+        "value": "31 (2025); 16 (2024); +15",
+        "unit": "persons",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row of the table on the activity of the foreigners' integration directorate and integration centres.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Referrals of foreigners from integration centres to ANOFM counselling"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0019",
+      "information_type": "metric",
+      "stated_text": "Munca nedeclarată 296 12,02% 206 90 43,69%",
+      "quote_language": "ro",
+      "translation_en": "Undeclared work 296 12.02% 206 90 43.69%",
+      "machine_translated": true,
+      "summary": "Contraventions for undeclared work by foreigners: 296 (12.02% of all) in 2025 against 206 in 2024, up 43.69%.",
+      "location": {
+        "page": 34,
+        "page_end": null,
+        "section": "8.5. SUPRAVEGHEREA REGIMULUI DE ȘEDERE AL STRĂINILOR – Combaterea șederii ilegale",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Contraventions documented for undeclared work of foreigners",
+        "value": "296 (12.02% of 2462) in 2025; 206 in 2024; +90 (+43.69%)",
+        "unit": "contraventions",
+        "reference_period": "2025 and 2024"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Row of the table of documented breaches of the residence regime by type. The running text on page 34 gives the 12.02% share and says contraventions relating to employment increased; the total of 2,462 contraventions (page 33) covers breaches of the rules of stay and of employment together.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Migration law enforcement (breaches of stay rules, undeclared work of foreigners, return, entry bans) is Chapter 24, not rights or access after admission; for the analyst to confirm"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0020",
+      "information_type": "finding",
+      "stated_text": "În ce privește revocarea dreptului de ședere în dependență de scopul pentru care a fost acordat, cele mai frecvente cazuri sunt încetarea relațiilor de muncă (rezilierea contractului) dintre angajator și străin.",
+      "quote_language": "ro",
+      "translation_en": "As regards revocation of the right of residence by the purpose for which it was granted, the most frequent cases are the termination of employment relations (termination of the contract) between employer and foreigner.",
+      "machine_translated": true,
+      "summary": "By purpose of residence, the most frequent revocations of residence rights follow the end of employment between employer and foreigner.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "8.5. SUPRAVEGHEREA REGIMULUI DE ȘEDERE AL STRĂINILOR – Revocarea dreptului de ședere",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "1,318 revocation decisions were issued in 2025 (page 35); the text gives no count by purpose.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Right of residence for work is revoked mainly when the employment contract ends: residence tied to employment after admission"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0021",
+      "information_type": "finding",
+      "stated_text": "Totodată, se constată un trend ascendent al deciziilor de returnare în privința cetățenilor statelor membre ale CSI, care beneficiază de regim liberalizat de vize cu Republica Moldova și care au încălcat regulile de ședere pe teri toriul țării, inclusiv prin desfășurarea activităților de muncă fără deținerea unui permis de ședere eliberat în condițiile legii.",
+      "quote_language": "ro",
+      "translation_en": "At the same time, there is an upward trend in return decisions concerning citizens of CIS member states who enjoy a liberalised visa regime with the Republic of Moldova and who breached the rules of stay on the country's territory, including by carrying out work without holding a residence permit issued under the law.",
+      "machine_translated": true,
+      "summary": "Return decisions are rising for visa-free CIS citizens who broke residence rules, including by working without a residence permit.",
+      "location": {
+        "page": 37,
+        "page_end": null,
+        "section": "8.5. SUPRAVEGHEREA REGIMULUI DE ȘEDERE AL STRĂINILOR – Returnarea străinilor de pe teritoriul Republicii Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Return is out of scope except where directly about the right to work; extracted for the reference to working without a residence permit. The next sentence (causes of return decisions, including work in breach of the law) is not extracted separately.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Migration law enforcement (breaches of stay rules, undeclared work of foreigners, return, entry bans) is Chapter 24, not rights or access after admission; for the analyst to confirm"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0022",
+      "information_type": "finding",
+      "stated_text": "Referindu-ne la motivele aplicării măsurii respective faţă de străini se constată că, predomină interdicțiile de intrare aplicate pentru nerespectarea regulilor de ședere în Republica Moldova urmate de interdicțiile pentru practicarea ilegală a unei activităţi de muncă, celelalte categorii nu au o pondere semnificativă.",
+      "quote_language": "ro",
+      "translation_en": "Regarding the grounds for applying this measure to foreigners, entry bans for non-compliance with the rules of stay in the Republic of Moldova predominate, followed by bans for illegal work activity; the other categories are not significant.",
+      "machine_translated": true,
+      "summary": "Entry bans were mostly for breaking residence rules, followed by bans for illegal work.",
+      "location": {
+        "page": 37,
+        "page_end": null,
+        "section": "8.5. SUPRAVEGHEREA REGIMULUI DE ȘEDERE AL STRĂINILOR – Stabilirea/ridicarea interdicției de intrare în Republica Moldova",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "221 entry bans were applied in 2025 (page 37); the text gives no count by ground.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Migration law enforcement (breaches of stay rules, undeclared work of foreigners, return, entry bans) is Chapter 24, not rights or access after admission; for the analyst to confirm"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0023",
+      "information_type": "intervention",
+      "stated_text": "Proiectul de lege a fost înregistrat fiindui atribuit numărul unic 507/MAI, de asemenea acesta a trecut procedura de avizare la Comisia Europeană.",
+      "quote_language": "ro",
+      "translation_en": "The draft law was registered and assigned the unique number 507/MAI; it has also gone through the opinion procedure with the European Commission.",
+      "machine_translated": true,
+      "summary": "The draft law on admission, stay and supervision of foreigners was registered as 507/MAI and went through European Commission review.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "IX. ASPECTE PRIVIND CADRUL NORMATIV",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Comisia Europeană",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Proiectul de lege privind admisia, șederea și supravegherea străinilor în Republica Moldova",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The law's title is in the list heading before the quote. The passage does not mention work; tagged chapter as the draft law on the regime of foreigners, which the run record lists among the Chapter 2 sources (rules on work permits for foreigners). For the analyst to confirm in pass 2.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Admission and stay framework for foreigners aligned with the EU acquis is Chapter 24 (G4-D03); the passage states no barrier or right after admission; for the analyst to confirm"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0024",
+      "information_type": "intervention",
+      "stated_text": "Prevederile Directivei UE/801/2016 a Parlamentului European și a Consiliului din 11 mai 2016 privind condițiile de intrare și de ședere a resortisanților țărilor terțe pentru cercetare, studii, formare profesională, servicii de voluntariat, programe de schimb de elevi sau proiecte educaționale și muncă au pair, vor fi reglementate în proiectul legii privind admisia, șederea și supravegherea străinilor în Republica Moldova.",
+      "quote_language": "ro",
+      "translation_en": "The provisions of Directive (EU) 2016/801 of the European Parliament and of the Council of 11 May 2016 on the conditions of entry and residence of third-country nationals for the purposes of research, studies, training, voluntary service, pupil exchange schemes or educational projects and au pairing will be regulated in the draft law on the admission, stay and supervision of foreigners in the Republic of Moldova.",
+      "machine_translated": true,
+      "summary": "Directive 2016/801 on third-country researchers, students, trainees, volunteers and au pairs will be transposed through the draft law on foreigners.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "IX. ASPECTE PRIVIND CADRUL NORMATIV",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Hotărârea Guvernului de transpunere a Directivei UE/801/2016",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Doubtful whether this belongs to Chapter 2 as bounded in the run record: the directive covers researchers, trainees and au pairs (work-related) but also students and volunteers. For the analyst.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Transposition of an EU legal migration directive (Directive (EU) 2016/801) is Chapter 24 acquis (G4-D03)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0025",
+      "information_type": "intervention",
+      "stated_text": "Legea nr.200/2025 privind libera circulație și șederea pe teritoriul Republici i Moldova a cetățenilor Uniunii Europene și a membrilor familiilor acestora.  Legea stabilește cadrul normativ privind exercitarea dreptului la liberă circulație, ședere și tratament egal de către cetățenii Uniunii Europene, cetățenii statelor semnatare ale  Acordului Schengen și membrii familiilor acestora pe teritoriul Republicii Moldova, precum și aplicarea măsurilor restrictive din motive de securitate națională, ordine publică și sănătate publică.",
+      "quote_language": "ro",
+      "translation_en": "Law No. 200/2025 on the free movement and residence on the territory of the Republic of Moldova of citizens of the European Union and their family members. The law establishes the regulatory framework for the exercise of the right to free movement, residence and equal treatment by citizens of the European Union, citizens of states signatory to the Schengen Agreement and their family members on the territory of the Republic of Moldova, and the application of restrictive measures on grounds of national security, public order and public health.",
+      "machine_translated": true,
+      "summary": "Law 200/2025 sets the framework for EU and Schengen-state citizens and their families to move, reside and be treated equally in Moldova.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "IX. ASPECTE PRIVIND CADRUL NORMATIV",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "cetățenii Uniunii Europene",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Legea nr.200/2025 privind libera circulație și șederea pe teritoriul Republicii Moldova a cetățenilor Uniunii Europene și a membrilor familiilor acestora",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Listed among IGM's contributions to the regulatory framework; recorded as adopted because the law has a number. The text does not give the date of adoption or entry into force. \"Republici i\" is kept as converted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-001",
+          "RI-FMW-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Rules on EU citizens' free movement, residence and equal treatment; as MDA-EU-2025-001-0065"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0026",
+      "information_type": "intervention",
+      "stated_text": "Prin scrisoarea nr. 5/14-659 din 31 ianuarie 2025, IGM a remis în adresa DPDMIFSMA propuneri privind m odificarea Hotărârii de Guvern nr. 565/2007, care reglementează Concepția Sistemului Informațional Automatizat ,,Registrul dactiloscopic”, în corespundere cu cerințele EURODAC.",
+      "quote_language": "ro",
+      "translation_en": "By letter No. 5/14-659 of 31 January 2025, IGM sent DPDMIFSMA proposals to amend Government Decision No. 565/2007, which regulates the Concept of the Automated Information System \"Fingerprint Register\", in line with EURODAC requirements.",
+      "machine_translated": true,
+      "summary": "In January 2025 IGM proposed amending the decision on the fingerprint register information system to meet EURODAC requirements.",
+      "location": {
+        "page": 43,
+        "page_end": null,
+        "section": "IX. ASPECTE PRIVIND CADRUL NORMATIV",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": "2025-01-31",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Hotărârea Guvernului nr. 565/2007 privind aprobarea Sistemului informațional automatizat „Registrul dactiloscopic”",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "An asylum-sector system aligned with the requirements of an EU system (EURODAC); doubtful whether alignment with EURODAC requirements counts as connecting to an EU electronic system under rules section 4. Outside Chapter 2.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-030"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme_doubtful resolved: technical adaptation of a national system to Eurodac requirements, which RI-TEC-030 names (as MDA-EU-2023-001-0024); asylum policy itself is out"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0027",
+      "information_type": "barrier",
+      "stated_text": "Proces îndelungat al aprobării Legii noi privind admisia, șederea și supravegherea străinilor în Republica Moldova, iar în lipsa unui cadru actualizat este dificil punerea în aplicare a unor politici coerente, moderne și eficiente",
+      "quote_language": "ro",
+      "translation_en": "The lengthy process of approving the new Law on the admission, stay and supervision of foreigners in the Republic of Moldova; in the absence of an updated framework it is difficult to implement coherent, modern and efficient policies",
+      "machine_translated": true,
+      "summary": "The new law on admission, stay and supervision of foreigners is taking long to approve, making coherent modern policies hard to apply.",
+      "location": {
+        "page": 45,
+        "page_end": null,
+        "section": "XI. PROBLEMATICA ÎN DESFĂȘURAREA ACTIVITĂȚILOR",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Listed under operational problems. Same caveat as item -0023 on the Chapter 2 tag.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Admission and stay framework for foreigners aligned with the EU acquis is Chapter 24 (G4-D03); the passage states no barrier or right after admission; for the analyst to confirm; delay in the new admission law"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0028",
+      "information_type": "intervention",
+      "stated_text": "Dezvoltarea, testarea și punerea în aplicare a noului sistem informațional „Migrație”",
+      "quote_language": "ro",
+      "translation_en": "Development, testing and implementation of the new \"Migration\" information system",
+      "machine_translated": true,
+      "summary": "An IGM objective for 2026: develop, test and put into operation the new Migration information system.",
+      "location": {
+        "page": 45,
+        "page_end": null,
+        "section": "XII. OBIECTIVE STABILITE PENTRU ANUL 2026",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Inspectoratul General pentru Migrație (IGM)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Sistemul informațional „Migrație”",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Objective for 2026, proposed (M1). Unlike pages 2 and 18, the wording here does not frame the system as digital services or digital transformation, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme_doubtful resolved: Same \"Migration\" information system as MDA-GOV-2026-005-0001 and -0007, which frame it as digitising IGM public services; the passage alone would be a back-office sector system (R22)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0029",
+      "information_type": "metric",
+      "stated_text": "1. Turcia – 809, (în scop de muncă – 623, reîntregirea familiei – 130, investiții străine – 23, studii – 20, alte cazuri – 10,  activ. religioase, umanitare și de voluntariat – 3);  2. Federația Rusă – 803, (reîntregirea familiei – 609, în scop de muncă – 65, alte cazuri – 75, activ. religioase, umanitare și de voluntariat – 24, studii – 20, investiții străine – 10);  3. Ucraina – 720, (reîntregirea familiei – 475, în scop de muncă – 131, alte cazuri – 67, studii – 30, activ. religioase, umanitare și de voluntariat – 12, investiții străine – 5); 4. Uzbekistan – 718, (în scop de muncă – 682, reîntregirea familiei – 26, activ. religioase, umanitare și de voluntariat – 8, în scop de studii – 2); 5. Nepal – 711, (în scop de muncă – 710, în scop de studii – 1).",
+      "quote_language": "ro",
+      "translation_en": "1. Turkey: 809 (for work 623, family reunification 130, foreign investment 23, studies 20, other cases 10, religious, humanitarian and volunteering activities 3); 2. Russian Federation: 803 (family reunification 609, for work 65, other cases 75, religious, humanitarian and volunteering activities 24, studies 20, foreign investment 10); 3. Ukraine: 720 (family reunification 475, for work 131, other cases 67, studies 30, religious, humanitarian and volunteering activities 12, foreign investment 5); 4. Uzbekistan: 718 (for work 682, family reunification 26, religious, humanitarian and volunteering activities 8, for studies 2); 5. Nepal: 711 (for work 710, for studies 1).",
+      "machine_translated": true,
+      "summary": "Top countries for temporary residence in 2025, with work grants: Turkey 623, Russia 65, Ukraine 131, Uzbekistan 682, Nepal 710.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Dreptul de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Temporary residence granted, top five countries of citizenship, by purpose (work)",
+        "value": "Turkey 809 (work 623); Russian Federation 803 (work 65); Ukraine 720 (work 131); Uzbekistan 718 (work 682); Nepal 711 (work 710)",
+        "unit": "persons",
+        "reference_period": "2025"
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). The five-entry list of top countries whose citizens applied for temporary residence, with breakdown by purpose; quoted whole because the work figure sits inside each entry. The lead-in says the countries \"au solicitat\" (applied), while the section and the preceding table concern decisions granting residence. Comparable to MDA-GOV-2024-006-0015 for 2023. The validation warning on sentence count comes from the list numbers (\"1.\" to \"5.\"); the list is one sentence in the source.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Top countries for temporary residence by purpose, mostly work"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-005-0030",
+      "information_type": "metric",
+      "stated_text": "1. Ucraina – 861, (reîntregirea familiei – 574, în scop de muncă – 229, alte cazuri – 37, investiții străine – 11, activ. religioase, umanitare și de voluntariat – 10); 2. Federația Rusă – 576, (reîntregirea familiei – 395, în scop de muncă – 104, alte cazuri – 51, activ. religioase, umanitare și de voluntariat – 14, investiții străine – 9, studii – 3);  3. Turcia – 359, (în scop de muncă – 240, reîntregirea familiei – 91, investiții străine – 20, studii – 4, alte cazuri – 4);  4. Nepal – 258, (în scop de muncă – 256, reîntregirea familiei – 2);",
+      "quote_language": "ro",
+      "translation_en": "1. Ukraine: 861 (family reunification 574, for work 229, other cases 37, foreign investment 11, religious, humanitarian and volunteering activities 10); 2. Russian Federation: 576 (family reunification 395, for work 104, other cases 51, religious, humanitarian and volunteering activities 14, foreign investment 9, studies 3); 3. Turkey: 359 (for work 240, family reunification 91, foreign investment 20, studies 4, other cases 4); 4. Nepal: 258 (for work 256, family reunification 2);",
+      "machine_translated": true,
+      "summary": "Top countries for temporary residence extensions in 2025, with work extensions: Ukraine 229, Russia 104, Turkey 240, Nepal 256.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "8.1 ADMISIA, REGLEMENTAREA ȘEDERE ȘI DOCUMENTAREA STRĂINILOR – Prelungirea dreptului de ședere provizorie",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2026-02",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Inspectoratul General pentru Migrație al MAI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Extensions of temporary residence, top countries of citizenship 1 to 4, by purpose (work)",
+        "value": "Ukraine 861 (work 229); Russian Federation 576 (work 104); Turkey 359 (work 240); Nepal 258 (work 256)",
+        "unit": "persons",
+        "reference_period": "2025"
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). Entries 1 to 4 of the list of top countries for extensions of temporary residence; entry 5 (Romania) is item -0015. The validation warning on sentence count comes from the list numbers (\"1.\" to \"4.\"); the list is one sentence in the source.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Top countries for residence extensions by purpose; entry 5 (Romania) is -0015"
+      }
+    }
+  ]
+}

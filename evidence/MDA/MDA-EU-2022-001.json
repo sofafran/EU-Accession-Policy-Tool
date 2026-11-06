@@ -13,8 +13,12 @@
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -76,11 +80,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -143,11 +150,13 @@
       "flags": [],
       "extraction_note": "The sentence also states that a citizen-oriented administration is a government priority; that part is not about technology and is not extracted. Status unclear: 'has been developed' does not say whether the vision was adopted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -211,12 +220,14 @@
       ],
       "extraction_note": "Growth of the IT sector as part of the economy's structure; doubtful whether this is digitalisation of economic activity under the materiality test.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful: growth of the IT sector, positive context for RI-TEC-033 rather than business adoption; G4 seed kept."
       }
     },
     {
@@ -277,11 +288,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -345,12 +360,14 @@
       ],
       "extraction_note": "added at the second pass. E-procurement (a portal used by bidders, TECH-DGOV) is one item in a list of public finance improvements; flagged because the digital element is not the main subject, as for MDA-EU-2021-001-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful: e-procurement is one area in a list."
       }
     }
   ]

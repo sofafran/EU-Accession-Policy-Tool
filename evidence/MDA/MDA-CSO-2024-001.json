@@ -1,0 +1,5955 @@
+{
+  "source_id": "MDA-CSO-2024-001",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-7 and 20-22 read in full; 8-19 read and keyword-screened; 23-29 endnotes not extracted",
+    "notes": "Read in full: pages 1-7 (overview, methodology, sections I and II) and 20-22 (section VII). Pages 8-19 (sections III to VI: blocking and content removal, online media and the information environment, legal framework for rights online, arrests and harassment) were read and keyword-screened (digit*, electronic, cyber*, personal data, data protection, interoperab*, eID, 5G, broadband, ANRCETI, roaming, artificial intelligence, AI, platform, portal, signature, telecom*, infrastructure, privacy) and hold no in-scope claim. Pages 23-29 are endnotes and were not extracted. Text-file page numbers are printed page numbers plus one. Document check: the file is the Freedom House country report 'Internet Freedom in Moldova', dated October 2024 on its cover (the register gives 2024-11 and the title 'Freedom on the Net 2024: Moldova'). Its methodology note says it uses a modified Freedom on the Net 2024 methodology and that 'there are no scores associated with this report', so no FOTN numerical scores exist to extract; the register's coverage period (June 2023 to May 2024) is not printed and some events run to October 2024. The report states it does not reflect conditions in Transnistria (LIM-0044); no item concerns the region. Dates are from the register as instructed. Speaker is Freedom House unless a sentence attributes data to another body (ITU, ANRCETI, Speedtest, Cable, the two regulators, STISC, the Digital Quality of Life Index), then flagged reported_view. Left out under the rules: website blocking, emergency-powers blocking and content removal (section III), including the 2024 cybercrime law amendments on blocking orders; disinformation and AI deepfakes in disinformation campaigns, online media, news consumption (including the E-Governance Agency survey on news sources) and online organising (IV); freedom of expression, access to information and speech offences (V); arrests and harassment, including cyberattacks and DDoS against journalists and media outlets (VI, VII.4); anonymity, encryption and website-owner or SIM registration (VII.1); individual surveillance cases and criminal cases on illegal wiretapping and private surveillance (VII.2), the Moldova-Leaks hacking of officials' Telegram accounts and its criminal investigation (VII.4) as cybercrime enforcement; providers' cybercrime oversight obligations (II.1); internet shutdowns of 2009, the Moldtelecom gateway monopoly to 2010 and the 3G and 4G roll-out dates (before the window); Moldtelecom corruption and audit, telecom share of GDP, operators' revenue and market shares, the Orange-Sun Communications takeover (company economics, not access); constitutional background articles; ANRCETI's website publishing drafts (incidental). Doubtful for the analyst (theme_doubtful, 17 items): the surveillance, interception and data retention items in VII.2 and VII.3 tagged TECH-DATA (whether state surveillance law belongs to data governance); internet-use demographics (TECH-INFRA); Moldtelecom reorganisation; the Law on Information Society Services as TECH-DIGI; Cybercor's research and education tasks. Second-pass check (PC-05) by checker-CSO8 on 5 November 2026: 6 items added (review/RUN-2026-02/second_pass/MDA-CSO-2024-001.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-CSO-2024-001-0001",
+      "information_type": "finding",
+      "stated_text": "Internet access has increased, but penetration rates remain lower than other countries in the region.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Internet access in Moldova has increased, but penetration rates remain lower than in other countries of the region.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Overview",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeated in more detail in section I.1; extracted at each place (summary and detailed section).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Penetration below the region; repeated in section I.1."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0002",
+      "information_type": "finding",
+      "stated_text": "Cyberattacks on both state entities and media outlets remain a significant issue.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cyberattacks on state entities and media outlets remain a significant issue.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Overview",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Attacks on state entities; the media outlets part is outside the issue."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0003",
+      "information_type": "intervention",
+      "stated_text": "The government recently adopted a cybersecurity legislative package to combat these problems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The government recently adopted a cybersecurity legislative package to address cyberattacks.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Overview",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "cybersecurity legislative package",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'These problems' refers to the cyberattacks in the previous sentence. Detailed in section VII.4.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0004",
+      "information_type": "finding",
+      "stated_text": "The reliability and speed of Moldova’s internet connections have generally improved.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The reliability and speed of Moldova's internet connections have generally improved.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0005",
+      "information_type": "finding",
+      "stated_text": "Moldova has fairly extensive internet coverage due to the country’s compact size and highly concentrated population.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has fairly extensive internet coverage owing to its compact size and concentrated population.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0006",
+      "information_type": "metric",
+      "stated_text": "According to 2022 data from the International Telecommunications Union, 63.5 percent of Moldovans use the internet, both on fixed or mobile networks.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "According to ITU 2022 data, 63.5 percent of Moldovans use the internet on fixed or mobile networks.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "International Telecommunications Union",
+        "actor_id": "ACT-INT-0008"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Individuals using the internet",
+        "value": 63.5,
+        "unit": "percent",
+        "reference_period": "2022"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Internet use as an indicator of access."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0007",
+      "information_type": "metric",
+      "stated_text": "Moldova’s fixed internet service penetration rate was 33.5 percent for individuals, and 69.7 percent for households, on par with other European countries, per data from the National Regulatory Agency for Electronic Communications and Information Technology (ANRCETI).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Fixed internet penetration was 33.5 percent of individuals and 69.7 percent of households, on par with other European countries, per ANRCETI.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "National Regulatory Agency for Electronic Communications and Information Technology (ANRCETI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Fixed internet service penetration rate",
+        "value": "33.5 (individuals); 69.7 (households)",
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Reference period not stated in the sentence.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Fixed penetration; reference period not stated."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0008",
+      "information_type": "finding",
+      "stated_text": "Urban areas have greater access to the internet than rural locations.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Urban areas have greater internet access than rural locations.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Urban-rural access gap."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0009",
+      "information_type": "metric",
+      "stated_text": "ANRCETI’s 2023 report estimates that 72.5 percent of Moldovans use mobile internet, with its penetration rate reaching 115 percent.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI's 2023 report estimates 72.5 percent of Moldovans use mobile internet, with penetration at 115 percent.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "ANRCETI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Mobile internet use; mobile internet penetration rate",
+        "value": "72.5; 115",
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0010",
+      "information_type": "finding",
+      "stated_text": "Although mobile internet connections are more accessible, they are slower and of lower quality than fixed-line internet connections.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Mobile internet connections are more accessible but slower and of lower quality than fixed-line connections.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0011",
+      "information_type": "metric",
+      "stated_text": "According to May 2024 data from the Speedtest Global Index, Moldova has a median mobile internet connection speed of 34.47 Mbps, and a fixed broadband speed of 128.39 Mbps.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Speedtest Global Index, May 2024: median mobile speed 34.47 Mbps and fixed broadband speed 128.39 Mbps in Moldova.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Speedtest Global Index",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Median internet connection speed",
+        "value": "34.47 (mobile); 128.39 (fixed broadband)",
+        "unit": "Mbps",
+        "reference_period": "May 2024"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0012",
+      "information_type": "intervention",
+      "stated_text": "Moldova implemented 3G networks in 2007 and 4G in 2014, but the move to 5G has been postponed from 2022 to 2024 by ANRCETI, due to Moldova’s economic crisis and low levels of 5G-compatible mobile phones.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI postponed the move to 5G from 2022 to 2024.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "move to 5G networks",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The postponed 5G move is recorded as proposed (now planned for 2024); the 3G and 4G roll-outs (2007, 2014) are background before the time window and not extracted as claims. The stated reasons are a separate barrier item on the same sentence.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "5G roll-out postponed."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0013",
+      "information_type": "barrier",
+      "stated_text": "Moldova implemented 3G networks in 2007 and 4G in 2014, but the move to 5G has been postponed from 2022 to 2024 by ANRCETI, due to Moldova’s economic crisis and low levels of 5G-compatible mobile phones.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The 5G move was postponed because of Moldova's economic crisis and low levels of 5G-compatible mobile phones.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Reasons for the 5G delay (economic crisis, few compatible handsets); no listed mechanism fits these market reasons."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0014",
+      "information_type": "intervention",
+      "stated_text": "At the same time, ANRCETI has initiated the preparatory process to issue licenses for the use of frequency bands necessary to develop 5G networks, which may take place in late 2024.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI has started preparing to license 5G frequency bands, possibly in late 2024.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "preparatory process to issue licences for 5G frequency bands",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged"
+      ],
+      "extraction_note": "'may take place in late 2024' is the source's own uncertainty about timing.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Spectrum licensing for 5G (spectrum part of RI-TEC-011)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0015",
+      "information_type": "finding",
+      "stated_text": "The development of fiber optic networks in Moldova is facilitating widespread migration to faster connections with speeds of 100 Mbps and above.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Fibre optic development is enabling widespread migration to connections of 100 Mbps and above.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: fibre roll-out."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0016",
+      "information_type": "metric",
+      "stated_text": "According to ANRCETI’s 2023 data, 51.8 percent of fixed internet subscribers enjoy such speeds.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI 2023 data: 51.8 percent of fixed internet subscribers have speeds of 100 Mbps and above.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "ANRCETI",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Fixed internet subscribers with speeds of 100 Mbps and above",
+        "value": 51.8,
+        "unit": "percent",
+        "reference_period": "2023"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0017",
+      "information_type": "intervention",
+      "stated_text": "approved in September 2023, aims to promote sustainable development, build a digital society, and bolster the ICT sector.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Digital Transformation Strategy 2023-2030, approved in September 2023, aims at sustainable development, a digital society and a stronger ICT sector.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2023-09",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Digital Transformation Strategy of 2023-2030",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The subject 'Moldova’s Digital Transformation Strategy of 2023-2030,' precedes footnote marker 12 in the same sentence; the quote starts after the marker so that no footnote number enters stated_text.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0018",
+      "information_type": "finding",
+      "stated_text": "There are no significant barriers to internet access in Moldova, though low-income households have trouble accessing higher-speed internet.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There are no significant barriers to internet access, though low-income households struggle to access higher-speed internet.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Affordability of higher-speed internet for low-income households (PC-12); the statement that there are no significant access barriers is positive context for RI-TEC-013."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0019",
+      "information_type": "finding",
+      "stated_text": "According to 2023 data from the UK-based company Cable, Moldova has the cheapest mobile internet among Eastern European countries.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cable's 2023 data show Moldova has the cheapest mobile internet among Eastern European countries.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Cable",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Affordability evidence (positive: cheapest mobile internet in Eastern Europe), for the same label (PC-12)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0020",
+      "information_type": "metric",
+      "stated_text": "Based on ITU data from 2022, a fixed-broadband internet basket of at least 5 GB costs 1.99 percent of gross national income (GNI) per capita.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ITU 2022 data: a fixed-broadband basket of at least 5 GB costs 1.99 percent of GNI per capita.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "ITU",
+        "actor_id": "ACT-INT-0008"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Fixed-broadband basket (at least 5 GB) price",
+        "value": 1.99,
+        "unit": "percent of GNI per capita",
+        "reference_period": "2022"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Affordability metric (fixed broadband basket as share of GNI per capita), for the same label (PC-12)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0021",
+      "information_type": "finding",
+      "stated_text": "However, many low-income households still cannot afford high-speed fixed or mobile connections.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Many low-income households still cannot afford high-speed fixed or mobile connections.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Low-income households cannot afford high-speed connections (PC-12)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0022",
+      "information_type": "outcome",
+      "stated_text": "Since the beginning of 2024, roaming services in 30 EU and European Economic Area countries have become more accessible to Moldovan citizens, as all mobile operators have launched offers with significantly reduced tariffs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Since early 2024 roaming in 30 EU and EEA countries is more accessible as all mobile operators launched much cheaper offers.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2024",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Outcome or finding: the change is linked to the roaming liberalisation agreed with the EU in 2023 (next sentence), but the sentence itself does not name that measure.",
+      "pass2": {
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Roaming (G4-D11). Pass 1 flags outcome or finding; the next item names the roaming liberalisation."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0023",
+      "information_type": "intervention",
+      "stated_text": "Moldova and the EU agreed to roaming liberalization in 2023,",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova and the EU agreed to roaming liberalisation in 2023.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2023",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "roaming liberalisation agreed between Moldova and the EU",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote ends at footnote marker 18; the rest of the sentence is the next item.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Roaming (G4-D11)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0024",
+      "information_type": "intervention",
+      "stated_text": "the European Commission accepted a proposal to include roaming in the Association Agreement between the EU and Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The European Commission accepted a proposal to include roaming in the EU-Moldova Association Agreement.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "European Commission",
+          "actor_id": "ACT-EU-0002"
+        }
+      ],
+      "intervention_as_stated": "inclusion of roaming in the EU-Moldova Association Agreement",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second half of the sentence after footnote marker 18. Status follows 'accepted a proposal'.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Roaming (G4-D11)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0025",
+      "information_type": "intervention",
+      "stated_text": "In February 2022, Moldova and Romania signed a bilateral agreement liberalizing roaming tariffs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In February 2022 Moldova and Romania signed a bilateral agreement liberalising roaming tariffs.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2022-02",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "bilateral agreement between Moldova and Romania liberalising roaming tariffs",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Roaming (G4-D11); bilateral with a Member State."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0026",
+      "information_type": "outcome",
+      "stated_text": "The report of the national regulatory agencies of the two countries showed a significant increase in roaming internet traffic in 2022.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The two countries' regulators reported a significant increase in roaming internet traffic in 2022.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2022",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "national regulatory agencies of the two countries",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Follows the Moldova-Romania roaming agreement in the previous sentence.",
+      "pass2": {
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Linked by the source to the Moldova-Romania roaming agreement."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0027",
+      "information_type": "outcome",
+      "stated_text": "According to the report, the cost of the average roaming basket has fallen by almost 70 percent for users in Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "According to the regulators' report, the average roaming basket cost fell by almost 70 percent for users in Moldova.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "national regulatory agencies of the two countries",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Change in the cost of the average roaming basket",
+        "value": "almost -70",
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Outcome with a figure; the metric block records the stated value.",
+      "pass2": {
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "As -0026."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0028",
+      "information_type": "finding",
+      "stated_text": "Though there is no major gender gap among Moldovans who regularly use the internet, there are differences in terms of age, geographic location and income level, and those between the ages of 25–34 years make up a quarter of the country’s internet users.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There is no major gender gap in internet use, but there are differences by age, location and income.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: describes patterns of internet use rather than networks or access to them.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: demographic patterns of internet use (gender, age, location, income), not network coverage or access; fits no issue (as MDA-CSO-2026-001-0040)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0029",
+      "information_type": "metric",
+      "stated_text": "Of the active internet audience in Moldova, 60 percent of users live in urban areas, and Moldova’s capitol, Chișinău, accounts for 34 percent of all Moldova’s internet audience.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "60 percent of Moldova's active internet audience lives in urban areas; Chișinău accounts for 34 percent.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Share of active internet audience",
+        "value": "60 (urban areas); 34 (Chișinău)",
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: distribution of internet users rather than access to networks.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: distribution of internet users, not network coverage; as -0028."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0030",
+      "information_type": "finding",
+      "stated_text": "Insufficient development of fixed access infrastructure can be an issue for rural communities.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Insufficient fixed access infrastructure can be an issue for rural communities.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Rural fixed infrastructure."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0031",
+      "information_type": "metric",
+      "stated_text": "As of 2024, about 370 villages in the country do not have the technical ability to connect to optical internet.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "As of 2024, about 370 villages cannot technically connect to optical internet.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Villages without the technical ability to connect to optical internet",
+        "value": "about 370",
+        "unit": "villages",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Villages without optical connection."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0032",
+      "information_type": "finding",
+      "stated_text": "The telecommunications sector in Moldova has been liberalized.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's telecommunications sector has been liberalised.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-012",
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Market context; positive."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0033",
+      "information_type": "finding",
+      "stated_text": "There are few regulatory or legal barriers that limit the diversity of service providers, but market concentration does inhibit competition.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Few regulatory or legal barriers limit provider diversity, but market concentration inhibits competition.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Concentrated telecom market inhibits competition."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0034",
+      "information_type": "metric",
+      "stated_text": "There are 110 fixed internet service providers, three of which also provide mobile internet services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There are 110 fixed internet service providers, three of which also provide mobile internet.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Fixed internet service providers",
+        "value": 110,
+        "unit": "providers",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Market structure."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0035",
+      "information_type": "metric",
+      "stated_text": "Moldtelecom, the national operator, holds more than 50 percent of the broadband internet market.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldtelecom, the national operator, holds more than 50 percent of the broadband market.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldtelecom",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Moldtelecom share of the broadband internet market",
+        "value": "more than 50",
+        "unit": "percent",
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Incumbent share of the broadband market."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0036",
+      "information_type": "intervention",
+      "stated_text": "The government plans to reorganize Moldtelecom after encountering privatization issues due to lower-than-expected offer prices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The government plans to reorganise Moldtelecom after privatisation problems caused by low offer prices.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The government",
+          "actor_id": "ACT-MDA-0002"
+        },
+        {
+          "name_as_stated": "Moldtelecom",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "reorganisation of Moldtelecom",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: ownership of the state operator rather than networks or access as such.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: ownership and privatisation of the state operator, not regulation, competitive safeguards or networks; the source does not tie it to market oversight."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0037",
+      "information_type": "finding",
+      "stated_text": "There are no significant restrictions on entering Moldova’s telecom and information technology market.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There are no significant restrictions on entering Moldova's telecom and IT market.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-012",
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: market entry."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0038",
+      "information_type": "finding",
+      "stated_text": "Telecommunications companies must obtain permission from ANRCETI before offering services, although the process is relatively simple.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Telecoms companies need ANRCETI permission before offering services, but the process is relatively simple.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Authorisation regime under the electronic communications framework; positive."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0039",
+      "information_type": "finding",
+      "stated_text": "Moldova’s legislative framework in this field is largely harmonized with EU law.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's electronic communications legislation is largely harmonised with EU law.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: largely harmonised with EU law; differs from EU findings of partial alignment (noted for the contradiction review, not resolved)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0040",
+      "information_type": "intervention",
+      "stated_text": "The Law of Electronic Communications, in force since 2017, provides the overall framework for the country’s provision of telecommunication services and contains a number of EU directives covering the sector, including competition and market regulation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on Electronic Communications, in force since 2017, frames telecoms provision and contains several EU directives.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law of Electronic Communications",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Law described as in force since 2017; replaced later by Law No. 72/2025 (other sources)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0041",
+      "information_type": "intervention",
+      "stated_text": "The Law Regarding Access to Ownership and Sharing of Infrastructure Associated with Public Electronic Communications Networks, implemented in 2016,",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The law on access to and sharing of infrastructure for public electronic communications networks was implemented in 2016.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law Regarding Access to Ownership and Sharing of Infrastructure Associated with Public Electronic Communications Networks",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote ends at footnote marker 38; the sentence continues that the law regulates providers' access to infrastructure and stimulates competition.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Infrastructure sharing (cost reduction part of RI-TEC-011)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0042",
+      "information_type": "intervention",
+      "stated_text": "(until 2023, called the Law on Electronic Commerce) establishes the principles of regulation and conditions for the provision of information society services, the responsibilities of service providers and intermediaries, as well as the principle of supporting cooperation between the Republic of Moldova and other countries in the process of providing information society services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on Information Society Services sets principles and conditions for information society services and the responsibilities of providers and intermediaries.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.1 Market for Telecommunications and Internet Service Providers",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law on Information Society Services",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The law's name precedes footnote marker 40, so the quote starts after it. theme_doubtful: rules on information society services and intermediaries are closest to EU digital market rules (TECH-DIGI); analyst to confirm.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved: information society services and intermediary responsibilities are e-commerce rules, in scope under RI-TEC-034 (G4-D11)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0043",
+      "information_type": "intervention",
+      "stated_text": "The Law on Electronic Communications governs Moldova’s internet and telecommunications, and it appoints ANRCETI as the sector’s regulator.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Law on Electronic Communications governs internet and telecoms and appoints ANRCETI as regulator.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law on Electronic Communications; appointment of ANRCETI as regulator",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Designation of the regulator (M2). The same law is also described on this page in II.1 with different wording.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Designation of the regulator."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0044",
+      "information_type": "finding",
+      "stated_text": "ANRCETI ensures the implementation of development strategies for relevant industries, protects the rights and interests of end users, and monitors compliance with the law.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI implements sector development strategies, protects end-user rights and monitors legal compliance.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0045",
+      "information_type": "finding",
+      "stated_text": "ANRCETI also regulates the management of the top-level domain in Moldova (.md) in accordance with internet regulations and decisions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI regulates management of the .md top-level domain.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Management of the .md top-level domain is a regulatory function that fits no approved issue, and no problem is stated."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0046",
+      "information_type": "finding",
+      "stated_text": "ANRCETI’s activities must be independent from providers, telecom equipment manufacturers, and the government, though the government does have the ability to appoint ANRCETI’s leadership for four-year terms and sets term limits to eight years.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI must be independent of providers, manufacturers and government, though the government appoints its leadership for four-year terms.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [
+          "MEC-05"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Government appoints the regulator's leadership; supports the appointments part of RI-TEC-012."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0047",
+      "information_type": "finding",
+      "stated_text": "Directors may be dismissed from their positions due to systematic and improper performance of their duties.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI directors may be dismissed for systematic and improper performance of duties.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0048",
+      "information_type": "finding",
+      "stated_text": "ANRCETI must submit an annual financial report to the government.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI must submit an annual financial report to the government.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Accountability to government."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0049",
+      "information_type": "finding",
+      "stated_text": "ANRCETI operates relatively transparently.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "ANRCETI operates relatively transparently.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: transparency."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0050",
+      "information_type": "finding",
+      "stated_text": "All decisions that influence the relevant market and supply of public services are subject to public hearings.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "All ANRCETI decisions affecting the market and public service supply are subject to public hearings.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANRCETI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The converted text lacks a full stop before 'All decisions'; the quote starts at 'All'.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: public hearings."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0051",
+      "information_type": "finding",
+      "stated_text": "Moldova’s Ministry of Economic Development and Digitalization is charged with optimizing the regulatory framework in information technology, creating preconditions for technological development, promoting demonopolization of the domestic market and eliminating anti-competitive practices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MDED is charged with optimising IT regulation, enabling technological development and promoting market demonopolisation.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Economic Development and Digitalization",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0052",
+      "information_type": "finding",
+      "stated_text": "The ministry is responsible for regulating information technology and the digital economy, electronic and postal communications, infrastructure and market surveillance, and consumer protection policies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MDED regulates IT and the digital economy, electronic and postal communications, market surveillance and consumer protection.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Economic Development and Digitalization",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0053",
+      "information_type": "intervention",
+      "stated_text": "In January 2025, a new Law on Cyber Security will come into force in Moldova, establishing the Agency for Cybersecurity, which will be responsible for the protection of critical information infrastructure, identification and accounting of service providers, implementation of a mandatory mechanism for reporting cyber incidents, as well as for supervision and state control of service providers’ compliance with the cybersecurity regulatory framework",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A new Law on Cyber Security enters into force in January 2025, setting up a Cybersecurity Agency for critical infrastructure and incident reporting.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "II.2 Oversight",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agency for Cybersecurity",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law on Cyber Security; Agency for Cybersecurity",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Status adopted: the law is adopted and due to enter into force in January 2025 (adoption in March 2023 is stated on page 22). Cross-reference in brackets left out. Wording differs from the page 22 item, so both are kept.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same law as -0081 (wording differs)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0054",
+      "information_type": "finding",
+      "stated_text": "Moldova’s legislation provides for the protection of privacy from unlawful and unjustified intrusion and the arbitrary surveillance of citizens.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldovan legislation protects privacy from unlawful intrusion and arbitrary surveillance.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0055",
+      "information_type": "finding",
+      "stated_text": "Despite constitutional guarantees, the Moldovan government’s surveillance of online activities often violates users’ right to privacy.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Despite constitutional guarantees, government surveillance of online activities often violates users' privacy.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0056",
+      "information_type": "finding",
+      "stated_text": "Recent reform, which was accompanied by criticism from civil society, expanded the internet surveillance powers of the SIS",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A recent reform, criticised by civil society, expanded the SIS's internet surveillance powers.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "SIS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The reform is not named, so it is a finding (rule on named measures). Cross-reference in brackets left out. theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0057",
+      "information_type": "finding",
+      "stated_text": "A special technical unit of the SIS intercepts electronic communications, which are transmitted to units of other agencies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A special SIS technical unit intercepts electronic communications and passes them to other agencies.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "SIS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0058",
+      "information_type": "finding",
+      "stated_text": "By law, the SIS should only listen to conversations if it is expressly ordered by the court or the prosecutor in the case of obvious crimes and urgent circumstances.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "By law the SIS may listen to conversations only on court or prosecutor order.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "SIS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0059",
+      "information_type": "finding",
+      "stated_text": "Internet and mobile service providers are required to install SIS-compatible equipment in their ICT infrastructure to provide seamless access to internet traffic and subscriber information",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Internet and mobile providers must install SIS-compatible equipment giving access to traffic and subscriber information.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "SIS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Cross-reference in brackets left out. theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0060",
+      "information_type": "finding",
+      "stated_text": "Evidence of surveillance abuse by the government has been repeatedly uncovered in recent years.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Evidence of government surveillance abuse has repeatedly been uncovered in recent years.",
+      "location": {
+        "page": 20,
+        "page_end": null,
+        "section": "VII.2 State Surveillance and Legal Protections for Privacy",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "The individual surveillance cases that follow are not extracted (see file notes). theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0061",
+      "information_type": "finding",
+      "stated_text": "Under the law, the government formed the National Center for the Protection of Personal Data, a special supervisory body empowered to register data privacy violations, conduct inspections, and impose fines.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The National Center for the Protection of Personal Data is a supervisory body empowered to register violations, inspect and fine.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Center for the Protection of Personal Data",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Recorded as a finding on the body's powers (M2). Its creation under the 2011 law is before the time window and not extracted separately.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Powers of the supervisory authority; descriptive."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0062",
+      "information_type": "intervention",
+      "stated_text": "Moldova enforces the Council of Europe’s Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data and other international agreements to which Moldova is a party.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova enforces the Council of Europe Convention 108 on automatic processing of personal data.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Council of Europe Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Council of Europe Convention 108, not the EU acquis; context for the data protection framework."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0063",
+      "information_type": "intervention",
+      "stated_text": "On July 25, 2024, Parliament approved the new Law on Personal Data Protection",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "On 25 July 2024 Parliament approved the new Law on Personal Data Protection, to align with the GDPR.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2024-07-25",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Parliament",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "new Law on Personal Data Protection",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote ends at footnote marker 208; the sentence continues 'to harmonize its national legislation with the EU General Data Protection Regulation (GDPR)', reflected in the summary.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Probably the same law as Law No. 195/2024 in MDA-CSO-2026-001; the text gives no number."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0064",
+      "information_type": "intervention",
+      "stated_text": "The law will enter into force on August 24, 2026.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The new personal data protection law will enter into force on 24 August 2026.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2026-08-24",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "new Law on Personal Data Protection (entry into force)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Planned entry into force as stated in 2024; the source does not say whether it has happened.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Planned entry into force as stated in 2024."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0065",
+      "information_type": "intervention",
+      "stated_text": "Citizens, officials and legal entities may be held liable under Contravention Code Article 74/1 for the processing of personal data in violation of data protection laws.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Contravention Code Article 74/1 makes processing personal data in breach of data protection laws an offence.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Contravention Code Article 74/1",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020",
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Sanctions for breaches (enforcement part of RI-TEC-020)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0066",
+      "information_type": "intervention",
+      "stated_text": "A separate provision (Article 74/3) establishes liability for failure to comply with the regulations of the National Center for the Protection of Personal Data, which prescribes periods for the restoration of personal data rights, including the blocking, suspension or termination of the processing of personal data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Article 74/3 sets liability for failing to comply with the data protection centre's orders to restore data rights.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Center for the Protection of Personal Data",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Contravention Code Article 74/3",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020",
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Liability for not complying with the supervisory authority."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0067",
+      "information_type": "finding",
+      "stated_text": "Moldovan legislation does not require service providers to monitor traffic or content.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldovan law does not require service providers to monitor traffic or content.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: monitoring obligations sit between data governance and content control. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved: absence of a general monitoring obligation on service providers is an online services rule (e-commerce and Digital Services Act principle), so RI-TEC-034; positive; weak materiality."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0068",
+      "information_type": "finding",
+      "stated_text": "Public access points are not required to identify, track or store customers’ personal data and information.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Public access points need not identify, track or store customers' personal data.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "No identification or tracking duty at public access points: a surveillance and anonymity matter in the internet freedom discussion, fitting no data protection issue; no problem stated (read with -0054 to -0060)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0069",
+      "information_type": "intervention",
+      "stated_text": "However, according to Law on Electronic Communications, providers must facilitate the interception of electronic communications, in cases concerning national security, public order, and criminal prosecution, by law enforcement with an order from a judge.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Under the Law on Electronic Communications providers must enable lawful interception, by judicial order, for security, order and prosecution.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law on Electronic Communications (interception obligations)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0070",
+      "information_type": "finding",
+      "stated_text": "Service providers are required to provide the SIS with free and prompt access to all equipment interfaces, their electronic communications networks, and the conditions necessary to connect special equipment to listen to user communications within court authorization.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Providers must give the SIS free, prompt access to equipment and networks to connect listening equipment under court authorisation.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "SIS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: state surveillance and interception law is tagged TECH-DATA as the brief places surveillance law there; the passage concerns access to communications data rather than data protection rules as such. Analyst to confirm.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: state surveillance and interception powers of the security service, a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (as MDA-CSO-2026-001-0027)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0071",
+      "information_type": "intervention",
+      "stated_text": "The Law on Preventing and Combating Cybercrime obliges service providers to maintain records of service users and provide competent authorities with user data based on legal requests.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The cybercrime law obliges providers to keep user records and give authorities user data on legal request.",
+      "location": {
+        "page": 21,
+        "page_end": 22,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Law on Preventing and Combating Cybercrime (user records and data access)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: a data retention and access obligation under the cybercrime law; tagged TECH-DATA for retention of personal data, though cybercrime enforcement is out of scope (rules section 4). Analyst to confirm.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: data retention and access obligations under the cybercrime law; cybercrime enforcement is outside the theme (alpha ruling)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0072",
+      "information_type": "finding",
+      "stated_text": "Providers are required to monitor, supervise and store data to identify service providers, service users and channels through which messages are transmitted for 180 days. They must also comply with authorities’ requests to immediately store data when there is a risk of destruction or damage for no more than 120 days. Providers are also obliged to ensure that computer data contained in network protocol packets is decrypted and that the data is retained for 90 days.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Providers must store identifying data for 180 days, preserve data on request up to 120 days, and decrypt and keep packet data 90 days.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.3 Data Protection, Retention, and Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Same theme doubt as the previous item: retention obligations under the cybercrime law.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: data retention and access obligations under the cybercrime law; cybercrime enforcement is outside the theme (alpha ruling)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0073",
+      "information_type": "finding",
+      "stated_text": "The 2023 Digital Quality of Life Index notes that cyberattacks, which target news outlets, government websites, civil society groups, and other entities in Moldova, are becoming more frequent and sophisticated.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The 2023 Digital Quality of Life Index notes increasingly frequent and sophisticated cyberattacks on government websites and others in Moldova.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "2023 Digital Quality of Life Index",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Attacks on government websites; other targets outside the issue."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0074",
+      "information_type": "finding",
+      "stated_text": "The Kremlin’s full-scale invasion of Ukraine also led to an increase in cyberattacks.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Russia's full-scale invasion of Ukraine led to more cyberattacks.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0075",
+      "information_type": "metric",
+      "stated_text": "Within a year after the start of the full-scale invasion of Ukraine, attacks on Moldova’s digital infrastructure increased by a roughly 33 percent, a trend that continued in the subsequent period.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Attacks on Moldova's digital infrastructure rose by about 33 percent in the year after the invasion, and kept rising.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Increase in attacks on Moldova's digital infrastructure",
+        "value": "roughly 33",
+        "unit": "percent",
+        "reference_period": "first year after the full-scale invasion of Ukraine"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Attacks on digital infrastructure."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0076",
+      "information_type": "finding",
+      "stated_text": "In this context, cybersecurity has become a subject of strategic importance for the Republic of Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cybersecurity has become a matter of strategic importance for Moldova.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "General context."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0077",
+      "information_type": "metric",
+      "stated_text": "According to the Information Technology and Cybersecurity Service (STISC), one of the largest cyberattacks in the country’s history occurred in August 2022, when 80 government information systems, platforms, and public portals were targeted.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "STISC says one of the largest cyberattacks, in August 2022, targeted 80 government information systems, platforms and portals.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2022-08",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Information Technology and Cybersecurity Service (STISC)",
+        "actor_id": "ACT-MDA-0012"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Government information systems, platforms and public portals targeted in one cyberattack",
+        "value": 80,
+        "unit": "systems",
+        "reference_period": "August 2022"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Attack on 80 government systems (August 2022)."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0078",
+      "information_type": "finding",
+      "stated_text": "In the subsequent period, cyberattacks targeted the platforms of the Chișinău International Airport, government agencies, law enforcement agencies, the Central Election Commission, state-owned enterprises, as well as non-governmental, financial and commercial organizations.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Later cyberattacks targeted the airport, government and law enforcement agencies, the Central Election Commission, state-owned enterprises and others.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0079",
+      "information_type": "finding",
+      "stated_text": "The government communications system was the target of a large-scale cyberattack during the European Political Community Summit in Bulboaca in June 2023.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The government communications system suffered a large-scale cyberattack during the European Political Community Summit in June 2023.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2023-06",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0080",
+      "information_type": "metric",
+      "stated_text": "STISC representatives say they repel about 40 attacks daily, many of which are aimed at government infrastructure and originate from Russia.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "STISC says it repels about 40 attacks a day, many aimed at government infrastructure and originating from Russia.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "STISC representatives",
+        "actor_id": "ACT-MDA-0012"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Cyberattacks repelled by STISC",
+        "value": "about 40",
+        "unit": "attacks per day",
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Attacks repelled by STISC on government infrastructure."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0081",
+      "information_type": "intervention",
+      "stated_text": "In March 2023, Parliament adopted the Law on Cybersecurity,",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Parliament adopted the Law on Cybersecurity in March 2023; it enters into force in January 2025.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2023-03",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Parliament",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Law on Cybersecurity",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote ends at footnote marker 224; the sentence continues 'which will come into force in January 2025', reflected in the summary.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same law as -0053."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0082",
+      "information_type": "intervention",
+      "stated_text": "The document establishes the Agency for Cyber Security under the Ministry of Economic Development and Digitalization, which will be responsible for managing cybersecurity crises throughout the country.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The law establishes an Agency for Cyber Security under MDED to manage cybersecurity crises nationwide.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agency for Cyber Security",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Ministry of Economic Development and Digitalization",
+          "actor_id": "ACT-MDA-0004"
+        }
+      ],
+      "intervention_as_stated": "Agency for Cyber Security",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Creation of an institution by law (M2); status follows the adopted law.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0083",
+      "information_type": "intervention",
+      "stated_text": "The Agency will host a cyber incident response team and a single national contact center.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Agency will host a cyber incident response team and a single national contact centre.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agency for Cyber Security",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "cyber incident response team and single national contact centre in the Agency for Cyber Security",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0084",
+      "information_type": "intervention",
+      "stated_text": "The law also created The National Institute for Innovation in Cybersecurity, Cybercor, which will conduct research and launch cyber educational programs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The law created the National Institute for Innovation in Cybersecurity, Cybercor, for research and cyber education.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "National Institute for Innovation in Cybersecurity (Cybercor)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Creation of an institution (M2). theme_doubtful: its stated tasks are research and education, which may fall under digital skills rather than the security of networks and systems.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: an institute for cybersecurity research and education; digital skills and education are outside scope (R2), and no capacity gap of public institutions is addressed."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0085",
+      "information_type": "intervention",
+      "stated_text": "In June 2024, STISC announced the launch of the government cyber event disclosure platform (cyberevent.gov.md), which aims to improve the ability to monitor, analyze, and respond to national-level cybersecurity incidents.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In June 2024 STISC launched the cyberevent.gov.md platform to monitor, analyse and respond to national cybersecurity incidents.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "VII.4 Cybersecurity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": "2024-06",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "STISC",
+          "actor_id": "ACT-MDA-0012"
+        }
+      ],
+      "intervention_as_stated": "government cyber event disclosure platform (cyberevent.gov.md)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Status from 'announced the launch'.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Incident monitoring and response capacity."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0086",
+      "information_type": "finding",
+      "stated_text": "Mobile internet usage continues to grow in Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Mobile internet usage in Moldova continues to grow.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "I.1 Internet Access",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive: growing mobile uptake."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0087",
+      "information_type": "metric",
+      "stated_text": "Though there is no major gender gap among Moldovans who regularly use the internet, there are differences in terms of age, geographic location and income level, and those between the ages of 25–34 years make up a quarter of the country’s internet users.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "People aged 25 to 34 make up a quarter of Moldova's internet users.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.2 Cost and Equity",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Share of internet users aged 25-34",
+        "value": 25,
+        "unit": "percent (a quarter)",
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Second claim (metric) in the sentence quoted by MDA-CSO-2024-001-0028; same location. theme_doubtful: describes patterns of internet use rather than networks or access to them, as for -0028.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: age profile of internet users; as -0028."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0088",
+      "information_type": "finding",
+      "stated_text": "Internet shutdowns and the blocking of social media networks are not common in Moldova.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Internet shutdowns and blocking of social media networks are not common in Moldova.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.3 Internet Disruptions, Shutdowns, and Backbone Centralization",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: network shutdowns concern access to electronic communications networks (TECH-INFRA), but the first pass treated blocking and shutdowns as internet freedom matters outside the theme; the social media blocking part is content blocking. For the analyst.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: internet shutdowns and social media blocking are internet freedom and content matters; the open internet part of RI-TEC-011 concerns traffic management rules, not state shutdowns. No problem stated."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0089",
+      "information_type": "finding",
+      "stated_text": "In general, Moldova’s regulatory framework does not provide for any restrictions on connection.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's regulatory framework generally provides for no restrictions on internet connection.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "I.3 Internet Disruptions, Shutdowns, and Backbone Centralization",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: about legal restrictions on network connection (access to networks); see MDA-CSO-2024-001-0088 for the same doubt.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: as -0088."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0090",
+      "information_type": "finding",
+      "stated_text": "Media representatives and civil society organizations have repeatedly criticized the limitations on access to data on the national courts’ information portal.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Media and civil society have repeatedly criticised limits on access to data on the national courts' information portal.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "V.1 Constitutional Protections for Individuals Rights Online",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Media representatives and civil society organizations",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view",
+        "theme_doubtful"
+      ],
+      "extraction_note": "reported_view: criticism by media and civil society as reported by Freedom House. theme_doubtful: the courts' information portal is a public online service (TECH-DGOV), but the claim sits in the access-to-information discussion and may concern transparency rather than the digital service.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: limits on access to court data are an access to information and transparency matter; RI-TEC-016 excludes general transparency and RI-TEC-010 covers communication with courts and system connections."
+      }
+    },
+    {
+      "item_id": "MDA-CSO-2024-001-0091",
+      "information_type": "finding",
+      "stated_text": "Public officials have also invoked the Law on Personal Data Protection, State and Commercial Secrets to avoid providing information to outlets and journalists not deemed as part of the “official” media.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Officials have invoked personal data protection and secrecy laws to avoid giving information to journalists outside the 'official' media.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "V.1 Constitutional Protections for Individuals Rights Online",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-11",
+        "period_covered": "June 2023 to May 2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Freedom House",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "theme_doubtful: concerns the application of personal data protection law (TECH-DATA) but as a ground for refusing access to information, which is a freedom of information matter.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: data protection and secrecy law invoked to refuse information to journalists is a freedom of information matter; not a compliance failure in data processing under RI-TEC-020. Analyst to confirm."
+      }
+    }
+  ]
+}

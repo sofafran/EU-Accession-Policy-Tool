@@ -13,8 +13,12 @@
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -79,12 +83,12 @@
       ],
       "extraction_note": "'Today' is the news item's date, 13 October 2026, printed at the top of the page. The page lists freedom of movement for workers (2) in the internal market cluster, so chapter scope applies; chapter left empty because the sentence names clusters, not chapters. Cluster 3 (with chapter 10, digital transformation and media) is opened too; cluster holds one value. Type flagged: an accession step, not a national measure.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Accession process step (negotiating clusters or benchmarks); fits no single issue (G5-D14 of RUN-2026-01)"
       }
     },
     {
@@ -149,12 +153,12 @@
       ],
       "extraction_note": "'Those chapters' are the chapters of the two clusters opened, which include freedom of movement for workers (2). The benchmarks themselves are not stated; they are in the EU common positions, which are LIMITE and not used (LIM-0045). Type flagged: between intervention (an EU decision) and recommendation (EU expectations).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Accession process step (negotiating clusters or benchmarks); fits no single issue (G5-D14 of RUN-2026-01)"
       }
     }
   ]

@@ -13,8 +13,12 @@
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -78,12 +82,12 @@
       ],
       "extraction_note": "The Commission reports the growth impacts presented in the ERP. Flagged because the subject is the macroeconomic effect rather than the digital measure itself.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Macroeconomic projection of connectivity policies reported from the ERP; fits no approved issue"
       }
     }
   ]

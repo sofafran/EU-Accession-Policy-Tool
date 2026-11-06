@@ -13,8 +13,12 @@
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -75,12 +79,14 @@
       "flags": [],
       "extraction_note": "The Reform Agenda is a government document agreed with the Commission; the speaker is the Government as issuing institution.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); the Government's description of its own agenda, so country_response."
       }
     },
     {
@@ -143,12 +149,16 @@
       "flags": [],
       "extraction_note": "The Reform Agenda itself is adopted (Government Decision 260/2025 per the source register); its measures are planned.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-036",
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Aims listed in the Reform Agenda."
       }
     },
     {
@@ -209,11 +219,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -276,11 +288,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-024"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -342,11 +356,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -409,11 +425,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -475,11 +494,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -541,11 +562,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -607,11 +630,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -673,12 +698,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cyber Resilience Act is product cybersecurity law; nearest fit is the cybersecurity legal framework issue (awkward)."
       }
     },
     {
@@ -741,12 +768,12 @@
       ],
       "extraction_note": "Sector information system; doubtful under R22.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: one ministry's social services information system (rejected candidate CI-05, G4-D04; R22); consistent with MDA-EU-2025-001-0102."
       }
     },
     {
@@ -807,12 +834,15 @@
       "flags": [],
       "extraction_note": "Two sentences of one claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -873,12 +903,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -939,11 +971,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1005,11 +1040,15 @@
       "flags": [],
       "extraction_note": "Three sentences of one step; the deadline was added to the quote at the G3 check so that the summary matches it.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-015",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1071,11 +1110,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1137,12 +1179,14 @@
       "flags": [],
       "extraction_note": "The deadline was added to the quote at the G3 check so that the summary matches it. Land registry e-services count as digital government.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cadastre is a property register under RI-TEC-015."
       }
     },
     {
@@ -1204,11 +1248,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1272,12 +1318,14 @@
       ],
       "extraction_note": "Platform used by businesses; doubtful whether a public e-service or a customs IT upgrade.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Consistent with the Commission recommendation on CDS (MDA-EU-2025-001-0035); theme_doubtful resolved as in scope."
       }
     },
     {
@@ -1338,12 +1386,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -1404,12 +1454,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -1470,12 +1524,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -1536,12 +1594,15 @@
       "flags": [],
       "extraction_note": "The same sentence gives a barrier item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012",
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as barrier -0024."
       }
     },
     {
@@ -1602,12 +1663,15 @@
       "flags": [],
       "extraction_note": "Same sentence as the preceding metric.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-012",
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier. Same sentence as metric -0023."
       }
     },
     {
@@ -1668,12 +1732,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -1734,12 +1802,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -1800,12 +1872,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -1868,12 +1942,16 @@
       ],
       "extraction_note": "\"Potential resistance\" is hedged in the source.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier. Potential resistance of operators is hedged in the source, so MEC-10 is not assigned."
       }
     },
     {
@@ -1934,12 +2012,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-025",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -2001,12 +2082,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -2067,12 +2153,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -2136,12 +2228,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-024",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cybersecurity capability also fits RI-TEC-023; limited to three."
       }
     },
     {
@@ -2202,11 +2298,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-012"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2269,11 +2368,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-024"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2336,11 +2437,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2402,11 +2506,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2468,11 +2575,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2534,11 +2643,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-012"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2600,11 +2712,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2667,11 +2781,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-024"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2734,11 +2850,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-025",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2800,11 +2919,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2866,11 +2987,13 @@
       "flags": [],
       "extraction_note": "The deadline was added to the quote at the G3 check so that the summary matches it.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -2932,11 +3055,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3000,12 +3125,14 @@
       ],
       "extraction_note": "Internal administration system; doubtful under the digital government test.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government-wide HR information system, consistent with MDA-EU-2024-001-0034; doubtful."
       }
     },
     {
@@ -3069,12 +3196,16 @@
       ],
       "extraction_note": "Health sector digital systems; kept because the text refers to interoperability with EU standards.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding. S3 awkward fit: the gap is a missing eHealth strategy and framework rather than systems not interoperable with insurance data; theme_doubtful resolved as in scope."
       }
     },
     {
@@ -3138,12 +3269,14 @@
       ],
       "extraction_note": "eHealth inside a health reform; doubtful. The track-and-trace system for medicines in the same reform is left out as a sector system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Theme_doubtful resolved as in scope under RI-TEC-009."
       }
     },
     {
@@ -3207,11 +3340,13 @@
       ],
       "extraction_note": "See the objective item.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3274,11 +3409,13 @@
       "flags": [],
       "extraction_note": "Three sentences of one claim; the contact point concerns interoperability with EU digital health systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3343,12 +3480,14 @@
       ],
       "extraction_note": "Online filing by declarants and interoperability inside an anti-corruption reform; doubtful under R22.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Asset declaration checks through MConnect are named in RI-TEC-028; theme_doubtful resolved as in scope."
       }
     },
     {
@@ -3412,12 +3551,14 @@
       ],
       "extraction_note": "E-File is used by parties; the case management system is a back-office sector system (out by default). The deadline was added to the quote at the G3 check so that the summary matches it.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-010"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "In scope for E-File (electronic filing by parties, communication with courts) and connections between systems; the case management system itself is back-office (R22)."
       }
     },
     {
@@ -3478,12 +3619,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -3544,11 +3687,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -3610,12 +3756,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -3676,12 +3824,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -3742,12 +3892,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Two sentences of one claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -3810,12 +3962,12 @@
       ],
       "extraction_note": "added at the second pass. Internet use by age; doubtful whether it concerns access to networks (TECH-INFRA) or is a description of usage.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: internet use by age group is digital inclusion and skills, not network access; fits no approved issue (R2)."
       }
     },
     {
@@ -3876,12 +4028,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -3943,12 +4097,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. \"It\" refers to 5G technology in the preceding sentence, which is a statement of expected benefits and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-024"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -4009,12 +4165,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -4076,12 +4234,15 @@
       "flags": [],
       "extraction_note": "added at the second pass. Stated by the Government in its own plan; recorded as a recommendation because it says what is needed next.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-024",
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU recommendation."
       }
     },
     {
@@ -4144,12 +4305,16 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-028",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Shared platforms: MCloud and MPay as building blocks, MConnect interoperability, MPass identification."
       }
     },
     {
@@ -4210,12 +4375,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. The same sentence gives a finding item on the lack of integration with EU systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Same sentence as finding -0064."
       }
     },
     {
@@ -4277,12 +4444,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Same sentence as the preceding metric.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding. Lack of integration with EU systems for cross-border use; also touches RI-TEC-026 and RI-TEC-027. Same sentence as metric -0063."
       }
     },
     {
@@ -4345,12 +4514,16 @@
       ],
       "extraction_note": "added at the second pass. States a problem and its cause; close to a barrier.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -4411,12 +4584,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -4477,12 +4652,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Stated by the Government in its own plan; recorded as a recommendation because it says what is needed next.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU recommendation."
       }
     },
     {
@@ -4543,12 +4722,16 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -4609,12 +4792,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -4675,11 +4860,13 @@
       "flags": [],
       "extraction_note": "added at the second pass. In scope as connection to an EU electronic system; the same step is item -0018.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4741,11 +4928,13 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4807,11 +4996,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. \"The agency\" is the National Agency for Cybersecurity named in the preceding sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4873,11 +5065,13 @@
       "flags": [],
       "extraction_note": "added at the second pass. Two sentences of one claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -4939,12 +5133,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. E-procurement portal used by bidders. Launch year 2018 is stated; the claim is about the current situation, so out_of_window is not set.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Describes the system to be replaced (G4-D01)."
       }
     },
     {
@@ -5007,12 +5203,16 @@
       ],
       "extraction_note": "added at the second pass. States a problem and its cause; close to a barrier.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -5073,12 +5273,14 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU finding."
       }
     },
     {
@@ -5139,11 +5341,13 @@
       "flags": [],
       "extraction_note": "added at the second pass",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5205,11 +5409,13 @@
       "flags": [],
       "extraction_note": "added at the second pass. The same step is item -0043.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5271,12 +5477,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Tax e-services count as digital government.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -5337,12 +5547,16 @@
       "flags": [],
       "extraction_note": "added at the second pass. Tax e-services count as digital government.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Government statement in the Reform Agenda (agreed with the Commission), not an EU requirement (PC-06); default link for a non-EU barrier."
       }
     },
     {
@@ -5403,11 +5617,13 @@
       "flags": [],
       "extraction_note": "added at the second pass. In scope as connection to EU electronic systems (R22).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5469,11 +5685,13 @@
       "flags": [],
       "extraction_note": "added at the second pass. Planned dates are targets, not event dates. The same step is item -0044.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -5535,11 +5753,13 @@
       "flags": [],
       "extraction_note": "added at the second pass. In scope as connection to EU electronic systems (R22).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     }

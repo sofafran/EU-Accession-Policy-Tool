@@ -1,0 +1,5020 @@
+{
+  "source_id": "MDA-GOV-2026-010",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-52 read in full",
+    "notes": "Read in full: pages 1-52 (page 1 is the scanned approval order, page 2 the title page, page 52 the abbreviations list). Romanian only: stated_text is the Romanian text as converted, translation_en is the extracting agent's translation, machine_translated is true and evidence confidence is capped at Medium. The document is mostly a landscape table (action, indicator, deadlines, unit, responsible person, status, comments); the converted text interleaves the columns, so quotes are taken from contiguous runs of the comments column and flagged table. Text pages equal PDF pages; the report has no printed page numbers. All items are theme TECH-CYBER (two also TECH-DATA for the state register of cyber incidents); no Chapter 2 content. The report links each objective to PNA Chapter 10 items 1-5 and Chapter 31 item 8; this is recorded in the objective items' notes, not as chapter tags, because the passages themselves are not under a chapter heading. Left out: the Agency's internal IT set-up (actions 1.2 to 1.4: networks, Active Directory and PKI, Microsoft 365), internal protection of state secrets and personal data (action 11), awareness posts on the website and social media, a single study visit and single training events, defence cooperation (PESCO), research and university cooperation (Objective VII, page 41), the internal register of agreements (page 27), general opinions on draft acts, and human resources, integrity and budget objectives IX and XI (pages 43-51) except one staffing metric. Doubtful for the analyst: item 0012 (the Agency's own data centre as incident-response capacity) and item 0065 (staffing metric) are flagged theme_doubtful. The status column says 'Realizat' for action 5.2 although the comment says the SIEM is still being configured (item 0018, recorded in_progress). Several statements (Cyber Reserve during the electoral period, pages 26-27; ECCC memorandum, pages 41-42) are split by the table layout and could not be quoted. Second-pass check (PC-05) by checker-GOV8f on 5 November 2026: 6 items added (review/RUN-2026-02/second_pass/MDA-GOV-2026-010.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-GOV-2026-010-0001",
+      "information_type": "finding",
+      "stated_text": "Planul de activitate al Agenției pentru Securitate Cibernetică a fost implementat, în mare parte, conform obiectivelor stabilite, cu progrese semnificative în consolidarea capacităților naționale de prevenire, monitorizare și răspuns la incidente cibernetice. În pofida faptului că Agenția se află într-o etapă relativ recentă de constituire, majoritatea acțiunilor planificate au fost realizate integral , iar unele parțial, fiind create premisele necesare pentru funcționarea durabilă a mecanismelor instituționale în domeniul securității cibernetice.",
+      "quote_language": "ro",
+      "translation_en": "The activity plan of the Cyber Security Agency was largely implemented in line with the objectives set, with significant progress in strengthening national capacities for preventing, monitoring and responding to cyber incidents. Although the Agency is at a relatively recent stage of establishment, most planned actions were fully implemented and some partially, creating the conditions needed for the sustainable functioning of institutional mechanisms in cybersecurity.",
+      "machine_translated": true,
+      "summary": "The Agency's own assessment: its 2025 plan was largely implemented, most actions fully, despite the Agency being recently established.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Self-assessment by the issuing body in the unheaded summary on page 3.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Finding on how the named action plan was applied. Self-assessment by the Cyber Security Agency."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0002",
+      "information_type": "intervention",
+      "stated_text": "Pentru fortificarea Agenției,  a fost pus  accent pe operaționalizarea CSIRT -ului național, dezvoltarea infrastructurii IT, implementarea soluțiilor de monitorizare, detecție și răspuns  la incidente (inclusiv SIEM, MISP, ticketing și protecție DDoS), precum și pe gestionarea incidentelor și vulnerabilităților la nivel național.",
+      "quote_language": "ro",
+      "translation_en": "To strengthen the Agency, emphasis was placed on operationalising the national CSIRT, developing IT infrastructure, implementing monitoring, detection and incident response solutions (including SIEM, MISP, ticketing and DDoS protection), and managing incidents and vulnerabilities at national level.",
+      "machine_translated": true,
+      "summary": "In 2025 the Agency focused on operationalising the national CSIRT and its monitoring, detection and incident response tools.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "CSIRT-ul național",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Operaționalizarea CSIRT-ului național",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Recorded as in_progress: the wording says emphasis was placed on operationalisation, not that it is complete. Detailed in the Objective I table (pages 6-20).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0003",
+      "information_type": "intervention",
+      "stated_text": "la nivel normativ a fost aprobat Conceptul tehnic al registrului de stat al incidentelor cibernetice precum și a Regulamentului cu privire la modul de ținere a acestuia. Prin aceste acte normative a fost creat cadrul normativ privind dezvoltarea propriu-zisă a unui registru național.",
+      "quote_language": "ro",
+      "translation_en": "At the regulatory level, the technical Concept of the state register of cyber incidents was approved, as well as the Regulation on how it is kept. These acts created the regulatory framework for actually developing a national register.",
+      "machine_translated": true,
+      "summary": "The concept and keeping rules for a state register of cyber incidents were approved, creating the framework for developing it.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Conceptul tehnic al registrului de stat al incidentelor cibernetice și Regulamentul cu privire la modul de ținere a acestuia",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote starts mid-sentence at the claim. Detailed at page 16 (Government Decision No. 822/2025), extracted there because the wording differs.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Regulatory basis for an operational incident register."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0004",
+      "information_type": "intervention",
+      "stated_text": "În paralel, Agenția a realizat progrese importante în identificarea, evidența și interacțiunea cu furnizorii de servicii esențiali și importanți, în conformitate cu Legea nr. 48/2023. Au fost transmise notificări, și emise acte administrative individuale de desemnare în calitate de furnizor de servicii , contribuind la stabilirea listei furnizorilor de servicii și la responsabilizarea acestora prin obligativitatea normativă de a respecta prevederile Legii 48/2023 și a actelor de punere în aplicare a acesteia.",
+      "quote_language": "ro",
+      "translation_en": "In parallel, the Agency made important progress in identifying, recording and interacting with essential and important service providers under Law No. 48/2023. Notifications were sent and individual administrative acts designating service providers were issued, helping to establish the list of service providers and making them accountable through the legal obligation to comply with Law 48/2023 and its implementing acts.",
+      "machine_translated": true,
+      "summary": "The Agency identified essential and important service providers under Law 48/2023 and issued designation acts, building the list of providers.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Identificarea și desemnarea furnizorilor de servicii esențiali și importanți conform Legii nr. 48/2023",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "in_progress on the wording 'important progress'; Objective V (pages 33-34) reports the list action as partly done. Figures at page 33.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Applying the cybersecurity law to essential and important providers (NIS2-type obligations)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0005",
+      "information_type": "intervention",
+      "stated_text": "Totodată, a fost elaborat și aprobat cadrul normativ pentru supravegherea și controlul de stat în domeniul securității cibernetice.",
+      "quote_language": "ro",
+      "translation_en": "At the same time, the regulatory framework for state supervision and control in cybersecurity was drafted and approved.",
+      "machine_translated": true,
+      "summary": "A regulatory framework for state supervision and control in cybersecurity was drafted and approved.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cadrul normativ pentru supravegherea și controlul de stat în domeniul securității cibernetice",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Detailed at page 22 as Government Decision No. 825/2025, extracted there.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0006",
+      "information_type": "intervention",
+      "stated_text": "Cooperarea națională și internațională a reprezentat un pilon important al activității Agenției, concretizată prin parteneriate cu instituții europene și internaționale relevante, participarea la exerciții comune, activarea mecanismului Cyber Reserve și or ganizarea de evenimente de tip CTF și TTX.",
+      "quote_language": "ro",
+      "translation_en": "National and international cooperation was an important pillar of the Agency's work, through partnerships with relevant European and international institutions, joint exercises, activation of the Cyber Reserve mechanism and the organisation of CTF and TTX events.",
+      "machine_translated": true,
+      "summary": "The Agency cooperated with European and international institutions, joined exercises, activated the Cyber Reserve mechanism and organised CTF and TTX events.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cooperarea națională și internațională (inclusiv activarea mecanismului Cyber Reserve)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'or ganizarea' is split in the converted text. Details under Objectives III and IV (pages 25-31).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0007",
+      "information_type": "barrier",
+      "stated_text": "Marea majoritatea acțiunilor au fost realiza te integral, unele acțiuni au fost realizate parțial sau transferate pentru perioada următoare, în principal din cauza constrângerilor de resurse și a proceselor normative în derulare, acestea urmând a fi continuate în anul următor pentru atingerea deplină a obiectivelor stabilite.",
+      "quote_language": "ro",
+      "translation_en": "The vast majority of actions were fully implemented; some were partly implemented or carried over to the next period, mainly because of resource constraints and ongoing regulatory processes, and will continue next year to fully achieve the objectives.",
+      "machine_translated": true,
+      "summary": "Some actions were only partly done or carried over, mainly because of resource constraints and regulatory processes still under way.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'realiza te' is split in the converted text.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-09",
+          "MEC-02"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Resource constraints and regulatory processes still under way given as reasons for partly done actions."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0008",
+      "information_type": "intervention",
+      "stated_text": "Obiectivul general I:  Consolidarea echipei de răspuns la incidente cibernetice la nivel național;",
+      "quote_language": "ro",
+      "translation_en": "General objective I: strengthening the cyber incident response team at national level.",
+      "machine_translated": true,
+      "summary": "2025 plan objective I: strengthen the national cyber incident response team.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni al Agenției pentru Securitate Cibernetică pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated objective of the plan (M1); status of the actions under it is reported row by row. The report lists PNA (National Accession Programme) Chapter 10 items 1-5 and Chapter 31 item 8 as indicators for this objective; recorded here and not used as a structural chapter tag. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated plan objective (M1); PNA Chapter 10 and 31 indicators noted in the source."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0009",
+      "information_type": "barrier",
+      "stated_text": "Crearea recentă a Agenției.  3. Resurse proprii limitate pentru achiziția echipamentelor hardware și software. 2. Recrutarea personalului necesar în contextul recentei organizării a Agenției.",
+      "quote_language": "ro",
+      "translation_en": "The recent creation of the Agency. 3. Limited own resources for buying hardware and software equipment. 2. Recruiting the necessary staff in the context of the Agency's recent organisation.",
+      "machine_translated": true,
+      "summary": "Internal risks listed for objective I: the Agency is new, has limited resources for equipment and must recruit staff.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "table"
+      ],
+      "extraction_note": "Listed as internal risks to achieving the objective, not as stated causes of a shortfall; barrier chosen as the closer type. The items are numbered 1, 3, 2 in the source. Risks 1 and 2 recur for objectives II to VII (pages 21, 24, 28, 32, 36, 40), not extracted again (M3).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-09",
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Listed internal risks, not stated causes of a shortfall; supports staffing and resource constraints."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0010",
+      "information_type": "barrier",
+      "stated_text": "Lipsa unei cooperări active a actorilor din sectorul securității cibernetice.  2. Lipsa resurselor umane suficiente. 3. Lipsa specialiștilor IT calificați pentru proiectare și implementare",
+      "quote_language": "ro",
+      "translation_en": "Lack of active cooperation among cybersecurity sector actors. 2. Lack of sufficient human resources. 3. Lack of qualified IT specialists for design and implementation.",
+      "machine_translated": true,
+      "summary": "External risks listed for objective I: weak cooperation among cybersecurity actors, too few staff and a lack of qualified IT specialists.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "table"
+      ],
+      "extraction_note": "Listed as external risks; barrier chosen as the closer type. Risks 1 and 2 recur for objectives II to VII, not extracted again (M3).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Listed external risks: weak cooperation among actors, staff and IT specialist shortages."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0011",
+      "information_type": "intervention",
+      "stated_text": "Procesul de asigurare a securității cibernetice a fost asigurat prin angajarea personalului tehnic în cursuri de formare și vizite de studiu la instituții ce au livrat informații și experiențe proprii.",
+      "quote_language": "ro",
+      "translation_en": "The cybersecurity assurance process was ensured by enrolling technical staff in training courses and study visits to institutions that shared their own information and experience.",
+      "machine_translated": true,
+      "summary": "Action 1 (coordinating cybersecurity and incident handling) reported done through training and study visits for technical staff.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Coordonarea procesului de asigurare a securității cibernetice, de prevenire și de soluționare a incidentelor cibernetice",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Staff training kept because it is the reported means of an in-scope incident-handling action.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Staff training as the means of an incident-handling action (digital skills directly linked)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0012",
+      "information_type": "intervention",
+      "stated_text": "Activitățile aferente dezvoltării arhitecturii IT pentru infrastructura hibridă au fost realizate conform planificării inițiale.",
+      "quote_language": "ro",
+      "translation_en": "The activities for developing the IT architecture for the hybrid infrastructure were carried out as originally planned.",
+      "machine_translated": true,
+      "summary": "The IT architecture of the CSIRT's local data centre and hybrid infrastructure was developed as planned.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "1.1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Operaționalizarea centrului de date local (1.1)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Theme doubtful: the data centre is the Agency's own infrastructure, listed under the CSIRT; kept as incident-response capacity. Actions 1.2 to 1.4 (network set-up, Active Directory and PKI, Microsoft 365 migration, pages 7-10) are the Agency's internal IT and were not extracted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved as in scope: secure infrastructure of the national CSIRT."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0013",
+      "information_type": "intervention",
+      "stated_text": "echipa CSIRT monitorizează activ spațiul cibernetic național, notificând instituțiile vizate. Procesul continuu de monitorizare este realizat printr-un proces de scanare a vulnerabilităților.",
+      "quote_language": "ro",
+      "translation_en": "The CSIRT team actively monitors the national cyberspace, notifying the institutions concerned. Continuous monitoring is carried out through vulnerability scanning.",
+      "machine_translated": true,
+      "summary": "The CSIRT monitors national cyberspace through vulnerability scanning and notifies the institutions concerned.",
+      "location": {
+        "page": 10,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Monitorizarea, analiza și informarea despre amenințările cibernetice, vulnerabilitățile și incidentele cibernetice la nivel național (acțiunea 2)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat; continuous action, recorded as in_practice.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0014",
+      "information_type": "intervention",
+      "stated_text": "echipa CSIRT a oferit asistență tuturor instituțiilor care au solicitat acest lucru. În plus au fost furnizate soluții de securitate anti DDoS.",
+      "quote_language": "ro",
+      "translation_en": "The CSIRT team assisted all institutions that requested it. In addition, anti-DDoS security solutions were provided.",
+      "machine_translated": true,
+      "summary": "The CSIRT assisted every institution that asked and provided anti-DDoS solutions to service providers.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Acordarea asistenței furnizorilor de servicii în monitorizarea și protecția rețelelor și sistemelor informatice (acțiunea 3)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Similar statement for action 5 at page 11, extracted separately because it concerns incident response.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0015",
+      "information_type": "metric",
+      "stated_text": "Echipa CSIRT a înregistrat toate incidentele cibernetice în Registrul notificărilor, având până la 31.12.2025 - 40 incidente de securitate cibernetică.",
+      "quote_language": "ro",
+      "translation_en": "The CSIRT team recorded all cyber incidents in the Register of notifications, with 40 cybersecurity incidents by 31.12.2025.",
+      "machine_translated": true,
+      "summary": "40 cybersecurity incidents were recorded in the CSIRT's register of notifications by 31 December 2025.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "4",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Cybersecurity incidents recorded in the Register of notifications",
+        "value": 40,
+        "unit": "incidents",
+        "reference_period": "to 31.12.2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. ",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Context metric on the CSIRT notification register."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0016",
+      "information_type": "intervention",
+      "stated_text": "Echipa CSIRT răspuns prompt și remediat toate incidentele cibernetice raportate către ASC.",
+      "quote_language": "ro",
+      "translation_en": "The CSIRT team responded promptly to and remedied all cyber incidents reported to the ASC.",
+      "machine_translated": true,
+      "summary": "The CSIRT reports it responded promptly to and remedied all cyber incidents reported to the Agency.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "5",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Asigurarea răspunsului la incidentele cibernetice și acordarea asistenței furnizorilor de servicii (acțiunea 5)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Quote as printed ('răspuns' without an auxiliary verb).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Self-assessment by the Cyber Security Agency."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0017",
+      "information_type": "intervention",
+      "stated_text": "A fost implementat sistemul de ticketing, permițând documentarea și stocarea vulnerabilităților identificate și incidentelor de securitate cibernetică raportate.",
+      "quote_language": "ro",
+      "translation_en": "The ticketing system was implemented, allowing identified vulnerabilities and reported cybersecurity incidents to be documented and stored.",
+      "machine_translated": true,
+      "summary": "The CSIRT ticketing system for recording vulnerabilities and incidents was implemented.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "5.1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Implementarea sistemului de ticketing (5.1.1)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0018",
+      "information_type": "intervention",
+      "stated_text": "Soluția SIEM a fost instalată și este în proces de configurare. Urmează a fi implementat sistemul de gestionare IoC.",
+      "quote_language": "ro",
+      "translation_en": "The SIEM solution has been installed and is being configured. The IoC management system is still to be implemented.",
+      "machine_translated": true,
+      "summary": "The SIEM solution was installed and is being configured; the indicators-of-compromise management system is still to come.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "5.2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Implementarea soluțiilor de detecție și răspuns: soluția SIEM și sistemul de gestionare a Indicatorilor de Compromitere (5.2)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. The status column says Realizat, but the comment says the SIEM is still being configured and the IoC system is yet to be implemented; recorded as in_progress on the comment's wording.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0019",
+      "information_type": "intervention",
+      "stated_text": "Platforma de schimb de informații (MISP) este operațională, având loc schimbul de date tehnice, fluxurile de incidente partajate și indicatori de compromitere (IoC).",
+      "quote_language": "ro",
+      "translation_en": "The information-sharing platform (MISP) is operational, with exchange of technical data, shared incident feeds and indicators of compromise (IoC).",
+      "machine_translated": true,
+      "summary": "The MISP threat-information sharing platform is operational and used to exchange technical data, incident feeds and indicators of compromise.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "6",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Platforma de schimb de informații MISP",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. The same comment appears for action 5.3 at pages 12-13, where the table splits it across columns; extracted once here (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0020",
+      "information_type": "intervention",
+      "stated_text": "Instituirea și implementarea platformei pentru comunicare și schimb de informații este planificată pentru anul 2026.",
+      "quote_language": "ro",
+      "translation_en": "Setting up and implementing the platform for communication and information exchange is planned for 2026.",
+      "machine_translated": true,
+      "summary": "A secure communication and information-exchange platform with other response teams (Mattermost) was carried over to 2026.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "5.3.2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": "2026",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Implementarea platformei de comunicare și schimb de informații cu alte echipe de răspuns la incidente (Mattermost)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Transferat pentru anul viitor (carried over to next year).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0021",
+      "information_type": "intervention",
+      "stated_text": "În scopul întocmirii planului operațional de răspuns la incidente au fost organizate cursuri tematice pentru angajații echipei CSIRT, dar și a angajaților instituțiilor publice.",
+      "quote_language": "ro",
+      "translation_en": "To draw up the operational incident response plan, thematic courses were organised for CSIRT staff and for public institution staff.",
+      "machine_translated": true,
+      "summary": "Crisis management action partly done: courses were held to prepare the operational incident response plan, which is not yet reported as drawn up.",
+      "location": {
+        "page": 13,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "7",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Gestionarea crizelor în domeniul securității cibernetice: întocmirea planului de răspuns la incidentele cibernetice (acțiunea 7)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat parțial.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0022",
+      "information_type": "intervention",
+      "stated_text": "Documentația a fost aprobată parțial. Soluțiile tehnologice au fost selectate și implementate în proporție de 50%.",
+      "quote_language": "ro",
+      "translation_en": "The documentation was partly approved. The technological solutions were selected and implemented to 50%.",
+      "machine_translated": true,
+      "summary": "The CSIRT operational framework is half done: documentation partly approved and technology solutions 50% implemented.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "8.1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Stabilirea cadrului operațional al CSIRT (8.1)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat parțial.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0023",
+      "information_type": "intervention",
+      "stated_text": "S-au realizat următoarele activități: Răspuns la incidente precum și investigarea, documentarea, atenuarea și  raportarea; Threat Intelligence și analiza IoC, distribuirea și partajarea alertelor; Managementul Vulnerabilităților Scanare activă și pasivă, testarea de penetrare; Implementarea soluției de protecție împotriva atacurilor DDoS",
+      "quote_language": "ro",
+      "translation_en": "The following activities were carried out: incident response including investigation, documentation, mitigation and reporting; threat intelligence and IoC analysis, distribution and sharing of alerts; vulnerability management, active and passive scanning, penetration testing; implementation of the DDoS protection solution.",
+      "machine_translated": true,
+      "summary": "CSIRT services were formalised: incident response, threat intelligence, vulnerability management and DDoS protection.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "8.2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Formalizarea serviciilor și activităților CSIRT (8.2)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0024",
+      "information_type": "intervention",
+      "stated_text": "Au fost clasificate tipurile de incidente și au fost realizate playbookuri pentru anumite tipuri de incidente în proporție de 70%.",
+      "quote_language": "ro",
+      "translation_en": "Incident types were classified and playbooks were produced for certain incident types, to 70%.",
+      "machine_translated": true,
+      "summary": "Incident types were classified and response playbooks were 70% complete.",
+      "location": {
+        "page": 15,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "8.3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Elaborarea procedurilor de detectare, investigare și răspuns pe tipuri de incidente (8.3)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat parțial.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0025",
+      "information_type": "intervention",
+      "stated_text": "A fost aprobată  Hotărârea Guvernului nr. 822/2025 privind aprobarea Conceptului Sistemului informațional „Registrul de stat al incidentelor cibernetice” și a Regulamentului cu privire la modul de ţinere a Registrului de stat al incidentelor cibernetice.",
+      "quote_language": "ro",
+      "translation_en": "Government Decision No. 822/2025 was approved, approving the Concept of the information system 'State register of cyber incidents' and the Regulation on keeping the State register of cyber incidents.",
+      "machine_translated": true,
+      "summary": "Government Decision 822/2025 approved the concept and keeping rules of the State register of cyber incidents.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "9",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Hotărârea Guvernului nr. 822/2025 (Conceptul Sistemului informațional „Registrul de stat al incidentelor cibernetice”)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column for the action (creating the register): Realizat parțial.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0026",
+      "information_type": "intervention",
+      "stated_text": "Caietul de sarcini în vederea implementării registrului este în proces de elaborare.",
+      "quote_language": "ro",
+      "translation_en": "The terms of reference for implementing the register are being drafted.",
+      "machine_translated": true,
+      "summary": "Terms of reference for building the State register of cyber incidents are being drafted.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "9",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Crearea Registrului de stat al incidentelor cibernetice",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat parțial.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0027",
+      "information_type": "intervention",
+      "stated_text": "Numele de domenii din spațiul de adrese în Internet al Republicii Moldova au fost scanate și monitorizate continuu, asigurând funcționarea stabilă și sigură a acestora.",
+      "quote_language": "ro",
+      "translation_en": "Domain names in the Republic of Moldova's Internet address space were scanned and monitored continuously, ensuring their stable and secure functioning.",
+      "machine_translated": true,
+      "summary": "Domain names in Moldova's Internet address space, including .md, were continuously scanned and monitored.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "10",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Monitorizarea numelor de domenii din spațiul de adrese în Internet al Republicii Moldova și a domeniului de nivel superior .md (acțiunea 10)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Action 11 (protection of state secrets and personal data within the Agency, pages 16-17) is internal and was not extracted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0028",
+      "information_type": "intervention",
+      "stated_text": "Serviciul de Informații și Securitate a fost informat despre incidentele cu impact semnificativ asupra infrastructurii critice, prin expedierea rapoartelor.",
+      "quote_language": "ro",
+      "translation_en": "The Intelligence and Security Service was informed, by sending reports, about incidents with a significant impact on critical infrastructure.",
+      "machine_translated": true,
+      "summary": "The Agency reported significant incidents affecting critical infrastructure to the Intelligence and Security Service.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "12",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Serviciul de Informații și Securitate",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Informarea Serviciului de Informații și Securitate cu privire la incidentele cibernetice cu impact semnificativ asupra infrastructurii critice (acțiunea 12)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Incident reporting on critical infrastructure; not a military or classified system."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0029",
+      "information_type": "metric",
+      "stated_text": "Au fost emise 52 de alerte timpurii.",
+      "quote_language": "ro",
+      "translation_en": "52 early warnings were issued.",
+      "machine_translated": true,
+      "summary": "The Agency issued 52 early warnings on cyber threats in 2025.",
+      "location": {
+        "page": 17,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "13",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Early warnings issued",
+        "value": 52,
+        "unit": "alerts",
+        "reference_period": "2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Awareness posts on the Agency's website and social media (pages 17-18) not extracted: publishing online is incidental.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Context metric on CSIRT activity."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0030",
+      "information_type": "intervention",
+      "stated_text": "S-a efectuat angajarea personalului echipei tehnice în cursuri și sesiuni de formare în scopul dobândirii abilităților de colectare și analiză a datelor pentru contracaraea unui incident ciberntic. Acțiunea a fost realizată în proporție de 50%.",
+      "quote_language": "ro",
+      "translation_en": "Technical team staff were enrolled in courses and training sessions to acquire skills in collecting and analysing data to counter a cyber incident. The action was 50% completed.",
+      "machine_translated": true,
+      "summary": "Forensic data collection and analysis capacity is 50% done; technical staff were trained in incident data analysis.",
+      "location": {
+        "page": 18,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "14",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Colectarea și analiza datelor criminalistice și furnizarea analizelor dinamice privind riscurile și incidentele cibernetice (acțiunea 14)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat parțial. Spelling as printed ('ciberntic'). Digital skills kept because directly linked to the in-scope incident-handling action.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Incident data analysis capacity of the CSIRT, not cybercrime enforcement; digital skills directly linked."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0031",
+      "information_type": "intervention",
+      "stated_text": "Astfel au fost realizate scanări proactive  la fiecare cerere a unui furnizor de servicii.",
+      "quote_language": "ro",
+      "translation_en": "Proactive scans were thus carried out at every request from a service provider.",
+      "machine_translated": true,
+      "summary": "The CSIRT carried out proactive scans of networks and systems at every service provider's request.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "15",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CSIRT",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Scanarea proactivă a rețelelor și a sistemelor informatice ale solicitantului (acțiunea 15)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0032",
+      "information_type": "intervention",
+      "stated_text": "Soluția de criptare pentru schimbul de informații a fost implementată.",
+      "quote_language": "ro",
+      "translation_en": "The encryption solution for information exchange was implemented.",
+      "machine_translated": true,
+      "summary": "An encryption solution for exchanging information with service providers was implemented.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "16",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Implementarea soluției tehnice securizate pentru schimbul de informații cu furnizorii de servicii (acțiunea 16)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Page 26 says ASC applies encrypted and secure information exchange; not extracted again (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0033",
+      "information_type": "intervention",
+      "stated_text": "Cadrul normativ  privind procesul de divulgare coordonată a vulnerabilităților a fost aprobat prin  Hotărârea Guvernului nr. 824/2025pentru aprobarea Regulamentului privind divulgarea coordonată a vulnerabilităților",
+      "quote_language": "ro",
+      "translation_en": "The regulatory framework for coordinated vulnerability disclosure was approved by Government Decision No. 824/2025 approving the Regulation on coordinated vulnerability disclosure in cybersecurity.",
+      "machine_translated": true,
+      "summary": "Government Decision 824/2025 approved the regulation on coordinated vulnerability disclosure.",
+      "location": {
+        "page": 19,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": "17",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Hotărârea Guvernului nr. 824/2025 (Regulamentul privind divulgarea coordonată a vulnerabilităților)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. '824/2025pentru' is run together in the converted text. The quote stops before the last words of the sentence ('în domeniul securității cibernetice'), which run onto page 20.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0034",
+      "information_type": "intervention",
+      "stated_text": "Obiectivul general II: Supravegherea și controlul de stat al respectării de către furnizorii de servicii a cadrului normativ în domeniul securității cibernetice;",
+      "quote_language": "ro",
+      "translation_en": "General objective II: state supervision and control of service providers' compliance with the cybersecurity regulatory framework.",
+      "machine_translated": true,
+      "summary": "2025 plan objective II: state supervision and control of service providers' compliance with cybersecurity rules.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "Obiectivul general II: Supravegherea și controlul de stat al respectării de către furnizorii de servicii a cadrului normativ în domeniul securității cibernetice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni al Agenției pentru Securitate Cibernetică pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated objective (M1). The report lists PNA (National Accession Programme) Chapter 10 items 1-5 and Chapter 31 item 8 as indicators for this objective; recorded here and not used as a structural chapter tag. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated plan objective (M1)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0035",
+      "information_type": "intervention",
+      "stated_text": "A fost aprobată  Hotărârea de Guvern nr. 825/2025 pentru aprobarea Regulamentului cu privire la supravegherea și controlul de stat asupra respectării cadrului normative în domeniul securității cibernetice de către furnizorii de servicii în sectoarele critice.",
+      "quote_language": "ro",
+      "translation_en": "Government Decision No. 825/2025 was approved, approving the Regulation on state supervision and control of compliance with the cybersecurity regulatory framework by service providers in critical sectors.",
+      "machine_translated": true,
+      "summary": "Government Decision 825/2025 approved the regulation on state supervision of service providers' cybersecurity compliance in critical sectors.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "Obiectivul general II: Supravegherea și controlul de stat al respectării de către furnizorii de servicii a cadrului normativ în domeniul securității cibernetice",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Hotărârea de Guvern nr. 825/2025 (Regulamentul cu privire la supravegherea și controlul de stat în domeniul securității cibernetice)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. The same comment is given for actions 2 and 3 (pages 22-23), not extracted again (M3). For all three supervision actions (issuing binding acts and recommendations, examining complaints, restricting access to networks) the status column says 'Transferat pentru anul viitor' (carried over to next year): the supervision powers were not yet exercised in 2025.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0036",
+      "information_type": "barrier",
+      "stated_text": "Au fost operate notificări, însă din lipsa personalului și a cadrului normativ complet, această funcție a fost parțial realizată.",
+      "quote_language": "ro",
+      "translation_en": "Notifications were made, but because of a lack of staff and of a complete regulatory framework, this function was only partly carried out.",
+      "machine_translated": true,
+      "summary": "Notifying users and authorities of network access restrictions was only partly done, owing to lack of staff and incomplete rules.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Obiectivul general II: Supravegherea și controlul de stat al respectării de către furnizorii de servicii a cadrului normativ în domeniul securității cibernetice",
+        "paragraph": "4",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat parțial.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-02"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Lack of staff and an incomplete regulatory framework given as reasons for partial delivery."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0037",
+      "information_type": "intervention",
+      "stated_text": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+      "quote_language": "ro",
+      "translation_en": "General objective III: national and international cooperation and information exchange on cybersecurity.",
+      "machine_translated": true,
+      "summary": "2025 plan objective III: national and international cooperation and information exchange on cybersecurity.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni al Agenției pentru Securitate Cibernetică pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated objective (M1). The report lists PNA (National Accession Programme) Chapter 10 items 1-5 and Chapter 31 item 8 as indicators for this objective; recorded here and not used as a structural chapter tag. An additional internal risk for this objective is a lack of sufficient financial resources (page 24).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated plan objective (M1)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0038",
+      "information_type": "barrier",
+      "stated_text": "Practica europeană recentă cu adoptarea Directivei NIS 2, instituții omolog nou create în baza directivei menționate",
+      "quote_language": "ro",
+      "translation_en": "Recent European practice with the adoption of the NIS 2 Directive, counterpart institutions newly created under that directive.",
+      "machine_translated": true,
+      "summary": "A listed external risk: NIS2 is recent and counterpart EU institutions created under it are new.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "table"
+      ],
+      "extraction_note": "Listed as an external risk to objective III; barrier chosen as the closer type.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Listed external risk; NIS2 is recent and EU counterpart bodies are new. Supports no mechanism."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0039",
+      "information_type": "intervention",
+      "stated_text": "ASC interacționează și menține relații de cooperare cu instituții internaționale relevante, inclusiv cu (ENISA), cu care a fost încheiat un Acord care a permis accesul și activarea mecanismului Cyber Reserve.",
+      "quote_language": "ro",
+      "translation_en": "ASC interacts and maintains cooperation with relevant international institutions, including ENISA, with which an Agreement was concluded that allowed access to and activation of the Cyber Reserve mechanism.",
+      "machine_translated": true,
+      "summary": "An agreement concluded with ENISA gave the Agency access to the EU Cyber Reserve mechanism, which it activated.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "ENISA",
+          "actor_id": "ACT-EU-0008"
+        }
+      ],
+      "intervention_as_stated": "Acordul cu ENISA privind accesul la mecanismul Cyber Reserve",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. A similar statement on an ENISA cooperation agreement at page 41 (Objective VII), not extracted again (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0040",
+      "information_type": "outcome",
+      "stated_text": "Activarea mecanismului Cyber Reserve s-a desfășurat cu succes, demonstrând capacitatea instituțională a ASC de a utiliza instrumente europene avansate pentru gestionarea incidentelor de securitate cibernetică și consolidarea răspunsului național la amenințări.",
+      "quote_language": "ro",
+      "translation_en": "The activation of the Cyber Reserve mechanism was successful, demonstrating the ASC's institutional capacity to use advanced European tools for managing cybersecurity incidents and strengthening the national response to threats.",
+      "machine_translated": true,
+      "summary": "The Agency reports its activation of the EU Cyber Reserve was successful and showed its capacity to use EU incident tools.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Self-assessment. Page 26-27 says Cyber Reserve was activated during the electoral period; that sentence is split by the table layout across pages and could not be quoted contiguously.",
+      "pass2": {
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Outcome linked by the source to the Cyber Reserve activation. Self-assessment by the Cyber Security Agency."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0041",
+      "information_type": "intervention",
+      "stated_text": "La data de 25 iunie, ASC a devenit membru al Organizației Europene pentru Securitate Cibernetică (ECSO), consolidând astfel cooperarea instituțională la nivel european și participarea activă în inițiativele relevante din domeniul securității cibernetice.",
+      "quote_language": "ro",
+      "translation_en": "On 25 June, ASC became a member of the European Cyber Security Organisation (ECSO), strengthening institutional cooperation at European level and active participation in relevant cybersecurity initiatives.",
+      "machine_translated": true,
+      "summary": "The Agency became a member of the European Cyber Security Organisation (ECSO) on 25 June.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Aderarea ASC la Organizația Europeană pentru Securitate Cibernetică (ECSO)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Membership of an organisation (M2). The year is not stated with the date; event_date left empty. Repeated at page 41, not extracted again (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0042",
+      "information_type": "intervention",
+      "stated_text": "Au fost organizate CTF și TTX în comun cu DNSC, precum și cu instituții similare din Ucraina.",
+      "quote_language": "ro",
+      "translation_en": "CTF and TTX exercises were organised jointly with DNSC and with similar institutions from Ukraine.",
+      "machine_translated": true,
+      "summary": "Capture-the-flag and tabletop exercises were organised with Romania's DNSC and Ukrainian counterparts.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Exerciții CTF și TTX comune cu DNSC și instituții din Ucraina",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. DNSC is printed without expansion. The study visit to Belgium's CCB (pages 25-26) was not extracted (a single study visit).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0043",
+      "information_type": "intervention",
+      "stated_text": "Exerciții CTF: Cel mai amplu exercițiu a avut loc la data de 30-31 octombrie, servind atât drept activitate de testare a competențelor tehnice, cât și ca platformă de cooperare și networking între sectorul public și cel privat.",
+      "quote_language": "ro",
+      "translation_en": "CTF exercises: the largest exercise took place on 30-31 October, serving both to test technical skills and as a platform for cooperation and networking between the public and private sectors.",
+      "machine_translated": true,
+      "summary": "The Agency ran its largest capture-the-flag exercise on 30-31 October as a public-private cooperation platform.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Exerciții CTF cu autoritățile publice și furnizorii de servicii",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Year not stated with the date. The Moldova Cyber Security Forum in April (page 26) was not extracted (an event).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0044",
+      "information_type": "intervention",
+      "stated_text": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+      "quote_language": "ro",
+      "translation_en": "General objective IV: ensuring the national single point of contact.",
+      "machine_translated": true,
+      "summary": "2025 plan objective IV: ensure the national single point of contact for cybersecurity.",
+      "location": {
+        "page": 28,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni al Agenției pentru Securitate Cibernetică pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated objective (M1). The report lists PNA (National Accession Programme) Chapter 10 items 1-5 and Chapter 31 item 8 as indicators for this objective; recorded here and not used as a structural chapter tag. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated plan objective (M1); the single point of contact is a function the NIS framework requires."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0045",
+      "information_type": "intervention",
+      "stated_text": "La nivel internațional: în acest an, ASC a semnat un Memorandum de Înțelegere cu ECCC, obținând acces la cursuri specializate și suport tehnic, echipa tehnică devenind membru FIRST.",
+      "quote_language": "ro",
+      "translation_en": "Internationally: this year ASC signed a Memorandum of Understanding with the ECCC, gaining access to specialised courses and technical support, and its technical team became a member of FIRST.",
+      "machine_translated": true,
+      "summary": "The Agency signed a memorandum with the European Cybersecurity Competence Centre and its technical team joined FIRST.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Memorandumul de Înțelegere cu ECCC; aderarea echipei tehnice la FIRST",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. A similar ECCC statement at pages 41-42 is split by the table layout; not extracted again (M3). Cooperation with the Ministry of Defence on PESCO (page 29) is defence policy and out of scope.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "PESCO defence cooperation on the same page is out of scope and was not extracted."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0046",
+      "information_type": "intervention",
+      "stated_text": "ASC colaborează activ cu EUPM, facilitând cooperarea cu experți desemnați din țări precum Olanda, Danemarca, Finlanda și Suedia, ceea ce a contribuit la consolidarea relațiilor bilaterale în domeniul securității cibernetice.",
+      "quote_language": "ro",
+      "translation_en": "ASC actively cooperates with EUPM, facilitating cooperation with designated experts from countries such as the Netherlands, Denmark, Finland and Sweden, which helped strengthen bilateral relations in cybersecurity.",
+      "machine_translated": true,
+      "summary": "The Agency works with the EU Partnership Mission (EUPM) and its experts from several member states.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cooperarea cu EUPM",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. EUPM is printed without expansion. Cooperation with Lithuania (DNS firewall) and ANSSI (network sensor) on the same page not extracted separately.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "EUPM (EU Partnership Mission) is a civilian mission; cybersecurity cooperation, not military."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0047",
+      "information_type": "intervention",
+      "stated_text": "Cooperarea cu Regatul Unit se realizează prin intermediul Ambasadei UK și MAE, facilitând schimbul de informații, transferul de expertiză și suportul tehnic al BAE Systems pentru dezvoltarea și operaționalizarea CSIRT-ului național.",
+      "quote_language": "ro",
+      "translation_en": "Cooperation with the United Kingdom takes place through the UK Embassy and the Ministry of Foreign Affairs, facilitating information exchange, transfer of expertise and technical support from BAE Systems for developing and operationalising the national CSIRT.",
+      "machine_translated": true,
+      "summary": "UK support, including BAE Systems technical help, is used to develop and operationalise the national CSIRT.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Suportul Regatului Unit (BAE Systems) pentru dezvoltarea și operaționalizarea CSIRT-ului național",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0048",
+      "information_type": "intervention",
+      "stated_text": "Prin programul e-GA, ASC colaborează cu Estonia, beneficiind de suport în dezvoltare și operaționalizare, financiar, evenimente și traininguri specializate.",
+      "quote_language": "ro",
+      "translation_en": "Through the e-GA programme, ASC cooperates with Estonia, receiving support for development and operationalisation, financial support, events and specialised training.",
+      "machine_translated": true,
+      "summary": "Through the Estonian e-GA programme the Agency receives development, operational, financial and training support.",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Programul e-GA (Estonia)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0049",
+      "information_type": "intervention",
+      "stated_text": "Cooperarea cu OSCE a contribuit la operaționalizarea ASC prin furnizarea de echipamente tehnice.",
+      "quote_language": "ro",
+      "translation_en": "Cooperation with the OSCE contributed to the operationalisation of ASC by providing technical equipment.",
+      "machine_translated": true,
+      "summary": "The OSCE provided technical equipment that helped operationalise the Agency.",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cooperarea cu OSCE (echipamente tehnice)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. NATO, OSCE cyber diplomacy and DCAF training events (page 30) not extracted (single training events).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0050",
+      "information_type": "intervention",
+      "stated_text": "Procedura de transmitere a notificărilor și solicitărilor privind incidentele cibernetice către punctele unice de contact din alte state este implementată și funcțională; până în prezent, nu au fost primite solicitări de transmitere.",
+      "quote_language": "ro",
+      "translation_en": "The procedure for sending notifications and requests on cyber incidents to single points of contact in other states is implemented and functional; so far no requests for transmission have been received.",
+      "machine_translated": true,
+      "summary": "The procedure for sending incident notifications to other states' single points of contact works, but no requests have yet arisen.",
+      "location": {
+        "page": 30,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Procedura de transmitere a notificărilor către punctele unice de contact din alte state",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Single point of contact procedure works; no requests received yet."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0051",
+      "information_type": "intervention",
+      "stated_text": "Procedura de transmitere către autoritățile și instituțiile publice naționale a notificărilor și cererilor în materie de securitate cibernetică primite din alte state sau de la organizații internaționale este implementată și funcțională; până în prezent nu au fost înregistrate astfel de notificări sau cereri.",
+      "quote_language": "ro",
+      "translation_en": "The procedure for forwarding to national public authorities and institutions the cybersecurity notifications and requests received from other states or international organisations is implemented and functional; so far no such notifications or requests have been recorded.",
+      "machine_translated": true,
+      "summary": "The procedure for passing foreign cybersecurity notifications to national authorities works, but none have been received so far.",
+      "location": {
+        "page": 31,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Procedura de transmitere către autoritățile naționale a notificărilor primite din alte state",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Procedure works; none received yet."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0052",
+      "information_type": "intervention",
+      "stated_text": "Obiectivul general V:  Identificarea și evidența furnizorilor de servicii",
+      "quote_language": "ro",
+      "translation_en": "General objective V: identification and registration of service providers.",
+      "machine_translated": true,
+      "summary": "2025 plan objective V: identify and keep a record of service providers subject to cybersecurity law.",
+      "location": {
+        "page": 32,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni al Agenției pentru Securitate Cibernetică pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated objective (M1). The report lists PNA (National Accession Programme) Chapter 10 items 1-5 and Chapter 31 item 8 as indicators for this objective; recorded here and not used as a structural chapter tag. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated plan objective (M1)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0053",
+      "information_type": "barrier",
+      "stated_text": "La pct. 4 lista furnizorilor nu există o opinie unică între autorități cu privire la tipul secret sau public al listei",
+      "quote_language": "ro",
+      "translation_en": "On item 4, the list of providers, there is no common view among authorities on whether the list is secret or public.",
+      "machine_translated": true,
+      "summary": "A listed risk: authorities disagree on whether the list of service providers should be secret or public.",
+      "location": {
+        "page": 32,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "table"
+      ],
+      "extraction_note": "Listed as an external risk to objective V; barrier chosen as the closer type.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Listed risk: authorities disagree whether the list of providers is secret or public."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0054",
+      "information_type": "intervention",
+      "stated_text": "În baza informațiilor solicitate, recepționate și analizate de la autoritățile publice și instituțiile de reglementare, au fost identificate persoanele juridice de drept privat și peroanele juridice de drept public, pentru a fi desemnate în calitate de furnizori de servicii esențiali/importanți.",
+      "quote_language": "ro",
+      "translation_en": "On the basis of information requested, received and analysed from public authorities and regulatory institutions, private and public legal entities were identified for designation as essential or important service providers.",
+      "machine_translated": true,
+      "summary": "Using data from authorities and regulators, the Agency identified public and private entities to designate as essential or important providers.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Identificarea furnizorilor de servicii în sectoarele și subsectoarele critice conform Legii 48/2023 și Hotărârii Guvernului 860",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. 'peroanele' as printed.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0055",
+      "information_type": "metric",
+      "stated_text": "Au fost transmise 307 notificări prealabile, recepționate și analizate informațiile privind corespunderea cu calitatea de furnizor și au fost emise 265 acte administrative individuale privind desemnarea în calitate de furnizor de servicii.",
+      "quote_language": "ro",
+      "translation_en": "307 prior notifications were sent, information on whether entities met the criteria for provider status was received and analysed, and 265 individual administrative acts designating service providers were issued.",
+      "machine_translated": true,
+      "summary": "307 prior notifications were sent and 265 acts designating entities as cybersecurity service providers were issued.",
+      "location": {
+        "page": 33,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Prior notifications sent; designation acts issued for service providers",
+        "value": "307; 265",
+        "unit": "notifications; administrative acts",
+        "reference_period": "2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column for drawing up the list of providers: Realizat parțial.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Metric on designation of providers under the cybersecurity law."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0056",
+      "information_type": "metric",
+      "stated_text": "Au fost examinate 2 contestații și emise decizii în acest sens.",
+      "quote_language": "ro",
+      "translation_en": "Two appeals were examined and decisions issued on them.",
+      "machine_translated": true,
+      "summary": "Two appeals by providers against their inclusion in the list were examined and decided.",
+      "location": {
+        "page": 34,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": "3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Appeals against inclusion in the list of service providers examined",
+        "value": 2,
+        "unit": "appeals",
+        "reference_period": "2025"
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. ",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Appeals against inclusion in the list of providers."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0057",
+      "information_type": "intervention",
+      "stated_text": "Au fost solicitate, recepționate și procesate informațiile și datele de la toți furnizorii de servicii notificați.",
+      "quote_language": "ro",
+      "translation_en": "Information and data were requested, received and processed from all notified service providers.",
+      "machine_translated": true,
+      "summary": "Data for the list of service providers was collected and processed from all notified providers.",
+      "location": {
+        "page": 34,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": "4",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Întocmirea, menținerea și actualizarea Listei furnizorilor de servicii",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Updating of the list (4.2, page 35) reported in similar terms, not extracted again.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0058",
+      "information_type": "intervention",
+      "stated_text": "Au fost organizate și desfășurate Exerciții de simulare a incidentelor cibernetice atât la nivel strategic și operațional cât și tehnic.",
+      "quote_language": "ro",
+      "translation_en": "Cyber incident simulation exercises were organised and held at strategic, operational and technical level.",
+      "machine_translated": true,
+      "summary": "Cyber incident simulation exercises were held with sector authorities at strategic, operational and technical levels.",
+      "location": {
+        "page": 35,
+        "page_end": null,
+        "section": "Obiectivul general V: Identificarea și evidența furnizorilor de servicii",
+        "paragraph": "5",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Interacțiunea cu autoritățile publice din sectoarele critice și exerciții comune de simulare (acțiunea 5)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0059",
+      "information_type": "intervention",
+      "stated_text": "Obiectivul general VI:  Asigurarea orientării metodologice și reglementării domeniului securității cibernetice;",
+      "quote_language": "ro",
+      "translation_en": "General objective VI: providing methodological guidance and regulation in cybersecurity.",
+      "machine_translated": true,
+      "summary": "2025 plan objective VI: methodological guidance and regulation of cybersecurity.",
+      "location": {
+        "page": 36,
+        "page_end": null,
+        "section": "Obiectivul general VI: Asigurarea orientării metodologice și reglementării domeniului securității cibernetice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni al Agenției pentru Securitate Cibernetică pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated objective (M1). The report lists PNA (National Accession Programme) Chapter 10 items 1-5 and Chapter 31 item 8 as indicators for this objective; recorded here and not used as a structural chapter tag. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Stated plan objective (M1)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0060",
+      "information_type": "intervention",
+      "stated_text": "A fost furnizată informația cu privire la lista standardelor necesare care urmează să fie adoptate în vederea consolidării protecției rețelelor și sistemelor informatice la nivel național.",
+      "quote_language": "ro",
+      "translation_en": "Information was provided on the list of standards that need to be adopted to strengthen the protection of networks and information systems at national level.",
+      "machine_translated": true,
+      "summary": "The Agency supplied a list of standards to be adopted to strengthen national network and information system security.",
+      "location": {
+        "page": 37,
+        "page_end": null,
+        "section": "Obiectivul general VI: Asigurarea orientării metodologice și reglementării domeniului securității cibernetice",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Furnizarea autorităților publice a analizelor și informațiilor pentru elaborarea actelor normative (acțiunea 2)",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column: Realizat. Action 1 (examining draft acts sent for opinion) not extracted: general.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0061",
+      "information_type": "intervention",
+      "stated_text": "Ghidul metodologic privind implementarea măsurilor de securitate cibernetică, destinat furnizorilor de servicii din sectoarele critice, este în proces de elaborare.",
+      "quote_language": "ro",
+      "translation_en": "The methodological guide on implementing cybersecurity measures, intended for service providers in critical sectors, is being drafted.",
+      "machine_translated": true,
+      "summary": "A methodological guide on cybersecurity measures for critical-sector service providers is being drafted.",
+      "location": {
+        "page": 38,
+        "page_end": null,
+        "section": "Obiectivul general VI: Asigurarea orientării metodologice și reglementării domeniului securității cibernetice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Ghidul metodologic privind implementarea măsurilor de securitate cibernetică pentru furnizorii de servicii din sectoarele critice",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Status column for the guidance action: Realizat parțial.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Implementing guidance for the cybersecurity law."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0062",
+      "information_type": "intervention",
+      "stated_text": "Au fost elaborate și distribuite broșuri care oferă recomandări privind politicile de securitate și principiile de reziliență cibernetică.",
+      "quote_language": "ro",
+      "translation_en": "Brochures giving recommendations on security policies and cyber resilience principles were produced and distributed.",
+      "machine_translated": true,
+      "summary": "Brochures with recommendations on security policies and cyber resilience were produced and distributed.",
+      "location": {
+        "page": 38,
+        "page_end": null,
+        "section": "Obiectivul general VI: Asigurarea orientării metodologice și reglementării domeniului securității cibernetice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Elaborarea și promovarea celor mai bune practici și îndrumarea furnizorilor de servicii",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Guidance to providers on applying security policies; doubtful fit, could also be read as awareness raising."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0063",
+      "information_type": "intervention",
+      "stated_text": "ASC în colaborare cu experții EUPM a desfășurat TTX (table-top exercises) care simulează scenarii de amenințări hibride complexe. TTX-ul organizat în 8-9 iulie 2025 dedicat cadrului legal operațional, a reunit sectorul privat și cel public.",
+      "quote_language": "ro",
+      "translation_en": "ASC, with EUPM experts, held tabletop exercises (TTX) simulating complex hybrid threat scenarios. The TTX of 8-9 July 2025 on the operational legal framework brought together the private and public sectors.",
+      "machine_translated": true,
+      "summary": "With EUPM experts the Agency ran tabletop exercises on hybrid threats, including one on 8-9 July 2025 with public and private sectors.",
+      "location": {
+        "page": 38,
+        "page_end": null,
+        "section": "Obiectivul general VI: Asigurarea orientării metodologice și reglementării domeniului securității cibernetice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": "2025-07-08",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "TTX (table-top exercises) cu experții EUPM",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. ",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Hybrid threat scenarios with a cybersecurity element."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0064",
+      "information_type": "intervention",
+      "stated_text": "A fost aprobată Hotărârea de Guvern nr. 8232025 pentru aprobarea Regulamentului cu privire la elaborarea, actualizarea și implementarea Planului național de răspuns la incidente cibernetice și crize în domeniul securității cibernetice.",
+      "quote_language": "ro",
+      "translation_en": "Government Decision No. 823/2025 was approved, approving the Regulation on drafting, updating and implementing the National plan for responding to cyber incidents and crises.",
+      "machine_translated": true,
+      "summary": "A 2025 Government Decision approved the rules for drafting and implementing the national cyber incident and crisis response plan.",
+      "location": {
+        "page": 39,
+        "page_end": null,
+        "section": "Obiectivul general VI: Asigurarea orientării metodologice și reglementării domeniului securității cibernetice",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Hotărârea de Guvern nr. 823/2025 (Regulamentul privind Planul național de răspuns la incidente cibernetice și crize)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table",
+        "possible_misread"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. The number is printed '8232025', presumably 823/2025. Status column for drafting and approving the national plan itself: Realizat parțial; the plan is not reported as approved.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "National cyber incident and crisis response plan itself not yet approved (extraction note)."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0065",
+      "information_type": "metric",
+      "stated_text": "58 de concursuri organizate; 16 funcții publice scoase la concurs; 12 persoane angajate prin concurs; 2 persoane angajate pin transfer;",
+      "quote_language": "ro",
+      "translation_en": "58 competitions organised; 16 public posts put out to competition; 12 people recruited by competition; 2 people recruited by transfer.",
+      "machine_translated": true,
+      "summary": "In 2025 the Agency recruited 12 people by competition and 2 by transfer, with 16 posts advertised.",
+      "location": {
+        "page": 44,
+        "page_end": null,
+        "section": "Obiectivul general IX: Asigurarea resurselor umane",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Staff recruitment at the Cyber Security Agency",
+        "value": "12 recruited by competition; 2 by transfer",
+        "unit": "persons",
+        "reference_period": "2025"
+      },
+      "flags": [
+        "table",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Table row; quote taken from the Comentarii (comments) column. Theme doubtful: internal HR data, kept only as evidence of the cybersecurity authority's staffing capacity, which the report names as a constraint (pages 4, 5, 23). Integrity and asset declaration actions (page 45) and budget actions (pages 46-51) not extracted.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful resolved as in scope: staffing of the national cybersecurity authority, named as a constraint."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0066",
+      "information_type": "intervention",
+      "stated_text": "Procesele de monitorizare continuă, notificare și asistență acordată furnizorilor de servicii au fost asigurate constant",
+      "quote_language": "ro",
+      "translation_en": "The processes of continuous monitoring, notification and assistance to service providers were consistently ensured",
+      "machine_translated": true,
+      "summary": "The Agency reports that continuous monitoring, notification and assistance to service providers were consistently ensured.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Monitorizare continuă, notificare și asistență acordată furnizorilor de servicii",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (PC-05). Unheaded summary on page 3; quote ends mid-sentence before the claim on the incident register (item 0003). Wording differs from the detailed table rows (pages 10-11, items 0013 and 0014), so extracted again (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Self-assessment by the Cyber Security Agency."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0067",
+      "information_type": "outcome",
+      "stated_text": "Aceste acțiuni au contribuit la consolidarea schimbului de informații, a interoperabilității și a capacității de reacție la amenințări cibernetice complexe.",
+      "quote_language": "ro",
+      "translation_en": "These actions contributed to strengthening information exchange, interoperability and the capacity to react to complex cyber threats.",
+      "machine_translated": true,
+      "summary": "The Agency reports its cooperation actions strengthened information exchange, interoperability and capacity to react to complex cyber threats.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": null,
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second pass (PC-05). Unheaded summary on page 3. 'These actions' refers to the cooperation activities in the preceding sentence (item 0006): partnerships, joint exercises, the Cyber Reserve activation and CTF and TTX events. Self-assessment by the issuing body.",
+      "pass2": {
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Outcome linked by the source to the cooperation actions in item 0006. Self-assessment by the Cyber Security Agency."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0068",
+      "information_type": "barrier",
+      "stated_text": "Posibile întârzieri în livrarea echipamentelor și integrarea acestora 5. Probleme de compatibilitate între soluțiile existente și noile tehnologii",
+      "quote_language": "ro",
+      "translation_en": "Possible delays in the delivery of equipment and its integration 5. Compatibility problems between existing solutions and new technologies",
+      "machine_translated": true,
+      "summary": "Further external risks listed for objective I: possible delays in equipment delivery and integration, and compatibility problems with new technologies.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "Obiectivul general I: Consolidarea echipei de răspuns la incidente cibernetice la nivel național",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type",
+        "table"
+      ],
+      "extraction_note": "Second pass (PC-05). External risks 4 and 5 for objective I, following risks 1 to 3 in item 0010; listed as risks, not as stated causes of a shortfall, so barrier chosen as the closer type (as for item 0010).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Listed external risks on equipment delivery and compatibility; supports no mechanism clearly."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0069",
+      "information_type": "intervention",
+      "stated_text": "Moldova Cyber Security Forum: Eveniment de două zile, desfășurat în aprilie, care a reunit reprezentanți ai sectorului public, ai sectorului privat și instituții partenere naționale și internaționale. În cadrul forumului, ASC a organizat un CTF, contribuind la crearea unei platforme de colaborare și schimb de experiență între participanți.",
+      "quote_language": "ro",
+      "translation_en": "Moldova Cyber Security Forum: a two-day event held in April that brought together representatives of the public sector, the private sector and national and international partner institutions. Within the forum, ASC organised a CTF, contributing to the creation of a platform for collaboration and exchange of experience among participants.",
+      "machine_translated": true,
+      "summary": "The Agency held the two-day Moldova Cyber Security Forum in April with public, private and partner institutions, including a CTF.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "Obiectivul general III: Cooperarea la nivel național și internațional și schimbul de informații în materie de securitate cibernetică",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Moldova Cyber Security Forum",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Second pass (PC-05). Table row; quote taken from the Comentarii (comments) column. Year not stated with the month. The first pass left it out as an event; added because it is presented, like the CTF in item 0043, as a public-private cybersecurity cooperation platform under action 2 of objective III.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Public-private cooperation event with a CTF."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0070",
+      "information_type": "intervention",
+      "stated_text": "Cooperarea cu Lituania vizează atât participarea la proiectele PESCO, Lituania fiind stat pilon, cât și parteneriate tehnice, inclusiv în domeniul DNS firewall.",
+      "quote_language": "ro",
+      "translation_en": "Cooperation with Lithuania covers both participation in PESCO projects, Lithuania being the lead state, and technical partnerships, including in the field of DNS firewall.",
+      "machine_translated": true,
+      "summary": "The Agency's cooperation with Lithuania includes technical partnerships, including on DNS firewall, alongside PESCO participation.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cooperarea cu Lituania (parteneriate tehnice, inclusiv DNS firewall)",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Second pass (PC-05). Table row; quote taken from the Comentarii (comments) column. The sentence also mentions PESCO (defence cooperation), which is outside the theme; only the technical cybersecurity partnership is the in-scope claim. Stated in the present tense, recorded as in_progress.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Only the technical partnership (DNS firewall) is in scope; PESCO defence cooperation is out."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2026-010-0071",
+      "information_type": "intervention",
+      "stated_text": "Cu ANSSI – Franța, ASC desfășoară schimb de informații privind sistemul de network sensor.",
+      "quote_language": "ro",
+      "translation_en": "With ANSSI (France), ASC carries out an exchange of information on the network sensor system.",
+      "machine_translated": true,
+      "summary": "The Agency exchanges information with France's ANSSI on the network sensor system.",
+      "location": {
+        "page": 29,
+        "page_end": null,
+        "section": "Obiectivul general IV: Asigurarea punctului național unic de contact",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2026-02-05",
+        "period_covered": "2025",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenția pentru Securitate Cibernetică",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Agenția pentru Securitate Cibernetică (ASC)",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "ANSSI – Franța",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Schimb de informații cu ANSSI privind sistemul de network sensor",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "table"
+      ],
+      "extraction_note": "Second pass (PC-05). Table row; quote taken from the Comentarii (comments) column. ANSSI is printed without expansion. Stated in the present tense, recorded as in_progress.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    }
+  ]
+}

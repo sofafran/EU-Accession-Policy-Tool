@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.16.0"
+__version__ = "1.18.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -496,14 +496,25 @@ def g4(root, run):
 
 def g5(root, run):
     """G5 classification package (P3, stage 9): decisions first, then the queues, the 10 per cent sample with independent verdicts,
-    the spot-check sheet, entity lists sorted so duplicates sit together, contradictions, and out-of-scope and doubtful items."""
+    the spot-check sheet, entity lists sorted so duplicates sit together, contradictions, and out-of-scope and doubtful items.
+    1.17.0 (scaling note S10): every list holds this run's rows only (its items, its queue rows, its country's entities, its
+    links); other runs' items are still used to look up text. Adds the second-pass yield by family and a classification summary
+    (share of items matched to issues first drafted in an earlier run, scaling note S3)."""
     from common import evidence_files, read_json
     rv = root / "review" / run
     qa = rv / "g5_qa"
-    items = {}
+    cc = run_country(root, run)
+    items, own, fam = {}, {}, {}
     for f in evidence_files(root):
-        for it in read_json(f)["items"]:
+        d = read_json(f)
+        for it in d["items"]:
             items[it["item_id"]] = it
+        for it in run_items(d, run):  # this run's items only (E21)
+            own[it["item_id"]] = it
+            fam[it["item_id"]] = d["source_id"].split("-")[1]
+
+    def p2(i, k, default=None):
+        return (i.get("pass2") or {}).get(k, default)
 
     def text(i):
         return i.get("translation_en") or i["stated_text"]
@@ -518,19 +529,25 @@ def g5(root, run):
     dec_h, decisions = read_csv(rv / "G5_decisions.csv") if (rv / "G5_decisions.csv").exists() else ([], [])
     un_h, unmatched = read_csv(root / "taxonomy" / "unmatched_queue.csv")
     am_h, ambiguous = read_csv(root / "taxonomy" / "ambiguous_queue.csv")
+    unmatched = [r for r in unmatched if r["item_id"] in own]
+    ambiguous = [r for r in ambiguous if r["item_id"] in own]
     cv = verdicts("class_verdicts_A.csv", "class_verdicts_B.csv")
-    sample = [[k, items[k]["information_type"], text(items[k]), ";".join(items[k]["pass2"]["reform_issue_ids"]), ";".join(items[k]["pass2"]["mechanism_ids"]),
-               items[k]["pass2"]["chain_link"], v["verdict"], v["error_type"], v["comment"]] for k, v in cv.items() if k in items]
+    sample = [[k, own[k]["information_type"], text(own[k]), ";".join(p2(own[k], "reform_issue_ids", [])), ";".join(p2(own[k], "mechanism_ids", [])),
+               p2(own[k], "chain_link"), v["verdict"], v["error_type"], v["comment"]] for k, v in cv.items() if k in own]
     sv = verdicts("spot_verdicts.csv")
     spot = []
     if (rv / "G5_spot_check.csv").exists():
         for r in read_csv(rv / "G5_spot_check.csv")[1]:
-            i = items.get(r["item_id"])
+            i = own.get(r["item_id"])
             if i:
                 spot.append([r["item_id"], r["why_selected"], r["flags"], i["information_type"], text(i), sv.get(r["item_id"], {}).get("verdict", ""), sv.get(r["item_id"], {}).get("comment", "")])
     in_h, ints = read_csv(root / "entities" / "interventions.csv")
     ac_h, acts = read_csv(root / "entities" / "actors.csv")
-    links = read_csv(root / "links" / "links.csv")[1]
+    used_ints = {x for i in own.values() for x in p2(i, "intervention_ids", [])}
+    ints = [r for r in ints if r.get("country") == cc or r["intervention_id"] in used_ints]
+    used_acts = {a.get("actor_id") for i in own.values() for a in [i.get("speaker") or {}, *(i.get("subjects") or [])] if a.get("actor_id")}
+    acts = [r for r in acts if r.get("country") == cc or r["actor_id"] in used_acts]
+    links = [l for l in read_csv(root / "links" / "links.csv")[1] if l.get("run_id") == run]
     cvd = {}
     if (qa / "contradiction_verdicts.csv").exists():
         for r in read_csv(qa / "contradiction_verdicts.csv")[1]:
@@ -542,15 +559,35 @@ def g5(root, run):
             v = cvd.get((l["from_id"], l["to_id"]), {})
             con.append([l["link_id"], l["from_id"], text(a) if a else "", l["to_id"], text(b) if b else "", l["basis"], v.get("verdict", ""), v.get("comment", "")])
     con.sort(key=lambda r: (r[6] != "confirmed", r[0]))
-    oos = [[k, i["information_type"], text(i), ";".join(i["themes"]), ";".join(i["flags"]), i["pass2"]["classification_note"] or ""] for k, i in items.items() if i["pass2"]["classification_status"] == "out_of_scope"]
-    doubt = [[k, i["pass2"]["classification_status"], ";".join(i["pass2"]["reform_issue_ids"]), text(i), i["pass2"]["classification_note"] or ""] for k, i in items.items()
-             if "theme_doubtful" in i["flags"] and i["pass2"]["classification_status"] != "out_of_scope"]
+    oos = [[k, i["information_type"], text(i), ";".join(i["themes"]), ";".join(i["flags"]), p2(i, "classification_note") or ""] for k, i in own.items() if p2(i, "classification_status") == "out_of_scope"]
+    doubt = [[k, p2(i, "classification_status"), ";".join(p2(i, "reform_issue_ids", [])), text(i), p2(i, "classification_note") or ""] for k, i in own.items()
+             if "theme_doubtful" in i["flags"] and p2(i, "classification_status") != "out_of_scope"]
     q_h, queries = read_csv(rv / "pass2" / "pass1_queries.csv") if (rv / "pass2" / "pass1_queries.csv").exists() else (["item_id", "query"], [])
     rec = read_csv(qa / "eu_recheck.csv") if (qa / "eu_recheck.csv").exists() else (["source_id"], [])
+    # Second-pass yield by source family (extraction rules section 8, PC-05): items added per hundred first-pass items
+    added, first = Counter(), Counter()
+    spdir = rv / "second_pass"
+    add_ids = set()
+    for f in sorted(spdir.glob("*.csv")) if spdir.exists() else []:
+        for r in read_csv(f)[1]:
+            if r.get("action") in ("added_missed", "added", "added_non_EU") and r.get("item_id") in own:
+                add_ids.add(r["item_id"])
+    for k in own:
+        (added if k in add_ids else first)[fam[k]] += 1
+    yield_rows = [[f, first[f], added[f], f"{100 * added[f] / first[f]:.1f}" if first[f] else ""] for f in ("EU", "GOV", "IO", "RES", "CSO") if first[f] or added[f]]
+    # Classification summary by family; issues first drafted in an earlier run versus this run (S3)
+    created = {r["issue_id"]: r.get("created_in_run", "") for r in read_csv(root / "taxonomy" / "reform_issues.csv")[1]}
+    summ = Counter()
+    for k, i in own.items():
+        st = p2(i, "classification_status") or "not_classified"
+        ri = p2(i, "reform_issue_ids", [])
+        origin = "" if not ri else ("this run" if created.get(ri[0]) == run else "earlier run")
+        summ[(fam[k], st, origin)] += 1
+    summary = [[f, st, o, n] for (f, st, o), n in sorted(summ.items())]
     return "G5_classification.xlsx", [
         *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
         ("Ambiguous queue", am_h, [[r[h] for h in am_h] for r in ambiguous]),
-        ("Unmatched queue", un_h, [[r[h] for h in un_h] for r in sorted(unmatched, key=lambda r: r["proposed_label"])]),
+        ("Unmatched queue", un_h, [[r[h] for h in un_h] for r in sorted(unmatched, key=lambda r: (r["status"] != "open", r["proposed_label"]))]),
         ("Sample 10 percent", ["item_id", "type", "text", "reform_issue_ids", "mechanism_ids", "chain_link", "independent_verdict", "error_type", "comment"], sample),
         ("Spot check", ["item_id", "why_selected", "flags", "type", "text", "independent_verdict", "comment"], spot),
         ("Interventions", in_h, sorted([[r[h] for h in in_h] for r in ints], key=lambda r: (r[in_h.index("name")] or "").lower())),
@@ -558,6 +595,8 @@ def g5(root, run):
         ("Contradictions", ["link_id", "from_id", "from_text", "to_id", "to_text", "basis", "independent_verdict", "comment"], con),
         ("Out of scope", ["item_id", "type", "text", "themes", "flags", "note"], oos),
         ("Still doubtful in scope", ["item_id", "status", "reform_issue_ids", "text", "note"], doubt),
+        ("Classification summary", ["family", "classification_status", "first issue drafted in", "items"], summary),
+        ("Second-pass yield", ["family", "first-pass items", "items added", "added per hundred"], yield_rows),
         ("Pass 1 queries", q_h, [[r[h] for h in q_h] for r in queries]),
         ("EU missed claims", rec[0], [[r[h] for h in rec[0]] for r in rec[1]]),
         lessons_sheet(root, run),
@@ -897,6 +936,67 @@ def g6_refresh(root, run, sources=None):
 
 
 BUILDERS["G6-refresh"] = g6_refresh
+
+
+def g7_refresh(root, run):
+    """Refresh G7 package (E18, 1.18.0): decisions first, then the outputs (rebuilt or kept from G7, with any review flag from
+    review/<run>/refresh/output_flags.csv), the proposed implementation statuses beside the previous ones, the proposed
+    evidence confidence and relevance ratings (anything not High, and any superseding row, first, for review by exception)
+    and the earlier rereview flags carried forward."""
+    import re
+    rv = root / "review" / run
+    dec_h, decisions = read_csv(rv / "G7_refresh_decisions.csv") if (rv / "G7_refresh_decisions.csv").exists() else ([], [])
+    fl_h, flags = read_csv(rv / "refresh" / "output_flags.csv") if (rv / "refresh" / "output_flags.csv").exists() else ([], [])
+    flag = {}
+    for r in flags:
+        flag.setdefault(r.get("output", ""), []).append(r.get("flag", ""))
+    idx = []
+    for f in sorted((root / "outputs" / run).glob("*.md")):
+        t = f.read_text(encoding="utf-8")
+        state = "rebuilt (Draft)" if "rebuilt after G7" in t else "kept from G7 (Validated)" if "Validated at G7" in t else "Draft"
+        kind = "comparator brief and draft options" if f.name.startswith("comparator_brief_") else "issue brief" if f.name.startswith("issue_brief_") else "report"
+        idx.append([f.name, kind, state, str(len(re.findall(r"\(proposed\)", t.split("## Annex", 1)[0]))),
+                    str(len(re.findall(r"^\[\d+\] \*\*", t, re.M))), " | ".join(flag.get(f.name, [])), "", ""])
+    idx.sort(key=lambda r: (not r[5], r[2] != "rebuilt (Draft)", r[0]))
+    js = read_csv(root / "judgements" / "judgements.csv")[1]
+    by_id = {j["judgement_id"]: j for j in js}
+    gone = {j["supersedes"] for j in js if j.get("supersedes")}
+    prop = [j for j in js if j["run_id"] == run and j["review_status"] == "proposed"
+            and j["judgement_type"] in ("evidence_confidence", "relevance", "implementation_status")]
+    ints = {r["intervention_id"]: r for r in read_csv(root / "entities" / "interventions.csv")[1]}
+    latest = {}
+    for j in js:
+        if j["judgement_type"] == "implementation_status" and j["review_status"] in ("validated", "overridden") and j["run_id"] == run:
+            if j["object_id"] not in latest or j["context_id"] >= latest[j["object_id"]]["context_id"]:
+                latest[j["object_id"]] = j
+    review = ["decision", "new_value", "override_reason"]
+    imp = []
+    for j in prop:
+        if j["judgement_type"] != "implementation_status":
+            continue
+        o = latest.get(j["object_id"], {})
+        imp.append([j["object_id"], ints.get(j["object_id"], {}).get("name", ""), o.get("judgement_id", ""), o.get("context_id", ""), o.get("value", "(none)"),
+                    j["judgement_id"], j["context_id"], j["value"], "new record" if not o else "changed" if o["value"] != j["value"] else "reason only",
+                    j["reason"], o.get("reason", ""), j["evidence_item_ids"], "", "", ""])
+    imp.sort(key=lambda r: ({"changed": 0, "new record": 1}.get(r[8], 2), r[0]))
+    rat = [[j["judgement_id"], j["judgement_type"], j["object_id"], j["context_id"], j["value"], j["reason"], j["supersedes"],
+            by_id.get(j["supersedes"], {}).get("value", ""), "", "", ""] for j in prop if j["judgement_type"] != "implementation_status"]
+    rat.sort(key=lambda r: (not r[6], r[4] == "High", r[2], r[1]))
+    carried = [[j["judgement_id"], j["judgement_type"], j["object_id"], j["value"], j["review_status"], j["reason"], "", ""]
+               for j in js if j["run_id"] == run and j["rereview_flag"] == "yes" and j["judgement_id"] not in gone]
+    return "G7_refresh.xlsx", [
+        *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
+        ("Outputs", ["file", "kind", "state", "proposed_values_shown", "annex_items", "review_flag", "reviewer_decision", "reviewer_comment"], idx),
+        ("Implementation status", ["intervention", "name", "previous_id", "previous_date", "previous_value", "new_id", "new_date", "new_value", "change",
+                                   "new_reason", "previous_reason", "items", *review], imp),
+        ("Confidence and relevance", ["judgement_id", "judgement_type", "item_id", "issue", "value", "reason", "supersedes", "previous_value", *review], rat),
+        ("Rereview flags carried", ["judgement_id", "judgement_type", "object_id", "value", "review_status", "reason", "reviewer_decision", "reviewer_comment"], carried),
+        lessons_sheet(root, run),
+        ("Validation", ["validate_data output"], validation_lines(root)),
+    ]
+
+
+BUILDERS["G7-refresh"] = g7_refresh
 
 
 def main(argv=None):

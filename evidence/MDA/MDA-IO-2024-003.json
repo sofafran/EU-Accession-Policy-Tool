@@ -1,0 +1,3607 @@
+{
+  "source_id": "MDA-IO-2024-003",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-8 read in full",
+    "notes": "Read in full (text pages 1-8; page 8 is blank). The cover is dated February 2024; the register gives 2024-07 from the World Bank document number. Text-file page numbers are one higher than the printed page numbers (text page 2 is printed page 1). The executive summary has no section headings on text pages 2-3, so the section is given as 'Executive Summary'; on text pages 4-7 the recommendation group heading (Laws and regulations, Institutions, Digital data infrastructure, Human capital) is printed at the foot of each page and is used as the section, with the recommendation number within the group as paragraph. Conversion problem: on text pages 2-3 the two-column layout breaks one sentence ('A factor that remains' at the foot of page 3 continues 'critical to the success of embracing open data...' at the top of the same page), so that item quotes the fragment and is flagged possible_misread. Footnote reference markers ('2', '3') sit inside two recommendation sentences on text pages 5 and 6; they are kept because the converted text runs on, and noted on the item; the footnotes themselves are not quoted. All content concerns data governance, AI and digital public infrastructure (theme scope); no Chapter 2 content. Left out: framing sentences on the value of public sector data and the DTS vision; the general description of digital public infrastructure; the sentence on MDAs' legal mandate to connect to the government cloud (it carries a footnote marker, and the mandates are only cited in the footnote); the DTS directions on interoperability as reported (the DTS is held as MDA-GOV-2023-001); the projection that Moldova could be among Europe's leaders by 2030; the recommendation on digital and data literacy programmes for citizens (digital skills not linked to an in-scope recommendation). Doubtful for the analyst: the recommendation on public sector IT staff conditions (human resources for digital government) and the training of public sector staff in data skills, both kept with theme_doubtful; the legislative review recommendation mentions digital financial services (out of scope, R22) alongside data protection and e-identification, and is kept for the in-scope parts. Second-pass check (PC-05) by checker-GOV8b on 5 November 2026: 2 items added (review/RUN-2026-02/second_pass/MDA-IO-2024-003.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-IO-2024-003-0001",
+      "information_type": "intervention",
+      "stated_text": "Consequently, a sub-council on Data Governance and Artificial Intelligence (AI) has been announced under the National Digital Transformation Council (leading entity for the DTS implementation and coordination) to spearhead the data agenda.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A sub-council on Data Governance and AI has been announced under the National Digital Transformation Council to lead the data agenda.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Digital Transformation Council",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Sub-council on Data Governance and Artificial Intelligence under the National Digital Transformation Council",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Creation of an institution (M2); 'announced' gives stated status proposed.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Body for AI and data under the digital transformation council; the data agenda part would also fit the proposed issue \"National data governance strategy and institutions missing\""
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0002",
+      "information_type": "finding",
+      "stated_text": "It has become clear for the government that previous siloed approaches to data management need to be revised: data should be shared and used across disciplines, sectors, and platforms.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The government recognises that siloed data management must be revised so that data is shared across sectors and platforms.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "The World Bank reports the government's own view.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Siloed data management across institutions (government view reported by the World Bank)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0003",
+      "information_type": "finding",
+      "stated_text": "For more than a decade, the country has made significant investments to establish and enhance its digital public infrastructure (DPI) and e-government architecture through interoperable, cloud-based platforms for the public sector.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "For over a decade Moldova has invested significantly in digital public infrastructure and interoperable, cloud-based e-government platforms.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive finding on digital public infrastructure; the cloud element: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0004",
+      "information_type": "intervention",
+      "stated_text": "In recent years, high-level decrees enabled the beginning of a smooth rollout of functional data flows and exchange among state agencies through a single and interoperable platform, MConnect, and public sector computing infrastructure MCloud.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Decrees enabled the start of data exchange among state agencies through the MConnect interoperability platform and the MCloud infrastructure.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MConnect interoperability platform and MCloud public sector computing infrastructure",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'Enabled the beginning of a smooth rollout' read as in_progress.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data exchange through MConnect; MCloud is government cloud: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0005",
+      "information_type": "intervention",
+      "stated_text": "The government is in the process of deploying proactive public services, based on the existing infrastructures, that will support event-driven data exchanges that optimize service delivery for citizens.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The government is deploying proactive public services based on event-driven data exchange.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "The government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "Proactive public services",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Proactive services, as for MDA-GOV-2023-001-0084"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0006",
+      "information_type": "intervention",
+      "stated_text": "This includes leveraging the e-signature service MSign utilizing digital ID, Public Key Infrastructure (PKI)-based authentication service MPass, and government payment system MPay, as well as the soon-to-be-launched EVO mobile app, an integrated application for public services (including digital ID and digital documents wallet, integrated with MPay).",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Proactive services will use MSign, MPass and MPay and the soon-to-be-launched EVO app with digital ID and a documents wallet.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": "EVO mobile app",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Status refers to the EVO app ('soon-to-be-launched'); MSign, MPass and MPay are named as existing services.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0007",
+      "information_type": "recommendation",
+      "stated_text": "Thus, ensuring that these existing and new systems are enhanced to function at the highest level while encouraging their robust, safe and increased use through adequate data governance is of imminent priority.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enhancing existing and new e-government systems and encouraging their safe, increased use through data governance is an imminent priority.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Refers to the systems named in -0006; vague recommendation to increase their safe use"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0008",
+      "information_type": "finding",
+      "stated_text": "Despite these efforts, interoperability among various data systems within the government is yet to be streamlined and Moldova is lagging behind in utilizing data for development purposes to its full potential.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Interoperability among government data systems is not yet streamlined and Moldova lags in using data for development.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0009",
+      "information_type": "finding",
+      "stated_text": "The transition to cloud services and the data exchange process have encountered fragmentation and challenges.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The move to cloud services and the data exchange process have met fragmentation and challenges.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The next sentence (MDAs mandated to connect to the government cloud but needing better data quality) is not extracted because it carries a footnote marker mid-sentence; the mandate is cited only in the footnote.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data exchange part only; transition to cloud services: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0010",
+      "information_type": "barrier",
+      "stated_text": "Data duplication and reluctance to share data also prohibit the initialization of permanent and standardized data flows within the government.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Data duplication and reluctance to share data prevent permanent, standardised data flows within government.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-10"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Reluctance to share data read as MEC-10, as for MDA-GOV-2023-001-0148"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0011",
+      "information_type": "barrier",
+      "stated_text": "It is observed that most MDAs still work in silos with their own agenda, budgets, priorities, and databases. This leads to each institution choosing different tools to automate its activities in different sectors, which may not be interoperable. These various technologies then require additional technical solutions to combine and consolidate information flows.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Most ministries and agencies work in silos and choose their own tools, which may not interoperate and need extra solutions.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministries, departments, and agencies (MDAs)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Government-wide silos, not one ministry's systems (so not CI-05, G4-D04)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0012",
+      "information_type": "finding",
+      "stated_text": "In addition, the Government Open Data Portal supported by the Semantic Catalog is still lacking in its use and needs further enhancement.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Government Open Data Portal, supported by the Semantic Catalog, is under-used and needs enhancement.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: the portal is little used rather than not updated by institutions"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0013",
+      "information_type": "finding",
+      "stated_text": "Moreover, the expansion of government cloud and data exchange mechanisms to Local Public Authorities (LPAs) is limited and requires further efforts and optimization.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Extension of the government cloud and data exchange to local public authorities is limited.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Local Public Authorities (LPAs)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data exchange to local public authorities; the cloud part: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0014",
+      "information_type": "barrier",
+      "stated_text": "Limited data sharing and use in the public sector is underpinned by factors such as limitations of key enabling policy and legal frameworks as well as the absence of a designated authority that owns the data governance agenda.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Limited public sector data sharing stems from weak policy and legal frameworks and no designated authority owning data governance.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-01",
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Barrier explains limited data sharing; the absence of a data governance authority also supports the proposed issue \"National data governance strategy and institutions missing\""
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0015",
+      "information_type": "finding",
+      "stated_text": "critical to the success of embracing open data is the political support from the senior leadership.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Political support from senior leadership remains critical to the success of open data.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "The sentence begins 'A factor that remains' at the foot of text page 3 and continues at the top of the same page because of the two-column layout; only the fragment can be quoted.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Fragment only (possible_misread); political support for open data"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0016",
+      "information_type": "barrier",
+      "stated_text": "At the same time, data governance at the sub-national level is rudimentary because of the absence of local institutions and officers responsible for data and limited funding.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Sub-national data governance is rudimentary because there are no local data institutions or officers and funding is limited.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-09"
+        ],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Sub-national data governance institutions; fits no approved issue (not local e-services, RI-TEC-037); problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0017",
+      "information_type": "recommendation",
+      "stated_text": "The institutional framework laid out in digital transformation strategy, led by the Ministry of Economic Development and Digitalization (MEDD) and the National Digital Transformation Council (NTDC) and supported by the E-Governance Agency (EGA), Center of Information Technology and Cyber Security (CITCS), Public Services Agency (PSA), and newly created National Agency for Cyber Security, can be leveraged to build on the data agenda as well.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The digital transformation institutions, led by the ministry and the Council, can be used to advance the data agenda.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministry of Economic Development and Digitalization (MEDD)",
+          "actor_id": "ACT-MDA-0004"
+        },
+        {
+          "name_as_stated": "E-Governance Agency (EGA)",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Same sentence as -0018 (PC-06): this item is the claim on leveraging the digital institutions for the data agenda, -0018 the creation of the cyber agency; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0018",
+      "information_type": "intervention",
+      "stated_text": "The institutional framework laid out in digital transformation strategy, led by the Ministry of Economic Development and Digitalization (MEDD) and the National Digital Transformation Council (NTDC) and supported by the E-Governance Agency (EGA), Center of Information Technology and Cyber Security (CITCS), Public Services Agency (PSA), and newly created National Agency for Cyber Security, can be leveraged to build on the data agenda as well.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A National Agency for Cyber Security has been newly created.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "National Agency for Cyber Security",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "National Agency for Cyber Security",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second claim in the same sentence (creation of an institution, M2); 'newly created' read as implemented.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same sentence as -0017 (PC-06), different claim; as for MDA-GOV-2023-001-0090"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0019",
+      "information_type": "finding",
+      "stated_text": "Despite their efforts being welcomed and recognized, there needs to be more coordination between the entities leading on digitalization and with other government bodies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "More coordination is needed among the bodies leading digitalisation and with other government bodies.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "Between finding (current coordination insufficient) and recommendation ('there needs to be').",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Coordination between bodies leading digitalisation (ambiguous_type noted in pass 1)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0020",
+      "information_type": "recommendation",
+      "stated_text": "The Moldovan institutional framework needs a network of chief data officers (CDOs) across MDAs both nationally and sub-nationally, and strong ownership of the data agenda will provide a strong impetus to move forward and ensure implementation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova needs a network of chief data officers across ministries and agencies, nationally and sub-nationally.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Repeated in the Institutions recommendations, text page 5, extracted there too.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Network of chief data officers; repeated at -0046; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0021",
+      "information_type": "barrier",
+      "stated_text": "The transition to the next level of data maturity is also slowed by the low involvement of municipal authorities in the ecosystem.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Low involvement of municipal authorities slows progress in data maturity.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Low involvement of municipalities in the data ecosystem; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0022",
+      "information_type": "recommendation",
+      "stated_text": "To further progress with a national data ecosystem, Moldova would benefit from developing a framework to overcome these challenges.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova would benefit from a framework to overcome the challenges facing its national data ecosystem.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Framework for the national data ecosystem; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0023",
+      "information_type": "recommendation",
+      "stated_text": "Additionally, it is recommended for the private sector, academic institutions, NGOs, and public at large to be more connected to policy discussions and collaboration activities on the data agenda to build trust and ensure data infrastructure meets the needs of data users.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The private sector, academia, NGOs and the public should be more involved in data policy discussions.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Stakeholder involvement in the data agenda; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0024",
+      "information_type": "finding",
+      "stated_text": "Generally, MDAs need more unified data management and data sharing standards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Ministries and agencies need more unified data management and data sharing standards.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Unified data management and sharing standards; not alignment with the European Interoperability Framework (RI-TEC-027); problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0025",
+      "information_type": "barrier",
+      "stated_text": "There is currently no standardized method for reviewing and classifying data given the lack of a government data classification policy, legislation, or directive.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "There is no standard method for classifying data because no government data classification policy or legislation exists.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "No data classification policy or legislation; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0026",
+      "information_type": "finding",
+      "stated_text": "Even in cases when data exchange mechanisms have been established, there are no working mechanisms to prevent third-party government or private institutions (such as banks, for instance) for asking for paper-based copies of respective data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Even with data exchange in place, nothing stops institutions such as banks from requesting paper copies of data.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Institutions still ask for paper copies despite data exchange: data not used ex officio (once-only)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0027",
+      "information_type": "lesson",
+      "stated_text": "Globally, it is seen that such changes require strong championing of the data agenda at the highest levels of government to build and sustain cross-government collaboration.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Experience elsewhere shows such changes need strong championing of the data agenda at the highest level of government.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "A general lesson from global experience, stated for the changes Moldova needs.",
+      "pass2": {
+        "chain_link": "lesson",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Global lesson on championing the data agenda; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0028",
+      "information_type": "finding",
+      "stated_text": "In recent years, Moldova made a good progress in aligning national law with the EU General Data Protection Regulation (GDPR). For instance, recent amendments solve fundamental discrepancies between the Moldovan and EU laws in terms of controlling, processing, and cross-border transmission of personal data.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has made good progress aligning with the GDPR; recent amendments resolve key discrepancies on processing and transfers of personal data.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive finding on GDPR alignment; for the contradiction review against EU findings on RI-TEC-017"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0029",
+      "information_type": "finding",
+      "stated_text": "Still, cross-border data flow regulations are nascent and primarily focused on social protection.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Rules on cross-border data flows are nascent and mainly focused on social protection.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'Social protection' is not specified further; no explicit link to social security coordination, so not tagged Chapter 2.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Rules on cross-border data flows; \"social protection\" has no stated link to social security coordination, so no Chapter 2 issue"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0030",
+      "information_type": "recommendation",
+      "stated_text": "Given Moldova’s recognition as a candidate for EU membership, the legislation should ensure complete alignment with the EU’s data provisions.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "As a candidate country, Moldova's legislation should fully align with EU data provisions.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Follows the GDPR passage; EU data provisions read as data protection and related data rules"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0031",
+      "information_type": "finding",
+      "stated_text": "In particular, the legal framework has seen limited implementation and is yet to be fully compliant with EU regulations for emerging technologies (such as blockchain or AI), which may lead to uncertainty regarding their use.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The legal framework is little implemented and not yet compliant with EU rules on emerging technologies such as AI.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01",
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Blockchain mentioned as an example only"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0032",
+      "information_type": "recommendation",
+      "stated_text": "The regulatory framework for data governance can be improved, along with harmonizing with EU on areas such as the Data Governance Act, Digital Services Act, and eIDAS2 on digital ID.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Improve the data governance regulatory framework and harmonise with the Data Governance Act, Digital Services Act and eIDAS2.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-DIGI",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Printed as a highlighted lead statement; it states a claim of its own.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-016",
+          "RI-TEC-034",
+          "RI-TEC-025"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data Governance Act (as MDA-EU-2024-002-0016), Digital Services Act (G4-D11), eIDAS 2"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0033",
+      "information_type": "finding",
+      "stated_text": "Only personal data protection and access to information are covered.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The regulatory framework covers only personal data protection and access to information.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Read with -0032 and -0055: data legislation covers only personal data and access to information, not re-use and sharing"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0034",
+      "information_type": "recommendation",
+      "stated_text": "For instance, Moldova needs a clear framework to address data classification and to standardize formats in which government datasets and data tools must be available.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova needs a framework for data classification and standard formats for government datasets.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Data classification framework; the standard formats for government datasets would also fit RI-TEC-016; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0035",
+      "information_type": "recommendation",
+      "stated_text": "Before advancing to the next stage of data maturity, priority should be given to the implementation of the legal frameworks on e-signature and the regulation of emerging technologies such as AI, cryptocurrencies, and blockchain.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Prioritise implementing e-signature law and regulating emerging technologies such as AI, cryptocurrencies and blockchain.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Cryptocurrencies and blockchain are not tagged (digital finance out of scope, R22).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Implementation of the e-signature framework and AI regulation; cryptocurrencies and blockchain out (R22)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0036",
+      "information_type": "finding",
+      "stated_text": "Furthermore, only some efforts around open data are in place today.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Only some open data efforts are in place.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0037",
+      "information_type": "recommendation",
+      "stated_text": "Develop and approve a National Data Governance Strategy and associated enabling legislation, with the overarching objective of leveraging Moldova’s data to accelerate its EU membership, viewing and managing it as a public good, and highlighting coordination between public and private sectors.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Develop and approve a National Data Governance Strategy and enabling legislation, treating data as a public good to support EU membership.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "LAWS AND REGULATIONS",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "National data governance strategy and enabling legislation; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0038",
+      "information_type": "recommendation",
+      "stated_text": "It would also be crucial to a coordinate review of legislation pertaining to but not limited to data protection, data communications, electronic identification and authentication, e-signature, and regulations related to digital financial services provision and e-commerce including for cross-border trade. Updates to these laws should also ensure EU alignment.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Review and EU-align legislation on data protection, data communications, electronic identification, e-signature, digital finance and e-commerce.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "LAWS AND REGULATIONS",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Mixed list: digital financial services are out of scope (R22) and e-commerce is not a clear theme area; kept for data protection and electronic identification. Theme doubtful on the remaining items.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-025",
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme_doubtful resolved: data protection, eID and e-signature in scope; e-commerce to RI-TEC-034 (G4-D11); digital financial services out (R22)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0039",
+      "information_type": "recommendation",
+      "stated_text": "Develop a Data Governance Framework,  with a first set of interoperable sector-specific data spaces (e.g., health, skills, or public sector) and associated data infrastructures prioritising collaboration between business, government, and academia.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Develop a Data Governance Framework with a first set of interoperable sector data spaces and related infrastructure.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "LAWS AND REGULATIONS",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Data governance framework with sector data spaces; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0040",
+      "information_type": "recommendation",
+      "stated_text": "Moreover, a multi-annual Action Plan to build, support and sustain the Data Governance Framework would benefit from detailing clearly defined outcomes; targets; and ring-fenced funding for the delivery of the necessary institutions, laws, economic policies, infrastructure, and human capital.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A multi-annual action plan for the Data Governance Framework should set outcomes, targets and ring-fenced funding.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "LAWS AND REGULATIONS",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Action plan and ring-fenced funding for the data governance framework; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0041",
+      "information_type": "recommendation",
+      "stated_text": "Adopt a National AI Strategy and associated enabling legislation as a key foundational component of Moldova’s Digital Transformation Strategy 2023-2030 emphasizing the ethical use of trustworthy data and aligned with the EU’s declaration on Digital Rights and Principles that will shape Europe’s digital future and issue guidelines for the use of data-driven AI in the public sector highlighting security, privacy, and interoperability.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Adopt a National AI Strategy and enabling legislation aligned with EU digital principles, and issue guidelines on AI use in the public sector.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "LAWS AND REGULATIONS",
+        "paragraph": "3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0042",
+      "information_type": "recommendation",
+      "stated_text": "Ensure the Sub-Council on Data Governance and AI  has high-level political leadership with representatives of all sectors of the economy and civil society to oversee the development of the Data Strategy and Framework.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Give the Sub-Council on Data Governance and AI high-level leadership and broad representation to oversee the Data Strategy and Framework.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "INSTITUTIONS",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-AI"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Sub-Council on Data Governance and AI",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Leadership of the sub-council to oversee the data strategy; its AI role alone would fit RI-TEC-001; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0043",
+      "information_type": "recommendation",
+      "stated_text": "Additionally, aligning with the ongoing Open Data Program and ensuring leadership on and political buy-in for delivering on the agenda across the public sector would be key to implementing necessary developments.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Align with the ongoing Open Data Program and secure political buy-in across the public sector.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "INSTITUTIONS",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0044",
+      "information_type": "recommendation",
+      "stated_text": "Furthermore, international cooperation on data issues should be a priority including regional collaboration in the context of EU integration, and bilateral collaboration particularly with Romania and Ukraine on cross-border data flows and interoperable digital public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Prioritise international data cooperation, including with Romania and Ukraine on cross-border data flows and interoperable public services.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "INSTITUTIONS",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Cross-border data flows and interoperable cross-border services fit no approved issue, as for MDA-GOV-2023-001-0097 to -0100"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0045",
+      "information_type": "recommendation",
+      "stated_text": "Mandate and resource the E-Government Agency to implement the Data Strategy developed as part of above recommendations, including centralised control of expenditures and data governance initiatives in the public sector to ensure the enforcement of data standards and semantic interoperability across ministries and agencies.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Mandate and resource the E-Government Agency to implement the Data Strategy and enforce data standards and semantic interoperability.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "INSTITUTIONS",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "E-Government Agency",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Mandate for the E-Government Agency to run the data strategy and enforce data standards; semantic interoperability part close to RI-TEC-028; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0046",
+      "information_type": "recommendation",
+      "stated_text": "Moreover, a network of chief data officers (CDOs) across MDAs both nationally and sub-nationally, coordinating with EGA, will provide a strong impetus and ownership of the data agenda to move forward and ensure implementation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A network of chief data officers across ministries and agencies, coordinating with the agency, would drive the data agenda.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "INSTITUTIONS",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Also in the executive summary, text page 3, extracted there too.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Same recommendation as -0020 (repeated in the source); problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0047",
+      "information_type": "recommendation",
+      "stated_text": "In line with Moldova’s application for EU membership, complete a whole-of-government analysis to identify data-related initiatives “to enhance public and private investments in strategic infrastructure, education, and innovation” 2 with an emphasis on integration with Trans-European Networks (TEN) and participation in sector-specific Common European Data Spaces.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Analyse data initiatives across government, emphasising integration with Trans-European Networks and participation in Common European Data Spaces.",
+      "location": {
+        "page": 5,
+        "page_end": null,
+        "section": "INSTITUTIONS",
+        "paragraph": "3",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The '2' after the inner quotation is a footnote reference marker in the running text (the footnote, a Commission web link, is not quoted).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Whole-of-government analysis of data-related investment (Trans-European Networks, Common European Data Spaces) is too general for any approved issue or the proposed data governance issue"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0048",
+      "information_type": "recommendation",
+      "stated_text": "Mandate the EGA to develop a public sector data architecture implementing modernized base registries (e.g., persons, land, businesses), master data, reference data, APIs, and open data based on Moldova’s interoperability framework and the Semantic Catalogue to enforce the ‘Once-Only’ principle 3, optimize data quality and enable data sharing and reusability.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Mandate the agency to build a public sector data architecture with modern base registries and open data, applying the once-only principle.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "DIGITAL DATA INFRASTRUCTURE",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EGA",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The '3' after 'principle' is a footnote reference marker in the running text (the footnote defines the once-only principle and is not quoted).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028",
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Base registries, once-only data sharing and open data in one public sector data architecture"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0049",
+      "information_type": "recommendation",
+      "stated_text": "Upgrade the foundational data infrastructure, including MCloud services (hybridization and further enhancement of MCloud by leveraging EU-based hyperscale offerings) and network connectivity which should be prioritized and integrated with the EU’s CEF-Digital investment program to support the expected data volumes and data flows associated with the rollout of the data governance framework underpinned by the DPI and to cope with the increase in machine-generated data from AI applications and the IoT.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Upgrade data infrastructure, including MCloud hybridisation and network connectivity, integrated with the EU CEF-Digital programme.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "DIGITAL DATA INFRASTRUCTURE",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA",
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Network connectivity integrated with CEF Digital only (EU funding instrument); MCloud hybridisation is government cloud: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0050",
+      "information_type": "recommendation",
+      "stated_text": "Harmonize infrastructure with EU, including through bilateral collaboration with Romania and other countries, including on data exchange, recognition of digital IDs under eIDAS.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Harmonise infrastructure with the EU, including with Romania on data exchange and recognition of digital IDs under eIDAS.",
+      "location": {
+        "page": 6,
+        "page_end": null,
+        "section": "DIGITAL DATA INFRASTRUCTURE",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Recognition of digital IDs under eIDAS; cross-border data exchange part fits no issue (as MDA-GOV-2023-001-0097)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0051",
+      "information_type": "recommendation",
+      "stated_text": "Review and update conditions for public sector IT and other relevant staff including recruitment, pay and personnel management while balancing the aspirations and career trajectories of modern digital talent with the need for permanent in-house architectural expertise to ensure continuity and the sustainable evolution of digital public services culminating in HR policies for a public sector that is fit for purpose in the digital age and is agile, human centric, data-driven and AI enabled.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Update recruitment, pay and management of public sector IT staff to keep in-house expertise for digital public services.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "HUMAN CAPITAL",
+        "paragraph": "1",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Human resources for digital government; unclear whether staffing conditions meet the materiality test (the stated purpose is the sustainable evolution of digital public services).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "G5-D05 of RUN-2026-01: public sector IT staffing mapped to RI-TEC-002 with MEC-03; theme_doubtful resolved as in scope"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0052",
+      "information_type": "recommendation",
+      "stated_text": "Embed a data culture in the public sector  emphasizing data governance, data quality, data protection, and data ethics.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Embed a public sector data culture stressing data governance, quality, protection and ethics.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "HUMAN CAPITAL",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Data culture in the public sector; problem raised only by national and IO sources (PC-12)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0053",
+      "information_type": "recommendation",
+      "stated_text": "Launch multi-stage training and awareness programs (including essential and advanced courses) in digital literacy, cybersecurity, data protection, data management, data analytics, and project management for public sector staff and plan for the recruitment of staff with data profiles. Actions to upskill the public sector workforce would aim to improve data use and reuse, enabling use of data analytics for decision-making.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Train public sector staff in data protection, management, analytics and cybersecurity and recruit data specialists.",
+      "location": {
+        "page": 7,
+        "page_end": null,
+        "section": "HUMAN CAPITAL",
+        "paragraph": "2",
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Digital skills for public staff, kept because the text links them directly to the data governance recommendations; doubtful whether the link meets the digital skills rule.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "G5-D05 of RUN-2026-01: public sector digital capacity and recruitment of data staff to RI-TEC-002; theme_doubtful: the general digital literacy training is digital skills and is kept only as part of this capacity"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0054",
+      "information_type": "finding",
+      "stated_text": "Ministries, departments, and agencies (MDAs) are mandated to be connected to the government cloud and exchange data1, but need better data quality and reliability.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Ministries and agencies are mandated to connect to the government cloud and exchange data, but need better data quality and reliability.",
+      "location": {
+        "page": 2,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ministries, departments, and agencies (MDAs)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). The first pass left this sentence out because of the footnote marker; as in items 0047 and 0048, the marker ('1' after 'data') is kept because the converted text runs on, and the footnote (Government Decision 128/2014 and Law 142/2018) is not quoted. The mandate is named only in the footnote, so the claim is recorded as a finding on the legal situation and data quality.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data quality and reliability for exchange; the government cloud mandate: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-IO-2024-003-0055",
+      "information_type": "finding",
+      "stated_text": "When it comes to data legislation and regulation in Moldova, a national legal framework is underpinned by an overarching data protection law that facilitates the establishment of safeguards.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's national data legal framework rests on an overarching data protection law that facilitates safeguards.",
+      "location": {
+        "page": 3,
+        "page_end": null,
+        "section": "Executive Summary",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2024-07",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "World Bank",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). Printed as a highlighted lead statement with a claim of its own (the law is not named, so a finding).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive finding on the data protection law (not named)"
+      }
+    }
+  ]
+}

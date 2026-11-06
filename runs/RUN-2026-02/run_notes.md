@@ -62,3 +62,13 @@ Notes are not curated and are not shown on the review page. When a note proves m
 - G4 package: `review/RUN-2026-02/G4_decisions.csv` (G4-D01 to G4-D10 need Sofia; G4-D11 to G4-D18 apply earlier decisions), `G4_proposed_issues.csv` (RI-TEC-038, RI-FMW-015, RI-TEC-039, RI-TEC-040, proposals only, not in the taxonomy) and `G4_taxonomy.xlsx`.
 - `export_review.py` 1.15.0 (tier 1): the G4 second-pass sheet counted only `added_missed`, the alpha's action name, so every Moldova source showed 0 items added (S10 kind of problem: a format assumed from one run). It now counts `added` and `added_non_EU` too, and the package adds sheets for proposed and candidate issues, the G3 rule issues, the earlier unmatched rows and the run's open queue rows. New test added. Test suite: 96 of 97 pass; the failure (RUN-2026-01 G7 briefs no longer rebuild byte for byte) also fails on the last commit without these changes, so it comes from the RUN-2026-01 refresh, not from this work.
 - `judgements/judgements.csv` changed in the working tree during this session without any action of mine (another session, probably the RUN-2026-01 refresh). Not touched; to be checked before the next commit.
+
+## 2026-11-05, stage 8 (full extraction)
+
+- Extraction rules 0.6 and theme list 1.4 on 29 national, international, research and civil-society sources (20 new evidence files, 9 earlier MDA files extended): 2,206 items, all quotes verified (`review/RUN-2026-02/quote_checks/`), second pass on every source (`review/RUN-2026-02/second_pass/`). The largest are MDA-GOV-2025-002 (539 items, the national screening and approximation material) and MDA-GOV-2025-003 (325).
+- G4-D15 applied: the 2023 to 2025 communications (MKD-EU-2023-002, -2024-002, -2025-002) screened again for horizontal passages under REQ-076; 33 items for this run in the three files, quoted as RUN-2026-01 quoted the same passages.
+- Validation: 0 errors.
+
+## 2026-11-06, stage 9
+
+- Pass 2 (classification rules 0.4, taxonomy 1.2) run in 15 batches by classifier agents on `review/RUN-2026-02/pass2/classifier_brief.md`; batches A to H and J applied on 5 November (2,635 items: 2,330 auto, 271 out of scope, 34 unmatched). Batches I01, K01 and K02 (899 items, mainly MDA-GOV-2025-002 and MDA-GOV-2024-001) resumed on 6 November after the session paused.

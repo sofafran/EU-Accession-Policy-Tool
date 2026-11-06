@@ -1,0 +1,1561 @@
+{
+  "source_id": "MDA-GOV-2025-004",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "1-28 read in full (cover, contents and back cover have no claims)",
+    "notes": "Read in full (pages 1-28; page 1 is the cover, page 2 the table of contents, page 28 the back cover). Romanian only: stated_text is the Romanian text as converted, translation_en is a machine translation by the extracting agent, machine_translated is true, and evidence confidence is capped at Medium (extraction rules section 6). Treatment follows the G3 sample file for the 2025 report (MDA-GOV-2026-004) for consistency. Chapter 2 items (cluster 2, chapter 02) are those on displaced persons and refugees from Ukraine (foreign nationals' access to the labour market in Moldova), ANOFM agreements whose target groups include refugees or third-country nationals, the internal audit engagement on implementing the EURES network (page 26) and the EURES objective of the 2025 Plan. Theme items are online services used by jobseekers and employers (angajat.md visits and vacancy aggregation, the Cognitrom platform, the voucher platform), the Helvetas referral platform for refugees (chapter and theme, theme_doubtful) and the barrier on the lack of a modern information system. Left out: the 2024 Plan objectives (page 3: none concerns foreign workers, EURES or online services); nationals' emigration (consultations and online forms on legal employment abroad, registration of contracts for work abroad, the agreements with Israel, Germany and Bulgaria, pages 21) and returning migrants (page 22) as outside the Chapter 2 boundary; general labour market measures, target groups, training, subsidies, mobile teams and unemployment benefit; the call-centre count that mentions the employment of Ukrainian citizens among other topics (page 11) and the nine campaigns that list displaced persons from Ukraine among other groups (page 12), because the counts are not specific to them; the 08.02.2024 agreement with A.O. Help (page 24), stated as about safety, assistance and protection of refugees, not employment; the 09.02.2024 one-stop shop pilot of the labour ministry and CNAS (page 24); the transmission of unemployment benefit decisions to CNAS through secure intersystem connections (page 20), a back-office system; the ILO self-service spaces (pages 3 and 24), not described as digital, and the internal e-learning platform (pages 4 and 24-25); the automated monitoring of active measures and the eTicket helpdesk (page 25), internal systems; the amendment of the ANOFM organisation decision (GD 617/2024, page 26), which mentions European guidelines only in passing; the 2025 Plan objectives that mention online services only in passing (page 27). M3: the Helvetas platform, the angajat.md aggregation and the UNHCR campaign appear in the introduction (page 4) with nearly identical wording and are extracted once, at the detailed section. Text problems: the list after \"precum\" at the foot of page 23 (ANOFM partnerships for displaced persons) is missing from the converted text, probably an image; several tables of figures by occupation and the list of measures for returning migrants are not in the text. For the analyst: whether the Helvetas referral platform (-0018) meets the TECH-DGOV test, and whether the EURES audit engagement (-0020) is better typed as a finding. ANOFM, STOFM, Helvetas, NRC and the Congress of Ukrainians have no actor records; actor_id is null. Second-pass check (PC-05) by checker-GOV8c on 5 November 2026: 0 items added (review/RUN-2026-02/second_pass/MDA-GOV-2025-004.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-GOV-2025-004-0001",
+      "information_type": "intervention",
+      "stated_text": "ANOFM în continuare s-a implicat în sprijinirea refugiaților din Ucraina care și-au declarat dorința de a rămâne și de a lucra pe teritoriul Republicii Moldova.",
+      "quote_language": "ro",
+      "translation_en": "ANOFM continued to be involved in supporting refugees from Ukraine who declared their wish to stay and work on the territory of the Republic of Moldova.",
+      "machine_translated": true,
+      "summary": "ANOFM continued to support refugees from Ukraine who declared they wish to stay and work in Moldova.",
+      "location": {
+        "page": 4,
+        "page_end": null,
+        "section": "INTRODUCERE",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "sprijinirea refugiaților din Ucraina",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "No named measure; recorded as an intervention because it describes ANOFM's continuing activity, as in MDA-GOV-2026-004-0007. Detailed at page 23 with different wording, extracted there.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0002",
+      "information_type": "intervention",
+      "stated_text": "Cu suportul UNHCR s-a organizat campania de informare a refugiaților",
+      "quote_language": "ro",
+      "translation_en": "With the support of UNHCR, the information campaign for refugees was organised.",
+      "machine_translated": true,
+      "summary": "With UNHCR support, ANOFM organised an information campaign for refugees.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Campanii de informare",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "UNHCR",
+          "actor_id": "ACT-INT-0011"
+        }
+      ],
+      "intervention_as_stated": "campania de informare a refugiaților",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Quote cut to the UNHCR campaign; the rest of the sentence concerns a UNDP campaign and employer visits. The campaigns in this section are stated to serve labour market integration of jobseekers, including displaced persons from Ukraine; the campaign's own content is not described. Same wording at page 4, not extracted again (M3).",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; information campaign serving labour market integration"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0003",
+      "information_type": "metric",
+      "stated_text": "Site-ul oficial al Agenției Naționale www.anofm.md a înregistrat 162000 accesări și 12000 utilizatori activi, iar platforma www.angajat.md a înregistrat 637000 accesări și 69000 utilizatori activi.",
+      "quote_language": "ro",
+      "translation_en": "The official website of the National Agency www.anofm.md recorded 162,000 visits and 12,000 active users, and the platform www.angajat.md recorded 637,000 visits and 69,000 active users.",
+      "machine_translated": true,
+      "summary": "In 2024 anofm.md had 162,000 visits and 12,000 active users; angajat.md had 637,000 visits and 69,000 active users.",
+      "location": {
+        "page": 12,
+        "page_end": null,
+        "section": "Servicii de informare privind piaţa muncii",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Visits and active users of www.anofm.md and www.angajat.md",
+        "value": "anofm.md 162000 visits, 12000 users; angajat.md 637000 visits, 69000 users",
+        "unit": "visits; active users",
+        "reference_period": "2024"
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "As MDA-GOV-2026-004-0009: angajat.md is an online service used by jobseekers and employers; anofm.md is the agency website, which on its own would be incidental.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Use of the agency's online platforms; theme_doubtful resolved as in scope, as MDA-GOV-2026-004-0009"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0004",
+      "information_type": "metric",
+      "stated_text": "Au fost prestate servicii de ghidare în carieră prin intermediul platformei Cognitrom Career Planner pentru 1538 persoane, dintre care 933 persoane sunt femei (61%). Cei mai mulți beneficiari au preferat să acceseze platforma direct de la STOFM ale ANOFM – 732 persoane (48%), iar 806 persoane (52%) au beneficiat de testare accesând platforma de la distanță.",
+      "quote_language": "ro",
+      "translation_en": "Career guidance services were provided through the Cognitrom Career Planner platform for 1,538 persons, of whom 933 are women (61%). Most beneficiaries preferred to access the platform directly at ANOFM's STOFM, 732 persons (48%), while 806 persons (52%) took the test accessing the platform remotely.",
+      "machine_translated": true,
+      "summary": "1,538 people used the Cognitrom Career Planner platform for career guidance; 806 (52%) accessed it remotely and 732 at STOFM.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "Servicii de ghidare în carieră",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Users of the Cognitrom Career Planner platform",
+        "value": "1538 (806 remote, 732 at STOFM)",
+        "unit": "persons",
+        "reference_period": "2024"
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "As MDA-GOV-2026-004-0010: a third-party online platform used in a career guidance service; doubtful whether it is a public online service in the sense of TECH-DGOV.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Online career guidance platform of the employment service; not digital education; theme_doubtful resolved as in scope, as MDA-GOV-2026-004-0010"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0005",
+      "information_type": "intervention",
+      "stated_text": "A fost elaborată platforma Voucher pentru formarea profesională a șomerilor. Platforma va simplifica semnificativ procesul de obținere a unui voucher la serviciile de formare profesională, proces care va digitaliza procesul cap-coadă. Platforma va permite emiterea voucherelor utilizând resursele electronice, înregistrarea și validarea prestatorilor de servicii de formare, crearea electronică a grupelor de studii, precum și administrarea acestora.",
+      "quote_language": "ro",
+      "translation_en": "The Voucher platform for the vocational training of the unemployed was developed. The platform will significantly simplify the process of obtaining a voucher for vocational training services, which will digitalise the process end to end. The platform will allow vouchers to be issued using electronic resources, training providers to be registered and validated, study groups to be created electronically, and their administration.",
+      "machine_translated": true,
+      "summary": "ANOFM developed a voucher platform for unemployed people's training, to digitalise voucher issuing, provider registration and study groups end to end.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "Formarea profesională prin cursuri pe bază de voucher",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Platforma Voucher pentru formarea profesională a șomerilor",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Recorded as in_progress: the platform is stated as developed, but its use is described in the future tense. Three sentences on one claim. Same platform as MDA-GOV-2026-004-0011 and -0025.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same platform as MDA-GOV-2026-004-0011 and -0025"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0006",
+      "information_type": "intervention",
+      "stated_text": "În anul 2024 STOFM ale ANOFM au continuat vizitele de lucru la Centrele de plasament temporar pentru refugiați. Au fost oferite informații și sprijin cu privire la condițiile de ocupare a locurilor de muncă vacante înregistrate în baza de date a ANOFM.",
+      "quote_language": "ro",
+      "translation_en": "In 2024, ANOFM's STOFM continued working visits to the Temporary Placement Centres for refugees. Information and support were provided on the conditions for filling the vacancies registered in the ANOFM database.",
+      "machine_translated": true,
+      "summary": "In 2024 local employment offices continued visits to refugee placement centres, informing refugees on how to fill vacancies registered with ANOFM.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "STOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "visits to temporary placement centres for refugees",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Two sentences on one claim; as MDA-GOV-2026-004-0013.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; as MDA-GOV-2026-004-0013"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0007",
+      "information_type": "metric",
+      "stated_text": "În conformitate cu prevederile Hotărârii de Guvern 21/2023 privind acordarea protecției temporare persoanelor strămutate din Ucraina, de la începutul anului 2024, ANOFM a primit notificări de la agenții economici despre angajarea a 313 cetățeni strămutați din Ucraina; în total – 1598 notificări.",
+      "quote_language": "ro",
+      "translation_en": "In accordance with Government Decision 21/2023 on granting temporary protection to displaced persons from Ukraine, since the beginning of 2024 ANOFM has received notifications from economic agents about the employment of 313 displaced citizens of Ukraine; in total, 1,598 notifications.",
+      "machine_translated": true,
+      "summary": "Under Government Decision 21/2023, ANOFM received employer notifications of hiring 313 displaced Ukrainian citizens since early 2024; 1,598 notifications in total.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Employer notifications to ANOFM of the employment of displaced citizens of Ukraine",
+        "value": "313 since the start of 2024; 1598 in total",
+        "unit": "persons; notifications",
+        "reference_period": "2024 (total period not stated)"
+      },
+      "flags": [],
+      "extraction_note": "The text does not state the period of the total of 1,598 notifications. The notifications are made under Government Decision 21/2023 on temporary protection.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; employer notifications of employment"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0008",
+      "information_type": "metric",
+      "stated_text": "105 angajatori și-au arătat disponibilitatea de a încadra în muncă cetățeni ucraineni, informând la STOFM 1267 locuri de muncă vacante disponibile pentru aceste persoane.",
+      "quote_language": "ro",
+      "translation_en": "105 employers showed their willingness to employ Ukrainian citizens, notifying the STOFM of 1,267 vacancies available for these persons.",
+      "machine_translated": true,
+      "summary": "105 employers were willing to hire Ukrainian citizens and notified 1,267 vacancies for them to local employment offices.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Employers willing to employ Ukrainian citizens; vacancies notified for them",
+        "value": "105 employers; 1267 vacancies",
+        "unit": "employers; vacancies",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; employment support results"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0009",
+      "information_type": "metric",
+      "stated_text": "Pe parcursul anului, 539 persoane strămutate din Ucraina s-au înregistrat în evidențele STOFM pentru a primi suport la angajare dintre aceste persoane 507 (94,1%) sunt deținători de statut de protecție temporară.",
+      "quote_language": "ro",
+      "translation_en": "During the year, 539 displaced persons from Ukraine registered with the STOFM to receive employment support; of these, 507 (94.1%) hold temporary protection status.",
+      "machine_translated": true,
+      "summary": "539 displaced persons from Ukraine registered for employment support in 2024; 507 (94.1%) hold temporary protection.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Displaced persons from Ukraine registered with STOFM for employment support",
+        "value": "539 (507 with temporary protection)",
+        "unit": "persons",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "The converted text has no full stop between \"suport la angajare\" and \"dintre aceste persoane\", as in the 2025 report.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; employment support results"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0010",
+      "information_type": "metric",
+      "stated_text": "272 persoane au fost angajate din numărul celor înregistrați, dintre aceste persoane 221 (81,3%) sunt deținători de statut de protecție temporară.",
+      "quote_language": "ro",
+      "translation_en": "272 persons were employed out of those registered; of these, 221 (81.3%) hold temporary protection status.",
+      "machine_translated": true,
+      "summary": "272 registered displaced persons from Ukraine were employed in 2024; 221 (81.3%) hold temporary protection.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Registered displaced persons from Ukraine employed",
+        "value": "272 (221 with temporary protection)",
+        "unit": "persons",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; employment support results"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0011",
+      "information_type": "metric",
+      "stated_text": "211 (39,1%) persoane se aflau în așteptarea ocupării unui loc de muncă.",
+      "quote_language": "ro",
+      "translation_en": "211 (39.1%) persons were waiting to fill a job.",
+      "machine_translated": true,
+      "summary": "211 (39.1%) registered displaced persons from Ukraine were still waiting for a job.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Registered displaced persons from Ukraine awaiting a job",
+        "value": "211 (39.1%)",
+        "unit": "persons",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": "The text does not state the base of the percentage; 211 is 39.1% of the 539 registered.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; employment support results"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0012",
+      "information_type": "metric",
+      "stated_text": "Au fost efectuate 81 de vizite la centrele de plasament a refugiaților și 748 refugiați au fost informați despre serviciile și măsurile prestate de ANOFM.",
+      "quote_language": "ro",
+      "translation_en": "81 visits were made to refugee placement centres and 748 refugees were informed about the services and measures provided by ANOFM.",
+      "machine_translated": true,
+      "summary": "81 visits to refugee placement centres; 748 refugees informed about ANOFM services and measures.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Visits to refugee placement centres; refugees informed",
+        "value": "81 visits; 748 refugees",
+        "unit": "visits; persons",
+        "reference_period": "2024"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; employment support results"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0013",
+      "information_type": "intervention",
+      "stated_text": "Lunar a fost monitorizată situația privind notificările angajatorilor cu referire la angajarea cetățenilor din Ucraina, precum și locurile de muncă vacante disponibile la STOFM pentru angajarea cetățenilor din Ucraina înregistrați în căutarea unui loc de muncă.",
+      "quote_language": "ro",
+      "translation_en": "The situation regarding employers' notifications on the employment of citizens of Ukraine was monitored monthly, as well as the vacancies available at the STOFM for the employment of citizens of Ukraine registered as jobseekers.",
+      "machine_translated": true,
+      "summary": "ANOFM monitored monthly the employer notifications on hiring Ukrainian citizens and the vacancies available for registered Ukrainian jobseekers.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "monthly monitoring of employer notifications and vacancies for citizens of Ukraine",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0014",
+      "information_type": "finding",
+      "stated_text": "Odată cu declanșarea crizei refugiaților, ANOFM a reușit să creeze parteneriate eficiente ce ține de integrarea persoanelor strămutate",
+      "quote_language": "ro",
+      "translation_en": "Since the outbreak of the refugee crisis, ANOFM has managed to create effective partnerships regarding the integration of displaced persons.",
+      "machine_translated": true,
+      "summary": "ANOFM states that since the refugee crisis began it has created effective partnerships for integrating displaced persons.",
+      "location": {
+        "page": 23,
+        "page_end": null,
+        "section": "Persoanele strămutate din Ucraina",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "possible_misread"
+      ],
+      "extraction_note": "The converted sentence ends at the foot of page 23 with \"precum\" (such as) and the list it introduces is missing from the text (probably an image in the original). Self-assessment by the issuing body.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Self-assessment of ANOFM's partnerships for the integration of displaced persons (-0015 to -0017); the list of partnerships is missing from the converted text (possible_misread)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0015",
+      "information_type": "intervention",
+      "stated_text": "La 14.05.2024, ANOFM a semnat un acord de colaborare cu Congresul Național al Ucrainenilor din Moldova în scopul promovării procesului de integrare al refugiaților ucraineni prin facilitarea accesului la piața forței de muncă, precum și valorificarea întregului potențial ca membri ai societății.",
+      "quote_language": "ro",
+      "translation_en": "On 14.05.2024, ANOFM signed a cooperation agreement with the National Congress of Ukrainians in Moldova to promote the integration of Ukrainian refugees by facilitating access to the labour market and realising their full potential as members of society.",
+      "machine_translated": true,
+      "summary": "On 14 May 2024 ANOFM signed a cooperation agreement with the National Congress of Ukrainians in Moldova to facilitate refugees' labour market access.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "Dezvoltarea parteneriatelor în implementarea măsurilor de ocupare",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": "2024-05-14",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Congresul Național al Ucrainenilor din Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Acord de colaborare ANOFM – Congresul Național al Ucrainenilor din Moldova",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The next sentence (commitments on the integration of foreigners and interaction with the host society) is general integration and is not extracted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Refugees' access to the labour market; general integration is not Chapter 2"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0016",
+      "information_type": "intervention",
+      "stated_text": "La 20.05.2024, ANOFM a semnat un acord de colaborare cu Consiliul Norvegian pentru Refugiați (NRC) în scopul incluziunii economice a persoanelor strămutare în Moldova afectate de  războiul din Ucraina (refugiați, cetățeni din țări terțe, comunități gazdă vulnerabile, persoane din comunitatea romă), cu o atenție specială acordată regiunilor în care NRC își implementează proiectele pentru îmbunătățirea mijloacelor de trai, inclusiv în Chișinău și regiunea de nord.",
+      "quote_language": "ro",
+      "translation_en": "On 20.05.2024, ANOFM signed a cooperation agreement with the Norwegian Refugee Council (NRC) for the economic inclusion of displaced persons in Moldova affected by the war in Ukraine (refugees, third-country nationals, vulnerable host communities, Roma), with special attention to the regions where NRC implements livelihood projects, including Chișinău and the north.",
+      "machine_translated": true,
+      "summary": "On 20 May 2024 ANOFM signed an agreement with the Norwegian Refugee Council on the economic inclusion of persons displaced by the war in Ukraine.",
+      "location": {
+        "page": 24,
+        "page_end": null,
+        "section": "Dezvoltarea parteneriatelor în implementarea măsurilor de ocupare",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": "2024-05-20",
+        "event_date_precision": "day"
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Consiliul Norvegian pentru Refugiați (NRC)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Acord de colaborare ANOFM – Consiliul Norvegian pentru Refugiați (NRC)",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Tagged chapter because refugees and third-country nationals are among the target groups of an employment agency agreement, as for MDA-GOV-2026-004-0019. \"strămutare\" is kept as printed.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Only the refugee and third-country national element is in scope; vulnerable host communities are general labour-market policy"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0017",
+      "information_type": "intervention",
+      "stated_text": "cu suportul proiectului “Creșterea rezilienței prin oportunități de ocupare a forței de muncă, dezvoltarea competențelor și coeziune socială în Moldova” (Helvetas), ANOFM își propune un acces sporit la piața locală a muncii, o mai bună incluziune și coeziune socială, cât și un sprijin sporit pentru populația vulnerabilă, inclusiv pentru refugiații ucraineni.",
+      "quote_language": "ro",
+      "translation_en": "With the support of the project \"Increasing resilience through employment opportunities, skills development and social cohesion in Moldova\" (Helvetas), ANOFM aims at increased access to the local labour market, better inclusion and social cohesion, and increased support for the vulnerable population, including Ukrainian refugees.",
+      "machine_translated": true,
+      "summary": "Through a Helvetas project, ANOFM aims at better local labour market access and more support for vulnerable people, including Ukrainian refugees.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Dezvoltarea parteneriatelor în implementarea măsurilor de ocupare",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Helvetas",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Proiectul „Creșterea rezilienței prin oportunități de ocupare a forței de muncă, dezvoltarea competențelor și coeziune socială în Moldova” (Helvetas)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated as what ANOFM aims at under the project (M1, proposed). Tagged chapter because Ukrainian refugees are among the target groups.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Only the Ukrainian refugee element is in scope; support for other vulnerable groups is general labour-market policy"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0018",
+      "information_type": "intervention",
+      "stated_text": "În colaborare cu HELVETAS s-a conlucrat în vederea elaborării unei platforme de referire la oportunități pe piața muncii a refugiaților, precum și a persoanelor vulnerabile din Republica Moldova, care este în desfășurare și e prevăzută a fi funcțională în a doua jumătate a anului 2025.",
+      "quote_language": "ro",
+      "translation_en": "In collaboration with HELVETAS, work was carried out towards developing a platform for referring refugees and vulnerable persons in the Republic of Moldova to labour market opportunities, which is under way and is planned to be functional in the second half of 2025.",
+      "machine_translated": true,
+      "summary": "With Helvetas, ANOFM is developing a platform referring refugees and vulnerable people to labour market opportunities, due to work in late 2025.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Dezvoltarea parteneriatelor în implementarea măsurilor de ocupare",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter",
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "HELVETAS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "platformă de referire la oportunități pe piața muncii a refugiaților",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Also at page 4 with nearly identical wording, not extracted again (M3). The text does not say whether the platform is online or who uses it directly, so the TECH-DGOV tag is doubtful. Tagged chapter because the platform concerns refugees' access to the labour market.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Referral platform for refugees' access to the labour market; the text does not say it is an online service, so theme_doubtful (TECH-DGOV) not confirmed for a TEC issue"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0019",
+      "information_type": "intervention",
+      "stated_text": "La fel, în colaborare cu HELVETAS s-a inițiat agregarea locurilor de muncă de pe portalurile locurilor de muncă private pe portalul www.angajat.md, pentru a îmbunătăți accesul la locurile de muncă vacante, acțiune în desfășurare, prevăzută a fi funcțională până la finele anului în curs",
+      "quote_language": "ro",
+      "translation_en": "Likewise, in collaboration with HELVETAS, the aggregation of jobs from private job portals on the portal www.angajat.md was initiated, to improve access to vacancies, an action under way, planned to be functional by the end of the current year.",
+      "machine_translated": true,
+      "summary": "With Helvetas, ANOFM began aggregating vacancies from private job portals on angajat.md, due to be functional by the end of the year.",
+      "location": {
+        "page": 25,
+        "page_end": null,
+        "section": "Dezvoltarea parteneriatelor în implementarea măsurilor de ocupare",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "HELVETAS",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Portalul www.angajat.md",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Also at page 4 with nearly identical wording, not extracted again (M3). \"The current year\" is not specified; the report was published in April 2025.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-FMW-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Vacancy aggregation on the employment service portal: online service and vacancy data (as MDA-GOV-2026-004-0021)"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0020",
+      "information_type": "intervention",
+      "stated_text": "Serviciul audit intern a realizat/documentat 5 misiuni de audit de asigurare, 1 activitate de consiliere neplanificată, la solicitarea conducerii ANOFM: Modul de implementare a rețelei EURES în Republica Moldova; Privind controalele realizate de ISS în STOFM.",
+      "quote_language": "ro",
+      "translation_en": "The internal audit service carried out/documented 5 assurance audit missions and 1 unplanned consultancy activity, at the request of ANOFM management: The manner of implementing the EURES network in the Republic of Moldova; On the controls carried out by ISS in STOFM.",
+      "machine_translated": true,
+      "summary": "ANOFM's internal audit carried out work on how the EURES network is being implemented in Moldova, among other engagements.",
+      "location": {
+        "page": 26,
+        "page_end": null,
+        "section": "Activităţi de autit",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Serviciul audit intern",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Misiune de audit intern: Modul de implementare a rețelei EURES în Republica Moldova",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "The text gives only the title of the engagement; it does not say whether it was an audit mission or the unplanned consultancy activity, nor report any findings. Recorded as an intervention (an audit carried out); it could also be read as a finding that EURES is being implemented in Moldova, hence ambiguous_type.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-004",
+          "RI-FMW-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Internal audit of how the EURES network is implemented; RI-FMW-013 as evidence of the employment service's internal audit capacity. No findings reported"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0021",
+      "information_type": "barrier",
+      "stated_text": "În prezent lipsa unui sistem informațional modern afectează eficiența și calitatea serviciilor si măsurilor oferite de ANOFM. Fără o infrastructură digitală adecvată, procesele de intermediere și monitorizare a pieței muncii devin mai lente și mai puțin eficiente, ceea ce poate duce la întârzieri în prestarea serviciilor şi la o comunicare deficitară între instituție și beneficiari.",
+      "quote_language": "ro",
+      "translation_en": "At present, the lack of a modern information system affects the efficiency and quality of the services and measures offered by ANOFM. Without adequate digital infrastructure, labour market intermediation and monitoring processes become slower and less efficient, which can lead to delays in service delivery and poor communication between the institution and beneficiaries.",
+      "machine_translated": true,
+      "summary": "The lack of a modern information system and digital infrastructure slows ANOFM services and may weaken communication with beneficiaries.",
+      "location": {
+        "page": 27,
+        "page_end": null,
+        "section": "Concluzii și perspective",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Two sentences on one claim. As MDA-GOV-2026-004-0027: the system is the employment service's own information system; doubtful whether it is digital government or a sector system.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-005",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Lack of a modern information system in the employment service, as MDA-GOV-2026-004-0027"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0022",
+      "information_type": "intervention",
+      "stated_text": "pregătirea infrastructurii instituționale și legislative pentru integrarea rețelei EURES",
+      "quote_language": "ro",
+      "translation_en": "preparing the institutional and legislative infrastructure for integration into the EURES network",
+      "machine_translated": true,
+      "summary": "A 2025 ANOFM plan objective: prepare institutional and legislative infrastructure for integration into the EURES network.",
+      "location": {
+        "page": 27,
+        "page_end": null,
+        "section": "Concluzii și perspective",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": "2",
+      "chapter": "02",
+      "scope_basis": [
+        "chapter"
+      ],
+      "themes": [],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Objective of the 2025 Plan, proposed (M1). Split under M1: the rest of the objective (Moldovan citizens' access to jobs abroad, international treaties, services for labour migration) is outside the Chapter 2 boundary and is not quoted.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-004"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "EURES preparation, as MDA-GOV-2026-004-0001"
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-004-0023",
+      "information_type": "intervention",
+      "stated_text": "crearea unui sistem informațional al pieței muncii integrat și eficient de ocupare a forței de muncă în RM, prin modernizarea infrastructurii IT și dezvoltarea platformelor online de acces la servicii și măsuri de ocupare.",
+      "quote_language": "ro",
+      "translation_en": "creating an integrated and efficient labour market information system for employment in the Republic of Moldova, by modernising IT infrastructure and developing online platforms for access to employment services and measures.",
+      "machine_translated": true,
+      "summary": "A 2025 ANOFM plan objective: an integrated labour market information system and online platforms for access to employment services.",
+      "location": {
+        "page": 27,
+        "page_end": null,
+        "section": "Concluzii și perspective",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-29",
+        "period_covered": "2024",
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Agenţia Naţională pentru Ocuparea Forţei de Muncă (ANOFM)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "ANOFM",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Planul de acțiuni pentru anul 2025",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Objective of the 2025 Plan, proposed (M1); as MDA-GOV-2026-004-0002.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-005",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "As MDA-GOV-2026-004-0002; not stated as being for EURES, so RI-FMW-005 is a partial fit"
+      }
+    }
+  ]
+}

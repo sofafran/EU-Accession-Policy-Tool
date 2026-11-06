@@ -4,17 +4,21 @@
     "run_id": "RUN-2026-02",
     "rules_version": "0.5",
     "extracted_at": "2026-11-03",
-    "status": "sample",
+    "status": "complete",
     "codebook_version": "1.3",
     "themes_version": "1.3",
     "run_country": "MDA",
     "role": "target",
     "pages_processed": "1-44 read by keyword screen and in full for sections 1 to 3",
-    "notes": "Read in full (pages 1-44). The fiche covers education, skills and employment; most of it is outside the run scope. Chapter 2 items (cluster 2, chapter 02) are the labour market situation of Ukrainian refugees in Moldova (page 9), as foreign nationals' access to the labour market. Theme items are online employment services, the digital transformation strategy and the digitalisation of active labour market services. Left out: emigration, the diaspora and remittances (pages 5, 8 and table 1.1), as nationals' emigration not linked to workers' rights or access; the share of foreign-born residents (6.2%, pages 6 and 8), which concerns residents rather than workers' access; the number of refugees (136 000) and their integration challenges in general (pages 5 and 9), which are not labour market claims; the digital competence framework, digital devices regulation, distance learning concept and other digital skills items (pages 5, 17-18 and 33), as digital skills not linked to an in-scope recommendation; the education management information systems (EMIS/SIME, HEMIS) and education data availability (pages 5, 13, 34), as back-office sector systems and statistics; general labour market, VET and ALMP content. The summary on page 5 that ANOFM works through the angajat.md platform is a passing mention and is not extracted separately from page 21. Second-pass check (PC-05) not yet done. G3 second-pass check (PC-05) by checker-GOV on 3 November 2026: no items added; judgement calls in review/RUN-2026-02/g3_qa."
+    "notes": "Read in full (pages 1-44). The fiche covers education, skills and employment; most of it is outside the run scope. Chapter 2 items (cluster 2, chapter 02) are the labour market situation of Ukrainian refugees in Moldova (page 9), as foreign nationals' access to the labour market. Theme items are online employment services, the digital transformation strategy and the digitalisation of active labour market services. Left out: emigration, the diaspora and remittances (pages 5, 8 and table 1.1), as nationals' emigration not linked to workers' rights or access; the share of foreign-born residents (6.2%, pages 6 and 8), which concerns residents rather than workers' access; the number of refugees (136 000) and their integration challenges in general (pages 5 and 9), which are not labour market claims; the digital competence framework, digital devices regulation, distance learning concept and other digital skills items (pages 5, 17-18 and 33), as digital skills not linked to an in-scope recommendation; the education management information systems (EMIS/SIME, HEMIS) and education data availability (pages 5, 13, 34), as back-office sector systems and statistics; general labour market, VET and ALMP content. The summary on page 5 that ANOFM works through the angajat.md platform is a passing mention and is not extracted separately from page 21. Second-pass check (PC-05) not yet done. G3 second-pass check (PC-05) by checker-GOV on 3 November 2026: no items added; judgement calls in review/RUN-2026-02/g3_qa. Stage 8 (2026-11-05): status set from sample to complete; extracted in full at the G3 sample under rules 0.5 with its second pass (review/RUN-2026-02/second_pass/), so not re-extracted (G4-D09: rules 0.6 apply without re-extraction)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -68,12 +72,14 @@
       "flags": [],
       "extraction_note": "The paragraph cites IOM (2024) at its end.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014"
       }
     },
     {
@@ -127,12 +133,14 @@
       "flags": [],
       "extraction_note": "The reference period is taken from the preceding sentence, to which this sentence refers (\"those employed\").",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; informal work bears on rights after admission"
       }
     },
     {
@@ -188,12 +196,14 @@
       ],
       "extraction_note": "Attributed in the text to IOM (2024); the cited claim is recorded with IOM as speaker. IOM has no actor record.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-FMW-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Persons with temporary protection from Ukraine are third-country workers: RI-FMW-014; regional source cites IOM"
       }
     },
     {
@@ -254,11 +264,13 @@
       "flags": [],
       "extraction_note": "The strategy itself is MDA-GOV-2023-001. The rest of the paragraph and the following list concern digital education and skills and are not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -322,12 +334,12 @@
       ],
       "extraction_note": "A digital document service to graduates, run through the education management information system; doubtful whether this is a public online service (TECH-DGOV) or a sector system.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital education out of scope (R2)"
       }
     },
     {
@@ -388,11 +400,13 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -454,12 +468,15 @@
       "flags": [],
       "extraction_note": "A reform direction of a programme stated as approved in November 2022, so recorded as adopted. Lead-in on the same page not quoted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-005",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Digitalising the employment service's active labour market services"
       }
     },
     {
@@ -522,11 +539,13 @@
       ],
       "extraction_note": "The footnote number \"26\" is attached to \"angajat.md\" in the converted text (\"angajat.md26\") and is kept in the quote.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -590,12 +609,12 @@
       ],
       "extraction_note": "\"Digital employment tools\" is one of four aims and is not described further; doubtful whether the materiality test is met.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital employment tools are mentioned incidentally within a general labour-market project; no approved issue fits as the subject"
       }
     }
   ]

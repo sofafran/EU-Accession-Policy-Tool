@@ -10,11 +10,15 @@
     "run_country": "MDA",
     "role": "target",
     "pages_processed": "1-60 (keyword screen of all pages; Moldova passages read in context on pages 2-5, 8-25, 27, 30 and 37; statistical annex pages 49-59 checked)",
-    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages only. The RUN-2026-01 items are unchanged and listed in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration); every Moldova hit was read in its paragraph. Extracted: roaming integration (pages 5, 21) and cyberattacks during the 2025 elections (page 30, paragraph 12). Not extracted: Moldova's inclusion in the SEPA payment schemes (page 21, digital finance, out by default under rules 0.5 section 4); the Growth Plan pillars (page 19), which name no digital measure; cyber-enabled crime (page 13, cybercrime rule); energy, transport and Black Sea connectivity (pages 22, 24-25); horizontal and Western Balkan digital passages (page 23), which do not name Moldova; the statistical tables (pages 49-59), where the only digital rows are digital skills, which are not a theme area."
+    "notes": "RUN-2026-02 stage 7 extraction (rules 0.5) of the Moldova passages only. The RUN-2026-01 items are unchanged and listed in earlier_extractions. Keyword screen of the whole text (Moldova, Republic of Moldova, Moldovan, plus digital, cyber, artificial intelligence, AI, e-government, e-services, electronic, data protection, personal data, interoperability, broadband, 5G, gigabit, connectivity, eID, identification, signature, trust service, wallet, online, ICT, information society, roaming, internet, technology, workers, EURES, social security, foreign, free movement, freedom of movement, labour, EHIC, migration); every Moldova hit was read in its paragraph. Extracted: roaming integration (pages 5, 21) and cyberattacks during the 2025 elections (page 30, paragraph 12). Not extracted: Moldova's inclusion in the SEPA payment schemes (page 21, digital finance, out by default under rules 0.5 section 4); the Growth Plan pillars (page 19), which name no digital measure; cyber-enabled crime (page 13, cybercrime rule); energy, transport and Black Sea connectivity (pages 22, 24-25); horizontal and Western Balkan digital passages (page 23), which do not name Moldova; the statistical tables (pages 49-59), where the only digital rows are digital skills, which are not a theme area. Stage 8 (2026-11-05, decision G4-D15, extraction rules 0.6, theme list 1.4): REQ-076 also covers horizontal passages addressed to all enlargement countries, so the eight horizontal in-scope passages RUN-2026-01 extracted that are addressed to all enlargement countries, Moldova among them, are quoted again as this run's own items (-0019 to -0026; the alpha item each mirrors is named in its extraction_note); the RUN-2026-01 items and earlier_extractions are unchanged. Alpha items -0008, -0009 and -0011 to -0015 (regional roaming and extension of Roam like at home to the Western Balkans, digital identity frameworks and wallets, WiFi for the Western Balkans, European Digital Innovation Hubs in the region) concern the Western Balkans only and are not quoted again. A rescreen of the whole text found no further horizontal in-scope passage: the hits left are cyber-enabled crime and terrorist content online (page 13), beneficial ownership registers and database access (page 13, anti-money laundering), resilience of critical entities (pages 13-14, no network and information security content), the IPA III passage (page 20, Western Balkans), country passages on other countries (pages 4, 6, 7, 33, 34) and the statistical annex, whose only digital rows are digital skills. Second-pass check (PC-05) by checker-EU8 on 5 November 2026: 0 items added (review/RUN-2026-02/second_pass/MKD-EU-2025-002.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -1155,12 +1159,14 @@
       ],
       "extraction_note": "Roaming is tagged TECH-INFRA as in the earlier run's items, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv), which asks at G4 whether roaming fits a theme area.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful cleared. Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1231,12 +1237,14 @@
       ],
       "extraction_note": "Roaming is tagged TECH-INFRA as in the earlier run's items, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv), which asks at G4 whether roaming fits a theme area.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful cleared. Chain link: implementation: EU-led measure, not a country response"
       }
     },
     {
@@ -1300,12 +1308,589 @@
       ],
       "extraction_note": "The claim runs over two sentences. Cyberattacks are one form of interference listed; flagged because the security of networks is not the main subject.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "eu_requirement",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Cyberattacks named in a list of election interference; no approved issue fits, as for MKD-EU-2025-002-0003"
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0019",
+      "information_type": "finding",
+      "stated_text": "Alignment gaps, however, still persist, in particular on data protection, procedural and victims’ rights, media freedom, non -discrimination, hate crime and hate speech, the rights of persons with disabilities including accessibility, gender equality, rights of LGBTIQ persons and gender -based violence.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Fundamental rights alignment gaps still persist in most enlargement countries, in particular on data protection among other areas.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "III.2. THE FUNDAMENTALS OF THE ACCESSION PROCESS",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0001, quoted again as this run's own item. Most enlargement countries. Data protection is one of several areas listed; only that element is in scope.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Horizontal; regional (Moldova not named); mirrors RUN-2026-01 item MKD-EU-2025-002-0001; only the data protection element applies."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0020",
+      "information_type": "recommendation",
+      "stated_text": "These institutions also require additional and sustained resources. Their independence also needs to be strengthened.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Bodies including data protection authorities require additional and sustained resources, and their independence needs strengthening.",
+      "location": {
+        "page": 11,
+        "page_end": null,
+        "section": "III.2. THE FUNDAMENTALS OF THE ACCESSION PROCESS",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DATA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Ombudsperson or national human rights institutions",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "equality bodies",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "data protection authorities",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0002, quoted again as this run's own item. 'These institutions' refers to the Ombudsperson, national human rights institutions, equality bodies and data protection authorities named in the preceding sentence; only the data protection authorities are in scope, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [
+          "MEC-09",
+          "MEC-05"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Horizontal; regional (Moldova not named); mirrors RUN-2026-01 item MKD-EU-2025-002-0002. theme_doubtful, materiality met: \"these institutions\" include data protection authorities."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0021",
+      "information_type": "finding",
+      "stated_text": "Hybrid threats remain a serious political, societal and security challenge for enlargement countries. These threats include foreign information manipulation and interference (FIMI), physical and cyber-attacks, in particular on critical infrastructure.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Hybrid threats, including FIMI and physical and cyber-attacks on critical infrastructure, remain a serious challenge for enlargement countries.",
+      "location": {
+        "page": 14,
+        "page_end": null,
+        "section": "III.2. THE FUNDAMENTALS OF THE ACCESSION PROCESS",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0003, quoted again as this run's own item. Cyber-attacks are one element of hybrid threats; the passage does not focus on the security of networks and information systems, hence theme_doubtful. Two sentences, one claim.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "As RUN-2026-01 MKD-EU-2025-002-0003: theme_doubtful, materiality not met; hybrid threats are the subject. Horizontal; regional."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0022",
+      "information_type": "recommendation",
+      "stated_text": "Economic policies should also support ambitious goals under the green and digital transition.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Economic policies in the enlargement countries should support ambitious green and digital transition goals.",
+      "location": {
+        "page": 16,
+        "page_end": null,
+        "section": "III.3. ECONOMIC AND SOCIAL CONVERGENCE, COMPETITIVENESS AND GRADUAL INTEGRATION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "All ten enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0004, quoted again as this run's own item. Addressed to 'all ten enlargement countries'. The digital transition is named only in general terms, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "As RUN-2026-01 MKD-EU-2025-002-0004: theme_doubtful, materiality not met; digital transition named only in general terms. Horizontal; regional."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0023",
+      "information_type": "finding",
+      "stated_text": "Gradual integration is a driver alignment with the EU acquis, with results already visible in the fields of telecommunications (roaming), payments, banking and anti -money laundering legislation (Single Euro Payments Area, SEPA), customs, energy and industrial goods.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Gradual integration drives acquis alignment, with results already visible in telecommunications (roaming), payments, banking, customs, energy and industrial goods.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "III.3. ECONOMIC AND SOCIAL CONVERGENCE, COMPETITIVENESS AND GRADUAL INTEGRATION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": "ACT-INT-0023"
+        },
+        {
+          "name_as_stated": "Ukraine",
+          "actor_id": "ACT-INT-0027"
+        },
+        {
+          "name_as_stated": "Western Balkan partners",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0005, quoted again as this run's own item. The preceding sentence names Moldova, Ukraine and the Western Balkan partners. Only the telecommunications (roaming) element is in scope.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Horizontal; regional (Moldova not named); mirrors RUN-2026-01 item MKD-EU-2025-002-0005; roaming element only (G4-D11)."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0024",
+      "information_type": "intervention",
+      "stated_text": "Other areas of gradual integration include agriculture, trust services, space, healthcare, transport and defence.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Other areas of gradual integration of enlargement partners include trust services, among agriculture, space, healthcare, transport and defence.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "III.3. ECONOMIC AND SOCIAL CONVERGENCE, COMPETITIVENESS AND GRADUAL INTEGRATION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": "ACT-INT-0023"
+        },
+        {
+          "name_as_stated": "Ukraine",
+          "actor_id": "ACT-INT-0027"
+        },
+        {
+          "name_as_stated": "Western Balkan partners",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Gradual integration in the area of trust services",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0006, quoted again as this run's own item. Trust services are named only in a list with no detail, hence theme_doubtful. Status from 'work in all these areas will continue'.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "As RUN-2026-01 MKD-EU-2025-002-0006: theme_doubtful, materiality not met; trust services named only in a list of gradual integration areas. Horizontal; regional."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0025",
+      "information_type": "finding",
+      "stated_text": "Significant steps have been taken to integrate enlargement partners into the EU’s ‘Roam like at home’ zone.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Significant steps have been taken to integrate enlargement partners into the EU 'Roam like at home' zone.",
+      "location": {
+        "page": 21,
+        "page_end": null,
+        "section": "III.3. ECONOMIC AND SOCIAL CONVERGENCE, COMPETITIVENESS AND GRADUAL INTEGRATION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INFRA"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "enlargement partners",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0007, quoted again as this run's own item. The next sentence, on Ukraine and Moldova, is this run's item -0017.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Horizontal; regional (Moldova not named); mirrors RUN-2026-01 item MKD-EU-2025-002-0007; roaming (G4-D11)."
+      }
+    },
+    {
+      "item_id": "MKD-EU-2025-002-0026",
+      "information_type": "recommendation",
+      "stated_text": "Enlargement countries must ensure that their digital systems are aligned with the EU digital customs acquis upon accession, which is critical to the EU’s financial intersts and security.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Enlargement countries must align their digital customs systems with the EU digital customs acquis upon accession.",
+      "location": {
+        "page": 22,
+        "page_end": null,
+        "section": "III.3. ECONOMIC AND SOCIAL CONVERGENCE, COMPETITIVENESS AND GRADUAL INTEGRATION",
+        "paragraph": null,
+        "snapshot_file": null
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-11-04",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "European Commission",
+        "actor_id": "ACT-EU-0002"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Enlargement countries",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Horizontal: addressed to all enlargement countries, Moldova among them; same passage as the RUN-2026-01 item MKD-EU-2025-002-0010, quoted again as this run's own item. Customs IT systems are out of scope unless the claim concerns connection to an EU electronic system (rules 0.6 section 4). Alignment with the EU digital customs acquis may imply interoperability with EU customs systems, but the text does not say so, hence theme_doubtful.",
+      "pass2": {
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Horizontal; regional (Moldova not named); mirrors RUN-2026-01 item MKD-EU-2025-002-0010. theme_doubtful, materiality met: alignment of digital systems with the EU digital customs acquis."
       }
     }
   ],

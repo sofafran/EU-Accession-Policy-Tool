@@ -4,17 +4,21 @@
     "run_id": "RUN-2026-02",
     "rules_version": "0.5",
     "extracted_at": "2026-11-03",
-    "status": "sample",
+    "status": "complete",
     "codebook_version": "1.3",
     "themes_version": "1.3",
     "run_country": "MDA",
     "role": "target",
     "pages_processed": "whole page (1 page in the converted text, 26 sections)",
-    "notes": "Webpage snapshot; the converted text is a list of document links grouped under the name of each partner state, under the heading \"Acorduri bilaterale\". One intervention item per EU Member State listed (16), quoting the whole list of link labels in that state's section; stated status unclear, because the page gives no date, signature or entry-into-force information. Romanian only: translation_en is a machine translation by the extracting agent, confidence capped at Medium; the rules require no flag for translation. Left out: the agreements with Azerbaijan, the Russian Federation (including the agreement on military personnel), Ukraine (including the transfer agreement and the agreement on military personnel), Uzbekistan, Türkiye and Belarus, because coordination of social security in the EU meaning of Chapter 2 concerns EU Member States; this exclusion is a judgement for the analyst to confirm at G3. The section \"Republica Slovacă\" is empty in the converted text (the list appears cut off at the end of the page), so no item could be quoted for Slovakia. Publication date: the page is undated. CNAS has no actor record; actor_id is null for the speaker. Second-pass check (PC-05) not yet done. G3 second-pass check (PC-05) by checker-GOV on 3 November 2026: no items added; the exclusion of the non-EU agreements is listed as a judgement call in review/RUN-2026-02/g3_qa. G3 review: items for the non-EU agreements added (-0017 onward); the 'Republica Slovacă' heading lists no documents, so no item."
+    "notes": "Webpage snapshot; the converted text is a list of document links grouped under the name of each partner state, under the heading \"Acorduri bilaterale\". One intervention item per EU Member State listed (16), quoting the whole list of link labels in that state's section; stated status unclear, because the page gives no date, signature or entry-into-force information. Romanian only: translation_en is a machine translation by the extracting agent, confidence capped at Medium; the rules require no flag for translation. Left out: the agreements with Azerbaijan, the Russian Federation (including the agreement on military personnel), Ukraine (including the transfer agreement and the agreement on military personnel), Uzbekistan, Türkiye and Belarus, because coordination of social security in the EU meaning of Chapter 2 concerns EU Member States; this exclusion is a judgement for the analyst to confirm at G3. The section \"Republica Slovacă\" is empty in the converted text (the list appears cut off at the end of the page), so no item could be quoted for Slovakia. Publication date: the page is undated. CNAS has no actor record; actor_id is null for the speaker. Second-pass check (PC-05) not yet done. G3 second-pass check (PC-05) by checker-GOV on 3 November 2026: no items added; the exclusion of the non-EU agreements is listed as a judgement call in review/RUN-2026-02/g3_qa. G3 review: items for the non-EU agreements added (-0017 onward); the 'Republica Slovacă' heading lists no documents, so no item. Stage 8 (2026-11-05): status set from sample to complete; extracted in full at the G3 sample under rules 0.5 with its second pass (review/RUN-2026-02/second_pass/), so not re-extracted (G4-D09: rules 0.6 apply without re-extraction)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -73,12 +77,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -137,12 +143,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -201,12 +209,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -265,12 +275,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -329,12 +341,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -393,12 +407,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -457,12 +473,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -521,12 +539,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -585,12 +605,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -649,12 +671,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -713,12 +737,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -777,12 +803,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -841,12 +869,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -905,12 +935,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). \"Formurale\" is printed as such.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -969,12 +1001,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -1033,12 +1067,14 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-FMW-008"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Lists the agreement, arrangement and forms with an EU Member State; evidence of coverage under RI-FMW-008; status as stated unclear"
       }
     },
     {
@@ -1097,12 +1133,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated (military personnel agreement also listed)"
       }
     },
     {
@@ -1161,12 +1197,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated"
       }
     },
     {
@@ -1225,12 +1261,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated"
       }
     },
     {
@@ -1289,12 +1325,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated"
       }
     },
     {
@@ -1353,12 +1389,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated"
       }
     },
     {
@@ -1417,12 +1453,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated (military personnel agreement also listed)"
       }
     },
     {
@@ -1481,12 +1517,12 @@
       "flags": [],
       "extraction_note": "The page lists, under the heading of the state, links to the documents named in the quote; it gives no date, title, status or content of the agreement. Recorded as an intervention with stated status unclear. The linked texts were not downloaded (source register). Added at G3 review (2026-11-03): agreements with non-EU states are in scope under Chapter 2, consistent with the alpha (MKD-GOV-2023-001-0005, -0018, -0020).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Agreement with a non-EU state: Chapter 2 coordination and RI-FMW-008 concern coverage of EU Member States; no approved issue fits and no problem is stated"
       }
     }
   ]

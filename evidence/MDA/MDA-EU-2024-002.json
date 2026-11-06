@@ -13,8 +13,12 @@
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -77,12 +81,12 @@
       ],
       "extraction_note": "The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: the digital transition is one of many aims of the Growth Plan; incidental reference under the materiality test."
       }
     },
     {
@@ -145,12 +149,16 @@
       ],
       "extraction_note": "The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 mapping kept; digital infrastructure is one of three sectors named."
       }
     },
     {
@@ -213,12 +221,12 @@
       ],
       "extraction_note": "The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: the digital transition is one of several growth drivers listed; incidental reference under the materiality test."
       }
     },
     {
@@ -281,12 +289,16 @@
       ],
       "extraction_note": "The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "eu_requirement",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4 mapping kept; digital policy and investment is one of three sectors named."
       }
     },
     {
@@ -349,12 +361,15 @@
       ],
       "extraction_note": "Only area (iv) concerns the theme. Roaming is tagged TECH-INFRA, flagged theme_doubtful pending rule issue M4 (G3_rule_issues.csv), which asks at G4 whether roaming and digital market rules fit a theme area.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034",
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Only priority area (iv) is in the theme; integration in the Digital Market covers digital market rules and roaming (G4-D11)."
       }
     },
     {
@@ -417,12 +432,16 @@
       "flags": [],
       "extraction_note": "Detailed in the Annex, measures (12), (13) and (16), extracted separately because they add content. Roaming tagged TECH-INFRA; see rule issue M4.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011",
+          "RI-TEC-026",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Roaming (G4-D11), EUDI wallet and EU Cybersecurity Reserve."
       }
     },
     {
@@ -485,12 +504,14 @@
       ],
       "extraction_note": "The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Investment instrument for digital connectivity infrastructure, one of three sectors; consistent with -0002 and -0004; doubtful."
       }
     },
     {
@@ -553,12 +574,12 @@
       ],
       "extraction_note": "The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim. Repeats the aim on page 3 (rules 0.5 section 5: extracted at each place).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Out of scope: repeats the general aim in -0001 (same_as_earlier); incidental reference."
       }
     },
     {
@@ -619,12 +640,14 @@
       "flags": [],
       "extraction_note": "Customs IT is out by default; in scope because the measure concerns interoperability with an EU electronic system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Interoperability with the EU electronic customs environment."
       }
     },
     {
@@ -687,12 +710,14 @@
       ],
       "extraction_note": "TRACES is an EU system used in a sector (sanitary and phytosanitary trade) reform; kept as possible connection to an EU electronic system, flagged for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "TRACES is an EU sectoral system; consistent with MDA-EU-2023-002-0070; theme_doubtful resolved as in scope."
       }
     },
     {
@@ -753,12 +778,14 @@
       "flags": [],
       "extraction_note": "Telecommunications acquis is digital infrastructure; for roaming see rule issue M4.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Roaming under RI-TEC-011 (G4-D11)."
       }
     },
     {
@@ -821,11 +848,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-025",
+          "RI-TEC-026",
+          "RI-TEC-027"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -889,12 +920,14 @@
       ],
       "extraction_note": "Digital market rules fit no theme area clearly; see rule issue M4.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "G4-D11; theme_doubtful resolved as in scope."
       }
     },
     {
@@ -957,12 +990,16 @@
       "flags": [],
       "extraction_note": "Digital skills are included only as part of this in-scope measure.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-013",
+          "RI-TEC-014",
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Rural broadband roll-out and digital economy; digital skills only as part of this in-scope measure; security part not specific."
       }
     },
     {
@@ -1024,11 +1061,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-024",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
+        "classification_status": "auto",
         "classification_note": null
       }
     },
@@ -1090,12 +1131,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Data Governance Act and Data Act are related EU data rules under the issue definition."
       }
     },
     {
@@ -1158,12 +1201,15 @@
       ],
       "extraction_note": "added at the second pass. Running-text statement of the TRACES measure later listed in the Annex (item -0010); kept and flagged for the same reason, a possible connection to an EU electronic system within sanitary and phytosanitary trade.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-032",
+          "RI-TEC-029"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Running-text statement of the TRACES measure in -0010; consistent placement."
       }
     }
   ]

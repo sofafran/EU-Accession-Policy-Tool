@@ -1,0 +1,2000 @@
+{
+  "source_id": "MDA-RES-2023-001",
+  "extraction": {
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
+    "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
+    "pages_processed": "Whole webpage text read in full (opening paragraphs and sections Attributes of Vulnerability, Existing Efforts, Filling the Gaps)",
+    "notes": "HTML snapshot of the RUSI commentary by James Osborne and Joseph Jarnecki (10 August 2023), read in full. The text file has no pages; items under a section heading cite the section (page left empty) and the snapshot file; items from the opening paragraphs, which have no heading, cite text page 1 with the section given as 'Opening paragraphs (no heading)'. The commentary uses 'cyber defence' broadly for national cyber security. Scope applied: security of networks and information systems (TECH-CYBER) is in scope; cybercrime enforcement, military cyber defence and disinformation are out. Left out: the description of Russian information operations, hack-and-leak campaigns as part of wider hostile activity and the resignation of the former Prime Minister (disinformation and political context), except one item on attacks that disrupted state services, flagged theme_doubtful; the 300% increase in cyber operations against NATO countries (not about Moldova); EU4Digital support for legislation under the Budapest Convention on Cybercrime (cybercrime, R21); the expected activities of the Cyber Rapid Response Team (speculative, 'can be expected'); the sentence that international support shows an acknowledgement that cyber defence is best built before an incident (an interpretation of partners' views); the Ukraine example as such (other country's experience); author and page furniture. The two pull quotes repeat sentences of the running text and are not extracted again. Doubtful for the analyst (theme_doubtful): the Cyber Rapid Response Team under PESCO, the 'hunt forward' operations modelled on US Cyber Command, fast-tracked participation in NATO CCDCOE exercises, the programme's lack of operational support for cyber defence, insider threats and the attacks framed as information operations; all concern the security of Moldovan networks but sit close to the military and disinformation line. Second-pass check (PC-05) by checker-GOV8b on 5 November 2026: 2 items added (review/RUN-2026-02/second_pass/MDA-RES-2023-001.csv)."
+  },
+  "classification": {
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
+  },
+  "items": [
+    {
+      "item_id": "MDA-RES-2023-001-0001",
+      "information_type": "finding",
+      "stated_text": "Efforts by Moldova’s government and international actors have begun to build the country’s cyber capacity. Nonetheless, several factors mean Moldova remains vulnerable to cyber operations.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Government and international efforts have begun to build Moldova's cyber capacity, but the country remains vulnerable to cyber operations.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "Opening paragraphs (no heading)",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0002",
+      "information_type": "barrier",
+      "stated_text": "It has low government revenue compared with its European peers and several pressing priorities for state expenditure. Socio-economic challenges including a contracting population, an over-reliance on remittances and inflation detract from the government’s ability to spend on cyber security.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Low revenue, competing priorities and socio-economic challenges limit the government's ability to spend on cyber security.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0003",
+      "information_type": "lesson",
+      "stated_text": "As demonstrated by the large-scale cyber incidents suffered by Albania and Costa Rica , small states which are unable or choose not to spend on cyber security are highly vulnerable to significant impact.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Incidents in Albania and Costa Rica show that small states that do not spend on cyber security are highly vulnerable.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated lesson drawn from other countries' experience and applied to Moldova's situation in the same paragraph. Repeated as a pull quote, not extracted again.",
+      "pass2": {
+        "chain_link": "lesson",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Lesson from Albania and Costa Rica applied to Moldova"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0004",
+      "information_type": "finding",
+      "stated_text": "While accusations have primarily been levelled within the political sphere , infiltration also impacts national cyber security. An insider could, for instance, grant hostile actors access to critical systems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Insider infiltration affects national cyber security; an insider could give hostile actors access to critical systems.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "hedged",
+        "theme_doubtful"
+      ],
+      "extraction_note": "Theme doubtful: the insider threat is framed as political destabilisation; the claim concerns access to critical systems. Hedged ('may also pose a risk', 'could').",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Hedged; insider risk to critical systems; the political infiltration framing is context, the claim has a cybersecurity element (RI-TEC-023 exclusion note); theme_doubtful resolved as in scope"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0005",
+      "information_type": "finding",
+      "stated_text": "From mid-2022 to early 2023, a series of high-profile attacks have targeted government credibility. ‘Hack-and-leak’ operations have compromised, exfiltrated and published confidential documents , while DDoS attacks and exposures from spear phishing campaigns have disrupted state services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "From mid-2022 to early 2023, hack-and-leak, DDoS and spear phishing attacks compromised documents and disrupted state services.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Theme doubtful: presented as part of Russian cyber-enabled information operations (disinformation out of scope), but the claim concerns compromise and disruption of government systems and services.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Attacks disrupting state services and compromising government systems; the information operations framing is incidental, as for MDA-GOV-2023-001-0126; theme_doubtful resolved as in scope"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0006",
+      "information_type": "finding",
+      "stated_text": "Despite challenges, Moldova is committed to and proactive in developing its cyber security capacity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova is committed to and proactive in developing its cyber security capacity.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive general finding"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0007",
+      "information_type": "intervention",
+      "stated_text": "For example, the country has steadily adopted regulatory best practices, such as legislating for critical infrastructure providers to adopt prescribed cyber security measures.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has adopted regulatory best practice, including legislation requiring critical infrastructure providers to take prescribed cyber security measures.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Legislation requiring critical infrastructure providers to adopt prescribed cyber security measures",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The law is not named.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The law is not named in the item"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0008",
+      "information_type": "finding",
+      "stated_text": "Moldova has furthermore broadly sought to digitalise in a cyber-secure manner. E-government services have expanded significantly and are notable for adopting cloud-based solutions such as MCloud, MPay and MSign .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has sought to digitalise securely; e-government services have expanded and use cloud solutions such as MCloud, MPay and MSign.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Expansion of e-government services and MSign; the cloud element: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0009",
+      "information_type": "intervention",
+      "stated_text": "In April 2023, for example, the government changed MCloud operating regulations to allow for cloud hybridisation. This permitted the use of foreign public cloud services , provided by data centres in EU member states, and responded to emerging best practices established by Ukraine’s cyber defence using distributed cloud servers.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In April 2023 the government changed MCloud rules to allow hybrid cloud, permitting foreign public cloud services in EU data centres.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER",
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": "2023-04",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "the government",
+          "actor_id": "ACT-MDA-0002"
+        }
+      ],
+      "intervention_as_stated": "Amendment of MCloud operating regulations to allow cloud hybridisation",
+      "stated_status": "adopted",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "MCloud hybridisation is government cloud: government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076); the security rationale does not concern incident response capacity (RI-TEC-023)"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0010",
+      "information_type": "finding",
+      "stated_text": "These amendments illustrate that Moldova has a strategic awareness of the emerging importance of interoperable cloud technologies in the context of national cyber security and systems integrity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The MCloud amendments show Moldova's strategic awareness of interoperable cloud technologies for cyber security.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Comment on the MCloud amendments (-0009); government cloud and data hosting fit no approved issue (G5-D05 of RUN-2026-01; as MDA-GOV-2023-001-0076)"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0011",
+      "information_type": "finding",
+      "stated_text": "Nonetheless, Moldova’s cyber security ecosystem remains ‘ fragmented ’.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's cyber security ecosystem remains fragmented.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'Fragmented' is quoted by the authors from another source (a hyperlink in the original).",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Fragmented cyber security ecosystem read under split responsibilities and fragmented implementation"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0012",
+      "information_type": "barrier",
+      "stated_text": "The country suffers from the global gap in qualified cyber professionals and therefore struggles to implement cyber security improvements.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "A shortage of qualified cyber professionals makes it hard for Moldova to implement cyber security improvements.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0013",
+      "information_type": "metric",
+      "stated_text": "For example, in November 2022, the Government Cyber Emergency Response Team (CERT-GOV-MD) had a staff of four .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In November 2022 the Government Cyber Emergency Response Team had four staff.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": "2022-11",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Government Cyber Emergency Response Team (CERT-GOV-MD)",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Staff of the Government Cyber Emergency Response Team (CERT-GOV-MD)",
+        "value": "4",
+        "unit": "staff",
+        "reference_period": "November 2022"
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0014",
+      "information_type": "metric",
+      "stated_text": "Moldova’s wider institutional gaps are reflected in its Global Cybersecurity Index ranking, which fell from 53rd to 63rd between 2018 and 2020.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova's Global Cybersecurity Index ranking fell from 53rd to 63rd between 2018 and 2020.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Global Cybersecurity Index rank",
+        "value": "53rd (2018); 63rd (2020)",
+        "unit": "rank",
+        "reference_period": "2018 to 2020"
+      },
+      "flags": [],
+      "extraction_note": "The reference period ends in 2020, inside the window; not flagged out_of_window.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Global Cybersecurity Index ranking"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0015",
+      "information_type": "recommendation",
+      "stated_text": "This indicates that, relative to its peers, Moldova still needs to drive improvements including establishing a cyber threats analysis unit, bringing forward the implementation of its new cyber security law , and participating in more international exercises.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova needs a cyber threats analysis unit, faster implementation of its new cyber security law and more international exercises.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Threat analysis unit and exercises (operational capacity); bringing forward implementation of the new law (framework)"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0016",
+      "information_type": "intervention",
+      "stated_text": "For example, the Estonian eGovernance Academy has supported legislative, strategic and organisational reforms over the past decade .",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Estonian eGovernance Academy has supported Moldova's cyber legislative, strategic and organisational reforms over the past decade.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Estonian eGovernance Academy",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Estonian eGovernance Academy cyber capacity building support",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Partner support given as an example of long-term cyber capacity building; the support spans a decade, partly before the time window, and is not flagged because it is described as continuing to the present.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Partner support for legislative, strategic and organisational reform"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0017",
+      "information_type": "intervention",
+      "stated_text": "From early 2022, Czechia and Romania have also commenced bi-lateral cyber-assistance programmes with Moldova, aiming to enhance cyber resilience through information-sharing, strengthening government capacities to engage on cyber security policy, and encouraging cross-border public-private partnerships.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Since early 2022 Czechia and Romania have run bilateral cyber assistance programmes with Moldova to strengthen cyber resilience.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": "2022",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Czechia",
+          "actor_id": null
+        },
+        {
+          "name_as_stated": "Romania",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Bilateral cyber-assistance programmes of Czechia and Romania with Moldova",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0018",
+      "information_type": "intervention",
+      "stated_text": "In May 2022, the EU launched the Moldova Cybersecurity Rapid Assistance programme to improve cyber resilience across the public sector and key critical infrastructure sectors.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In May 2022 the EU launched the Moldova Cybersecurity Rapid Assistance programme for public sector and critical infrastructure resilience.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": "2022-05",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EU",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Moldova Cybersecurity Rapid Assistance programme",
+      "stated_status": "in_progress",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "'Launched' with the programme described in the present tense, read as in_progress.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0019",
+      "information_type": "intervention",
+      "stated_text": "The project aims to develop diverse capacity outcomes including adjusting the 'normative-legislative framework of cybersecurity’, increasing societal awareness and hygiene, and developing targeted technical skills.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The programme aims to adjust the cybersecurity legal framework, raise awareness and hygiene, and develop technical skills.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": "Moldova Cybersecurity Rapid Assistance programme (aims)",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Stated aims of the programme (M1: proposed). Technical skills are part of an in-scope cybersecurity programme.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Aims include the legal framework, awareness and technical skills of an in-scope cybersecurity programme"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0020",
+      "information_type": "finding",
+      "stated_text": "It does not, however, provide or commit to operational support for Moldova’s cyber defence.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The EU programme does not provide or commit to operational support for Moldova's cyber defence.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Theme doubtful: the classification ruling puts military systems and cyber defence out of scope; here 'cyber defence' appears to mean operational protection of national networks rather than military systems.",
+      "pass2": {
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "\"Cyber defence\" read as operational protection of national networks, not military systems (as MDA-GOV-2023-001-0023); theme_doubtful resolved as in scope; listed for the analyst under the alpha ruling: military and classified systems out"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0021",
+      "information_type": "intervention",
+      "stated_text": "In April 2023, participating EU member states announced the deployment of a Cyber Rapid Response Team (CRRT) to Moldova to aid the government in securing its national cyberspace. The CRRT forms part of the EU’s Permanent Structured Cooperation Framework.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In April 2023 EU member states announced deployment of a Cyber Rapid Response Team to help Moldova secure its national cyberspace.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": "2023-04",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "participating EU member states",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Cyber Rapid Response Team (CRRT) deployment to Moldova",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Theme doubtful: the classification ruling puts military systems and cyber defence out of scope; the team is part of PESCO (defence cooperation) but its stated purpose is securing national cyberspace. 'Announced the deployment' read as proposed.",
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Doubtful: the team is a PESCO (defence cooperation) project, but its stated purpose is aiding the government to secure national cyberspace, not military systems; kept in and listed for the analyst under the alpha ruling: military and classified systems out"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0022",
+      "information_type": "intervention",
+      "stated_text": "Furthermore, in December 2022, the European Bank for Reconstruction and Development partnered with private-sector cyber security providers to enhance cyber resilience for SMEs in Moldova , given that these types of organisations have been severely impacted by cyber attacks.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "In December 2022 the EBRD partnered with private cyber security providers to strengthen SMEs' cyber resilience in Moldova.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": "2022-12",
+        "event_date_precision": "month"
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "European Bank for Reconstruction and Development",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "EBRD partnership with private-sector cyber security providers for SME cyber resilience",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Cyber resilience of private SMEs fits no approved issue (RI-TEC-023 concerns public institutions); intervention only"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0023",
+      "information_type": "recommendation",
+      "stated_text": "First, CERT-GOV-MD and an external technical body that will take responsibility for coordinating future international assistance should prepare and maintain a list of Moldova’s immediate operational needs should a national cyber incident occur. This would cover activities to rapidly improve cyber defences, such as deploying private-sector incident responders.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "CERT-GOV-MD and an external coordinating body should keep a list of Moldova's immediate operational needs for a national cyber incident.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Filling the Gaps",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "CERT-GOV-MD",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Addressed mainly to international partners ('Further international support should prioritise three actions').",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Addressed mainly to international partners; operational needs of CERT-GOV-MD"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0024",
+      "information_type": "recommendation",
+      "stated_text": "Second, ‘hunt forward’-style operations – pioneered by US Cyber Command – should be undertaken on Moldova’s networks. These will commission leading cyber security companies to identify existing vulnerabilities and any attackers that have compromised Moldovan networks. This should also then feed back into longer-term CCB activities, such as the EU’s Cybersecurity Rapid Assistance programme, to inform the improvement of Moldova’s underlying capacity.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Hunt-forward operations by cyber security companies should find vulnerabilities and intruders in Moldovan networks and inform capacity building.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Filling the Gaps",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Theme doubtful: the classification ruling puts military systems and cyber defence out of scope; the operations are modelled on US Cyber Command, but are to be carried out by cyber security companies on Moldovan networks.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Modelled on US Cyber Command but carried out by cyber security companies on Moldovan networks, so not military systems; theme_doubtful resolved as in scope and listed for the analyst under the alpha ruling: military and classified systems out"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0025",
+      "information_type": "recommendation",
+      "stated_text": "Finally, Moldova should be fast-tracked for involvement in NATO’s Cooperative Cyber Defence Centre of Excellence (CCDCOE) exercises.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova should be fast-tracked into NATO CCDCOE cyber exercises.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Filling the Gaps",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Theme doubtful: the classification ruling puts military systems and cyber defence out of scope; CCDCOE is a NATO-accredited centre; its exercises concern defence of networks. Likely out of scope if NATO cooperation is treated as military.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "NATO Cooperative Cyber Defence Centre of Excellence exercises are military cyber defence cooperation (alpha ruling: military and classified systems out)"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0026",
+      "information_type": "recommendation",
+      "stated_text": "These specific activities should be accompanied by continual peer-to-peer engagement with Moldova’s cyber defenders.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The recommended activities should be accompanied by continual peer-to-peer engagement with Moldova's cyber defenders.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Filling the Gaps",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": null,
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "\"Cyber defenders\" read as national incident responders, as for -0020"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0027",
+      "information_type": "recommendation",
+      "stated_text": "Moldova’s partners should not assume that external emergency responses would be sufficient to secure the country were it to suffer a large-scale cyber incident.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Partners should not assume external emergency responses would suffice to secure Moldova in a large-scale cyber incident.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Filling the Gaps",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Also printed as a pull quote, not extracted again.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "National capacity cannot be replaced by external emergency response"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0028",
+      "information_type": "lesson",
+      "stated_text": "National cyber defence is hamstrung without existing competent cyber defenders embedded within well-structured legislative and organisational systems.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "National cyber security is hampered without competent cyber defenders working within well-structured legal and organisational systems.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Filling the Gaps",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Follows the stated lesson from Ukraine ('extraordinary national efforts are at the heart of strong national cyber security'), not extracted as another country's experience.",
+      "pass2": {
+        "chain_link": "lesson",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "\"National cyber defence\" read as national cyber security, not military systems"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0029",
+      "information_type": "finding",
+      "stated_text": "Moldova has also adapted to innovative cyber security solutions and best practices.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Moldova has adapted to innovative cyber security solutions and best practices.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Attributes of Vulnerability",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). A general claim of its own, introducing the April 2023 MCloud example (item 0009), which it does not repeat.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "General positive claim; the cloud example it introduces (-0009) is out of scope"
+      }
+    },
+    {
+      "item_id": "MDA-RES-2023-001-0030",
+      "information_type": "finding",
+      "stated_text": "Since the onset of war in Ukraine, there has been a significant increase in CCB.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Cyber capacity building in Moldova by international partners has increased significantly since the war in Ukraine began.",
+      "location": {
+        "page": null,
+        "page_end": null,
+        "section": "Existing Efforts",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/RES/originals/MDA-RES-2023-001_RUSI-Battening-Down-the-Hatches-Moldova-Cyber-Defence.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-CYBER"
+      ],
+      "dates": {
+        "publication_date": "2023-08-10",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Royal United Services Institute (RUSI)",
+        "actor_id": null
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Moldova",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Second-pass addition (PC-05). 'CCB' is cyber capacity building in Moldova by international partners, as defined in the preceding sentence.",
+      "pass2": {
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Growth of international cyber capacity building"
+      }
+    }
+  ]
+}

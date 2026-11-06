@@ -4,17 +4,21 @@
     "run_id": "RUN-2026-02",
     "rules_version": "0.5",
     "extracted_at": "2026-11-03",
-    "status": "sample",
+    "status": "complete",
     "pages_processed": "12, 16-17, 19, 22-24, 42-43, 50, 60-63, 84-90, 93; keyword screen of the whole text",
-    "notes": "Sample extraction under rules 0.5. Covered in full: 3.11 Digital rights (pages 84-91) and 3.7 Right to privacy (pages 60-64); read in context: online registration and register passages in 3.1 and 3.2 (pages 16-24), e-participation platforms in 3.5 (pages 42-50), the executive summary table (page 12) and the key priorities (pages 92-93). Keyword screen of the whole text: digital, online, electronic, e-signature, internet, cyber, artificial, AI, personal data, data protection, privacy, surveillance, platform, portal, register, EGA, STISC, MDED. Not extracted (materiality test not met or out of scope): digital violence, online harassment and stalking offences (pages 10, 60, 62; criminal law on online conduct); website blocking and the Law on Preventing and Combating Cybercrime (pages 85, 87; cybercrime enforcement); the e-Dosar criminal case system (page 89; back-office sector system); the video-sharing platform amendments to the Audiovisual Media Services Code (pages 84, 90-91; media regulation); online assemblies, disinformation and hate speech (pages 33-41, 52-58; online channel incidental); the e-Parliament portal (pages 42, 44; publishing online); digital rights awareness and literacy, Ombudsman study and Internet Governance Forum (pages 84, 89-90; digital skills or background); online donations and the Facebook donate feature (pages 28, 89); digital tools in the draft Law on Volunteering (pages 71, 77); criminal cases on violation of private life (pages 60-61; privacy, not data). The converted text of pages 85-87 splits words across lines; quotes keep that spacing and are flagged possible_misread. No Chapter 2 material (foreign workers, social security coordination) found. Internal inconsistency recorded: page 19 (electronic submission possible since 2022) and page 24 (no system to support online registration).",
+    "notes": "Sample extraction under rules 0.5. Covered in full: 3.11 Digital rights (pages 84-91) and 3.7 Right to privacy (pages 60-64); read in context: online registration and register passages in 3.1 and 3.2 (pages 16-24), e-participation platforms in 3.5 (pages 42-50), the executive summary table (page 12) and the key priorities (pages 92-93). Keyword screen of the whole text: digital, online, electronic, e-signature, internet, cyber, artificial, AI, personal data, data protection, privacy, surveillance, platform, portal, register, EGA, STISC, MDED. Not extracted (materiality test not met or out of scope): digital violence, online harassment and stalking offences (pages 10, 60, 62; criminal law on online conduct); website blocking and the Law on Preventing and Combating Cybercrime (pages 85, 87; cybercrime enforcement); the e-Dosar criminal case system (page 89; back-office sector system); the video-sharing platform amendments to the Audiovisual Media Services Code (pages 84, 90-91; media regulation); online assemblies, disinformation and hate speech (pages 33-41, 52-58; online channel incidental); the e-Parliament portal (pages 42, 44; publishing online); digital rights awareness and literacy, Ombudsman study and Internet Governance Forum (pages 84, 89-90; digital skills or background); online donations and the Facebook donate feature (pages 28, 89); digital tools in the draft Law on Volunteering (pages 71, 77); criminal cases on violation of private life (pages 60-61; privacy, not data). The converted text of pages 85-87 splits words across lines; quotes keep that spacing and are flagged possible_misread. No Chapter 2 material (foreign workers, social security coordination) found. Internal inconsistency recorded: page 19 (electronic submission possible since 2022) and page 24 (no system to support online registration). Stage 8 (2026-11-05): status set from sample to complete; extracted in full at the G3 sample under rules 0.5 with its second pass (review/RUN-2026-02/second_pass/), so not re-extracted (G4-D09: rules 0.6 apply without re-extraction).",
     "codebook_version": "1.3",
     "themes_version": "1.3",
     "run_country": "MDA",
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -77,7 +81,14 @@
       ],
       "extraction_note": "From the summary table of key developments by area.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Summary-table restatement of -0033; link same_as_earlier and count once (G4-D14)."
       }
     },
     {
@@ -135,7 +146,14 @@
       ],
       "extraction_note": "From the summary table of key developments by area.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Summary-table restatement of -0055; link same_as_earlier and count once (G4-D14)."
       }
     },
     {
@@ -192,7 +210,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Usage figure for the electronic CSO registration service run by the Public Services Agency, a sector body outside the national portal; repeats -0008."
       }
     },
     {
@@ -249,7 +275,14 @@
       "flags": [],
       "extraction_note": "Status unclear: the register is stated to be developed but its implementation is pending.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Institutional register being digitalised; status unclear (developed, implementation pending)."
       }
     },
     {
@@ -310,7 +343,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Online reporting of CSOs to sector bodies, including tax reports (RI-TEC-005 second)."
       }
     },
     {
@@ -372,7 +413,15 @@
       "flags": [],
       "extraction_note": "Summary of the area's recommendations; the specific recommendations are on page 22.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Also covers non-digital registration practice (fees, timelines), which no issue fits."
       }
     },
     {
@@ -434,7 +483,15 @@
       "flags": [],
       "extraction_note": "Page 24 says there is no system to support online registration; pass 2 to check for contradiction.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -495,7 +552,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Usage figure for the measure itself, so implementation rather than outcome."
       }
     },
     {
@@ -557,7 +621,16 @@
       "flags": [],
       "extraction_note": "Named system stated not to function; status unclear (rule 3). Footnote number 31 kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Register developed but not functional."
       }
     },
     {
@@ -618,7 +691,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -681,7 +761,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-037",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -743,7 +832,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12",
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Finding on how named registers are applied."
       }
     },
     {
@@ -808,7 +908,14 @@
       "flags": [],
       "extraction_note": "Appears to conflict with page 19 (electronic submission possible since 2022); recorded as stated.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Conflicts within the same source with -0007, -0008 and -0093 (electronic submission since 2022; automated business registration); noted, not resolved. Same-source claims cannot be linked as contradicts."
       }
     },
     {
@@ -869,7 +976,16 @@
       "flags": [],
       "extraction_note": "\"State Register of Legal Entities\" as printed; elsewhere the report calls it the State Register of Legal Units. Type changed from finding to intervention at the G3 check: a named system stated not yet to be implemented (rule 3, systems that do not work: unclear), as for -0009.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Data migration to the new register not completed."
       }
     },
     {
@@ -933,7 +1049,17 @@
       ],
       "extraction_note": "Footnote number 36 sits inside the quote as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -996,7 +1122,12 @@
       ],
       "extraction_note": "An e-consultation platform used by the public; whether e-participation meets the digital government test is doubtful.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER)."
       }
     },
     {
@@ -1054,7 +1185,12 @@
       ],
       "extraction_note": "Quote cut to the two recommendations; the sentence continues with non-digital recommendations. Same doubt as particip.gov.md.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER); the law on public participation is outside the theme."
       }
     },
     {
@@ -1117,7 +1253,12 @@
       ],
       "extraction_note": "Quote extended at the G3 check to start at the claim's first word, keeping the converted spacing of the date (\"202 5\").",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER); petitions, surveys and feedback modules."
       }
     },
     {
@@ -1178,7 +1319,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017",
+          "RI-TEC-018"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Descriptive finding on the law and the supervisory authority."
       }
     },
     {
@@ -1239,7 +1388,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1295,7 +1453,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Rising complaints read by the source as growing awareness."
       }
     },
     {
@@ -1356,7 +1521,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Enforcement figures of the supervisory authority."
       }
     },
     {
@@ -1412,7 +1586,14 @@
       "flags": [],
       "extraction_note": "Law number from footnote 204 (page 62).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same law as -0032 and -0104."
       }
     },
     {
@@ -1473,7 +1654,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Same consultation as -0033 (and -0001)."
       }
     },
     {
@@ -1542,7 +1730,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Access to personal data by state institutions, from the supervisory authority report; nearest fit is compliance in practice."
       }
     },
     {
@@ -1600,7 +1795,16 @@
       ],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Repeated as -0109 (same_as_earlier)."
       }
     },
     {
@@ -1663,7 +1867,12 @@
       ],
       "extraction_note": "Surveillance powers of the intelligence service: a privacy and security matter; whether it is data protection (TECH-DATA) is doubtful.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: surveillance powers of the security service (interception, home monitoring), a fundamental rights and security matter; no data protection framework or compliance issue fits without stretching (military and classified systems out, G5-D08 of RUN-2026-01)."
       }
     },
     {
@@ -1726,7 +1935,12 @@
       ],
       "extraction_note": "Same doubt as the previous item.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "As -0027: review of the security service powers; outside the theme."
       }
     },
     {
@@ -1787,7 +2001,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Petitions to the supervisory authority by type."
       }
     },
     {
@@ -1848,7 +2069,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1904,7 +2134,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -1960,7 +2199,14 @@
       "flags": [],
       "extraction_note": "Gives August 2026 for entry into force; page 60 says \"effective from 2026\".",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Includes provisions on the supervisory authority (RI-TEC-018 context)."
       }
     },
     {
@@ -2021,7 +2267,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2082,7 +2335,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2138,7 +2398,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-021"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Personal data used in illegal surveys during the parliamentary election campaign."
       }
     },
     {
@@ -2199,7 +2468,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive finding (widespread, affordable access), against the coverage gap; differs from EU household figures of earlier years (noted difference, not a contradiction)."
       }
     },
     {
@@ -2257,7 +2533,12 @@
       ],
       "extraction_note": "Digital rights in general are not a theme area; the claim concerns the governance of digital technologies broadly, so TECH-DIGI is the closest code but doubtful. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Theme item fitting no approved issue; problem raised only by a civil society source (PC-12). Theme doubtful; general statement read with -0043 and -0044."
       }
     },
     {
@@ -2318,7 +2599,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2374,7 +2662,14 @@
       "flags": [],
       "extraction_note": "Status from footnote 322 (Government Decision 650/2023 approving the strategy).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2433,7 +2728,12 @@
       ],
       "extraction_note": "The digital gap covers access (infrastructure) and skills; skills alone would not qualify.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: the digital gap in general, without a coverage, service or in-scope element; digital skills are outside scope."
       }
     },
     {
@@ -2491,7 +2791,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Also names accessible digital public services and personal data protection among aims."
       }
     },
     {
@@ -2555,7 +2863,14 @@
       ],
       "extraction_note": "The sentence has no full stop before \"To date\" in the text; the quote stops at \"this field\". \"issued\" read as adopted.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -2614,7 +2929,12 @@
       ],
       "extraction_note": "Digital rights in general are not a theme area; the claim concerns the governance of digital technologies broadly, so TECH-DIGI is the closest code but doubtful. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Theme item fitting no approved issue; problem raised only by a civil society source (PC-12). Theme doubtful."
       }
     },
     {
@@ -2672,7 +2992,12 @@
       ],
       "extraction_note": "Digital rights in general are not a theme area; the claim concerns the governance of digital technologies broadly, so TECH-DIGI is the closest code but doubtful. Restates the second sentence of the summary.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Theme item fitting no approved issue; problem raised only by a civil society source (PC-12). Theme doubtful; repeats -0037."
       }
     },
     {
@@ -2728,7 +3053,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Fits the part of RI-TEC-001 on enforcement structures and capacity: no oversight of AI used in public systems, and no official information on it."
       }
     },
     {
@@ -2787,7 +3121,12 @@
       ],
       "extraction_note": "Facial recognition is not stated to use AI; TECH-AI doubtful. The link to personal data registries fits TECH-DATA.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: states that public bodies use facial recognition and surveillance systems linked to personal data registers, without stating a gap in the AI or data protection framework; context only for RI-TEC-001 (read with -0045)."
       }
     },
     {
@@ -2851,7 +3190,12 @@
       ],
       "extraction_note": "Digital rights in general are not a theme area; the claim concerns the governance of digital technologies broadly, so TECH-DIGI is the closest code but doubtful. Page 84 adds that the scores are unchanged from the previous period.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Area-level score for digital rights in a civil society index; fits no single issue (by analogy with G5-D14 of RUN-2026-01)."
       }
     },
     {
@@ -2908,7 +3252,14 @@
       "flags": [],
       "extraction_note": "Digital skills are listed alongside the AI oversight recommendation; kept in one item as one sentence of one type.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Oversight of emerging technologies such as AI fits RI-TEC-001; the digital rights dialogue part belongs with the unmatched digital rights label, and digital skills are outside scope."
       }
     },
     {
@@ -2967,7 +3318,14 @@
       ],
       "extraction_note": "Involvement of CSOs in the digital strategy fits TECH-DIGI; the digital divide may concern access (TECH-INFRA) or skills.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Theme doubtful: involving civil society in the strategy is a governance point; closing the digital divide is too general for RI-TEC-013. Weak fit."
       }
     },
     {
@@ -3026,7 +3384,12 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Digital rights in general are not a theme area; the claim concerns the governance of digital technologies broadly, so TECH-DIGI is the closest code but doubtful. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Theme item fitting no approved issue; problem raised only by a civil society source (PC-12). Theme doubtful."
       }
     },
     {
@@ -3086,7 +3449,12 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Digital rights in general are not a theme area; the claim concerns the governance of digital technologies broadly, so TECH-DIGI is the closest code but doubtful. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Theme item fitting no approved issue; problem raised only by a civil society source (PC-12). Theme doubtful; hedged."
       }
     },
     {
@@ -3149,7 +3517,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Footnote number 313 kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3212,7 +3587,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Status unclear: signed, not ratified. Signature date 5 September 2024 from footnote 314.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Council of Europe convention, not the EU AI Act; fits the wider framework part of RI-TEC-001 as context."
       }
     },
     {
@@ -3276,7 +3658,16 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Also names blockchain, IoT and big data, which no issue fits."
       }
     },
     {
@@ -3339,7 +3730,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Footnote number 317 kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3397,7 +3795,16 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Partial compatibility with Directive (EU) 2018/1972 (European Electronic Communications Code)."
       }
     },
     {
@@ -3460,7 +3867,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3527,7 +3941,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Footnote number 320 kept as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Coordination of cybersecurity policy; the source notes it has only state members."
       }
     },
     {
@@ -3594,7 +4015,16 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. SCIA is the Council on Artificial Intelligence and Data Governance (acronyms list, page 6).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "SCIA is the Council on Artificial Intelligence and Data Governance (source acronym list)."
       }
     },
     {
@@ -3659,7 +4089,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -3719,7 +4156,16 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036",
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Strategy measures also cover broadband access and digital literacy (outside scope)."
       }
     },
     {
@@ -3778,7 +4224,16 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Other targets in the quote: 80% basic digital skills, 75% at least 100 Mbps, 25% 5G coverage.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-014",
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Strategy targets, not results; digital skills target outside scope."
       }
     },
     {
@@ -3843,7 +4298,15 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-014"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Also aims at critical infrastructure and personal data protection."
       }
     },
     {
@@ -3907,7 +4370,15 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. ",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Register of state information systems and registers; nearest fits, neither exact."
       }
     },
     {
@@ -3967,7 +4438,16 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. The source cited (footnote 325) is a 2021 assessment.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-023",
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "General concerns about documentation, security, data management and interoperability of state systems; partial fits only."
       }
     },
     {
@@ -4030,7 +4510,14 @@
       ],
       "extraction_note": "The converted text of pages 85-87 splits words and phrases across lines (for example \"T he\", \"p rotection\"); the quote keeps the converted spacing. Footnote 329 dates the decision 25 July 2025, unlike \"September\" in the text; event date as stated in the text.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4091,7 +4578,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Legal obligation on network providers to publish quality indicators."
       }
     },
     {
@@ -4152,7 +4646,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Positive finding on affordability and access."
       }
     },
     {
@@ -4210,7 +4711,14 @@
       ],
       "extraction_note": "Numbers are split in the converted text (\"96 .6 %\", \"9 9.3 %\").",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4268,7 +4776,14 @@
       ],
       "extraction_note": "Numbers are split in the converted text (\"0. 59 %\", \"1. 24 %\").",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Affordability compared with EU averages."
       }
     },
     {
@@ -4324,7 +4839,14 @@
       "flags": [],
       "extraction_note": "Footnote numbers 335 and 336 sit inside the quote as printed.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "White areas without fixed-line internet."
       }
     },
     {
@@ -4385,7 +4907,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "UN E-Government Development Index ranking."
       }
     },
     {
@@ -4446,7 +4976,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4507,7 +5045,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4563,7 +5109,15 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Sector services (business and CSO registration, judicial procedures); electronic petitioning is e-participation and outside the issue."
       }
     },
     {
@@ -4619,7 +5173,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Cost of the digital signature."
       }
     },
     {
@@ -4680,7 +5241,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4736,7 +5304,14 @@
       "flags": [],
       "extraction_note": "The sentence begins on page 88 (\"Nevertheless, there are\") before the footnotes; the quote check cannot skip that footnote block, so the quote starts at \"inconsistencies\" on page 89.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Mobile signatures not recognised consistently by public institutions."
       }
     },
     {
@@ -4792,7 +5367,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -4850,7 +5432,12 @@
       ],
       "extraction_note": "May concern cybercrime and online threats (out of scope under rule 4) rather than security of networks and information systems.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "Theme doubtful resolved: response to threats in the digital environment within a public order programme; cybercrime and law enforcement are outside the theme (alpha ruling)."
       }
     },
     {
@@ -4913,7 +5500,14 @@
       ],
       "extraction_note": "Footnote 344 refers to digital literacy campaigns; may be digital skills not linked to an in-scope recommendation.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Fits the part of RI-TEC-036 on services that do not serve all users (older people)."
       }
     },
     {
@@ -4976,7 +5570,15 @@
       ],
       "extraction_note": "Garbled (\"71 345 out of 10 5\"): may mean 71 services, or availability in 71 of 105 centres; footnote numbers 345 and 346 inside the quote.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Digital services available through Unified Public Service Centres (assisted access points)."
       }
     },
     {
@@ -5037,7 +5639,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Ombudsman priority; fits the wider capacity and trustworthy uptake part of RI-TEC-001; weak fit."
       }
     },
     {
@@ -5096,7 +5705,12 @@
       ],
       "extraction_note": "Not stated to involve AI; TECH-AI doubtful.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "As -0046: states use of face recognition at the border and traffic monitoring, without a stated gap; context only for RI-TEC-001."
       }
     },
     {
@@ -5152,7 +5766,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Read with -0045."
       }
     },
     {
@@ -5212,7 +5835,12 @@
       ],
       "extraction_note": "Follows the AI sentence; closest to AI oversight, but stated for digital rights generally.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "queued_unmatched",
+        "classification_note": "Theme item fitting no approved issue; problem raised only by a civil society source (PC-12). Theme doubtful."
       }
     },
     {
@@ -5270,7 +5898,14 @@
       ],
       "extraction_note": "Digital content contracts are consumer law; digital services rules may fit TECH-DIGI. The source's statement about the Digital Services Act is recorded as stated.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "The source states the aim was to transpose the Digital Services Act (G4-D11), but the law title points to the Digital Content Directive, a consumer contract rule outside RI-TEC-034 (exclusion note). Analyst to confirm at G5; if it is the Digital Content Directive, mark out of scope as MDA-EU-2023-002-0044."
       }
     },
     {
@@ -5333,7 +5968,12 @@
       ],
       "extraction_note": "E-participation modules on websites; same doubt as particip.gov.md.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER); local authority webpages."
       }
     },
     {
@@ -5396,7 +6036,12 @@
       ],
       "extraction_note": "Same doubt as particip.gov.md.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER)."
       }
     },
     {
@@ -5457,7 +6102,15 @@
       "flags": [],
       "extraction_note": "added at the second pass. Same claim as -0005 (page 16, area summary), in the detailed section; outside the pages read by the extractor.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-005"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Mandatory online reporting, including tax and social insurance reports."
       }
     },
     {
@@ -5519,7 +6172,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Continues the recommendation in -0011 on the State Register of Legal Units.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Public access to register information on CSOs."
       }
     },
     {
@@ -5580,7 +6240,14 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Automated business registration; contrast with -0013 in the same source."
       }
     },
     {
@@ -5641,7 +6308,14 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Conflicts with -0013 in the same source (no online registration for commercial entities); noted, not resolved."
       }
     },
     {
@@ -5705,7 +6379,17 @@
       ],
       "extraction_note": "added at the second pass. \"This\" is the outdated and non-interoperable State Register of Non-Commercial Organisations in the preceding sentence (-0015).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Barrier refers to the outdated, non-interoperable register in -0015 (extraction note); explains the gap."
       }
     },
     {
@@ -5761,7 +6445,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Open data is within TECH-DATA; the access-to-information subject is otherwise out of scope.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Only the open data element fits; general access to information is outside the theme."
       }
     },
     {
@@ -5822,7 +6513,12 @@
       "flags": [],
       "extraction_note": "added at the second pass. Same event as -0018 (page 50). Year from page 50 and footnote 114 (Government Decision 564/2024 on the concept).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER); petitions module."
       }
     },
     {
@@ -5883,7 +6579,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Law number from footnote 147; methodological norms are Government Decision No. 563/2025 (footnote 148). Footnote numbers 147 to 149 kept as printed. Also in the executive summary table (page 12), not extracted again (rule 5).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: Moldova has an open data law partly transposing Directive (EU) 2019/1024, so the gap is completing alignment and publication, not the absence of a law (G4-D06)."
       }
     },
     {
@@ -5944,7 +6647,12 @@
       "flags": [],
       "extraction_note": "added at the second pass. \"The platform\" is e-Democracy (-0018).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER); connection of central authorities to the petitions platform."
       }
     },
     {
@@ -6000,7 +6708,12 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation or e-consultation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as the alpha ruled for ENER); usage of the petitions platform."
       }
     },
     {
@@ -6063,7 +6776,14 @@
       ],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Scope of the law as it applies to CSOs; context, materiality narrow."
       }
     },
     {
@@ -6121,7 +6841,14 @@
       ],
       "extraction_note": "added at the second pass. Same claim as -0019 (page 60). Footnote number 199 kept as printed (Law 133/2011).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Repeats -0019."
       }
     },
     {
@@ -6184,7 +6911,14 @@
       ],
       "extraction_note": "added at the second pass. Same claim as -0021 (page 60).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Repeats -0021."
       }
     },
     {
@@ -6242,7 +6976,14 @@
       ],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -6300,7 +7041,14 @@
       ],
       "extraction_note": "added at the second pass. \"The Law\" is the Law on Personal Data Protection No. 195/2024 (-0032).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Content of the new law; same law as -0023."
       }
     },
     {
@@ -6358,7 +7106,14 @@
       ],
       "extraction_note": "added at the second pass. Follows -0034.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -6437,7 +7192,14 @@
       ],
       "extraction_note": "added at the second pass. Other values in the quote: State Fiscal Service over 21 million, SIS over 128,000, National Anticorruption Centre over 26,000, General Prosecutor's Office over 1,000.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -6495,7 +7257,14 @@
       ],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-017"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Context, materiality narrow."
       }
     },
     {
@@ -6558,7 +7327,14 @@
       ],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Compliance of CSO reporting rules with data protection law; positive; materiality narrow."
       }
     },
     {
@@ -6617,7 +7393,16 @@
       ],
       "extraction_note": "added at the second pass. Same claim as -0026 (page 60).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
+        "mechanism_ids": [
+          "MEC-04"
+        ],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Repeats -0026 within the same source (same_as_earlier)."
       }
     },
     {
@@ -6675,7 +7460,14 @@
       ],
       "extraction_note": "added at the second pass. The converted text of pages 84-85 splits words across lines; the quote keeps the converted spacing. Footnote 311 cites Law No. 241/2007 on Electronic Communications.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Legal guarantee of access to electronic communications services."
       }
     },
     {
@@ -6733,7 +7525,14 @@
       ],
       "extraction_note": "added at the second pass. Same claim as -0110 (pages 84-85, Standard I).",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Repeats -0110 within the same source (same_as_earlier)."
       }
     },
     {
@@ -6789,7 +7588,14 @@
       "flags": [],
       "extraction_note": "added at the second pass. Same law as -0055. Footnote number 331 kept as printed; law number from footnote 331.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     },
     {
@@ -6847,7 +7653,14 @@
       ],
       "extraction_note": "added at the second pass. Names the Law on Open Data and Reuse of Information from the Public Sector (Law No. 109/2025). The particip.gov.md element carries the same theme doubt as -0016.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": "Outcome attributed by the source to the open data law; the particip.gov.md element is e-participation and outside the issue."
       }
     },
     {
@@ -6903,7 +7716,14 @@
       "flags": [],
       "extraction_note": "added at the second pass.",
       "pass2": {
-        "classification_status": "not_classified"
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "auto",
+        "classification_note": null
       }
     }
   ]

@@ -13,8 +13,12 @@
     "role": "target"
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -78,12 +82,12 @@
       ],
       "extraction_note": "The Commission reports how the ERP describes the Growth Plan. The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital element is one of several general aims of the Growth Plan; the technology issue is not the subject (materiality not met); fits no approved issue"
       }
     },
     {
@@ -146,12 +150,12 @@
       ],
       "extraction_note": "Quote cut at the end of objective 6; the sentence continues with objective 7. The same section states that the Reform Agenda had not been adopted when the ERP was submitted, hence proposed. The digital element is one of several aims listed; flagged because it is not clear the digital issue is the subject of the claim.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Reform Agenda objective listed among seven general objectives; connectivity is incidental to the claim and fits no approved issue on its own"
       }
     }
   ]

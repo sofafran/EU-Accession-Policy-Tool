@@ -1,5 +1,14 @@
 # Codebook change log
 
+## Taxonomy 1.2, theme list 1.4 and extraction rules 0.6, 5 November 2026
+
+Approved by Sofia at G4 of RUN-2026-02 (GATE-0021, `review/RUN-2026-02/G4_decisions.csv`, G4-D01 to G4-D10 accepted). Shared changes are additive only (G4-D08, scaling note S4): no approved issue is reworded, merged, split or retired, and RUN-2026-01 judgements keep taxonomy 1.1. No codebook, data dictionary or schema version changes.
+
+- **Taxonomy 1.2 (`taxonomy/reform_issues.csv`):** four shared issues added, drafted from Moldova's EU evidence: RI-TEC-038 Electronic public procurement system outdated and in need of replacement (G4-D01; RI-TEC-006 unchanged for working but underused systems); RI-FMW-015 Domestic preconditions for the European Health Insurance Card not in place (G4-D02); RI-TEC-039 Public sector websites and apps not accessible to persons with disabilities (G4-D05; does not reopen G5-D05 of RUN-2026-01); RI-TEC-040 Semiconductor acquis not aligned (G4-D07). MEC-04 (weak enforcement or oversight) added to the usual mechanisms of RI-TEC-028 (G4-D08, PC-11 from G8 of RUN-2026-01); its definition is unchanged. Candidate issues CI-03 (admission of third-country workers, Chapter 24 acquis), CI-04 (registers for official statistics) and CI-05 (fragmented sector systems) rejected (G4-D03, G4-D04).
+- **Mechanism list:** stays at 1.0; MEC-04 is an existing mechanism.
+- **Theme list 1.4 (`taxonomy/themes.csv`):** semiconductors brought into TECH-DIGI by naming alignment with the EU Chips Act among its material examples, with the Digital Services Act and other EU digital market rules; EU roaming rules (Roam Like at Home) named among the material examples of TECH-INFRA. This makes explicit the placements already settled in the alpha (G4-D11, M4).
+- **Extraction rules 0.6:** clarifications M1 (objectives in national plans), M2 (an institution's mandate or what it does or lacks) and M3 (repeated claims in long documents), from the G3 checks of RUN-2026-02 (G4-D09), applied from stage 8 without re-extraction of earlier items.
+
 ## Data dictionary 1.6 and evidence schema 1.3, 3 November 2026
 
 Approved by Sofia at G0 of RUN-2026-02 (G0-D02, decision E21). A source can hold the extractions of several runs: the earlier run's records move unchanged to `earlier_extractions`, each traceable to its run, the run's country and the source's role, with the items it created. Items belong to one run only. The register `role` may list one role per run. No codebook or rules version changes; RUN-2026-01's records and items are unchanged. Tools: `start_extraction.py` 1.0.0 (new), `validate_data.py` 1.5.0, `build_review_page.py` 1.5.0, `export_review.py` 1.13.1.

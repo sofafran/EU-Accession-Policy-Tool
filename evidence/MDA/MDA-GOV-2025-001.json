@@ -1,22 +1,20 @@
 {
   "source_id": "MDA-GOV-2025-001",
   "extraction": {
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.4",
-    "extracted_at": "2026-10-30",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.6",
+    "extracted_at": "2026-11-05",
     "status": "complete",
+    "codebook_version": "1.3",
+    "themes_version": "1.4",
+    "run_country": "MDA",
+    "role": "target",
     "pages_processed": "1 (whole page)",
-    "notes": "Agency release on the close of its own World Bank project, reporting speeches. Left out: general statements of benefit and speeches with no figure on range or use of services, and return-on-investment claims about MPay. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-GOV-2025-001.csv.",
-    "codebook_version": "1.2",
-    "themes_version": "1.3"
+    "notes": "Whole page read (page 1). This run's items: MDA-GOV-2025-001-0019 to MDA-GOV-2025-001-0047 (29 items; all theme, TECH-DGOV mainly, with TECH-DIGI, TECH-EID and TECH-INTEROP where the platforms named are identity, signature or interoperability platforms). Alpha items 0001 to 0018 are unchanged; their passages are quoted again here. Agency release on the close of its own World Bank project, reporting speeches by the agency director, the Deputy Prime Minister, the Secretary General of the Government and a World Bank Group officer (all reported_view). Left out: the director's statement that 2025 marks 15 years since the agency was founded; the global context figure (70% of the world's governments); rhetorical statements with no claim (\"The state is online\", \"everything that can be done remotely should be done remotely\", \"we continue to modernize\"); the eTransformation Project 2011 to 2016 (mainly before the window, background only); that EVO can be downloaded free. Not reconciled on the page, for the analyst: 303 of 648 fully digitalised services against \"over 300\" services online; \"over 300 digital platforms\" against 23 platforms and systems in the portfolio. Doubtful (theme_doubtful): the seven new platforms (TECH-EID for MPower), the CUPS service centres and the annual surveys. No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 1 items added (review/RUN-2026-02/second_pass/MDA-GOV-2025-001.csv)."
   },
   "classification": {
-    "status": "complete",
-    "run_id": "RUN-2026-01",
-    "rules_version": "0.3",
-    "taxonomy_version": "1.1",
-    "classified_at": "2026-10-30",
-    "mechanisms_version": "1.0"
+    "status": "not_started",
+    "run_id": "RUN-2026-02"
   },
   "items": [
     {
@@ -1208,6 +1206,1942 @@
         ],
         "classification_status": "auto",
         "classification_note": "country_response: a stated plan."
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0019",
+      "information_type": "finding",
+      "stated_text": "The 15 years of digital transformation in the Republic of Moldova have marked an ambitious journey towards a 100% digital society, where public services have become more qualitative, efficient, and easier to access.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The agency says 15 years of digital transformation have made public services better, more efficient and easier to access.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The agency's own assessment of its field, with no figure.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0020",
+      "information_type": "metric",
+      "stated_text": "303 out of the 648 public services available in the country are already fully digitalized, and their number continues to expand.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "303 of 648 public services are fully digitalised.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Fully digitalised public services",
+        "value": "303 of 648",
+        "unit": "services",
+        "reference_period": "April 2025"
+      },
+      "flags": [],
+      "extraction_note": "Not reconciled with \"over 300 digital public services\" in the speeches below or with MDA-GOV-2026-001 (445 of 636 accessible digitally, 2026). Same passage as alpha item MDA-GOV-2025-001-0001.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0021",
+      "information_type": "intervention",
+      "stated_text": "The data was presented at the event \"Digital Moldova - 15 Years of Digital Transformation,\" which marked the conclusion of the \"Modernization of Government Services\" (MGSP) project, a Government of the Republic of Moldova initiative implemented by the Electronic Governance Agency with financial support from the World Bank Group.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The MGSP project, implemented by the agency with World Bank Group funding, has concluded.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": "2025",
+        "event_date_precision": "year"
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Electronic Governance Agency",
+          "actor_id": "ACT-MDA-0001"
+        },
+        {
+          "name_as_stated": "World Bank Group",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Conclusion of the project; event date from the director's statement that 2025 marks the conclusion, and the release dates the project 2018 to 2025. Same passage as alpha item MDA-GOV-2025-001-0009.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0022",
+      "information_type": "metric",
+      "stated_text": "Hundreds of people have contributed to what we have today, to the infrastructure, to the platforms, to the over 300 digital public services, to the over 300 digital platforms, to the 12 M's in the government infrastructure",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The agency director cites over 300 digital public services, over 300 digital platforms and 12 \"M\" services in government infrastructure.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Nicoleta COLOMEEȚ, Director of MEGA",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Digital public services; digital platforms; M services",
+        "value": "over 300; over 300; 12",
+        "unit": "services; platforms; M services",
+        "reference_period": "2025"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Speech reported by the agency. \"Over 300 digital platforms\" is not reconciled with \"23 platforms and systems in its portfolio\" later in the release; for the analyst. MEGA is the name printed for the agency here.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0023",
+      "information_type": "metric",
+      "stated_text": "110 digitalized public services;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The MGSP project digitalised 110 public services.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Public services digitalised under MGSP",
+        "value": "110",
+        "unit": "services",
+        "reference_period": "2018 to 2025"
+      },
+      "flags": [],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". An output, not a measure of use. Same passage as alpha item MDA-GOV-2025-001-0010.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0024",
+      "information_type": "intervention",
+      "stated_text": "7 new digital platforms (MDelivery, Semantic Catalog for MConnect, FOD, MPower, e-APL, e-Consulate, Mdocs);",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MGSP delivered seven new digital platforms, including MDelivery, a Semantic Catalog for MConnect, MPower and e-Consulate.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-INTEROP",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project: seven new digital platforms",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". TECH-INTEROP for the Semantic Catalog for MConnect; TECH-EID doubtful for MPower (an electronic power of attorney platform is not described here). Same passage as alpha item MDA-GOV-2025-001-0011.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0025",
+      "information_type": "intervention",
+      "stated_text": "15 updates to existing digital platforms (MPass, MSign, MConnect, MCloud, Public Services Portal, Semantic Catalog, Citizen Portal, Business Portal, MPay, MLog);",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MGSP made 15 updates to existing platforms, including MPass, MSign, MConnect, MCloud and MPay.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID",
+        "TECH-INTEROP"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project: updates to existing digital platforms",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". TECH-EID for MPass and MSign (authentication and electronic signature), TECH-INTEROP for MConnect. Ten platforms are named for 15 updates. Same passage as alpha item MDA-GOV-2025-001-0012.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0026",
+      "information_type": "metric",
+      "stated_text": "94 reengineered/redesigned services, optimizing time, and for some of these, the service delivery time was reduced by 40%;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "MGSP re-engineered or redesigned 94 services.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Re-engineered or redesigned services",
+        "value": "94",
+        "unit": "services",
+        "reference_period": "2018 to 2025"
+      },
+      "flags": [],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". The count; the time reduction is a separate outcome item sharing the quote. Same passage as alpha item MDA-GOV-2025-001-0008.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0027",
+      "information_type": "outcome",
+      "stated_text": "94 reengineered/redesigned services, optimizing time, and for some of these, the service delivery time was reduced by 40%;",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "For some redesigned services, delivery time fell by 40%.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Reduction in service delivery time for some redesigned services",
+        "value": "40",
+        "unit": "percent",
+        "reference_period": "2018 to 2025"
+      },
+      "flags": [],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". Which services and how measured are not stated. Same passage as alpha item MDA-GOV-2025-001-0005.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0028",
+      "information_type": "intervention",
+      "stated_text": "105 unified service delivery centers (CUPS) became functional across the country (100 CUPS opened with financial support from the World Bank Group);",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "105 unified service delivery centres (CUPS) became functional, 100 with World Bank Group funding.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Unified service delivery centres (CUPS)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". Physical service centres; whether they meet the materiality test for digital government depends on their role in assisted access to e-services, which this release does not describe. Same passage as alpha item MDA-GOV-2025-001-0004.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0029",
+      "information_type": "intervention",
+      "stated_text": "6 annual national surveys on citizen satisfaction with public service delivery (2019 – 2024);",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Six annual national surveys on citizen satisfaction with public service delivery were carried out, 2019 to 2024.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Annual national survey on citizen satisfaction with public service delivery",
+      "stated_status": "implemented",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "theme_doubtful"
+      ],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". A monitoring instrument for the project; the 2023 round is MDA-GOV-2024-002. Doubtful as the surveys cover public service delivery generally.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0030",
+      "information_type": "outcome",
+      "stated_text": "Savings of 30 billion lei for the state budget and 10 billion lei for citizens in the last 5 years.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Savings of 30 billion lei for the state budget and 10 billion lei for citizens over five years.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Reported savings",
+        "value": "30 billion state budget; 10 billion citizens",
+        "unit": "lei",
+        "reference_period": "last 5 years"
+      },
+      "flags": [],
+      "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". Method not stated. Same passage as alpha item MDA-GOV-2025-001-0006.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0031",
+      "information_type": "finding",
+      "stated_text": "In a global context where 70% of the world's governments are accelerating their transition to proactive digital services, Moldova positions itself as a regional leader with over 300 public services available online.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Deputy Prime Minister says Moldova is a regional leader with over 300 public services online.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Doina NISTOR, Deputy Prime Minister, Minister of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Speech reported by the agency; no comparison is given for \"regional leader\".",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0032",
+      "information_type": "intervention",
+      "stated_text": "The most eloquent example is undoubtedly EVO. It is the application that brings together the most important public services for both citizens and entrepreneurs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "EVO is the application bringing together the main public services for citizens and entrepreneurs.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Doina NISTOR, Deputy Prime Minister, Minister of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "EVO",
+          "actor_id": null
+        }
+      ],
+      "intervention_as_stated": "EVO",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Same passage as alpha item MDA-GOV-2025-001-0014.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0033",
+      "information_type": "intervention",
+      "stated_text": "By the end of 2025, 75% of public services for the business environment will be fully digitalized. And by 2030, Moldova has promised to be a 100% digital state.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Targets: 75% of business services fully digitalised by end-2025 and a 100% digital state by 2030.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Doina NISTOR, Deputy Prime Minister, Minister of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Targets for full digitalisation by 2025 and 2030",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Targets; proposed (M1). Same passage as alpha item MDA-GOV-2025-001-0013.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0034",
+      "information_type": "metric",
+      "stated_text": "The most recent annual national survey on citizen satisfaction with public service delivery shows that 95% of respondents want to access services online, and 59% of them prefer to access them from their phones.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The latest survey: 95% of respondents want online access to services; 59% of them prefer phones.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Respondents wanting online access; of whom preferring phones",
+        "value": "95; 59",
+        "unit": "percent of respondents",
+        "reference_period": "most recent survey, not dated"
+      },
+      "flags": [],
+      "extraction_note": "A stated wish, not use. Survey year not given; not reconciled with the 56% preference in the 2023 survey (MDA-GOV-2024-002). Same passage as alpha item MDA-GOV-2025-001-0007.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0035",
+      "information_type": "metric",
+      "stated_text": "For example, now, to access a range of public services, people spend on average 40% less time, and for us, this means digitalization.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "People spend on average 40% less time accessing a range of public services, says the Secretary General.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Artur MIJA, Secretary General of the Government",
+        "actor_id": "ACT-MDA-0002"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Time spent accessing a range of public services",
+        "value": "40% less",
+        "unit": "percent",
+        "reference_period": "2025 (base not stated)"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Speech reported by the agency; which services and compared with when are not stated. Same passage as alpha item MDA-GOV-2025-001-0015.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0036",
+      "information_type": "finding",
+      "stated_text": "Moldova has taken another significant step forward in modernizing public services, improving quality, efficiency, and access through digitalization.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The World Bank Group officer says Moldova improved public service quality, efficiency and access through digitalisation.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Carolina ODOBESCU, Country Officer, World Bank Group",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Speech by a World Bank Group officer reported by the agency, about a project the Bank financed.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0037",
+      "information_type": "outcome",
+      "stated_text": "At the beginning of the \"Modernization of Public Services\" project, digitalized public services were accessed by only 25% of citizens, and by the end of the project, this number doubled. Currently, this access rate is over 54%.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Citizens accessing digitalised public services rose from 25% at the project's start to over 54%.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Carolina ODOBESCU, Country Officer, World Bank Group",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Citizens accessing digitalised public services",
+        "value": "25 to over 54",
+        "unit": "percent",
+        "reference_period": "2018 to 2025"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Speech reported by the agency; base and survey not given. Same passage as alpha item MDA-GOV-2025-001-0002.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0038",
+      "information_type": "outcome",
+      "stated_text": "These services have become more equitable and accessible to the vulnerable segments of the country, and currently, 38% of the country's vulnerable population have accessed these digitalized services in the last 12 months, compared to only 6% at the beginning of the project implementation.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Vulnerable people accessing digitalised services rose from 6% at the project's start to 38% in the last 12 months.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Carolina ODOBESCU, Country Officer, World Bank Group",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Modernization of Government Services (MGSP) project",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Vulnerable population accessing digitalised services",
+        "value": "6 to 38",
+        "unit": "percent",
+        "reference_period": "last 12 months"
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Speech reported by the agency; \"vulnerable\" not defined. Same passage as alpha item MDA-GOV-2025-001-0003.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0039",
+      "information_type": "finding",
+      "stated_text": "The trend and growing demand for such services are thus clear.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The World Bank Group officer says demand for digitalised services is clearly growing.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Carolina ODOBESCU, Country Officer, World Bank Group",
+        "actor_id": "ACT-INT-0010"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "The speaker's conclusion from the two figures before it.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0040",
+      "information_type": "outcome",
+      "stated_text": "The investment in the two projects implemented over the 15 years was 46 million dollars, an investment that was fully recovered from the savings brought by the MPay service alone through the reduction of payment processing fees. Thus, for every leu invested in the implemented projects, about 100 were saved in the state budget.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The 46 million dollar investment in two projects was recovered from MPay savings on payment fees alone.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "MPay; MGSP and eTransformation projects",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Investment recovered from MPay savings",
+        "value": "46 million",
+        "unit": "dollars",
+        "reference_period": "15 years"
+      },
+      "flags": [],
+      "extraction_note": "Agency claim; method not stated. Same passage as alpha item MDA-GOV-2025-001-0016.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0041",
+      "information_type": "finding",
+      "stated_text": "Over the years, AGE has been the institution that played a central role in promoting and implementing digitalization initiatives in the Republic of Moldova, contributing to the development of a modern infrastructure centered on citizens' needs.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "AGE has played a central role in promoting and implementing digitalisation initiatives, according to the agency.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "The agency describing its own role (M2: what an institution does is a finding).",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0042",
+      "information_type": "finding",
+      "stated_text": "Thus, the trips from one counter to another, the time and effort spent in queues at public institutions, and stacks of printed papers have been replaced with public services available online, 24 hours a day, 7 days a week, from any corner of the world.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Trips between counters, queues and paperwork have been replaced by public services available online at all times.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "No figure; not reconciled with the agency's own count that fewer than half of services are fully digitalised.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0043",
+      "information_type": "outcome",
+      "stated_text": "Access to public services has been revolutionized by the EVO application, which allows users to benefit from a wide range of services anytime, directly from their phones.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The EVO application has transformed access to public services from phones, according to the agency.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "EVO",
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "ambiguous_type"
+      ],
+      "extraction_note": "The agency's own claim about its own product, with no figure; could also be read as a finding. Same passage as alpha item MDA-GOV-2025-001-0017.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0044",
+      "information_type": "intervention",
+      "stated_text": "At the event, the agency's future plans were presented, focusing on centralizing the experience of accessing public services, developing additional digitalization tools for public institutions, developing the European identity wallet, and centralizing access to all public services under one umbrella – EVO.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "Agency plans: centralise access to public services under EVO, develop digitalisation tools and develop the European identity wallet.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": "Agency future plans: centralising access under EVO; European identity wallet",
+      "stated_status": "proposed",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "Plans; proposed (M1). Four plans of the same type in one sentence, kept as one item. TECH-EID for the European identity wallet. Same passage as alpha item MDA-GOV-2025-001-0018.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0045",
+      "information_type": "intervention",
+      "stated_text": "Founded in 2010, the Electronic Governance Agency (AGE) is the institution responsible for promoting and implementing public service digitalization initiatives in the Republic of Moldova, playing a central role in developing digital infrastructure and facilitating citizens' access to modern and efficient public services.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "AGE, founded in 2010, is the institution responsible for promoting and implementing public service digitalisation.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [
+        {
+          "name_as_stated": "Electronic Governance Agency (AGE)",
+          "actor_id": "ACT-MDA-0001"
+        }
+      ],
+      "intervention_as_stated": "Electronic Governance Agency (AGE)",
+      "stated_status": "in_practice",
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "M2: the designation of the responsible institution. Founded in 2010, before the window; the claim is about its current responsibility, so out_of_window is not flagged.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0046",
+      "information_type": "metric",
+      "stated_text": "With 23 platforms and systems in its portfolio, the agency provides methodological support to institutions in the process of digitalization or developing digital platforms, operates the M services infrastructure, the public service development platform, multiple e-services, as well as the EVO and EVOSign applications.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "AGE has 23 platforms and systems in its portfolio, including the M services infrastructure, EVO and EVOSign.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": "Platforms and systems in the agency portfolio",
+        "value": "23",
+        "unit": "platforms and systems",
+        "reference_period": "2025"
+      },
+      "flags": [],
+      "extraction_note": "TECH-EID for EVOSign. Not reconciled with \"over 300 digital platforms\" in the director's speech.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0047",
+      "information_type": "finding",
+      "stated_text": "With 23 platforms and systems in its portfolio, the agency provides methodological support to institutions in the process of digitalization or developing digital platforms, operates the M services infrastructure, the public service development platform, multiple e-services, as well as the EVO and EVOSign applications.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "AGE gives methodological support to institutions digitalising and operates the M services, e-services, EVO and EVOSign.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV",
+        "TECH-DIGI",
+        "TECH-EID"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "e-Governance Agency",
+        "actor_id": "ACT-MDA-0001"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [],
+      "extraction_note": "M2: what the institution does is a finding. Shares the quote with the metric item for the count of 23.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    },
+    {
+      "item_id": "MDA-GOV-2025-001-0048",
+      "information_type": "finding",
+      "stated_text": "Digital Moldova today means that citizens no longer run from one institution to another because the state is just a click away.",
+      "quote_language": "en",
+      "translation_en": null,
+      "machine_translated": false,
+      "summary": "The Deputy Prime Minister says citizens no longer go from one institution to another because the state is a click away.",
+      "location": {
+        "page": 1,
+        "page_end": null,
+        "section": "15 Years of Digitalization and 7 Years of Modernizing Public Services: How Public Services in the Republic of Moldova Have Transformed into Benefits for Citizens and Savings for the State Budget",
+        "paragraph": null,
+        "snapshot_file": "sources/MDA/GOV/originals/MDA-GOV-2025-001_AGE_15-years-of-digitalisation.html"
+      },
+      "quote_verified": true,
+      "country": "MDA",
+      "role": "target",
+      "cluster": null,
+      "chapter": null,
+      "scope_basis": [
+        "theme"
+      ],
+      "themes": [
+        "TECH-DGOV"
+      ],
+      "dates": {
+        "publication_date": "2025-04-15",
+        "period_covered": null,
+        "event_date": null,
+        "event_date_precision": null
+      },
+      "speaker": {
+        "name_as_stated": "Doina NISTOR, Deputy Prime Minister, Minister of Economic Development and Digitalization",
+        "actor_id": "ACT-MDA-0004"
+      },
+      "subjects": [],
+      "intervention_as_stated": null,
+      "stated_status": null,
+      "eu_scale": {
+        "preparation_level": null,
+        "progress_level": null,
+        "applies_to": null
+      },
+      "metric": {
+        "indicator": null,
+        "value": null,
+        "unit": null,
+        "reference_period": null
+      },
+      "flags": [
+        "reported_view"
+      ],
+      "extraction_note": "Added by the second-pass check (PC-05). Speech reported by the agency. The next sentence (\"The state is online.\") is rhetorical and not extracted.",
+      "pass2": {
+        "chain_link": null,
+        "reform_issue_ids": [],
+        "mechanism_ids": [],
+        "intervention_ids": [],
+        "classification_status": "not_classified",
+        "classification_note": null
+      }
+    }
+  ],
+  "earlier_extractions": [
+    {
+      "run_id": "RUN-2026-01",
+      "run_country": "MKD",
+      "role": "comparator",
+      "item_ids": [
+        "MDA-GOV-2025-001-0001",
+        "MDA-GOV-2025-001-0002",
+        "MDA-GOV-2025-001-0003",
+        "MDA-GOV-2025-001-0004",
+        "MDA-GOV-2025-001-0005",
+        "MDA-GOV-2025-001-0006",
+        "MDA-GOV-2025-001-0007",
+        "MDA-GOV-2025-001-0008",
+        "MDA-GOV-2025-001-0009",
+        "MDA-GOV-2025-001-0010",
+        "MDA-GOV-2025-001-0011",
+        "MDA-GOV-2025-001-0012",
+        "MDA-GOV-2025-001-0013",
+        "MDA-GOV-2025-001-0014",
+        "MDA-GOV-2025-001-0015",
+        "MDA-GOV-2025-001-0016",
+        "MDA-GOV-2025-001-0017",
+        "MDA-GOV-2025-001-0018"
+      ],
+      "moved_on": "2026-11-05",
+      "extraction": {
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.4",
+        "extracted_at": "2026-10-30",
+        "status": "complete",
+        "pages_processed": "1 (whole page)",
+        "notes": "Agency release on the close of its own World Bank project, reporting speeches. Left out: general statements of benefit and speeches with no figure on range or use of services, and return-on-investment claims about MPay. Second pass by checker-I: see review/RUN-2026-01/run1b/second_pass/MDA-GOV-2025-001.csv.",
+        "codebook_version": "1.2",
+        "themes_version": "1.3"
+      },
+      "classification": {
+        "status": "complete",
+        "run_id": "RUN-2026-01",
+        "rules_version": "0.3",
+        "taxonomy_version": "1.1",
+        "classified_at": "2026-10-30",
+        "mechanisms_version": "1.0"
       }
     }
   ]
