@@ -1,11 +1,11 @@
 # Run record: RUN-2026-02
 
-Status: **G6b passed (GATE-0028), stage 12: G7 package prepared (6 November 2026), awaiting Sofia's decisions**
+Status: **G7 passed (GATE-0029), stage 13: closing the run (started 6 November 2026)**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-02 |
-| Current stage | 12 Outputs: G7 package prepared 2026-11-06 (`review/RUN-2026-02/G7_outputs.xlsx`, `G7_decisions.csv`; outputs in `outputs/RUN-2026-02/`), awaiting Sofia's decisions |
+| Current stage | 13 Close the run (started 2026-11-06 after G7, GATE-0029) |
 | Purpose | First country run of the controlled scaling phase (decisions E19 and E20, `runs/rollout_plan.md`). It applies the method validated in the North Macedonia alpha (RUN-2026-01) to Moldova, as a diagnostic covering the chain from EU requirement to priority, with a comparator step for the issues chosen at G6. It is also the first test of the shared multi-country architecture: what it teaches is reviewed before Montenegro (RUN-2026-03) starts |
 | Target country | Moldova (MDA) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |
@@ -67,3 +67,4 @@ Approved at G0 (GATE-0014):
 - 2026-11-06: G6 passed (GATE-0024). Sofia accepted G6-D01 to G6-D07: all judgements validated; comparator step on RI-TEC-038, RI-FMW-015 and RI-TEC-036.
 - 2026-11-06: G1b passed (GATE-0025); G2b (GATE-0026) and G5b (GATE-0027) under the standing instruction. Six new comparator cases CMP-0010 to CMP-0015; CMP-0008 and CMP-0009 reused. G6b package prepared.
 - 2026-11-06: G6b passed (GATE-0028). Sofia accepted G6b-D01 to G6b-D05; GATE-0026 and GATE-0027 confirmed. Stage 12 started.
+- 2026-11-06: G7 passed (GATE-0029). Sofia signed off the 56 Moldova outputs; draft options stay internal drafts; eight validated rows flagged for re-review.

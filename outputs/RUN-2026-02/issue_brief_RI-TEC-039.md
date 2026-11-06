@@ -1,6 +1,6 @@
 # Issue brief: Public sector websites and apps not accessible to persons with disabilities
 
-RI-TEC-039 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-039 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Public sector websites, mobile applications and other digital public services are not accessible to persons with physical, sensory or intellectual disabilities, and the EU accessibility requirements for them (the Web Accessibility Directive and the European Accessibility Act) are not applied or enforced. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak enforcement or oversight (MEC-04).
 

@@ -1,6 +1,6 @@
 # Issue brief: Electronic identification and trust services law not aligned
 
-RI-TEC-025 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-025 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The law on electronic identification and trust services is not fully aligned with eIDAS and the European Digital Identity Regulation, including the Digital Identity Wallet, and implementing rules are pending. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Missing implementing rules (MEC-02).
 

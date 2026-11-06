@@ -1,6 +1,6 @@
 # Issue brief: Core e-government building blocks missing
 
-RI-TEC-004 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-004 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Shared systems that every institution needs to work digitally, such as a single document management system, legal and technical arrangements for electronic archiving, a digital mailbox and shared administrative information systems, are missing or little used. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Coordination failure (MEC-08).
 

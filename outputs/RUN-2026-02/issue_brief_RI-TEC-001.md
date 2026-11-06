@@ -1,6 +1,6 @@
 # Issue brief: Artificial intelligence framework not aligned or supported by structures
 
-RI-TEC-001 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-001 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The rules on artificial intelligence are not aligned with the EU Artificial Intelligence Act, or the enforcement structures and wider capacity needed to apply them and support trustworthy uptake are not in place. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak administrative capacity (MEC-03).
 

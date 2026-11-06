@@ -1,6 +1,6 @@
 # Issue brief: Not ready to connect to other EU sectoral information systems
 
-RI-TEC-032 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-032 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Systems in other sectors are not yet ready to interconnect with EU information systems, such as the business registers interconnection system, the Internal Market Information System, the civil protection system, EU taxation systems and the own resources reporting system. **Problem mechanisms:** Weak administrative capacity (MEC-03); Legal or regulatory gap (MEC-01).
 

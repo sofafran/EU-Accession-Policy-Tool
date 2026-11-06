@@ -1,6 +1,6 @@
 # Issue brief: National e-services portal limited in range and use
 
-RI-TEC-036 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-036 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The national e-services portal offers too few transactional services, is little used, or does not serve all users. **Problem mechanisms:** Weak administrative capacity (MEC-03); Coordination failure (MEC-08); Low uptake of systems already in place (MEC-11).
 

@@ -1,6 +1,6 @@
 # Issue brief: eHealth systems not interoperable or aligned with EU rules
 
-RI-TEC-009 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-009 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Electronic health systems are not interoperable with health insurance data, referrals remain on paper, and the legislation is not aligned with the EU acquis on eHealth. **Problem mechanisms:** Legal or regulatory gap (MEC-01); Weak administrative capacity (MEC-03).
 

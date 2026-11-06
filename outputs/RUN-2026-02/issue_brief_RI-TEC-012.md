@@ -1,6 +1,6 @@
 # Issue brief: Electronic communications regulator independence and market oversight weak
 
-RI-TEC-012 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-012 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** The electronic communications regulator lacks guaranteed independence in appointments and funding and sufficient capacity, and competitive safeguards in a concentrated telecom market are not applied. **Problem mechanisms:** Lack of institutional independence (MEC-05); Weak enforcement or oversight (MEC-04); Political economy and vested interests (MEC-10).
 

@@ -1,6 +1,6 @@
 # Issue brief: Base registers incomplete, unreliable or not digitalised
 
-RI-TEC-015 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-015 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Key registers, above all the population register, hold data of poor quality or are little used, and many institutional, property and intellectual property registers are not yet digitalised or kept up to date. **Problem mechanisms:** Poor transparency or unreliable data (MEC-07); Weak administrative capacity (MEC-03).
 

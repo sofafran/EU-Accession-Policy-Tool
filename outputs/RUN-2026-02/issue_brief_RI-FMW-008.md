@@ -1,6 +1,6 @@
 # Issue brief: Gaps in bilateral social security and healthcare agreements
 
-RI-FMW-008 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-FMW-008 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Bilateral social security coordination and healthcare agreements do not yet cover all EU Member States or all branches, so workers moving before accession lack coordinated protection. **Problem mechanisms:** Legal or regulatory gap (MEC-01).
 

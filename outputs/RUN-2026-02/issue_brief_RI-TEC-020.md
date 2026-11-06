@@ -1,6 +1,6 @@
 # Issue brief: Weak compliance with data protection rules
 
-RI-TEC-020 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-020 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** Data controllers, including public bodies, do not apply data protection law in practice, breaches are frequent and not always reported, awareness is low, and sanctions are rare. **Problem mechanisms:** Weak enforcement or oversight (MEC-04); Weak administrative capacity (MEC-03).
 

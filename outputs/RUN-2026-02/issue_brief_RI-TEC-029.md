@@ -1,6 +1,6 @@
 # Issue brief: Customs IT systems not aligned with EU electronic customs
 
-RI-TEC-029 · Moldova · **Status: Draft, prepared at stage 12 for sign-off at G7.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
+RI-TEC-029 · Moldova · **Status: Validated at G7 (GATE-0029), internal output.** It uses only judgements validated at G6 (GATE-0024) and, for comparator material, G6b (GATE-0028). Sections marked *Agent synthesis* are written by the tool from that material and add no new judgement. Numbers in square brackets refer to the evidence annex at the end.
 
 **Issue definition.** National customs IT systems are not yet aligned with the EU electronic customs strategic plan, and upgrades such as the New Computerised Transit System phases, export and import control systems are delayed or understaffed. **Problem mechanisms:** Weak administrative capacity (MEC-03); Legal or regulatory gap (MEC-01).
 
