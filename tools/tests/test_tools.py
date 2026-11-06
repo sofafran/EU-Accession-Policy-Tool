@@ -861,7 +861,7 @@ def main():
 
         def norm_ref(t):
             return "".join(l for l in t.splitlines(keepends=True) if not (l.startswith("| RI-") and l.split(" | ")[0][2:] in later_issues and "| 0 items, 0 sources" in l))
-        diff = [n for n in same if n not in pending and (not (built / n).exists() or norm_built((built / n).read_text(encoding="utf-8")) != norm_ref((ref / n).read_text(encoding="utf-8")))]
+        diff = [n for n in same if n not in pending and (not (built / n).exists() or norm_built((built / n).read_text(encoding="utf-8")) != norm_built(norm_ref((ref / n).read_text(encoding="utf-8"))))]
         import build_outputs as bo_mod
         run_tv = max((r["taxonomy_version"] for r in csv.DictReader((bo / "judgements" / "judgements.csv").open(encoding="utf-8")) if r["run_id"] == "RUN-2026-01"), key=bo_mod.vkey)
         newer_issues = [r["issue_id"] for r in csv.DictReader((bo / "taxonomy" / "reform_issues.csv").open(encoding="utf-8"))
