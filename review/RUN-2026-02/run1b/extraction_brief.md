@@ -1,0 +1,17 @@
+# Comparator extraction and classification brief, RUN-2026-02 (Moldova), P4 step 4
+
+Written by the lead agent on 6 November 2026 (PC-10: checked against extraction rules 0.6 and classification rules 0.4).
+
+Read first: `rules/extraction_rules.md` (0.6, in full), `rules/classification_rules.md` (0.4: section 1 on comparator items, sections 2 to 6), `schemas/data_dictionary.md` and `schemas/evidence_item.schema.json` (evidence schema 1.3, several runs per file, E21), `procedures/P4_comparator_pilot.md` step 4, and the run record `runs/RUN-2026-02/run_record.md`. For the shape of comparator items look at the RUN-2026-01 comparator items in `evidence/MNE/MNE-EU-2025-001.json` (in `earlier_extractions` and their items) and at the alpha's run 1b material in `review/RUN-2026-01/run1b/`.
+
+Scope: comparator evidence for three Moldova issues only (LIM-0048), as defined in `taxonomy/reform_issues.csv`:
+- RI-FMW-015 Domestic preconditions for the European Health Insurance Card (national health insurance card, integrated health information system, EHIC preparation before accession, feasibility studies, the Commission's EHIC wording);
+- RI-TEC-038 Electronic public procurement system outdated and to be replaced (launch, replacement, functions, modules, use and assessment of the e-procurement system);
+- RI-TEC-036 National e-services portal limited in range and use (only from the 2026 reports of Albania and Montenegro, to update cases CMP-0008 and CMP-0009).
+Extract only claims that bear on these issues; nothing else from the document. Time window: 2020 onwards, except Croatian documents from 2011 on RI-FMW-015 (LIM-0049), each claim flagged `out_of_window` with the reason.
+
+Each file: if the source already has an evidence file, `tools/start_extraction.py` has been run for RUN-2026-02 (its earlier items stay untouched; never edit, renumber or delete them); add new items with the next free item IDs (`tools/next_id.py`). If no evidence file exists, create one following the schema, with the extraction record for run RUN-2026-02, role `comparator`, rules version 0.6, theme list 1.4, taxonomy 1.3, mechanism list 1.0. Quote exactly with page or section (rule 4), English translation in `translation_en` with `machine_translated` true for non-English text (capped at Medium, LIM-0050), no inference (rule 5). Then run `python3 tools/verify_quotes.py evidence/<CC>/<file>.json --report-dir review/RUN-2026-02/quote_checks` until every quote verifies.
+
+Pass 2 for your items: `chain_link` `comparator_evidence`, with the link the item would have had for its own country in `classification_note`; `reform_issue_ids` one of the three issues; mechanisms only where the item supports them; interventions: link to existing records in `entities/interventions.csv` (INT-<CC>-NNNN; for new comparator interventions, write proposals to `review/RUN-2026-02/run1b/interventions_proposed_<group>.csv` with columns name,country,intervention_type,first_item_id,notes, and leave intervention_ids empty; the lead agent assigns IDs). `classification_status` auto, or queued_unmatched with a note where an item fits no issue (do not write to the queue files). Set the file's classification record to run RUN-2026-02, rules 0.4, taxonomy 1.3.
+
+Write nothing outside your evidence files, the quote check reports and your proposals file. Run `tools/validate_data.py` at the end (0 errors). Return per source: items added, by issue, and anything notable for the cases (what was reformed, when, results stated, conflicts).
