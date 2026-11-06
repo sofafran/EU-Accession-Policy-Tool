@@ -1,0 +1,45 @@
+# Fact pack RI-TEC-010: Digital communication with courts and justice system connections incomplete
+
+Digital communication with courts is incomplete, or justice system IT does not connect between institutions.
+
+## Validated issue judgements
+
+- direction_of_travel: persistent (validated). The chapter scale was not decisive, since this issue concerns only part of Chapter 23. The 2024 report says justice digitalisation needs to improve, the 2025 report that the new Agency for Digitalisation in Justice needs faster operationalisation, and the 2026 report finds the Agency's capacity extremely limited and the use of IT tools across the justice system uneven and partial. The August 2026 amendments promoting digitalisation of some judicial procedures are recorded but not yet assessed. Items: MDA-EU-2024-001-0043;MDA-EU-2025-001-0048;MDA-EU-2025-001-0049;MDA-EU-2026-012-0045;MDA-EU-2026-012-0046;MDA-EU-2026-012-0047
+- unresolved_gap: open (validated). The 2026 report calls for further legal improvements and a decisive strengthening of the Agency, and a 2026 key recommendation asks for substantial progress on an integrated electronic case management system for law enforcement and prosecution bodies. The Agency exists but has extremely limited capacity, the August 2026 amendments are adopted, and the E-File application, which the Reform Agenda requires in all first instance courts by December 2027, is still planned. What remains is digital communication with courts in practice and connected IT across justice institutions, run by an agency able to deliver it. Items: MDA-EU-2026-012-0048;MDA-EU-2026-012-0003;MDA-EU-2026-012-0045;MDA-EU-2026-012-0047;MDA-EU-2025-002-0051
+- priority: High (validated). Digital case filing in courts is a Reform Agenda payment condition (E-File in all first instance courts by December 2027), an integrated case management system for law enforcement and prosecution is a 2026 key recommendation, and justice digitalisation is raised in each report from 2024 to 2026. Both requirements are open and central to digital justice. Items: MDA-EU-2025-002-0051;MDA-EU-2026-012-0003;MDA-EU-2024-001-0043;MDA-EU-2025-001-0049;MDA-EU-2026-012-0048
+- tractability: Low (validated). Progress needs courts, prosecution and law enforcement bodies to adopt connected systems, and the agency set up to deliver this has extremely limited capacity because of persistent staffing problems in 2026. Past progress is limited to setting up the agency in 2025 and the August 2026 amendments, and IT use remains uneven. Items: MDA-EU-2026-012-0003;MDA-EU-2026-012-0045;MDA-EU-2026-012-0046;MDA-EU-2025-001-0048;MDA-EU-2026-012-0047
+
+## Interventions and validated implementation status
+
+- INT-MDA-0007 National Digital Transformation Strategy 2023-2030: implemented. The Government adopted the Strategy in September 2023, as the Commission confirms. The Commission reported in 2025 that the Government continued to implement it, with tangible progress on all key performance indicators, and the Government's 2025 progress report counts nine actions completed. Implementation of the Strategy as a whole says nothing yet about its results, which depend on its individual measures.
+- INT-MDA-0048 Agency for Digitalisation in Justice and Judicial Administration: implemented. The Commission confirms that the Agency was set up on 1 January 2025 with a mandate for justice sector information systems. It asked in 2025 for its operationalisation to be sped up and found in 2026 that its capacity remains extremely limited because of staffing problems.
+- INT-MDA-0245 Draft law amending certain normative acts on the digitalisation of judicial cooperation: adopted. The draft law on the digitalisation of judicial cooperation is listed in the National Accession Programme, and the Commission reports that normative amendments promoting the digitalisation of certain judicial procedures were made in August 2026. The Commission does not name the act, so the match with this draft is probable but not confirmed.
+- INT-MDA-0282 E-File application: proposed. The Reform Agenda sets a December 2027 target for the E-File application to be operational in all first instance courts with at least 15% of cases processed through it. No source in these items reports progress.
+- INT-MDA-0301 Electronic case management system for judges (integrated case management system, ICMS): insufficient_evidence. The only linked item is a Reform Agenda target for the integrated case management system to cover all cases and connect with seven information systems. It shows that the target is not yet met but not the system's current state.
+
+## Outcomes
+
+
+## Confirmed conflicts
+
+
+## EU requirement items from Commission documents (summary only)
+
+- MDA-EU-2024-001-0043 | 2024-10 | recommendation | Digitalisation of the justice system needs to be improved.
+- MDA-EU-2025-001-0049 | 2025-11 | recommendation | The operationalisation of the justice digitalisation agency needs speeding up.
+- MDA-EU-2026-012-0003 | 2026-11 | recommendation | Moldova should substantially advance an integrated electronic case management system for law enforcement and prosecution, to improve cooperation and speed proceedings.
+- MDA-EU-2026-012-0045 | 2026-11 | finding | The justice digitalisation agency, set up in January 2025, has extremely limited capacity because of persistent staffing problems.
+- MDA-EU-2026-012-0046 | 2026-11 | finding | Use of IT tools across the justice system remains uneven and partial.
+- MDA-EU-2026-012-0048 | 2026-11 | recommendation | Further legal improvements and a decisive reinforcement of the justice digitalisation agency's mandate and capacity are needed.
+
+## Items relied on by the validated judgements (summary, then quote); 10 in-scope items in all
+
+- MDA-EU-2024-001-0043 | eu_requirement | 2024-10 | conf High | rel High | Digitalisation of the justice system needs to be improved. | "Digitalisation of the justice system needs to be improved."
+- MDA-EU-2025-001-0049 | eu_requirement | 2025-11 | conf High | rel High | The operationalisation of the justice digitalisation agency needs speeding up. | "The operationalisation of the Agency needs speeding up."
+- MDA-EU-2026-012-0003 | eu_requirement | 2026-11 | conf High | rel High | Moldova should substantially advance an integrated electronic case management system for law enforcement and prosecution, to improve cooperation and speed proceedings. | "achieve substantial progress towards developing an integrated electronic case management system for law enforcement agencies and prosecution bodies, with a view to improving procedural cooperation and enhancing transparency, effectiveness and speed in criminal proceedings;"
+- MDA-EU-2026-012-0045 | eu_requirement | 2026-11 | conf High | rel High | The justice digitalisation agency, set up in January 2025, has extremely limited capacity because of persistent staffing problems. | "The Agency for Digitalisation in Justice and Judicial Administration (ADJAJ), officially set up in January 2025 has an extremely limited capacity due to persistent staffing concerns."
+- MDA-EU-2026-012-0046 | eu_requirement | 2026-11 | conf High | rel High | Use of IT tools across the justice system remains uneven and partial. | "The level of use of IT tools across the justice system remains uneven and partial."
+- MDA-EU-2026-012-0048 | eu_requirement | 2026-11 | conf High | rel High | Further legal improvements and a decisive reinforcement of the justice digitalisation agency's mandate and capacity are needed. | "Further legal framework improvements are needed, together with a decisive reinforcement of ADJAJ mandate and institutional capacity."
+- MDA-EU-2025-002-0051 | country_response | 2025-05 | conf High | rel High | Step: by December 2027, the E-File application runs in all first instance courts and the integrated case management system covers all cases. | "To increase transparency and efficiency of the justice sector, the E -File application is operational in all first instance courts and at least 15% of all cases submitted and processed through this applica tion. The integrated case management system (ICMS) is operational with 100% of all cases covered and all data accessible in electronic form and connection with 7 information systems is ensured. "
+- MDA-EU-2025-001-0048 | country_response | 2025-11 | conf High | rel High | An Agency for Digitalisation in Justice was set up on 1 January 2025 to develop integrated, interoperable justice information systems. | "A new Agency for Digitalisation in Justice and Judicial Administration was set up on 1 January 2025 and has a mandate to ensure the development of an integrated legal information system, and the development, administration and interoperability of information systems in the justice sector."
+- MDA-EU-2026-012-0047 | country_response | 2026-11 | conf High | rel High | Amendments in August 2026 promoted the digitalisation of certain judicial procedures. | "In August 2026, normative amendments promoted the digitalisation of certain judicial procedures."
