@@ -13,8 +13,12 @@
     "notes": "Whole page read (page 1). This run's items: MDA-GOV-2025-001-0019 to MDA-GOV-2025-001-0047 (29 items; all theme, TECH-DGOV mainly, with TECH-DIGI, TECH-EID and TECH-INTEROP where the platforms named are identity, signature or interoperability platforms). Alpha items 0001 to 0018 are unchanged; their passages are quoted again here. Agency release on the close of its own World Bank project, reporting speeches by the agency director, the Deputy Prime Minister, the Secretary General of the Government and a World Bank Group officer (all reported_view). Left out: the director's statement that 2025 marks 15 years since the agency was founded; the global context figure (70% of the world's governments); rhetorical statements with no claim (\"The state is online\", \"everything that can be done remotely should be done remotely\", \"we continue to modernize\"); the eTransformation Project 2011 to 2016 (mainly before the window, background only); that EVO can be downloaded free. Not reconciled on the page, for the analyst: 303 of 648 fully digitalised services against \"over 300\" services online; \"over 300 digital platforms\" against 23 platforms and systems in the portfolio. Doubtful (theme_doubtful): the seven new platforms (TECH-EID for MPower), the CUPS service centres and the annual surveys. No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 1 items added (review/RUN-2026-02/second_pass/MDA-GOV-2025-001.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -1262,12 +1266,14 @@
       "flags": [],
       "extraction_note": "The agency's own assessment of its field, with no figure.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Positive self-assessment by the agency, no figure"
       }
     },
     {
@@ -1323,12 +1329,14 @@
       "flags": [],
       "extraction_note": "Not reconciled with \"over 300 digital public services\" in the speeches below or with MDA-GOV-2026-001 (445 of 636 accessible digitally, 2026). Same passage as alpha item MDA-GOV-2025-001-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Fully digitalised services against all services; not reconciled with MDA-GOV-2026-001 (pass 1 note)"
       }
     },
     {
@@ -1393,12 +1401,16 @@
       "flags": [],
       "extraction_note": "Conclusion of the project; event date from the director's statement that 2025 marks the conclusion, and the release dates the project 2018 to 2025. Same passage as alpha item MDA-GOV-2025-001-0009.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Conclusion of the project behind the reported results"
       }
     },
     {
@@ -1456,12 +1468,15 @@
       ],
       "extraction_note": "Speech reported by the agency. \"Over 300 digital platforms\" is not reconciled with \"23 platforms and systems in its portfolio\" later in the release; for the analyst. MEGA is the name printed for the agency here.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Speech: counts of services and platforms; not reconciled with the 23 platforms later in the release"
       }
     },
     {
@@ -1517,12 +1532,16 @@
       "flags": [],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". An output, not a measure of use. Same passage as alpha item MDA-GOV-2025-001-0010.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Output count the source links to the named project (as alpha item -0008)"
       }
     },
     {
@@ -1582,12 +1601,25 @@
       ],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". TECH-INTEROP for the Semantic Catalog for MConnect; TECH-EID doubtful for MPower (an electronic power of attorney platform is not described here). Same passage as alpha item MDA-GOV-2025-001-0011.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-028",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025",
+          "INT-MDA-0017",
+          "INT-MDA-0030",
+          "INT-MDA-0321",
+          "INT-MDA-0021",
+          "INT-MDA-0033",
+          "INT-MDA-0034",
+          "INT-MDA-0018"
+        ],
+        "classification_status": "auto",
+        "classification_note": "New shared platforms (delivery, documents, semantic catalogue for MConnect, electronic powers of attorney); e-Consulate and e-APL are sector services; theme_doubtful resolved"
       }
     },
     {
@@ -1645,12 +1677,18 @@
       "flags": [],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". TECH-EID for MPass and MSign (authentication and electronic signature), TECH-INTEROP for MConnect. Ten platforms are named for 15 updates. Same passage as alpha item MDA-GOV-2025-001-0012.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-028",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0014"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Updates to shared platforms, as MDA-GOV-2023-001-0013; portals also bear on RI-TEC-036; MCloud fits no issue"
       }
     },
     {
@@ -1706,12 +1744,16 @@
       "flags": [],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". The count; the time reduction is a separate outcome item sharing the quote. Same passage as alpha item MDA-GOV-2025-001-0008.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Count of re-engineered services listed among the named project's results; same quote as outcome item -0027"
       }
     },
     {
@@ -1767,12 +1809,16 @@
       "flags": [],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". Which services and how measured are not stated. Same passage as alpha item MDA-GOV-2025-001-0005.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Time reduction listed among the project's results; which services and how measured not stated; as alpha item -0005"
       }
     },
     {
@@ -1830,12 +1876,16 @@
       ],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". Physical service centres; whether they meet the materiality test for digital government depends on their role in assisted access to e-services, which this release does not describe. Same passage as alpha item MDA-GOV-2025-001-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0031"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Assisted access points to e-services, as MDA-EU-2024-001-0039; theme_doubtful resolved"
       }
     },
     {
@@ -1893,12 +1943,16 @@
       ],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". A monitoring instrument for the project; the 2023 round is MDA-GOV-2024-002. Doubtful as the surveys cover public service delivery generally.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0001"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Monitoring instrument for the project; theme_doubtful resolved"
       }
     },
     {
@@ -1954,12 +2008,16 @@
       "flags": [],
       "extraction_note": "Listed among the \"most important results of the Modernization of Government Services project implemented between 2018 and 2025\". Method not stated. Same passage as alpha item MDA-GOV-2025-001-0006.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Savings listed among the project's results; method not stated; as alpha item -0006"
       }
     },
     {
@@ -2017,12 +2075,14 @@
       ],
       "extraction_note": "Speech reported by the agency; no comparison is given for \"regional leader\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Speech claim; no comparison given for regional leader"
       }
     },
     {
@@ -2085,12 +2145,16 @@
       ],
       "extraction_note": "Same passage as alpha item MDA-GOV-2025-001-0014.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The app as described by the minister; as alpha item -0014"
       }
     },
     {
@@ -2149,12 +2213,16 @@
       ],
       "extraction_note": "Targets; proposed (M1). Same passage as alpha item MDA-GOV-2025-001-0013.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0671"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Stated targets; as alpha item -0013"
       }
     },
     {
@@ -2210,12 +2278,14 @@
       "flags": [],
       "extraction_note": "A stated wish, not use. Survey year not given; not reconciled with the 56% preference in the 2023 survey (MDA-GOV-2024-002). Same passage as alpha item MDA-GOV-2025-001-0007.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Stated wish, not use; as alpha item -0007"
       }
     },
     {
@@ -2273,12 +2343,14 @@
       ],
       "extraction_note": "Speech reported by the agency; which services and compared with when are not stated. Same passage as alpha item MDA-GOV-2025-001-0015.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "No named intervention; method not stated; as alpha item -0015"
       }
     },
     {
@@ -2336,12 +2408,16 @@
       ],
       "extraction_note": "Speech by a World Bank Group officer reported by the agency, about a project the Bank financed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "World Bank officer on the project the Bank financed (reported view)"
       }
     },
     {
@@ -2399,12 +2475,16 @@
       ],
       "extraction_note": "Speech reported by the agency; base and survey not given. Same passage as alpha item MDA-GOV-2025-001-0002.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Change in access reported at the close of the named project; base and survey not given; as alpha item -0002"
       }
     },
     {
@@ -2462,12 +2542,16 @@
       ],
       "extraction_note": "Speech reported by the agency; \"vulnerable\" not defined. Same passage as alpha item MDA-GOV-2025-001-0003.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Change in access by vulnerable people; as alpha item -0003"
       }
     },
     {
@@ -2525,12 +2609,14 @@
       ],
       "extraction_note": "The speaker's conclusion from the two figures before it.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Speaker's conclusion on demand from the figures before it"
       }
     },
     {
@@ -2586,12 +2672,19 @@
       "flags": [],
       "extraction_note": "Agency claim; method not stated. Same passage as alpha item MDA-GOV-2025-001-0016.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0020",
+          "INT-MDA-0025",
+          "INT-MDA-0036"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Saving the source links to MPay and the two projects; as alpha item -0016"
       }
     },
     {
@@ -2648,12 +2741,14 @@
       "flags": [],
       "extraction_note": "The agency describing its own role (M2: what an institution does is a finding).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "The agency describing its own role (M2)"
       }
     },
     {
@@ -2709,12 +2804,14 @@
       "flags": [],
       "extraction_note": "No figure; not reconciled with the agency's own count that fewer than half of services are fully digitalised.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Claim with no figure; not reconciled with the agency's count of fully digitalised services"
       }
     },
     {
@@ -2772,12 +2869,16 @@
       ],
       "extraction_note": "The agency's own claim about its own product, with no figure; could also be read as a finding. Same passage as alpha item MDA-GOV-2025-001-0017.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Agency claim about its own app, no figure; as alpha item -0017"
       }
     },
     {
@@ -2835,12 +2936,18 @@
       "flags": [],
       "extraction_note": "Plans; proposed (M1). Four plans of the same type in one sentence, kept as one item. TECH-EID for the European identity wallet. Same passage as alpha item MDA-GOV-2025-001-0018.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0049",
+          "INT-MDA-0531"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Plans: centralising access under EVO and the European identity wallet"
       }
     },
     {
@@ -2902,12 +3009,14 @@
       "flags": [],
       "extraction_note": "M2: the designation of the responsible institution. Founded in 2010, before the window; the claim is about its current responsibility, so out_of_window is not flagged.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Designation of the responsible institution (M2)"
       }
     },
     {
@@ -2964,12 +3073,19 @@
       "flags": [],
       "extraction_note": "TECH-EID for EVOSign. Not reconciled with \"over 300 digital platforms\" in the director's speech.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008",
+          "INT-MDA-0009",
+          "INT-MDA-0472"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Count of the agency's platforms and systems; not reconciled with the speech figure"
       }
     },
     {
@@ -3027,12 +3143,18 @@
       "flags": [],
       "extraction_note": "M2: what the institution does is a finding. Shares the quote with the metric item for the count of 23.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008",
+          "INT-MDA-0009"
+        ],
+        "classification_status": "auto",
+        "classification_note": "What the agency does (M2); shares the quote with metric item -0046"
       }
     },
     {
@@ -3090,12 +3212,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Speech reported by the agency. The next sentence (\"The state is online.\") is rhetorical and not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Speech claim, no figure"
       }
     }
   ],

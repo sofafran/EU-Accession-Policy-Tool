@@ -13,8 +13,12 @@
     "notes": "The article read in full (page 1, no section heading of its own in the converted text; location section left empty as in the alpha items). This run's items: MDA-GOV-2026-001-0009 to MDA-GOV-2026-001-0016 (8 items: 5 metrics, 1 finding, 2 interventions; all theme, TECH-DGOV). Alpha items 0001 to 0008 are unchanged; their passages are quoted again here. Left out: the general sentence in the AGE quotation on what digitalisation means (\"less time wasted, fewer trips and lower costs\"); site navigation, subscription boxes and sidebar headlines, which are not claims of this article. Lead for the analyst, not evidence: sidebar headlines on the same page mention cyberattacks on digital public services and online permit services restored after cyberattacks (October 2026); they were not read as articles and are not extracted. State news agency report of AGE data; the agency's own release was not found, so the definitions of \"digitalized\" and \"request\" cannot be checked. The 445 of 636 figure is not reconciled with MDA-GOV-2025-001 (303 of 648 fully digitalised). No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 0 items added (review/RUN-2026-02/second_pass/MDA-GOV-2026-001.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -584,12 +588,14 @@
       "flags": [],
       "extraction_note": "Headline figure; not itself attributed, the article draws on AGE data. \"Accessed digitally\" is not defined. Compare MDA-GOV-2025-001 (303 of 648 fully digitalised, April 2025): different count and denominator, not reconciled. Same passage as alpha item MDA-GOV-2026-001-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Headline count; accessed digitally not defined; compare MDA-GOV-2025-001-0020"
       }
     },
     {
@@ -645,12 +651,14 @@
       "flags": [],
       "extraction_note": "Same passage as alpha item MDA-GOV-2026-001-0002.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Degree of digitalisation by user group; as alpha item -0002"
       }
     },
     {
@@ -708,12 +716,14 @@
       ],
       "extraction_note": "Same passage as alpha item MDA-GOV-2026-001-0008.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Reported claim on use, unverified in this source; as alpha item -0008"
       }
     },
     {
@@ -771,12 +781,14 @@
       ],
       "extraction_note": "Attributed to AGE by the sentence before. A share of requests, not of people or services; which services are counted is not stated. Same passage as alpha item MDA-GOV-2026-001-0003.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Share of requests made online; which services counted not stated; as alpha item -0003"
       }
     },
     {
@@ -834,12 +846,14 @@
       ],
       "extraction_note": "No named intervention, so a metric, not an outcome. Method not stated. Same passage as alpha item MDA-GOV-2026-001-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Savings with no named intervention; as alpha item -0004"
       }
     },
     {
@@ -902,12 +916,16 @@
       ],
       "extraction_note": "Part of a longer quotation from AGE; cut to the claim. Listing on the portal is not online delivery. Same passage as alpha item MDA-GOV-2026-001-0005.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The single portal lists all services; listing is not online delivery; as alpha item -0005"
       }
     },
     {
@@ -963,12 +981,14 @@
       "flags": [],
       "extraction_note": "Same passage as alpha item MDA-GOV-2026-001-0006.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Institutions offering all services online; as alpha item -0006"
       }
     },
     {
@@ -1024,12 +1044,16 @@
       "flags": [],
       "extraction_note": "Objective; proposed (M1). Same passage as alpha item MDA-GOV-2026-001-0007.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0671"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Stated target; as alpha item -0007"
       }
     }
   ],

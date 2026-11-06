@@ -13,8 +13,12 @@
     "notes": "Romanian only: stated_text is the Romanian text as converted, translation_en is a machine translation by the extracting agent, machine_translated is true, evidence confidence capped at Medium. Read in full: pages 4 to 32 (summary, general presentation, methodology and findings 4.1 to 4.13, conclusion); pages 1 to 3 (cover, contents, acronyms) read for structure. Annexes (pages 33 to 67) keyword-screened with the brief's term list (MConnect, interoperab*, schimb de date, securit*, cibernetic, date cu caracter personal, MPass, MSign, portal, registr*, automatiz*, străin*, lucrător*, migra*, EURES, securitate socială, CNAS and others): they set out per entity the documentation, accounting and use status of each system, restating the findings in the body for sector systems, and are not extracted (rules section 5). This run's items: MDA-GOV-2024-001-0012 to MDA-GOV-2024-001-0107 (96 items; all theme). Alpha items 0001 to 0011 are unchanged; their passages are quoted again here where in scope. Text-file page numbers match the printed page numbers. Scope applied: the report is the Court's follow-up (Decision 52 of 30 September 2024) of its 2020 performance audit of public sector information systems (Decision 82 of 28 December 2020) and related IT recommendations (Decision 45/2022 and others). Extracted: findings, barriers, recommendations, implementation status as stated by the Court, interventions and outcomes on interoperability and data exchange (4.6 human resource systems, MConnect), registers (4.9 RRSIS), e-government systems and services (4.7 SIA GEAP, e-Vinieta, e-Voting), the ICT regulatory framework and digitalisation methodology (4.8), monitoring of state systems (4.9), and information security of state systems (2.1). Tagged theme_doubtful (state information systems governance rather than a digital service, interoperability or data issue): the overall recommendation counts and conclusion, the summary causes, non-functioning systems (4.3), performance indicators for maintenance (4.10), software ownership (4.11) and ICT procurement coordination (4.13). Left out as purely financial or sector matter: accounting registration of systems (4.2 and 4.12) and MF/CTIF accounting training (4.4); the hospital information system SIAMS (4.5, a back-office health system, including the 2024 maintenance procurement in 4.11); customs systems written off (4.3); invoice and contract details of the public finance system (4.10); the budget and procurement plan totals coordinated by AGE and AGE procurement savings (4.13); the table of integrated system concepts and the Medical Register (4.8); methodology and mandate (section III). No Chapter 2 content: the migration and labour-market information systems named in the annexes (SI Migrație, ImServ, SIA EMFM) appear only in documentation and use tables of back-office systems. For the analyst: the recommendation counts are not reconciled (29, 40 and 5 of 74 on page 5; 39%, 57% and 7% on page 32, summing to 103%, with 54% in Figure 5; and 44 or 45 systems taken into accounts). The converted text splits many words (\"a u cauzat\", \"evi dențe\") and runs footnote markers into words (\"AGE14\", \"201859\"); quotes keep the text as converted and are flagged possible_misread. Event dates of Decision 45/2022 recommendations come from footnote 7. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 52 items added (review/RUN-2026-02/second_pass/MDA-GOV-2024-001.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -848,12 +852,12 @@
       ],
       "extraction_note": "Overall finding of the follow-up, which covers accounting and procurement as well as information systems themselves. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Overall finding of the follow-up, which also covers accounting and procurement; not specific to an issue (as alpha item -0001); theme_doubtful"
       }
     },
     {
@@ -912,12 +916,12 @@
       ],
       "extraction_note": "Covers all recommendations of the follow-up, including accounting ones. The conclusion (page 32) gives 39%, 57% and 7%, which sum to 103% and differ from the figure there (54%); not reconciled. Same passage as alpha item MDA-GOV-2024-001-0001. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Counts all recommendations of the follow-up, including accounting ones (as alpha item -0001); theme_doubtful; figures not reconciled with page 32"
       }
     },
     {
@@ -974,12 +978,17 @@
       "flags": [],
       "extraction_note": "Listed among the partial benefits of implementing the recommendations. The cross-reference says 4.10; the RRSIS is in section 4.9. Detailed at pages 22 to 24, extracted there too.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Register of state information systems; nearest fits, neither exact, as MDA-CSO-2026-001-0064"
       }
     },
     {
@@ -1037,12 +1046,16 @@
       ],
       "extraction_note": "One of the main causes of the relatively low implementation of the recommendations, as listed by the Court. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cause of slow implementation of the Court's recommendations on state information systems; state IS governance read under RI-TEC-002 (coordination and monitoring of digital transformation); theme_doubtful resolved as in scope; general to the follow-up, moderate fit"
       }
     },
     {
@@ -1100,12 +1113,16 @@
       ],
       "extraction_note": "One of the main causes of the relatively low implementation of the recommendations, as listed by the Court. Same passage as alpha item MDA-GOV-2024-001-0002. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cause of slow implementation of the recommendations on state information systems; alpha item -0002 was out only against the comparator case issues; theme_doubtful resolved; moderate fit"
       }
     },
     {
@@ -1162,12 +1179,18 @@
       "flags": [],
       "extraction_note": "One of the main causes of the relatively low implementation of the recommendations, as listed by the Court.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07",
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cause: weak monitoring of how state information systems are recorded (RRSIS)"
       }
     },
     {
@@ -1225,12 +1248,17 @@
       ],
       "extraction_note": "One of the main causes of the relatively low implementation of the recommendations, as listed by the Court. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08",
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cause: reorganisations and staff turnover delaying action on state information systems; theme_doubtful resolved; moderate fit"
       }
     },
     {
@@ -1288,12 +1316,16 @@
       ],
       "extraction_note": "One of the main causes of the relatively low implementation of the recommendations, as listed by the Court. Same passage as alpha item MDA-GOV-2024-001-0003. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Cause: low institutional capacity of the responsible authorities (G5-D05 of RUN-2026-01 maps public sector IT capacity to RI-TEC-002); alpha item -0003 was out only against the case issues"
       }
     },
     {
@@ -1350,12 +1382,16 @@
       "flags": [],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "State information systems implemented but not all functional or used; government-wide finding, not one sector's system"
       }
     },
     {
@@ -1412,12 +1448,17 @@
       "flags": [],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "No sectoral IT strategies linked to the national ICT strategy, leading to parallel systems"
       }
     },
     {
@@ -1476,12 +1517,17 @@
       ],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). \"evi dențe\" split by the conversion. Same passage as alpha item MDA-GOV-2024-001-0011.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08",
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "No central record of information systems and weak coordination of their development; as alpha item -0011 the problem bears on data exchange, but coordination is the subject here"
       }
     },
     {
@@ -1540,12 +1586,23 @@
       ],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). \"a u cauzat\" split by the conversion. Same passage as alpha item MDA-GOV-2024-001-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-01",
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0014",
+          "INT-MDA-0015",
+          "INT-MDA-0019",
+          "INT-MDA-0022"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Systems built without alignment with the shared government platforms; as alpha item -0004 (RI-TEC-028); MEC-01 for deficiencies in the national ICT rules"
       }
     },
     {
@@ -1601,12 +1658,14 @@
       "flags": [],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). Same passage as alpha item MDA-GOV-2024-001-0005.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Systems that do not exchange information; as alpha item -0005"
       }
     },
     {
@@ -1665,12 +1724,17 @@
       ],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). Runs over the page break; footnote 8 and the page number are left out. \"public e\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Low capacity to manage systems leads to outsourcing and data security risks"
       }
     },
     {
@@ -1729,12 +1793,16 @@
       ],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). \"p restate\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "No conformity assessment of systems and shortage of IT specialists in public authorities (G5-D05 of RUN-2026-01: IT staffing to RI-TEC-002)"
       }
     },
     {
@@ -1790,12 +1858,16 @@
       "flags": [],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "No information security management system in public institutions"
       }
     },
     {
@@ -1852,12 +1924,14 @@
       "flags": [],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). Similar wording in the summary at page 5, not extracted there (M3).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Progress on state information systems without full impact"
       }
     },
     {
@@ -1916,12 +1990,18 @@
       ],
       "extraction_note": "The Court restating the findings of its 2020 audit (Decision 82 of 28 December 2020). \"st at\" split by the conversion. One sentence listing several causes of the same type.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02",
+          "MEC-03",
+          "MEC-09"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Systemic causes of state information system deficiencies (ICT rules, capacity and funding mismatch, monitoring)"
       }
     },
     {
@@ -1980,12 +2060,12 @@
       ],
       "extraction_note": "Covers all recommendations, including accounting ones. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Share of all recommendations partly implemented, including accounting ones; not specific to an issue; theme_doubtful"
       }
     },
     {
@@ -2044,12 +2124,16 @@
       ],
       "extraction_note": "Concepts and regulations are the legal basis required before a state system is put into operation (page 10). \"v erificările\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Most state information systems lack the required concept and regulation (their legal basis); state IS governance read under RI-TEC-002"
       }
     },
     {
@@ -2111,12 +2195,16 @@
       "flags": [],
       "extraction_note": "Recommendation of Court Decision 82 of 28 December 2020, restated in this follow-up; event date is the decision date. The footnote marker 11 sits in the converted text.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Court recommendation on documenting state information systems"
       }
     },
     {
@@ -2173,12 +2261,14 @@
       "flags": [],
       "extraction_note": "One of four corrective actions listed; the others are amendments to 10 concepts and 8 regulations, and draft Government decisions for 4 concepts and 4 regulations.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Corrective action under recommendation 2"
       }
     },
     {
@@ -2235,12 +2325,14 @@
       "flags": [],
       "extraction_note": "The conclusion (page 31) speaks of 15 new systems documented; not reconciled.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Corrective action under recommendation 2; count differs from page 31 (pass 1 note)"
       }
     },
     {
@@ -2302,12 +2394,14 @@
       "flags": [],
       "extraction_note": "Implementation status of the recommendation as stated by the Court.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Court's rating of how recommendation 2 was applied"
       }
     },
     {
@@ -2366,12 +2460,16 @@
       ],
       "extraction_note": "\"ca rențele\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Documentation problems persist, partly from gaps in the ICT methodological framework"
       }
     },
     {
@@ -2428,12 +2526,14 @@
       "flags": [],
       "extraction_note": "The Court's statement of impact. The conclusion (page 31) gives 26 of 54 plus 15 new systems.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Impact the Court links to recommendation 2"
       }
     },
     {
@@ -2493,12 +2593,16 @@
       ],
       "extraction_note": "From a sample. \"ut ilizare\" split by the conversion. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Non-functioning or unused state information systems across a sample of bodies; theme_doubtful resolved as government-wide state IS governance, not one sector's system"
       }
     },
     {
@@ -2594,12 +2698,16 @@
       ],
       "extraction_note": "Recommendation of Court Decision 82 of 28 December 2020, restated in this follow-up; event date is the decision date. Runs over the page break; footnotes 12 to 14 and the page number are left out. \"AGE14\" carries a footnote marker in the converted text. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Recommendation to nine bodies on unused systems; read with -0038 as government-wide; theme_doubtful, moderate fit"
       }
     },
     {
@@ -2658,12 +2766,14 @@
       ],
       "extraction_note": "Implementation status of the recommendation as stated by the Court. Repeated in Annex 5 (page 65), not extracted again. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Implementation count for recommendation 4; theme_doubtful, moderate fit"
       }
     },
     {
@@ -2719,12 +2829,16 @@
       "flags": [],
       "extraction_note": "An online service the public uses. \"17\" at the end is a footnote marker in the converted text (a link to evinieta.gov.md). Annex 5 (page 65) says it was launched on 5 June 2024, over 19 months late.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0292"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Online service the public uses (road-use charge), run by a sector body; outcome the Court links to recommendation 4"
       }
     },
     {
@@ -2781,12 +2895,14 @@
       "flags": [],
       "extraction_note": "Same passage as alpha item MDA-GOV-2024-001-0010.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "HR management systems of public authorities not interconnected; as alpha item -0010"
       }
     },
     {
@@ -2860,12 +2976,16 @@
       "flags": [],
       "extraction_note": "Recommendation of Court Decision 82 of 28 December 2020, restated in this follow-up; event date is the decision date.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Recommendation to interconnect HR systems with the employee register"
       }
     },
     {
@@ -2930,12 +3050,17 @@
       "flags": [],
       "extraction_note": "Part of a sentence that also says SFS held three meetings with CTIF and MF in 2021; that part is not quoted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0155",
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Connection of a budget-sector programme with the employee register"
       }
     },
     {
@@ -3011,12 +3136,18 @@
       ],
       "extraction_note": "\"asistenț ă\" split by the conversion. The next sentence (over the page break) says the provision is in point 43(4) of Government Decision 24/2024 approving the SIERUSS Concept (10 January 2024, footnote 37), under which it will exchange data with MF systems including SI REA; not quoted because the verification tool cannot skip the numbered recommendation lines at the foot of page 16 as footnotes.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0643",
+          "INT-MDA-0029",
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Decision on interoperability of two systems to avoid duplicated data"
       }
     },
     {
@@ -3084,12 +3215,18 @@
       ],
       "extraction_note": "The State Chancellery's view as reported by the Court. \"33\" is a footnote marker in the converted text. Objective; proposed (M1).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0394",
+          "INT-MDA-0594"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned shared HR management system for public authorities (shared administrative information system); State Chancellery view as reported"
       }
     },
     {
@@ -3156,12 +3293,17 @@
       ],
       "extraction_note": "Same passage as alpha item MDA-GOV-2024-001-0006.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0027",
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Connection of a named system to MConnect still under analysis; as alpha item -0006"
       }
     },
     {
@@ -3230,12 +3372,16 @@
       "flags": [],
       "extraction_note": "Implementation status of the recommendation as stated by the Court.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Court's rating of how recommendation 9 was applied"
       }
     },
     {
@@ -3304,12 +3450,16 @@
       "flags": [],
       "extraction_note": "Same passage as alpha item MDA-GOV-2024-001-0009.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "No concrete results on the recommended interconnection; as alpha item -0009"
       }
     },
     {
@@ -3374,12 +3524,17 @@
       "flags": [],
       "extraction_note": "\"37\" is a footnote marker in the converted text. Same passage as alpha item MDA-GOV-2024-001-0008.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0643",
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned connection through MConnect; as alpha item -0008"
       }
     },
     {
@@ -3444,12 +3599,19 @@
       "flags": [],
       "extraction_note": "Same passage as alpha item MDA-GOV-2024-001-0007.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0643",
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "No evidence that the planned data exchange works; as alpha item -0007"
       }
     },
     {
@@ -3505,12 +3667,18 @@
       "flags": [],
       "extraction_note": "The Court's statement of impact.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Impact the Court links to recommendation 9: legal conditions created, but risks to use of the HR systems remain"
       }
     },
     {
@@ -3574,12 +3742,20 @@
       ],
       "extraction_note": "\"prop rii\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-11",
+          "MEC-02"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Shared permits system partly used: reluctance, regulatory deficiencies and own systems; sector body's authorisation services used by businesses, as MDA-GOV-2026-014-0011"
       }
     },
     {
@@ -3641,12 +3817,19 @@
       "flags": [],
       "extraction_note": "From the 2020 audit as restated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Use of the shared permits system by issuing institutions"
       }
     },
     {
@@ -3712,12 +3895,17 @@
       "flags": [],
       "extraction_note": "Recommendation of Court Decision 82 of 28 December 2020, restated in this follow-up; event date is the decision date.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Recommendation to examine use of the permits system"
       }
     },
     {
@@ -3783,12 +3971,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Transfer of the permits system to the e-Governance Agency"
       }
     },
     {
@@ -3852,12 +4045,17 @@
       ],
       "extraction_note": "Training of system users; digital skills are in scope only where linked to an in-scope recommendation, here recommendation 12 on SIA GEAP. Runs over the page break; footnote 38 and the page number are left out.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Training of system users linked to recommendation 12 on SIA GEAP; theme_doubtful resolved as in scope because tied to the system, not general digital skills"
       }
     },
     {
@@ -3919,12 +4117,17 @@
       "flags": [],
       "extraction_note": "Implementation status of the recommendation as stated by the Court. Wording as printed (\"recomandări\").",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Court's rating of how recommendation 12 was applied"
       }
     },
     {
@@ -3983,12 +4186,16 @@
       ],
       "extraction_note": "\"39\" in the converted text after \"emise\" is a footnote marker; \"acte le\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Permits issued through the system"
       }
     },
     {
@@ -4056,12 +4263,18 @@
       ],
       "extraction_note": "Cut from a longer sentence; financing from the World Bank micro, small and medium enterprise competitiveness project follows in the same sentence. \"colabo rare\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0161",
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Agreement to develop a new version of the permits system, World Bank financed"
       }
     },
     {
@@ -4118,12 +4331,16 @@
       "flags": [],
       "extraction_note": "The Court's statement of impact, with no figure.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Impact the Court links to SIA GEAP and recommendation 12; no figure"
       }
     },
     {
@@ -4187,12 +4404,19 @@
       ],
       "extraction_note": "From the previous audits as restated. \"42\" and \"43\" are footnote markers in the converted text.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02",
+          "MEC-03"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0445"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Methodological framework for the life cycle and conformity of state information systems not drafted by the agency responsible"
       }
     },
     {
@@ -4251,12 +4475,18 @@
       ],
       "extraction_note": "\"public e\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02",
+          "MEC-03",
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Missing normative documents and capacity gaps lead to inconsistent reporting of state information systems"
       }
     },
     {
@@ -4322,12 +4552,16 @@
       "flags": [],
       "extraction_note": "Recommendation of Court Decision 45 of 25 August 2022 (date from footnote 7, page 5), assessed in this follow-up.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Recommendation to complete the national ICT regulatory framework for state information systems (national rules, not EU acquis, so MEC-02 rather than MEC-01)"
       }
     },
     {
@@ -4389,12 +4623,16 @@
       "flags": [],
       "extraction_note": "Recommendation of Court Decision 45 of 25 August 2022 (date from footnote 7, page 5), assessed in this follow-up.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Recommendation to draft the methodological framework for state information systems"
       }
     },
     {
@@ -4458,12 +4696,17 @@
       ],
       "extraction_note": "\"î n\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0489"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Methodology for digitalising public services and the state systems that deliver them"
       }
     },
     {
@@ -4525,12 +4768,16 @@
       "flags": [],
       "extraction_note": "\"45\" is a footnote marker in the converted text.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0489"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Failed procurement for drafting the methodology; no mechanism clear from the text"
       }
     },
     {
@@ -4598,12 +4845,16 @@
       ],
       "extraction_note": "Withdrawn from the project, so reversed for this vehicle; the task moved to the SIGMA action plan (next item). \"activit ății\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0489"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Task dropped from the World Bank project (stated status reversed)"
       }
     },
     {
@@ -4675,12 +4926,14 @@
       ],
       "extraction_note": "Runs over the page break; footnotes 44 and 45 and the page number are left out. \"m artie\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Task moved to the SIGMA action plan"
       }
     },
     {
@@ -4742,12 +4995,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-09"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0489"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The agency still seeking a development partner to fund the methodology"
       }
     },
     {
@@ -4813,12 +5072,14 @@
       "flags": [],
       "extraction_note": "Implementation status of the recommendation as stated by the Court.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Court's rating of how recommendations 1.2 and 7.1 were applied"
       }
     },
     {
@@ -4877,12 +5138,16 @@
       ],
       "extraction_note": "\"perpetua rea\" and \"l a prevederil e\" split by the conversion. Illustrated by a table of integrated system concepts (page 21), not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "ICT regulatory problems persist, so documentation of systems remains inconsistent"
       }
     },
     {
@@ -4939,12 +5204,16 @@
       "flags": [],
       "extraction_note": "Stated under \"impactul obținut\" but describes a continuing problem, so a finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Risk that reported data on state information systems are not reliable"
       }
     },
     {
@@ -5016,12 +5285,17 @@
       ],
       "extraction_note": "From the previous audit as restated. Refers to non-uniform concepts for integrated systems and outdated documents.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02",
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Causes: regulatory deficiencies and weak monitoring and coordination by the responsible bodies"
       }
     },
     {
@@ -5083,12 +5357,17 @@
       "flags": [],
       "extraction_note": "Recommendation of Court Decision 45 of 25 August 2022 (date from footnote 7, page 5), assessed in this follow-up.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Recommendation on recording and monitoring state information systems and resources"
       }
     },
     {
@@ -5156,12 +5435,18 @@
       ],
       "extraction_note": "Decision date from footnote 52. \"52\" is a footnote marker in the converted text; \"acți unilor\" and \"documentarii\" as converted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0615",
+          "INT-MDA-0340"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Register of state information systems; nearest fits, neither exact, as MDA-CSO-2026-001-0064"
       }
     },
     {
@@ -5223,12 +5508,17 @@
       "flags": [],
       "extraction_note": "Runs over the page break; footnotes 50 to 55 and the page number are left out. \"55\" after the date is a footnote marker in the converted text.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Launch of the register of state information systems, as -0076"
       }
     },
     {
@@ -5290,12 +5580,15 @@
       "flags": [],
       "extraction_note": "Implementation status of the recommendation as stated by the Court.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Court's rating of how recommendation 7.4 was applied"
       }
     },
     {
@@ -5353,12 +5646,19 @@
       ],
       "extraction_note": "\"56\" is a footnote marker; \"r esurse\" split by the conversion. The total number of state systems is not given.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07",
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Registration in RRSIS incomplete against the 2021 to 2023 plan"
       }
     },
     {
@@ -5414,12 +5714,20 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07",
+          "MEC-02"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Slow registration caused by missing system documentation"
       }
     },
     {
@@ -5475,12 +5783,19 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Most registered systems not properly documented"
       }
     },
     {
@@ -5536,12 +5851,18 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Register information not updated (register kept out of date)"
       }
     },
     {
@@ -5597,12 +5918,18 @@
       "flags": [],
       "extraction_note": "The 54 is from the 2020 audit list (pages 10 and 31), not from this sentence.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Few of the audited systems registered"
       }
     },
     {
@@ -5661,12 +5988,18 @@
       ],
       "extraction_note": "\"a nalizele\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-04",
+          "MEC-03",
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Weak monitoring and control of how ICT rules are applied to state information systems"
       }
     },
     {
@@ -5723,12 +6056,16 @@
       "flags": [],
       "extraction_note": "Cut before the cross-reference to Annex 5.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Systems without approved concept or regulation"
       }
     },
     {
@@ -5793,12 +6130,18 @@
       ],
       "extraction_note": "AGE's view as reported by the Court. \"57\" and \"58\" are footnote markers; \"info rmaționale\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0164"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Agency view as reported: the rules exist but are not applied"
       }
     },
     {
@@ -5855,12 +6198,17 @@
       "flags": [],
       "extraction_note": "The Court's statement of impact.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Impact the Court links to RRSIS; 41.7% of 67 authorities registered"
       }
     },
     {
@@ -5917,12 +6265,19 @@
       "flags": [],
       "extraction_note": "Runs over the page break; footnotes 56 to 58 and the page number are left out.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Delay in registering all systems in the register"
       }
     },
     {
@@ -5998,12 +6353,12 @@
       ],
       "extraction_note": "Recommendation of Court Decision 45 of 25 August 2022 (date from footnote 7, page 5), assessed in this follow-up. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Performance indicators for maintenance and administration services of state systems are IT service contract management, back-office; fits no approved issue (R22 by analogy); theme_doubtful resolved as out"
       }
     },
     {
@@ -6068,12 +6423,17 @@
       ],
       "extraction_note": "Runs over the page break; the page number is left out. \"201859\" joins the year and footnote marker 59 in the converted text; \"p osesorului\" split. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0364",
+          "INT-MDA-0621"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Actions after the inventory of state information resources and systems; the maintenance regulation in the same act is back-office management and outside the issue; theme_doubtful, moderate fit"
       }
     },
     {
@@ -6141,12 +6501,12 @@
       ],
       "extraction_note": "Implementation status of the recommendation as stated by the Court. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Court's rating of recommendation 7.6 on maintenance service indicators; IT service contract management, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -6210,12 +6570,14 @@
       ],
       "extraction_note": "theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0621"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Scope of the technical maintenance regulation; back-office IT service management, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -6275,12 +6637,12 @@
       ],
       "extraction_note": "The invoice details for the public finance system (CTIF contract) on the same page are financial audit matter and not extracted. \"Guv ernului\" split. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "No indicators to verify maintenance services; back-office IT service contract management, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -6344,12 +6706,12 @@
       ],
       "extraction_note": "Recommendation of Court Decision 45 of 25 August 2022 (date from footnote 7, page 5), assessed in this follow-up. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Taking over technical administration of systems where only user rights are held; back-office IT management, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -6414,12 +6776,16 @@
       ],
       "extraction_note": "\"cai etul\" and \"achiziționa rea\" split by the conversion. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Coordination of ICT procurement by the e-Governance Agency (source code ownership), as MDA-IO-2023-001-0049; theme_doubtful resolved as in scope, moderate fit"
       }
     },
     {
@@ -6483,12 +6849,14 @@
       ],
       "extraction_note": "Implementation status of the recommendation as stated by the Court. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Court's rating of recommendation 7.7, read with the procurement coordination in -0095; theme_doubtful, moderate fit"
       }
     },
     {
@@ -6547,12 +6915,14 @@
       ],
       "extraction_note": "\"64\" and \"65\" are footnote markers in the converted text. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Contracts without state ownership of the software, the gap addressed by the agency's procurement coordination (-0095); theme_doubtful, moderate fit"
       }
     },
     {
@@ -6620,12 +6990,17 @@
       ],
       "extraction_note": "From the previous audit as restated. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08",
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Donor-funded systems developed without coordination or documentation and not put into use; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -6697,12 +7072,18 @@
       ],
       "extraction_note": "Recommendation of Court Decision 45 of 25 August 2022 (date from footnote 7, page 5), assessed in this follow-up. The heading above it cites \"Hotărârea Curții de Conturi nr.45/2020\", apparently for 45/2022; as printed. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Recommendation on monitoring and coordinating ICT procurement and donor-funded systems, as MDA-IO-2023-001-0049"
       }
     },
     {
@@ -6771,12 +7152,16 @@
       ],
       "extraction_note": "\"77\" is a footnote marker; \"î n\" split by the conversion. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0226"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Draft amendment to the ICT procurement coordination mechanism and shared systems rules"
       }
     },
     {
@@ -6841,12 +7226,16 @@
       ],
       "extraction_note": "According to information presented by AGE, as reported by the Court. The budget and procurement plan figures in the bullets above are not extracted. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Agency's coordination of ICT procurement (reported view)"
       }
     },
     {
@@ -6918,12 +7307,14 @@
       ],
       "extraction_note": "Implementation status of the recommendation as stated by the Court. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Court's rating of recommendation 8.2"
       }
     },
     {
@@ -6982,12 +7373,18 @@
       ],
       "extraction_note": "theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "No amendment to the ICT procurement rules, so the problems persist"
       }
     },
     {
@@ -7054,12 +7451,20 @@
       ],
       "extraction_note": "In scope for the e-Voting system as an online public service; the laptops are not. The CEC says it is independent and not bound by Government Decision 544/2019 (next sentence, not extracted).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-06",
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352",
+          "INT-MDA-0404"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Read as a gap in coordination of ICT procurement (an autonomous authority outside the mechanism), not as internet voting, which is out (as MDA-GOV-2023-001-0049); theme_doubtful"
       }
     },
     {
@@ -7119,12 +7524,12 @@
       ],
       "extraction_note": "General conclusion; covers accounting matters too. \"implementa rea\" split. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General conclusion of the follow-up, covering accounting matters too; not specific to an issue; theme_doubtful"
       }
     },
     {
@@ -7181,12 +7586,18 @@
       "flags": [],
       "extraction_note": "Runs over the page break; footnote 80 and the page number are left out.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-03",
+          "MEC-02",
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Factors behind low implementation of the recommendations on state information systems"
       }
     },
     {
@@ -7245,12 +7656,12 @@
       ],
       "extraction_note": "The shares sum to 103%; Figure 5 below shows 54% partial, and the summary (page 5) gives 29, 40 and 5 of 74. Not reconciled; for the analyst. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Shares of all recommendations of the follow-up, including accounting ones; figures not reconciled (pass 1 note); theme_doubtful"
       }
     },
     {
@@ -7309,12 +7720,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). First of the benefits listed in the summary (item 0014 is the fourth). Mixes documentation of systems (in scope as in items 0033 to 0037) with accounting registration (left out by the first pass); not split because it is one bullet. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Benefit the Court links to documenting systems; the accounting part is outside the theme; theme_doubtful"
       }
     },
     {
@@ -7373,12 +7786,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Last of the benefits listed in the summary. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Benefit the Court links to coordination of ICT procurement; theme_doubtful, moderate fit"
       }
     },
     {
@@ -7437,12 +7852,12 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Summary; the conclusion (page 32) states the same proposal in different wording and is extracted there (M3). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General proposal to extend deadlines for all recommendations of the follow-up; procedural, not specific to an issue; theme_doubtful"
       }
     },
     {
@@ -7499,12 +7914,14 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). First of the four corrective actions listed; items 0033 and 0034 hold the second and fourth.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Corrective action under recommendation 2"
       }
     },
     {
@@ -7561,12 +7978,14 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). Third of the four corrective actions listed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Corrective action under recommendation 2"
       }
     },
     {
@@ -7625,12 +8044,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. \"SI10\" joins footnote marker 10 to the word in the converted text.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Systems not properly documented in the previous audit"
       }
     },
     {
@@ -7687,12 +8110,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Documentation of older systems not amended"
       }
     },
     {
@@ -7751,12 +8178,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). \"a le\" and \"C onceptele\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Actions taken under recommendation 2, with reservations"
       }
     },
     {
@@ -7813,12 +8242,17 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02",
+          "MEC-12"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Systems still bought or run without approved documents"
       }
     },
     {
@@ -7875,12 +8309,12 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). The sentence before says some recommendations lost relevance with new systems and are to be removed from monitoring; not extracted separately.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "General proposal to extend deadlines for partly implemented recommendations; procedural, not specific to an issue"
       }
     },
     {
@@ -7952,12 +8386,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Corrective actions as reported by the Court; the Court rates the recommendation partly implemented overall (item 0040). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Corrective actions on unused systems, read with -0038 and -0039; the write-off of assets is accounting; theme_doubtful, moderate fit"
       }
     },
     {
@@ -8016,12 +8452,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Follows the implementation count in item 0040. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Measures on unused systems without the expected impact; theme_doubtful, moderate fit"
       }
     },
     {
@@ -8087,12 +8527,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). AGE's view as reported by the Court; \"15\" and \"16\" are footnote markers in the converted text. Write-off of assets borders on the accounting matters left out. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0351"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Write-off of fixed assets under accounting rules; not a digital issue, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -8152,12 +8594,17 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. \"202329\" and \"CTIF30\" join footnote markers to the text. Footnote 34 (page 17) dates the concept to Government Decision 681 of 10 September 2020; not reconciled with \"December 2020\", for the analyst. SIA REA is the register the other human resource systems are to connect to (recommendation 9, item 0043); theme_doubtful as a back-office employment register.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0147"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Electronic register of employees, the system the HR systems are to be connected to (recommendation 9); theme_doubtful, moderate fit"
       }
     },
     {
@@ -8213,12 +8660,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. Precedes recommendation 9 (item 0043).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Coordination between bodies implementing HR systems to avoid duplication"
       }
     },
     {
@@ -8290,12 +8741,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). \"AGE 31\" and \"CS32\" carry footnote markers. The State Chancellery later returned the drafts to avoid parallel employment registers (page 17, not extracted separately). In scope as part of recommendation 9 on interconnecting HR systems; theme_doubtful as documentation of a back-office system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0145"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Draft documentation of a system to be interconnected, delayed by disagreement between bodies; read with alpha item -0006; theme_doubtful"
       }
     },
     {
@@ -8360,12 +8817,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Part of the State Chancellery's arguments as reported by the Court (after item 0046). theme_doubtful: documentation of a back-office register.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0065"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned amendment of a system's documentation, in the State Chancellery's arguments on HR system interconnection; theme_doubtful, moderate fit"
       }
     },
     {
@@ -8429,12 +8890,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). M2: designation of the owner of a register is an intervention. \"36\" is a footnote marker; \"S IA\" split by the conversion. theme_doubtful as a back-office register.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0348",
+          "INT-MDA-0028"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Designation of the owner of the employee register (M2); theme_doubtful, moderate fit"
       }
     },
     {
@@ -8502,12 +8969,19 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Runs over the page break; footnotes 31 to 37 and the page number are left out. \"38\" is a footnote marker. theme_doubtful as documentation of a back-office system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0643",
+          "INT-MDA-0027"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Uneven treatment of HR system documentation by the coordinating bodies; theme_doubtful, moderate fit"
       }
     },
     {
@@ -8570,12 +9044,15 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Integration of two back-office systems of one ministry; theme_doubtful (TECH-INTEROP materiality).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0146",
+          "INT-MDA-0027"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Integration of two back-office systems of one ministry; one ministry's sector systems were rejected as an issue (CI-05, G4-D04) and fail the materiality test (R22); theme_doubtful"
       }
     },
     {
@@ -8632,12 +9109,19 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Weak project management of the shared permits system"
       }
     },
     {
@@ -8693,12 +9177,20 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-06",
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Institutions not subordinate to the Government refuse to use the permits system, citing special rules"
       }
     },
     {
@@ -8754,12 +9246,19 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
+        "mechanism_ids": [
+          "MEC-11"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Reluctance to use the loan-financed permits system"
       }
     },
     {
@@ -8820,12 +9319,17 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). Corrective action; the Court rates the recommendation implemented (item 0058).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Monitoring of use of the permits system"
       }
     },
     {
@@ -8884,12 +9388,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. \"auditurilor precedente41\" joins footnote marker 41 to the word.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Gaps in the national rules on creating and managing state information systems"
       }
     },
     {
@@ -8946,12 +9454,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. Item 0074 gives the cause of this finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Non-uniform approaches to documenting integrated information systems"
       }
     },
     {
@@ -9010,12 +9522,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. \"d ocumentelor\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Documents of systems not updated"
       }
     },
     {
@@ -9073,12 +9589,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Legal requirement as stated; the act is named in footnote 53. \"p otrivit\" split; \"53\" is a footnote marker.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0452",
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Legal duty to register state register systems in RRSIS"
       }
     },
     {
@@ -9136,12 +9658,17 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). \"RRSIS54\" joins footnote marker 54 to the word.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0340"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Roles of data registrars under the RRSIS Concept"
       }
     },
     {
@@ -9202,12 +9729,17 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). M2: what an institution does is a finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0615"
+        ],
+        "classification_status": "auto",
+        "classification_note": "What the agency does in RRSIS (M2)"
       }
     },
     {
@@ -9266,12 +9798,12 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Evidence that maintenance services were delivered; IT service contract management and spending, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -9330,12 +9862,12 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. Also refers to accounting rules (left out). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Maintenance contracts and definitions in ICT and accounting rules; back-office IT service management, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -9395,12 +9927,12 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). The Court's statement of impact; close to the barrier in item 0093 but worded as the result. \"evidenți indu-se\" split by the conversion. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Impact on maintenance services; IT service contract management, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -9460,12 +9992,12 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. The rest of the paragraph concerns the hospital system SIAMS (left out). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Buying only user licences for state systems; IT asset and spending matter, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -9529,12 +10061,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Follows item 0097. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Agency opinions in ICT procurement coordination require state ownership of source code, as -0095; theme_doubtful, moderate fit"
       }
     },
     {
@@ -9593,12 +10129,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). The Court's statement of impact. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "outcome",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Impact the Court links to the agency's ICT procurement coordination; theme_doubtful, moderate fit"
       }
     },
     {
@@ -9667,12 +10207,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). MF's view as reported by the Court, in the accounting section 4.12. The sentence before it (pages 27 to 28) states the cause: the framework on the life cycle of state systems, a competence of AGE, \"is still missing\" (links to recommendation 7.1, item 0065). That sentence could not be quoted: verify_quotes.py drops page 27 from the line \"8.1. MF să consolideze...\" onward, reading it as a footnote, so a quote over this page break cannot pass; reported to the analyst as a tool issue. theme_doubtful: accounting rules for information systems, in scope only through the missing ICT framework.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0495"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Ministry of Finance view in the accounting section on methodological norms; accounting rules, fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -9732,12 +10274,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. \"p rocesul\" and \"u nui\" split by the conversion. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "ICT procurement and coordination of external assistance for systems need strengthening, as MDA-IO-2023-001-0049"
       }
     },
     {
@@ -9797,12 +10343,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Adopted in November 2019 and applied from 2020 as stated; event date is the start of application. \"75\" is a footnote marker. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-06"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "ICT procurement coordination binding only on bodies subordinate to the Government"
       }
     },
     {
@@ -9862,12 +10414,19 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). From the previous audit as restated. \"76\" is a footnote marker. Item 0098 gives the consequences. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-06",
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Informal exemption from ICT procurement coordination for donated systems"
       }
     },
     {
@@ -9931,12 +10490,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). The guide includes a standard form for ICT budget proposals (next sentence, not extracted). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0590"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Guide implementing the ICT procurement coordination methodology"
       }
     },
     {
@@ -10005,12 +10568,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). \"staț iilor\" split by the conversion. ICT procurement standardisation; theme_doubtful. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0637"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Standard profiles for public sector workstations are ICT equipment procurement, not a digital service or governance gap; fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -10075,12 +10640,16 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). According to information presented by AGE, as reported by the Court (follows item 0101). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Use of the ICT procurement coordination (reported view)"
       }
     },
     {
@@ -10139,12 +10708,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Refers to the Ministry of Finance budget circulars requiring ICT spending proposals to be coordinated with AGE (page 30); the e-Voting case in item 0104 illustrates it. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-12"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Shortcomings in applying the coordination of ICT spending"
       }
     },
     {
@@ -10213,12 +10788,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Explains why the e-Voting procurement (item 0104) was not coordinated with AGE; compare item 0146 on the decision being only advisory for autonomous bodies. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-06"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Electoral body considers itself outside ICT procurement coordination (reported view)"
       }
     },
     {
@@ -10287,12 +10868,20 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). SIVE is an online platform for compensation requests (MDA-IO-2024-002-0084). \"o rdine\", \"S istemului\", \"Nați unilor\" split; \"80\" is a footnote marker. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-06",
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352",
+          "INT-MDA-0310"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Donor-procured system outside the coordination methodology; SIVE itself is an online service (RI-TEC-037 at MDA-IO-2024-002-0084); theme_doubtful"
       }
     },
     {
@@ -10356,12 +10945,18 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-08"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0352"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The agency not involved in procurement working groups"
       }
     },
     {
@@ -10420,12 +11015,17 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). The Court's statement of impact for recommendation 8.2. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
+        "mechanism_ids": [
+          "MEC-07",
+          "MEC-08"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Impact on recommendation 8.2: no full traceability of ICT spending for autonomous bodies and donor-funded projects"
       }
     },
     {
@@ -10485,12 +11085,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). General conclusion; mixes documentation (in scope) with accounting registration (left out). Counts differ from the body (18 concepts and 16 regulations for new systems, item 0034; 44 systems registered at page 12); not reconciled, for the analyst. \"deficiențelo r\" split by the conversion. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "General conclusion; only the documentation part is in the theme, the accounting registration is not; counts differ from the body (pass 1 note)"
       }
     },
     {
@@ -10549,12 +11151,12 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Figure 6 shows extension by 12 months; its figures are not extracted. Restates the summary proposal (page 6) in different wording. theme_doubtful: state information systems governance (documentation, maintenance contracts or ICT procurement) rather than a digital service, interoperability or data issue; for the analyst.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Procedural proposal to extend or remove recommendations from monitoring; not specific to an issue; theme_doubtful"
       }
     },
     {
@@ -10617,12 +11219,14 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Annex 3 table row for the CEC (\"SI nou\"). Not stated in the body, which reports the e-Voting procurement (item 0104). An online public service.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0404"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Internet voting is digital participation in political life, not service delivery; fits no approved issue (as MDA-GOV-2023-001-0049)"
       }
     },
     {
@@ -10688,12 +11292,19 @@
       ],
       "extraction_note": "Added by the second-pass check (PC-05). Annex 3 text for the CEC; not stated in the body. \"90\" is a footnote marker. theme_doubtful: interconnection of a sector system with government platforms (TECH-INTEROP) and security provisions (TECH-CYBER), within documentation of the system.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-02"
+        ],
+        "intervention_ids": [
+          "INT-MDA-0648"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Documentation of the elections information system not updated, including its interconnection with government e-services; read with the documentation cluster; theme_doubtful, moderate fit"
       }
     }
   ],

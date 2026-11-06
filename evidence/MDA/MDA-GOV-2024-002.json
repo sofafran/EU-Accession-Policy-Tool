@@ -13,8 +13,12 @@
     "notes": "Whole page read (page 1); the full survey report it links to was not retrieved. This run's items: MDA-GOV-2024-002-0016 to MDA-GOV-2024-002-0037 (22 items: 2 interventions, 18 metrics, 2 findings; all theme, TECH-DGOV, with TECH-INFRA for the two internet access figures). Alpha items 0001 to 0015 are unchanged; their passages are quoted again here. Left out: the sample description, headings that state the findings (for example \"Satisfaction with the quality of e-services is on the rise\", \"Internet access on the rise\"), the sentence on digital skills determining access, the forecast for mobile access, the list of expected benefits, and the general shift of information sources from television to the internet. Doubtful for the analyst (theme_doubtful): the four digital literacy figures (digital skills rule), the two internet access figures (TECH-INFRA materiality) and the information-source figure. Agency summary of its own commissioned survey, run to measure a project it implements; the fieldwork organisation is not named. Not reconciled on the page: 55.3% accessed at least one service electronically against 54.5% online access. No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 0 items added (review/RUN-2026-02/second_pass/MDA-GOV-2024-002.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -1023,12 +1027,16 @@
       "flags": [],
       "extraction_note": "A monitoring instrument run every year. The context clause (exponential increase in digitalisation, internet available to the majority) is stated without a figure and not extracted separately.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0001"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Yearly survey of uptake and satisfaction with digital public services"
       }
     },
     {
@@ -1084,12 +1092,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Whether the 10% is relative or in points is not stated. Same passage as alpha item MDA-GOV-2024-002-0009.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Survey measure of satisfaction; relative or points not stated"
       }
     },
     {
@@ -1145,12 +1155,17 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Same passage as alpha item MDA-GOV-2024-002-0005.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0011"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Satisfaction on the national portal against provider websites; as alpha item -0005"
       }
     },
     {
@@ -1206,12 +1221,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Same passage as alpha item MDA-GOV-2024-002-0006.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Rated quality of e-services; as alpha item -0006"
       }
     },
     {
@@ -1267,12 +1284,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). \"At least one\" is a low threshold. Same passage as alpha item MDA-GOV-2024-002-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Survey measure of use; low threshold; as alpha item -0001"
       }
     },
     {
@@ -1328,12 +1347,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). A stated preference, not use. Same passage as alpha item MDA-GOV-2024-002-0003.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Stated preference, not use; as alpha item -0003"
       }
     },
     {
@@ -1391,12 +1412,14 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Listed under \"Level of digital literacy\": digital skills are not a theme area, but the categories describe how people access e-services; theme_doubtful for the analyst. Same passage as alpha item MDA-GOV-2024-002-0010.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Ability to use e-services independently, as MDA-GOV-2025-003-0237; theme_doubtful resolved: digital literacy is context only"
       }
     },
     {
@@ -1454,12 +1477,14 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Listed under \"Level of digital literacy\": digital skills are not a theme area, but the categories describe how people access e-services; theme_doubtful for the analyst. Same passage as alpha item MDA-GOV-2024-002-0011.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Users needing support to use e-services; digital literacy is context only; theme_doubtful"
       }
     },
     {
@@ -1517,12 +1542,14 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Listed under \"Level of digital literacy\": digital skills are not a theme area, but the categories describe how people access e-services; theme_doubtful for the analyst. Same passage as alpha item MDA-GOV-2024-002-0007.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Users who delegate access, so the portal does not serve them directly (as alpha item -0007); theme_doubtful"
       }
     },
     {
@@ -1580,12 +1607,14 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Listed under \"Level of digital literacy\": digital skills are not a theme area, but the categories describe how people access e-services; theme_doubtful for the analyst. The unit of the fall of 5 is not printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Change in independent and assisted users; digital literacy is context only; theme_doubtful"
       }
     },
     {
@@ -1641,12 +1670,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Same passage as alpha item MDA-GOV-2024-002-0008.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Age gap in use; as alpha item -0008"
       }
     },
     {
@@ -1702,12 +1733,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Base of the 81.2% (all respondents or e-service users) not stated. Same passage as alpha item MDA-GOV-2024-002-0012.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Access by mobile phone; base not stated"
       }
     },
     {
@@ -1763,12 +1796,14 @@
       "flags": [],
       "extraction_note": "The agency's reading of the survey. The sentence before it (\"In 2023, the preference ... is expected to increase\") is a forecast and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "The agency's reading of its survey"
       }
     },
     {
@@ -1824,12 +1859,15 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Listed under the lead-in \"Among the most accessed public services available in digital format are\". Same passage as alpha item MDA-GOV-2024-002-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Most used e-services by type; tax, cadastral and social insurance services are run by sector bodies"
       }
     },
     {
@@ -1885,12 +1923,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). The expected benefits are listed after it (eliminating corruption, fewer visits, lower costs, fewer documents, less time); they are expectations and are not extracted separately. \"Vast majority\" as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Expected benefits of e-government; attitude, not use"
       }
     },
     {
@@ -1948,12 +1988,12 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Internet use rather than network roll-out; doubtful whether it meets the materiality test for TECH-INFRA.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Daily internet use is digital inclusion, not network access or coverage; fits no approved issue (as MDA-EU-2025-002-0057); theme_doubtful"
       }
     },
     {
@@ -2011,12 +2051,14 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Household internet connection from a survey of individuals; doubtful whether it meets the materiality test for TECH-INFRA (access to networks) or is context.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-013"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Household internet connection from a survey, usage context for the coverage issue (as MDA-GOV-2023-001-0137); theme_doubtful resolved, moderate fit"
       }
     },
     {
@@ -2074,12 +2116,12 @@
       ],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Kept for the share of government websites as an information source; the general shift from TV to the internet is not extracted. Same passage as alpha item MDA-GOV-2024-002-0014.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Where people find information (news and social media against government websites) concerns information channels, not e-services; fits no approved issue (stage 7 re-examination of queue row 122, same passage as alpha item -0014); theme_doubtful"
       }
     },
     {
@@ -2135,12 +2177,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Printed as \"the majority\" although 47.4% is below half. Same passage as alpha item MDA-GOV-2024-002-0013.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Willingness to use e-services; 47.4% printed as a majority (pass 1 note)"
       }
     },
     {
@@ -2196,12 +2240,14 @@
       "flags": [],
       "extraction_note": "The agency's conclusion; the figures follow in the next sentence, extracted as a metric.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Shift from offline to online access"
       }
     },
     {
@@ -2257,12 +2303,14 @@
       "flags": [],
       "extraction_note": "Survey answer reported in the agency's summary of its own commissioned survey (sample 3040 people aged 18 and over). Not reconciled on the page with the 55.3% figure above. Same passage as alpha item MDA-GOV-2024-002-0002.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Online against offline access; not reconciled with the 55.3% figure (pass 1 note)"
       }
     },
     {
@@ -2327,12 +2375,16 @@
       "flags": [],
       "extraction_note": "The survey measures a project the agency itself implements. Two sentences on one claim. Same passage as alpha item MDA-GOV-2024-002-0015 (first sentence).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0025"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The project the survey measures, implemented by the agency itself; as alpha item -0015"
       }
     }
   ],

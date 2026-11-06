@@ -13,8 +13,12 @@
     "notes": "All 19 pages read in full (pages 1 and 19 are cover and back matter, page 2 contents and Digital Decade background). This run's items: MDA-IO-2024-002-0016 to MDA-IO-2024-002-0119 (104 items; all theme: TECH-DGOV, TECH-DIGI, TECH-INTEROP, TECH-DATA, TECH-EID, TECH-CYBER, TECH-INFRA and one TECH-AI). Alpha items 0001 to 0015 are unchanged; their passages are quoted again here where in scope. Printed page numbers match the text-file pages. The document is a Commission-funded factsheet prepared by Wavestone with contributions from the Ministry (page 19); much of it describes government systems in promotional language and gives no source or method for its figures, so items record what it states, not whether it is so. Speaker is the publishing observatory throughout; the ministry's contribution is not marked passage by passage, so reported_view is not set. Left out: the Digital Decade background (page 2); the Green SME programme and environmental policies (page 5, not digital); the general statement on the government's commitment to work with the private sector; forecasts and stated benefits (MConnect becoming more valuable, MLog and MCabinet benefits, eFactura advantages, ePrescription benefits, open data portal objectives); the April 2011 Open Data Initiative; the TEN-T transport understanding and the Education Management Information System SIME (sector systems, not digital government); the digital skills, awareness and engagement objectives of the Digital Society Development Programme and the Cybercor cybersecurity education institute (digital skills not linked to an in-scope recommendation); the \"no particular initiatives\" lines for distributed ledgers, Internet of Things and quantum computing; the GovTech paragraph (restates the MDTS); the subnational line; the Your Europe description (page 18, about EU services, not Moldova). Table rows that only restate a claim already extracted (Open Data Portal, MConnect description, EVO row) are noted on the extracted item. M3 applied: the 60% business services figure (pages 4 and 11) and Law 142/2018 (pages 6 and 8) differ in wording and are extracted at both places; Law 467/2003 is extracted once. No Chapter 2 content: the G2F (foreigners) category of the services portal and the IT park's \"labor supply services\" are not about workers' rights or access. Doubtful for the analyst (theme_doubtful): the IT sector page (four items), the National Plan, trade facilitation for e-commerce, Law 148/2023 on access to information, the State Register of Controls, MLog as cybersecurity, ePrescription, the Digital Society Development Programme and its devices objective, the big data line, the general emphasis on digitalisation. out_of_window (controlled exceptions for the analyst to confirm): the 2012 MeGIF programme, the 2014-2018 MConnect pilot and the 2012-2014 reuse and open data acts. possible_misread marks words split by the conversion. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 4 items added (review/RUN-2026-02/second_pass/MDA-IO-2024-002.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -1053,12 +1057,14 @@
       "flags": [],
       "extraction_note": "So no external EIF score for Moldova is available from this source. Same passage as alpha item MDA-IO-2024-002-0003.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-027"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Absence from the EIF monitoring data collection bears on the interoperability framework but does not itself show misalignment; doubtful fit (stage 7 re-examination of queue row 123, same passage as alpha item -0003)"
       }
     },
     {
@@ -1119,12 +1125,16 @@
       "flags": [],
       "extraction_note": "Described as existing and setting objectives; its adoption is not dated here. The strategy is also MDA-GOV-2023-001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy described as existing and setting objectives aligned with European integration"
       }
     },
     {
@@ -1185,12 +1195,16 @@
       "flags": [],
       "extraction_note": "Strategy objective, proposed under M1.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy objective (M1)"
       }
     },
     {
@@ -1251,12 +1265,16 @@
       "flags": [],
       "extraction_note": "Strategy objective, proposed under M1.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy objective (M1); the ICT sector itself is not an issue, so only the strategy is classified"
       }
     },
     {
@@ -1317,12 +1335,17 @@
       "flags": [],
       "extraction_note": "Strategy objective, proposed under M1.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy objective on the digital economy (M1)"
       }
     },
     {
@@ -1384,12 +1407,17 @@
       "flags": [],
       "extraction_note": "Strategy objective, proposed under M1.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy objective on the digital state (M1)"
       }
     },
     {
@@ -1451,12 +1479,17 @@
       "flags": [],
       "extraction_note": "Strategy objective, proposed under M1. TECH-CYBER for \"secure\"; the objective is not detailed here.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy objective (M1); security not detailed, so the cybersecurity issue is second"
       }
     },
     {
@@ -1517,12 +1550,16 @@
       "flags": [],
       "extraction_note": "Strategy objective, proposed under M1.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Strategy objective (M1)"
       }
     },
     {
@@ -1583,12 +1620,18 @@
       "flags": [],
       "extraction_note": "A lead-in that carries its own claim (the programmes are being developed); the three programme names follow in the list and are recorded in intervention_as_stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0194",
+          "INT-MDA-0380",
+          "INT-MDA-0600"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Sectoral action programmes to implement the strategy"
       }
     },
     {
@@ -1644,12 +1687,16 @@
       "flags": [],
       "extraction_note": "Planned; proposed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned programmes and the 33 strategy indicators"
       }
     },
     {
@@ -1712,12 +1759,16 @@
       ],
       "extraction_note": "A general plan; in scope only for its digitalisation priority, which is not detailed here.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0543"
+        ],
+        "classification_status": "auto",
+        "classification_note": "General European integration plan, in scope only for its digitalisation priority; theme_doubtful resolved, moderate fit"
       }
     },
     {
@@ -1778,12 +1829,17 @@
       "flags": [],
       "extraction_note": "The adoption of the MDS in 2022 (the sentence before) concerns a general strategy and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007",
+          "INT-MDA-0530"
+        ],
+        "classification_status": "auto",
+        "classification_note": "How the digital strategy relates to the national development strategy"
       }
     },
     {
@@ -1840,12 +1896,17 @@
       "flags": [],
       "extraction_note": "Extracted for its electronic services goals only; debureaucratisation in general is outside the theme. The goals themselves are proposed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0597"
+        ],
+        "classification_status": "auto",
+        "classification_note": "E-services goals of the public administration reform strategy, including local public administration; debureaucratisation in general is outside the theme"
       }
     },
     {
@@ -1903,12 +1964,17 @@
       ],
       "extraction_note": "A general statement; doubtful whether it is more than context.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0007",
+          "INT-MDA-0597"
+        ],
+        "classification_status": "auto",
+        "classification_note": "General statement on the strategy documents, context only; theme_doubtful, weak fit"
       }
     },
     {
@@ -1964,12 +2030,14 @@
       "flags": [],
       "extraction_note": "Source of the figure not given. Restated in different wording at page 11 (\"In June 2024\"), extracted there. Same passage as alpha item MDA-IO-2024-002-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Share of business services online; source not given; as alpha item -0001"
       }
     },
     {
@@ -2025,12 +2093,17 @@
       "flags": [],
       "extraction_note": "Target; proposed. Same passage as alpha item MDA-IO-2024-002-0002.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0671",
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Stated aim and the app; as alpha item -0002"
       }
     },
     {
@@ -2088,12 +2161,16 @@
       ],
       "extraction_note": "No measure is named; doubtful whether trade facilitation for e-commerce meets the materiality test (digitalisation of economic activity).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-034"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0644"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Cross-border e-commerce with the EU; e-commerce items go to RI-TEC-034 (G4-D11); theme_doubtful resolved, moderate fit as no measure is named"
       }
     },
     {
@@ -2149,12 +2226,17 @@
       "flags": [],
       "extraction_note": "Status not stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0422"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Digital tools for companies to operate remotely; the remote identification law behind it is read under RI-TEC-026 as MDA-GOV-2024-004-0036"
       }
     },
     {
@@ -2221,12 +2303,17 @@
       ],
       "extraction_note": "M2: what an institution does is a finding. Words split by the conversion (\"Digitali sation\", \"digit alisation\") as in the text file.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-033",
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0046"
+        ],
+        "classification_status": "auto",
+        "classification_note": "What the ministry and council do on digitalising the economy (M2)"
       }
     },
     {
@@ -2291,12 +2378,16 @@
       "flags": [],
       "extraction_note": "\"Has created\"; the programmes are not named.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0476"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Programmes to help small businesses go digital"
       }
     },
     {
@@ -2352,12 +2443,14 @@
       "flags": [],
       "extraction_note": "Continues the sentence before (MEDD and ODA programmes). Not named.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0593"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Support for digital innovation and tech start-ups is IT sector and start-up support, as MDA-GOV-2025-003-0325; fits no approved issue"
       }
     },
     {
@@ -2418,12 +2511,17 @@
       "flags": [],
       "extraction_note": "Probably the ICT Sector and Digital Economy Development Program named at page 4, but the text does not say so.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-033",
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0471"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned long-term plan for the digital economy"
       }
     },
     {
@@ -2487,12 +2585,17 @@
       ],
       "extraction_note": "Words split by the conversion as in the text file.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0600"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Programme to re-engineer government processes under the strategy"
       }
     },
     {
@@ -2548,12 +2651,16 @@
       "flags": [],
       "extraction_note": "Priority direction of the programme; proposed (M1).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0600"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Priority direction of the programme (M1)"
       }
     },
     {
@@ -2612,12 +2719,16 @@
       ],
       "extraction_note": "Priority direction of the programme; proposed (M1). Word split by the conversion as in the text file.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0600"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned methodological framework for digitalising services and creating state information systems; the gap the Court of Accounts reports (MDA-GOV-2024-001-0062)"
       }
     },
     {
@@ -2673,12 +2784,17 @@
       "flags": [],
       "extraction_note": "Priority direction of the programme; proposed (M1).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-027",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0600"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned comprehensive interoperability framework"
       }
     },
     {
@@ -2734,12 +2850,16 @@
       "flags": [],
       "extraction_note": "Priority direction of the programme; proposed (M1).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0600"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned cybersecurity audit of sector e-services and state information systems"
       }
     },
     {
@@ -2797,12 +2917,17 @@
       ],
       "extraction_note": "Mainly a 2012 event, before the window; kept as a controlled exception because the framework is the basis of the current data exchange architecture described next (and GD 656/2012 in MDA-GOV-2020-001). For the analyst to confirm.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-027",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0505"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Background to the current framework; out_of_window controlled exception for the analyst to confirm"
       }
     },
     {
@@ -2859,12 +2984,19 @@
       "flags": [],
       "extraction_note": "A lead-in that carries its own claim; the three acts follow in the list and are recorded in intervention_as_stated, not extracted separately. Law 142/2018 is extracted again at page 8, where its wording differs.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-027"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0012",
+          "INT-MDA-0342",
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Legal and technical regulation of data exchange"
       }
     },
     {
@@ -2925,12 +3057,16 @@
       "flags": [],
       "extraction_note": "M2: what an institution does is a finding.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-027"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0056"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The agency oversees the framework in line with the EIF (M2); compare -0016 (no EIF data), a noted difference rather than a contradiction"
       }
     },
     {
@@ -2988,12 +3124,16 @@
       ],
       "extraction_note": "Mainly a 2014-2018 event; kept as a controlled exception as background to the platform in scope. For the analyst to confirm. Same passage as alpha item MDA-IO-2024-002-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Pilot of the platform, 2014 to 2018; out_of_window controlled exception for the analyst to confirm"
       }
     },
     {
@@ -3050,12 +3190,16 @@
       "flags": [],
       "extraction_note": "Aim of the platform as listed under \"MConnect aims to\"; the text does not say how far it is met.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Aim of the platform; not shown in practice"
       }
     },
     {
@@ -3112,12 +3256,16 @@
       "flags": [],
       "extraction_note": "Aim of the platform as listed under \"MConnect aims to\"; the text does not say how far it is met.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Aim of the platform (once only); not shown in practice"
       }
     },
     {
@@ -3174,12 +3322,17 @@
       "flags": [],
       "extraction_note": "Aim of the platform as listed under \"MConnect aims to\"; the text does not say how far it is met.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Aim of the platform; more e-services through data reuse"
       }
     },
     {
@@ -3237,12 +3390,17 @@
       ],
       "extraction_note": "Adopted 2012 to 2014, before the window; kept as a controlled exception as the legal basis of open data reuse, still in force as described. For the analyst to confirm.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0441",
+          "INT-MDA-0361"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Legal basis of re-use of public sector information and open data; out_of_window controlled exception for the analyst to confirm"
       }
     },
     {
@@ -3300,12 +3458,14 @@
       ],
       "extraction_note": "Listed under \"Data Access, Management and Reuse\"; doubtful whether access to information of public interest meets the materiality test for data governance. Both sentences are on page 6; page_end set because the paragraph runs on to page 7.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0426"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Access to information of public interest is general transparency, which the RI-TEC-016 exclusion note puts outside the theme; theme_doubtful"
       }
     },
     {
@@ -3364,12 +3524,16 @@
       ],
       "extraction_note": "TECH-CYBER doubtful: an access log supports security but is described here for transparency. The claim that MLog helps institutions use systems responsibly is a stated benefit and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-020"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0497"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Access log for government information systems read under data protection compliance in practice, as MDA-GOV-2026-009-0032; loose fit; theme_doubtful TECH-CYBER not used"
       }
     },
     {
@@ -3426,12 +3590,16 @@
       "flags": [],
       "extraction_note": "The claim that it \"eliminates the need to visit multiple government websites or offices\" is a stated benefit, not extracted. Restated in different wording in the table at page 8, extracted there.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0003"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Citizen portal for official information and documents"
       }
     },
     {
@@ -3487,12 +3655,16 @@
       "flags": [],
       "extraction_note": "Launched under the 2011 Open Data Initiative (before the window, not extracted). The portal's key objectives are listed after it and not extracted. The table row at page 8 restates this and is not extracted. Same passage as alpha item MDA-IO-2024-002-0015.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Open data portal"
       }
     },
     {
@@ -3550,12 +3722,18 @@
       ],
       "extraction_note": "In the base registries table. A law in force (2003); the claim is about the current status of the registers, so not flagged out_of_window. Restated in the list of laws below; that line is not extracted again (M3, same claim).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0445",
+          "INT-MDA-0654",
+          "INT-MDA-0659"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Base registers defined by law"
       }
     },
     {
@@ -3614,12 +3792,17 @@
       ],
       "extraction_note": "A sector register; doubtful whether it meets the materiality test.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0656"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Government-wide register of inspections; government-wide inspection systems framed as digital government are in (alpha ruling); theme_doubtful resolved, moderate fit"
       }
     },
     {
@@ -3678,12 +3861,17 @@
       ],
       "extraction_note": "In the base registries table.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0660"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Electronic register of local acts accessible to the public"
       }
     },
     {
@@ -3742,12 +3930,15 @@
       ],
       "extraction_note": "Word split by the conversion (\"digit alising\") as in the text file.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-015",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Some physical archives remain although most data are in electronic registers; electronic archiving is a core building block"
       }
     },
     {
@@ -3804,12 +3995,16 @@
       "flags": [],
       "extraction_note": "Same passage as alpha item MDA-IO-2024-002-0010.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Access to register data through the platform; as alpha item -0010"
       }
     },
     {
@@ -3865,12 +4060,16 @@
       "flags": [],
       "extraction_note": "Wording differs from the page 6 list, so extracted again (M3). Same passage as alpha item MDA-IO-2024-002-0009.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0012"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Legal basis of the platform; as alpha item -0009"
       }
     },
     {
@@ -3926,12 +4125,16 @@
       "flags": [],
       "extraction_note": "A law in force, adopted 2017; the claim is about current regulation.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0452"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Law on access to register data"
       }
     },
     {
@@ -3988,12 +4191,18 @@
       "flags": [],
       "extraction_note": "The challenges are not named. Alpha item MDA-IO-2024-002-0005 quoted the second sentence only.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-015"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015",
+          "INT-MDA-0104"
+        ],
+        "classification_status": "auto",
+        "classification_note": "General view of the data ecosystem; challenges not named; as alpha item -0005"
       }
     },
     {
@@ -4052,12 +4261,16 @@
       ],
       "extraction_note": "Table row headed \"MCabinet\". Same passage as alpha item MDA-IO-2024-002-0011 (first sentence).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0003"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Citizen portal; as alpha item -0011"
       }
     },
     {
@@ -4115,12 +4328,16 @@
       ],
       "extraction_note": "Table row headed \"Business Government Portal\". Same passage as alpha item MDA-IO-2024-002-0012.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0002"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Business portal; as alpha item -0012"
       }
     },
     {
@@ -4180,12 +4397,27 @@
       ],
       "extraction_note": "Table row headed \"MConnect Platform\". \"Same status\" is not explained. The first sentence of the row restates the platform description and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-028",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0472",
+          "INT-MDA-0014",
+          "INT-MDA-0019",
+          "INT-MDA-0497",
+          "INT-MDA-0018",
+          "INT-MDA-0022",
+          "INT-MDA-0020",
+          "INT-MDA-0021",
+          "INT-MDA-0017",
+          "INT-MDA-0498"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Shared platforms, as MDA-GOV-2023-001-0013; MCloud fits no issue"
       }
     },
     {
@@ -4243,12 +4475,17 @@
       ],
       "extraction_note": "Table row headed \"Public Services Portal\"; differs from the page 10 description.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0011"
+        ],
+        "classification_status": "auto",
+        "classification_note": "National portal as hub for permits; differs from the page 10 description"
       }
     },
     {
@@ -4307,12 +4544,16 @@
       ],
       "extraction_note": "Table row headed \"MTender Portal\". \"a n\" split by the conversion. E-procurement used by bidders is TECH-DGOV.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0512"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Describes the e-procurement system the EU says is to be replaced (G4-D01); no problem stated here"
       }
     },
     {
@@ -4370,12 +4611,17 @@
       ],
       "extraction_note": "Table row headed \"EU Digital Wallet\", in the table of European cross-border infrastructures Moldova is part of.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0531",
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "EU Digital Identity Wallet in EVO: cross-border wallet arrangements"
       }
     },
     {
@@ -4433,12 +4679,16 @@
       ],
       "extraction_note": "Table row headed \"EU Trust MD\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-EU-0056"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Verification of EU qualified signatures"
       }
     },
     {
@@ -4494,12 +4744,16 @@
       "flags": [],
       "extraction_note": "An information portal; the list after it notes categories for citizens, businesses and foreigners (G2F). Same passage as alpha item MDA-IO-2024-002-0006.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0011"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Information portal on public services"
       }
     },
     {
@@ -4556,12 +4810,17 @@
       "flags": [],
       "extraction_note": "The functions listed after it (status by institution and service, feedback) are not extracted separately. Same passage as alpha item MDA-IO-2024-002-0013.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0006"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Public monitoring of digitalisation; as alpha item -0013"
       }
     },
     {
@@ -4617,12 +4876,16 @@
       "flags": [],
       "extraction_note": "Promotional wording as printed. Same passage as alpha item MDA-IO-2024-002-0007.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "The app as described; as alpha item -0007"
       }
     },
     {
@@ -4678,12 +4941,16 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Module of the app"
       }
     },
     {
@@ -4740,12 +5007,18 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0531",
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Digital wallet with verifiable documents"
       }
     },
     {
@@ -4801,12 +5074,18 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008",
+          "INT-MDA-0020"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Payments module based on MPay"
       }
     },
     {
@@ -4863,12 +5142,17 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008",
+          "INT-MDA-0003"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Module of the app"
       }
     },
     {
@@ -4924,12 +5208,17 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\". Same passage as alpha item MDA-IO-2024-002-0014.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008",
+          "INT-MDA-0011"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Module of the app; as alpha item -0014"
       }
     },
     {
@@ -4985,12 +5274,16 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Health information module; no eHealth interoperability element stated"
       }
     },
     {
@@ -5047,12 +5340,18 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036",
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008",
+          "INT-MDA-0021"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Electronic powers of attorney module"
       }
     },
     {
@@ -5108,12 +5407,16 @@
       "flags": [],
       "extraction_note": "Module listed under \"Evo is a user-friendly modular app with\".",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0008"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Appointments module"
       }
     },
     {
@@ -5170,12 +5473,17 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0021"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Electronic powers of attorney with electronic signature, as MDA-GOV-2026-002-0009"
       }
     },
     {
@@ -5232,12 +5540,17 @@
       "flags": [],
       "extraction_note": "The legal basis for the equivalence is not given. The last sentence has no full stop in the text file.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0021"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Legal equivalence with notarial powers of attorney; basis not given"
       }
     },
     {
@@ -5293,12 +5606,16 @@
       "flags": [],
       "extraction_note": "Tax e-service; the text says it is available for citizens, legal entities and public authorities. Its stated advantages are not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-005"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0305"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Tax e-service, as MDA-GOV-2025-003-0138"
       }
     },
     {
@@ -5354,12 +5671,16 @@
       "flags": [],
       "extraction_note": "Online service the public uses to apply for compensation, so TECH-DGOV.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0310"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Online service the public uses to apply for compensation, run by a sector body"
       }
     },
     {
@@ -5417,12 +5738,16 @@
       ],
       "extraction_note": "Doubtful: an eHealth system used mainly by prescribers and pharmacies, which may be a back-office sector system rather than a service the public uses online. Its stated benefits are not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-009"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0306"
+        ],
+        "classification_status": "auto",
+        "classification_note": "S3 awkward fit: Moldova already runs ePrescription, unlike paper referrals in the issue definition (G4-D06), as MDA-EU-2026-012-0103; theme_doubtful resolved as in scope"
       }
     },
     {
@@ -5480,12 +5805,17 @@
       ],
       "extraction_note": "\"program mes\" split by the conversion. Elsewhere MPay is described as running earlier; not reconciled.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-004",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0020"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Shared payment service, as MDA-GOV-2023-001-0013; start date not reconciled (pass 1 note)"
       }
     },
     {
@@ -5541,12 +5871,14 @@
       "flags": [],
       "extraction_note": "The platform is named in the paragraph before.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0584"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "E-participation platform, not a transactional e-service; RI-TEC-008 retired at G4 of RUN-2026-01, no other issue fits (as MDA-CSO-2026-001-0016)"
       }
     },
     {
@@ -5602,12 +5934,14 @@
       "flags": [],
       "extraction_note": "Source not given. Wording differs from page 4, so extracted again (M3). Same passage as alpha item MDA-IO-2024-002-0008.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Business services online and share of counter requests; source not given; as alpha item -0008"
       }
     },
     {
@@ -5664,12 +5998,17 @@
       "flags": [],
       "extraction_note": "Spans the page break; the page number and header between are left out.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-037",
+          "RI-TEC-004"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0099"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Single window for permits between issuing authorities and applicants, as MDA-GOV-2026-014-0011"
       }
     },
     {
@@ -5725,12 +6064,16 @@
       "flags": [],
       "extraction_note": "Launched before the window; the claim is about current practice.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-038"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0512"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Describes current practice of the e-procurement system the EU says is to be replaced (G4-D01); positive, no problem stated"
       }
     },
     {
@@ -5789,12 +6132,14 @@
       ],
       "extraction_note": "Digital skills are not a theme area; extracted as doubtful because the programme also covers connectivity (next items). \"Program me\" split by the conversion.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0194"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Digital literacy is not a theme area and is not linked here to an in-scope recommendation (R2); the programme's connectivity objective is classified at -0092; theme_doubtful"
       }
     },
     {
@@ -5850,12 +6195,17 @@
       "flags": [],
       "extraction_note": "Objective; proposed (M1). The three skills and awareness objectives are not extracted (digital skills not linked to an in-scope recommendation).",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-013",
+          "RI-TEC-014"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0194"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Objective of reliable and affordable connectivity; affordability alone is not an issue (G5-D05 of RUN-2026-01)"
       }
     },
     {
@@ -5913,12 +6263,14 @@
       ],
       "extraction_note": "Objective; proposed (M1). Doubtful: devices rather than networks.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0194"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Ownership of smart devices is not network access; fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -5975,12 +6327,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0019"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Government authentication service"
       }
     },
     {
@@ -6045,12 +6401,16 @@
       "flags": [],
       "extraction_note": "\"To be launched\"; MDA-GOV-2025-001 names EVOSign among the agency's applications in 2025.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-026"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0009"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Signing solution to be launched; named among the agency's applications in 2025 (MDA-GOV-2025-001-0046)"
       }
     },
     {
@@ -6111,12 +6471,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-025"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0421"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Law on electronic identification and trust services"
       }
     },
     {
@@ -6172,12 +6536,16 @@
       "flags": [],
       "extraction_note": "Event date is the stated entry into force. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0446"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Cybersecurity law and its national authority"
       }
     },
     {
@@ -6238,12 +6606,18 @@
       "flags": [],
       "extraction_note": "M2: creation of an institution. Listed among secondary acts approved under the law.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0337",
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Creation of the cybersecurity agency (M2)"
       }
     },
     {
@@ -6304,12 +6678,17 @@
       "flags": [],
       "extraction_note": "M2: what an institution does is a finding; stated as its future role.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Future role of the agency, including incident response teams (M2)"
       }
     },
     {
@@ -6372,12 +6751,17 @@
       ],
       "extraction_note": "M2: establishment of an institution. \"1 186\" split by the conversion. Its strategic role (the next sentence) is not extracted separately.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0339",
+          "INT-MDA-0172"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Creation of the coordination council under the law (M2)"
       }
     },
     {
@@ -6438,12 +6822,17 @@
       "flags": [],
       "extraction_note": "M2: creation of an institution.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023",
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Launch of the agency (M2)"
       }
     },
     {
@@ -6504,12 +6893,17 @@
       "flags": [],
       "extraction_note": "M2: what the institution does. The first listed responsibility (oversees implementation of policies) restates this and is not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022",
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "What the agency is responsible for (M2)"
       }
     },
     {
@@ -6570,12 +6964,16 @@
       "flags": [],
       "extraction_note": "M2: establishment of a body. Listed among the Agency's key responsibilities.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-023"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0520"
+        ],
+        "classification_status": "auto",
+        "classification_note": "National incident response team within the agency (M2)"
       }
     },
     {
@@ -6636,12 +7034,16 @@
       "flags": [],
       "extraction_note": "M2; stated as a future role.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Future role as central point of contact (M2)"
       }
     },
     {
@@ -6702,12 +7104,16 @@
       "flags": [],
       "extraction_note": "M2; stated as a future role.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Future role on critical infrastructure (M2)"
       }
     },
     {
@@ -6768,12 +7174,16 @@
       "flags": [],
       "extraction_note": "M2; stated as a future role.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0047"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Future role: registry of service providers and their compliance with cybersecurity rules (M2)"
       }
     },
     {
@@ -6834,12 +7244,16 @@
       "flags": [],
       "extraction_note": "A planned mechanism; proposed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0474"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Planned mandatory incident reporting"
       }
     },
     {
@@ -6901,12 +7315,16 @@
       "flags": [],
       "extraction_note": "\"Presented\"; a vision document, not stated to be adopted, so proposed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-001"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0693"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Declarative white paper as a starting point for AI rules, as MDA-GOV-2026-003-0002; the data governance part would also fit the proposed issue National data governance strategy and institutions missing"
       }
     },
     {
@@ -6964,12 +7382,12 @@
       ],
       "extraction_note": "Under the heading \"Big data\". The same sentence appears under distributed ledger technologies, Internet of Things and quantum computing on this page; those fields are not theme areas as defined and are not extracted. Doubtful whether big data falls under TECH-DATA.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "unresolved_gap",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "No initiatives on big data reported; emerging technology with no AI element fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -7026,12 +7444,14 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0014"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Government cloud fits no approved issue (data hosting and cloud rejected at G5-D05 of RUN-2026-01), as MDA-GOV-2024-006-0008"
       }
     },
     {
@@ -7088,12 +7508,14 @@
       "flags": [],
       "extraction_note": "No figure or method; promotional wording as printed.",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "outcome",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0014"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Government cloud fits no approved issue (G5-D05 of RUN-2026-01), as MDA-GOV-2024-006-0008; promotional claim with no figure"
       }
     },
     {
@@ -7149,12 +7571,16 @@
       "flags": [],
       "extraction_note": null,
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-011"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0682"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Transposition of the Broadband Cost Reduction Directive (cost reduction is in RI-TEC-011)"
       }
     },
     {
@@ -7212,12 +7638,12 @@
       ],
       "extraction_note": "Source not given. The IT sector as an economic sector; doubtful whether it meets the materiality test (TECH-DIGI covers digitalisation of economic activity, not the size of the IT industry).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "Size of the IT sector is ICT sector performance, not digitalisation of economic activity; fits no approved issue (as MDA-GOV-2023-001-0060); theme_doubtful"
       }
     },
     {
@@ -7275,12 +7701,12 @@
       ],
       "extraction_note": "Source not given. The IT sector as an economic sector; doubtful whether it meets the materiality test (TECH-DIGI covers digitalisation of economic activity, not the size of the IT industry).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "implementation",
         "reform_issue_ids": [],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "out_of_scope",
+        "classification_note": "IT exports are ICT sector performance; fits no approved issue; theme_doubtful"
       }
     },
     {
@@ -7338,12 +7764,14 @@
       ],
       "extraction_note": "The source's own attribution, not tested. The IT sector as an economic sector; doubtful whether it meets the materiality test (TECH-DIGI covers digitalisation of economic activity, not the size of the IT industry).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "lesson",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0506"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "Source's attribution of IT sector growth to the IT park tax regime; ICT sector promotion, fits no approved issue (as MDA-GOV-2023-001-0060); theme_doubtful"
       }
     },
     {
@@ -7401,12 +7829,14 @@
       ],
       "extraction_note": "The IT sector as an economic sector; doubtful whether it meets the materiality test (TECH-DIGI covers digitalisation of economic activity, not the size of the IT industry).",
       "pass2": {
-        "chain_link": null,
+        "chain_link": "country_response",
         "reform_issue_ids": [],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0506"
+        ],
+        "classification_status": "out_of_scope",
+        "classification_note": "IT park tax regime extension is ICT sector promotion; fits no approved issue (as MDA-GOV-2023-001-0060); theme_doubtful"
       }
     },
     {
@@ -7467,12 +7897,14 @@
       "flags": [],
       "extraction_note": "M2: what an institution does.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "What the ministry does (M2)"
       }
     },
     {
@@ -7534,12 +7966,16 @@
       "flags": [],
       "extraction_note": "M2: what an institution does. The sentence before (\"stands as a driving force\") is general and not extracted.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-002",
+          "RI-TEC-036",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "What the agency does (M2)"
       }
     },
     {
@@ -7600,12 +8036,14 @@
       "flags": [],
       "extraction_note": "M2: what an institution does.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-012"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "What the regulator does (M2); no problem stated"
       }
     },
     {
@@ -7662,12 +8100,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). First bullet after the lead-in quoted in item 0053; the second bullet (business documents) is about regulations and licences and is not extracted. Descriptive wording; no status stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0003"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Citizen access to personal information held by agencies"
       }
     },
     {
@@ -7723,12 +8165,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). Listed under \"What data can be found on the portal?\" (the content of the portal, not its objectives, which item 0054 leaves out). No status stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Content of the open data portal"
       }
     },
     {
@@ -7785,12 +8231,17 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). Listed under \"What data can be found on the portal?\". Corresponds to the authorised data access route described in MDA-GOV-2020-001. No status stated.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016",
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Controlled access route for authorised entities, as MDA-GOV-2020-001-0033"
       }
     },
     {
@@ -7846,12 +8297,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). M2: what an institution does is a finding; stated as its future role. Follows item 0100 (Government Decision 1186/2023), parallel to item 0099 for the National Agency for Cybersecurity.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "implementation",
+        "reform_issue_ids": [
+          "RI-TEC-022"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0172"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Future role of the council (M2)"
       }
     }
   ],

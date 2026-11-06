@@ -1,11 +1,11 @@
 # Run record: RUN-2026-02
 
-Status: **G4 passed (GATE-0021), stage 9: classify and link (stage 8 completed 5 November 2026)**
+Status: **G4 passed (GATE-0021), stage 9: G5 package prepared (6 November 2026), awaiting Sofia's decisions**
 
 | Field | Value |
 |---|---|
 | Run ID | RUN-2026-02 |
-| Current stage | 9 Classify and link (started 2026-11-05 after stage 8 completed: 2,206 stage 8 items extracted with rules 0.6; pass 2 with classification rules 0.4 and taxonomy 1.2) |
+| Current stage | 9 Classify and link: G5 package prepared 2026-11-06 (`review/RUN-2026-02/G5_classification.xlsx`, `G5_decisions.csv`), awaiting Sofia's decisions |
 | Purpose | First country run of the controlled scaling phase (decisions E19 and E20, `runs/rollout_plan.md`). It applies the method validated in the North Macedonia alpha (RUN-2026-01) to Moldova, as a diagnostic covering the chain from EU requirement to priority, with a comparator step for the issues chosen at G6. It is also the first test of the shared multi-country architecture: what it teaches is reviewed before Montenegro (RUN-2026-03) starts |
 | Target country | Moldova (MDA) |
 | Thematic scope | (a) All of Chapter 2, Freedom of movement for workers (Cluster 2, Internal market); (b) the technology and AI theme: recommendations materially relating to the areas listed in `taxonomy/themes.csv` (theme group `TECH`), wherever they occur in the accession material. Incidental references to technology are out of scope. The full analytical chain is followed for every issue originating from an in-scope Chapter 2 item or technology and AI recommendation. Material outside (a) and (b) is out of scope unless it is needed to follow the chain of an issue already in scope. |

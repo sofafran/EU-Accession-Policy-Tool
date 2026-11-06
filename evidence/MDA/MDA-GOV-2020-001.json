@@ -13,8 +13,12 @@
     "notes": "All 21 slides read. Slides 10 and 14 are images read by text recognition and are garbled; they hold no claim that could be quoted reliably (slide 14 is a screenshot of date.gov.md). Slides 8 and 9 (a diagram of institutions before and after MConnect), 17 (a technical diagram naming MPass and MConnect) and 18 to 20 (the title \"GDP case study: Notary Chamber\" only) carry no extractable claim. This run's items: MDA-GOV-2020-001-0012 to MDA-GOV-2020-001-0035 (24 items, all theme; TECH-INTEROP mainly, with TECH-DATA, TECH-DGOV and one TECH-CYBER). Alpha items 0001 to 0011 are unchanged; their passages are quoted again here. Left out: slide 2 (the chain \"Data -> Informations -> ...\", a lead-in to three strategic dimensions of data use, and \"Acceleraring the use of digital tools and solutions\": general, no claim of its own); slide 6 (the five data exchange pillars as single words, set out in full in MDA-GOV-2024-003); slide 11 (benefits as single words); slide 12 (a list of access channels under the heading \"Needs for a single data portal\"); the further bullets of slides 15 and 16. Self-reported by the agency, 6 July 2020; slides hosted by the World Bank do not make them World Bank findings. Doubtful for the analyst: the MConnect security feature (theme_doubtful). No Chapter 2 content. Second-pass check (PC-05) by checker-HELD8 on 5 November 2026: 3 items added (review/RUN-2026-02/second_pass/MDA-GOV-2020-001.csv)."
   },
   "classification": {
-    "status": "not_started",
-    "run_id": "RUN-2026-02"
+    "status": "complete",
+    "run_id": "RUN-2026-02",
+    "rules_version": "0.4",
+    "taxonomy_version": "1.2",
+    "classified_at": "2026-11-05",
+    "mechanisms_version": "1.0"
   },
   "items": [
     {
@@ -790,12 +794,14 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0009.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Stated effect of the lack of interoperability, self-reported by the agency in July 2020 before the January 2021 legal changes; as alpha item -0009"
       }
     },
     {
@@ -851,12 +857,14 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0010.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Stated effect of the lack of interoperability, July 2020; as alpha item -0010"
       }
     },
     {
@@ -912,12 +920,14 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0011.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Stated effect of the lack of interoperability, July 2020; as alpha item -0011"
       }
     },
     {
@@ -974,12 +984,16 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Spelling as printed. Same passage as alpha item MDA-GOV-2020-001-0001.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-10"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier stated by the agency, July 2020, before the January 2021 legal changes; resistance of data owners read as MEC-10; as alpha item -0001"
       }
     },
     {
@@ -1036,12 +1050,16 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0002.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier stated by the agency, July 2020; as alpha item -0002"
       }
     },
     {
@@ -1098,12 +1116,16 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0003.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-07"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier stated by the agency, July 2020; as alpha item -0003"
       }
     },
     {
@@ -1159,12 +1181,16 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0004.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-03"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier stated by the agency, July 2020; as alpha item -0004"
       }
     },
     {
@@ -1220,12 +1246,14 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0005.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier stated by the agency, July 2020; no mechanism clear from the bullet; as alpha item -0005"
       }
     },
     {
@@ -1282,12 +1310,16 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0006.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier to data exchange stated by the agency, July 2020; lack of data protection standards for exchange, not alignment of the data protection law itself; as alpha item -0006"
       }
     },
     {
@@ -1343,12 +1375,16 @@
       "flags": [],
       "extraction_note": "Bullet on the slide; self-reported by the agency, July 2020, before the January 2021 legal changes (MDA-GOV-2021-002). Same passage as alpha item MDA-GOV-2020-001-0007.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
-        "mechanism_ids": [],
+        "chain_link": "unresolved_gap",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
+        "mechanism_ids": [
+          "MEC-01"
+        ],
         "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "classification_status": "auto",
+        "classification_note": "Barrier stated by the agency, July 2020, before the January 2021 legal changes; as alpha item -0007"
       }
     },
     {
@@ -1404,12 +1440,17 @@
       "flags": [],
       "extraction_note": "Objective listed on the slide; proposed under M1 (the slide does not say it was achieved). The programme itself is named on slide 5 as Government Decision 656 of 5 September 2012; its adoption is before the time window and is not extracted as an item. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-027"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0505"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Objective of the national interoperability framework programme (adopted 2012, before the window)"
       }
     },
     {
@@ -1466,12 +1507,16 @@
       "flags": [],
       "extraction_note": "Objective listed on the slide; proposed under M1 (the slide does not say it was achieved). The programme itself is named on slide 5 as Government Decision 656 of 5 September 2012; its adoption is before the time window and is not extracted as an item. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0505"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Objective of the interoperability framework programme"
       }
     },
     {
@@ -1528,12 +1573,17 @@
       "flags": [],
       "extraction_note": "Objective listed on the slide; proposed under M1 (the slide does not say it was achieved). The programme itself is named on slide 5 as Government Decision 656 of 5 September 2012; its adoption is before the time window and is not extracted as an item. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028",
+          "RI-TEC-036"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0505"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Objective of the interoperability framework programme; modernisation of public services second"
       }
     },
     {
@@ -1594,12 +1644,16 @@
       "flags": [],
       "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design feature of the platform, not evidence of use"
       }
     },
     {
@@ -1660,12 +1714,16 @@
       "flags": [],
       "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design feature of the platform, not evidence of use"
       }
     },
     {
@@ -1726,12 +1784,16 @@
       "flags": [],
       "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design feature of the platform, not evidence of use"
       }
     },
     {
@@ -1792,12 +1854,16 @@
       "flags": [],
       "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design feature of the platform, not evidence of use"
       }
     },
     {
@@ -1858,12 +1924,16 @@
       "flags": [],
       "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design feature of the platform, not evidence of use"
       }
     },
     {
@@ -1927,12 +1997,16 @@
       ],
       "extraction_note": "Design feature listed on the slide for MConnect, which the slide names as the governmental interoperability platform; a description, not evidence of use. Spelling as printed. TECH-CYBER doubtful: a one-line claim of security with no detail on how systems are secured.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design feature of the platform; theme_doubtful TECH-CYBER resolved as incidental (one-line security claim), so no cybersecurity issue"
       }
     },
     {
@@ -1993,12 +2067,16 @@
       "flags": [],
       "extraction_note": "Slide title that carries a claim of its own; the rest of the slide is a screenshot.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Single government data portal (open data)"
       }
     },
     {
@@ -2054,12 +2132,16 @@
       "flags": [],
       "extraction_note": "The slide goes on to describe the search as free of charge, with unlimited access and regularly updated information; not extracted separately.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Search of public company data on the open data portal"
       }
     },
     {
@@ -2116,12 +2198,17 @@
       "flags": [],
       "extraction_note": "The slide describes the design; it does not say how far the route is in use. Same passage as alpha item MDA-GOV-2020-001-0008.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032",
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Route for data exchange participants with no system of their own; design only; as alpha item -0008"
       }
     },
     {
@@ -2178,12 +2265,19 @@
       "flags": [],
       "extraction_note": "Legal condition for access as stated; GD 211/2019 is not described further.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032",
+          "INT-MDA-0015",
+          "INT-MDA-0012",
+          "INT-MDA-0342"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Legal condition for authorised access"
       }
     },
     {
@@ -2239,12 +2333,16 @@
       "flags": [],
       "extraction_note": "Design description; not evidence of use.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Design description, not evidence of use"
       }
     },
     {
@@ -2300,12 +2398,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). A slide bullet describing the company data search; the slide does not say how far it is in use, so status unclear as for the other slide features.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Feature of the public company data search"
       }
     },
     {
@@ -2361,12 +2463,16 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). A slide bullet describing the company data search; status unclear as for the other slide features.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-016"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Feature of the public company data search"
       }
     },
     {
@@ -2423,12 +2529,17 @@
       "flags": [],
       "extraction_note": "Added by the second-pass check (PC-05). The third bullet of the slide, between items 0034 and 0035; \"PR\" is not expanded on the slide (read here as public registers, for the analyst). Status unclear as for the other bullets.",
       "pass2": {
-        "chain_link": null,
-        "reform_issue_ids": [],
+        "chain_link": "country_response",
+        "reform_issue_ids": [
+          "RI-TEC-028"
+        ],
         "mechanism_ids": [],
-        "intervention_ids": [],
-        "classification_status": "not_classified",
-        "classification_note": null
+        "intervention_ids": [
+          "INT-MDA-0032",
+          "INT-MDA-0015"
+        ],
+        "classification_status": "auto",
+        "classification_note": "Authorised real-time access to data from information systems and registers"
       }
     }
   ],
