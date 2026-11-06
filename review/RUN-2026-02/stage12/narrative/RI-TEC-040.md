@@ -1,0 +1,14 @@
+## In brief
+
+The Commission asks Moldova to align its legislation with the EU acquis on semiconductors, in particular the Chips Act (MDA-EU-2026-012-0023). In April 2026 Moldova adopted a law on the protection of topographies of semiconductor products (MDA-EU-2026-012-0133), but this is an intellectual property measure rather than alignment with the Chips Act, which the Commission says Moldova is yet to achieve (MDA-EU-2026-012-0134). The Government plans to transpose the Chips Act by the end of 2026 (MDA-GOV-2025-002-0231) and lists a draft law on investments for the purpose (MDA-GOV-2025-002-0288), but neither has been reported as adopted. The Government states that there are no national rules on planning, building or operating semiconductor production facilities and no public authority designated to examine such applications (MDA-GOV-2025-002-0229), that no institution is responsible for the area (MDA-GOV-2025-002-0230) and that no ministry employee covers it (MDA-GOV-2025-002-0167). The economy ministry is to take on the policy area and a new principal consultant post is planned (MDA-GOV-2025-002-0166; MDA-GOV-2025-002-0232). The Government describes the sector in Moldova as at an early stage and almost non-existent (MDA-GOV-2025-002-0228). What remains is transposition of the Chips Act and the designation and staffing of a competent authority. The unresolved gap is open and the direction of travel is persistent. Priority is Medium and tractability is Low.
+
+## How the EU requirement has changed
+
+Semiconductors do not appear in the evidence from the 2022 Opinion, the 2023 analytical report or the 2023 and 2024 reports. The 2025 report first found that Moldova was not yet fully aligned with the Chips Act (MDA-EU-2025-001-0099). The 2026 report raises the issue to a key recommendation to ensure further alignment with the EU acquis on semiconductors (MDA-EU-2026-012-0023), and records some progress through the topographies law while stating that Moldova is yet to align with the Chips Act (MDA-EU-2026-012-0134). No Reform Agenda payment condition addresses the issue.
+
+## Open questions
+
+- Whether the Chips Act will be transposed by the end of 2026 as planned is not known; a draft or adopted law, or the Government's next progress report on the National Accession Programme, would settle it (MDA-GOV-2025-002-0231).
+- It is not clear how the draft law on investments relates to the Chips Act; the draft text would show which parts of the acquis it is meant to cover (MDA-GOV-2025-002-0288).
+- Whether the planned post for semiconductors in the economy ministry has been created and filled is not reported; the ministry's staffing plan or organisational chart would confirm it (MDA-GOV-2025-002-0232).
+- Which authority will examine applications for semiconductor production facilities is not settled; a Government decision designating a competent authority would close this part of the gap (MDA-GOV-2025-002-0229).

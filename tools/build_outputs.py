@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, register_role, run_record, run_requirements, run_items, runs_with_records, split_list  # noqa: E402
 
-VERSION = "1.3.1"
+VERSION = "1.3.3"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
@@ -92,17 +92,23 @@ class Refs:
 
 def load(root, run):
     cc = run_country(root, run)
-    items = {}
+    used_roles = {}
+    items, all_items = {}, {}
     for f in evidence_files(root):
         d = read_json(f)
-        for it in run_items(d, run):  # this run's items only: a source may also hold other runs' items (E21)
+        mine = run_items(d, run)  # this run's items only: a source may also hold other runs' items (E21)
+        for it in mine:
             items[it["item_id"]] = {**it, "_source": d["source_id"]}
+        for it in d["items"]:  # 1.3.3: every run's items, for reused comparator cases only (never for issue judgements)
+            all_items.setdefault(it["item_id"], {**it, "_source": d["source_id"]})
+        if mine and (d.get("extraction") or {}).get("run_id") == run:
+            used_roles[d["source_id"]] = d["extraction"].get("role") or ""
     js = [j for j in read_csv(root / "judgements" / "judgements.csv")[1] if j.get("run_id") == run]  # 1.3.1 (S10): this run's judgements only
     links = [l for l in read_csv(root / "links" / "links.csv")[1] if l.get("run_id") == run]  # 1.3.1: another run's links on shared entities stay out
     reg = {}
     for r in read_csv(root / "registers" / "source_register.csv")[1]:
-        role = register_role(r, run, cc)  # only the sources this run used, with their role in this run (E21)
-        if role:
+        role = register_role(r, run, cc) or used_roles.get(r["source_id"])  # only the sources this run used, with their role in this run (E21)
+        if role:  # 1.3.2: also sources registered by another run but extracted by this one (held comparators, horizontal passages)
             reg[r["source_id"]] = {**r, "role": role}
     sq = {}
     for r in read_csv(root / "judgements" / "source_quality.csv")[1]:
@@ -130,7 +136,8 @@ def load(root, run):
     g7date = g7[-1]["date"] if g7 else ""
     g6 = [r["gate_decision_id"] for r in gates if r["gate"] == "G6"]
     g6_at_g7 = [r["gate_decision_id"] for r in gates if r["gate"] == "G6" and (not g7date or r["date"] <= g7date)]
-    return dict(items=items, js=ok, prop=prop, links=links, g7=g7[-1]["gate_decision_id"] if g7 else "", g7date=g7date, g6=g6, g6_at_g7=g6_at_g7, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
+    reg_all = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
+    return dict(items=items, all_items=all_items, reg_all=reg_all, js=ok, prop=prop, links=links, g7=g7[-1]["gate_decision_id"] if g7 else "", g7date=g7date, g6=g6, g6_at_g7=g6_at_g7, reg=reg, sq=sq, issues=issues, mech=mech, ints=ints, by=by, cc=cc, cname=country_name(cc),
                 start=fields.get("Time window", "")[:4], freeze=fields.get("Evidence freeze date", "")[:10])
 
 
@@ -335,7 +342,8 @@ def coverage(root, run, D):
 
 
 def comparator_brief(root, run, D, issue):
-    R, names, x = Refs(D["items"]), names_of(D), issue["issue_id"]
+    # 1.3.3: reused cases cite other runs' evidence (E19), so the comparator brief numbers every run's items
+    R, names, x = Refs({**D["all_items"], **D["items"]}), names_of(D), issue["issue_id"]
     N = narrative(root, run, f"comparator_{x}")
     cases = {r["case_id"]: r for r in read_csv(root / "review" / run / "run1b" / "cases" / f"cases_{x}.csv")[1]}
     J = {(j["object_id"], j["judgement_type"]): j for j in D["js"]}
@@ -362,7 +370,7 @@ def comparator_brief(root, run, D, issue):
         out += [f"**Transferability judgement: {tj.get('value', '')}.** {R.sub(tj.get('reason', ''), names)}", ""]
     for s in ("Lessons across the cases", "Draft policy options"):
         out += [f"## {s} (agent synthesis, internal draft)" if s == "Draft policy options" else f"## {s} (agent synthesis)", "", R.sub(N.get(s, "*Not yet written.*"), names), ""]
-    return out + R.annex(D["reg"])
+    return out + R.annex({**D["reg_all"], **D["reg"]})
 
 
 def factpack(D, issue):

@@ -1,0 +1,14 @@
+## In brief
+
+No Commission document in the Moldova evidence sets a requirement on the protection of personal data in electoral processes, and the issue rests on a single civil society report. That report, published in March 2026, states that illegal surveys during the parliamentary election campaign used personal data databases without clarity on how they were obtained, who collected them and where they are stored (MDA-CSO-2026-001-0035). No source describes any measure Moldova has taken in response, and no source shows what has happened in practice beyond that one account. What remains, on the strength of that report alone, is oversight of how personal data are obtained, stored and used in election campaigns, a finding that other sources would need to confirm (MDA-CSO-2026-001-0035). Because there is no EU benchmark, no responsible institution named and only one item from one year, the assessment cannot measure the gap against what the EU requires or say how realistic progress would be. The unresolved gap is insufficient_evidence and the direction of travel is insufficient_evidence. Priority is Low and tractability is insufficient_evidence.
+
+## How the EU requirement has changed
+
+The issue is not raised in EU material for Moldova. Neither the Commission's 2022 Opinion, nor its 2023 to 2026 reports, nor the Reform Agenda conditions in the evidence contain an item on personal data protection in elections, so there is no Commission wording whose development can be traced. The only item on the issue comes from civil society and describes a problem in the parliamentary election campaign rather than an EU requirement (MDA-CSO-2026-001-0035). Its low priority reflects this absence of an EU recommendation or benchmark rather than a finding that the problem is minor.
+
+## Open questions
+
+- Whether the problem described in the civil society report is confirmed by other sources is not known, and an assessment by the national data protection authority, the Central Electoral Commission or an election observation mission covering the campaign would settle it (MDA-CSO-2026-001-0035).
+- Which institution is responsible for overseeing the use of personal data in campaigns, and whether it has acted, is not recorded, and supervision or enforcement reports from the data protection authority would be needed to judge tractability.
+- Whether the Commission regards electoral data protection as part of Moldova's alignment with the EU data protection acquis is not shown, and a statement in a later Commission report or screening document would establish an EU requirement against which the gap could be measured.
+- With one item from 2026, no direction can be shown, and evidence from earlier or later election cycles would be needed to say whether the problem is persisting, worsening or easing.
