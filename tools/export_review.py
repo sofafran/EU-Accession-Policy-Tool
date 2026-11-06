@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.18.0"
+__version__ = "1.19.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -613,18 +613,21 @@ def g6(root, run):
     items = {}
     for f in evidence_files(root):
         d = read_json(f)
-        for it in d["items"]:
+        for it in run_items(d, run):  # 1.19.0 (S10): this run's items only (E21)
             items[it["item_id"]] = {**it, "_source": d["source_id"]}
 
     def text(i):
         return i.get("translation_en") or i["stated_text"]
     jh, js = read_csv(root / "judgements" / "judgements.csv")
-    links = read_csv(root / "links" / "links.csv")[1]
+    js = [j for j in js if j.get("run_id") == run]  # 1.19.0 (S10): this run's judgements only
+    links = [l for l in read_csv(root / "links" / "links.csv")[1] if l.get("run_id") == run]
     reg = {r["source_id"]: r for r in read_csv(root / "registers" / "source_register.csv")[1]}
     conf = {j["object_id"]: j["value"] for j in js if j["judgement_type"] == "evidence_confidence"}
     rel = {(j["object_id"], j["context_id"]): j["value"] for j in js if j["judgement_type"] == "relevance"}
     dups = {l["from_id"] for l in links if l["link_type"] == "same_as_earlier" and reg.get(l["from_id"].rsplit("-", 1)[0], {}).get("version_of")}
     issues = [r for r in read_csv(root / "taxonomy" / "reform_issues.csv")[1] if r["status"] == "approved"]
+    cc = run_country(root, run)
+    judged = {j["object_id"].split("@")[0] for j in js if j["object_type"] == "issue_country" and j["object_id"].endswith("@" + cc)}
     by = {}
     for k, i in items.items():
         if i["pass2"]["classification_status"] == "out_of_scope" or k in dups:
@@ -654,7 +657,9 @@ def g6(root, run):
     val = {(j["object_id"], j["judgement_type"]): j for j in js}
     for r in issues:
         x = r["issue_id"]
-        oid = x + "@" + run_country(root, run)
+        if x not in judged and x not in by and r.get("created_in_run") != run:  # 1.19.0 (S10): only issues this run touches or created
+            continue
+        oid = x + "@" + cc
         g = lambda t: val.get((oid, t), {}).get("value", "")
         index.append([x, r["label"], g("priority"), g("direction_of_travel"), g("unresolved_gap"), g("tractability"), str(len(by.get(x, [])))])
         rows = [["ISSUE", x, r["label"], r["definition"], "", "", "", ""]]
@@ -667,7 +672,7 @@ def g6(root, run):
                 rows.append(["CONFIRMED CONFLICT" if l["review_status"] == "validated" else "NOTED DIFFERENCE", l["from_id"], l["to_id"], l["basis"], "", "", "", ""])
         for k in sorted(mine, key=lambda k: (order.get(items[k]["pass2"]["chain_link"], 9), items[k]["dates"].get("publication_date") or "", k)):
             i = items[k]
-            rows.append([i["pass2"]["chain_link"], k, (i["dates"].get("publication_date") or "")[:4], text(i), i["information_type"], conf.get(k, ""), rel.get((k, x), ""), ";".join(i["flags"])])
+            rows.append([i["pass2"]["chain_link"], k, (i["dates"].get("publication_date") or reg.get(i["_source"], {}).get("publication_date") or "")[:4], text(i), i["information_type"], conf.get(k, ""), rel.get((k, x), ""), ";".join(i["flags"])])
         dossiers.append((x, ["section", "id_or_type", "year_or_value", "text_or_reason", "type_or_evidence", "confidence", "relevance", "flags"], rows))
     return "G6_issue_dossiers.xlsx", [
         *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
