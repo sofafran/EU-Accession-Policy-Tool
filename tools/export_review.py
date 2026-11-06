@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.19.0"
+__version__ = "1.19.1"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -696,6 +696,8 @@ def g1b(root, run):
         countries += [[f.stem.split("_")[0]] + [r[k] for k in h] for r in rows]
     header, rows = read_csv(root / "registers" / "source_requirements.csv")
     lines = [r for r in rows if r.get("role") == "comparator"]
+    if any(run in (r.get("notes") or "") for r in lines):  # 1.19.1 (S10): this run's comparator lines when they name it
+        lines = [r for r in lines if run in (r.get("notes") or "")]
     return "G1b_comparators.xlsx", [
         *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
         ("Countries checked", c_h or ["issue"], countries),
