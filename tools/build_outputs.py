@@ -20,7 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import COUNTRIES, country_name, evidence_files, gate_id, project_root, read_csv, read_json, run_country, register_role, run_record, run_requirements, run_items, runs_with_records, split_list  # noqa: E402
 
-VERSION = "1.3.0"
+VERSION = "1.3.1"
 ITEM = re.compile(r"\b[A-Z]{3}-(?:EU|GOV|CSO|IO|RES|MED|INT)-\d{4}-\d{3}-\d{4}\b")
 INTV = re.compile(r"\bINT-[A-Z]{3}-\d{4}\b")
 ORDER = {"eu_requirement": 0, "country_response": 1, "implementation": 2, "outcome": 3, "unresolved_gap": 4, "lesson": 5}
@@ -97,8 +97,8 @@ def load(root, run):
         d = read_json(f)
         for it in run_items(d, run):  # this run's items only: a source may also hold other runs' items (E21)
             items[it["item_id"]] = {**it, "_source": d["source_id"]}
-    js = read_csv(root / "judgements" / "judgements.csv")[1]
-    links = read_csv(root / "links" / "links.csv")[1]
+    js = [j for j in read_csv(root / "judgements" / "judgements.csv")[1] if j.get("run_id") == run]  # 1.3.1 (S10): this run's judgements only
+    links = [l for l in read_csv(root / "links" / "links.csv")[1] if l.get("run_id") == run]  # 1.3.1: another run's links on shared entities stay out
     reg = {}
     for r in read_csv(root / "registers" / "source_register.csv")[1]:
         role = register_role(r, run, cc)  # only the sources this run used, with their role in this run (E21)

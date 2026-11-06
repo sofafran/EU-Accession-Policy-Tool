@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import lessons_path, run_items, run_requirements, run_sources, run_country, runs_with_records, parse_markdown_table, project_root, read_csv, run_record, split_list  # noqa: E402
 
-__version__ = "1.19.1"
+__version__ = "1.20.0"
 TOOLS = ["hash_file.py", "next_id.py", "convert_to_text.py", "verify_quotes.py", "validate_data.py",
          "export_review.py", "build_review_page.py"]
 
@@ -729,8 +729,10 @@ def g6b(root, run):
         i = items.get(k, {})
         return i.get("translation_en") or i.get("stated_text", "")
     links = {r["link_id"]: r for r in read_csv(root / "links" / "links.csv")[1]}
-    js = [j for j in read_csv(root / "judgements" / "judgements.csv")[1] if j["review_status"] == "proposed"]
-    comp = {"ALB", "HRV", "MDA", "MNE", "SRB"}
+    alljs = read_csv(root / "judgements" / "judgements.csv")[1]
+    superseded = {j["supersedes"] for j in alljs if j.get("supersedes")}
+    js = [j for j in alljs if j["review_status"] == "proposed" and j.get("run_id") == run and j["judgement_id"] not in superseded]  # 1.20.0 (S10)
+    comp = {"ALB", "HRV", "MDA", "MKD", "MNE", "SRB"} - {run_country(root, run)}  # 1.20.0: every project country but the run's target
 
     def is_comp(i):
         return i[:3] in comp
@@ -764,9 +766,11 @@ def g6b(root, run):
         checks += [[f.stem[6:]] + [r[h] for h in check_h] for r in rows]
     checks.sort(key=lambda r: r[check_h.index("severity") + 1] != "serious" if "severity" in check_h else 0)
     reg = read_csv(root / "registers" / "source_register.csv")[1]
-    gaps = [[r["source_id"], r["country"], r["title"], r["url"], r["status_reason"]] for r in reg if r["role"] == "comparator" and r["status"] != "available"]
+    gaps = [[r["source_id"], r["country"], r["title"], r["url"], r["status_reason"]] for r in reg if r["role"] == "comparator" and r["status"] != "available"
+            and r.get("added_in_run", run) in (run, "")]  # 1.20.0 (S10): this run's comparator gaps
     queue_h, queue = read_csv(root / "taxonomy" / "unmatched_queue.csv")
-    queue = [[r[h] for h in queue_h] for r in queue if is_comp(r.get(queue_h[1], "")) or any(is_comp(r[h]) for h in queue_h[:3])]
+    own = {it["item_id"] for f in evidence_files(root) for it in run_items(read_json(f), run)}  # 1.20.0: this run's comparator items only
+    queue = [[r[h] for h in queue_h] for r in queue if r.get("item_id") in own and is_comp(r.get("item_id", ""))]
     return "G6b_comparators.xlsx", [
         *([("Decisions needed", dec_h + ["reviewer_decision", "reviewer_comment"], [[d[h] for h in dec_h] + ["", ""] for d in decisions])] if decisions else []),
         ("Cases", case_h or ["case_id"], [[r[h] for h in case_h] for r in drafted]),
